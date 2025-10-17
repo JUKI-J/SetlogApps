@@ -1,0 +1,633 @@
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Light Mode Colors */
+    --bg-primary: #fafafa;
+    --bg-gradient-1: #667eea;
+    --bg-gradient-2: #764ba2;
+    --bg-gradient-3: #f093fb;
+    --bg-gradient-4: #4facfe;
+    --bg-card: rgba(255, 255, 255, 0.7);
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a5568;
+    --border-color: rgba(255, 255, 255, 0.3);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow-colored: rgba(102, 126, 234, 0.3);
+    --hover-bg: rgba(255, 255, 255, 0.5);
+    --github-color: #1a1a2e;
+    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode */
+body.dark-mode {
+    --bg-primary: #0f0f23;
+    --bg-gradient-1: #4c1d95;
+    --bg-gradient-2: #581c87;
+    --bg-gradient-3: #5b21b6;
+    --bg-gradient-4: #1e3a8a;
+    --bg-card: rgba(30, 30, 46, 0.7);
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --shadow: rgba(0, 0, 0, 0.5);
+    --shadow-colored: rgba(76, 29, 149, 0.5);
+    --hover-bg: rgba(255, 255, 255, 0.05);
+    --github-color: #e2e8f0;
+    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Respect system preference by default */
+@media (prefers-color-scheme: dark) {
+    body:not(.light-mode) {
+        --bg-primary: #0f0f23;
+        --bg-gradient-1: #4c1d95;
+        --bg-gradient-2: #581c87;
+        --bg-gradient-3: #5b21b6;
+        --bg-gradient-4: #1e3a8a;
+        --bg-card: rgba(30, 30, 46, 0.7);
+        --text-primary: #e2e8f0;
+        --text-secondary: #94a3b8;
+        --border-color: rgba(255, 255, 255, 0.1);
+        --shadow: rgba(0, 0, 0, 0.5);
+        --shadow-colored: rgba(76, 29, 149, 0.5);
+        --hover-bg: rgba(255, 255, 255, 0.05);
+        --github-color: #e2e8f0;
+        --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    background: var(--bg-primary);
+    background-image:
+        radial-gradient(at 0% 0%, var(--bg-gradient-1) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, var(--bg-gradient-2) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, var(--bg-gradient-3) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, var(--bg-gradient-4) 0px, transparent 50%);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 50%, var(--bg-gradient-1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, var(--bg-gradient-2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, var(--bg-gradient-3) 0%, transparent 50%);
+    opacity: 0.3;
+    z-index: -1;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+}
+
+/* ========================================
+   Container
+   ======================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 8px 32px var(--shadow);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.control-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--github-color);
+    background: var(--hover-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+}
+
+.control-btn:hover {
+    background: var(--bg-card);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 16px var(--shadow-colored);
+}
+
+.control-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.control-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Theme toggle icons */
+#theme-toggle {
+    position: relative;
+}
+
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity var(--transition-normal), transform var(--transition-normal);
+}
+
+/* Light mode - show sun icon */
+body.light-mode .sun-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+body.light-mode .moon-icon {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+/* Dark mode - show moon icon */
+body.dark-mode .sun-icon {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+body.dark-mode .moon-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Auto mode - follow system preference */
+body:not(.light-mode):not(.dark-mode) .sun-icon {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+body:not(.light-mode):not(.dark-mode) .moon-icon {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.light-mode):not(.dark-mode) .sun-icon {
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(-180deg);
+    }
+
+    body:not(.light-mode):not(.dark-mode) .moon-icon {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+/* Language toggle */
+.lang-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* GitHub link in controls */
+.header-controls .github-link {
+    width: 44px;
+    height: 44px;
+}
+
+/* ========================================
+   Main Content
+   ======================================== */
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+/* ========================================
+   Apps Grid
+   ======================================== */
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .apps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .apps-grid {
+        gap: var(--spacing-xl);
+    }
+}
+
+/* ========================================
+   App Card
+   ======================================== */
+
+.app-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all var(--transition-slow);
+    box-shadow: 0 8px 32px var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.app-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--accent-gradient);
+    opacity: 0;
+    transition: opacity var(--transition-slow);
+    z-index: -1;
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px var(--shadow-colored);
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+.app-card:hover::before {
+    opacity: 0.05;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 8px 24px var(--shadow-colored);
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.app-card:hover .app-icon {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px var(--shadow-colored);
+}
+
+.app-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.app-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.02em;
+}
+
+.app-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* ========================================
+   Store Badges
+   ======================================== */
+
+.store-badges {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.store-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: var(--hover-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.store-icon-link:hover {
+    background: var(--bg-card);
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 12px 24px var(--shadow-colored);
+    border-color: rgba(102, 126, 234, 0.5);
+}
+
+.store-icon-link:active {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.store-icon-link svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Icon colors */
+.store-icon-link.apple-store {
+    color: var(--text-primary);
+}
+
+.store-icon-link.google-play svg {
+    /* Preserve SVG fill colors for Google Play */
+}
+
+body.dark-mode .store-icon-link {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .store-icon-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    body:not(.light-mode) .store-icon-link {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    body:not(.light-mode) .store-icon-link:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* ========================================
+   AdSense Container
+   ======================================== */
+
+.adsense-container {
+    max-width: 728px;
+    margin: var(--spacing-xxl) auto;
+    padding: var(--spacing-lg);
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px var(--shadow);
+}
+
+/* Hide AdSense placeholder comment in production */
+.adsense-container:empty::before {
+    content: '';
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.footer {
+    margin-top: var(--spacing-xxl);
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    background: var(--bg-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border-color);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+
+@media (max-width: 640px) {
+    .container {
+        padding: var(--spacing-md);
+    }
+
+    .header {
+        margin-bottom: var(--spacing-lg);
+        padding: var(--spacing-md) 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .control-btn,
+    .header-controls .github-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    .control-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .lang-text {
+        font-size: 0.7rem;
+    }
+
+    .app-card {
+        padding: var(--spacing-lg);
+    }
+
+    .app-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .app-name {
+        font-size: 1.25rem;
+    }
+
+    .app-description {
+        font-size: 0.875rem;
+    }
+
+    .store-icon-link {
+        width: 48px;
+        height: 48px;
+    }
+
+    .store-icon-link svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .adsense-container {
+        padding: var(--spacing-md);
+        margin: var(--spacing-xl) auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .app-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .app-name {
+        font-size: 1.125rem;
+    }
+}
+
+/* ========================================
+   Accessibility
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus states for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+    .github-link,
+    .adsense-container,
+    .store-badges {
+        display: none;
+    }
+
+    .app-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}
