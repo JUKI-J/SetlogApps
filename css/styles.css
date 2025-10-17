@@ -569,6 +569,52 @@ body.dark-mode .store-icon-link:hover {
 }
 
 /* ========================================
+   Floating Contact Button
+   ======================================== */
+
+.floating-contact-btn {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    right: var(--spacing-xl);
+    width: 64px;
+    height: 64px;
+    background: var(--accent-gradient);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px var(--shadow-colored);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    z-index: 1000;
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-contact-btn:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 12px 32px var(--shadow-colored);
+}
+
+.floating-contact-btn:active {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.floating-contact-btn svg {
+    width: 28px;
+    height: 28px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ========================================
    Responsive Adjustments
    ======================================== */
 
@@ -580,6 +626,18 @@ body.dark-mode .store-icon-link:hover {
     .header {
         margin-bottom: var(--spacing-lg);
         padding: var(--spacing-md) 0;
+    }
+
+    .floating-contact-btn {
+        width: 56px;
+        height: 56px;
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+    }
+
+    .floating-contact-btn svg {
+        width: 24px;
+        height: 24px;
     }
 
     .logo {
