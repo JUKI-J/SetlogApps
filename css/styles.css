@@ -522,6 +522,13 @@ body.dark-mode .store-icon-link:hover {
     box-shadow: 0 4px 16px var(--shadow);
 }
 
+/* AdSense ins element sizing */
+.adsbygoogle {
+    width: 100%;
+    min-width: 300px;
+    min-height: 90px;
+}
+
 /* Hide AdSense placeholder comment in production */
 .adsense-container:empty::before {
     content: '';
