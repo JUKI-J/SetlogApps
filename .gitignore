@@ -29,6 +29,9 @@ Temporary Items
 *.swo
 *~
 
+# Claude Code
+.claude/
+
 # Logs
 *.log
 
