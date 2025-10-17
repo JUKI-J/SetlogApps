@@ -396,9 +396,38 @@ body:not(.light-mode):not(.dark-mode) .moon-icon {
     font-size: 1rem;
     font-weight: 400;
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     line-height: 1.5;
     opacity: 0.9;
+}
+
+.app-features {
+    margin-bottom: var(--spacing-lg);
+    width: 100%;
+}
+
+.app-features ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.app-features li {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.4;
+}
+
+.app-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--bg-gradient-1);
+    font-weight: 600;
 }
 
 /* ========================================
@@ -513,6 +542,30 @@ body.dark-mode .store-icon-link:hover {
     -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid var(--border-color);
     border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.footer-links {
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+.footer-links .separator {
+    color: var(--border-color);
 }
 
 /* ========================================

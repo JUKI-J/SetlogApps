@@ -5,14 +5,30 @@ const translations = {
     ko: {
         'multagi-name': '물타기',
         'multagi-desc': '주식 물타기용 계산기',
+        'multagi-feature-1': '평균 단가 자동 계산',
+        'multagi-feature-2': '목표가 도달 시 필요 매수량 계산',
+        'multagi-feature-3': '간편한 UI로 빠른 계산',
+        'multagi-feature-4': '투자 전략 수립 지원',
         'onesync-name': 'OneSync',
-        'onesync-desc': '크로스플랫폼 파일 및 텍스트 공유'
+        'onesync-desc': '크로스플랫폼 파일 및 텍스트 공유',
+        'onesync-feature-1': 'iOS, Android 간 파일 공유',
+        'onesync-feature-2': '텍스트 클립보드 실시간 동기화',
+        'onesync-feature-3': 'WiFi Direct로 빠른 전송',
+        'onesync-feature-4': '별도 계정 없이 간편 사용'
     },
     en: {
         'multagi-name': 'Multagi',
         'multagi-desc': 'Stock Averaging Calculator',
+        'multagi-feature-1': 'Automatic average price calculation',
+        'multagi-feature-2': 'Calculate required shares to reach target price',
+        'multagi-feature-3': 'Quick calculation with simple UI',
+        'multagi-feature-4': 'Investment strategy support',
         'onesync-name': 'OneSync',
-        'onesync-desc': 'Cross-platform File & Text Sharing'
+        'onesync-desc': 'Cross-platform File & Text Sharing',
+        'onesync-feature-1': 'File sharing between iOS and Android',
+        'onesync-feature-2': 'Real-time clipboard text sync',
+        'onesync-feature-3': 'Fast transfer via WiFi Direct',
+        'onesync-feature-4': 'Easy to use without account'
     }
 };
 

@@ -1,15 +1,5 @@
 # Google AdSense
-# ads.txt file for apps.setlog.net
-# Replace YOUR_PUBLISHER_ID with your actual AdSense publisher ID (e.g., pub-0000000000000000)
-# You can find your publisher ID in your AdSense account under Account > Settings
+# ads.txt file for apps.setlog.net and setlog.net
+# Publisher ID: pub-6641985249796016
 
-google.com, YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
-
-# Instructions:
-# 1. Log in to your Google AdSense account
-# 2. Go to Account > Settings
-# 3. Find your Publisher ID (format: pub-XXXXXXXXXXXXXXXX)
-# 4. Replace YOUR_PUBLISHER_ID above with your actual Publisher ID
-# 5. Remove these instruction comments before deploying
-# 6. Upload this file to the root directory of your website
-# 7. Verify at https://adstxt.guru/ or https://adstxt.com/
+google.com, pub-6641985249796016, DIRECT, f08c47fec0942fa0
