@@ -13,7 +13,7 @@ const translations = {
         'onesync-desc': '크로스플랫폼 파일 및 텍스트 공유',
         'onesync-feature-1': 'iOS, Android 간 파일 공유',
         'onesync-feature-2': '텍스트 클립보드 실시간 동기화',
-        'onesync-feature-3': 'WiFi Direct로 빠른 전송',
+        'onesync-feature-3': '보안 클라우드 스토리지로 안전한 전송',
         'onesync-feature-4': '별도 계정 없이 간편 사용'
     },
     en: {
@@ -27,7 +27,7 @@ const translations = {
         'onesync-desc': 'Cross-platform File & Text Sharing',
         'onesync-feature-1': 'File sharing between iOS and Android',
         'onesync-feature-2': 'Real-time clipboard text sync',
-        'onesync-feature-3': 'Fast transfer via WiFi Direct',
+        'onesync-feature-3': 'Secure transfer with cloud storage',
         'onesync-feature-4': 'Easy to use without account'
     }
 };
