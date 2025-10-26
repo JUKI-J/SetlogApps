@@ -14,7 +14,13 @@ const translations = {
         'onesync-feature-1': 'iOS, Android 간 파일 공유',
         'onesync-feature-2': '텍스트 클립보드 실시간 동기화',
         'onesync-feature-3': '보안 클라우드 스토리지로 안전한 전송',
-        'onesync-feature-4': '별도 계정 없이 간편 사용'
+        'onesync-feature-4': '별도 계정 없이 간편 사용',
+        'claudeminer-name': 'ClaudeMiner',
+        'claudeminer-desc': 'Claude Code 세션 시각 모니터',
+        'claudeminer-feature-1': '⛏️ 3가지 마이너 상태 (작업중, 휴식, 좀비)',
+        'claudeminer-feature-2': '🔢 프로세스 ID 표시',
+        'claudeminer-feature-3': '🔔 작업 완료 알림 (macOS)',
+        'claudeminer-feature-4': '⚡ 경량 (약 20MB RAM 사용)'
     },
     en: {
         'multagi-name': 'Multagi',
@@ -28,7 +34,13 @@ const translations = {
         'onesync-feature-1': 'File sharing between iOS and Android',
         'onesync-feature-2': 'Real-time clipboard text sync',
         'onesync-feature-3': 'Secure transfer with cloud storage',
-        'onesync-feature-4': 'Easy to use without account'
+        'onesync-feature-4': 'Easy to use without account',
+        'claudeminer-name': 'ClaudeMiner',
+        'claudeminer-desc': 'Visual Process Monitor for Claude Code',
+        'claudeminer-feature-1': '⛏️ 3 Miner States (Working, Resting, Zombie)',
+        'claudeminer-feature-2': '🔢 Process ID Display',
+        'claudeminer-feature-3': '🔔 Task Completion Notifications (macOS)',
+        'claudeminer-feature-4': '⚡ Lightweight (~20MB RAM)'
     }
 };
 
