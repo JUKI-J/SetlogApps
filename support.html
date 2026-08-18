@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SETLOG — Support / 지원</title>
+<meta name="description" content="Support hub for SETLOG apps — Charcoal Player, Multagi, OneSync, ClaudeMiner, LapLync, LottoTown, TimerLync. Questions, bug reports, and feature requests.">
+<!-- 2026-08-18: charcoalplay/infrastructure/site/support.html 에서 SetlogApps(Cloudflare Pages)로 이관 — 이 파일이 정본.
+     SETLOG 범용 지원 페이지(오너 2026-07-24 개편 + 디자인 적용).
+     앱 로스터·개인정보 링크 출처 = SetlogApps 랜딩 + github.com/JUKI-J/privacy-policy.
+     문의 = Tally 폼 단일 채널(앱 내 AppLinks.feedback 과 동일).
+     디자인: Charcoal Player 브랜드(Ember Waveform·amber #E8843C = CharcoalTheme.amberAccent)를 시그니처로,
+     엄격 CSP 준수 — 외부 리소스 0·스크립트 0·인라인 CSS만. 다크/라이트 = prefers-color-scheme 자동. -->
+<style>
+  :root {
+    --ember: #E8843C;
+    --ember-deep: #C2561F;
+    --bg: #F3F1EE;
+    --card: #FFFFFF;
+    --text: #201C18;
+    --muted: #6B655D;
+    --line: rgba(0,0,0,.09);
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131110;
+      --card: #1C1917;
+      --text: #EDEAE6;
+      --muted: #A39D94;
+      --line: rgba(255,255,255,.08);
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: var(--sans); line-height: 1.65;
+    max-width: 720px; margin: 0 auto; padding: 28px 20px 64px;
+  }
+  a { color: var(--ember-deep); text-decoration: none; }
+  @media (prefers-color-scheme: dark) { a { color: var(--ember); } }
+  a:hover { text-decoration: underline; }
+  a:focus-visible, summary:focus-visible, .cta:focus-visible {
+    outline: 2px solid var(--ember); outline-offset: 3px; border-radius: 2px;
+  }
+
+  /* ── 상단 바: 워드마크(모노 = "log") ───────────────────────── */
+  header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 40px; }
+  .wordmark { font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: .28em; color: var(--text); }
+  .wordmark b { color: var(--ember); font-weight: 700; }
+  header a { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+  /* ── 시그니처: Ember Waveform (Charcoal Player 로고 모티프) ── */
+  .wave { display: flex; align-items: flex-end; gap: 3px; height: 56px; margin: 0 0 28px; }
+  .wave i {
+    flex: 1; height: calc(var(--h) * 100%); border-radius: 2px 2px 0 0;
+    background: linear-gradient(to top, var(--ember-deep), var(--ember));
+    opacity: .9; transform-origin: bottom;
+    animation: breathe 3.4s ease-in-out calc(var(--d) * 1s) infinite alternate;
+  }
+  @keyframes breathe { from { transform: scaleY(.92); } to { transform: scaleY(1.04); } }
+  @media (prefers-reduced-motion: reduce) { .wave i { animation: none; } }
+
+  h1 { font-size: 40px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .sub { color: var(--muted); margin: 10px 0 0; font-size: 17px; }
+  .roster { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; white-space: nowrap;
+  }
+  .chip.now { color: var(--ember); border-color: var(--ember); }
+
+  /* ── 섹션 공통: 모노 아이브로 ─────────────────────────────── */
+  section { margin-top: 48px; }
+  .eyebrow {
+    font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 14px;
+  }
+  .eyebrow::before { content: "— "; color: var(--ember); }
+
+  /* ── 문의 카드 ────────────────────────────────────────────── */
+  .contact {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px;
+  }
+  .contact p { flex: 1 1 300px; font-size: 15px; }
+  .contact p small { display: block; color: var(--muted); margin-top: 6px; font-size: 14px; }
+  .cta {
+    display: inline-block; background: linear-gradient(135deg, var(--ember), var(--ember-deep));
+    color: #fff; font-weight: 700; font-size: 15px; padding: 12px 22px; border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(232, 132, 60, .35);
+  }
+  .cta:hover { text-decoration: none; filter: brightness(1.06); }
+
+  /* ── FAQ 아코디언 (JS 없이 details) ───────────────────────── */
+  details {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 0 18px; margin-bottom: 10px;
+  }
+  summary {
+    cursor: pointer; list-style: none; font-weight: 600; font-size: 15px;
+    padding: 14px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-family: var(--mono); color: var(--ember); font-size: 17px; flex-shrink: 0; }
+  details[open] summary::after { content: "−"; }
+  details div { padding: 0 0 16px; border-top: 1px solid var(--line); }
+  details p { font-size: 14.5px; margin-top: 12px; }
+  details p.ko { color: var(--muted); }
+
+  /* ── 개인정보 링크 ────────────────────────────────────────── */
+  .privacy { background: var(--card); border: 1px solid var(--line); border-radius: 12px; }
+  .privacy div {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;
+    gap: 4px 16px; padding: 12px 18px; border-top: 1px solid var(--line); font-size: 14.5px;
+  }
+  .privacy div:first-child { border-top: none; }
+  .privacy span { font-weight: 600; }
+  .privacy small { font-family: var(--mono); font-size: 12.5px; }
+  .privacy small a + a::before { content: "· "; color: var(--muted); }
+
+  footer {
+    margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+    font-family: var(--mono); font-size: 12px; color: var(--muted);
+  }
+  @media (max-width: 480px) { h1 { font-size: 32px; } .wave { height: 44px; } }
+</style>
+</head>
+<body>
+<header>
+  <span class="wordmark">SET<b>LOG</b></span>
+  <a href="https://setlog.net/">setlog.net →</a>
+</header>
+
+<div class="wave" aria-hidden="true">
+  <i style="--h:.16;--d:0"></i><i style="--h:.3;--d:.2"></i><i style="--h:.22;--d:.4"></i><i style="--h:.48;--d:.1"></i>
+  <i style="--h:.4;--d:.5"></i><i style="--h:.66;--d:.3"></i><i style="--h:.54;--d:.7"></i><i style="--h:.8;--d:.2"></i>
+  <i style="--h:.62;--d:.6"></i><i style="--h:.92;--d:.4"></i><i style="--h:.74;--d:.8"></i><i style="--h:1;--d:.1"></i>
+  <i style="--h:.82;--d:.5"></i><i style="--h:.64;--d:.9"></i><i style="--h:.86;--d:.3"></i><i style="--h:.56;--d:.6"></i>
+  <i style="--h:.72;--d:.2"></i><i style="--h:.44;--d:.7"></i><i style="--h:.6;--d:.4"></i><i style="--h:.36;--d:.8"></i>
+  <i style="--h:.5;--d:.1"></i><i style="--h:.28;--d:.5"></i><i style="--h:.42;--d:.9"></i><i style="--h:.22;--d:.3"></i>
+  <i style="--h:.34;--d:.6"></i><i style="--h:.18;--d:.2"></i><i style="--h:.28;--d:.7"></i><i style="--h:.14;--d:.4"></i>
+  <i style="--h:.24;--d:.8"></i><i style="--h:.32;--d:.1"></i><i style="--h:.44;--d:.5"></i><i style="--h:.38;--d:.9"></i>
+  <i style="--h:.54;--d:.3"></i><i style="--h:.48;--d:.6"></i><i style="--h:.62;--d:.2"></i><i style="--h:.4;--d:.7"></i>
+  <i style="--h:.3;--d:.4"></i><i style="--h:.24;--d:.8"></i><i style="--h:.18;--d:.5"></i><i style="--h:.12;--d:.9"></i>
+</div>
+
+<h1>Support</h1>
+<p class="sub">Questions, bug reports, feature requests — we read every submission.<br>질문·버그 신고·기능 제안, 모든 문의를 확인하고 답변드립니다.</p>
+
+<div class="roster">
+  <span class="chip">Charcoal Player · macOS</span>
+  <span class="chip">Multagi 물타기</span>
+  <span class="chip">OneSync</span>
+  <span class="chip">ClaudeMiner</span>
+  <span class="chip">LapLync</span>
+  <span class="chip">LottoTown 우리동네로또</span>
+  <span class="chip">TimerLync</span>
+</div>
+
+<section>
+  <p class="eyebrow">Contact · 문의</p>
+  <div class="contact">
+    <p>For any of our apps, use the contact form. Please include the app name, app version, and your OS version.
+      <small>어느 앱이든 문의 폼으로 보내 주세요. 앱 이름·앱 버전·OS 버전을 함께 적어 주시면 빠르게 확인할 수 있습니다.</small></p>
+    <a class="cta" href="https://tally.so/r/nrxJXo">Open contact form · 문의 폼 열기</a>
+  </div>
+</section>
+
+<section>
+  <p class="eyebrow">FAQ · Charcoal Player (macOS)</p>
+
+  <details>
+    <summary>Why does the app ask for folder access? · 폴더 접근 권한을 왜 요청하나요?</summary>
+    <div>
+      <p>To play your music, the app needs permission to read the folder you choose. It saves a secure bookmark (not a copy of your files) so it can reopen the same library next launch. It never moves, uploads, or modifies your files.</p>
+      <p class="ko">음악 재생을 위해 선택한 폴더를 읽을 권한이 필요합니다. 폴더의 보안 북마크(파일 사본 아님)를 저장해 다음 실행 때 다시 묻지 않고 엽니다. 파일을 이동·업로드·수정하지 않습니다.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>My library looks empty, or a folder shows "offline." · 라이브러리가 비어 보이거나 폴더가 '오프라인'입니다.</summary>
+    <div>
+      <p>The drive or folder isn't connected right now, or macOS needs you to re-confirm access. Reconnect the drive or use the Reconnect button on the source. Your library entries are preserved — nothing is deleted automatically.</p>
+      <p class="ko">드라이브/폴더가 연결돼 있지 않거나 macOS가 접근 재확인을 요구하는 경우입니다. 드라이브를 다시 연결하거나 소스의 재연결 버튼을 사용하세요. 라이브러리 항목은 보존됩니다.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How does sound separation work? · 소리 분해는 어떻게 동작하나요?</summary>
+    <div>
+      <p>Music is split into instrument/vocal lanes and voice recordings into per-speaker segments — entirely on your Mac. The models are downloaded once (with your consent) and results depend on the source material.</p>
+      <p class="ko">음악은 악기/보컬 레인으로, 음성은 화자별 구간으로 분해되며 전 과정이 Mac 안에서 실행됩니다. 모델은 동의 후 1회 다운로드되며 결과 품질은 원본에 따라 달라질 수 있습니다.</p>
+    </div>
+  </details>
+</section>
+
+<section>
+  <p class="eyebrow">Privacy · 개인정보처리방침</p>
+  <div class="privacy">
+    <div><span>Charcoal Player</span><small><a href="https://juki-j.github.io/privacy-policy/charcoalplayer-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/charcoalplayer-kr.html">한국어</a></small></div>
+    <div><span>LapLync</span><small><a href="https://juki-j.github.io/privacy-policy/laplync-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/laplync-kr.html">한국어</a></small></div>
+    <div><span>LottoTown 우리동네로또</span><small><a href="https://juki-j.github.io/privacy-policy/lottotown-kr.html">한국어</a></small></div>
+    <div><span>OneSync</span><small><a href="https://juki-j.github.io/privacy-policy/onesync-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/onesync-kr.html">한국어</a></small></div>
+    <div><span>TimerLync</span><small><a href="https://juki-j.github.io/privacy-policy/timerlync-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/timerlync-kr.html">한국어</a></small></div>
+    <div><span>Other apps · 그 외 앱</span><small><a href="https://setlog.net/privacy">setlog.net/privacy</a></small></div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 SETLOG</span>
+  <a href="https://setlog.net/">All apps · 전체 앱 보기</a>
+</footer>
+</body>
+</html>
