@@ -1,6 +1,6 @@
 # Setlog Apps - 앱 소개 웹사이트
 
-물타기와 OneSync 앱을 소개하는 정적 웹페이지입니다.
+Setlog 앱(물타기, OneSync, ClaudeMiner, Charcoal Player, TimerLync, LapLync, 우리동네로또)을 소개하는 정적 웹페이지입니다.
 
 ## 📦 프로젝트 구조
 
@@ -187,6 +187,22 @@ open http://localhost:8000
 2. **OneSync**
    - Google Play: https://play.google.com/store/apps/details?id=setlog.onesync.android
    - App Store: https://apps.apple.com/kr/app/onesync-file-share/id6753986352
+
+3. **ClaudeMiner**
+   - GitHub: https://github.com/JUKI-J/claudeminer
+
+4. **Charcoal Player** (macOS)
+   - Mac App Store: https://apps.apple.com/kr/app/charcoal-player/id1212179275?mt=12
+
+5. **TimerLync**
+   - App Store: https://apps.apple.com/kr/app/timerlync-sync/id6795109124
+
+6. **LapLync**
+   - App Store: https://apps.apple.com/kr/app/laplync/id6793554365
+
+7. **우리동네로또 (LottoTown)**
+   - App Store: https://apps.apple.com/kr/app/id6755963369
+   - Google Play: https://play.google.com/store/apps/details?id=net.setlog.lottotown
 
 ## 📄 라이선스
 
