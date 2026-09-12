@@ -68,7 +68,9 @@
   .chip {
     font-family: var(--mono); font-size: 12px; color: var(--muted);
     border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; white-space: nowrap;
+    transition: color .2s, border-color .2s;
   }
+  .chip:hover { color: var(--ember); border-color: var(--ember); text-decoration: none; }
   .chip.now { color: var(--ember); border-color: var(--ember); }
 
   /* ── 섹션 공통: 모노 아이브로 ─────────────────────────────── */
@@ -151,21 +153,21 @@
 <p class="sub">Questions, bug reports, feature requests — we read every submission.<br>질문·버그 신고·기능 제안, 모든 문의를 확인하고 답변드립니다.</p>
 
 <div class="roster">
-  <span class="chip">Charcoal Player · macOS</span>
-  <span class="chip">Multagi 물타기</span>
-  <span class="chip">OneSync</span>
-  <span class="chip">ClaudeMiner</span>
-  <span class="chip">LapLync</span>
-  <span class="chip">LottoTown 우리동네로또</span>
-  <span class="chip">TimerLync</span>
-  <span class="chip">Zipda · 압축·해제</span>
+  <a class="chip" href="https://apps.apple.com/kr/app/charcoal-player/id1212179275?mt=12" target="_blank" rel="noopener noreferrer">Charcoal Player · macOS</a>
+  <a class="chip" href="https://apps.apple.com/kr/app/%EB%AC%BC%ED%83%80%EA%B8%B0/id1521767089" target="_blank" rel="noopener noreferrer">Multagi 물타기</a>
+  <a class="chip" href="https://apps.apple.com/kr/app/onesync-file-share/id6753986352" target="_blank" rel="noopener noreferrer">OneSync</a>
+  <a class="chip" href="https://github.com/JUKI-J/claudeminer" target="_blank" rel="noopener noreferrer">ClaudeMiner</a>
+  <a class="chip" href="https://apps.apple.com/kr/app/laplync/id6793554365" target="_blank" rel="noopener noreferrer">LapLync</a>
+  <a class="chip" href="https://apps.apple.com/kr/app/%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4%EB%A1%9C%EB%98%90-%EB%B2%88%ED%98%B8%EC%B6%94%EC%B2%9C/id6755963369" target="_blank" rel="noopener noreferrer">LottoTown 우리동네로또</a>
+  <a class="chip" href="https://apps.apple.com/kr/app/timerlync-sync/id6795109124" target="_blank" rel="noopener noreferrer">TimerLync</a>
+  <a class="chip" href="https://apps.apple.com/app/id6804219752" target="_blank" rel="noopener noreferrer">Zipda · 압축·해제</a>
 </div>
 
 <section>
   <p class="eyebrow">Contact · 문의</p>
   <div class="contact">
-    <p>For any of our apps, use the contact form. Please include the app name, app version, and your OS version.
-      <small>어느 앱이든 문의 폼으로 보내 주세요. 앱 이름·앱 버전·OS 버전을 함께 적어 주시면 빠르게 확인할 수 있습니다.</small></p>
+    <p>For any of our apps, use the contact form or email us. Please include the app name, app version, and your OS version.
+      <small>어느 앱이든 문의 폼 또는 이메일(<a href="mailto:support@setlog.net">support@setlog.net</a>)로 보내 주세요. 앱 이름·앱 버전·OS 버전을 함께 적어 주시면 빠르게 확인할 수 있습니다.</small></p>
     <a class="cta" href="https://tally.so/r/nrxJXo">Open contact form · 문의 폼 열기</a>
   </div>
 </section>
@@ -213,7 +215,12 @@
 
 <footer>
   <span>© 2026 SETLOG</span>
-  <a href="https://setlog.net/">All apps · 전체 앱 보기</a>
+  <div style="display:flex; gap:12px;">
+    <a href="https://setlog.net/">Apps</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </div>
 </footer>
 </body>
 </html>
