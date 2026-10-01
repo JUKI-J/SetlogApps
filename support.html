@@ -4,13 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SETLOG — Support / 지원</title>
-<meta name="description" content="Support hub for SETLOG apps — Charcoal Player, slplayer, IntervalRunner, Multagi, OneSync, ClaudeMiner, LapLync, LottoTown, TimerLync, Zipda. Questions, bug reports, and feature requests.">
+<meta name="description" content="Support hub for SETLOG apps — Charcoal Player, slplayer, IntervalRunner, Multagi, OneSync, ClaudeMiner, LapLync, LottoTown, LunchLog(급식로그), TimerLync, Zipda. Questions, bug reports, and feature requests.">
 <!-- 2026-08-18: charcoalplay/infrastructure/site/support.html 에서 SetlogApps(Cloudflare Pages)로 이관 — 이 파일이 정본.
      SETLOG 범용 지원 페이지(오너 2026-07-24 개편 + 디자인 적용).
      앱 로스터·개인정보 링크 출처 = SetlogApps 랜딩 + github.com/JUKI-J/privacy-policy.
      문의 = Tally 폼 단일 채널(앱 내 AppLinks.feedback 과 동일).
      디자인: Charcoal Player 브랜드(Ember Waveform·amber #E8843C = CharcoalTheme.amberAccent)를 시그니처로,
-     엄격 CSP 준수 — 외부 리소스 0·스크립트 0·인라인 CSS만. 다크/라이트 = prefers-color-scheme 자동. -->
+     엄격 CSP 준수 — 외부 리소스 0·인라인 CSS만. 다크/라이트 = prefers-color-scheme 자동.
+     스크립트: 동일 출처 /js/support.js 1개(인라인 스크립트 없음) — 앱 진입 쿼리(?app=lunchlog&type=contact|ad&v=&os=) 처리.
+       JS가 꺼져도 모든 섹션은 정적으로 보인다. 응답 보장 문구는 급식로그 문맥에서만 data-ctx로 교체(급식로그 R7).
+     2026-10-02: 급식로그(LunchLog) 섹션 추가 — #lunchlog / 광고 신고 #lunchlog-ad. -->
 <style>
   :root {
     --ember: #E8843C;
@@ -122,6 +125,22 @@
   .privacy small { font-family: var(--mono); font-size: 12.5px; }
   .privacy small a + a::before { content: "· "; color: var(--muted); }
 
+  /* ── 앱 섹션: 소개 카드·진입 강조 (급식로그) ────────────────── */
+  .app-intro { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; margin-bottom: 12px; }
+  .app-intro p { font-size: 15px; }
+  .app-intro p + p { margin-top: 8px; }
+  .app-intro p.note { color: var(--muted); font-size: 13.5px; }
+  .contact.app-contact { margin-bottom: 12px; }
+  .contact.app-contact ul { list-style: none; margin-top: 8px; }
+  .contact.app-contact li { color: var(--muted); font-size: 14px; padding-left: 14px; position: relative; }
+  .contact.app-contact li::before { content: "·"; position: absolute; left: 2px; color: var(--ember); }
+  details ul { margin: 8px 0 0 18px; font-size: 14.5px; }
+  details li + li { margin-top: 4px; }
+  details p.os { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .06em; margin-top: 14px; }
+  section, details { scroll-margin-top: 16px; }
+  section.focus > .eyebrow { color: var(--ember); }
+  section.focus .app-intro, details.focus { border-color: var(--ember); box-shadow: 0 0 0 1px var(--ember); }
+
   footer {
     margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line);
     display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
@@ -129,6 +148,7 @@
   }
   @media (max-width: 480px) { h1 { font-size: 32px; } .wave { height: 44px; } }
 </style>
+<script src="/js/support.js" defer></script>
 </head>
 <body>
 <header>
@@ -150,7 +170,8 @@
 </div>
 
 <h1>Support</h1>
-<p class="sub">Questions, bug reports, feature requests — we read every submission.<br>질문·버그 신고·기능 제안, 모든 문의를 확인하고 답변드립니다.</p>
+<p class="sub" data-ctx="default">Questions, bug reports, feature requests — we read every submission.<br>질문·버그 신고·기능 제안, 모든 문의를 확인하고 답변드립니다.</p>
+<p class="sub" data-ctx="lunchlog" lang="ko" hidden>급식로그 문의·광고 신고를 받는 곳이에요.<br>혼자 운영하는 앱이라 답변이 늦거나 어려울 수 있어요.</p>
 
 <div class="roster">
   <a class="chip" href="https://apps.apple.com/kr/app/charcoal-player/id1212179275?mt=12" target="_blank" rel="noopener noreferrer">Charcoal Player · macOS</a>
@@ -161,6 +182,7 @@
   <a class="chip" href="https://github.com/JUKI-J/claudeminer" target="_blank" rel="noopener noreferrer">ClaudeMiner</a>
   <a class="chip" href="https://apps.apple.com/kr/app/laplync/id6793554365" target="_blank" rel="noopener noreferrer">LapLync</a>
   <a class="chip" href="https://apps.apple.com/kr/app/%EC%9A%B0%EB%A6%AC%EB%8F%99%EB%84%A4%EB%A1%9C%EB%98%90-%EB%B2%88%ED%98%B8%EC%B6%94%EC%B2%9C/id6755963369" target="_blank" rel="noopener noreferrer">LottoTown 우리동네로또</a>
+  <a class="chip" href="#lunchlog">급식로그 · iPhone·Android</a>
   <a class="chip" href="https://apps.apple.com/kr/app/timerlync-sync/id6795109124" target="_blank" rel="noopener noreferrer">TimerLync</a>
   <a class="chip" href="https://apps.apple.com/app/id6804219752" target="_blank" rel="noopener noreferrer">Zipda · 압축·해제</a>
 </div>
@@ -202,6 +224,105 @@
   </details>
 </section>
 
+<section id="lunchlog" lang="ko">
+  <p class="eyebrow">급식로그 · LunchLog (iPhone·Android)</p>
+
+  <div class="app-intro">
+    <p><strong>급식로그</strong>는 로그인 없이 우리 학교 급식을 위젯으로 매일 보고, 먹은 급식을 기록하는 앱이에요.</p>
+    <p class="note">급식 정보 출처: 나이스 교육정보 개방 포털(open.neis.go.kr). 급식로그는 교육부·한국교육학술정보원(KERIS)·각 학교와 관계없는 개인 개발 앱이에요.</p>
+  </div>
+
+  <div class="contact app-contact">
+    <p>급식로그 문의와 광고 신고는 아래 문의 폼 하나로 받아요. 앱 버전·기기(iPhone/Android)를 함께 적어 주세요.
+      <small>혼자 운영하는 앱이라 답변이 늦거나 어려울 수 있어요.</small></p>
+    <ul>
+      <li>이메일은 선택이에요. 답장을 받고 싶을 때만 적어 주세요.</li>
+      <li>만 14세 미만이라면 보호자와 함께 보내 주세요.</li>
+      <li>이름·학교·알레르기 같은 정보는 적지 않아도 돼요.</li>
+    </ul>
+    <a class="cta" id="lunchlog-cta" href="https://tally.so/r/nrxJXo">문의 폼 열기</a>
+  </div>
+
+  <details>
+    <summary>학교가 안 보여요</summary>
+    <div>
+      <p>학교 목록은 나이스 학교 정보로 매주 업데이트돼요. 학교 이름 일부만 입력해 보고, 그래도 없으면 문의 폼으로 알려 주세요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>급식이 안 나와요</summary>
+    <div>
+      <p>앱은 이유를 세 가지로 나눠 보여 드려요.</p>
+      <ul>
+        <li><strong>급식이 없는 날</strong> — 주말·공휴일·방학·재량휴업일처럼 급식이 없는 날이에요.</li>
+        <li><strong>학교가 아직 식단을 등록하지 않음</strong> — 학교가 나이스에 식단을 올리면 앱에도 나와요.</li>
+        <li><strong>일시적인 오류</strong> — 연결 상태를 확인하고 잠시 뒤 다시 열거나 새로고침해 주세요.</li>
+      </ul>
+      <p>급식 화면의 "최근 급식 보기"로 지난 급식을 볼 수 있어요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>다른 학교가 보여요</summary>
+    <div>
+      <p>학교 정보가 업데이트됐을 수 있어요. 앱의 설정 › 학교에서 학교를 다시 선택하거나 문의 폼으로 알려 주세요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>알레르기 정보</summary>
+    <div>
+      <p>학교가 공개한 알레르기 번호를 그대로 보여 드려요. 알레르기는 학교 안내와 영양(교)사 확인이 우선이에요.</p>
+      <p>내가 고른 알레르기 설정은 휴대폰 안에만 저장돼요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>알림이 안 와요</summary>
+    <div>
+      <p>기기 설정에서 급식로그 알림이 켜져 있는지 확인해 주세요.</p>
+      <p class="os">ANDROID · 삼성 기기</p>
+      <p>설정 › 배터리 › 백그라운드 사용 제한에서 급식로그를 절전 예외 앱으로 추가해 주세요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>위젯은 어떻게 추가하나요? 위젯이 안 바뀌어요</summary>
+    <div>
+      <p class="os">IPHONE · 홈 화면</p>
+      <p>홈 화면 빈 곳을 길게 눌러요 › 왼쪽 위 편집 › 위젯 추가를 눌러요 › 급식로그를 찾아 크기를 고르고 추가해요.</p>
+      <p class="os">IPHONE · 잠금 화면</p>
+      <p>잠금 화면을 길게 눌러 사용자화를 눌러요 › 잠금 화면을 고르고 위젯 칸을 눌러요 › 급식로그 위젯을 골라 추가해요.</p>
+      <p class="os">ANDROID · 홈 화면</p>
+      <p>홈 화면 빈 곳을 길게 눌러요 › 위젯을 누르고 급식로그를 찾아요 › 원하는 크기를 길게 눌러 홈 화면에 놓아요.</p>
+      <p>위젯은 기기가 정한 때에 새로 고쳐져요. 저전력·절전 모드에서는 늦어질 수 있어요. 앱을 한 번 열면 바로 새로 고쳐져요.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>휴대폰을 바꾸면 기록도 옮겨지나요?</summary>
+    <div>
+      <p>아니요. 평가 기록과 설정은 이 휴대폰 안에만 있고 백업되지 않아요. 앱을 지우거나 휴대폰을 바꾸면 사라지고 되살릴 수 없어요.</p>
+    </div>
+  </details>
+
+  <details id="lunchlog-ad">
+    <summary>부적절한 광고를 신고하고 싶어요</summary>
+    <div>
+      <p>본 광고의 광고주나 내용을 적어 주면 차단할 수 있어요. 위 문의 폼에 아래 내용을 적어 보내 주세요.</p>
+      <ul>
+        <li>광고를 본 때 — 오늘 / 어제 / 그 전</li>
+        <li>광고주 이름이나 광고 내용(기억나는 만큼)</li>
+        <li>앱 버전과 기기(iPhone/Android)</li>
+      </ul>
+      <p>이메일은 선택이에요. 만 14세 미만이라면 보호자와 함께 보내 주세요.</p>
+    </div>
+  </details>
+
+  <p class="sub" style="font-size:14px; margin-top:14px;"><a href="https://juki-j.github.io/privacy-policy/lunchlog-kr.html">급식로그 개인정보처리방침 →</a></p>
+</section>
+
 <section>
   <p class="eyebrow">Privacy · 개인정보처리방침</p>
   <div class="privacy">
@@ -209,6 +330,7 @@
     <div><span>IntervalRunner</span><small><a href="https://juki-j.github.io/privacy-policy/intervalrunner-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/intervalrunner-kr.html">한국어</a></small></div>
     <div><span>LapLync</span><small><a href="https://juki-j.github.io/privacy-policy/laplync-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/laplync-kr.html">한국어</a></small></div>
     <div><span>LottoTown 우리동네로또</span><small><a href="https://juki-j.github.io/privacy-policy/lottotown-kr.html">한국어</a></small></div>
+    <div><span>LunchLog 급식로그</span><small><a href="https://juki-j.github.io/privacy-policy/lunchlog-kr.html">한국어</a></small></div>
     <div><span>OneSync</span><small><a href="https://juki-j.github.io/privacy-policy/onesync-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/onesync-kr.html">한국어</a></small></div>
     <div><span>slplayer</span><small><a href="https://juki-j.github.io/privacy-policy/slplayer-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/slplayer-kr.html">한국어</a></small></div>
     <div><span>TimerLync</span><small><a href="https://juki-j.github.io/privacy-policy/timerlync-en.html">English</a><a href="https://juki-j.github.io/privacy-policy/timerlync-kr.html">한국어</a></small></div>
