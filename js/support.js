@@ -1,7 +1,7 @@
 // ========================================
 // support.html — 앱별 진입 문맥 처리 (현재: 급식로그)
 // 앱이 여는 URL: /support?app=lunchlog&type=contact|ad&v=<ver>&os=<ios|android>
-//  - app=lunchlog → 급식로그 섹션으로 스크롤·강조, 상단 응답 보장 문구를 급식로그 문맥용으로 교체
+//  - app=lunchlog → 급식로그 섹션만 남기고(다른 앱 칩·섹션 숨김) 스크롤·강조, 상단 응답 보장 문구를 급식로그 문맥용으로 교체
 //  - type=ad      → 광고 신고 안내 항목을 펼치고 강조
 //  - 문의 폼 버튼에 app·type·v·os를 붙여 넘긴다(Tally 숨은 필드 — 정의 안 된 키는 폼이 무시)
 // 외부 리소스·추적·저장소 사용 없음. JS가 꺼져 있어도 섹션·안내는 모두 정적으로 보인다.
@@ -39,6 +39,12 @@
         var subs = document.querySelectorAll('[data-ctx]');
         for (var i = 0; i < subs.length; i++) {
             subs[i].hidden = subs[i].getAttribute('data-ctx') !== ctx.app;
+        }
+
+        // 앱 문맥 진입이면 그 앱 섹션만 보인다 — 다른 앱 목록·FAQ·공용 문의를 숨긴다(스토어 지원 URL 심사 대응)
+        var others = document.querySelectorAll('section, .roster');
+        for (var k = 0; k < others.length; k++) {
+            if (others[k] !== section) others[k].hidden = true;
         }
 
         // 문의 폼 버튼에 문맥 전달
