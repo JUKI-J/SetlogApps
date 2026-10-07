@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>slplayer 사용 가이드 | slplayer Guide for Mac — SETLOG</title>
-<meta name="description" content="Mac 동영상 플레이어 slplayer의 MKV·자막(EUC-KR)·이중 자막·싱크·배속 사용법. A guide to formats, subtitles and playback speed.">
+<meta name="description" content="Mac용 동영상 플레이어 slplayer의 MKV 재생, 한글 자막(EUC-KR), 이중 자막, 배속, Pro 기능과 지원 형식의 한계, 문제 해결을 정리했습니다.">
 <link rel="canonical" href="https://setlog.net/guides/slplayer">
-<meta property="og:title" content="slplayer 사용 가이드 | slplayer Guide for Mac — SETLOG"><meta property="og:description" content="Mac 동영상 플레이어 slplayer의 MKV·자막(EUC-KR)·이중 자막·싱크·배속 사용법. A guide to formats, subtitles and playback speed."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/slplayer">
+<meta property="og:title" content="slplayer 사용 가이드 | slplayer Guide for Mac — SETLOG"><meta property="og:description" content="Mac용 동영상 플레이어 slplayer의 MKV 재생, 한글 자막(EUC-KR), 이중 자막, 배속, Pro 기능과 지원 형식의 한계, 문제 해결을 정리했습니다."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/slplayer"><meta property="og:image" content="https://setlog.net/images/guides/slplayer/01.webp"><meta property="og:site_name" content="SETLOG"><meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "slplayer", "applicationCategory": "MultimediaApplication", "operatingSystem": "macOS", "inLanguage": ["ko", "en"], "url": "https://setlog.net/guides/slplayer", "image": "https://setlog.net/images/guides/slplayer/01.webp", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "dateModified": "2026-10-07"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "slplayer 사용 가이드", "description": "Mac용 동영상 플레이어 slplayer의 MKV 재생, 한글 자막(EUC-KR), 이중 자막, 배속, Pro 기능과 지원 형식의 한계, 문제 해결을 정리했습니다.", "inLanguage": "ko", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "image": "https://setlog.net/images/guides/slplayer/01.webp", "mainEntityOfPage": "https://setlog.net/guides/slplayer"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "Windows나 iPhone에서도 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "현재 스토어에 올라온 것은 macOS 버전입니다."}}, {"@type": "Question", "name": "ASS 자막도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "스토어 설명에 명시된 자막 형식은 SRT, VTT, SMI입니다. 그 밖의 형식은 보장하지 않습니다."}}, {"@type": "Question", "name": "가입이 필요한가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 계정 없이 쓸 수 있습니다."}}, {"@type": "Question", "name": "Pro 없이도 충분한가요?", "acceptedAnswer": {"@type": "Answer", "text": "영상 재생과 자막, 배속 같은 기본적인 시청은 무료 범위입니다. 분할 재생이나 A-B 반복이 필요할 때만 Pro를 고려하면 됩니다."}}, {"@type": "Question", "name": "문의는 어디로 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "지원 페이지를 이용하세요."}}, {"@type": "Question", "name": "Pro 체험은 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "처음 7일 동안 결제 정보나 구독 가입 없이 Pro 기능을 체험할 수 있습니다. 체험이 끝나면 Pro 기능은 잠기고 기본 시청 기능은 계속 무료입니다."}}, {"@type": "Question", "name": "한글 자막이 깨져 보이면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "EUC-KR로 저장된 SMI 파일은 자동으로 인식합니다. 그래도 깨지거나 어긋나면 자막 싱크·깨짐 가이드의 원인별 해결법을 확인하세요."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,7 +17,7 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
@@ -23,14 +26,17 @@
   <div class="app-head"><img src="/images/slplayer-icon.png" alt="slplayer icon" width="64" height="64"><div><h1>slplayer 사용 가이드</h1></div></div>
   <p class="sub">slplayer Guide: MKV, subtitles and speed control on the Mac</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG</p>
 
   <section id="ko" lang="ko">
+<nav class="toc" aria-label="목차"><b>목차</b><ol><li><a href="#ko-1">slplayer는 어떤 앱인가</a></li><li><a href="#ko-2">화면으로 미리 보기</a></li><li><a href="#ko-3">지원하는 형식</a></li><li><a href="#ko-4">시작하기</a></li><li><a href="#ko-5">자막 기능 자세히</a></li><li><a href="#ko-6">배속과 이어보기</a></li><li><a href="#ko-7">무료와 Pro의 차이</a></li><li><a href="#ko-8">개인정보</a></li><li><a href="#ko-9">문제 해결</a></li><li><a href="#ko-10">한계와 알려진 이슈</a></li><li><a href="#ko-11">다른 방법과 비교</a></li><li><a href="#ko-faq">자주 묻는 질문</a></li></ol></nav>
 
-<h2>slplayer는 어떤 앱인가</h2>
+
+<h2 id="ko-1">slplayer는 어떤 앱인가</h2>
 <p>slplayer는 Mac용 동영상 플레이어입니다. Mac에서 영상을 보다 보면 QuickTime에서 열리지 않는 MKV 파일, 글자가 깨져 나오는 자막, 소리가 두 가지 언어로 들어 있는데 항상 첫 번째 트랙만 재생되는 에피소드 같은 불편을 만나게 됩니다. slplayer는 이런 상황을 줄이는 데 초점을 둔 앱입니다. 별도의 코덱 팩이나 자체 디코더를 두지 않고 macOS에 내장된 미디어 엔진으로 재생하기 때문에 가볍고 배터리를 덜 쓰는 편이며, HDR 표시나 화면 속 화면(PiP) 같은 부분도 시스템에 맡깁니다. Mac App Store에서 받을 수 있는 macOS 앱입니다.</p>
 <div class="store-links"><a href="https://apps.apple.com/app/id6811089277" target="_blank" rel="noopener noreferrer">Mac App Store</a></div>
 
-<h2>지원하는 형식</h2>
+<h2 id="ko-2">화면으로 미리 보기</h2><p>첫 장이 무료 범위의 기본 재생이고 나머지 세 장은 Pro 기능입니다. 화면 속 작은 영상은 Blender Foundation 등의 CC 라이선스 영상으로, 화면 아래 출처가 적혀 있습니다.</p><div class="shots"><figure class="wide"><img src="/images/guides/slplayer/01.webp" alt="slplayer 재생 창. 왼쪽 사이드바와 MKV 영상 위에 한국어 자막이 표시되고 아래에 재생 조작 막대가 있다. 상단에 "MKV도 자막도, 그냥 열립니다" 문구" width="560" height="350" loading="lazy" decoding="async"><figcaption>재생 화면: MKV 파일과 자막이 별도 설정 없이 열립니다. 스토어용 화면이라 상단에 문구가 들어 있습니다.</figcaption></figure><figure class="wide"><img src="/images/guides/slplayer/02.webp" alt="slplayer 분할 재생. 영상 네 개가 2×2로 나란히 재생되고 Pro 배지와 LOCK 표시가 있다" width="560" height="350" loading="lazy" decoding="async"><figcaption>분할 재생(Pro): 최대 4개 영상을 나란히 재생하고 LOCK으로 재생·정지·건너뛰기를 한 번에 조작합니다.</figcaption></figure><figure class="wide"><img src="/images/guides/slplayer/03.webp" alt="분할 재생 화면 위에 화면 속 화면(PiP) 창이 겹쳐 떠 있는 slplayer. Pro 배지가 있다" width="560" height="350" loading="lazy" decoding="async"><figcaption>PiP(Pro): 분할한 화면을 화면 속 화면으로 띄워 다른 작업과 함께 봅니다.</figcaption></figure><figure class="wide"><img src="/images/guides/slplayer/04.webp" alt="slplayer에서 영상 아래 조작 막대에 1.2배속과 A, B, LOOP, CLEAR 버튼이 활성화된 상태. Pro 배지가 있다" width="560" height="350" loading="lazy" decoding="async"><figcaption>A-B 구간 반복(Pro): 배우는 문장만 골라 반복하고 원하는 배속을 함께 씁니다.</figcaption></figure></div><h2 id="ko-3">지원하는 형식</h2>
 <ul>
 <li><strong>컨테이너</strong>: MKV, MP4, M4V, MOV, MPEG-TS</li>
 <li><strong>영상·음성 코덱</strong>: H.264, HEVC(10bit와 HDR10 포함), AAC, AC-3, E-AC-3, FLAC</li>
@@ -38,7 +44,7 @@
 </ul>
 <p>중요한 한계도 있습니다. slplayer는 Mac이 지원하는 형식만 재생합니다. 오디오를 재생할 수 없는 파일은 영상만 재생되며, 재생이 시작될 때 알림이 표시됩니다. 이미지 형식 자막(블루레이 등에서 흔한 그림 자막)은 표시되지 않고, 열 수 없는 파일은 오류로 알려 줍니다. 모든 파일이 열린다고 기대하기보다 위 목록에 해당하는 파일이 막힘없이 열린다고 이해하시는 것이 정확합니다.</p>
 
-<h2>시작하기</h2>
+<h2 id="ko-4">시작하기</h2>
 <ol>
 <li>앱을 설치하고 실행한 뒤 영상 파일을 창에 끌어다 놓거나, Finder에서 파일을 우클릭해 slplayer로 엽니다. 여러 파일을 한꺼번에 떨어뜨리면 재생목록이 만들어집니다.</li>
 <li>같은 폴더에 영상과 같은 이름의 자막 파일이 있으면 함께 쓸 수 있습니다. 자막을 따로 불러오는 경우에는 재생 중 자막 메뉴에서 파일을 선택하세요.</li>
@@ -46,7 +52,7 @@
 <li>도중에 닫아도 최근 항목에서 다시 열면 보던 곳부터 이어서 재생합니다.</li>
 </ol>
 
-<h2>자막 기능 자세히</h2>
+<h2 id="ko-5">자막 기능 자세히</h2>
 <h3>자막 형식과 한글 인코딩</h3>
 <p>한국어 자막은 오랫동안 EUC-KR(CP949)로 저장된 SMI 파일이 많았고, 이런 파일은 UTF-8만 가정하는 플레이어에서 글자가 깨집니다. slplayer는 EUC-KR을 자동으로 감지합니다. 깨짐의 원인과 해결 방법은 <a href="/guides/subtitle-sync-and-encoding-fixes">자막 싱크·깨짐 문제 해결법</a>에서 별도로 자세히 설명합니다.</p>
 <h3>이중 자막</h3>
@@ -56,10 +62,10 @@
 <h3>자막 모양</h3>
 <p>기본 프리셋을 고르거나, 글꼴·색·외곽선·배경 상자를 미리보기를 보면서 조정할 수 있습니다. 밝은 장면에서 글자가 묻히면 외곽선이나 배경 상자를 늘려 보세요. 자막 커스텀 스타일은 Pro 기능으로 분류되어 있습니다.</p>
 
-<h2>배속과 이어보기</h2>
+<h2 id="ko-6">배속과 이어보기</h2>
 <p>재생 속도는 0.5배에서 2.0배까지 0.1 단위로 바꿀 수 있습니다. 강의나 어학 콘텐츠를 1.2배에서 1.5배로 보거나, 알아듣기 어려운 대사를 0.8배로 느리게 들을 때 유용합니다. 모든 조작에 키보드 단축키가 있고 앞뒤 건너뛰기 간격도 0.5초에서 30초 사이에서 정할 수 있습니다. 앱 화면 언어는 12개 언어 중에서 앱 안에서 바꿀 수 있습니다.</p>
 
-<h2>무료와 Pro의 차이</h2>
+<h2 id="ko-7">무료와 Pro의 차이</h2>
 <p>스토어 설명에 따르면 재생은 무료이고, 파일 열기, MKV, 자막, 싱크, 이중 자막, 배속, 오디오 트랙 선택, 전체 화면, 재생목록, 최근 항목은 무료 범위에 포함됩니다. slplayer Pro는 월간 또는 연간 자동 갱신 구독이며 다음과 같은 편의 기능을 더합니다.</p>
 <ul>
 <li>최대 4개 영상을 나란히 재생하는 분할 재생</li>
@@ -69,37 +75,43 @@
 </ul>
 <p>처음 7일 동안은 결제 정보나 구독 가입 없이 Pro 기능을 체험할 수 있다고 안내되어 있습니다. 가격과 조건은 바뀔 수 있으니 스토어 페이지에서 확인하세요.</p>
 
-<h2>개인정보</h2>
+<h2 id="ko-8">개인정보</h2>
 <p>slplayer에는 계정도, 분석도, 광고도 없고 앱이 스스로 네트워크 요청을 하지 않는다고 설명되어 있습니다. 재생하는 파일과 시청 기록은 Mac 밖으로 나가지 않습니다. 자세한 내용은 <a href="/privacy">개인정보 처리방침</a>을 참고하세요.</p>
 
-<h2>문제 해결</h2>
+<h2 id="ko-9">문제 해결</h2>
 <ul>
 <li><strong>파일이 열리지 않습니다</strong>: 컨테이너는 열려도 안쪽 코덱이 Mac에서 지원되지 않으면 재생이 안 될 수 있습니다. 파일 정보를 확인하고 지원 목록과 비교해 보세요.</li>
 <li><strong>소리가 나지 않고 영상만 나옵니다</strong>: 오디오 코덱을 Mac이 재생하지 못하는 경우입니다. 이때는 재생 시작 시 알림이 표시됩니다.</li>
 <li><strong>자막이 보이지 않습니다</strong>: 이미지 형식 자막이거나 자막 트랙이 꺼져 있을 수 있습니다. 설정 카드에서 자막 트랙을 선택했는지 확인하세요.</li>
 <li><strong>자막이 어긋납니다</strong>: 영상과 자막이 서로 다른 판본이라면 싱크 조정만으로 해결되지 않을 수 있습니다. 해결법은 <a href="/guides/subtitle-sync-and-encoding-fixes">자막 싱크 가이드</a>를 보세요.</li>
 </ul>
+<h2 id="ko-10">한계와 알려진 이슈</h2><ul><li><b>macOS 앱만 있습니다.</b> 현재 스토어에 있는 것은 Mac 버전입니다.</li><li><b>Mac이 지원하는 형식만 재생합니다.</b> 자체 디코더를 두지 않고 macOS의 미디어 엔진을 쓰기 때문에 가볍지만, 코덱이 지원되지 않으면 열리지 않거나 소리 없이 영상만 나옵니다.</li><li><b>ASS 자막의 고급 효과는 지원하지 않습니다.</b> 자막은 SRT, VTT, SMI가 명시된 범위이고, 별도 오버레이 방식으로 그리기 때문에 ASS의 고급 타이포그래피와 애니메이션은 구현하지 않았습니다. 그림 형식 자막도 표시되지 않습니다.</li><li><b>Pro는 구독입니다.</b> 7일 무약정 체험이 끝나면 분할 재생, PiP, A-B 반복 같은 Pro 기능은 잠기고 기본 시청 기능은 계속 무료입니다. 가격과 조건은 스토어 페이지가 기준입니다.</li><li><b>자막 어긋남은 싱크로 해결되지 않을 수 있습니다.</b> 영상과 자막이 서로 다른 판본이면 0.1초 단위 조정만으로 맞지 않습니다.</li></ul><h2 id="ko-11">다른 방법과 비교</h2><p>모든 파일을 열어야 한다면 더 넓은 코덱을 자체 지원하는 범용 플레이어가 맞을 수 있고, slplayer는 Mac 내장 엔진 위에서 가볍게 보는 쪽에 초점을 둡니다.</p><div class="tbl-wrap"><table><caption>Mac 동영상 재생 선택지</caption><thead><tr><th>선택지</th><th>강점</th><th>약점</th></tr></thead><tbody><tr><td>slplayer</td><td>MKV와 한글 SMI(EUC-KR) 자막, 이중 자막, 가볍고 배터리 부담이 적음</td><td>Mac 지원 형식 한정, ASS 고급 효과·그림 자막 없음, 일부 기능은 Pro</td></tr><tr><td>QuickTime Player</td><td>기본 설치, 간단함</td><td>MKV 같은 컨테이너가 열리지 않는 경우가 많음</td></tr><tr><td>자체 디코더를 내장한 범용 플레이어</td><td>가장 넓은 형식과 자막 호환</td><td>앱이 크고 전력 소모가 상대적으로 클 수 있음</td></tr></tbody></table></div><p>자막 문제의 원인과 해결은 <a href="/guides/subtitle-sync-and-encoding-fixes">자막 싱크·깨짐 가이드</a>에 따로 정리했습니다.</p>
+<h2 id="ko-faq">자주 묻는 질문</h2>
+<details class="faq"><summary>Windows나 iPhone에서도 쓸 수 있나요?</summary><p>현재 스토어에 올라온 것은 macOS 버전입니다.</p></details>
+<details class="faq"><summary>ASS 자막도 되나요?</summary><p>스토어 설명에 명시된 자막 형식은 SRT, VTT, SMI입니다. 그 밖의 형식은 보장하지 않습니다.</p></details>
+<details class="faq"><summary>가입이 필요한가요?</summary><p>아니요. 계정 없이 쓸 수 있습니다.</p></details>
+<details class="faq"><summary>Pro 없이도 충분한가요?</summary><p>영상 재생과 자막, 배속 같은 기본적인 시청은 무료 범위입니다. 분할 재생이나 A-B 반복이 필요할 때만 Pro를 고려하면 됩니다.</p></details>
+<details class="faq"><summary>문의는 어디로 하나요?</summary><p><a href="/support">지원 페이지</a>를 이용하세요.</p></details>
+<details class="faq"><summary>Pro 체험은 어떻게 되나요?</summary><p>처음 7일 동안 결제 정보나 구독 가입 없이 Pro 기능을 체험할 수 있습니다. 체험이 끝나면 Pro 기능은 잠기고 기본 시청 기능은 계속 무료입니다.</p></details>
+<details class="faq"><summary>한글 자막이 깨져 보이면 어떻게 하나요?</summary><p>EUC-KR로 저장된 SMI 파일은 자동으로 인식합니다. 그래도 깨지거나 어긋나면 자막 싱크·깨짐 가이드의 원인별 해결법을 확인하세요.</p></details>
 
-<h2>자주 묻는 질문</h2>
-<h3>Windows나 iPhone에서도 쓸 수 있나요?</h3>
-<p>현재 스토어에 올라온 것은 macOS 버전입니다.</p>
-<h3>ASS 자막도 되나요?</h3>
-<p>스토어 설명에 명시된 자막 형식은 SRT, VTT, SMI입니다. 그 밖의 형식은 보장하지 않습니다.</p>
-<h3>가입이 필요한가요?</h3>
-<p>아니요. 계정 없이 쓸 수 있습니다.</p>
-<h3>Pro 없이도 충분한가요?</h3>
-<p>영상 재생과 자막, 배속 같은 기본적인 시청은 무료 범위입니다. 분할 재생이나 A-B 반복이 필요할 때만 Pro를 고려하면 됩니다.</p>
-<h3>문의는 어디로 하나요?</h3>
-<p><a href="/support">지원 페이지</a>를 이용하세요.</p>
 
+
+
+
+
+
+  
   </section>
   <section id="en" lang="en" class="lang-ko">
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#en-1">What slplayer is</a></li><li><a href="#en-2">Screens at a glance</a></li><li><a href="#en-3">Supported formats</a></li><li><a href="#en-4">Getting started</a></li><li><a href="#en-5">Subtitle features in detail</a></li><li><a href="#en-6">Speed and resume</a></li><li><a href="#en-7">Free and Pro</a></li><li><a href="#en-8">Privacy</a></li><li><a href="#en-9">Troubleshooting</a></li><li><a href="#en-10">Limits and known issues</a></li><li><a href="#en-11">How it compares</a></li><li><a href="#en-faq">Frequently asked questions</a></li></ol></nav>
 
-<h2>What slplayer is</h2>
+
+<h2 id="en-1">What slplayer is</h2>
 <p>slplayer is a video player for the Mac. Anyone who watches a lot of video on a Mac eventually runs into the same annoyances: an MKV file that QuickTime refuses to open, a subtitle file that shows up as garbled characters, or an episode with two audio languages where only the first track ever plays. slplayer is built to reduce exactly those problems. It uses the media engine built into macOS rather than a codec pack or its own decoder, which keeps it light and gentle on battery, and it leaves things like HDR display and picture-in-picture to the system. It is a macOS app available on the Mac App Store.</p>
 <div class="store-links"><a href="https://apps.apple.com/app/id6811089277" target="_blank" rel="noopener noreferrer">Mac App Store</a></div>
 
-<h2>Supported formats</h2>
+<h2 id="en-2">Screens at a glance</h2><p>The first image shows basic playback in the free range, and the other three are Pro features. The sample videos are Creative Commons films from the Blender Foundation and others, credited at the bottom of each image.</p><div class="shots"><figure class="wide"><img src="/images/guides/slplayer/01.webp" alt="slplayer window with a sidebar, an MKV video with Korean subtitles and a control bar below, under a marketing line saying MKV and subtitles just open" width="560" height="350" loading="lazy" decoding="async"><figcaption>Playback: an MKV file and subtitles open without extra setup. This is a store image, so it carries a marketing line on top.</figcaption></figure><figure class="wide"><img src="/images/guides/slplayer/02.webp" alt="slplayer split playback with four videos in a 2 by 2 grid, a Pro badge and a LOCK indicator" width="560" height="350" loading="lazy" decoding="async"><figcaption>Split playback (Pro): up to four videos side by side, with LOCK to play, pause and skip them together.</figcaption></figure><figure class="wide"><img src="/images/guides/slplayer/03.webp" alt="slplayer split playback with a Picture in Picture window floating on top and a Pro badge" width="560" height="350" loading="lazy" decoding="async"><figcaption>PiP (Pro): float the split view as Picture in Picture while you do other work.</figcaption></figure><figure class="wide"><img src="/images/guides/slplayer/04.webp" alt="slplayer control bar below the video showing 1.2x speed and active A, B, LOOP and CLEAR buttons with a Pro badge" width="560" height="350" loading="lazy" decoding="async"><figcaption>A-B loop (Pro): repeat just the sentence you are studying, at the speed you choose.</figcaption></figure></div><h2 id="en-3">Supported formats</h2>
 <ul>
 <li><strong>Containers</strong>: MKV, MP4, M4V, MOV, MPEG-TS</li>
 <li><strong>Video and audio codecs</strong>: H.264, HEVC (including 10-bit and HDR10), AAC, AC-3, E-AC-3, FLAC</li>
@@ -107,7 +119,7 @@
 </ul>
 <p>There are honest limits. slplayer plays only what the Mac supports. If a file has audio the Mac cannot decode, the video plays without sound and a notice appears when playback starts. Image-based subtitles, such as the picture subtitles common on discs, are not displayed, and a file that cannot be opened is reported as an error. The accurate expectation is not that every file opens, but that files matching the list above open without fuss.</p>
 
-<h2>Getting started</h2>
+<h2 id="en-4">Getting started</h2>
 <ol>
 <li>Install and launch the app, then drag a video onto the window or open it from Finder with slplayer. Dropping several files at once creates a playlist.</li>
 <li>If a subtitle file with the same name sits next to the video, it can be used with it. To load one manually, choose it from the subtitle menu during playback.</li>
@@ -115,7 +127,7 @@
 <li>If you close a video partway through, reopening it from the recent items list resumes where you left off.</li>
 </ol>
 
-<h2>Subtitle features in detail</h2>
+<h2 id="en-5">Subtitle features in detail</h2>
 <h3>Formats and Korean encodings</h3>
 <p>For many years Korean subtitles were distributed as SMI files saved in EUC-KR (CP949), and players that assume UTF-8 show those as garbage. slplayer detects EUC-KR automatically. The causes and fixes for garbled text are covered separately in <a href="/guides/subtitle-sync-and-encoding-fixes">Fixing subtitle sync and garbled-text problems</a>.</p>
 <h3>Dual subtitles</h3>
@@ -125,10 +137,10 @@
 <h3>Subtitle appearance</h3>
 <p>Choose a preset style, or adjust font, color, outline, and background box with a live preview. If text gets lost on bright scenes, increase the outline or add a background box. Custom subtitle styling is listed as a Pro feature.</p>
 
-<h2>Speed and resume</h2>
+<h2 id="en-6">Speed and resume</h2>
 <p>Playback speed runs from 0.5x to 2.0x in 0.1 steps. It is handy for watching lectures or language content at 1.2x to 1.5x, or for slowing a hard-to-catch line to 0.8x. Every action has a keyboard shortcut, and the skip interval can be set between half a second and thirty seconds. The interface language can be switched inside the app among 12 languages.</p>
 
-<h2>Free and Pro</h2>
+<h2 id="en-7">Free and Pro</h2>
 <p>According to the store description, playback is free, and the free scope includes opening files, MKV, subtitles, sync, dual subtitles, speed, audio track selection, full screen, playlists, and recent items. slplayer Pro is an auto-renewing monthly or yearly subscription that adds conveniences such as:</p>
 <ul>
 <li>split playback of up to four videos side by side</li>
@@ -138,35 +150,43 @@
 </ul>
 <p>The listing says all Pro features can be tried free for the first seven days without payment details or a subscription. Prices and terms may change, so check the store page.</p>
 
-<h2>Privacy</h2>
+<h2 id="en-8">Privacy</h2>
 <p>The listing states that slplayer has no accounts, no analytics, and no ads, and that the app makes no network requests of its own. The files you play and your viewing history stay on your Mac. See the <a href="/privacy">privacy policy</a> for details.</p>
 
-<h2>Troubleshooting</h2>
+<h2 id="en-9">Troubleshooting</h2>
 <ul>
 <li><strong>A file will not open</strong>: a container may open while the codec inside is unsupported by the Mac. Check the file details and compare them with the supported list.</li>
 <li><strong>Picture but no sound</strong>: the audio codec cannot be played by the Mac. A notice appears when playback starts.</li>
 <li><strong>Subtitles do not appear</strong>: they may be image-based, or the subtitle track may be off. Check that a subtitle track is selected in the settings card.</li>
 <li><strong>Subtitles drift out of sync</strong>: if the video and the subtitle file come from different releases, a single offset may not fix it. See the <a href="/guides/subtitle-sync-and-encoding-fixes">subtitle sync guide</a>.</li>
 </ul>
+<h2 id="en-10">Limits and known issues</h2><ul><li><b>macOS only.</b> The version in the store is the Mac app.</li><li><b>It plays only what the Mac supports.</b> It uses the macOS media engine instead of its own decoders, which keeps it light, but if a codec is unsupported the file will not open or will play video without sound.</li><li><b>Advanced ASS effects are not supported.</b> The documented subtitle formats are SRT, VTT and SMI, and because subtitles are drawn by a separate overlay, ASS typography and animation are not implemented. Image-based subtitles are not shown either.</li><li><b>Pro is a subscription.</b> After the 7-day no-commitment trial, Pro features such as split playback, PiP and A-B loop lock while basic viewing stays free. Prices and terms are whatever the store page shows.</li><li><b>Subtitle drift may not be fixable by syncing.</b> If the video and subtitles are different releases, 0.1 s adjustments alone will not line them up.</li></ul><h2 id="en-11">How it compares</h2><p>If you must open every file, a general-purpose player with its own broader codecs may fit better; slplayer focuses on light viewing on top of the Mac built-in engine.</p><div class="tbl-wrap"><table><caption>Mac video playback options</caption><thead><tr><th>Option</th><th>Strength</th><th>Weakness</th></tr></thead><tbody><tr><td>slplayer</td><td>MKV and Korean SMI (EUC-KR) subtitles, dual subtitles, light on battery</td><td>Limited to Mac-supported formats, no advanced ASS or image subtitles, some features need Pro</td></tr><tr><td>QuickTime Player</td><td>Preinstalled and simple</td><td>Often cannot open containers like MKV</td></tr><tr><td>A general player with built-in decoders</td><td>Widest format and subtitle compatibility</td><td>Larger app and possibly higher power use</td></tr></tbody></table></div><p>Causes and fixes for subtitle problems are covered separately in the <a href="/guides/subtitle-sync-and-encoding-fixes">subtitle sync and garbled text guide</a>.</p>
+<h2 id="en-faq">Frequently asked questions</h2>
+<details class="faq"><summary>Is there a Windows or iPhone version?</summary><p>The version listed in the store is for macOS.</p></details>
+<details class="faq"><summary>Does it support ASS subtitles?</summary><p>The subtitle formats named in the store description are SRT, VTT, and SMI. Others are not guaranteed.</p></details>
+<details class="faq"><summary>Do I need an account?</summary><p>No. It works without one.</p></details>
+<details class="faq"><summary>Is the free version enough?</summary><p>Everyday watching, with subtitles and speed control, is within the free scope. Consider Pro only if you need split playback or A-B looping.</p></details>
+<details class="faq"><summary>Where do I get help?</summary><p>Use the <a href="/support">support page</a>.</p></details>
+<details class="faq"><summary>What happens with the Pro trial?</summary><p>For the first 7 days you can try Pro features without payment details or a subscription. After the trial, Pro features lock and basic viewing stays free.</p></details>
+<details class="faq"><summary>What if Korean subtitles look garbled?</summary><p>SMI files saved in EUC-KR are detected automatically. If they still look wrong or drift, see the subtitle guide for fixes by cause.</p></details>
 
-<h2>Frequently asked questions</h2>
-<h3>Is there a Windows or iPhone version?</h3>
-<p>The version listed in the store is for macOS.</p>
-<h3>Does it support ASS subtitles?</h3>
-<p>The subtitle formats named in the store description are SRT, VTT, and SMI. Others are not guaranteed.</p>
-<h3>Do I need an account?</h3>
-<p>No. It works without one.</p>
-<h3>Is the free version enough?</h3>
-<p>Everyday watching, with subtitles and speed control, is within the free scope. Consider Pro only if you need split playback or A-B looping.</p>
-<h3>Where do I get help?</h3>
-<p>Use the <a href="/support">support page</a>.</p>
 
+
+
+
+
+
+  
   </section>
 
+<aside class="author-box"><div>
+<p lang="ko"><b>작성: SETLOG</b> — iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 이 글은 광고·제휴 대가 없이 썼고, 언급한 앱은 모두 SETLOG가 만든 앱뿐입니다. 오류나 정정할 내용은 <a href="/contact">Contact</a>로 알려 주세요.</p>
+<p lang="en"><b>By SETLOG</b> — a developer who builds and runs iOS, Android and macOS apps. This article was written without payment or affiliate arrangements, and the only apps it mentions are SETLOG's own. Send corrections through <a href="/contact">Contact</a>.</p>
+</div></aside>
   <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
 <li><a href="/guides/subtitle-sync-and-encoding-fixes">자막 싱크·깨짐 문제 해결법 · Fixing subtitle sync and garbled text</a></li>
 <li><a href="/guides/charcoalplayer">Charcoal Player 사용 가이드 · Charcoal Player Guide</a></li>
-<li><a href="/support">Support · 지원</a></li>
+<li><a href="/guides/">모든 가이드 · All guides</a></li><li><a href="/support">Support · 지원</a></li>
   </ul></div>
 </main>
 

@@ -4,9 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zipda 사용 가이드 | Zipda Guide — SETLOG</title>
-<meta name="description" content="아이폰·아이패드·맥용 압축 해제 앱 Zipda의 포맷, 한글 파일명 복구, 암호 압축, 분할 파일, 무료 한도 안내. A guide to the Zipda archive app.">
+<meta name="description" content="iPhone·iPad·Mac용 압축·해제 앱 Zipda의 사용 순서, 한글 파일명이 깨지는 이유와 복구, 분할·대용량 파일, 무료 횟수 한도와 한계를 정리한 가이드.">
 <link rel="canonical" href="https://setlog.net/guides/zipda">
-<meta property="og:title" content="Zipda 사용 가이드 | Zipda Guide — SETLOG"><meta property="og:description" content="아이폰·아이패드·맥용 압축 해제 앱 Zipda의 포맷, 한글 파일명 복구, 암호 압축, 분할 파일, 무료 한도 안내. A guide to the Zipda archive app."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/zipda">
+<meta property="og:title" content="Zipda 사용 가이드 | Zipda Guide — SETLOG"><meta property="og:description" content="iPhone·iPad·Mac용 압축·해제 앱 Zipda의 사용 순서, 한글 파일명이 깨지는 이유와 복구, 분할·대용량 파일, 무료 횟수 한도와 한계를 정리한 가이드."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/zipda"><meta property="og:image" content="https://setlog.net/images/guides/zipda/01.webp"><meta property="og:site_name" content="SETLOG"><meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipda", "applicationCategory": "UtilitiesApplication", "operatingSystem": "iOS, macOS", "inLanguage": ["ko", "en"], "url": "https://setlog.net/guides/zipda", "image": "https://setlog.net/images/guides/zipda/01.webp", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "dateModified": "2026-10-07"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Zipda 사용 가이드", "description": "iPhone·iPad·Mac용 압축·해제 앱 Zipda의 사용 순서, 한글 파일명이 깨지는 이유와 복구, 분할·대용량 파일, 무료 횟수 한도와 한계를 정리한 가이드.", "inLanguage": "ko", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "image": "https://setlog.net/images/guides/zipda/01.webp", "mainEntityOfPage": "https://setlog.net/guides/zipda"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "아이폰용인가요, 맥용인가요?", "acceptedAnswer": {"@type": "Answer", "text": "둘 다입니다. iOS와 macOS용으로 같은 이름의 앱이 있습니다."}}, {"@type": "Question", "name": "파일이 외부 서버로 올라가나요?", "acceptedAnswer": {"@type": "Answer", "text": "개발 문서상 처리는 기기 안에서 이루어지며 파일이 기기를 떠나지 않는다고 설명되어 있습니다. 세부 내용은 개인정보 처리방침을 보세요."}}, {"@type": "Question", "name": "RAR로 압축할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 해제만 가능합니다."}}, {"@type": "Question", "name": "무료로 몇 번까지 쓰나요?", "acceptedAnswer": {"@type": "Answer", "text": "압축과 해제가 각각 하루 3회입니다."}}, {"@type": "Question", "name": "문의는 어디로 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "지원 페이지를 이용해 주세요."}}, {"@type": "Question", "name": "파일명 복구를 하면 원본 파일이 바뀌나요?", "acceptedAnswer": {"@type": "Answer", "text": "화면 안내에 따르면 파일 내용은 바뀌지 않고 이름만 바뀝니다. 복구는 폴더째 골라 한 번에 실행할 수 있고, 파일명 복구는 무료·유료 모두 횟수 제한이 없다고 개발 문서에 적혀 있습니다."}}, {"@type": "Question", "name": "같은 Wi-Fi 전송은 안전한가요?", "acceptedAnswer": {"@type": "Answer", "text": "파일이 외부 서버를 거치지는 않지만 연결은 암호화되지 않는 로컬 HTTP입니다. 집이나 사무실처럼 믿을 수 있는 네트워크에서만 쓰고, 공용 Wi-Fi에서는 피하세요."}}]}</script>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,7 +18,7 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
@@ -23,13 +27,16 @@
   <div class="app-head"><img src="/images/zipda-icon.png" alt="Zipda icon" width="64" height="64"><div><h1>Zipda 사용 가이드</h1></div></div>
   <p class="sub">Zipda guide: archive and extract on iPhone, iPad and Mac</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 9분</p>
   <div class="store-links"><a href="https://apps.apple.com/app/id6804219752" target="_blank" rel="noopener noreferrer">App Store (iOS · macOS)</a></div>
   <section id="ko" lang="ko">
+<nav class="toc" aria-label="목차"><b>목차</b><ol><li><a href="#ko-1">Zipda는 어떤 앱인가</a></li><li><a href="#ko-2">지원하는 포맷</a></li><li><a href="#ko-3">화면으로 미리 보기</a></li><li><a href="#ko-4">시작하기</a></li><li><a href="#ko-5">한글 파일명은 왜 깨질까</a></li><li><a href="#ko-6">파일명 복구 기능</a></li><li><a href="#ko-7">분할 압축 파일</a></li><li><a href="#ko-8">요금과 한도</a></li><li><a href="#ko-9">어떤 상황에서 특히 유용한가</a></li><li><a href="#ko-10">같은 Wi-Fi로 컴퓨터와 주고받기</a></li><li><a href="#ko-11">실전 팁</a></li><li><a href="#ko-12">문제 해결</a></li><li><a href="#ko-13">한계와 알려진 이슈</a></li><li><a href="#ko-14">다른 방법과 비교</a></li><li><a href="#ko-src">출처 및 더 읽을거리</a></li><li><a href="#ko-faq">자주 묻는 질문</a></li></ol></nav>
 
-<h2>Zipda는 어떤 앱인가</h2>
+
+<h2 id="ko-1">Zipda는 어떤 앱인가</h2>
 <p>Zipda는 아이폰과 아이패드, 그리고 맥에서 쓰는 압축·해제 앱입니다. 같은 앱이 iOS와 macOS 모두에서 나와 있으며, 스토어 페이지는 하나의 링크로 연결됩니다. 개발 문서가 내세우는 승부처는 "한글 파일명이 깨지지 않고, 4GB가 넘어도, 분할되어 있어도 열린다"는 것입니다. 윈도우에서 압축한 파일을 아이폰에서 열었더니 파일명이 외계어로 보이거나, 용량이 큰 압축 파일이 열리지 않는 경험이 있다면 바로 그 문제를 겨냥한 앱입니다.</p>
 
-<h2>지원하는 포맷</h2>
+<h2 id="ko-2">지원하는 포맷</h2>
 <ul>
 <li>해제와 압축: ZIP, 7z 및 tar 계열(tar, tar.gz, tar.bz2, tar.xz)</li>
 <li>해제: RAR, LZH, ALZ</li>
@@ -37,7 +44,8 @@
 </ul>
 <p>일부 포맷의 생성 지원은 앱 버전에 따라 다르므로, 최신 상태는 스토어의 버전 내역과 설명을 확인하세요.</p>
 
-<h2>시작하기</h2>
+<h2 id="ko-3">화면으로 미리 보기</h2><p>아래 여섯 장은 스토어 스크린샷이라 위쪽에 홍보 문구가 있고, 화면은 iPhone 앱입니다. 샘플 파일 이름과 숫자는 시연용입니다.</p><div class="shots"><figure><img src="/images/guides/zipda/01.webp" alt="Zipda 압축 파일 열기 화면. 제주도_가족여행_2026.zip의 내용 목록, 파일명 인코딩이 확실하지 않다는 안내와 변경·확인 버튼, 하단에 전체 해제 버튼과 압축 파일 안 검색창이 보인다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>열어보기: 압축을 풀기 전에 내용 목록을 보고 검색할 수 있습니다. 파일명 인코딩이 확실하지 않으면 안내 배너가 나오고 [변경]으로 인코딩을 고릅니다.</figcaption></figure><figure><img src="/images/guides/zipda/02.webp" alt="Zipda 파일명 복구 화면. 인코딩 CP949(한국어)가 선택되어 있고 깨진 이름 위에 취소선이 그어지고 아래에 견적서_v2.xlsx, 결제내역.xlsx, 계약서_초안.docx 같은 복구된 이름이 보인다. 18개 중 18개 복구 예정" width="560" height="1212" loading="lazy" decoding="async"><figcaption>파일명 복구: 폴더째 골라 한 번에 고칩니다. 위의 취소선 줄이 깨진 이름, 아래가 복구될 이름이고 "파일 내용은 바뀌지 않아요. 이름만 바뀌어요"라고 안내합니다.</figcaption></figure><figure><img src="/images/guides/zipda/03.webp" alt="Zipda 암호 입력 창. 경리부_결산자료.zip에 암호가 필요하다는 안내와 암호 입력란, 취소와 열기 버튼이 있다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>암호가 걸린 압축 파일은 해제 전에 암호를 묻습니다. 입력란 오른쪽 눈 아이콘으로 입력한 글자를 확인할 수 있습니다.</figcaption></figure><figure><img src="/images/guides/zipda/04.webp" alt="Zipda 해제 진행 화면. 사진백업_2019-2026.zip이 62%, 2.8GB 중 4.5GB, 초당 68MB, 2,061개 중 1,284개, 남은 시간 약 25초이고 해제 중에는 화면이 꺼지지 않는다는 안내가 있다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>큰 파일 해제: 용량, 속도, 파일 개수, 남은 시간이 나오며 해제 중에는 화면이 꺼지지 않도록 되어 있습니다. 4GB가 넘는 세트도 이 화면으로 진행합니다.</figcaption></figure><figure><img src="/images/guides/zipda/05.webp" alt="Zipda 압축 만들기 화면. 선택한 항목 7개 목록, 사진 추가와 파일 추가 버튼, 파일 이름 입력, 파일명 호환에서 Windows 호환(권장)과 표준 UTF-8 선택" width="560" height="1212" loading="lazy" decoding="async"><figcaption>압축 만들기: 파일과 사진을 모아 이름을 정하고 Windows 호환 이름 설정을 고릅니다. 호환 설정은 윈도우에서 한글 이름이 깨지지 않게 기록합니다.</figcaption></figure><figure><img src="/images/guides/zipda/06.webp" alt="Zipda 홈 화면. 압축 풀기와 압축 만들기 버튼 아래에 오늘 3회씩 남았다는 표시, 도구로 같은 WiFi로 주고받기, 바로 전체 해제, 파일명 복구, 최근 항목 목록이 있다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>홈 화면: 해제와 압축의 무료 잔여 횟수가 항상 보이고, 같은 WiFi 전송·바로 전체 해제·파일명 복구가 도구로 따로 있습니다.</figcaption></figure></div>
+<h2 id="ko-4">시작하기</h2>
 <h3>1. 설치와 첫 실행</h3>
 <p>아래 스토어 링크에서 앱을 설치합니다. 계정 가입은 필요 없습니다. 개발 문서에 따르면 파일은 기기 안에서 처리되며 광고와 추적이 없습니다.</p>
 <h3>2. 압축 파일 열기</h3>
@@ -49,19 +57,22 @@
 <h3>5. 압축하기</h3>
 <p>파일이나 폴더, 사진과 동영상을 여러 개 골라 압축할 수 있습니다. ZIP에는 AES-256 암호를 걸 수 있고, 윈도우에서 파일명이 깨지지 않도록 하는 "Windows 호환" 프리셋이 있습니다. 4GB를 넘는 ZIP64도 다룹니다.</p>
 
-<h2>파일명 복구 기능</h2>
+<h2 id="ko-5">한글 파일명은 왜 깨질까</h2><p>ZIP 형식의 사양서(PKWARE APPNOTE)에 따르면, 파일 이름 필드는 일반 플래그의 11번 비트가 켜져 있을 때만 UTF-8로 해석하도록 정해져 있고, 그렇지 않으면 IBM 코드 페이지 437이라는 오래된 문자 집합이 기본입니다. 그런데 한국 윈도우의 압축 도구들은 오랫동안 이 비트를 켜지 않은 채 한글 이름을 CP949(EUC-KR 계열) 바이트로 써 왔습니다. 받는 쪽 프로그램은 어떤 인코딩인지 알 수 없으니 CP437이나 서유럽 문자 집합 등 엉뚱한 규칙으로 읽다가 "ÃÖÁ¾" 같은 외계어를 만듭니다. 스크린샷의 파일명 복구 화면에서 취소선이 그어진 줄이 바로 이런 이름입니다.</p>
+<p>해결의 핵심은 "원래 어떤 인코딩으로 썼는가"를 맞히는 것입니다. 앱은 이름 바이트를 분석해 후보를 제시하고, 확신이 서지 않으면 [변경]으로 사람이 고르게 합니다. 복구는 이름만 바꾸고 파일 내용은 건드리지 않는다고 화면에 안내됩니다. 인코딩 문제의 배경과 다른 포맷의 차이는 <a href="/guides/zip-rar-7z-archive-formats-explained">ZIP·RAR·7z 포맷 설명</a>에서 따로 정리했습니다.</p>
+<h2 id="ko-6">파일명 복구 기능</h2>
 <p>오래된 압축 도구는 파일명을 UTF-8이 아닌 지역 인코딩(한국의 CP949/EUC-KR, 일본의 Shift-JIS 등)으로 저장하는 경우가 많아서, 다른 환경에서 열면 글자가 깨집니다. Zipda는 기기 안에서 인코딩을 자동 감지해 올바른 이름으로 보여 주고, 이미 깨진 이름을 고치는 복구 도구도 제공합니다. 다만 아주 짧은 일본어 파일명이 한국어로 오판독될 수 있다는 한계가 개발 문서에 기록되어 있습니다. 결과가 이상하면 인코딩을 바꿔 보세요.</p>
 
-<h2>분할 압축 파일</h2>
+<h2 id="ko-7">분할 압축 파일</h2>
 <p>용량이 커서 여러 조각으로 나뉜 압축 파일(예: .zip.001, .z01 등)은 같은 세트를 자동으로 묶어 여는 것이 목표 기능입니다. 모든 조각이 같은 폴더에 있어야 하고, 하나라도 빠지면 풀리지 않습니다. 이 가이드는 해제를 기준으로 설명하며 분할 압축 생성은 다루지 않습니다.</p>
 
-<h2>요금과 한도</h2>
+<h2 id="ko-8">요금과 한도</h2>
 <p>모든 기능을 무료로 쓸 수 있되, 압축과 해제는 각각 24시간 기준 하루 3회까지입니다. 열어보기, 검색, 미리보기, 파일명 복구는 횟수에 들어가지 않거나 무제한입니다. 횟수를 없애려면 자동 갱신 구독(월간·연간)을 선택할 수 있고, 가격은 스토어에 표시되는 금액을 확인하세요. 광고는 없습니다.</p>
 
-<h2>어떤 상황에서 특히 유용한가</h2>
+<h2 id="ko-9">어떤 상황에서 특히 유용한가</h2>
 <p>회사나 학교에서 윈도우로 만든 자료를 아이폰으로 받아 보는 경우, 메일이나 메신저로 받은 ZIP을 출장지에서 바로 열어야 하는 경우, 사진과 동영상을 여러 장 골라 하나의 압축 파일로 묶어 보내려는 경우가 대표적입니다. 파일 앱의 기본 압축 기능으로 충분한 단순한 ZIP이라면 굳이 별도 앱이 필요 없지만, RAR나 7z처럼 기본 기능이 다루지 못하는 포맷이나 암호, 인코딩 문제가 얽히면 전용 앱이 편해집니다.</p>
 
-<h2>실전 팁</h2>
+<h2 id="ko-10">같은 Wi-Fi로 컴퓨터와 주고받기</h2><p>홈 화면의 도구에는 "같은 WiFi로 주고받기"가 있습니다. 개인정보 처리방침에 따르면 이 화면을 직접 열었을 때만 기기 안에서 임시 웹 서버가 동작하고, 같은 로컬 네트워크의 컴퓨터가 브라우저로 접속해 파일을 주고받습니다. 파일은 외부 서버를 거치지 않습니다. 다만 같은 문서가 밝히듯 <strong>이 연결은 암호화되지 않은 일반 HTTP</strong>이므로 카페나 공항 같은 신뢰할 수 없는 공용 Wi-Fi에서는 쓰지 말고, 집이나 사무실처럼 믿을 수 있는 네트워크에서만 사용하세요. 전송이 끝나면 화면을 닫아 서버를 멈추는 것도 좋은 습관입니다.</p>
+<h2 id="ko-11">실전 팁</h2>
 <ul>
 <li>받은 압축 파일이 이상하게 열리면 먼저 용량이 정상인지, 분할 파일의 모든 조각이 있는지 확인하세요.</li>
 <li>윈도우 사용자에게 보낼 파일은 "Windows 호환" 프리셋으로 압축하면 이름 문제가 줄어듭니다.</li>
@@ -70,7 +81,7 @@
 <li>iOS는 앱이 백그라운드로 가면 작업이 중단될 수 있으므로 해제 중에는 화면을 켜 두는 것이 안전합니다.</li>
 </ul>
 
-<h2>문제 해결</h2>
+<h2 id="ko-12">문제 해결</h2>
 <h3>암호를 입력했는데 풀리지 않는다</h3>
 <p>대소문자와 키보드 언어를 확인하세요. 암호가 파일명까지 암호화한 7z라면 파일 목록 자체가 암호 입력 뒤에야 보입니다.</p>
 <h3>파일명이 여전히 깨진다</h3>
@@ -80,25 +91,44 @@
 <h3>.egg 파일이다</h3>
 <p>지원하지 않는 포맷입니다. 보낸 사람에게 ZIP이나 7z로 다시 받으세요.</p>
 
-<h2>자주 묻는 질문</h2>
-<h3>Q. 아이폰용인가요, 맥용인가요?</h3>
-<p>둘 다입니다. iOS와 macOS용으로 같은 이름의 앱이 있습니다.</p>
-<h3>Q. 파일이 외부 서버로 올라가나요?</h3>
-<p>개발 문서상 처리는 기기 안에서 이루어지며 파일이 기기를 떠나지 않는다고 설명되어 있습니다. 세부 내용은 <a href="/privacy">개인정보 처리방침</a>을 보세요.</p>
-<h3>Q. RAR로 압축할 수 있나요?</h3>
-<p>아니요. 해제만 가능합니다.</p>
-<h3>Q. 무료로 몇 번까지 쓰나요?</h3>
-<p>압축과 해제가 각각 하루 3회입니다.</p>
-<h3>Q. 문의는 어디로 하나요?</h3>
-<p><a href="/support">지원 페이지</a>를 이용해 주세요.</p>
+<h2 id="ko-13">한계와 알려진 이슈</h2><ul>
+<li><b>RAR는 풀기만 되고 만들 수 없습니다.</b> RAR 압축은 라이선스상 제3자 앱이 만들 수 없습니다. LZH도 해제 전용입니다.</li>
+<li><b>EGG 파일은 지원하지 않습니다.</b> 라이선스와 특허 문제 때문이며, 보낸 사람에게 ZIP이나 7z로 다시 받는 것이 방법입니다.</li>
+<li><b>분할 압축은 조각이 모두 있어야 합니다.</b> 한 조각만 빠져도 풀리지 않고, 분할 압축 파일을 만드는 기능은 없습니다.</li>
+<li><b>인코딩 자동 감지가 틀릴 수 있습니다.</b> 개발 문서에는 아주 짧은 일본어 이름이 한국어로 오판독될 수 있다는 한계가 적혀 있습니다. 결과가 이상하면 인코딩을 직접 바꿔 보세요.</li>
+<li><b>iOS는 백그라운드에서 해제를 이어 갈 수 없습니다.</b> OS 구조상 앱이 뒤로 가면 작업이 중단될 수 있어 해제 중에는 화면을 켜 두도록 설계되어 있고, 여러 파일을 하나로 이어 압축한 방식(솔리드 압축)은 중간부터 재개하지 못합니다.</li>
+<li><b>같은 Wi-Fi 전송은 암호화되지 않습니다.</b> 신뢰할 수 있는 네트워크에서만 쓰세요.</li>
+<li><b>무료는 압축·해제 각각 하루 3회입니다.</b> 열어보기·검색·미리보기·파일명 복구는 이 횟수에 들어가지 않습니다. 횟수를 없애려면 구독이 필요합니다.</li>
+<li><b>일부 포맷의 생성 지원은 버전에 따라 다릅니다.</b> 예를 들어 tar 계열 생성은 최근 버전에서 추가되는 항목이므로 스토어의 버전 내역을 확인하세요.</li>
+</ul>
+<h2 id="ko-14">다른 방법과 비교</h2><div class="tbl-wrap"><table><caption>iPhone에서 압축 파일을 다루는 방법</caption><thead><tr><th>방법</th><th>강점</th><th>약점</th></tr></thead><tbody>
+<tr><td>Zipda</td><td>RAR·7z·LZH·ALZ 해제, 한글 파일명 복구, ZipCrypto 암호 ZIP, 큰 파일과 분할 세트, 광고 없음</td><td>무료 횟수 제한(하루 3회), 계속 쓰려면 구독, RAR 생성 불가</td></tr>
+<tr><td>파일 앱의 기본 압축·해제</td><td>설치 불필요, 단순한 ZIP에는 충분</td><td>다루는 포맷이 한정적이고 인코딩 복구나 분할 세트 같은 기능은 없음(지원 형식은 OS 버전에 따라 다르니 Apple 안내 확인)</td></tr>
+<tr><td>PC나 Mac에서 풀고 다시 전송</td><td>익숙한 도구, 포맷 제약이 적음</td><td>컴퓨터가 옆에 있어야 하고 파일을 두 번 옮겨야 함</td></tr>
+<tr><td>다른 압축 앱</td><td>기능과 가격이 앱마다 다양</td><td>광고, 업로드 여부, 한글 이름 처리는 앱마다 달라 직접 확인 필요</td></tr>
+</tbody></table></div>
+<p>단순한 ZIP 한두 개를 열기만 한다면 기본 기능으로 충분합니다. 한글 이름이 깨지거나, RAR·7z를 받았거나, 몇 GB짜리 세트를 열어야 한다면 전용 앱이 시간을 아껴 줍니다.</p>
+<h2 id="ko-src">출처 및 더 읽을거리</h2><ol class="sources"><li><a href="https://pkwaredownloads.blob.core.windows.net/pkware-general/Documentation/APPNOTE-6.3.9.TXT" target="_blank" rel="noopener">PKWARE: ZIP File Format Specification (APPNOTE 6.3.9), 일반 플래그 비트 11과 파일명 인코딩</a></li><li><a href="https://learn.microsoft.com/en-us/windows/win32/intl/code-page-identifiers" target="_blank" rel="noopener">Microsoft Learn: Code page identifiers (CP949 등)</a></li><li><a href="https://www.7-zip.org/7z.html" target="_blank" rel="noopener">7-Zip: 7z 포맷 소개</a></li></ol>
+<h2 id="ko-faq">자주 묻는 질문</h2>
+<details class="faq"><summary>아이폰용인가요, 맥용인가요?</summary><p>둘 다입니다. iOS와 macOS용으로 같은 이름의 앱이 있습니다.</p></details>
+<details class="faq"><summary>파일이 외부 서버로 올라가나요?</summary><p>개발 문서상 처리는 기기 안에서 이루어지며 파일이 기기를 떠나지 않는다고 설명되어 있습니다. 세부 내용은 <a href="/privacy">개인정보 처리방침</a>을 보세요.</p></details>
+<details class="faq"><summary>RAR로 압축할 수 있나요?</summary><p>아니요. 해제만 가능합니다.</p></details>
+<details class="faq"><summary>무료로 몇 번까지 쓰나요?</summary><p>압축과 해제가 각각 하루 3회입니다.</p></details>
+<details class="faq"><summary>문의는 어디로 하나요?</summary><p><a href="/support">지원 페이지</a>를 이용해 주세요.</p></details>
+<details class="faq"><summary>파일명 복구를 하면 원본 파일이 바뀌나요?</summary><p>화면 안내에 따르면 파일 내용은 바뀌지 않고 이름만 바뀝니다. 복구는 폴더째 골라 한 번에 실행할 수 있고, 파일명 복구는 무료·유료 모두 횟수 제한이 없다고 개발 문서에 적혀 있습니다.</p></details>
+<details class="faq"><summary>같은 Wi-Fi 전송은 안전한가요?</summary><p>파일이 외부 서버를 거치지는 않지만 연결은 암호화되지 않는 로컬 HTTP입니다. 집이나 사무실처럼 믿을 수 있는 네트워크에서만 쓰고, 공용 Wi-Fi에서는 피하세요.</p></details>
 
+
+  
   </section>
   <section id="en" lang="en" class="lang-ko">
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#en-1">What Zipda is</a></li><li><a href="#en-2">Supported formats</a></li><li><a href="#en-3">Screens at a glance</a></li><li><a href="#en-4">Getting started</a></li><li><a href="#en-5">Why do Korean filenames garble?</a></li><li><a href="#en-6">Filename repair</a></li><li><a href="#en-7">Split archives</a></li><li><a href="#en-8">Pricing and limits</a></li><li><a href="#en-9">Transferring with a computer over the same Wi-Fi</a></li><li><a href="#en-10">Practical tips</a></li><li><a href="#en-11">Troubleshooting</a></li><li><a href="#en-12">Limits and known issues</a></li><li><a href="#en-13">How it compares</a></li><li><a href="#en-src">Sources and further reading</a></li><li><a href="#en-faq">FAQ</a></li></ol></nav>
 
-<h2>What Zipda is</h2>
+
+<h2 id="en-1">What Zipda is</h2>
 <p>Zipda is an archive and extract app for iPhone, iPad and Mac. The same app is available on iOS and on macOS, linked from a single store page. The promise in its development notes is that filenames do not turn into garbage, files over 4 GB still open, and split archives still open. If you have ever opened a Windows-made archive on an iPhone and seen unreadable filenames, or hit a large archive that would not open, that is the problem this app targets.</p>
 
-<h2>Supported formats</h2>
+<h2 id="en-2">Supported formats</h2>
 <ul>
 <li>Extract and create: ZIP, 7z and the tar family (tar, tar.gz, tar.bz2, tar.xz)</li>
 <li>Extract only: RAR, LZH, ALZ</li>
@@ -106,7 +136,8 @@
 </ul>
 <p>Which formats can be created varies by app version, so check the store description and version notes for the current state.</p>
 
-<h2>Getting started</h2>
+<h2 id="en-3">Screens at a glance</h2><p>The six images below are store screenshots with a promo headline on top; the screens are the iPhone app. Sample file names and numbers are for demonstration.</p><div class="shots"><figure><img src="/images/guides/zipda/01.webp" alt="Zipda archive view for 제주도_가족여행_2026.zip: the contents list, a banner saying the filename encoding is uncertain with Change and Confirm buttons, and Extract All and in-archive search at the bottom" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Browsing: you can look through and search the contents before extracting. If the filename encoding is uncertain a banner appears, and Change lets you pick the encoding.</figcaption></figure><figure><img src="/images/guides/zipda/02.webp" alt="Zipda filename repair screen with encoding CP949 (Korean) selected, garbled names struck through and repaired names such as 견적서_v2.xlsx and 결제내역.xlsx below them, and 18 of 18 files ready to repair" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Filename repair: pick a folder and fix it in one go. The struck-through lines are the garbled names and the lines below are the names to be restored, with the note that file contents are not changed, only names.</figcaption></figure><figure><img src="/images/guides/zipda/03.webp" alt="Zipda password prompt for 경리부_결산자료.zip with a password field and Cancel and Open buttons" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Password-protected archives ask for the password before extraction. The eye icon at the right of the field lets you check what you typed.</figcaption></figure><figure><img src="/images/guides/zipda/04.webp" alt="Zipda extraction progress for 사진백업_2019-2026.zip at 62 percent, 2.8 GB of 4.5 GB at 68 MB per second, 1,284 of 2,061 files, about 25 seconds left, with a note that the screen stays on while extracting" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Large extractions: size, speed, file count and time remaining are shown, and the screen is kept awake while extracting. Sets over 4 GB use this same screen.</figcaption></figure><figure><img src="/images/guides/zipda/05.webp" alt="Zipda Create Archive screen with 7 selected items, Add Photos and Add Files buttons, a file name field, and a filename compatibility choice between Windows compatible (recommended) and standard UTF-8" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Creating an archive: gather files and photos, name it and choose the Windows-compatible filename setting, which writes Korean names so they do not garble on Windows.</figcaption></figure><figure><img src="/images/guides/zipda/06.webp" alt="Zipda home screen with Extract and Create buttons, a note of 3 uses left today for each, tools for transferring over the same Wi-Fi, extracting everything at once and filename repair, and a recent items list" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Home: the remaining free uses for extracting and creating are always visible, and same-Wi-Fi transfer, extract-all and filename repair sit as separate tools.</figcaption></figure></div>
+<h2 id="en-4">Getting started</h2>
 <h3>1. Install and first launch</h3>
 <p>Install from the store links above. No account is needed. According to the development notes, files are processed on the device, and there are no ads and no tracking.</p>
 <h3>2. Open an archive</h3>
@@ -118,16 +149,19 @@
 <h3>5. Create an archive</h3>
 <p>Pick files, folders, or several photos and videos to compress. ZIP can be protected with AES-256, and a Windows-compatible preset helps filenames survive on Windows. ZIP64 archives over 4 GB are handled as well.</p>
 
-<h2>Filename repair</h2>
+<h2 id="en-5">Why do Korean filenames garble?</h2><p>According to the ZIP specification (PKWARE APPNOTE), the filename field is interpreted as UTF-8 only when bit 11 of the general purpose flag is set; otherwise the default is the old IBM code page 437 character set. Yet Korean Windows compression tools long wrote Hangul names as CP949 (EUC-KR family) bytes without setting that bit. The receiving program has no way to know the intended reading, so it decodes the bytes with the wrong rule, such as CP437 or a Western European character set, and produces gibberish such as "ÃÖÁ¾". The struck-through lines on the filename repair screenshot are exactly such names.</p>
+<p>The fix is to guess which encoding was originally used. The app analyzes the name bytes and proposes a candidate, and when it is not confident it lets you choose by tapping Change. The screen states that repair changes only names and leaves file contents untouched. The background on encoding trouble and how formats differ is covered separately in <a href="/guides/zip-rar-7z-archive-formats-explained">ZIP, RAR and 7z formats explained</a>.</p>
+<h2 id="en-6">Filename repair</h2>
 <p>Older archive tools often store filenames in a regional encoding rather than UTF-8, such as CP949 or EUC-KR in Korea and Shift-JIS in Japan, so the names look broken when opened elsewhere. Zipda detects the encoding on the device and shows the correct names, and provides a repair tool for names that are already garbled. The development notes record one limitation: very short Japanese filenames can be misread as Korean. If a result looks wrong, try a different encoding.</p>
 
-<h2>Split archives</h2>
+<h2 id="en-7">Split archives</h2>
 <p>Archives divided into several parts (for example .zip.001 or .z01) are meant to be grouped into one set and opened together. All parts must be in the same folder, and one missing part means it cannot be extracted. This guide covers opening split sets and does not cover creating them.</p>
 
-<h2>Pricing and limits</h2>
+<h2 id="en-8">Pricing and limits</h2>
 <p>Every feature can be used for free, but extracting and creating are each limited to three runs per rolling 24 hours. Opening, searching, previewing and filename repair are not counted or are unlimited. To remove the limit you can choose an auto-renewing subscription, monthly or yearly; check the price shown in the store. There are no ads.</p>
 
-<h2>Practical tips</h2>
+<h2 id="en-9">Transferring with a computer over the same Wi-Fi</h2><p>The Tools list on the home screen includes "Transfer over the same Wi-Fi". According to the privacy policy, a temporary web server runs on the device only while you have this screen open, and a computer on the same local network connects with a browser to exchange files. Files do not pass through any outside server. As the same document says, though, <strong>this connection is plain, unencrypted HTTP</strong>, so do not use it on untrusted public Wi-Fi such as cafes or airports; use it only on a network you trust, like home or the office. Closing the screen when you are done, which stops the server, is also a good habit.</p>
+<h2 id="en-10">Practical tips</h2>
 <ul>
 <li>If an archive misbehaves, first check that its size looks right and that every part of a split set is present.</li>
 <li>For recipients on Windows, create with the Windows-compatible preset to reduce filename problems.</li>
@@ -136,7 +170,7 @@
 <li>iOS may pause work when an app goes to the background, so keep the screen on during large extractions.</li>
 </ul>
 
-<h2>Troubleshooting</h2>
+<h2 id="en-11">Troubleshooting</h2>
 <h3>The password is rejected</h3>
 <p>Check case and keyboard language. With a 7z that also encrypts filenames, even the file list appears only after the password is accepted.</p>
 <h3>Filenames are still garbled</h3>
@@ -146,21 +180,48 @@
 <h3>The file is .egg</h3>
 <p>That format is unsupported. Ask the sender for ZIP or 7z.</p>
 
-<h2>FAQ</h2>
-<h3>Q. Is it for iPhone or Mac?</h3>
-<p>Both. An app of the same name exists for iOS and macOS.</p>
-<h3>Q. Are my files uploaded anywhere?</h3>
-<p>The development notes describe processing on the device, with files not leaving it. See the <a href="/privacy">privacy policy</a> for details.</p>
-<h3>Q. Can it create RAR files?</h3>
-<p>No. RAR is extract-only.</p>
-<h3>Q. How many free runs do I get?</h3>
-<p>Three extractions and three creations per day, counted separately.</p>
-<h3>Q. Where do I ask for help?</h3>
-<p>Use the <a href="/support">support page</a>.</p>
+<h2 id="en-12">Limits and known issues</h2><ul>
+<li><b>RAR can be extracted but not created.</b> Creating RAR is not possible for third-party apps under the license. LZH is extract-only too.</li>
+<li><b>EGG files are not supported.</b> The reason is licensing and patent concerns; ask the sender to resend as ZIP or 7z.</li>
+<li><b>Split archives need every part.</b> A single missing part prevents extraction, and there is no feature to create split archives.</li>
+<li><b>Encoding detection can be wrong.</b> The development notes record that very short Japanese names can be misread as Korean. If the result looks odd, change the encoding yourself.</li>
+<li><b>iOS cannot keep extracting in the background.</b> By the OS model, work can stop when the app goes to the background, so the app is designed to keep the screen on while extracting, and solid archives (many files compressed as one stream) cannot be resumed midway.</li>
+<li><b>Same-Wi-Fi transfer is not encrypted.</b> Use it only on a network you trust.</li>
+<li><b>Free allows 3 compressions and 3 extractions per day.</b> Browsing, searching, previewing and filename repair do not count toward it. Removing the limit needs a subscription.</li>
+<li><b>Support for creating some formats varies by version.</b> For example, creating tar-family archives is a recent addition, so check the store's version history.</li>
+</ul>
+<h2 id="en-13">How it compares</h2><div class="tbl-wrap"><table><caption>Ways to handle archives on an iPhone</caption><thead><tr><th>Method</th><th>Strengths</th><th>Weaknesses</th></tr></thead><tbody>
+<tr><td>Zipda</td><td>Extracts RAR, 7z, LZH and ALZ, repairs Korean filenames, handles ZipCrypto ZIPs, large files and split sets, no ads</td><td>Daily free limit of three, subscription to go beyond it, cannot create RAR</td></tr>
+<tr><td>The Files app's built-in compress and extract</td><td>Nothing to install, enough for a plain ZIP</td><td>Handles a limited set of formats and has no encoding repair or split-set handling (supported types vary by OS version, so check Apple's guidance)</td></tr>
+<tr><td>Extract on a PC or Mac and send again</td><td>Familiar tools, few format limits</td><td>You need a computer at hand and must move the files twice</td></tr>
+<tr><td>Other archive apps</td><td>Features and prices vary widely</td><td>Ads, uploads and Korean-name handling differ per app, so check yourself</td></tr>
+</tbody></table></div>
+<p>If you only open a ZIP or two, the built-in tools are enough. When Korean names garble, when you receive RAR or 7z, or when you have to open a multi-gigabyte set, a dedicated app saves time.</p>
+<h2 id="en-src">Sources and further reading</h2><ol class="sources"><li><a href="https://pkwaredownloads.blob.core.windows.net/pkware-general/Documentation/APPNOTE-6.3.9.TXT" target="_blank" rel="noopener">PKWARE: ZIP File Format Specification (APPNOTE 6.3.9), general purpose flag bit 11 and filename encoding</a></li><li><a href="https://learn.microsoft.com/en-us/windows/win32/intl/code-page-identifiers" target="_blank" rel="noopener">Microsoft Learn: Code page identifiers (CP949 and others)</a></li><li><a href="https://www.7-zip.org/7z.html" target="_blank" rel="noopener">7-Zip: the 7z format</a></li></ol>
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>Is it for iPhone or Mac?</summary><p>Both. An app of the same name exists for iOS and macOS.</p></details>
+<details class="faq"><summary>Are my files uploaded anywhere?</summary><p>The development notes describe processing on the device, with files not leaving it. See the <a href="/privacy">privacy policy</a> for details.</p></details>
+<details class="faq"><summary>Can it create RAR files?</summary><p>No. RAR is extract-only.</p></details>
+<details class="faq"><summary>How many free runs do I get?</summary><p>Three extractions and three creations per day, counted separately.</p></details>
+<details class="faq"><summary>Where do I ask for help?</summary><p>Use the <a href="/support">support page</a>.</p></details>
+<details class="faq"><summary>Does filename repair change the original file?</summary><p>According to the on-screen note, file contents are not changed, only names. You can repair a whole folder at once, and the development notes say filename repair has no usage limit on free or paid.</p></details>
+<details class="faq"><summary>Is same-Wi-Fi transfer safe?</summary><p>Files do not pass through an outside server, but the connection is unencrypted local HTTP. Use it only on a network you trust, like home or the office, and avoid public Wi-Fi.</p></details>
 
+
+  
   </section>
 
-  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/zip-rar-7z-archive-formats-explained">ZIP·RAR·7z 포맷 설명 · Archive formats explained</a></li><li><a href="/guides/onesync">OneSync 사용 가이드 · OneSync guide</a></li><li><a href="/support">Support · 지원</a></li></ul></div>
+  <aside class="author-box"><div>
+<p lang="ko"><b>작성: SETLOG</b> — iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 이 글은 광고·제휴 대가 없이 썼고, 언급한 앱은 모두 SETLOG가 만든 앱뿐입니다. 오류나 정정할 내용은 <a href="/contact">Contact</a>로 알려 주세요.</p>
+<p lang="en"><b>By SETLOG</b> — a developer who builds and runs iOS, Android and macOS apps. This article was written without payment or affiliate arrangements, and the only apps it mentions are SETLOG's own. Send corrections through <a href="/contact">Contact</a>.</p>
+</div></aside>
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
+<li><a href="/guides/zip-rar-7z-archive-formats-explained">ZIP·RAR·7z 포맷 설명 · Archive formats explained</a></li>
+<li><a href="/guides/share-files-between-iphone-android-pc">아이폰·안드로이드·PC 파일 공유 · Sharing files across devices</a></li>
+<li><a href="/guides/onesync">OneSync 사용 가이드 · OneSync guide</a></li>
+<li><a href="/guides/">모든 가이드 · All guides</a></li>
+<li><a href="/support">Support · 지원</a></li>
+</ul></div>
 </main>
 
 <footer class="site-footer">

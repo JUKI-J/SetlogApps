@@ -4,9 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IntervalRunner 사용 가이드 | IntervalRunner Guide — SETLOG</title>
-<meta name="description" content="IntervalRunner로 시간·거리·심박 존 인터벌을 설정하고 음성·효과음·햅틱 알림으로 목표 페이스를 지키는 방법. Interval pace coach guide.">
+<meta name="description" content="IntervalRunner로 시간·거리·심박 존 인터벌을 짜고 음성·효과음·햅틱으로 페이스를 지키는 방법. 화면 읽는 법, 무료와 Pro의 경계, 한계와 문제 해결을 정리했습니다.">
 <link rel="canonical" href="https://setlog.net/guides/intervalrunner">
-<meta property="og:title" content="IntervalRunner 사용 가이드 | IntervalRunner Guide — SETLOG"><meta property="og:description" content="IntervalRunner로 시간·거리·심박 존 인터벌을 설정하고 음성·효과음·햅틱 알림으로 목표 페이스를 지키는 방법. Interval pace coach guide."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/intervalrunner">
+<meta property="og:title" content="IntervalRunner 사용 가이드 | IntervalRunner Guide — SETLOG"><meta property="og:description" content="IntervalRunner로 시간·거리·심박 존 인터벌을 짜고 음성·효과음·햅틱으로 페이스를 지키는 방법. 화면 읽는 법, 무료와 Pro의 경계, 한계와 문제 해결을 정리했습니다."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/intervalrunner"><meta property="og:image" content="https://setlog.net/images/guides/intervalrunner/01.webp"><meta property="og:site_name" content="SETLOG"><meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "IntervalRunner", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, watchOS, Android", "inLanguage": ["ko", "en"], "url": "https://setlog.net/guides/intervalrunner", "image": "https://setlog.net/images/guides/intervalrunner/01.webp", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "dateModified": "2026-10-07"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "IntervalRunner 사용 가이드", "description": "IntervalRunner로 시간·거리·심박 존 인터벌을 짜고 음성·효과음·햅틱으로 페이스를 지키는 방법. 화면 읽는 법, 무료와 Pro의 경계, 한계와 문제 해결을 정리했습니다.", "inLanguage": "ko", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "image": "https://setlog.net/images/guides/intervalrunner/01.webp", "mainEntityOfPage": "https://setlog.net/guides/intervalrunner"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "Apple Watch가 꼭 필요한가요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 이 iPhone에서만 실행하는 방식으로 폰 단독으로도 뛸 수 있습니다. 다만 손목 햅틱과 시계 측정 심박은 사용할 수 없습니다."}}, {"@type": "Question", "name": "무료로 어디까지 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "뛰는 데 필요한 핵심 기능은 무료입니다. 구독이 필요한 항목과 가격은 앱 안 구독 화면에 표시된 내용이 기준입니다."}}, {"@type": "Question", "name": "초보자도 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "설정이 단순한 구성부터 시작할 수 있지만, 훈련 강도와 몸 상태는 본인이 판단해야 합니다. 건강이 걱정된다면 전문가와 상의하세요."}}, {"@type": "Question", "name": "데이터는 어디에 저장되나요?", "acceptedAnswer": {"@type": "Answer", "text": "기록은 기기와 건강 앱을 중심으로 저장되며, 앱은 계정 없이 동작합니다. 자세한 내용은 개인정보 처리방침을 참고하세요."}}, {"@type": "Question", "name": "영상으로 남기고 싶어요.", "acceptedAnswer": {"@type": "Answer", "text": "건강 앱에 저장된 러닝은 RunVue 같은 앱으로 영상으로 만들 수 있습니다."}}, {"@type": "Question", "name": "알림이 울리는 기준은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "현재 속도를 일정 시간 평활화한 값이 목표 범위를 벗어나고, 그 상태가 몇 초 이상 이어질 때 알립니다. 같은 알림이 연달아 울리지 않도록 간격을 두고, 이탈이 길어지면 알림이 점차 강해집니다."}}, {"@type": "Question", "name": "트레드밀에서도 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "개발 문서에는 GPS 없이 트레드밀 속도 그대로 단계를 전환하는 트레드밀 모드가 포함되어 있습니다. 실외와 달리 속도 표시가 트레드밀 설정에 의존하니, 처음에는 허용 범위를 넓게 두고 시험해 보세요."}}, {"@type": "Question", "name": "구독을 해지하면 기록이 사라지나요?", "acceptedAnswer": {"@type": "Answer", "text": "개발 문서의 원칙은 데이터를 지우지 않는 것입니다. 기록은 남고 잠긴 기능만 닫힙니다. 정확한 조건은 앱의 구독 화면과 스토어 안내를 확인하세요."}}]}</script>
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,7 +18,7 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
@@ -23,16 +27,19 @@
   <div class="app-head"><img src="/images/intervalrunner-icon.png" alt="IntervalRunner icon" width="64" height="64"><div><h1>IntervalRunner 사용 가이드</h1></div></div>
   <p class="sub">IntervalRunner Guide: interval coaching with voice, sound and haptic alerts</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 7분</p>
 
   <section id="ko" lang="ko">
+<nav class="toc" aria-label="목차"><b>목차</b><ol><li><a href="#ko-1">IntervalRunner가 해결하는 문제</a></li><li><a href="#ko-2">지원 환경</a></li><li><a href="#ko-3">화면으로 미리 보기</a></li><li><a href="#ko-4">인터벌 설정하는 법</a></li><li><a href="#ko-5">러닝 화면과 요약 읽는 법</a></li><li><a href="#ko-6">알림이 작동하는 방식</a></li><li><a href="#ko-7">무료와 구독(Pro)의 경계</a></li><li><a href="#ko-8">사용 팁</a></li><li><a href="#ko-9">문제가 생겼을 때</a></li><li><a href="#ko-10">한계와 알려진 이슈</a></li><li><a href="#ko-11">다른 방법과 비교</a></li><li><a href="#ko-src">출처 및 더 읽을거리</a></li><li><a href="#ko-faq">자주 묻는 질문</a></li></ol></nav>
+
 
 <div class="store-links"><a href="https://apps.apple.com/app/id6817994370" target="_blank" rel="noopener noreferrer">App Store</a> · <a href="https://play.google.com/store/apps/details?id=net.setlog.intervalrunner" target="_blank" rel="noopener noreferrer">Google Play</a></div>
 
-<h2>IntervalRunner가 해결하는 문제</h2>
+<h2 id="ko-1">IntervalRunner가 해결하는 문제</h2>
 <p>인터벌 러닝은 "빠르게 뛰는 구간"과 "회복 구간"을 정해진 순서로 반복하는 훈련입니다. 문제는 뛰는 도중에 내가 정말 목표 속도로 달리고 있는지 알기 어렵다는 점입니다. 손목을 자꾸 들여다보면 자세가 흐트러지고, 흥분해서 첫 반복을 너무 빠르게 시작하면 마지막 반복에서 무너집니다. IntervalRunner는 시간, 거리, 심박 존으로 인터벌을 짜 두면 현재 속도가 목표에서 벗어날 때 소리와 진동으로 알려 주는 코치 앱입니다. 화면을 보지 않고도 "지금 너무 느리다" 또는 "너무 빠르다"를 알 수 있게 하는 것이 목적입니다.</p>
 <p>이 앱은 달리기 전체를 대신 결정해 주지 않습니다. 목표 페이스나 구성은 사용자가 정하고, 앱은 그 설정을 지킬 수 있게 알림으로 보조합니다. 일반적인 훈련 정보는 <a href="/guides/interval-running-workout-basics">인터벌 러닝 입문 글</a>에서 따로 정리했습니다.</p>
 
-<h2>지원 환경</h2>
+<h2 id="ko-2">지원 환경</h2>
 <ul>
 <li><strong>iPhone</strong> 앱은 iOS 26 이상을 대상으로 합니다.</li>
 <li><strong>Apple Watch</strong> 앱은 watchOS 10 이상을 지원합니다. 시계가 있으면 측정은 항상 시계에서 하고, iPhone은 화면과 음성 안내를 맡습니다.</li>
@@ -41,7 +48,8 @@
 </ul>
 <p>위치 권한은 앱을 사용하는 동안만 요청합니다. 앱은 계정이나 별도 분석 도구 없이 동작하고, 구독 결제는 스토어가 처리합니다. 뛰는 데 필요한 핵심 기능은 무료로 쓸 수 있고, 일부 부가 기능은 구독 대상입니다.</p>
 
-<h2>인터벌 설정하는 법</h2>
+<h2 id="ko-3">화면으로 미리 보기</h2><p>아래 여섯 장은 스토어 스크린샷이라 위쪽에 홍보 문구가 들어 있고, 화면 자체는 iPhone 앱입니다. 네 번째 이미지에는 Apple Watch 화면도 함께 나옵니다.</p><div class="shots"><figure><img src="/images/guides/intervalrunner/01.webp" alt="IntervalRunner 러닝 화면. 빠르게 3/8 구간, 목표 안 표시, 남은 거리 214m, 현재 4:01/km에 목표 4:00, 심박 158(Z3), 총 거리 2.8km, 다음은 회복 200m" width="560" height="1212" loading="lazy" decoding="async"><figcaption>러닝 중 기본 화면: 큰 숫자는 남은 거리, 가운데 막대는 현재 페이스가 목표 범위(민트 구간) 안에 있는지, 아래는 현재 페이스·심박과 존·총 거리·다음 단계입니다.</figcaption></figure><figure><img src="/images/guides/intervalrunner/02.webp" alt="IntervalRunner 느림 알림 화면. 배경이 앰버색으로 바뀌고 느림 26초, 남은 거리 288m, 4:26/km에 목표 4:00, 말풍선으로 "느려요, 속도 올려요" 음성 문구가 표시된다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>목표보다 느릴 때: 배경 색과 문구가 바뀌고 "느려요, 속도 올려요" 같은 음성이 나옵니다. 숫자를 읽지 않아도 상태를 알 수 있게 만든 화면입니다.</figcaption></figure><figure><img src="/images/guides/intervalrunner/03.webp" alt="IntervalRunner 워크아웃 탭. 최근 항목 사다리 400-800-1200, 내 워크아웃 세 개, 프리셋 목록에 슬로우 러닝 30분, 존 2 러닝 40분, 400m x8, 야소 800이 보인다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>워크아웃 탭: 방금 한 운동, 직접 저장한 워크아웃, 내장 프리셋이 위에서 아래로 나뉩니다. 각 줄의 시작 버튼으로 바로 달릴 수 있습니다. 노출되는 프리셋 개수와 이름은 앱 버전에 따라 다를 수 있습니다.</figcaption></figure><figure><img src="/images/guides/intervalrunner/04.webp" alt="iPhone 러닝 화면과 Apple Watch 화면이 함께 나온 이미지. 둘 다 빠르게 5/8 구간 진행 중이며 목표 안, 남은 거리 152m와 페이스 막대가 같은 상태로 표시된다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Apple Watch가 있으면 손목이 측정과 진동을 맡고 iPhone은 같은 정보를 화면과 음성으로 보여 줍니다.</figcaption></figure><figure><img src="/images/guides/intervalrunner/05.webp" alt="IntervalRunner 러닝 결과 요약. 400m x8 워크아웃, 목표 페이스를 지킨 시간 86%, 8구간 중 8구간 목표 안, 시간 33:19, 거리 6.45km, 평균 심박 151, 스텝별 목표와 실제 기록 목록" width="560" height="1212" loading="lazy" decoding="async"><figcaption>러닝 후 요약: 목표 범위를 지킨 시간 비율과 스텝별 목표 대비 실제 페이스가 한눈에 나옵니다. 건강 앱에도 기록이 저장됩니다.</figcaption></figure><figure><img src="/images/guides/intervalrunner/06.webp" alt="IntervalRunner 심박 존 목표 화면. 목표 존 안 표시, 남은 시간 23:50, 심박 138 존 2, 최근 3회 중앙값 기준, 페이스는 참고용 6:07/km, 다음은 쿨다운 5분" width="560" height="1212" loading="lazy" decoding="async"><figcaption>심박 존 목표(Pro): 페이스 대신 존 2 안에 머물도록 안내하고, 페이스는 참고값으로만 보여 줍니다.</figcaption></figure></div>
+<h2 id="ko-4">인터벌 설정하는 법</h2>
 <ol>
 <li><strong>구성 요소 고르기.</strong> 워밍업, 반복, 회복, 쿨다운을 차례로 추가합니다. 반복 구간은 시간(예: 목표 속도로 3분) 또는 거리(예: 목표 속도로 400미터)로 정할 수 있고, 두 방식을 섞어도 됩니다.</li>
 <li><strong>회복 방식 정하기.</strong> 회복은 조깅, 걷기, 정지 중에서 선택합니다. 심박 기반으로 회복 종료를 설정하면 정해진 시간이 아니라 심박이 내려갈 때까지 기다린 뒤 다음 반복으로 넘어갑니다.</li>
@@ -52,10 +60,14 @@
 </ol>
 <p>사전 설정을 만들 필요 없이 거리나 페이스만 정해 바로 달리는 빠른 시작과, 사다리나 피라미드 같은 흔한 구성의 템플릿도 기획되어 있습니다. 앱 버전에 따라 제공되는 범위가 다를 수 있으니 앱 안의 목록을 확인해 주세요.</p>
 
-<h2>알림이 작동하는 방식</h2>
+<h2 id="ko-5">러닝 화면과 요약 읽는 법</h2><p>러닝 화면은 달리는 중에 한눈에 읽도록 단순하게 만들어져 있습니다. 가장 큰 숫자는 지금 구간에서 남은 거리(시간 기반 구간이면 남은 시간)이고, 그 아래 가로 막대에서 점이 민트색 구간 안에 있으면 목표 페이스 범위 안에 있다는 뜻입니다. 점이 왼쪽으로 가면 느린 쪽, 오른쪽으로 가면 빠른 쪽입니다. 막대 밑에는 현재 페이스와 목표, 위치 정보 상태가 작게 표시되고, 하단에는 심박(존 번호 포함), 총 거리, 다음 단계가 나옵니다. 맨 아래 가는 줄은 전체 워크아웃의 진행 위치입니다.</p>
+<p>끝나고 나오는 요약 화면은 "목표 안에 머문 시간 비율"과 스텝별 목표 대비 실제 페이스를 보여 줍니다. 한 번의 숫자(평균 페이스)보다 이 스텝별 표가 인터벌 훈련에서는 더 쓸모가 있습니다. 평균이 목표와 같아도 첫 반복은 너무 빠르고 마지막 반복은 무너졌다면 훈련의 질이 달라지기 때문입니다. 예를 들어 400미터 여덟 번을 3:50~4:10 범위로 설정했을 때 실제 기록이 3:58, 4:03, 3:59, 4:05처럼 범위 안에서 고르게 나오는지, 뒤로 갈수록 한쪽으로 밀리는지를 요약에서 확인할 수 있습니다. 다음 훈련의 목표 범위를 정할 때 이 흐름을 참고하세요. 기록은 건강 앱에도 저장되므로 시계나 다른 앱에서 이어서 볼 수 있습니다.</p>
+<h2 id="ko-6">알림이 작동하는 방식</h2>
 <p>순간 속도는 GPS 오차 때문에 크게 흔들립니다. 그래서 앱은 값을 일정 시간 평활화해서 판단하고, 이탈이 몇 초 이상 이어질 때만 알립니다. 같은 알림이 연달아 울리지 않도록 간격을 두며, 이탈이 길어지면 알림이 점차 강해집니다. 효과음은 빠름과 느림의 톤이 달라서 말을 알아듣지 않아도 구분됩니다. 음성은 미리 만들어 둔 문장 파일을 재생하는 방식이며, 합성 음성이라는 점이 앱에서 안내됩니다. 12개 언어를 지원합니다.</p>
 
-<h2>사용 팁</h2>
+<h2 id="ko-7">무료와 구독(Pro)의 경계</h2><p>개발 문서가 밝히는 원칙은 "뛰는 데 필요한 것은 무료, 설계 깊이와 분석은 Pro"입니다. 알림 세 채널, 카운트 모드, 트레드밀 모드, Apple Watch 동기화, GPX 내보내기는 무료입니다. 반면 심박 존을 목표로 쓰기, 심박이 내려오면 다음 스텝으로 넘어가는 회복 종료, 반복 안에 반복을 넣는 중첩 구성, 사다리·피라미드·야소 같은 생성기, 스텝별 상세 분석과 추세, CSV 내보내기는 구독 범위로 문서에 정리되어 있습니다. 워크아웃은 무료로 세 개까지 저장할 수 있지만, 저장하지 않고 바로 실행하는 것은 언제나 가능합니다. 구독이 끝나도 기록은 지워지지 않고, 잠긴 기능만 닫힙니다.</p>
+<p>단, 무료·유료 경계는 버전이 올라가며 조정될 수 있습니다. 실제로 어떤 항목이 구독에 포함되는지는 앱의 구독 화면 비교표가 기준이며, 가격과 무료 체험 조건도 그 화면과 스토어 표시를 따르세요. 스크린샷의 심박 존 화면에 (Pro) 표시가 붙은 것도 같은 맥락입니다.</p>
+<h2 id="ko-8">사용 팁</h2>
 <ul>
 <li>첫 번째 반복은 목표보다 살짝 느리게 시작해도 괜찮습니다. 알림이 빠르다고 말하면 따르세요.</li>
 <li>허용 범위를 너무 좁게 잡으면 알림이 계속 울립니다. 처음에는 넓게 두고 익숙해지면 줄이세요.</li>
@@ -64,7 +76,7 @@
 <li>시작 전에 시계와 폰의 배터리와 GPS 신호를 확인하세요.</li>
 </ul>
 
-<h2>문제가 생겼을 때</h2>
+<h2 id="ko-9">문제가 생겼을 때</h2>
 <ul>
 <li><strong>알림이 너무 자주 울려요.</strong> 허용 범위를 넓히거나 카운트 방식을 바꿔 보세요.</li>
 <li><strong>심박 목표가 작동하지 않아요.</strong> Watch나 심박 센서가 연결되어 있는지, 건강 데이터 권한이 허용되어 있는지 확인하세요. iPhone 단독 실행에서는 심박이 없습니다.</li>
@@ -72,27 +84,45 @@
 <li><strong>속도가 튀어요.</strong> 건물 사이나 출발 직후에는 GPS가 불안정합니다. 신호가 잡힌 뒤에 시작하세요.</li>
 </ul>
 
-<h2>자주 묻는 질문</h2>
-<h3>Q. Apple Watch가 꼭 필요한가요?</h3>
-<p>아니요. 이 iPhone에서만 실행하는 방식으로 폰 단독으로도 뛸 수 있습니다. 다만 손목 햅틱과 시계 측정 심박은 사용할 수 없습니다.</p>
-<h3>Q. 무료로 어디까지 가능한가요?</h3>
-<p>뛰는 데 필요한 핵심 기능은 무료입니다. 구독이 필요한 항목과 가격은 앱 안 구독 화면에 표시된 내용이 기준입니다.</p>
-<h3>Q. 초보자도 쓸 수 있나요?</h3>
-<p>설정이 단순한 구성부터 시작할 수 있지만, 훈련 강도와 몸 상태는 본인이 판단해야 합니다. 건강이 걱정된다면 전문가와 상의하세요.</p>
-<h3>Q. 데이터는 어디에 저장되나요?</h3>
-<p>기록은 기기와 건강 앱을 중심으로 저장되며, 앱은 계정 없이 동작합니다. 자세한 내용은 <a href="/privacy">개인정보 처리방침</a>을 참고하세요.</p>
-<h3>Q. 영상으로 남기고 싶어요.</h3>
-<p>건강 앱에 저장된 러닝은 <a href="/guides/runvue">RunVue</a> 같은 앱으로 영상으로 만들 수 있습니다.</p>
+<h2 id="ko-10">한계와 알려진 이슈</h2><ul>
+<li><b>페이스는 GPS에 의존합니다.</b> 건물 사이, 터널, 출발 직후에는 속도가 튈 수 있습니다. 앱이 값을 평활화하고 일정 시간 이탈이 이어질 때만 알리지만, 신호가 나쁜 곳에서는 알림이 늦거나 어긋날 수 있습니다. 트레드밀 모드에서는 GPS 없이 트레드밀 속도를 기준으로 단계가 전환됩니다.</li>
+<li><b>심박은 센서 품질에 달렸습니다.</b> 손목 광학 센서는 추운 날씨나 느슨한 착용에서 흔들립니다. 심박 센서가 없는 상태에서 심박 기반 스텝을 만나면 앱은 시간 기준으로 넘어가며, 이를 시작 전에 알려 줍니다.</li>
+<li><b>iPhone은 iOS 26 이상, Apple Watch는 watchOS 10 이상이 필요합니다.</b> 이보다 오래된 기기에서는 설치할 수 없습니다.</li>
+<li><b>음성 안내는 합성 음성입니다.</b> 미리 만든 문장 파일을 재생하는 방식이며 12개 언어를 지원하지만, 문장 목록은 정해져 있어 자유 문구를 넣을 수는 없습니다.</li>
+<li><b>훈련 처방이나 의료 기능이 아닙니다.</b> 목표 페이스, 심박 존, 반복 횟수는 사용자가 정합니다. 앱의 심박·페이스 표시는 의학적 진단 도구가 아니므로, 가슴 통증이나 어지러움이 있으면 즉시 멈추세요.</li>
+<li><b>Android 버전의 범위는 스토어 상세 페이지를 기준으로 확인하세요.</b> 이 가이드의 화면과 설명은 iPhone·Apple Watch 기준입니다.</li>
+</ul>
+<h2 id="ko-11">다른 방법과 비교</h2><div class="tbl-wrap"><table><caption>인터벌 훈련 페이스를 지키는 방법</caption><thead><tr><th>방법</th><th>강점</th><th>약점</th></tr></thead><tbody>
+<tr><td>IntervalRunner</td><td>시간·거리·심박 존 구간을 짜고 이탈할 때만 소리·진동으로 알림, 스텝별 결과 요약</td><td>iOS 26 이상 필요, 일부 기능은 구독, 설정을 직접 해야 함</td></tr>
+<tr><td>시계에 내장된 운동 앱의 인터벌·페이스 알림</td><td>추가 설치 없음, 시계 하나로 완결</td><td>지원하는 구성과 알림 방식은 기기와 앱마다 다름. 사전에 확인 필요</td></tr>
+<tr><td>일반 러닝 앱의 주기적 음성 안내(1km마다 등)</td><td>단순하고 익숙함</td><td>구간이 짧은 인터벌에서는 이탈을 바로 알려 주지 못함</td></tr>
+<tr><td>스톱워치와 직접 계산</td><td>비용 없음, 장비 불필요</td><td>달리는 중 화면을 봐야 하고 페이스 판단이 어려움</td></tr>
+</tbody></table></div>
+<p>어느 쪽이 맞는지는 훈련 목적에 달려 있습니다. 인터벌 훈련 자체가 처음이라면 먼저 <a href="/guides/interval-running-workout-basics">인터벌 러닝 입문 글</a>의 기본 구성(워밍업, 짧은 반복, 충분한 회복)을 읽고, 시계 기본 기능으로 시작해 보아도 충분합니다. 이탈 알림이 필요해지는 시점에 전용 앱을 고려하세요.</p>
+<h2 id="ko-src">출처 및 더 읽을거리</h2><ol class="sources"><li><a href="https://developer.apple.com/documentation/healthkit/hkworkoutsession" target="_blank" rel="noopener">Apple Developer: HKWorkoutSession (운동 세션 API)</a></li><li><a href="https://developer.apple.com/documentation/watchos-apps" target="_blank" rel="noopener">Apple Developer: watchOS apps</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener">WHO: Physical activity fact sheet</a></li></ol>
+<h2 id="ko-faq">자주 묻는 질문</h2>
+<details class="faq"><summary>Apple Watch가 꼭 필요한가요?</summary><p>아니요. 이 iPhone에서만 실행하는 방식으로 폰 단독으로도 뛸 수 있습니다. 다만 손목 햅틱과 시계 측정 심박은 사용할 수 없습니다.</p></details>
+<details class="faq"><summary>무료로 어디까지 가능한가요?</summary><p>뛰는 데 필요한 핵심 기능은 무료입니다. 구독이 필요한 항목과 가격은 앱 안 구독 화면에 표시된 내용이 기준입니다.</p></details>
+<details class="faq"><summary>초보자도 쓸 수 있나요?</summary><p>설정이 단순한 구성부터 시작할 수 있지만, 훈련 강도와 몸 상태는 본인이 판단해야 합니다. 건강이 걱정된다면 전문가와 상의하세요.</p></details>
+<details class="faq"><summary>데이터는 어디에 저장되나요?</summary><p>기록은 기기와 건강 앱을 중심으로 저장되며, 앱은 계정 없이 동작합니다. 자세한 내용은 <a href="/privacy">개인정보 처리방침</a>을 참고하세요.</p></details>
+<details class="faq"><summary>영상으로 남기고 싶어요.</summary><p>건강 앱에 저장된 러닝은 <a href="/guides/runvue">RunVue</a> 같은 앱으로 영상으로 만들 수 있습니다.</p></details>
+<details class="faq"><summary>알림이 울리는 기준은 무엇인가요?</summary><p>현재 속도를 일정 시간 평활화한 값이 목표 범위를 벗어나고, 그 상태가 몇 초 이상 이어질 때 알립니다. 같은 알림이 연달아 울리지 않도록 간격을 두고, 이탈이 길어지면 알림이 점차 강해집니다.</p></details>
+<details class="faq"><summary>트레드밀에서도 쓸 수 있나요?</summary><p>개발 문서에는 GPS 없이 트레드밀 속도 그대로 단계를 전환하는 트레드밀 모드가 포함되어 있습니다. 실외와 달리 속도 표시가 트레드밀 설정에 의존하니, 처음에는 허용 범위를 넓게 두고 시험해 보세요.</p></details>
+<details class="faq"><summary>구독을 해지하면 기록이 사라지나요?</summary><p>개발 문서의 원칙은 데이터를 지우지 않는 것입니다. 기록은 남고 잠긴 기능만 닫힙니다. 정확한 조건은 앱의 구독 화면과 스토어 안내를 확인하세요.</p></details>
+
 <p>그 밖의 질문은 <a href="/support">지원 페이지</a>에서 받습니다.</p>
 
+  
   </section>
   <section id="en" lang="en" class="lang-ko">
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#en-1">The problem IntervalRunner solves</a></li><li><a href="#en-2">Supported platforms</a></li><li><a href="#en-3">Screens at a glance</a></li><li><a href="#en-4">How to build an interval workout</a></li><li><a href="#en-5">Reading the run screen and summary</a></li><li><a href="#en-6">How the alerts behave</a></li><li><a href="#en-7">Where free ends and Pro begins</a></li><li><a href="#en-8">Tips</a></li><li><a href="#en-9">Troubleshooting</a></li><li><a href="#en-10">Limits and known issues</a></li><li><a href="#en-11">How it compares</a></li><li><a href="#en-src">Sources and further reading</a></li><li><a href="#en-faq">FAQ</a></li></ol></nav>
 
-<h2>The problem IntervalRunner solves</h2>
+
+<h2 id="en-1">The problem IntervalRunner solves</h2>
 <p>Interval running alternates fast efforts with recovery in a planned order. The hard part is knowing, mid-run, whether you are truly running at your target pace. Staring at your wrist wrecks your form, and starting the first repetition too fast tends to cost you in the last one. IntervalRunner is a coaching app: you build intervals by time, distance or heart rate zone, and it alerts you by sound and vibration when your speed drifts away from the target. The goal is that you can tell "too slow" or "too fast" without looking at a screen.</p>
 <p>It does not decide your workout for you. You choose the target pace and structure, and the app helps you stick to it with alerts. For general training background, see our separate <a href="/guides/interval-running-workout-basics">interval running basics</a> article.</p>
 
-<h2>Supported platforms</h2>
+<h2 id="en-2">Supported platforms</h2>
 <ul>
 <li>The <strong>iPhone</strong> app targets iOS 26 and later.</li>
 <li>The <strong>Apple Watch</strong> app supports watchOS 10 and later. When a watch is available it does the measuring, and the iPhone handles the screen and voice guidance.</li>
@@ -101,7 +131,8 @@
 </ul>
 <p>Location permission is requested only while the app is in use. The app works without an account or extra analytics tools, and subscription payments are handled by the store. The core features you need to run are free, and some extras are part of a subscription.</p>
 
-<h2>How to build an interval workout</h2>
+<h2 id="en-3">Screens at a glance</h2><p>The six images below are store screenshots, so they carry a promo headline on top; the screens themselves are the iPhone app. The fourth image also includes an Apple Watch screen.</p><div class="shots"><figure><img src="/images/guides/intervalrunner/01.webp" alt="IntervalRunner run screen: fast interval 3 of 8, on target, 214 m remaining, 4:01 per km against a 4:00 target, heart rate 158 in zone 3, 2.8 km total, next step a 200 m recovery" width="560" height="1212" loading="lazy" decoding="async"><figcaption>The main run screen: the big number is distance remaining, the bar shows whether current pace sits inside the target band (the mint section), and below are pace, heart rate with zone, total distance and the next step.</figcaption></figure><figure><img src="/images/guides/intervalrunner/02.webp" alt="IntervalRunner slow alert screen: an amber background, 26 seconds slow, 288 m remaining, 4:26 per km against 4:00, and a speech bubble reading "Too slow, speed up"" width="560" height="1212" loading="lazy" decoding="async"><figcaption>When you are slower than target: the background and wording change and a voice cue such as "Too slow, speed up" plays, so you can read the state without reading numbers.</figcaption></figure><figure><img src="/images/guides/intervalrunner/03.webp" alt="IntervalRunner Workouts tab with a recent Ladder 400-800-1200 entry, three saved workouts and presets such as Slow Run 30 min, Zone 2 Run 40 min, 400 m x8 and Yasso 800" width="560" height="1212" loading="lazy" decoding="async"><figcaption>The Workouts tab: your latest run, workouts you saved, and built-in presets, top to bottom. The Start button on each row begins immediately.</figcaption></figure><figure><img src="/images/guides/intervalrunner/04.webp" alt="An iPhone run screen shown together with an Apple Watch screen, both on fast interval 5 of 8 and on target, with 152 m remaining on the phone" width="560" height="1212" loading="lazy" decoding="async"><figcaption>With an Apple Watch, the wrist measures and taps you while the iPhone shows the same information on screen and by voice.</figcaption></figure><figure><img src="/images/guides/intervalrunner/05.webp" alt="IntervalRunner run summary for a 400 m x8 workout: 86% of time on target pace, 8 of 8 intervals on target, 33:19 total, 6.45 km, average heart rate 151, and a per-step list of target versus actual" width="560" height="1212" loading="lazy" decoding="async"><figcaption>The post-run summary: the share of time spent inside the target band and each step's target versus actual pace. The record is also saved to the health app.</figcaption></figure><figure><img src="/images/guides/intervalrunner/06.webp" alt="IntervalRunner heart rate zone screen: in target zone, 23:50 remaining, heart rate 138 in zone 2 based on the median of the last three readings, pace 6:07 per km as reference, next step a 5 minute cooldown" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Heart rate zone target (Pro): the app guides you to stay in zone 2 and shows pace only as a reference.</figcaption></figure></div>
+<h2 id="en-4">How to build an interval workout</h2>
 <ol>
 <li><strong>Pick the building blocks.</strong> Add a warm-up, repeats, recovery and a cool-down in order. Repeats can be defined by time (for example three minutes at target pace) or distance (for example 400 meters at target pace), and you can mix both.</li>
 <li><strong>Choose recovery.</strong> Recovery can be a jog, a walk or a stop. If you set heart-rate-based recovery, the app waits for your heart rate to come down rather than for a fixed time before moving on.</li>
@@ -112,10 +143,14 @@
 </ol>
 <p>A quick start where you set only a distance or pace, and templates for common structures such as ladders and pyramids, are part of the design. What is available depends on the app version, so check the lists inside the app.</p>
 
-<h2>How the alerts behave</h2>
+<h2 id="en-5">Reading the run screen and summary</h2><p>The run screen is kept simple so you can read it at a glance. The largest number is what remains in the current step: distance, or time for a time-based step. Below it, a horizontal bar has a dot, and when the dot sits inside the mint section you are inside the target pace band. A dot to the left means slow, to the right means fast. Under the bar, current pace, the target and the location status appear in small type, and the bottom shows heart rate with its zone, total distance and the next step. The thin line at the very bottom marks your position in the whole workout.</p>
+<p>The summary after the run shows the share of time you stayed on target and each step's actual pace against its target. For interval training that per-step list is more useful than a single average pace. An average can match your target while the first repeat was far too fast and the last one fell apart, and those are different workouts. For eight 400 m repeats set to a 3:50 to 4:10 band, you can see whether results such as 3:58, 4:03, 3:59 and 4:05 stay evenly inside the band or drift to one side as the session goes on, and use that when you choose the next target band. The record is also saved to the health app, so you can continue to look at it from your watch or another app.</p>
+<h2 id="en-6">How the alerts behave</h2>
 <p>Instant speed from GPS fluctuates a lot. The app smooths values over a short time and alerts only when a deviation lasts for a few seconds. It keeps a gap between alerts so you are not nagged repeatedly, and alerts escalate if the deviation continues. The sound cues use different tones for fast and slow, so you can tell them apart without parsing speech. Voice guidance plays pre-generated sentence files, and the app discloses that the voice is synthetic. Twelve languages are supported.</p>
 
-<h2>Tips</h2>
+<h2 id="en-7">Where free ends and Pro begins</h2><p>The principle stated in the development documents is that what you need to run is free, while design depth and analysis are Pro. The three alert channels, counting modes, treadmill mode, Apple Watch sync and GPX export are free. Using a heart rate zone as the target, heart-rate-based recovery that ends when your heart rate drops, nested repeats, the ladder, pyramid and Yasso generators, per-step analysis and trends, and CSV export are listed as subscription features. You can save three workouts for free, and running a workout without saving it is always allowed. If a subscription lapses, your records are not deleted; only the locked features close.</p>
+<p>These boundaries can be adjusted as versions change. What the subscription actually includes is whatever the comparison table on the in-app subscription screen shows, and so are the price and any free trial terms. The (Pro) label on the heart rate zone screenshot reflects the same split.</p>
+<h2 id="en-8">Tips</h2>
 <ul>
 <li>Starting the first repetition slightly under target is fine. If the alert says you are fast, follow it.</li>
 <li>A very narrow tolerance band makes alerts fire constantly. Start wide and tighten as you get used to it.</li>
@@ -124,7 +159,7 @@
 <li>Before you start, check battery and GPS signal on both watch and phone.</li>
 </ul>
 
-<h2>Troubleshooting</h2>
+<h2 id="en-9">Troubleshooting</h2>
 <ul>
 <li><strong>Alerts fire too often.</strong> Widen the tolerance band or change the counting mode.</li>
 <li><strong>Heart rate targets do not work.</strong> Check that a Watch or heart rate sensor is connected and health data permission is granted. There is no heart rate in iPhone-only mode without a sensor.</li>
@@ -132,27 +167,48 @@
 <li><strong>Speed jumps around.</strong> GPS is unstable between buildings and right after starting. Wait for a good signal before you begin.</li>
 </ul>
 
-<h2>FAQ</h2>
-<h3>Do I need an Apple Watch?</h3>
-<p>No. You can run with the iPhone alone using the run-on-this-iPhone-only option, though wrist haptics and watch-measured heart rate will not be available.</p>
-<h3>What is free?</h3>
-<p>The core features you need to run are free. Which items need a subscription, and the price, are shown on the in-app subscription screen.</p>
-<h3>Can beginners use it?</h3>
-<p>You can start with simple structures, but you are responsible for judging intensity and your condition. If you have health concerns, consult a professional.</p>
-<h3>Where is my data stored?</h3>
-<p>Records live mainly on your device and in the health app, and the app works without an account. See the <a href="/privacy">privacy policy</a>.</p>
-<h3>Can I turn a run into a video?</h3>
-<p>Runs saved to your health app can be turned into videos with an app such as <a href="/guides/runvue">RunVue</a>.</p>
+<h2 id="en-10">Limits and known issues</h2><ul>
+<li><b>Pace depends on GPS.</b> Speed can jump between tall buildings, in tunnels and right after you start. The app smooths values and alerts only when a deviation persists, but in poor signal alerts can be late or off. In treadmill mode, steps switch by treadmill speed without GPS.</li>
+<li><b>Heart rate depends on the sensor.</b> Wrist optical sensors wobble in cold weather or with a loose strap. If a heart-rate-based step comes up with no heart rate source, the app moves on by time instead and tells you before you start.</li>
+<li><b>The iPhone needs iOS 26 or later and the Apple Watch needs watchOS 10 or later.</b> Older devices cannot install it.</li>
+<li><b>Voice cues are synthetic.</b> The app plays pre-generated sentence files in 12 languages; the phrase list is fixed, so you cannot add free-form phrases.</li>
+<li><b>It is not a training prescription or a medical tool.</b> You choose the target pace, heart rate zone and number of repeats. Heart rate and pace readouts are not diagnostic. If you feel chest pain or dizziness, stop right away.</li>
+<li><b>For the Android version, check the store listing for scope.</b> The screens and descriptions in this guide are for iPhone and Apple Watch.</li>
+</ul>
+<h2 id="en-11">How it compares</h2><div class="tbl-wrap"><table><caption>Ways to hold pace in interval training</caption><thead><tr><th>Method</th><th>Strengths</th><th>Weaknesses</th></tr></thead><tbody>
+<tr><td>IntervalRunner</td><td>Build time, distance and heart rate zone steps, get sound and haptic alerts only on deviation, per-step result summary</td><td>Needs iOS 26 or later, some features are subscription, you must set things up yourself</td></tr>
+<tr><td>A watch's built-in workout app with interval or pace alerts</td><td>Nothing to install, the watch does it all</td><td>Supported structures and alert styles differ by device and app, so check first</td></tr>
+<tr><td>A general running app's periodic voice updates (every km and so on)</td><td>Simple and familiar</td><td>Cannot flag a deviation right away in short intervals</td></tr>
+<tr><td>A stopwatch and mental arithmetic</td><td>Free and no gear</td><td>You must look at the screen while running and judging pace is hard</td></tr>
+</tbody></table></div>
+<p>Which one fits depends on your goal. If interval training is new to you, read the basic structure (warm-up, short repeats, enough recovery) in our <a href="/guides/interval-running-workout-basics">interval running basics</a> article and start with your watch's built-in features. Consider a dedicated app once you need deviation alerts.</p>
+<h2 id="en-src">Sources and further reading</h2><ol class="sources"><li><a href="https://developer.apple.com/documentation/healthkit/hkworkoutsession" target="_blank" rel="noopener">Apple Developer: HKWorkoutSession</a></li><li><a href="https://developer.apple.com/documentation/watchos-apps" target="_blank" rel="noopener">Apple Developer: watchOS apps</a></li><li><a href="https://www.who.int/news-room/fact-sheets/detail/physical-activity" target="_blank" rel="noopener">WHO: Physical activity fact sheet</a></li></ol>
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>Do I need an Apple Watch?</summary><p>No. You can run with the iPhone alone using the run-on-this-iPhone-only option, though wrist haptics and watch-measured heart rate will not be available.</p></details>
+<details class="faq"><summary>What is free?</summary><p>The core features you need to run are free. Which items need a subscription, and the price, are shown on the in-app subscription screen.</p></details>
+<details class="faq"><summary>Can beginners use it?</summary><p>You can start with simple structures, but you are responsible for judging intensity and your condition. If you have health concerns, consult a professional.</p></details>
+<details class="faq"><summary>Where is my data stored?</summary><p>Records live mainly on your device and in the health app, and the app works without an account. See the <a href="/privacy">privacy policy</a>.</p></details>
+<details class="faq"><summary>Can I turn a run into a video?</summary><p>Runs saved to your health app can be turned into videos with an app such as <a href="/guides/runvue">RunVue</a>.</p></details>
+<details class="faq"><summary>When exactly does an alert fire?</summary><p>When the smoothed current speed leaves the target band and stays out for a few seconds. Alerts are spaced apart so the same one does not repeat back to back, and they escalate if the deviation continues.</p></details>
+<details class="faq"><summary>Does it work on a treadmill?</summary><p>The development documents include a treadmill mode that switches steps by treadmill speed without GPS. Unlike outdoors, the speed readout depends on the treadmill setting, so try it with a wider tolerance band first.</p></details>
+<details class="faq"><summary>Do I lose my records if I cancel the subscription?</summary><p>The stated principle is not to delete data. Records stay and only locked features close. Check the in-app subscription screen and store listing for exact terms.</p></details>
+
 <p>For other questions, visit the <a href="/support">support page</a>.</p>
 
+  
   </section>
 
+  <aside class="author-box"><div>
+<p lang="ko"><b>작성: SETLOG</b> — iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 이 글은 광고·제휴 대가 없이 썼고, 언급한 앱은 모두 SETLOG가 만든 앱뿐입니다. 오류나 정정할 내용은 <a href="/contact">Contact</a>로 알려 주세요.</p>
+<p lang="en"><b>By SETLOG</b> — a developer who builds and runs iOS, Android and macOS apps. This article was written without payment or affiliate arrangements, and the only apps it mentions are SETLOG's own. Send corrections through <a href="/contact">Contact</a>.</p>
+</div></aside>
   <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
 <li><a href="/guides/interval-running-workout-basics">인터벌 러닝 입문 · Interval running basics</a></li>
-<li><a href="/guides/runvue">RunVue 사용 가이드</a></li>
-<li><a href="/guides/running-replay-video-guide">러닝 기록을 영상으로 남기는 법</a></li>
+<li><a href="/guides/runvue">RunVue 사용 가이드 · RunVue guide</a></li>
+<li><a href="/guides/running-replay-video-guide">러닝 기록을 영상으로 남기는 법 · Turning runs into videos</a></li>
+<li><a href="/guides/">모든 가이드 · All guides</a></li>
 <li><a href="/support">Support · 지원</a></li>
-  </ul></div>
+</ul></div>
 </main>
 
 <footer class="site-footer">
