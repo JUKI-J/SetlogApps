@@ -3,10 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ZIP RAR 7z 압축 포맷 차이 | Archive Formats Explained — SETLOG</title>
-<meta name="description" content="ZIP, RAR, 7z, tar.gz의 차이와 압축·암호화의 구분, 분할 압축, 암호 압축 모범 사례를 정리했습니다. ZIP, RAR, 7z and tar compared.">
+<title>ZIP RAR 7z tar 압축 포맷 비교 | ZIP, RAR, 7z and tar compared — SETLOG</title>
+<meta name="description" content="ZIP·7z·RAR·tar.gz·xz·zst 포맷 비교표, ZipCrypto와 AES 암호화의 차이, 파일명 숨김, 한글 파일명 깨짐과 macOS 메타데이터 같은 호환성 함정, 분할 압축 사용법을 정리합니다. ZIP, RAR, 7z and tar explained.">
 <link rel="canonical" href="https://setlog.net/guides/zip-rar-7z-archive-formats-explained">
-<meta property="og:title" content="ZIP RAR 7z 압축 포맷 차이 | Archive Formats Explained — SETLOG"><meta property="og:description" content="ZIP, RAR, 7z, tar.gz의 차이와 압축·암호화의 구분, 분할 압축, 암호 압축 모범 사례를 정리했습니다. ZIP, RAR, 7z and tar compared."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/zip-rar-7z-archive-formats-explained">
+<meta property="og:title" content="ZIP RAR 7z tar 압축 포맷 비교 | ZIP, RAR, 7z and tar compared — SETLOG"><meta property="og:description" content="포맷 비교표, 암호화(ZipCrypto/AES), 한글 파일명 깨짐, macOS 메타데이터 함정과 선택 도우미."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/zip-rar-7z-archive-formats-explained">
+<meta property="og:image" content="https://setlog.net/images/zipda-icon.png"><meta property="og:site_name" content="SETLOG"><meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ZIP·RAR·7z·tar 압축 포맷 한눈에 이해하기","description":"압축 포맷 비교, 암호화 주의점, 한글 파일명과 macOS 메타데이터 호환성 함정을 정리한 가이드.","inLanguage":"ko","datePublished":"2026-10-07","dateModified":"2026-10-07","author":{"@type":"Organization","name":"SETLOG","url":"https://setlog.net/"},"publisher":{"@type":"Organization","name":"SETLOG","url":"https://setlog.net/"},"mainEntityOfPage":"https://setlog.net/guides/zip-rar-7z-archive-formats-explained","image":"https://setlog.net/images/zipda-icon.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "ZIP과 7z 중 무엇이 더 좋은가요?", "acceptedAnswer": {"@type": "Answer", "text": "호환성은 ZIP, 크기는 보통 7z가 유리합니다. 받는 사람의 환경을 모르면 ZIP, 상대가 7-Zip 같은 도구를 가지고 있고 용량이 중요하면 7z를 고르세요."}}, {"@type": "Question", "name": "압축하면 보안이 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아닙니다. 암호를 걸어야 하고 방식도 중요합니다. 전통 ZipCrypto는 약하므로 AES-256을 고르고, 파일명까지 숨겨야 하면 7z의 파일명 암호화 옵션을 쓰세요."}}, {"@type": "Question", "name": "압축 파일을 여러 번 압축하면 더 작아지나요?", "acceptedAnswer": {"@type": "Answer", "text": "대개 아닙니다. 이미 압축된 데이터는 거의 줄지 않습니다. 사진이나 영상은 한 번 묶는 것이 목적이지 용량 감소가 목적이 아닙니다."}}, {"@type": "Question", "name": "RAR를 폰에서 만들 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "RAR 압축은 라이선스상 정식 도구가 필요해서 대부분의 폰 앱은 해제만 지원합니다. 보낼 때는 ZIP이나 7z를 쓰세요."}}, {"@type": "Question", "name": "한글 파일명이 깨질 때는 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "파일 내용이 아니라 이름의 문자 인코딩이 어긋난 것입니다. CP949와 UTF-8을 바꿔 보는 도구로 열거나 이름 복구 기능을 쓰면 됩니다. 보내는 쪽은 Windows 호환 옵션이 있는 도구를 쓰면 줄어듭니다."}}, {"@type": "Question", "name": "도움이 필요하면 어디로 문의하나요?", "acceptedAnswer": {"@type": "Answer", "text": "지원 페이지를 확인해 주세요."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,163 +17,252 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
-<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Archive formats explained</p>
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Archive formats</p>
 <main class="article">
   <h1>ZIP·RAR·7z·tar 압축 포맷 한눈에 이해하기</h1>
-  <p class="sub">ZIP, RAR, 7z and tar explained: formats, encryption and split archives</p>
+  <p class="sub">ZIP, RAR, 7z and tar explained: formats, encryption and cross-platform pitfalls</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
-  
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 9분</p>
+
   <section id="ko" lang="ko">
 
-<h2>압축 파일이란 무엇인가</h2>
-<p>압축 파일(아카이브)은 두 가지 일을 합니다. 하나는 여러 파일과 폴더를 하나로 묶는 것이고, 다른 하나는 데이터를 더 작게 줄이는 것입니다. 포맷마다 이 두 역할을 분담하는 방식이 다릅니다. ZIP처럼 묶기와 줄이기를 한 번에 하는 포맷도 있고, tar처럼 묶기만 하고 줄이기는 gzip 같은 다른 도구에 맡기는 포맷도 있습니다. 포맷 이름만 외우기보다 이 구분을 알고 있으면 확장자가 낯설어도 대략 어떤 성질인지 짐작할 수 있습니다.</p>
+<nav class="toc" aria-label="목차"><b>목차</b><ol>
+<li><a href="#ko-what">압축 파일이 하는 두 가지 일</a></li>
+<li><a href="#ko-table">포맷 비교표</a></li>
+<li><a href="#ko-crypto">암호화: ZipCrypto, AES, 파일명 숨김</a></li>
+<li><a href="#ko-pitfalls">운영체제 사이에서 생기는 함정</a></li>
+<li><a href="#ko-split">큰 파일과 분할 압축</a></li>
+<li><a href="#ko-choose">어떤 포맷을 고를까: 선택 도우미</a></li>
+<li><a href="#ko-zipda">폰에서 다루기: Zipda 사례</a></li>
+<li><a href="#ko-trouble">문제 해결</a></li>
+<li><a href="#ko-sources">출처 및 더 읽을거리</a></li>
+<li><a href="#ko-faq">자주 묻는 질문</a></li>
+</ol></nav>
 
-<h2>주요 포맷 비교</h2>
-<h3>ZIP</h3>
-<p>가장 널리 쓰이는 포맷입니다. 윈도우, 맥, 아이폰의 파일 앱, 대부분의 안드로이드 파일 관리 앱이 기본 수준에서 다룹니다. 파일을 하나씩 따로 압축하기 때문에 한 파일만 빠르게 꺼낼 수 있다는 장점이 있습니다. 압축률은 7z보다 대체로 낮습니다. 받는 사람의 환경을 모를 때 가장 무난한 선택입니다.</p>
-<h3>7z</h3>
-<p>오픈 포맷이며 LZMA 계열 알고리즘으로 같은 자료를 더 작게 만드는 경우가 많습니다. 파일 여러 개를 하나의 덩어리로 묶어 압축하는 "솔리드" 방식을 쓰면 비슷한 파일이 많을수록 유리하지만, 일부만 꺼낼 때 앞부분을 함께 풀어야 해서 느려질 수 있습니다. 최근 윈도우 11은 7z도 열 수 있지만, 구버전 환경에서는 별도 도구가 필요할 수 있습니다.</p>
-<h3>RAR</h3>
-<p>높은 압축률과 복구 정보 기능으로 알려진 독점 포맷입니다. 만드는 쪽은 WinRAR 같은 정식 도구가 필요하고, 푸는 쪽은 여러 도구가 지원합니다. 받을 일은 많아도 직접 만들 일은 드문 포맷이라고 보면 됩니다.</p>
-<h3>tar, gz, bz2, xz</h3>
-<p>리눅스와 개발 환경에서 자주 보는 계열입니다. tar는 묶기만 하고, 그 위에 gzip(.tar.gz), bzip2(.tar.bz2), xz(.tar.xz)를 입혀 줄입니다. 권한 정보 같은 유닉스 속성을 보존하는 데 강합니다. 윈도우 일반 사용자에게는 낯설어서, 받는 사람이 누구인지 먼저 따져야 합니다.</p>
-<h3>LZH, ALZ, EGG</h3>
-<p>일본이나 한국에서 한때 널리 쓰인 포맷들로, 지금은 받아서 풀기만 하는 경우가 대부분입니다. 풀 수 있는 도구가 제한적이므로 오래된 자료를 열 때 만나게 됩니다.</p>
+<h2 id="ko-what">압축 파일이 하는 두 가지 일</h2>
+<p>압축 파일(아카이브)은 서로 다른 두 가지 일을 합니다. 하나는 여러 파일과 폴더를 하나로 묶는 것이고, 다른 하나는 데이터를 더 작게 줄이는 것입니다. ZIP이나 7z는 둘을 한 번에 처리하지만, tar는 묶기만 하고 줄이기는 gzip·xz·zstd 같은 별도 압축기에 맡깁니다. 그래서 리눅스 세계에서는 <code>.tar.gz</code>처럼 확장자가 두 겹이 됩니다. 이 구분을 알면 낯선 확장자를 만나도 성질을 짐작할 수 있습니다.</p>
+<p>포맷을 고를 때 실제로 부딪히는 문제는 압축률보다 호환성입니다. 받는 사람이 열 수 있는지, 한글 파일명이 깨지지 않는지, 암호를 걸었다면 상대의 도구가 그 방식을 지원하는지가 훨씬 자주 문제를 만듭니다. 이 글은 포맷별 특성을 표로 정리한 뒤, 암호화와 운영체제 간 함정을 따로 다룹니다.</p>
 
-<h2>압축과 암호화는 별개다</h2>
-<p>압축은 크기를 줄이는 것이고, 암호화는 내용을 숨기는 것입니다. 포맷에 따라 두 기능이 한 화면에서 같이 설정되지만 원리는 별개입니다. 암호를 건다고 해서 파일이 더 작아지지 않으며, 압축했다고 해서 안전해지지도 않습니다.</p>
-<ul>
-<li>ZIP의 전통적 암호 방식(ZipCrypto)은 오래되어 취약한 것으로 알려져 있습니다. 중요한 자료라면 AES-256을 지원하는 방식을 고르세요. 단, 일부 구형 도구는 AES 방식 ZIP을 열지 못할 수 있으므로 받는 사람의 환경을 확인해야 합니다.</li>
-<li>ZIP은 암호를 걸어도 파일 이름 목록은 보일 수 있습니다. 7z는 "헤더 암호화" 옵션으로 파일명까지 숨길 수 있습니다.</li>
-<li>암호 자체가 약하면 암호화 방식이 강해도 소용이 없습니다. 길고 추측하기 어려운 문구를 쓰세요.</li>
-</ul>
+<h2 id="ko-table">포맷 비교표</h2>
+<div class="tbl-wrap"><table>
+<caption>압축률은 내용물에 따라 크게 달라지므로 "대체로"로 표현했습니다. 수치는 아래 출처에서 확인된 것만 적었습니다.</caption>
+<thead><tr><th>포맷</th><th>구조와 압축</th><th>암호화</th><th>호환성</th><th>큰 파일·분할</th></tr></thead>
+<tbody>
+<tr><td>ZIP</td><td>파일별로 따로 압축(한 파일만 빠르게 꺼내기 쉬움). 압축률은 대체로 7z보다 낮음</td><td>전통 방식(ZipCrypto)은 사양 문서가 "현대 기준으로 약하다"고 평가 <a href="#src1">[1]</a>. AES는 도구가 지원할 때만</td><td>Windows, macOS, iOS 파일 앱, 대부분의 Android 파일 앱이 기본 수준에서 처리</td><td>ZIP64 확장으로 4GB를 넘는 파일, 6만 5535개를 넘는 항목 처리 <a href="#src1">[1]</a>. 여러 볼륨 분할 가능(사양 4.3.3)</td></tr>
+<tr><td>7z</td><td>LZMA·LZMA2 기반으로 높은 압축률. 여러 파일을 한 덩어리로 묶는 솔리드 압축과 헤더 압축 지원 <a href="#src2">[2]</a></td><td>AES-256. 키는 SHA-256을 여러 번 반복해 도출 <a href="#src2">[2]</a>. 파일명까지 숨기는 헤더 암호화 옵션이 7-Zip에 있음</td><td>7-Zip, 일부 최신 OS 기본 기능, 전용 앱. 구버전 환경은 별도 도구 필요</td><td>사양상 최대 파일 크기가 사실상 무제한 수준(문서 기준 16000000000GB) <a href="#src2">[2]</a>. 볼륨 분할 지원</td></tr>
+<tr><td>RAR</td><td>독점 포맷. RAR5는 복구 레코드를 넣을 수 있고 최대 크기가 보호 데이터의 1000%까지 늘었다고 개정 이력에 기록 <a href="#src3">[3]</a></td><td>AES 기반 암호화와 파일명 암호화 옵션(WinRAR 기준)</td><td>풀 수 있는 도구는 많지만 만드는 쪽은 WinRAR 등 정식 도구 필요</td><td>분할(part1.rar 등)과 복구 레코드가 강점. RAR5 사전 크기는 64GB까지 확장 <a href="#src3">[3]</a></td></tr>
+<tr><td>tar.gz / tar.xz</td><td>tar가 묶고 gzip 또는 xz가 줄임. xz는 대체로 더 작지만 느림</td><td>포맷 자체에는 암호화 없음(별도 도구 필요)</td><td>리눅스·macOS 기본. Windows 일반 사용자에게는 낯설음</td><td>유닉스 권한·소유자·심볼릭 링크 보존에 강함</td></tr>
+<tr><td>tar.zst</td><td>Zstandard는 빠른 속도와 높은 압축률의 균형을 내세우는 알고리즘이며 IETF RFC 8878로 표준화 <a href="#src4">[4]</a></td><td>포맷 자체에는 없음</td><td>개발 환경 중심. 일반 사용자 도구에서는 지원이 아직 고르지 않음</td><td>압축 해제가 레벨과 상관없이 빠른 편이라고 소개됨 <a href="#src4">[4]</a></td></tr>
+<tr><td>LZH, ALZ, EGG</td><td>과거 일본·한국에서 쓰이던 포맷</td><td>도구별</td><td>받아서 풀기만 하는 경우가 대부분. 지원 도구가 제한적</td><td>—</td></tr>
+</tbody></table></div>
+<p>7z의 "16000000000GB" 같은 사양상 한도는 현실의 한계가 아닙니다. 실제 한계는 저장 장치의 파일 시스템, 남은 디스크 용량, 그리고 받는 쪽 도구의 구현입니다. 특히 4GB가 넘는 ZIP은 ZIP64를 이해하는 도구여야 열린다는 점이 구형 도구에서 자주 문제가 됩니다.</p>
 
-<h2>암호 압축 파일 모범 사례</h2>
+<h2 id="ko-crypto">암호화: ZipCrypto, AES, 파일명 숨김</h2>
+<p>압축은 크기를 줄이는 것이고 암호화는 내용을 숨기는 것입니다. 한 화면에서 같이 설정되지만 원리는 별개입니다. 암호를 건다고 파일이 작아지지 않으며, 압축했다고 안전해지지도 않습니다. 압축 암호에서 짚어야 할 것은 세 가지입니다.</p>
+<h3>1) ZipCrypto와 AES는 다르다</h3>
+<p>ZIP의 전통 암호화는 사양 문서(PKWARE APPNOTE 6.0.1)가 스스로 "오늘날의 기준으로 약하다고 간주되며 낮은 보안 수요나 구형 ZIP 프로그램과의 호환 용도로만 권장한다"고 적을 만큼 약한 방식입니다 <a href="#src1">[1]</a>. 같은 사양의 7장은 AES를 포함한 강한 암호화 알고리즘을 따로 정의합니다. 그런데 도구 화면에는 "암호 설정"이라고만 나오는 경우가 많아, 모르고 구형 방식으로 저장되기 쉽습니다. 중요한 자료라면 도구에서 AES-256을 명시적으로 고르세요. 대가는 호환성입니다. AES ZIP을 열지 못하는 구형 도구가 있어서, 받는 사람 환경을 모른다면 열리는지 먼저 확인해야 합니다.</p>
+<h3>2) 암호를 걸어도 파일명이 보일 수 있다</h3>
+<p>ZIP은 암호를 걸어도 파일 이름 목록이 그대로 보이는 경우가 많습니다. 이름만으로 내용을 짐작할 수 있다면 정보가 샙니다(예: "2026_연봉협상_김과장.xlsx"). 7z는 7-Zip에서 파일명 암호화(헤더 암호화) 옵션을 켜면 비밀번호를 입력하기 전에는 목록 자체가 보이지 않습니다. 파일명도 민감하다면 7z의 이 옵션을 쓰거나, 파일을 하나로 묶어 이름을 무난하게 바꾼 뒤 암호화하세요.</p>
+<h3>3) 암호가 약하면 알고리즘은 소용없다</h3>
+<p>AES-256이어도 암호가 "1234"이면 의미가 없습니다. 7z는 키를 SHA-256 해시를 여러 번 반복해 만들어 무차별 대입을 더 어렵게 하지만 <a href="#src2">[2]</a>, 반복 횟수가 약한 암호를 구해 주지는 못합니다. 길고 추측하기 어려운 문구를 쓰고, 암호는 압축 파일과 다른 경로(전화, 다른 메신저)로 전달하세요.</p>
+
+<h2 id="ko-pitfalls">운영체제 사이에서 생기는 함정</h2>
+<h3>한글 파일명이 깨질 때</h3>
+<p>가장 흔한 문제입니다. ZIP 사양에서 파일명의 기본 문자 집합은 원래 IBM 코드 페이지 437이고, 일반 상태 비트 11이 켜져 있어야 파일명을 UTF-8로 해석하도록 규정돼 있습니다 <a href="#src1">[1]</a>. 이 비트를 켜지 않고 한국어 윈도우 환경에서 압축하면 한글이 시스템 코드 페이지(CP949, 마이크로소프트 식별자 949)로 저장되는 경우가 많습니다 <a href="#src5">[5]</a>. 이런 ZIP을 UTF-8만 가정하는 도구에서 열면 파일명이 외계어가 됩니다. 반대로 UTF-8로 저장된 ZIP을 오래된 윈도우 도구가 지역 코드 페이지로 읽어도 깨집니다.</p>
+<p>해결은 두 갈래입니다. 받는 쪽에서는 인코딩을 감지하거나 직접 고를 수 있는 도구를 쓰고(CP949 ↔ UTF-8), 보내는 쪽에서는 윈도우에서 열릴 것을 고려해 도구의 "호환 이름" 옵션을 사용하거나 7z·tar처럼 이름을 유니코드로 저장하는 포맷을 쓰세요. 파일 내용은 멀쩡하고 이름만 바뀐 것이므로, 이름을 복구하면 됩니다. 아래 Zipda 사례에서 화면을 볼 수 있습니다.</p>
+<h3>macOS가 몰래 넣는 메타데이터</h3>
+<p>맥에서 만든 ZIP을 윈도우에서 열면 <code>__MACOSX</code> 폴더, <code>.DS_Store</code>, 그리고 <code>._파일명</code> 형태의 보조 파일이 같이 보이는 경우가 있습니다. 맥의 리소스 포크와 확장 속성, 폴더 보기 설정이 담긴 파일들로, 맥에서는 숨겨져 있고 윈도우에서는 그냥 쓰레기처럼 보입니다. 지워도 데이터는 손상되지 않습니다. 윈도우·리눅스 사용자에게 보낼 때는 이런 파일이 들어가지 않는 도구나 옵션을 쓰는 편이 깔끔합니다. 또 맥 파일명에서 자주 보이는 현상으로 한글 자모가 분리되어 보이는 경우(유니코드 정규화 형태의 차이)가 있는데, 이 역시 이름의 표현 방식 문제이지 파일 손상이 아닙니다.</p>
+<h3>이미 압축된 데이터는 더 줄지 않는다</h3>
+<p>JPG, MP4, 이미 압축된 ZIP, PDF 안의 이미지는 압축을 해도 거의 줄지 않습니다. 사진 폴더를 ZIP이나 7z로 묶는 목적은 크기 감소가 아니라 한 덩어리로 보내기라고 생각하는 편이 정확합니다. 압축하고 또 압축해도 크기는 줄지 않고 시간만 듭니다.</p>
+
+<h2 id="ko-split">큰 파일과 분할 압축</h2>
+<p>이메일 첨부나 메신저 한도 때문에 큰 파일을 조각으로 나눠 보내는 경우가 있습니다. 포맷마다 이름 규칙이 다릅니다. 7z와 ZIP은 <code>.7z.001</code>, <code>.zip.001</code> 같은 번호 방식이나 <code>.z01</code>, <code>.z02</code> 뒤에 <code>.zip</code>이 오는 방식을, RAR는 <code>.part1.rar</code> 방식을 씁니다. ZIP 사양도 여러 볼륨으로 나뉘거나 사용자 지정 크기로 분할될 수 있음을 규정합니다 <a href="#src1">[1]</a>.</p>
 <ol>
-<li>암호는 압축 파일을 보낸 경로와 다른 경로로 전달하세요. 같은 메신저에 파일과 암호를 함께 올리면 의미가 줄어듭니다.</li>
-<li>다른 사이트에서 쓰는 암호를 재사용하지 마세요.</li>
-<li>받는 사람이 열 수 있는 방식인지 한 번 확인하세요(AES ZIP인지, 7z인지).</li>
-<li>보낸 뒤에 원본 폴더의 임시 복사본을 정리하세요.</li>
-<li>암호를 잊으면 복구할 방법이 사실상 없다는 점을 기억하세요. 안전한 곳에 기록해 두세요.</li>
+<li>모든 조각을 같은 폴더에 두세요. 하나라도 빠지면 풀리지 않습니다.</li>
+<li>조각 이름을 바꾸지 마세요. 도구가 이름 규칙으로 세트를 찾습니다.</li>
+<li>첫 조각(<code>.001</code>, <code>.part1.rar</code>, 또는 마지막의 <code>.zip</code>)을 열면 나머지가 이어서 읽힙니다.</li>
+<li>받은 조각의 크기가 보낸 쪽과 같은지 확인하세요. "손상된 아카이브" 오류의 가장 흔한 원인은 다운로드가 중간에 끊겼거나 조각이 빠진 경우입니다.</li>
 </ol>
+<p>분할은 편하지만 한 조각이라도 잃으면 전체가 막힙니다. 파일 공유 방법 자체를 바꾸는 편이 나을 때도 많으므로 <a href="/guides/share-files-between-iphone-android-pc">기기 간 파일 옮기는 법</a>에서 한도별 대안을 비교해 보세요.</p>
 
-<h2>분할 압축</h2>
-<p>용량 제한이 있는 곳으로 보내야 할 때 큰 아카이브를 여러 조각으로 나눕니다. 이름은 .zip.001, .z01, .part1.rar처럼 다양합니다. 받을 때는 모든 조각을 같은 폴더에 두고 첫 번째 조각(또는 마지막 .zip 조각)을 열어야 합니다. 이름을 바꾸거나 하나라도 빠지면 풀리지 않고, 일부만 받은 상태에서 풀면 오류가 납니다. 요즘은 클라우드 링크로 큰 파일을 통째로 보내는 일이 많아 분할 압축의 필요가 줄었지만, 용량 제한이 있는 환경에서는 여전히 유효합니다.</p>
+<h2 id="ko-choose">어떤 포맷을 고를까: 선택 도우미</h2>
+<p>핵심 기준은 받는 사람이 누구인가입니다. 모르면 ZIP, 용량이 중요하고 상대가 도구를 갖췄으면 7z, 리눅스·개발 환경이면 tar 계열, 파일명까지 숨겨야 하면 7z 헤더 암호화가 기본 답입니다. 아래 도우미에 목적, 받는 사람, 분할 여부를 고르면 후보와 이유를 보여 줍니다.</p>
+<div class="tool" data-tool="archive"></div>
 
-<h2>언제 무엇을 쓸까</h2>
+<h2 id="ko-zipda">폰에서 다루기: Zipda 사례</h2>
+<p>아이폰의 파일 앱은 ZIP을 풀고 만드는 기능을 기본 제공하지만 RAR, 7z, 암호 압축, 한글 인코딩 문제는 기본 기능만으로 다루기 어렵습니다. 이런 경우를 위해 필자가 만든 iOS·macOS 앱 Zipda가 있습니다. 이 글에서 앱을 소개하는 곳은 이 섹션뿐이며, 앞의 내용은 앱과 무관하게 적용됩니다. 개발 문서와 스토어 화면 기준으로 확인된 기능은 다음과 같습니다.</p>
 <ul>
-<li>누구에게 보낼지 모른다: ZIP</li>
-<li>용량이 가장 중요하다: 7z (받는 쪽이 열 수 있는지 확인)</li>
-<li>리눅스 서버나 개발 파일: tar.gz 또는 tar.xz</li>
-<li>민감한 자료: AES-256 방식, 파일명까지 숨기려면 7z 헤더 암호화</li>
-<li>사진·동영상: 이미 압축된 형식이라 아카이브로 묶어도 크기는 거의 줄지 않으므로, 묶는 목적일 때만 쓰세요.</li>
+<li>ZIP, 7z, tar 계열(tar, tar.gz, tar.bz2, tar.xz)을 압축·해제하고 RAR, LZH, ALZ는 해제만 합니다. EGG는 라이선스·특허 문제로 지원하지 않고 RAR 생성도 없습니다.</li>
+<li>암호가 걸린 ZIP, 7z, RAR을 열 수 있고 ZipCrypto 방식도 처리하도록 설계되었습니다. 만들 때는 ZIP에 AES-256을 걸 수 있습니다.</li>
+<li>파일명 인코딩을 기기 안에서 감지하고, 깨진 이름을 되돌리는 복구 도구가 있습니다. 아주 짧은 일본어 파일명이 한국어로 오판될 수 있다는 한계가 개발 문서에 기록돼 있어, 결과가 이상하면 인코딩을 바꿔 봐야 합니다.</li>
+<li>4GB를 넘는 파일(ZIP64)과 분할 세트를 열 수 있습니다. 분할 압축 생성은 이 가이드의 범위가 아닙니다.</li>
+<li>무료이되 압축과 해제는 각각 24시간 기준 하루 3회까지이고, 열어보기·검색·미리보기·파일명 복구는 횟수에 들어가지 않습니다. 횟수를 없애려면 구독이 필요합니다. 가격은 스토어에서 확인하세요.</li>
 </ul>
+<div class="shots">
+<figure><img src="/images/guides/zipda/01.webp" width="560" height="1212" loading="lazy" decoding="async" alt="Zipda 압축 목록 화면: 제주도_가족여행_2026.zip 안의 한글 파일명이 정상으로 보이고 상단에 파일명 인코딩이 확실하지 않다는 안내와 변경 버튼이 있다"><figcaption>한글 파일명 목록. 인코딩이 확실하지 않으면 안내와 변경 버튼이 나옵니다.</figcaption></figure>
+<figure><img src="/images/guides/zipda/02.webp" width="560" height="1212" loading="lazy" decoding="async" alt="Zipda 파일명 복구 화면: 인코딩 CP949(한국어)를 선택하고 깨진 이름과 복구된 한글 이름을 나란히 보여 주며 복구 실행 버튼이 있다"><figcaption>파일명 복구. CP949로 해석해 깨진 이름 옆에 복구될 이름을 보여 줍니다.</figcaption></figure>
+<figure><img src="/images/guides/zipda/03.webp" width="560" height="1212" loading="lazy" decoding="async" alt="Zipda 암호 입력 시트: 경리부_결산자료.zip에 암호가 필요하다는 안내와 입력란, 취소와 열기 버튼"><figcaption>암호 ZIP을 열 때의 입력 화면.</figcaption></figure>
+<figure><img src="/images/guides/zipda/04.webp" width="560" height="1212" loading="lazy" decoding="async" alt="Zipda 대용량 해제 진행 화면: 사진백업_2019-2026.zip 62퍼센트, 4.5GB 중 2.8GB, 초당 68MB, 남은 시간 약 25초"><figcaption>큰 압축 파일의 해제 진행률.</figcaption></figure>
+<figure><img src="/images/guides/zipda/05.webp" width="560" height="1212" loading="lazy" decoding="async" alt="Zipda 압축 만들기 화면: 선택한 항목 7개, 파일 이름 입력, 파일명 호환 옵션으로 Windows 호환(권장)과 표준 UTF-8 선택"><figcaption>압축 만들기. 파일명 호환 옵션으로 Windows 호환을 고를 수 있습니다.</figcaption></figure>
+<figure><img src="/images/guides/zipda/06.webp" width="560" height="1212" loading="lazy" decoding="async" alt="Zipda 홈 화면: 압축 풀기와 압축 만들기 버튼, 오늘 남은 횟수 안내, 같은 WiFi로 주고받기·바로 전체 해제·파일명 복구 도구와 최근 항목"><figcaption>홈 화면. 하루 남은 횟수와 도구 목록이 보입니다.</figcaption></figure>
+</div>
+<h3>누구에게 맞고 누구에게 맞지 않는가</h3>
+<div class="fit">
+<div><h4>잘 맞는 경우</h4><ul><li>윈도우에서 만든 한글 ZIP을 아이폰·맥에서 열어야 할 때</li><li>RAR, 7z, 암호 압축을 폰에서 풀어야 할 때</li><li>파일이 기기 밖으로 나가지 않기를 바랄 때</li></ul></div>
+<div><h4>맞지 않는 경우</h4><ul><li>단순 ZIP 한두 개: 파일 앱 기본 기능으로 충분</li><li>RAR 압축 파일을 만들어야 할 때: 지원하지 않음</li><li>안드로이드·윈도우 사용자: 앱은 iOS·macOS용</li></ul></div>
+</div>
+<p>더 자세한 사용법은 <a href="/guides/zipda">Zipda 가이드</a>에 있습니다. 어떤 앱을 쓰든 출처를 모르는 압축 파일은 풀기 전에 신뢰할 수 있는지 먼저 판단하세요.</p>
 
-<h2>폰에서 압축 파일 다루기</h2>
-<p>아이폰의 파일 앱은 ZIP을 풀고 만드는 기능을 기본 제공하지만, RAR나 7z, 암호 압축은 기본 기능으로 처리하기 어렵습니다. 안드로이드는 기기와 파일 관리 앱에 따라 다릅니다. 이런 경우 전용 앱을 쓰게 됩니다. 한 가지 선택지로 아이폰과 맥용 Zipda가 있습니다. 개발 문서상 ZIP, 7z, tar 계열을 압축·해제하고 RAR, LZH, ALZ를 해제하며, 한글 파일명 인코딩을 감지하고 분할 세트를 열 수 있습니다. 자세한 내용은 <a href="/guides/zipda">Zipda 사용 가이드</a>에 있습니다. 어떤 앱을 쓰든 출처를 모르는 압축 파일은 풀기 전에 신뢰할 수 있는지 먼저 판단하세요.</p>
+<h2 id="ko-trouble">문제 해결</h2>
+<div class="tbl-wrap"><table>
+<thead><tr><th>증상</th><th>가능한 원인</th><th>해결</th></tr></thead>
+<tbody>
+<tr><td>파일명이 외계어로 보인다</td><td>CP949로 저장된 이름을 UTF-8로 해석(또는 반대)</td><td>인코딩을 선택해 여는 도구 사용, 이름 복구</td></tr>
+<tr><td>"손상된 아카이브"</td><td>다운로드 중단, 분할 조각 누락</td><td>크기 비교 후 재다운로드, 조각을 같은 폴더에</td></tr>
+<tr><td>암호가 맞는데 열리지 않음</td><td>도구가 AES 같은 방식을 지원하지 않음</td><td>7-Zip 등 지원 도구로 시도, 보낸 쪽에 방식 확인</td></tr>
+<tr><td>4GB 이상 ZIP이 안 열림</td><td>ZIP64 미지원 도구</td><td>최신 도구 사용 또는 7z로 재압축 요청</td></tr>
+<tr><td>__MACOSX, .DS_Store가 보임</td><td>macOS 메타데이터</td><td>삭제해도 무방, 보낼 때 제외 옵션 사용</td></tr>
+<tr><td>.egg 파일</td><td>지원하지 않는 포맷이 많음</td><td>보낸 사람에게 ZIP·7z로 재요청</td></tr>
+</tbody></table></div>
 
-<h2>문제 해결</h2>
-<h3>파일명이 깨져 보인다</h3>
-<p>압축한 쪽이 지역 인코딩으로 이름을 저장했기 때문일 수 있습니다. 인코딩을 감지하거나 직접 선택해 주는 도구를 쓰세요.</p>
-<h3>"손상된 아카이브"라고 나온다</h3>
-<p>다운로드가 중간에 끊겼거나 분할 조각이 빠졌을 가능성이 큽니다. 크기를 확인하고 다시 받으세요.</p>
-<h3>암호가 맞는데 열리지 않는다</h3>
-<p>해당 도구가 그 암호 방식(AES 등)을 지원하는지 확인하세요.</p>
+<h2 id="ko-sources">출처 및 더 읽을거리</h2>
+<ol class="sources">
+<li id="src1">PKWARE, ZIP 파일 포맷 사양 APPNOTE 6.3.9 (ZIP64 4.5.3, 분할 4.3.3, 암호화 6.0.1·7.0, 언어 인코딩 부록 D): <a href="https://pkwaredownloads.blob.core.windows.net/pkware-general/Documentation/APPNOTE-6.3.9.TXT" target="_blank" rel="noopener">APPNOTE-6.3.9.TXT</a></li>
+<li id="src2">7-Zip, 7z 포맷 소개: <a href="https://www.7-zip.org/7z.html" target="_blank" rel="noopener">7-zip.org/7z.html</a></li>
+<li id="src3">RARLAB, WinRAR 변경 이력: <a href="https://www.rarlab.com/rarnew.htm" target="_blank" rel="noopener">rarlab.com/rarnew.htm</a></li>
+<li id="src4">Zstandard 공식 사이트: <a href="https://facebook.github.io/zstd/" target="_blank" rel="noopener">facebook.github.io/zstd</a></li>
+<li id="src5">Microsoft Learn, 코드 페이지 식별자(949 한국어, 65001 UTF-8): <a href="https://learn.microsoft.com/en-us/windows/win32/intl/code-page-identifiers" target="_blank" rel="noopener">code-page-identifiers</a></li>
+</ol>
+<p>검증하지 못해 수치를 쓰지 않은 항목: RAR의 최대 파일 크기와 AES 세부 사양, tar의 크기 제한, macOS·Windows 기본 도구의 포맷별 지원 범위(버전에 따라 달라 숫자 대신 일반론만 적음).</p>
 
-<h2>자주 묻는 질문</h2>
-<h3>Q. ZIP과 7z 중 무엇이 더 좋은가요?</h3>
-<p>호환성은 ZIP, 크기는 보통 7z가 유리합니다. 받는 사람이 누구인지에 따라 정하세요.</p>
-<h3>Q. 압축하면 보안이 되나요?</h3>
-<p>아닙니다. 암호를 걸어야 하고, 방식도 중요합니다.</p>
-<h3>Q. 압축 파일을 여러 번 압축하면 더 작아지나요?</h3>
-<p>대개 아닙니다. 이미 압축된 데이터는 거의 줄지 않습니다.</p>
-<h3>Q. RAR를 폰에서 만들 수 있나요?</h3>
-<p>라이선스상 대부분의 앱은 RAR 생성을 하지 못하고 해제만 합니다. 보낼 때는 ZIP이나 7z를 쓰세요.</p>
-<h3>Q. 도움이 필요하면요?</h3>
-<p><a href="/support">지원 페이지</a>를 확인해 주세요.</p>
+<h2 id="ko-faq">자주 묻는 질문</h2>
+<details class="faq"><summary>ZIP과 7z 중 무엇이 더 좋은가요?</summary><p>호환성은 ZIP, 크기는 보통 7z가 유리합니다. 받는 사람의 환경을 모르면 ZIP, 상대가 7-Zip 같은 도구를 가지고 있고 용량이 중요하면 7z를 고르세요.</p></details>
+<details class="faq"><summary>압축하면 보안이 되나요?</summary><p>아닙니다. 암호를 걸어야 하고 방식도 중요합니다. 전통 ZipCrypto는 약하므로 AES-256을 고르고, 파일명까지 숨겨야 하면 7z의 파일명 암호화 옵션을 쓰세요.</p></details>
+<details class="faq"><summary>압축 파일을 여러 번 압축하면 더 작아지나요?</summary><p>대개 아닙니다. 이미 압축된 데이터는 거의 줄지 않습니다. 사진이나 영상은 한 번 묶는 것이 목적이지 용량 감소가 목적이 아닙니다.</p></details>
+<details class="faq"><summary>RAR를 폰에서 만들 수 있나요?</summary><p>RAR 압축은 라이선스상 정식 도구가 필요해서 대부분의 폰 앱은 해제만 지원합니다. 보낼 때는 ZIP이나 7z를 쓰세요.</p></details>
+<details class="faq"><summary>한글 파일명이 깨질 때는 어떻게 하나요?</summary><p>파일 내용이 아니라 이름의 문자 인코딩이 어긋난 것입니다. CP949와 UTF-8을 바꿔 보는 도구로 열거나 이름 복구 기능을 쓰면 됩니다. 보내는 쪽은 Windows 호환 옵션이 있는 도구를 쓰면 줄어듭니다.</p></details>
+<details class="faq"><summary>도움이 필요하면 어디로 문의하나요?</summary><p><a href="/support">지원 페이지</a>를 확인해 주세요.</p></details>
 
   </section>
   <section id="en" lang="en" class="lang-ko">
 
-<h2>What an archive actually does</h2>
-<p>An archive does two jobs. One is bundling many files and folders into a single file; the other is making the data smaller. Formats divide these jobs differently. ZIP does both at once, while tar only bundles and leaves shrinking to another tool such as gzip. Knowing this split lets you guess the nature of an unfamiliar extension instead of memorizing names.</p>
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol>
+<li><a href="#en-what">The two jobs of an archive</a></li>
+<li><a href="#en-table">Format comparison</a></li>
+<li><a href="#en-crypto">Encryption: ZipCrypto, AES and file names</a></li>
+<li><a href="#en-pitfalls">Cross-platform pitfalls</a></li>
+<li><a href="#en-split">Large files and split archives</a></li>
+<li><a href="#en-choose">Choosing a format</a></li>
+<li><a href="#en-zipda">On a phone: Zipda</a></li>
+<li><a href="#en-trouble">Troubleshooting</a></li>
+<li><a href="#en-sources">Sources</a></li>
+<li><a href="#en-faq">FAQ</a></li>
+</ol></nav>
 
-<h2>The main formats compared</h2>
-<h3>ZIP</h3>
-<p>The most widely used format. Windows, macOS, the iPhone Files app and most Android file managers handle it at a basic level. Because each file is compressed separately, pulling out one file is quick. Compression is generally weaker than 7z. It is the safest choice when you do not know the recipient's environment.</p>
-<h3>7z</h3>
-<p>An open format using LZMA-family algorithms that often produces smaller output. Its solid mode compresses many files as one block, which helps when files are similar but can make extracting a single file slower. Recent Windows 11 builds can open 7z, but older setups may need an extra tool.</p>
-<h3>RAR</h3>
-<p>A proprietary format known for strong compression and recovery records. Creating it needs official tools such as WinRAR, while many programs can extract it. You will receive RAR files far more often than you create them.</p>
-<h3>tar, gz, bz2, xz</h3>
-<p>Common in Linux and developer workflows. tar only bundles; gzip (.tar.gz), bzip2 (.tar.bz2) or xz (.tar.xz) is layered on top to shrink it. It is good at preserving Unix attributes such as permissions. It is unfamiliar to many Windows users, so consider the recipient first.</p>
-<h3>LZH, ALZ, EGG</h3>
-<p>Formats that were popular in Japan and Korea for a while. Today you mostly meet them when opening old material, and few tools can extract them.</p>
+<h2 id="en-what">The two jobs of an archive</h2>
+<p>An archive does two separate things: it bundles many files and folders into one, and it shrinks the data. ZIP and 7z do both at once, while tar only bundles and leaves shrinking to a separate compressor such as gzip, xz or zstd, which is why Linux files carry double extensions like <code>.tar.gz</code>. Knowing this lets you guess what an unfamiliar extension does.</p>
+<p>In practice the problem is rarely the compression ratio. It is whether the recipient can open the file, whether Korean file names survive, and whether the recipient's tool supports the encryption you chose. This guide tabulates the formats, then covers encryption and cross-platform traps separately.</p>
 
-<h2>Compression and encryption are separate</h2>
-<p>Compression reduces size; encryption hides content. Some formats let you set both in one dialog, but they work independently. A password does not make a file smaller, and compression does not make it secure.</p>
-<ul>
-<li>The traditional ZIP password scheme (ZipCrypto) is old and known to be weak. For anything important, choose a method that supports AES-256. Some older tools cannot open AES-protected ZIP files, so check the recipient's software.</li>
-<li>A password-protected ZIP may still reveal its list of filenames. 7z has a header-encryption option that hides names too.</li>
-<li>A weak password defeats a strong cipher. Use a long, hard-to-guess passphrase.</li>
-</ul>
+<h2 id="en-table">Format comparison</h2>
+<div class="tbl-wrap"><table>
+<caption>Ratios depend heavily on content, so they are described qualitatively. Numbers are limited to what the sources below confirm.</caption>
+<thead><tr><th>Format</th><th>Structure and compression</th><th>Encryption</th><th>Compatibility</th><th>Large files, splitting</th></tr></thead>
+<tbody>
+<tr><td>ZIP</td><td>Each file compressed separately, so extracting one file is quick. Ratio is generally lower than 7z</td><td>Traditional ZipCrypto is called weak by today's standards in the spec itself <a href="#src1">[1]</a>. AES only where the tool supports it</td><td>Windows, macOS, the iOS Files app and most Android file managers handle it at a basic level</td><td>ZIP64 extends beyond 4 GB files and 65,535 entries <a href="#src1">[1]</a>. Multi-volume splitting is defined (section 4.3.3)</td></tr>
+<tr><td>7z</td><td>LZMA/LZMA2 for a high ratio; solid compression and header compression <a href="#src2">[2]</a></td><td>AES-256, key derived by repeated SHA-256 <a href="#src2">[2]</a>. 7-Zip has a header-encryption option that hides file names</td><td>7-Zip, some recent OS built-ins, dedicated apps; older systems need extra tools</td><td>Spec allows sizes up to 16000000000 GB per its documentation <a href="#src2">[2]</a>. Volume splitting supported</td></tr>
+<tr><td>RAR</td><td>Proprietary. The changelog records that RAR5 recovery records can reach 1000% of protected data <a href="#src3">[3]</a></td><td>AES-based encryption and file-name encryption (WinRAR)</td><td>Many tools can extract; creating needs WinRAR or similar</td><td>Splitting (part1.rar) and recovery records are strengths. RAR5 dictionaries extend to 64 GB <a href="#src3">[3]</a></td></tr>
+<tr><td>tar.gz / tar.xz</td><td>tar bundles; gzip or xz shrinks. xz is usually smaller but slower</td><td>None in the format itself</td><td>Native on Linux and macOS; unfamiliar to many Windows users</td><td>Good at preserving Unix permissions, owners and symlinks</td></tr>
+<tr><td>tar.zst</td><td>Zstandard balances speed and ratio and is standardized as IETF RFC 8878 <a href="#src4">[4]</a></td><td>None in the format itself</td><td>Developer-oriented; consumer tool support is uneven</td><td>Decompression stays fast across levels per the project <a href="#src4">[4]</a></td></tr>
+<tr><td>LZH, ALZ, EGG</td><td>Legacy formats once common in Japan and Korea</td><td>Tool-specific</td><td>Usually extract-only, with limited tool support</td><td>—</td></tr>
+</tbody></table></div>
+<p>A spec ceiling such as 7z's 16000000000 GB is not a practical limit. The real limits are the file system, free disk space and the recipient's tool. A ZIP over 4 GB needs a tool that understands ZIP64, which is a frequent problem with older software.</p>
 
-<h2>Best practices for password-protected archives</h2>
+<h2 id="en-crypto">Encryption: ZipCrypto, AES and file names</h2>
+<p>Compression shrinks; encryption hides. They are configured on one screen but are independent: a password does not make a file smaller, and compressing does not make it safe. Three points matter.</p>
+<h3>1) ZipCrypto and AES are different</h3>
+<p>The PKWARE APPNOTE (section 6.0.1) describes traditional ZIP encryption as "considered weak by today's standards" and recommends it only for low-security needs or compatibility with old ZIP software. Section 7.0 defines strong encryption with ciphers including AES <a href="#src1">[1]</a>. Many tools just say "set password", so you may silently get the old method. For anything important, choose AES-256 explicitly. The cost is compatibility: some older tools cannot open AES ZIPs, so confirm the recipient can.</p>
+<h3>2) A password may not hide file names</h3>
+<p>A password-protected ZIP often still shows its file list. If names reveal content, information leaks. In 7-Zip, turning on file-name (header) encryption for a 7z hides the list until the password is entered. If names are sensitive, use that option, or bundle into one neutrally named file before encrypting.</p>
+<h3>3) A weak password defeats any algorithm</h3>
+<p>AES-256 with "1234" is pointless. 7z derives its key through repeated SHA-256 hashing to slow brute force <a href="#src2">[2]</a>, but that cannot rescue a weak password. Use a long, hard-to-guess phrase and send it through a different channel than the archive.</p>
+
+<h2 id="en-pitfalls">Cross-platform pitfalls</h2>
+<h3>Garbled Korean file names</h3>
+<p>The most common problem. The ZIP spec's default file-name character set is IBM Code Page 437, and names are read as UTF-8 only when general-purpose bit 11 is set <a href="#src1">[1]</a>. Archivers on Korean Windows that do not set the bit often store names in the system code page (CP949, Microsoft identifier 949) <a href="#src5">[5]</a>. Opening that ZIP in a tool that assumes UTF-8 produces gibberish; the reverse also garbles names in old Windows tools that read UTF-8 as a local code page.</p>
+<p>Fix it on both ends. As a receiver, use a tool that detects or lets you choose the encoding (CP949 versus UTF-8). As a sender, use a "Windows-compatible names" option if your tool has one, or use formats such as 7z or tar that store Unicode names. File contents are intact; only names are misread, so restoring names is enough. The Zipda section below shows this on screen.</p>
+<h3>Metadata macOS adds</h3>
+<p>A ZIP made on a Mac may show <code>__MACOSX</code>, <code>.DS_Store</code> and <code>._filename</code> helper files when opened on Windows. They hold resource forks, extended attributes and folder view settings; they are hidden on macOS and look like clutter elsewhere. Deleting them does not damage your data. When sending to Windows or Linux users, use a tool or option that leaves them out. Another Mac-originated quirk is Korean letters shown split into separate jamo, caused by a different Unicode normalization form. That is a name representation issue, not corruption.</p>
+<h3>Already-compressed data does not shrink</h3>
+<p>JPG, MP4, existing ZIPs and images inside PDFs barely shrink. Bundling a photo folder is for sending one object, not for saving space; recompressing only costs time.</p>
+
+<h2 id="en-split">Large files and split archives</h2>
+<p>Mail or messenger limits sometimes force splitting. Naming differs: 7z and ZIP use numbered parts such as <code>.7z.001</code> and <code>.zip.001</code>, or <code>.z01</code>, <code>.z02</code> followed by <code>.zip</code>; RAR uses <code>.part1.rar</code>. The ZIP spec itself allows spanning multiple volumes or user-defined segment sizes <a href="#src1">[1]</a>.</p>
 <ol>
-<li>Send the password through a different channel from the archive. Posting both in the same chat undermines the point.</li>
-<li>Do not reuse a password from another site.</li>
-<li>Confirm that the recipient can open the method you chose (AES ZIP, 7z).</li>
-<li>After sending, clean up temporary copies of the source folder.</li>
-<li>Remember that a forgotten password is effectively unrecoverable. Keep a record somewhere safe.</li>
+<li>Keep every part in one folder; a missing part blocks extraction.</li>
+<li>Do not rename parts; tools find the set by naming pattern.</li>
+<li>Open the first part (<code>.001</code>, <code>.part1.rar</code>, or the final <code>.zip</code>) and the rest follow.</li>
+<li>Compare part sizes with the sender's. "Corrupted archive" usually means an interrupted download or a missing part.</li>
 </ol>
+<p>Splitting is convenient, but losing one part loses everything. Often a different sharing route is better; see <a href="/guides/share-files-between-iphone-android-pc">moving files between devices</a> for alternatives by size limit.</p>
 
-<h2>Split archives</h2>
-<p>When a destination has a size cap, a large archive is cut into parts. Names vary: .zip.001, .z01, .part1.rar. To extract, put every part in the same folder and open the first part (or, for some ZIP sets, the final .zip part). Renaming a part or losing one makes extraction fail, and trying to extract a partial download produces errors. Cloud links have reduced the need for splitting, but it still matters where size limits apply.</p>
+<h2 id="en-choose">Choosing a format</h2>
+<p>The deciding factor is who receives it. When unsure, ZIP. When size matters and the recipient has a tool, 7z. For Linux or developer environments, tar family. For hidden file names, 7z with header encryption. The chooser in the Korean section above (interactive tool, Korean UI) asks about your goal, the recipient and whether you need splitting, then lists candidates with reasons.</p>
 
-<h2>Which to use when</h2>
+<h2 id="en-zipda">On a phone: Zipda</h2>
+<p>The iPhone Files app can create and extract ZIPs, but RAR, 7z, encrypted archives and encoding problems are beyond the built-in feature. Zipda, an iOS and macOS app I develop, targets those cases. This is the only section about it; everything above applies regardless of app. From the developer documentation and store screenshots:</p>
 <ul>
-<li>You do not know who will open it: ZIP</li>
-<li>Size matters most: 7z, after checking the recipient can open it</li>
-<li>Linux servers or developer files: tar.gz or tar.xz</li>
-<li>Sensitive material: an AES-256 method, and 7z header encryption if filenames must be hidden</li>
-<li>Photos and videos: they are already compressed, so archiving barely shrinks them; bundle them only for convenience.</li>
+<li>Creates and extracts ZIP, 7z and tar variants (tar, tar.gz, tar.bz2, tar.xz); extracts RAR, LZH and ALZ only. No EGG support because of licensing and patent issues, and no RAR creation.</li>
+<li>Opens password-protected ZIP, 7z and RAR, and is designed to handle ZipCrypto. When creating, ZIP can use AES-256.</li>
+<li>Detects file-name encodings on the device and has a repair tool for garbled names. The developer docs note a limitation: very short Japanese names can be misread as Korean, so try another encoding if results look wrong.</li>
+<li>Opens files over 4 GB (ZIP64) and split sets. Creating split archives is outside this guide.</li>
+<li>Free, with extraction and creation each capped at 3 per 24 hours; browsing, search, preview and file-name repair do not count. A subscription removes the cap; see the store for pricing.</li>
 </ul>
+<p>The screenshots in the Korean section show the name list, name repair with CP949, the password prompt, large-file progress, the create screen with a Windows-compatible names option, and the home screen with the remaining daily count.</p>
+<h3>Who it suits and who it does not</h3>
+<div class="fit">
+<div><h4>Good fit</h4><ul><li>Opening Korean-named ZIPs made on Windows, on an iPhone or Mac</li><li>Extracting RAR, 7z or password archives on a phone</li><li>Keeping files on the device</li></ul></div>
+<div><h4>Poor fit</h4><ul><li>A single plain ZIP: the Files app is enough</li><li>Creating RAR files: not supported</li><li>Android or Windows users: the app is iOS and macOS only</li></ul></div>
+</div>
+<p>More in the <a href="/guides/zipda">Zipda guide</a>. Whatever app you use, decide whether an archive from an unknown source is trustworthy before extracting it.</p>
 
-<h2>Handling archives on a phone</h2>
-<p>The iPhone Files app can extract and create ZIP files, but RAR, 7z and encrypted archives are harder to handle with built-in features. Android varies by device and file manager. In those cases people turn to a dedicated app. One option on iPhone and Mac is Zipda. According to its development notes it creates and extracts ZIP, 7z and the tar family, extracts RAR, LZH and ALZ, detects Korean and Japanese filename encodings and can open split sets. See the <a href="/guides/zipda">Zipda guide</a> for details. Whatever app you use, decide whether you trust an archive of unknown origin before you extract it.</p>
+<h2 id="en-trouble">Troubleshooting</h2>
+<div class="tbl-wrap"><table>
+<thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr></thead>
+<tbody>
+<tr><td>File names look like gibberish</td><td>CP949 names read as UTF-8, or the reverse</td><td>Use a tool that lets you pick the encoding; repair names</td></tr>
+<tr><td>"Corrupted archive"</td><td>Interrupted download, missing split part</td><td>Compare sizes, re-download, keep parts in one folder</td></tr>
+<tr><td>Right password but will not open</td><td>Tool lacks AES support</td><td>Try 7-Zip or similar; ask the sender which method was used</td></tr>
+<tr><td>ZIP over 4 GB will not open</td><td>No ZIP64 support</td><td>Use a newer tool or ask for a 7z</td></tr>
+<tr><td>__MACOSX or .DS_Store visible</td><td>macOS metadata</td><td>Safe to delete; exclude when sending</td></tr>
+<tr><td>.egg file</td><td>Many tools do not support it</td><td>Ask the sender for ZIP or 7z</td></tr>
+</tbody></table></div>
 
-<h2>Troubleshooting</h2>
-<h3>Filenames look broken</h3>
-<p>The creator may have stored names in a regional encoding. Use a tool that detects or lets you choose the encoding.</p>
-<h3>"Corrupted archive"</h3>
-<p>The download may have been cut off or a split part may be missing. Compare sizes and download again.</p>
-<h3>The password is correct but it will not open</h3>
-<p>Check that your tool supports that encryption method, such as AES.</p>
+<h2 id="en-sources">Sources</h2>
+<p>Same URLs as the Korean list above: PKWARE ZIP APPNOTE 6.3.9 [1] (ZIP64 4.5.3, spanning 4.3.3, encryption 6.0.1 and 7.0, language encoding appendix D), 7-Zip 7z format page [2], RARLAB WinRAR changelog [3], Zstandard site [4], Microsoft Learn code page identifiers [5]. Not verified, so no figure given: RAR maximum file size and AES details, tar size limits, and per-version format support in the macOS and Windows built-in tools.</p>
 
-<h2>FAQ</h2>
-<h3>Q. ZIP or 7z?</h3>
-<p>ZIP wins on compatibility, 7z usually on size. Decide based on the recipient.</p>
-<h3>Q. Does compressing make a file secure?</h3>
-<p>No. You need a password, and the method matters.</p>
-<h3>Q. Does compressing twice make it smaller?</h3>
-<p>Usually not. Already compressed data barely shrinks.</p>
-<h3>Q. Can I create RAR on a phone?</h3>
-<p>Because of licensing, most apps only extract RAR. Use ZIP or 7z when sending.</p>
-<h3>Q. Where can I get help?</h3>
-<p>See the <a href="/support">support page</a>.</p>
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>Is ZIP or 7z better?</summary><p>ZIP wins on compatibility; 7z usually wins on size. If you do not know the recipient's setup, pick ZIP. If they have a tool like 7-Zip and size matters, pick 7z.</p></details>
+<details class="faq"><summary>Does archiving make files secure?</summary><p>No. You must add a password and the method matters. Traditional ZipCrypto is weak, so choose AES-256, and use 7z file-name encryption if names are sensitive.</p></details>
+<details class="faq"><summary>Does compressing twice make it smaller?</summary><p>Usually not. Already-compressed data barely shrinks. For photos and video, archiving is for bundling, not for saving space.</p></details>
+<details class="faq"><summary>Can I create RAR on a phone?</summary><p>RAR creation needs the official tool because of licensing, so most phone apps only extract. Use ZIP or 7z when sending.</p></details>
+<details class="faq"><summary>What if Korean file names are garbled?</summary><p>The names' character encoding is mismatched, not the contents. Open with a tool that lets you switch between CP949 and UTF-8, or use a name-repair feature. As a sender, a Windows-compatible names option reduces the problem.</p></details>
+<details class="faq"><summary>Where do I get help?</summary><p>Please see the <a href="/support">support page</a>.</p></details>
 
   </section>
 
-  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/zipda">Zipda 사용 가이드 · Zipda guide</a></li><li><a href="/guides/share-files-between-iphone-android-pc">아이폰 ↔ 안드로이드 ↔ PC 파일 옮기는 법 · Moving files between devices</a></li><li><a href="/support">Support · 지원</a></li></ul></div>
+  <aside class="author-box"><div><p><b>SETLOG</b>는 iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 오류나 정정할 내용은 <a href="/contact">Contact</a>로 알려 주세요. 이 글은 광고·제휴 대가 없이 작성했고, 언급한 앱은 모두 필자가 만든 앱(Zipda)에 한정되며 그 사실을 본문에 밝혔습니다.</p><p lang="en">SETLOG is a developer who builds and runs iOS, Android and macOS apps. Send corrections through <a href="/contact">Contact</a>. This article carries no paid placement or affiliate links; the only app mentioned, Zipda, is the author's own, as stated in the text.</p></div></aside>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/zipda">Zipda 사용 가이드 · Zipda guide</a></li><li><a href="/guides/share-files-between-iphone-android-pc">기기 간 파일 옮기기 · Moving files between devices</a></li><li><a href="/guides/onesync">OneSync 사용 가이드 · OneSync guide</a></li><li><a href="/support">Support · 지원</a></li></ul></div>
 </main>
 
 <footer class="site-footer">
   <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
   <span>© 2026 SETLOG</span>
 </footer>
+<script src="/js/tools/common.js" defer></script><script src="/js/tools/chooser.js" defer></script>
 </body>
 </html>

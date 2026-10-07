@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>아이폰 안드로이드 PC 파일 옮기는 법 | Move Files Between iPhone, Android and PC — SETLOG</title>
-<meta name="description" content="케이블, 클라우드, 메신저, 이메일, 근거리 공유, 세션 코드 방식까지 장단점을 비교하고 OneSync 사용 순서를 안내합니다. How to move files between iPhone, Android and PC.">
+<meta name="description" content="AirDrop, Quick Share, 클라우드 드라이브, USB 케이블, 메신저, 이메일, 웹 도구를 용량 한도·호환성·보안·비용으로 비교하고, 상황별 선택 도구와 OneSync 사용 순서를 안내합니다. How to move files between iPhone, Android and PC.">
 <link rel="canonical" href="https://setlog.net/guides/share-files-between-iphone-android-pc">
-<meta property="og:title" content="아이폰 안드로이드 PC 파일 옮기는 법 | Move Files Between iPhone, Android and PC — SETLOG"><meta property="og:description" content="케이블, 클라우드, 메신저, 이메일, 근거리 공유, 세션 코드 방식까지 장단점을 비교하고 OneSync 사용 순서를 안내합니다. How to move files between iPhone, Android and PC."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/share-files-between-iphone-android-pc">
+<meta property="og:title" content="아이폰 안드로이드 PC 파일 옮기는 법 | Move Files Between iPhone, Android and PC — SETLOG"><meta property="og:description" content="AirDrop, Quick Share, 클라우드, 케이블, 메신저, 이메일, 웹 도구를 공식 문서 기준 용량 한도로 비교합니다."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/share-files-between-iphone-android-pc">
+<meta property="og:image" content="https://setlog.net/images/guides/onesync/home.webp"><meta property="og:site_name" content="SETLOG"><meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"아이폰 ↔ 안드로이드 ↔ PC 파일 빠르게 옮기는 법","description":"AirDrop, Quick Share, 클라우드, USB 케이블, 메신저, 이메일, 웹 도구를 비교하고 상황별로 고르는 법을 정리한 가이드.","inLanguage":"ko","datePublished":"2026-10-07","dateModified":"2026-10-07","author":{"@type":"Organization","name":"SETLOG","url":"https://setlog.net/"},"publisher":{"@type":"Organization","name":"SETLOG","url":"https://setlog.net/"},"mainEntityOfPage":"https://setlog.net/guides/share-files-between-iphone-android-pc","image":"https://setlog.net/images/guides/onesync/home.webp"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "가장 빠른 방법은 무엇인가요?", "acceptedAnswer": {"@type": "Answer", "text": "같은 생태계 안이라면 AirDrop이나 Quick Share 같은 근거리 공유입니다. 서로 다른 기기라면 파일 크기와 개수에 따라 다릅니다. 작은 파일은 웹 세션 도구나 메신저, 대용량은 케이블이 유리합니다."}}, {"@type": "Question", "name": "화질이 떨어지지 않게 옮기려면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "메신저는 갤러리 사진을 자동 압축할 수 있으니 문서나 파일로 보내는 옵션이 있는지 확인하세요. 없다면 케이블이나 파일 단위로 전송하는 도구를 쓰고, 받은 뒤 원본과 파일 크기를 비교하세요."}}, {"@type": "Question", "name": "여러 기기에 동시에 보낼 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "OneSync 세션은 최대 10대까지 함께 들어올 수 있어 같은 파일을 각자 내려받을 수 있습니다. 클라우드 드라이브의 공유 링크도 여러 사람이 받을 수 있는 방법입니다."}}, {"@type": "Question", "name": "인터넷 없이도 가능한가요?", "acceptedAnswer": {"@type": "Answer", "text": "USB 케이블과 AirDrop 같은 근거리 공유는 인터넷 없이도 가능합니다. 클라우드, 메신저, 이메일, OneSync는 인터넷 연결이 필요합니다."}}, {"@type": "Question", "name": "민감한 파일은 어떤 방법이 안전한가요?", "acceptedAnswer": {"@type": "Answer", "text": "제3자 서버를 거치지 않는 케이블 직접 연결이 가장 단순합니다. 서버를 거치는 방법을 쓴다면 압축 시 AES 암호를 걸고 암호는 다른 경로로 전달하세요. OneSync는 종단간 암호화가 없어 민감한 자료에는 맞지 않습니다."}}, {"@type": "Question", "name": "전송에 실패하면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "네트워크를 확인하고 새 세션이나 새 링크로 다시 시도하세요. 계속 문제가 있으면 지원 페이지에서 문의할 수 있습니다."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,7 +17,7 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
@@ -23,138 +26,250 @@
   <h1>아이폰 ↔ 안드로이드 ↔ PC 파일 빠르게 옮기는 법</h1>
   <p class="sub">How to move files between iPhone, Android and PC quickly</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
-  
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 9분</p>
+
   <section id="ko" lang="ko">
 
-<h2>왜 기기끼리 파일 옮기기가 번거로운가</h2>
-<p>같은 회사 제품끼리는 쉽습니다. 아이폰과 맥은 에어드롭으로, 갤럭시끼리는 제조사 공유 기능으로 옮기면 됩니다. 문제는 아이폰, 안드로이드 폰, 윈도우 PC가 한 사람의 생활 안에 섞여 있을 때입니다. 업무용 PC는 윈도우, 개인 폰은 아이폰, 가족의 폰은 안드로이드인 경우가 흔합니다. 이때는 "모든 기기에서 되는 가장 단순한 길"을 고르는 것이 중요합니다. 이 글은 흔히 쓰는 여섯 가지 방법의 장단점을 정리하고, 마지막에 세션 코드 방식(OneSync)의 실제 사용 순서를 보여 줍니다.</p>
+<nav class="toc" aria-label="목차"><b>목차</b><ol>
+<li><a href="#ko-why">왜 기기끼리 파일 옮기기가 번거로운가</a></li>
+<li><a href="#ko-table">방법별 비교표</a></li>
+<li><a href="#ko-detail">방법별 장단점과 함정</a></li>
+<li><a href="#ko-choose">상황별 선택 기준과 선택 도우미</a></li>
+<li><a href="#ko-onesync">웹 도구로 옮기기: OneSync 사용 순서와 한계</a></li>
+<li><a href="#ko-safety">안전하게 옮기는 수칙</a></li>
+<li><a href="#ko-sources">출처 및 더 읽을거리</a></li>
+<li><a href="#ko-faq">자주 묻는 질문</a></li>
+</ol></nav>
 
-<h2>방법별 장단점</h2>
-<h3>1. USB 케이블</h3>
-<p>장점은 인터넷이 필요 없고, 큰 파일도 안정적이며, 제3자 서버를 거치지 않는다는 점입니다. 안드로이드 폰은 PC에 연결한 뒤 USB 모드를 "파일 전송"으로 바꾸면 폴더처럼 보입니다. 아이폰은 윈도우에서 사진 가져오기 기능이나 Apple 전용 앱을 통해 접근하며, 기기 쪽에서 "이 컴퓨터를 신뢰하시겠습니까"를 허용해야 합니다. 단점은 케이블 규격(USB-C, 라이트닝)이 맞아야 하고, 폰과 폰 사이에는 쓰기 어렵다는 점입니다. 파일 한두 개를 옮기려고 케이블을 찾는 시간이 더 걸리는 경우가 많습니다.</p>
-<h3>2. 클라우드 드라이브</h3>
-<p>한 번 올려 두면 모든 기기에서 같은 계정으로 볼 수 있습니다. 보관과 공유 링크까지 해결되는 것이 강점입니다. 반면 계정 로그인이 필요하고, 무료 저장 용량에 제한이 있으며, 남의 PC에서는 로그아웃을 잊으면 계정이 노출됩니다. 올린 파일이 계속 남으므로 임시로 넘긴 파일을 나중에 지우는 일도 직접 해야 합니다.</p>
-<h3>3. 메신저 나에게 보내기</h3>
-<p>이미 설치된 앱이라 진입 장벽이 낮고 PC 버전도 대부분 있습니다. 하지만 사진과 동영상을 자동으로 압축해 화질이 내려갈 수 있고, 서비스마다 파일 크기와 보관 기간 제한이 다르며, 업무 대화와 개인 대화가 섞입니다. 큰 동영상이나 원본 품질이 중요한 사진에는 불리합니다.</p>
-<h3>4. 이메일 첨부</h3>
-<p>누구에게나 보낼 수 있다는 범용성이 장점입니다. 단점은 첨부 용량 한도가 보통 수십 MB 수준이라 영상은 막히기 쉽고, 받은편지함에 기록이 영구히 남으며, 내가 나에게 보내는 일은 번거롭다는 점입니다. 정확한 한도는 서비스마다 다르니 사용하는 메일의 안내를 확인하세요.</p>
-<h3>5. 근거리 공유 기능(에어드롭, 퀵 쉐어 등)</h3>
-<p>같은 방에 있을 때 가장 빠르고 매끄럽습니다. 다만 이 기능들은 기본적으로 각 생태계 안에서 동작합니다. 에어드롭은 애플 기기끼리의 기능이고, 안드로이드의 근거리 공유와 서로 직접 연동된다고 가정하면 안 됩니다. 기기 모델과 소프트웨어 버전에 따라 상호 호환 여부가 달라지고 계속 변하고 있으므로, 쓰려는 기기 조합에서 실제로 되는지 먼저 시험해 보세요. 안 되면 다른 방법이 필요합니다.</p>
-<h3>6. 세션 코드 방식 도구</h3>
-<p>OneSync처럼 짧은 코드나 QR로 기기를 임시로 묶고 파일을 주고받는 앱이 여기에 속합니다. 계정이 필요 없고, 운영체제와 무관하며, 컴퓨터에서는 웹 브라우저만 있으면 됩니다. 대신 인터넷 연결이 필요하고, 세션이 짧게 열렸다 닫히며, 파일이 서비스의 클라우드 저장소를 임시로 거칩니다. OneSync는 현재 종단간 암호화를 제공하지 않으므로 민감한 자료에는 맞지 않습니다.</p>
+<h2 id="ko-why">왜 기기끼리 파일 옮기기가 번거로운가</h2>
+<p>같은 회사 제품끼리는 쉽습니다. 아이폰과 맥은 AirDrop으로, 안드로이드끼리는 Quick Share로 옮기면 됩니다. 문제는 한 사람의 생활 안에 아이폰, 안드로이드 폰, 윈도우 PC가 섞여 있을 때입니다. 업무용 PC는 윈도우, 개인 폰은 아이폰, 부모님이나 아이의 폰은 안드로이드인 집이 흔합니다. 이때 중요한 것은 가장 빠른 방법이 아니라 모든 기기에서 추가 설정 없이 되는 방법입니다.</p>
+<p>방법을 고를 때 실제로 갈리는 기준은 다섯 가지입니다. 파일 하나의 크기 한도, 상대 기기에서 열리는지(호환성), 속도, 중간에 누가 파일을 볼 수 있는가(프라이버시), 그리고 비용입니다. 아래 비교표는 이 다섯 축으로 정리했고, 수치 한도는 모두 서비스 공식 문서에서 확인한 것만 적었습니다. 확인하지 못한 수치는 숫자를 쓰지 않고 "공식 안내 확인"으로 표시했습니다.</p>
 
-<h2>상황별 선택 기준</h2>
+<h2 id="ko-table">방법별 비교표</h2>
+<div class="tbl-wrap"><table>
+<caption>2026-10-07 기준. 한도는 서비스 정책 변경으로 달라질 수 있으니 중요한 전송 전에는 링크의 공식 문서를 다시 확인하세요.</caption>
+<thead><tr><th>방법</th><th>파일 크기 한도</th><th>크로스플랫폼</th><th>속도 특성</th><th>프라이버시</th><th>비용</th></tr></thead>
+<tbody>
+<tr><td>AirDrop</td><td>공식 문서에 별도 수치 없음(확인 못 함)</td><td>iPhone·iPad·Mac. Wi-Fi·Bluetooth 필요 <a href="#src10">[10]</a>. 일부 최신 Android(Pixel 10부터)와는 상호 연동 <a href="#src9">[9]</a></td><td>근거리 직접 연결이라 인터넷 속도와 무관</td><td>기기 간 직접 전송</td><td>무료</td></tr>
+<tr><td>Quick Share (Android·Windows)</td><td>공식 문서에 별도 수치 없음(확인 못 함)</td><td>Android, 일부 Windows PC용 앱 <a href="#src8">[8]</a>. 최신 기종은 AirDrop과 연동 <a href="#src9">[9]</a></td><td>근거리 직접 연결</td><td>직접 전송. 연동 구간은 Rust로 구현해 외부 침투 테스트를 받았다고 Google이 밝힘 <a href="#src11">[11]</a></td><td>무료</td></tr>
+<tr><td>Google Drive</td><td>파일당 최대 5TB(구글 문서류 제외) <a href="#src2">[2]</a></td><td>모든 OS(웹·앱)</td><td>업로드+다운로드 시간이 모두 듦</td><td>내 계정 저장소에 남음, 링크 공유 설정 주의</td><td>계정당 15GB 무료, Drive·Gmail·사진이 공유 <a href="#src3">[3]</a></td></tr>
+<tr><td>OneDrive</td><td>파일당 최대 250GB <a href="#src4">[4]</a></td><td>모든 OS(웹·앱)</td><td>업로드+다운로드</td><td>계정 저장소에 남음</td><td>무료 용량은 공식 안내 확인</td></tr>
+<tr><td>iCloud</td><td>파일 한도는 공식 안내 확인</td><td>Apple 기기 중심, 웹(iCloud.com)으로 다른 OS에서도 접근</td><td>업로드+다운로드</td><td>계정 저장소에 남음</td><td>Apple 계정당 5GB 무료 <a href="#src5">[5]</a></td></tr>
+<tr><td>USB 케이블</td><td>케이블 자체 한도 없음. 저장 장치·파일 시스템 한도는 별도</td><td>폰↔PC. 아이폰은 Windows에서 Apple 앱·사진 가져오기, 안드로이드는 파일 전송 모드</td><td>인터넷 불필요, 대량 전송에 안정적</td><td>제3자 서버 없음</td><td>케이블만 있으면 무료</td></tr>
+<tr><td>Telegram</td><td>파일당 2GB, Premium 4GB <a href="#src7">[7]</a></td><td>모든 OS</td><td>서버 경유 업로드·다운로드</td><td>일반 채팅은 서버 저장(비밀 채팅 별도)</td><td>무료(Premium 선택)</td></tr>
+<tr><td>WhatsApp 등 메신저</td><td>사진·영상 전송과 문서 전송의 한도가 다르고 서비스마다 다름. 공식 안내 확인</td><td>대부분 모든 OS</td><td>서버 경유</td><td>서비스별 정책</td><td>무료</td></tr>
+<tr><td>Gmail 첨부</td><td>개인 계정 25MB, 초과 시 Drive 링크로 변환 <a href="#src1">[1]</a></td><td>모든 OS</td><td>작은 파일에 적합</td><td>받은편지함에 기록이 남음</td><td>무료</td></tr>
+<tr><td>Outlook 첨부</td><td>Outlook 데스크톱 기본값: 인터넷 이메일 계정 합계 20MB, Exchange 계정 10MB <a href="#src6">[6]</a></td><td>모든 OS</td><td>작은 파일에 적합</td><td>메일 기록이 남음</td><td>무료</td></tr>
+<tr><td>OneSync (웹 도구)</td><td>파일당 약 1GB, 세션 기본 15분, 최대 10대(서비스 자체 한도)</td><td>iOS·Android 앱 + 브라우저(PC)</td><td>세션 방식, 업로드 후 다운로드</td><td>종단간 암호화 없음, 임시 클라우드 저장소 경유</td><td>계정 불필요, 요금은 스토어 안내 확인</td></tr>
+</tbody></table></div>
+<p>표의 수치 중 클라우드 드라이브의 5TB와 250GB는 사실상 "파일 하나가 한도에 걸릴 일은 거의 없다"는 뜻입니다. 현실의 병목은 한도가 아니라 내 계정의 남은 용량과 업로드 속도입니다. 반대로 이메일의 20~25MB는 요즘 폰으로 찍은 영상 하나가 넘기 쉬운 수준이라 이메일은 문서나 사진 몇 장에서 끝내는 편이 좋습니다.</p>
+
+<h2 id="ko-detail">방법별 장단점과 함정</h2>
+<h3>근거리 공유: AirDrop과 Quick Share</h3>
+<p>같은 방에 있을 때 가장 빠르고 매끄럽습니다. 이 기능들은 오랫동안 각 생태계 안에서만 동작했습니다. 상황이 바뀐 것은 2025년 11월 Google이 Pixel 10부터 Quick Share와 AirDrop의 상호 연동을 시작하겠다고 밝히면서입니다 <a href="#src9">[9]</a>. 다만 지금도 모든 기종 조합에서 되는 것은 아닙니다. 연동에는 기기 모델·소프트웨어 버전 조건이 붙고, 외신 보도에 따르면 아이폰 쪽이 "10분간 모든 사람" 수신 모드일 때 보이는 방식입니다. Apple의 공식 설명도 이 모드가 10분 뒤 원래 설정으로 돌아간다고 안내합니다 <a href="#src10">[10]</a>. 즉 "되긴 하지만 매번 설정을 만져야 하는 길"이라, 가끔 한 번 쓰는 용도로는 괜찮아도 가족 단체 공유처럼 반복되는 일에는 번거롭습니다. 쓰려는 기기 조합에서 한 번 시험해 보고, 안 되면 다른 방법으로 넘어가세요.</p>
+<h3>USB 케이블</h3>
+<p>인터넷이 필요 없고, 큰 파일도 안정적이며, 제3자 서버를 거치지 않는 방식입니다. 안드로이드 폰은 PC에 연결한 뒤 USB 모드를 "파일 전송"으로 바꾸면 폴더처럼 보입니다. 아이폰은 윈도우에서 사진 가져오기나 Apple 전용 앱을 통해 접근하고, 폰 화면에서 "이 컴퓨터를 신뢰하시겠습니까"를 허용해야 합니다. 단점은 케이블 규격(USB-C, 라이트닝)을 맞춰야 하고 폰과 폰 사이에는 쓰기 어렵다는 점입니다. 사진 수백 장을 원본 그대로 옮기는 상황에서는 여전히 가장 믿을 만합니다.</p>
+<h3>클라우드 드라이브</h3>
+<p>한 번 올리면 같은 계정으로 모든 기기에서 볼 수 있고, 보관과 공유 링크가 함께 해결됩니다. 함정은 세 가지입니다. 첫째, 계정 로그인이 필요해서 남의 PC에서는 로그아웃을 잊으면 계정이 노출됩니다. 둘째, 무료 용량은 Google의 경우 Drive·Gmail·사진이 15GB를 나눠 쓰므로 <a href="#src3">[3]</a> 사진 백업이 이미 차 있으면 큰 영상이 올라가지 않을 수 있습니다. 셋째, 임시로 넘긴 파일이 계속 남으니 직접 지워야 합니다. 링크 공유는 "링크를 아는 모든 사용자"로 열어 두면 링크가 새는 순간 누구나 받을 수 있다는 점도 기억하세요.</p>
+<h3>메신저 나에게 보내기</h3>
+<p>이미 설치돼 있고 PC 버전도 대부분 있어서 진입 장벽이 가장 낮습니다. Telegram은 파일당 2GB까지(Premium 4GB) 공식 문서에 명시돼 있지만 <a href="#src7">[7]</a>, 서비스마다 한도와 보관 기간이 다릅니다. 더 큰 함정은 화질입니다. 많은 메신저가 갤러리에서 고른 사진·영상을 자동 압축합니다. 원본이 필요하면 "파일/문서로 보내기" 옵션이 있는지 확인하고, 있더라도 받은 파일의 크기를 원본과 비교해 보세요. 업무 대화와 개인 대화가 한 곳에 섞인다는 점도 단점입니다.</p>
+<h3>이메일 첨부</h3>
+<p>누구에게나 보낼 수 있는 범용성이 장점입니다. 한도는 Gmail 개인 계정 25MB, 초과하면 첨부가 Drive 링크로 바뀝니다 <a href="#src1">[1]</a>. Outlook 데스크톱은 인터넷 이메일 계정에서 첨부 합계 20MB가 기본값이고 Exchange 계정은 10MB가 기본값입니다 <a href="#src6">[6]</a>. 업무용 계정은 관리자가 따로 정하므로 숫자가 다를 수 있습니다. 받은편지함에 기록이 영구히 남는 것은 장점이자 단점입니다.</p>
+<h3>세션 코드형 웹 도구</h3>
+<p>짧은 코드나 QR로 기기를 임시로 묶고 파일을 주고받는 방식입니다. 계정이 필요 없고 PC에서는 브라우저만 있으면 되는 점이 강점입니다. 대신 인터넷이 필요하고 파일이 서비스의 임시 저장소를 거치며, 세션이 짧게 열렸다 닫힙니다. 다음 섹션에서 OneSync로 구체적인 순서를 보겠습니다.</p>
+
+<h2 id="ko-choose">상황별 선택 기준과 선택 도우미</h2>
 <ul>
 <li>사진 수백 장을 원본 그대로 PC로: USB 케이블이 가장 안정적입니다.</li>
-<li>내일도 다른 기기에서 계속 써야 하는 문서: 클라우드 드라이브</li>
-<li>링크 한 줄, 짧은 메모: 메신저 나에게 보내기 또는 세션 도구의 텍스트 공유</li>
-<li>아이폰과 안드로이드 사이 사진 몇 장, 로그인 없이: 세션 코드 방식</li>
-<li>공용·남의 PC에서 파일 하나: 세션 코드 방식(웹 브라우저) 또는 USB</li>
-<li>민감한 문서: 케이블 직접 연결, 또는 자신이 통제하는 암호화 수단</li>
+<li>내일도 다른 기기에서 계속 써야 하는 문서: 클라우드 드라이브.</li>
+<li>링크 한 줄, 짧은 메모: 메신저 나에게 보내기, 또는 세션 도구의 텍스트 공유.</li>
+<li>아이폰과 안드로이드 사이 사진 몇 장, 로그인 없이: 세션 코드형 웹 도구.</li>
+<li>공용·남의 PC에서 파일 하나: 브라우저 기반 세션 도구, 또는 USB.</li>
+<li>민감한 문서(신분증 사본, 계약서): 케이블 직접 연결이나 본인이 통제하는 암호화 수단.</li>
 </ul>
+<p>아래 도우미에 기기 조합, 파일 크기, 보안 요구, 인터넷 사용 가능 여부, 보관 필요 여부를 고르면 위 규칙에 따라 후보 세 가지를 보여 줍니다. 수치 없이 정성 규칙만 쓰는 도구이므로 위 표와 함께 보세요.</p>
+<div class="tool" data-tool="transfer"></div>
 
-<h2>OneSync로 옮기는 실제 순서</h2>
-<p>아이폰의 사진을 윈도우 PC로 보내는 경우를 예로 들겠습니다.</p>
+<h2 id="ko-onesync">웹 도구로 옮기기: OneSync 사용 순서와 한계</h2>
+<p>아래는 필자가 직접 만들어 운영하는 앱 OneSync로 아이폰 사진을 윈도우 PC로 보내는 순서입니다. 이 글에서 앱을 소개하는 부분은 이 섹션뿐이며, 다른 서비스도 위 표에서 같은 기준으로 비교했습니다.</p>
+<div class="shots">
+<figure><img src="/images/guides/onesync/home.webp" width="560" height="1218" loading="lazy" decoding="async" alt="OneSync 홈 화면: Quick Share 카드에 세션 만들기, 세션 참여, QR 코드 스캔 세 버튼이 있고 아래에 업로드·클립보드·참여자 아이콘이 보인다"><figcaption>홈 화면. 세션을 만들거나, 코드로 참여하거나, QR을 스캔합니다.</figcaption></figure>
+<figure><img src="/images/guides/onesync/session.webp" width="560" height="1218" loading="lazy" decoding="async" alt="OneSync 세션 화면(다크 모드): 세션 코드, 두 자리 인증 코드, QR 코드, 남은 시간 14분 58초와 파일 업로드, 클립보드 공유 버튼이 있다"><figcaption>세션 화면. 6자리 세션 코드, 2자리 인증 코드, QR, 남은 시간이 한눈에 보입니다.</figcaption></figure>
+</div>
 <ol>
 <li>PC 브라우저에서 OneSync 웹 클라이언트(onesync-web-cf.setlog.net)를 엽니다.</li>
 <li>세션을 만들면 6자리 세션 코드, 2자리 확인 코드, QR 코드가 표시됩니다. 기본 세션 시간은 15분입니다.</li>
 <li>아이폰에서 OneSync 앱을 열고 "QR 코드 스캔"으로 PC 화면의 QR을 읽습니다. 처음이면 카메라 권한을 허용합니다. QR이 안 되면 "세션 참여"에서 코드를 직접 입력합니다.</li>
-<li>세션 화면에서 "파일 업로드"를 눌러 앨범에서 사진을 고릅니다.</li>
+<li>세션 화면에서 "파일 업로드"를 눌러 앨범에서 사진을 고릅니다. 큰 파일은 조각으로 나뉘어 올라가며 중간에 끊기면 이어 올릴지 묻습니다.</li>
 <li>PC 화면의 공유된 파일 목록에 사진이 나타나면 내려받아 저장합니다.</li>
 <li>모두 받았다면 "세션 종료"로 닫습니다.</li>
 </ol>
-<p>반대 방향, 즉 PC의 파일을 폰으로 보내는 것도 같은 방식입니다. 또 URL 같은 텍스트는 "클립보드 공유"로 바로 넘길 수 있습니다. 한도는 기본 세션 15분, 최대 10대 참여, 파일당 약 1GB입니다.</p>
-
-<h2>안전하게 옮기는 공통 수칙</h2>
+<p>반대 방향(PC에서 폰으로)도 같고, URL 같은 텍스트는 "클립보드 공유"로 바로 넘길 수 있습니다.</p>
+<h3>누구에게 맞고 누구에게 맞지 않는가</h3>
+<div class="fit">
+<div><h4>잘 맞는 경우</h4><ul><li>아이폰과 안드로이드가 섞인 가족·팀</li><li>남의 PC에서 로그인 없이 파일 한두 개</li><li>링크·주소 같은 텍스트를 바로 붙여넣기</li></ul></div>
+<div><h4>맞지 않는 경우</h4><ul><li>민감한 문서: 종단간 암호화가 없습니다</li><li>1GB 넘는 파일, 수천 장의 사진 백업</li><li>몇 달씩 보관해야 하는 자료: 세션이 끝나면 정리 대상입니다</li></ul></div>
+</div>
+<h3>한계와 알려진 사실</h3>
 <ul>
-<li>남의 PC를 썼다면 다운로드한 파일과 브라우저 기록, 로그인한 계정을 정리하세요.</li>
-<li>공유 링크나 코드를 공개된 장소(단체방, SNS)에 올리지 마세요.</li>
-<li>받은 파일은 열기 전에 출처를 확인하고, 실행 파일은 특히 주의하세요.</li>
-<li>옮긴 뒤 원본과 개수·크기가 같은지 확인하세요.</li>
+<li>세션 기본 15분, 최대 10대, 파일당 약 1GB는 서비스 자체의 한도입니다.</li>
+<li>종단간 암호화(E2E)가 없습니다. 세션 코드와 확인 코드를 아는 사람은 같은 세션에 들어올 수 있습니다.</li>
+<li>인터넷 연결이 필요하고, 두 기기가 같은 Wi-Fi일 필요는 없습니다.</li>
+<li>처음 설치한 기기에서는 QR 스캔에 카메라 권한이 필요합니다.</li>
+</ul>
+<p>더 자세한 사용법은 <a href="/guides/onesync">OneSync 가이드</a>에 있습니다. 같은 방에 있는 아이폰과 맥이라면 AirDrop이, 큰 폴더라면 케이블이 더 낫다는 점을 솔직히 말씀드립니다.</p>
+
+<h2 id="ko-safety">안전하게 옮기는 수칙</h2>
+<ul>
+<li>남의 PC를 썼다면 다운로드한 파일, 브라우저 기록, 로그인한 계정을 정리하세요.</li>
+<li>공유 링크나 세션 코드를 단체방·SNS 같은 공개된 곳에 올리지 마세요.</li>
+<li>받은 파일은 열기 전에 출처를 확인하고, 실행 파일(.exe, .apk 등)은 특히 주의하세요.</li>
+<li>옮긴 뒤 원본과 파일 개수·크기가 같은지 확인하고 나서 원본을 지우세요.</li>
+<li>중요 문서는 압축하면서 AES 암호를 걸고, 암호는 다른 경로로 전달하세요. 압축 암호의 종류는 <a href="/guides/zip-rar-7z-archive-formats-explained">압축 포맷 가이드</a>에서 설명합니다.</li>
 </ul>
 
-<h2>자주 묻는 질문</h2>
-<h3>Q. 가장 빠른 방법은 무엇인가요?</h3>
-<p>같은 생태계 안이라면 근거리 공유 기능이고, 서로 다른 기기라면 파일 크기와 개수에 따라 다릅니다. 작은 파일은 세션 방식이나 메신저, 대용량은 케이블이 유리합니다.</p>
-<h3>Q. 화질이 떨어지지 않게 옮기려면?</h3>
-<p>메신저는 자동 압축이 걸릴 수 있으니 "원본" 전송 옵션이 있는지 확인하고, 없다면 케이블이나 파일 단위 전송 도구를 쓰세요.</p>
-<h3>Q. 여러 기기에 동시에 보내도 되나요?</h3>
-<p>OneSync 세션은 여러 기기가 함께 들어올 수 있어 같은 파일을 각자 내려받을 수 있습니다.</p>
-<h3>Q. 인터넷 없이도 가능한가요?</h3>
-<p>케이블이나 일부 근거리 공유는 가능하지만, OneSync는 인터넷 연결이 필요합니다.</p>
-<h3>Q. 전송에 실패하면 어떻게 하나요?</h3>
-<p>네트워크를 확인하고 새 세션으로 다시 시도하세요. 계속 문제가 있으면 <a href="/support">지원 페이지</a>에서 문의할 수 있습니다.</p>
+<h2 id="ko-sources">출처 및 더 읽을거리</h2>
+<ol class="sources">
+<li id="src1">Gmail 도움말, 첨부 파일 크기 한도: <a href="https://support.google.com/mail/answer/6584" target="_blank" rel="noopener">support.google.com/mail/answer/6584</a></li>
+<li id="src2">Google Drive 도움말, 파일 크기 한도: <a href="https://support.google.com/drive/answer/37603" target="_blank" rel="noopener">support.google.com/drive/answer/37603</a></li>
+<li id="src3">Google 계정 저장용량 안내: <a href="https://support.google.com/drive/answer/2375123" target="_blank" rel="noopener">support.google.com/drive/answer/2375123</a></li>
+<li id="src4">Microsoft, OneDrive 제한 사항: <a href="https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa" target="_blank" rel="noopener">support.microsoft.com (Restrictions and limitations in OneDrive)</a></li>
+<li id="src5">Apple, iCloud 저장 공간: <a href="https://support.apple.com/en-us/108047" target="_blank" rel="noopener">support.apple.com/108047</a></li>
+<li id="src6">Microsoft Learn, Outlook 첨부 파일 크기 한도 오류: <a href="https://learn.microsoft.com/en-us/troubleshoot/outlook/message-body/attachment-size-exceeds-the-allowable-limit-error" target="_blank" rel="noopener">learn.microsoft.com</a></li>
+<li id="src7">Telegram FAQ: <a href="https://telegram.org/faq" target="_blank" rel="noopener">telegram.org/faq</a></li>
+<li id="src8">Google Pixel 도움말, Quick Share: <a href="https://support.google.com/pixelphone/answer/9286773" target="_blank" rel="noopener">support.google.com/pixelphone/answer/9286773</a></li>
+<li id="src9">Google 블로그, Pixel 10의 Quick Share-AirDrop 연동: <a href="https://blog.google/products-and-platforms/platforms/android/quick-share-airdrop/" target="_blank" rel="noopener">blog.google</a></li>
+<li id="src10">Apple 지원, AirDrop 사용: <a href="https://support.apple.com/en-us/119857" target="_blank" rel="noopener">support.apple.com/119857</a></li>
+<li id="src11">Google Online Security Blog, Quick Share의 AirDrop 지원 보안 접근: <a href="https://security.googleblog.com/2025/11/android-quick-share-support-for-airdrop-security.html" target="_blank" rel="noopener">security.googleblog.com</a></li>
+</ol>
+<p>검증하지 못해 수치를 쓰지 않은 항목: AirDrop·Quick Share의 파일 크기 한도, WhatsApp 한도, OneDrive 무료 용량, iCloud 파일당 한도. 해당 서비스의 공식 안내를 확인하세요.</p>
+
+<h2 id="ko-faq">자주 묻는 질문</h2>
+<details class="faq"><summary>가장 빠른 방법은 무엇인가요?</summary><p>같은 생태계 안이라면 AirDrop이나 Quick Share 같은 근거리 공유입니다. 서로 다른 기기라면 파일 크기와 개수에 따라 다릅니다. 작은 파일은 웹 세션 도구나 메신저, 대용량은 케이블이 유리합니다.</p></details>
+<details class="faq"><summary>화질이 떨어지지 않게 옮기려면 어떻게 하나요?</summary><p>메신저는 갤러리 사진을 자동 압축할 수 있으니 문서나 파일로 보내는 옵션이 있는지 확인하세요. 없다면 케이블이나 파일 단위로 전송하는 도구를 쓰고, 받은 뒤 원본과 파일 크기를 비교하세요.</p></details>
+<details class="faq"><summary>여러 기기에 동시에 보낼 수 있나요?</summary><p>OneSync 세션은 최대 10대까지 함께 들어올 수 있어 같은 파일을 각자 내려받을 수 있습니다. 클라우드 드라이브의 공유 링크도 여러 사람이 받을 수 있는 방법입니다.</p></details>
+<details class="faq"><summary>인터넷 없이도 가능한가요?</summary><p>USB 케이블과 AirDrop 같은 근거리 공유는 인터넷 없이도 가능합니다. 클라우드, 메신저, 이메일, OneSync는 인터넷 연결이 필요합니다.</p></details>
+<details class="faq"><summary>민감한 파일은 어떤 방법이 안전한가요?</summary><p>제3자 서버를 거치지 않는 케이블 직접 연결이 가장 단순합니다. 서버를 거치는 방법을 쓴다면 압축 시 AES 암호를 걸고 암호는 다른 경로로 전달하세요. OneSync는 종단간 암호화가 없어 민감한 자료에는 맞지 않습니다.</p></details>
+<details class="faq"><summary>전송에 실패하면 어떻게 하나요?</summary><p>네트워크를 확인하고 새 세션이나 새 링크로 다시 시도하세요. 계속 문제가 있으면 <a href="/support">지원 페이지</a>에서 문의할 수 있습니다.</p></details>
 
   </section>
   <section id="en" lang="en" class="lang-ko">
 
-<h2>Why moving files between devices is still awkward</h2>
-<p>Within one ecosystem it is easy: AirDrop between an iPhone and a Mac, or a manufacturer sharing feature between two phones of the same brand. The trouble starts when an iPhone, an Android phone and a Windows PC all live in one person's day. A work PC on Windows, a personal iPhone and a family member's Android phone is an ordinary mix. In that case the goal is to pick the simplest route that works on every device. This article lays out the pros and cons of six common methods and ends with a worked example of the session-code approach using OneSync.</p>
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol>
+<li><a href="#en-why">Why moving files between devices is still awkward</a></li>
+<li><a href="#en-table">Comparison table</a></li>
+<li><a href="#en-detail">Pros, cons and traps of each method</a></li>
+<li><a href="#en-choose">Choosing by situation</a></li>
+<li><a href="#en-onesync">A worked OneSync session, and its limits</a></li>
+<li><a href="#en-safety">Safety habits</a></li>
+<li><a href="#en-sources">Sources</a></li>
+<li><a href="#en-faq">FAQ</a></li>
+</ol></nav>
 
-<h2>Method by method</h2>
-<h3>1. USB cable</h3>
-<p>No internet is required, large files are reliable, and no third-party server is involved. An Android phone connected to a PC shows up like a folder once you switch the USB mode to file transfer. An iPhone is reached on Windows through the photo import feature or Apple software, and you must tap Trust on the phone. The downsides: the cable must fit (USB-C or Lightning), it is awkward between two phones, and finding a cable often takes longer than the transfer of a file or two.</p>
-<h3>2. Cloud drive</h3>
-<p>Upload once and every device signed in to the same account can see the file. You also get storage and share links. On the other hand you must sign in, free storage is limited, and signing in on someone else's PC and forgetting to sign out exposes your account. Files stay until you delete them, so a temporary hand-off needs manual cleanup.</p>
-<h3>3. Messenger self-chat</h3>
-<p>The app is already installed, the barrier is low, and most messengers have a desktop version. But photos and videos may be compressed automatically, size and retention limits differ by service, and work and personal chats mix together. It is a poor choice for large videos or photos where original quality matters.</p>
-<h3>4. Email attachment</h3>
-<p>Its strength is universality: you can send to anyone. The weaknesses are attachment limits that are typically tens of megabytes, so video is easily blocked, a permanent record in the inbox, and the chore of emailing yourself. Exact limits differ per provider, so check your mail service.</p>
-<h3>5. Nearby-share features (AirDrop, Quick Share and similar)</h3>
-<p>These are the fastest and smoothest when you are in the same room. However, each is built mainly to work inside its own ecosystem. AirDrop is an Apple-to-Apple feature, and you should not assume it talks directly to Android nearby sharing. Cross-platform compatibility depends on device model and software version and has been changing, so test your actual pair of devices before relying on it. If it does not work, you need another route.</p>
-<h3>6. Session-code tools</h3>
-<p>Apps such as OneSync belong here. They link devices briefly with a short code or QR code, then pass files. No account is needed, the operating system does not matter, and on a computer a web browser is enough. The trade-offs: you need an internet connection, sessions open and close quickly, and files pass temporarily through the service's cloud storage. OneSync currently does not offer end-to-end encryption, so it is not suited to sensitive material.</p>
+<h2 id="en-why">Why moving files between devices is still awkward</h2>
+<p>Inside one ecosystem it is easy: AirDrop between Apple devices, Quick Share between Android phones. The trouble starts when an iPhone, an Android phone and a Windows PC all live in one person's day. A work PC on Windows, a personal iPhone and a family member's Android phone is an ordinary mix. What matters then is not the fastest route but the one that works on every device with no extra setup.</p>
+<p>Five criteria decide the choice: the per-file size limit, whether the other device can open it, speed, who can see the file in transit, and cost. The table below uses those five. Every numeric limit comes from the service's own documentation; where I could not verify a number, the cell says to check the official page instead of guessing.</p>
 
-<h2>Choosing by situation</h2>
+<h2 id="en-table">Comparison table</h2>
+<div class="tbl-wrap"><table>
+<caption>As of 2026-10-07. Limits change; re-check the linked official page before an important transfer.</caption>
+<thead><tr><th>Method</th><th>File size limit</th><th>Cross-platform</th><th>Speed</th><th>Privacy</th><th>Cost</th></tr></thead>
+<tbody>
+<tr><td>AirDrop</td><td>No figure in official docs (not verified)</td><td>iPhone, iPad, Mac; needs Wi-Fi and Bluetooth <a href="#src10">[10]</a>. Interoperates with newer Android, starting with Pixel 10 <a href="#src9">[9]</a></td><td>Direct nearby link, independent of internet speed</td><td>Device to device</td><td>Free</td></tr>
+<tr><td>Quick Share (Android, Windows)</td><td>No figure in official docs (not verified)</td><td>Android and a Windows app on select PCs <a href="#src8">[8]</a>; AirDrop interop on newer models <a href="#src9">[9]</a></td><td>Direct nearby link</td><td>Direct; Google says the interop layer is written in Rust and was independently pen-tested <a href="#src11">[11]</a></td><td>Free</td></tr>
+<tr><td>Google Drive</td><td>Up to 5 TB per file (not Google-native formats) <a href="#src2">[2]</a></td><td>Every OS (web and apps)</td><td>Upload plus download time</td><td>Stays in your account; mind link-sharing settings</td><td>15 GB free per account, shared with Gmail and Photos <a href="#src3">[3]</a></td></tr>
+<tr><td>OneDrive</td><td>Up to 250 GB per file <a href="#src4">[4]</a></td><td>Every OS</td><td>Upload plus download</td><td>Stays in your account</td><td>Free tier: check official page</td></tr>
+<tr><td>iCloud</td><td>Per-file limit: check official page</td><td>Apple-centric; other OSes through iCloud.com</td><td>Upload plus download</td><td>Stays in your account</td><td>5 GB free per Apple Account <a href="#src5">[5]</a></td></tr>
+<tr><td>USB cable</td><td>No limit from the cable; the storage and file system set the limit</td><td>Phone to PC. iPhone on Windows via Apple software or photo import; Android in file-transfer mode</td><td>No internet needed; dependable for bulk</td><td>No third-party server</td><td>Free with a cable</td></tr>
+<tr><td>Telegram</td><td>2 GB per file, 4 GB with Premium <a href="#src7">[7]</a></td><td>Every OS</td><td>Via servers</td><td>Regular chats are stored on servers (secret chats differ)</td><td>Free (Premium optional)</td></tr>
+<tr><td>WhatsApp and other messengers</td><td>Photo/video and document limits differ by service; check the official help page</td><td>Mostly every OS</td><td>Via servers</td><td>Per-service policy</td><td>Free</td></tr>
+<tr><td>Gmail attachment</td><td>25 MB on personal accounts; larger files become Drive links <a href="#src1">[1]</a></td><td>Every OS</td><td>Fine for small files</td><td>Stays in the mailbox</td><td>Free</td></tr>
+<tr><td>Outlook attachment</td><td>Outlook desktop defaults: 20 MB total for internet email accounts, 10 MB for Exchange accounts <a href="#src6">[6]</a></td><td>Every OS</td><td>Fine for small files</td><td>Stays in the mailbox</td><td>Free</td></tr>
+<tr><td>OneSync (web tool)</td><td>About 1 GB per file; sessions default to 15 minutes, up to 10 devices (the service's own limits)</td><td>iOS and Android apps plus a browser on the PC</td><td>Session-based, upload then download</td><td>No end-to-end encryption; passes through temporary cloud storage</td><td>No account; see the store page for pricing</td></tr>
+</tbody></table></div>
+<p>The 5 TB and 250 GB figures mean a cloud drive will almost never reject a single file. The real bottleneck is the free space left in your account and your upload speed. Email is the opposite: 20 to 25 MB is easily exceeded by one phone video, so keep email for documents and a few photos.</p>
+
+<h2 id="en-detail">Pros, cons and traps of each method</h2>
+<h3>Nearby sharing: AirDrop and Quick Share</h3>
+<p>Fastest and smoothest when you share a room. For years these only worked within their own ecosystems. That changed in November 2025, when Google announced Quick Share and AirDrop interoperability starting with the Pixel 10 <a href="#src9">[9]</a>. It still does not work for every device pair. Press coverage describes it as working when the iPhone is set to receive from "Everyone for 10 Minutes", and Apple documents that this mode reverts after ten minutes <a href="#src10">[10]</a>. So it works, but you must touch settings each time: fine for an occasional send, tedious for a family that shares daily. Test your actual pair first and fall back to another method if it fails.</p>
+<h3>USB cable</h3>
+<p>No internet, reliable for large transfers, no third-party server. An Android phone appears as a folder once the USB mode is set to file transfer. An iPhone on Windows is reached through photo import or Apple software, and you must tap Trust on the phone. The downsides are cable standards (USB-C or Lightning) and that it is awkward phone to phone. For hundreds of original-quality photos it is still the most dependable choice.</p>
+<h3>Cloud drive</h3>
+<p>Upload once and every signed-in device sees the file, with storage and share links included. Three traps: you must sign in, so forgetting to sign out on a borrowed PC exposes your account; free space on Google is shared between Drive, Gmail and Photos <a href="#src3">[3]</a>, so a full photo backup can block a large video; and temporary hand-offs stay until you delete them. Also remember that a link set to "anyone with the link" is open to whoever receives it later.</p>
+<h3>Messenger self-chat</h3>
+<p>Already installed, usually with a desktop version, so the barrier is lowest. Telegram documents 2 GB per file (4 GB with Premium) <a href="#src7">[7]</a>, but limits and retention differ by service. The bigger trap is quality: many messengers recompress photos and videos picked from the gallery. If you need originals, look for a send-as-file option and compare the received file size with the original. Work and personal chats also mix in one place.</p>
+<h3>Email attachment</h3>
+<p>Universal: you can send to anyone. Gmail allows 25 MB on personal accounts and converts bigger attachments to Drive links <a href="#src1">[1]</a>. Outlook desktop defaults to 20 MB combined for internet email accounts and 10 MB for Exchange accounts <a href="#src6">[6]</a>; work accounts may be set differently by an administrator. A permanent record in the mailbox is both a feature and a cost.</p>
+<h3>Session-code web tools</h3>
+<p>A short code or QR code links devices briefly and files pass through. No account is needed and a browser is enough on a PC. In exchange you need internet, files pass through temporary storage, and sessions are short. The next section walks through OneSync.</p>
+
+<h2 id="en-choose">Choosing by situation</h2>
 <ul>
-<li>Hundreds of photos in original quality to a PC: a USB cable is the most dependable.</li>
-<li>A document you will keep using on other devices tomorrow: a cloud drive.</li>
-<li>One link or a short note: messenger self-chat, or the text sharing in a session tool.</li>
-<li>A few photos between iPhone and Android without signing in: a session-code tool.</li>
-<li>One file from a shared or borrowed PC: a session tool through the browser, or USB.</li>
-<li>Sensitive documents: a direct cable, or an encryption method you control.</li>
+<li>Hundreds of original photos to a PC: a USB cable.</li>
+<li>A document you will need on other devices tomorrow: a cloud drive.</li>
+<li>One link or a short note: messenger self-chat, or text sharing in a session tool.</li>
+<li>A few photos between iPhone and Android without signing in: a session-code web tool.</li>
+<li>One file on a shared or borrowed PC: a browser-based session tool, or USB.</li>
+<li>Sensitive documents such as ID scans or contracts: a direct cable, or encryption you control.</li>
 </ul>
+<p>The chooser in the Korean section above (interactive tool, Korean UI) takes five answers: device mix, file size, sensitivity, whether the internet is available and whether you need to keep the file. It returns three candidates from qualitative rules, so read it alongside the table.</p>
 
-<h2>A worked OneSync session</h2>
-<p>Take the case of sending photos from an iPhone to a Windows PC.</p>
+<h2 id="en-onesync">A worked OneSync session, and its limits</h2>
+<p>I build and run OneSync myself; this is the only section that features it, and the other services above are compared on the same criteria. The example sends iPhone photos to a Windows PC. The screenshots in the Korean section show the home screen (create a session, join, scan QR) and the session screen with the codes, QR and countdown.</p>
 <ol>
-<li>On the PC, open the OneSync web client (onesync-web-cf.setlog.net) in a browser.</li>
-<li>Create a session. A 6-character session code, a 2-digit verify code and a QR code appear. The default session length is 15 minutes.</li>
-<li>On the iPhone, open the OneSync app and tap Scan QR Code to read the QR on the PC screen. Allow camera access the first time. If scanning fails, tap Join Session and type the codes.</li>
-<li>In the session screen tap Upload Files and choose photos from your library.</li>
-<li>When the photos appear in the Shared Files list on the PC, download and save them.</li>
-<li>When everyone has what they need, tap End Session.</li>
+<li>On the PC, open the OneSync web client (onesync-web-cf.setlog.net).</li>
+<li>Create a session. A 6-character session code, a 2-digit verify code and a QR code appear. The default length is 15 minutes.</li>
+<li>On the iPhone, open the app and tap Scan QR Code. Allow camera access the first time. If scanning fails, tap Join Session and type the codes.</li>
+<li>Tap Upload Files and pick photos. Large files upload in chunks and the app offers to resume if the upload breaks.</li>
+<li>When the photos appear in the Shared Files list on the PC, download them.</li>
+<li>Tap End Session when everyone has what they need.</li>
 </ol>
-<p>The reverse direction, PC to phone, works the same way. Text such as a URL can go through Share Clipboard. The limits are a 15-minute default session, up to 10 participating devices and roughly 1 GB per file.</p>
-
-<h2>Safety habits that apply to every method</h2>
+<p>PC to phone works the same way, and text such as a URL can go through Share Clipboard.</p>
+<h3>Who it suits and who it does not</h3>
+<div class="fit">
+<div><h4>Good fit</h4><ul><li>Families or teams mixing iPhone and Android</li><li>One or two files from a borrowed PC without signing in</li><li>Pasting links or addresses across devices</li></ul></div>
+<div><h4>Poor fit</h4><ul><li>Sensitive documents: there is no end-to-end encryption</li><li>Files over about 1 GB, or thousands of photos</li><li>Anything you must keep for months: files are cleaned up after the session</li></ul></div>
+</div>
+<h3>Limits</h3>
 <ul>
-<li>If you used someone else's PC, clear downloaded files, browser history and any signed-in account.</li>
+<li>15-minute default sessions, up to 10 devices and about 1 GB per file.</li>
+<li>No end-to-end encryption; anyone with both the session code and the verify code can join.</li>
+<li>Internet is required; the devices do not need to share a Wi-Fi network.</li>
+<li>QR scanning needs camera permission on a freshly installed device.</li>
+</ul>
+<p>Details are in the <a href="/guides/onesync">OneSync guide</a>. For an iPhone and a Mac in the same room, AirDrop is better, and for a large folder a cable is better.</p>
+
+<h2 id="en-safety">Safety habits</h2>
+<ul>
+<li>If you used someone else's PC, clear downloaded files, browser history and signed-in accounts.</li>
 <li>Never post share links or session codes in public places such as group chats or social media.</li>
-<li>Check where a received file came from before opening it, and be especially careful with executable files.</li>
-<li>After a transfer, confirm that the count and size match the originals.</li>
+<li>Check where a received file came from before opening it, and be especially careful with executables.</li>
+<li>Confirm that file count and size match before deleting the originals.</li>
+<li>For important documents, archive with AES encryption and send the password by another channel; see the <a href="/guides/zip-rar-7z-archive-formats-explained">archive formats guide</a>.</li>
 </ul>
 
-<h2>FAQ</h2>
-<h3>Q. What is the fastest method?</h3>
-<p>Inside one ecosystem it is the nearby-share feature. Across different devices it depends on size and count: session tools or messengers for small files, a cable for large volumes.</p>
-<h3>Q. How do I avoid losing quality?</h3>
-<p>Messengers may compress, so look for an original-quality option; otherwise use a cable or a file-based transfer tool.</p>
-<h3>Q. Can I send to several devices at once?</h3>
-<p>An OneSync session can hold several devices, so each can download the same file.</p>
-<h3>Q. Does it work without internet?</h3>
-<p>Cables and some nearby sharing do, but OneSync needs an internet connection.</p>
-<h3>Q. What if a transfer fails?</h3>
-<p>Check the network and retry with a new session. If problems continue, ask through the <a href="/support">support page</a>.</p>
+<h2 id="en-sources">Sources</h2>
+<p>The numbered links are in the Korean source list above (same URLs): Gmail attachment limits [1], Google Drive file limits [2], Google account storage [3], OneDrive restrictions [4], iCloud storage [5], Microsoft Learn on Outlook attachment limits [6], Telegram FAQ [7], Pixel Help on Quick Share [8], Google blog on Quick Share and AirDrop [9], Apple Support on AirDrop [10], Google Security Blog [11]. Not verified, so no number given: AirDrop and Quick Share file limits, WhatsApp limits, OneDrive free storage and the iCloud per-file limit.</p>
+
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>What is the fastest method?</summary><p>Within one ecosystem, nearby sharing such as AirDrop or Quick Share. Across different devices it depends on size and count: a web session tool or messenger for small files, a cable for large volumes.</p></details>
+<details class="faq"><summary>How do I avoid losing quality?</summary><p>Messengers may recompress gallery photos, so look for a send-as-file option. Otherwise use a cable or a file-based tool, and compare file sizes after the transfer.</p></details>
+<details class="faq"><summary>Can I send to several devices at once?</summary><p>An OneSync session can hold up to 10 devices, so each can download the same file. A cloud share link also reaches several people.</p></details>
+<details class="faq"><summary>Does it work without internet?</summary><p>A USB cable and nearby sharing such as AirDrop work offline. Cloud drives, messengers, email and OneSync need an internet connection.</p></details>
+<details class="faq"><summary>What is safest for sensitive files?</summary><p>A direct cable avoids third-party servers. If you must use a server-based route, encrypt the archive with AES and send the password separately. OneSync has no end-to-end encryption and is not suited to sensitive material.</p></details>
+<details class="faq"><summary>What if a transfer fails?</summary><p>Check the network and retry with a new session or link. If problems persist, ask through the <a href="/support">support page</a>.</p></details>
 
   </section>
 
-  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/onesync">OneSync 사용 가이드 · OneSync guide</a></li><li><a href="/guides/zip-rar-7z-archive-formats-explained">압축 포맷 설명 · Archive formats explained</a></li><li><a href="/support">Support · 지원</a></li></ul></div>
+  <aside class="author-box"><div><p><b>SETLOG</b>는 iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 오류나 정정할 내용은 <a href="/contact">Contact</a>로 알려 주세요. 이 글은 광고·제휴 대가 없이 작성했고, 언급한 앱은 모두 필자가 만든 앱(OneSync)에 한정되며 그 사실을 본문에 밝혔습니다.</p><p lang="en">SETLOG is a developer who builds and runs iOS, Android and macOS apps. Send corrections through <a href="/contact">Contact</a>. This article carries no paid placement or affiliate links; the only app mentioned, OneSync, is the author's own, as stated in the text.</p></div></aside>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/onesync">OneSync 사용 가이드 · OneSync guide</a></li><li><a href="/guides/zip-rar-7z-archive-formats-explained">압축 포맷 설명 · Archive formats explained</a></li><li><a href="/guides/zipda">Zipda 사용 가이드 · Zipda guide</a></li><li><a href="/support">Support · 지원</a></li></ul></div>
 </main>
 
 <footer class="site-footer">
   <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
   <span>© 2026 SETLOG</span>
 </footer>
+<script src="/js/tools/common.js" defer></script><script src="/js/tools/chooser.js" defer></script>
 </body>
 </html>
