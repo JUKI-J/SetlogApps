@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>주식 평균 단가 계산 원리와 물타기 전 점검 사항 | Average Price Explained — SETLOG</title>
-<meta name="description" content="가중평균 공식, 수수료 포함 예시, 목표 평균 단가에 필요한 수량 공식과 점검 질문. 교육용이며 투자 조언 아님. English version included.">
+<meta name="description" content="가중평균 계산 예시, 하락률별 본전 회복 상승률 표, 물타기가 바꾸는 것과 바꾸지 않는 것, 포지션 크기와 심리 함정, 추가 매수 전 점검 질문. 교육용이며 투자 조언 아님.">
 <link rel="canonical" href="https://setlog.net/guides/average-price-calculation-explained">
-<meta property="og:title" content="주식 평균 단가 계산 원리와 물타기 전 점검 사항 | Average Price Explained — SETLOG"><meta property="og:description" content="가중평균 공식, 수수료 포함 예시, 목표 평균 단가에 필요한 수량 공식과 점검 질문. 교육용이며 투자 조언 아님. English version included."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/average-price-calculation-explained">
+<meta property="og:title" content="주식 평균 단가 계산 원리와 물타기 전 점검 사항 | Average Price Explained — SETLOG"><meta property="og:description" content="가중평균 계산 예시, 하락률별 본전 회복 상승률 표, 물타기가 바꾸는 것과 바꾸지 않는 것, 포지션 크기와 심리 함정, 추가 매수 전 점검 질문. 교육용이며 투자 조언 아님."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/average-price-calculation-explained"><meta property="og:image" content="https://setlog.net/images/lottotown-icon.png"><meta property="og:site_name" content="SETLOG">
+<meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "주식 평균 단가 계산 원리와 물타기 전 점검 사항", "description": "가중평균 계산 예시, 하락률별 본전 회복 상승률 표, 물타기가 바꾸는 것과 바꾸지 않는 것, 포지션 크기와 심리 함정, 추가 매수 전 점검 질문. 교육용이며 투자 조언 아님.", "inLanguage": "ko", "dateModified": "2026-10-07", "datePublished": "2026-10-07", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "mainEntityOfPage": "https://setlog.net/guides/average-price-calculation-explained", "image": "https://setlog.net/images/lottotown-icon.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "평균 단가를 직접 계산하는 공식은?", "acceptedAnswer": {"@type": "Answer", "text": "(각 매수의 수량 × 단가의 합) ÷ 총 수량입니다. 100주×50,000원과 100주×40,000원이면 9,000,000원 ÷ 200주 = 45,000원입니다."}}, {"@type": "Question", "name": "30% 하락하면 몇 % 올라야 본전인가요?", "acceptedAnswer": {"@type": "Answer", "text": "1 ÷ (1 − 0.3) − 1 = 약 42.9%입니다. 하락률이 클수록 필요한 상승률이 더 가파르게 커집니다."}}, {"@type": "Question", "name": "물타기를 하면 손실이 줄어드나요?", "acceptedAnswer": {"@type": "Answer", "text": "평균 단가와 본전까지 필요한 상승률은 낮아지지만 투입금과 노출이 늘어 추가 하락 시 손실은 더 커질 수 있습니다. 손실을 줄이는 행위가 아니라 같은 방향에 더 많이 거는 행위입니다."}}, {"@type": "Question", "name": "증권사 평균 단가와 계산 값이 다른 이유는?", "acceptedAnswer": {"@type": "Answer", "text": "수수료의 평단 포함 여부, 소수점 처리, 해외 주식의 환율 환산 방식이 서비스마다 다르기 때문입니다. 최종 값은 증권사 기록을 기준으로 하세요."}}, {"@type": "Question", "name": "이 글과 계산기는 투자 조언인가요?", "acceptedAnswer": {"@type": "Answer", "text": "아닙니다. 산수와 사고방식을 설명하는 교육용이며 특정 종목의 매매를 권유하지 않습니다."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,7 +17,7 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
@@ -23,147 +26,196 @@
   <h1>주식 평균 단가 계산 원리와 물타기 전 점검 사항</h1>
   <p class="sub">How average purchase price works, and what to check before averaging down</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 9분 · Last updated 2026-10-07</p>
 
   <section id="ko" lang="ko">
-  <div class="callout"><p>이 글은 평균 단가 계산에 대한 교육용 산수 설명이며 투자 조언이 아닙니다. 물타기는 수익을 보장하지 않고 손실을 키울 수 있습니다. 특정 종목이나 가격 전망을 다루지 않으며, 모든 투자 판단과 책임은 이용자 본인에게 있습니다.</p></div>
+<nav class="toc" aria-label="목차"><b>목차</b><ol><li><a href="#weighted">평균 단가는 가중평균이다</a></li><li><a href="#fees">수수료·세금·환율은 어떻게 영향을 주나</a></li><li><a href="#breakeven">손실 이후 본전까지는 비대칭이다</a></li><li><a href="#averaging-down">물타기가 실제로 바꾸는 것과 바꾸지 않는 것</a></li><li><a href="#sizing">포지션 크기를 먼저 정한다</a></li><li><a href="#traps">조심해야 할 심리적 함정</a></li><li><a href="#plan">계획된 분할 매수와 즉흥 물타기는 다르다</a></li><li><a href="#checklist">추가 매수 전 점검 질문</a></li><li><a href="#app">물타기(Multagi) 앱은 어떤 용도인가</a></li></ol></nav>
 
-  <h2>평균 단가란</h2>
-  <p>같은 종목을 여러 번, 서로 다른 가격으로 샀을 때 한 주당 평균 얼마를 냈는지가 평균 단가(평균 매수 단가)입니다. 단순히 가격을 더해 횟수로 나누는 것이 아니라, 산 수량을 가중치로 하는 가중평균입니다. 공식은 간단합니다.</p>
-  <p><b>평균 단가 = 총 매수 금액 ÷ 총 보유 수량</b></p>
+<div class="callout"><p>이 글은 산수와 사고방식을 설명하는 교육 자료입니다. 특정 종목의 매수·매도를 권유하거나 투자 조언을 하지 않으며, 물타기가 손실을 줄여 준다고 보장하지 않습니다. 투자 판단과 결과의 책임은 본인에게 있고, 필요하면 자격을 갖춘 전문가와 상담하세요.</p></div>
 
-  <h2>예시 1: 가중평균 계산</h2>
-  <p>어떤 종목을 주당 50,000원에 100주 샀다고 합시다. 매수 금액은 5,000,000원입니다. 가격이 내려 주당 40,000원에 100주를 추가로 샀습니다. 추가 금액은 4,000,000원입니다.</p>
-  <ul>
-    <li>총 매수 금액: 5,000,000 + 4,000,000 = 9,000,000원</li>
-    <li>총 수량: 100 + 100 = 200주</li>
-    <li>평균 단가: 9,000,000 ÷ 200 = 45,000원</li>
-  </ul>
-  <p>두 번의 수량이 같을 때는 단순 평균(50,000과 40,000의 중간값 45,000)과 같지만, 수량이 다르면 달라집니다. 예컨대 두 번째로 300주를 샀다면 총액은 5,000,000 + 12,000,000 = 17,000,000원, 총 수량은 400주이므로 평균은 42,500원입니다. 단순 평균 45,000원이 아니라 더 많이 산 쪽 가격에 가까워집니다.</p>
+<h2 id="weighted">평균 단가는 가중평균이다</h2>
+<p>같은 종목을 여러 번 나눠 사면 증권사 앱에는 하나의 "평균 단가"가 표시됩니다. 이 숫자는 단순히 매수 가격을 더해 횟수로 나눈 값이 아니라, 매수 수량으로 가중한 평균입니다. 식으로 쓰면 <strong>평균 단가 = (각 매수의 수량 × 단가의 합) ÷ 총 수량</strong>입니다. 100주를 50,000원에, 100주를 40,000원에 샀다면 총 투입금은 9,000,000원, 총 수량은 200주이므로 평균은 45,000원입니다. 수량이 같을 때만 두 가격의 한가운데가 되고, 수량이 다르면 많이 산 쪽으로 평균이 끌려갑니다.</p>
+<p>예를 들어 100주를 50,000원에 들고 있다가 40,000원에 300주를 더 샀다면 총 투입금은 5,000,000 + 12,000,000 = 17,000,000원, 총 수량은 400주라서 평균은 42,500원입니다. 두 가격의 중간(45,000원)이 아니라 많이 산 40,000원 쪽으로 기웁니다. 평균 단가를 줄이는 효과는 "얼마나 싸게 샀느냐"만큼 "얼마나 많이 샀느냐"에 좌우된다는 뜻입니다.</p>
+<div class="diagram" role="img" aria-label="가중평균 예시 도식: 50,000원에 100주와 40,000원에 100주를 산 두 막대와, 그 사이 45,000원 높이의 평균 단가선">
+<svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14" fill="currentColor">
+<line x1="40" y1="220" x2="610" y2="220" stroke="currentColor" stroke-opacity=".5"/>
+<rect x="60" y="60" width="220" height="160" fill="var(--ember)" fill-opacity=".35" stroke="var(--ember)"/>
+<rect x="300" y="92" width="220" height="128" fill="var(--ember)" fill-opacity=".18" stroke="var(--ember)"/>
+<line x1="40" y1="76" x2="610" y2="76" stroke="currentColor" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="170" y="145" text-anchor="middle">1차 매수</text>
+<text x="170" y="165" text-anchor="middle">100주 × 50,000원</text>
+<text x="410" y="161" text-anchor="middle">2차 매수</text>
+<text x="410" y="181" text-anchor="middle">100주 × 40,000원</text>
+<text x="612" y="70" text-anchor="end" font-weight="700">평균 단가 45,000원</text>
+<text x="170" y="245" text-anchor="middle" font-size="12.5" fill-opacity=".8">막대 너비 = 수량, 높이 = 단가</text>
+<text x="410" y="245" text-anchor="middle" font-size="12.5" fill-opacity=".8">(9,000,000원 ÷ 200주)</text>
+</svg></div>
+<p class="meta-line">그림: 두 번에 나눠 산 가격이 수량 비중대로 섞여 평균 단가가 됩니다. 수량이 같으면 평균은 두 가격의 정중앙입니다.</p>
+<h3>직접 계산해 보기</h3>
+<p>아래 계산기에 매수 내역을 줄별로 넣으면 평균 단가가 나옵니다. 현재가를 함께 넣으면 평가손익과 본전까지 필요한 상승률이, 추가 매수 수량이나 목표 평단을 넣으면 그 결과가 계산됩니다. 입력한 값은 이 페이지 안에서만 처리되고 서버로 전송되지 않습니다.</p>
+<div class="tool" data-tool="avgprice"></div>
 
-  <h2>수수료와 세금을 넣으면</h2>
-  <p>위 계산은 수수료를 무시했습니다. 실제 평균 단가를 더 엄밀하게 보려면 매수 금액에 수수료를 더해 총 투입 금액을 구합니다. 설명을 위해 매수 수수료율을 가상으로 0.1%라고 가정해 보겠습니다(실제 수수료율은 증권사와 거래 방식에 따라 다릅니다).</p>
-  <ul>
-    <li>1차: 5,000,000 + 수수료 5,000 = 5,005,000원</li>
-    <li>2차: 4,000,000 + 수수료 4,000 = 4,004,000원</li>
-    <li>총 투입 금액 9,009,000원 ÷ 200주 = 평균 45,045원</li>
-  </ul>
-  <p>차이는 주당 45원으로 작지만, 거래 횟수가 많거나 수수료가 높으면 커집니다. 증권사 앱이 보여 주는 평균 단가는 수수료 반영 방식이 다를 수 있으니, 기준을 확인하고 같은 기준으로 비교하세요. 해외 주식이라면 통화 단위도 맞춰야 합니다. 달러 가격과 수량으로 평균을 내고, 원화로 환산한 평균은 매수 시점마다 환율이 달라 별도로 계산해야 한다는 점을 기억하세요. 또한 소수점 거래가 가능한 경우 수량 단위가 정수가 아닐 수 있습니다.</p>
+<h2 id="fees">수수료·세금·환율은 어떻게 영향을 주나</h2>
+<p>위 공식은 수수료를 뺀 단순 계산입니다. 실제 증권사 화면의 평균 단가가 이 값과 조금 다를 수 있는 이유는 서비스마다 매수 수수료를 평단에 포함하는지, 소수점을 어떻게 처리하는지, 해외 주식이라면 환율을 어느 시점 값으로 환산하는지가 다르기 때문입니다. 어떤 방식을 쓰는지는 증권사의 안내와 거래 내역에 적혀 있으니, 최종 숫자는 항상 증권사 기록을 기준으로 삼으세요. 세금은 나라와 상품, 보유 기간에 따라 규칙이 크게 달라서 이 글에서는 다루지 않습니다. 거래 전에 해당 국가 세무 당국이나 증권사의 공식 안내를 확인하는 것이 안전합니다.</p>
+<p>수수료를 직접 반영하고 싶다면 매수 단가를 "수수료를 더한 실질 단가"(총 지불액 ÷ 수량)로 바꿔 넣으면 됩니다. 이렇게 하면 계산기가 수수료까지 포함한 평단을 돌려줍니다. 매도할 때 내는 비용은 따로 생각해야 하므로, 본전 상승률은 실제로는 이 값보다 조금 더 필요합니다.</p>
 
-  <h2>목표 평균 단가에 필요한 수량 구하기</h2>
-  <p>현재 N주를 평균 A원에 보유하고 있고, 앞으로 P원에 x주를 더 산다고 하면 새 평균은 (N×A + x×P) ÷ (N + x)입니다. 이것이 목표 T와 같아지는 x를 구하면 다음과 같습니다.</p>
-  <p>(N×A + x×P) = T×(N + x) → N×A − N×T = x×T − x×P → <b>x = N × (A − T) ÷ (T − P)</b></p>
-  <p>조건은 P &lt; T &lt; A 입니다. 추가 매수 가격이 목표보다 낮아야만 평균을 끌어내릴 수 있습니다.</p>
-  <h3>예시 2</h3>
-  <p>N = 100주, A = 50,000원, 추가 매수 가격 P = 40,000원일 때 목표 평균 T = 45,000원이면 x = 100 × 5,000 ÷ 5,000 = 100주입니다. 앞의 예시 1과 일치합니다. 목표를 48,000원으로 올리면 x = 100 × 2,000 ÷ 8,000 = 25주이고, 검산하면 (5,000,000 + 25 × 40,000) ÷ 125 = 6,000,000 ÷ 125 = 48,000원입니다.</p>
-  <p>반대로 목표를 41,000원으로 두면 x = 100 × 9,000 ÷ 1,000 = 900주입니다. 목표가 추가 매수 가격에 가까울수록 필요한 수량이 급격히 늘고, 목표가 같거나 낮으면 불가능합니다. 필요한 자금은 x × P이므로 900주면 36,000,000원입니다. 결과 수량이 정수가 아니면 올림합니다.</p>
+<h2 id="breakeven">손실 이후 본전까지는 비대칭이다</h2>
+<p>가장 많이 오해하는 지점은 "20% 떨어졌으니 20% 오르면 된다"는 생각입니다. 가격이 x% 떨어진 뒤 원래 가격으로 돌아오려면 필요한 상승률은 <strong>1 ÷ (1 − x) − 1</strong>입니다. 100에서 80으로 떨어지면 80에서 100까지는 25%가 올라야 합니다. 분모가 작아질수록 필요한 상승률은 가파르게 커집니다. 이것은 산술이어서 별도의 출처가 필요 없고, 직접 계산기로 확인할 수 있습니다.</p>
+<div class="tbl-wrap"><table><caption>하락률별 본전 회복에 필요한 상승률</caption><thead><tr><th>하락률</th><th>회복에 필요한 상승률</th><th>예: 100 기준</th></tr></thead><tbody>
+<tr><td>10%</td><td>약 11.1%</td><td>90 → 100</td></tr>
+<tr><td>20%</td><td>25%</td><td>80 → 100</td></tr>
+<tr><td>30%</td><td>약 42.9%</td><td>70 → 100</td></tr>
+<tr><td>40%</td><td>약 66.7%</td><td>60 → 100</td></tr>
+<tr><td>50%</td><td>100%</td><td>50 → 100</td></tr>
+<tr><td>60%</td><td>150%</td><td>40 → 100</td></tr>
+<tr><td>80%</td><td>400%</td><td>20 → 100</td></tr>
+</tbody></table></div>
+<p>이 비대칭 때문에 손실 구간이 깊어질수록 "본전만 오면 판다"는 목표가 현실에서 점점 멀어집니다. 평균 단가를 낮추는 계산은 이 본전 거리를 줄여 주는 것처럼 보이지만, 아래에서 보듯 공짜가 아닙니다.</p>
 
-  <h2>물타기의 위험</h2>
-  <p>평균 단가가 내려가면 본전에 필요한 가격 상승폭은 줄어듭니다. 예시 1에서는 본전이 50,000원에서 45,000원으로 내려옵니다. 하지만 이것이 손실이 줄었다는 뜻은 아닙니다.</p>
-  <ul>
-    <li>가격이 40,000원인 시점에 100주만 보유하면 평가손실은 1,000,000원입니다. 100주를 더 사서 200주가 되면 평가손실은 9,000,000 − 8,000,000 = 1,000,000원으로 같고, 손실률만 20%에서 약 11.1%로 줄어듭니다.</li>
-    <li>이후 가격이 30,000원까지 내리면 기존 100주만 가졌을 때 손실은 2,000,000원이지만, 200주라면 9,000,000 − 6,000,000 = 3,000,000원으로 커집니다.</li>
-  </ul>
-  <p>즉 물타기는 가격이 오를 때는 회복을 빠르게 하지만, 계속 내릴 때는 손실을 더 키웁니다. 가격이 어느 쪽으로 갈지는 계산으로 알 수 없습니다.</p>
+<h2 id="averaging-down">물타기가 실제로 바꾸는 것과 바꾸지 않는 것</h2>
+<p>앞의 사례로 돌아가 봅시다. 100주를 50,000원에 샀는데 가격이 40,000원이 됐습니다(20% 하락). 평가손실은 100주 × 10,000원 = 1,000,000원이고 본전까지 25% 올라야 합니다. 여기서 40,000원에 100주를 더 사면 평균은 45,000원이 되고 본전까지 필요한 상승률은 12.5%로 줄어듭니다(45,000 ÷ 40,000 − 1). 숫자는 분명히 좋아 보입니다.</p>
+<p>하지만 바뀐 것은 본전 거리뿐이 아닙니다. 투입금은 5,000,000원에서 9,000,000원으로 늘었고, 같은 종목에 걸린 금액도 4,000,000원어치에서 8,000,000원어치로 두 배가 됐습니다. 추가 매수 직후의 평가손실은 200주 × 5,000원 = 1,000,000원으로 그대로입니다. 그런데 가격이 30,000원까지 더 내려가면 추가하지 않았을 때 손실은 100주 × 20,000원 = 2,000,000원, 추가했다면 200주 × 15,000원 = 3,000,000원입니다. 평균 단가는 낮아졌지만 손실의 크기는 같은 하락에 더 민감해졌습니다. 평균 단가를 낮추는 것은 손실을 줄이는 행위가 아니라, 같은 방향에 더 많은 금액을 거는 행위입니다.</p>
+<h3>평균 단가를 낮추는 쪽과 오르는 종목을 늘리는 쪽</h3>
+<p>추가 자금을 어디에 쓸지는 결국 "이 종목에 대한 내 판단이 처음보다 좋아졌는가"의 문제입니다. 평균 단가를 낮추려는 이유가 가격이 싸졌다는 사실뿐이라면, 그 가격은 시장이 새로 알게 된 정보를 반영한 결과일 수도 있습니다. 반대로 처음 세운 투자 근거가 그대로 유효하고 오히려 확신이 커졌다면 추가 매수에는 이유가 있습니다. 어느 쪽이든 판단 기준은 "내 평단보다 싼가"가 아니라 "지금 이 가격에서 처음 사는 사람이라도 이 종목을 이 비중으로 사겠는가"입니다. 평단은 과거의 내 선택이 만든 숫자일 뿐 시장은 내 평단을 모릅니다.</p>
+<p>오르는 종목에 추가하는 방식은 반대로 근거가 확인된 뒤에 비중을 늘린다는 점이 다릅니다. 다만 이 역시 평균 단가가 올라가고 총 노출이 커지는 것은 같으므로 어느 쪽이 낫다고 단정할 수 없습니다. 중요한 것은 방식 이름보다, 추가로 넣는 금액이 감당 가능한 범위인지와 판단 근거를 적어 두었는지입니다.</p>
 
-  <h2>추가 매수 전 점검 질문</h2>
-  <ol>
-    <li>처음 이 종목을 산 이유는 무엇이고, 그 이유가 아직 유효한가? 가격 하락만이 새로운 정보인가?</li>
-    <li>추가 매수 후 이 종목이 전체 자산에서 차지하는 비중은 얼마인가?</li>
-    <li>이 돈을 잃어도 생활과 다른 목표에 지장이 없는가?</li>
-    <li>평균 단가를 낮추고 싶다는 마음이 이미 쓴 돈을 인정하기 싫은 마음에서 나온 것은 아닌가?(매몰비용 편향)</li>
-    <li>가격이 더 내려가면 어떻게 할 것인가? 추가 매수 한도와 손절 기준을 미리 정했는가?</li>
-    <li>수수료, 세금, 환율을 반영해도 계산 결과가 같은 결론인가?</li>
-    <li>같은 자금을 다른 곳에 쓴다면 어떨까?</li>
-  </ol>
+<h2 id="sizing">포지션 크기를 먼저 정한다</h2>
+<p>물타기가 위험해지는 대표적인 경로는 한 종목 비중이 "계획 없이" 커지는 것입니다. 이를 막는 단순한 방법은 매수 전에 이 종목에서 감수할 최대 손실 금액을 먼저 정하는 것입니다. 허용 손실 금액을 (진입가 − 손절 기준가)로 나누면 살 수 있는 수량이 나옵니다. 예를 들어 투자 가능 자산이 50,000,000원이고 한 종목에서 최대 1%(500,000원)까지만 잃을 수 있다고 정했다면, 50,000원에 사서 45,000원을 기준가로 둘 때 수량은 500,000 ÷ 5,000 = 100주입니다. 위의 수치는 설명용 가상값이며 권장 비율이 아닙니다.</p>
+<p>이 방식의 요점은 손실 한도를 "매수 전에" 정한다는 것입니다. 이미 손실이 난 뒤에는 한도가 기준이 아니라 합리화의 대상이 되기 쉽습니다. 물타기를 한다면 추가 매수 후의 총 비중과 총 손실 가능액이 처음 정한 한도 안에 있는지를 먼저 계산해야 합니다. 한도를 넘는다면 그것은 평균 단가를 낮추는 일이 아니라 계획을 바꾸는 일이므로 별도의 결정으로 다뤄야 합니다.</p>
 
-  <h2>계산 도구</h2>
-  <p>위 계산은 손으로도 충분하지만 여러 시나리오를 비교하려면 번거롭습니다. 대안 중 하나로 iPhone용 계산기 <a href="/guides/multagi">물타기(Multagi)</a>가 평균 단가 계산과 목표 도달 필요 수량 계산을 제공합니다. 엑셀이나 직접 계산도 좋은 방법입니다. 어느 쪽이든 도구는 산수를 도울 뿐 판단을 대신하지 않습니다.</p>
+<h2 id="traps">조심해야 할 심리적 함정</h2>
+<ul>
+<li><strong>매몰비용.</strong> 이미 들어간 돈은 회수 불가능한 과거 비용인데, 그것을 만회하려고 미래 결정을 왜곡하는 경향입니다. "여기서 팔면 손실이 확정되니까"가 이유라면 점검해 볼 신호입니다. 지금의 결정은 앞으로의 기대만 보고 내려야 합니다.</li>
+<li><strong>평단 닻내림.</strong> 내 평균 단가를 기준점으로 삼아 "평단 위로 오면 판다"로 목표를 고정하는 경향입니다. 시장 가격의 방향과 내 평단은 무관합니다.</li>
+<li><strong>손실 회피.</strong> 같은 크기라도 이익보다 손실을 더 아프게 느껴서 손실 확정을 미루게 되는 경향입니다. 손실이 커질수록 도박적으로 변하기 쉽습니다.</li>
+<li><strong>"분할 매수니까 안전하다"는 착각.</strong> 분할 매수는 진입 시점을 분산하는 방법일 뿐 종목이 계속 하락하는 위험까지 분산해 주지는 않습니다.</li>
+<li><strong>자기 확신 편향.</strong> 하락할수록 근거를 찾는 쪽으로만 정보를 모으게 됩니다. 반대 의견과 실적·공시 같은 객관 지표를 일부러 찾아봐야 합니다.</li>
+</ul>
+<p>이 용어들은 행동경제학에서 널리 쓰이는 개념을 풀어 쓴 것으로, 이 글의 계산 부분과 달리 수치 주장은 포함하지 않습니다.</p>
 
-  <h2>자주 묻는 질문</h2>
-  <h3>물타기는 항상 나쁜가요?</h3>
-  <p>그렇게 단정할 수 없습니다. 다만 하락 이유를 확인하지 않고 평균 단가만 보고 사는 것은 위험합니다. 이 글은 어느 쪽도 권하지 않습니다.</p>
-  <h3>단순 평균과 가중평균은 어떻게 다른가요?</h3>
-  <p>단순 평균은 가격만 평균하고, 가중평균은 산 수량을 반영합니다. 평균 단가는 항상 가중평균입니다.</p>
-  <h3>매도 후 다시 사면 평균은 어떻게 되나요?</h3>
-  <p>증권사마다 매도 후 평균 단가 처리 방식이 다릅니다. 보통 매도해도 남은 주식의 평균 단가는 유지되는 경우가 많지만, 정확한 방식은 증권사 안내를 확인하세요.</p>
-  <h3>필요 수량이 소수점으로 나오면요?</h3>
-  <p>정수 단위 거래라면 올림해서 목표에 도달하도록 하고, 올림한 수량으로 다시 검산하세요.</p>
-  <h3>평균 단가가 낮아지면 세금도 줄어드나요?</h3>
-  <p>세금은 국가와 상품에 따라 다르므로 이 글에서 다루지 않습니다. 세무 전문가나 관할 기관의 안내를 확인하세요.</p>
+<h2 id="plan">계획된 분할 매수와 즉흥 물타기는 다르다</h2>
+<p>겉모습은 같은 "여러 번 나눠 사기"여도 성격은 다릅니다. 계획된 분할 매수는 처음부터 총 목표 수량과 매수 횟수, 각 회차의 조건을 정해 두고 그 안에서 움직입니다. 가격이 내려가면 이미 정해 둔 다음 회차를 실행할 뿐이어서 총 노출은 처음부터 한도 안에 있습니다. 반면 즉흥 물타기는 하락을 보고 나서 추가 금액과 횟수를 그때그때 정합니다. 손실이 아파서 하는 결정이 되기 쉽고, 총 노출의 상한이 없습니다. 판별 방법은 간단합니다. 추가 매수의 금액과 조건이 하락 이전에 적혀 있었는지를 보세요. 적혀 있지 않았다면 그것은 계획이 아니라 반응입니다.</p>
+<p>또 하나 점검할 것은 종료 조건입니다. 어느 가격이나 어떤 사건이 생기면 더 사지 않고 정리하겠다는 기준이 없으면 물타기는 끝나는 지점이 없습니다. 추가 매수의 횟수 상한과 판단을 되돌리는 조건을 함께 적어 두면 평균 단가 계산이 합리화가 아닌 관리 도구로 쓰입니다.</p>
+
+<h2 id="checklist">추가 매수 전 점검 질문</h2>
+<ol>
+<li>처음 이 종목을 산 이유가 아직 유효한가? 무엇이 달라졌는가?</li>
+<li>오늘 처음 사는 사람이라고 가정해도 같은 가격·같은 비중으로 살 것인가?</li>
+<li>추가 후 총 비중은 전체 자산의 몇 퍼센트이며, 처음 정한 한도 안인가?</li>
+<li>추가 자금은 생활비·비상금과 분리된 여윳돈인가?</li>
+<li>가격이 여기서 한 번 더 20~30% 내려도 버틸 수 있는가? 그때의 계획은?</li>
+<li>평균 단가를 낮추려는 것이 목적인가, 종목에 대한 확신이 이유인가?</li>
+<li>이 결정을 하루 뒤에 다시 봐도 같은 결론인가?</li>
+</ol>
+
+<h2 id="app">물타기(Multagi) 앱은 어떤 용도인가</h2>
+<p>SETLOG가 만든 물타기(Multagi)는 위의 계산을 숫자만 넣고 빠르게 해 보는 iPhone용 계산기입니다. 앱 소개 기준으로 평균 단가 자동 계산과 목표 평균 단가에 필요한 추가 수량 계산 두 가지를 제공합니다. 모든 계산은 기기 안에서 오프라인으로 이루어지고 개인정보나 금융 데이터를 수집하지 않는다고 개인정보 처리방침에 적혀 있습니다. 스크린샷 대신 위의 도식과 계산기로 같은 원리를 확인할 수 있습니다. 자세한 사용법은 <a href="/guides/multagi">물타기 사용 가이드</a>를 보세요.</p>
+<div class="fit"><div><h4>이런 분께 맞습니다</h4><ul><li>추가 매수 전에 평균 단가와 필요 자금을 숫자로 먼저 보고 싶은 분</li><li>엑셀 없이 시나리오 여러 개를 빠르게 비교하고 싶은 분</li><li>입력한 보유 수량이 외부로 나가지 않기를 원하는 분</li></ul></div>
+<div><h4>이런 용도에는 맞지 않습니다</h4><ul><li>시세 조회, 종목 추천, 매매 신호가 필요한 경우</li><li>수수료·세금·환율이 반영된 정확한 손익 계산이 필요한 경우(증권사 기록 기준)</li><li>Android 사용(사이트에는 App Store 링크만 안내됨)</li></ul></div></div>
+
+<h2 id="sources">출처 및 더 읽을거리</h2>
+<ol class="sources"><li>이 글의 수치(가중평균, 1÷(1−x)−1 본전 상승률, 포지션 수량 공식)는 산술이라 외부 출처가 필요하지 않으며 위 계산기로 직접 검증할 수 있습니다. 예시 숫자는 모두 가상입니다.</li><li><a href="/guides/multagi">물타기(Multagi) 사용 가이드</a> — 앱의 기능과 한계(앱스토어 설명 기준)</li><li><a href="/privacy">SETLOG 개인정보 처리방침</a> — 앱의 오프라인 계산 관련 서술</li></ol>
+<h2 id="faq">자주 묻는 질문</h2>
+<details class="faq"><summary>평균 단가를 직접 계산하는 공식은?</summary><p>(각 매수의 수량 × 단가의 합) ÷ 총 수량입니다. 100주×50,000원과 100주×40,000원이면 9,000,000원 ÷ 200주 = 45,000원입니다.</p></details><details class="faq"><summary>30% 하락하면 몇 % 올라야 본전인가요?</summary><p>1 ÷ (1 − 0.3) − 1 = 약 42.9%입니다. 하락률이 클수록 필요한 상승률이 더 가파르게 커집니다.</p></details><details class="faq"><summary>물타기를 하면 손실이 줄어드나요?</summary><p>평균 단가와 본전까지 필요한 상승률은 낮아지지만 투입금과 노출이 늘어 추가 하락 시 손실은 더 커질 수 있습니다. 손실을 줄이는 행위가 아니라 같은 방향에 더 많이 거는 행위입니다.</p></details><details class="faq"><summary>증권사 평균 단가와 계산 값이 다른 이유는?</summary><p>수수료의 평단 포함 여부, 소수점 처리, 해외 주식의 환율 환산 방식이 서비스마다 다르기 때문입니다. 최종 값은 증권사 기록을 기준으로 하세요.</p></details><details class="faq"><summary>이 글과 계산기는 투자 조언인가요?</summary><p>아닙니다. 산수와 사고방식을 설명하는 교육용이며 특정 종목의 매매를 권유하지 않습니다.</p></details>
   </section>
-
   <section id="en" lang="en" class="lang-ko">
-  <div class="callout"><p>This article is an educational explanation of average-price arithmetic and is not investment advice. Averaging down does not guarantee a profit and can increase losses. It does not discuss any specific security or price forecast, and you are solely responsible for your own investment decisions.</p></div>
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#en-weighted">Average cost is a weighted average</a></li><li><a href="#en-fees">Fees, taxes and currency</a></li><li><a href="#en-breakeven">Recovering a loss is asymmetric</a></li><li><a href="#en-averaging-down">What averaging down changes, and what it does not</a></li><li><a href="#en-sizing">Decide position size first</a></li><li><a href="#en-traps">Psychological traps</a></li><li><a href="#en-plan">Planned scaling-in versus improvised averaging down</a></li><li><a href="#en-checklist">Questions to ask before adding</a></li><li><a href="#en-app">Where the Multagi app fits</a></li></ol></nav>
 
-  <h2>What average purchase price means</h2>
-  <p>When you buy the same stock several times at different prices, your average purchase price is what you paid per share on average. It is not the simple mean of the prices; it is a weighted average in which the number of shares bought acts as the weight. The formula is short.</p>
-  <p><b>Average price = total amount paid ÷ total shares held</b></p>
+<div class="callout"><p>This is educational material about arithmetic and decision habits. It is not investment advice, does not recommend buying or selling any security, and does not promise that averaging down reduces losses. You are responsible for your own decisions; consult a qualified professional if you need one.</p></div>
 
-  <h2>Example 1: the weighted average</h2>
-  <p>Suppose you bought 100 shares at 50,000 per share, spending 5,000,000. The price fell and you bought 100 more at 40,000, spending 4,000,000.</p>
-  <ul>
-    <li>Total paid: 5,000,000 + 4,000,000 = 9,000,000</li>
-    <li>Total shares: 100 + 100 = 200</li>
-    <li>Average price: 9,000,000 ÷ 200 = 45,000</li>
-  </ul>
-  <p>With equal quantities this equals the simple mean of 50,000 and 40,000, which is 45,000, but the two differ when quantities differ. If the second purchase had been 300 shares, the total paid would be 5,000,000 + 12,000,000 = 17,000,000 for 400 shares, an average of 42,500, closer to the price of the larger purchase.</p>
+<h2 id="en-weighted">Average cost is a weighted average</h2>
+<p>When you buy the same stock in several lots, your broker shows one average cost. It is not the plain average of the prices; it is weighted by quantity: <strong>average cost = sum of (shares × price) ÷ total shares</strong>. Buy 100 shares at 50,000 and 100 at 40,000 and you have put in 9,000,000 for 200 shares, so the average is 45,000. Only when quantities are equal does it land midway; otherwise it is pulled toward the lot you bought more of.</p>
+<p>Say you hold 100 shares at 50,000 and add 300 at 40,000. Total cost is 5,000,000 + 12,000,000 = 17,000,000 for 400 shares, an average of 42,500, much closer to 40,000 than to 45,000. How much a purchase lowers your average depends on how many shares you buy, not just how cheap they are.</p>
+<div class="diagram" role="img" aria-label="Weighted-average diagram: two bars, 100 shares at 50,000 and 100 shares at 40,000, with a dashed average line at 45,000">
+<svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="14" fill="currentColor">
+<line x1="40" y1="220" x2="610" y2="220" stroke="currentColor" stroke-opacity=".5"/>
+<rect x="60" y="60" width="220" height="160" fill="var(--ember)" fill-opacity=".35" stroke="var(--ember)"/>
+<rect x="300" y="92" width="220" height="128" fill="var(--ember)" fill-opacity=".18" stroke="var(--ember)"/>
+<line x1="40" y1="76" x2="610" y2="76" stroke="currentColor" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="170" y="145" text-anchor="middle">First buy</text>
+<text x="170" y="165" text-anchor="middle">100 sh × 50,000</text>
+<text x="410" y="161" text-anchor="middle">Second buy</text>
+<text x="410" y="181" text-anchor="middle">100 sh × 40,000</text>
+<text x="612" y="70" text-anchor="end" font-weight="700">Average cost 45,000</text>
+<text x="170" y="245" text-anchor="middle" font-size="12.5" fill-opacity=".8">width = shares, height = price</text>
+<text x="410" y="245" text-anchor="middle" font-size="12.5" fill-opacity=".8">(9,000,000 ÷ 200 shares)</text>
+</svg></div>
+<p class="meta-line">그림: 두 번에 나눠 산 가격이 수량 비중대로 섞여 평균 단가가 됩니다. 수량이 같으면 평균은 두 가격의 정중앙입니다.</p>
+<h3>Try it yourself</h3>
+<p>The interactive tool below (Korean UI) works like this: enter one row per purchase (shares and price), then optionally the current price, extra shares to add and a target average. It returns the average cost, the unrealized gain or loss, the rise needed to break even and the number of shares required for a target average. Nothing you type is sent to a server.</p>
+<div class="tool" data-tool="avgprice"></div>
 
-  <h2>Including fees and taxes</h2>
-  <p>The numbers above ignored fees. To be stricter, add fees to the amount paid before dividing. For illustration, assume a hypothetical buy fee of 0.1% (real rates depend on your broker and trading method).</p>
-  <ul>
-    <li>First buy: 5,000,000 + 5,000 fee = 5,005,000</li>
-    <li>Second buy: 4,000,000 + 4,000 fee = 4,004,000</li>
-    <li>Total 9,009,000 ÷ 200 shares = average 45,045</li>
-  </ul>
-  <p>The difference is only 45 per share here, but it grows with more trades or higher fees. The average your broker shows may treat fees differently, so check the basis and compare on the same basis. For foreign stocks, keep currencies consistent: compute the average in the stock's own currency, and remember that an average in your home currency depends on the exchange rate at each purchase and must be computed separately. If fractional shares are allowed, quantities need not be whole numbers.</p>
+<h2 id="en-fees">Fees, taxes and currency</h2>
+<p>The formula above ignores fees. Your broker's displayed average can differ because brokers differ in whether buy commissions are folded into the average, how fractions are rounded and, for foreign stocks, which exchange rate is used. The broker's statement is the reference. Tax rules vary widely by country, product and holding period, so this article does not cover them; check the official guidance of your tax authority or broker.</p>
+<p>To include fees yourself, enter each purchase at its all-in price (total paid ÷ shares). Selling costs come on top, so the real break-even rise is slightly higher than the figure shown.</p>
 
-  <h2>Shares needed to reach a target average</h2>
-  <p>If you hold N shares at average A and plan to buy x more at price P, the new average is (N×A + x×P) ÷ (N + x). Setting that equal to a target T and solving for x:</p>
-  <p>N×A + x×P = T×(N + x) → N×A − N×T = x×T − x×P → <b>x = N × (A − T) ÷ (T − P)</b></p>
-  <p>This requires P &lt; T &lt; A. Only a purchase price below the target can pull the average down to it.</p>
-  <h3>Example 2</h3>
-  <p>With N = 100, A = 50,000 and a purchase price P = 40,000, a target of T = 45,000 gives x = 100 × 5,000 ÷ 5,000 = 100 shares, matching Example 1. With a target of 48,000, x = 100 × 2,000 ÷ 8,000 = 25 shares; check: (5,000,000 + 25 × 40,000) ÷ 125 = 6,000,000 ÷ 125 = 48,000.</p>
-  <p>If the target were 41,000, x = 100 × 9,000 ÷ 1,000 = 900 shares. The closer the target is to the purchase price, the faster the required quantity grows, and a target at or below the purchase price is impossible. The money required is x × P, so 900 shares would need 36,000,000. If x is not a whole number, round up.</p>
+<h2 id="en-breakeven">Recovering a loss is asymmetric</h2>
+<p>A common misconception is that a 20% drop needs a 20% gain to recover. After a drop of x, the gain required is <strong>1 ÷ (1 − x) − 1</strong>. From 100 to 80 you need 25% to get back to 100. The deeper the hole, the steeper the climb. This is pure arithmetic, so no outside source is needed.</p>
+<div class="tbl-wrap"><table><caption>Gain needed to recover from a given drop</caption><thead><tr><th>Drop</th><th>Gain needed</th><th>Example</th></tr></thead><tbody>
+<tr><td>10%</td><td>about 11.1%</td><td>90 to 100</td></tr>
+<tr><td>20%</td><td>25%</td><td>80 to 100</td></tr>
+<tr><td>30%</td><td>about 42.9%</td><td>70 to 100</td></tr>
+<tr><td>40%</td><td>about 66.7%</td><td>60 to 100</td></tr>
+<tr><td>50%</td><td>100%</td><td>50 to 100</td></tr>
+<tr><td>60%</td><td>150%</td><td>40 to 100</td></tr>
+<tr><td>80%</td><td>400%</td><td>20 to 100</td></tr>
+</tbody></table></div>
+<p>That asymmetry makes the plan "sell when I'm back to even" less realistic as losses deepen. Averaging down seems to shorten the distance, but it is not free.</p>
 
-  <h2>The risks of averaging down</h2>
-  <p>A lower average price means the rebound needed to break even is smaller. In Example 1 your break-even moves from 50,000 down to 45,000. That does not mean the loss has shrunk.</p>
-  <ul>
-    <li>At a price of 40,000, holding only 100 shares means an unrealized loss of 1,000,000. After buying 100 more, the loss is 9,000,000 − 8,000,000 = 1,000,000, the same amount; only the percentage falls, from 20% to about 11.1%.</li>
-    <li>If the price then falls to 30,000, the original 100 shares alone would show a loss of 2,000,000, while 200 shares show 9,000,000 − 6,000,000 = 3,000,000.</li>
-  </ul>
-  <p>So averaging down speeds recovery if the price rises, and enlarges the loss if it keeps falling. No calculation can tell you which way the price will go.</p>
+<h2 id="en-averaging-down">What averaging down changes, and what it does not</h2>
+<p>You bought 100 shares at 50,000 and the price is now 40,000, down 20%. Your unrealized loss is 100 x 10,000 = 1,000,000 and you need +25% to break even. Buy another 100 at 40,000 and the average becomes 45,000, so the rise needed falls to 12.5% (45,000 / 40,000 - 1). On paper that looks better.</p>
+<p>But more than the break-even distance changed. Money invested went from 5,000,000 to 9,000,000, and the amount riding on this one stock doubled from 4,000,000 to 8,000,000 at the current price. Right after the purchase the unrealized loss is 200 x 5,000 = 1,000,000, the same as before. If the price then falls to 30,000, the loss without the add would be 100 x 20,000 = 2,000,000; with it, 200 x 15,000 = 3,000,000. The average fell, but your loss became more sensitive to each further drop. Averaging down does not reduce loss; it puts more money on the same direction.</p>
+<h3>Lowering the average versus adding to what is working</h3>
+<p>Where extra money goes depends on one question: is your view of this stock better than when you first bought? If the only reason is that the price is cheaper, that price may reflect new information. If your original thesis still holds and your conviction has grown, an add has a reason. Either way, the test is not "is it below my average" but "would I buy this at this price and this size if I were starting today?" The market does not know your average cost.</p>
+<p>Adding to a rising position confirms the thesis before increasing size, which is different, but it also raises your average and total exposure. Neither is clearly better; what matters is whether the added amount is affordable and whether you wrote down your reasoning.</p>
 
-  <h2>Questions to ask before buying more</h2>
-  <ol>
-    <li>Why did I originally buy, and is that reason still valid? Is the price drop the only new information?</li>
-    <li>After buying more, what share of my total assets will this position be?</li>
-    <li>If I lose this money, will my living costs and other goals be unaffected?</li>
-    <li>Is my wish to lower the average partly a reluctance to accept money already spent (the sunk cost bias)?</li>
-    <li>What will I do if the price falls further? Have I set a limit on additional buying and an exit rule in advance?</li>
-    <li>Does the conclusion hold after including fees, taxes and exchange rates?</li>
-    <li>How would this same money look if used elsewhere?</li>
-  </ol>
+<h2 id="en-sizing">Decide position size first</h2>
+<p>A typical path to trouble is a position growing without a plan. A simple guard is to set the maximum loss you will accept before buying. Divide that loss by (entry price minus the price where you would exit) to get shares. With 50,000,000 of investable assets and a 1% (500,000) limit per stock, entering at 50,000 with a reference exit of 45,000 gives 500,000 / 5,000 = 100 shares. These figures are illustrative, not a recommended percentage.</p>
+<p>The point is to set the limit before you buy; after a loss the limit tends to become something to rationalize. If you average down, first calculate whether total size and potential loss still fit within the original limit. If not, you are changing the plan, and that should be a separate decision.</p>
 
-  <h2>Calculation tools</h2>
-  <p>Doing this by hand is fine, but comparing several scenarios gets tedious. One option is the iPhone calculator <a href="/guides/multagi">Multagi (물타기)</a>, which offers average price calculation and the quantity needed to reach a target. A spreadsheet or pencil works equally well. Either way, a tool helps with arithmetic and does not make the decision for you.</p>
+<h2 id="en-traps">Psychological traps</h2>
+<ul>
+<li><strong>Sunk cost.</strong> Money already spent is gone, yet it distorts the next decision. Judge only on what you expect from here.</li>
+<li><strong>Anchoring on your average.</strong> Fixing the goal at "sell above my average" ties it to the past, while the market has no idea what you paid.</li>
+<li><strong>Loss aversion.</strong> Losses feel worse than equal gains, which encourages postponing the decision and taking bigger risks to avoid realizing a loss.</li>
+<li><strong>"Scaling in is safe."</strong> Spreading purchases over time spreads entry timing, not the risk of a stock that keeps falling.</li>
+<li><strong>Confirmation bias.</strong> As a position falls, you collect only supporting evidence. Deliberately read opposing views and objective figures such as earnings and filings.</li>
+</ul>
+<p>These are widely used behavioral-finance terms explained in plain language; no numerical claims are made about them.</p>
 
-  <h2>FAQ</h2>
-  <h3>Is averaging down always bad?</h3>
-  <p>It cannot be judged that simply. But buying only because of the average price, without checking why the price fell, is risky. This article recommends neither course.</p>
-  <h3>How is a simple average different from a weighted average?</h3>
-  <p>A simple average takes only the prices; a weighted average accounts for quantities. An average purchase price is always a weighted average.</p>
-  <h3>What happens to the average after selling some shares?</h3>
-  <p>Brokers differ. In many cases the average price of the remaining shares stays unchanged after a sale, but check your broker's rules for exact treatment.</p>
-  <h3>What if the required quantity is not a whole number?</h3>
-  <p>If you can only trade whole shares, round up and re-check the result with the rounded quantity.</p>
-  <h3>Does a lower average price reduce my taxes?</h3>
-  <p>Taxes vary by country and product, so this article does not cover them. Consult a tax professional or the relevant authority.</p>
+<h2 id="en-plan">Planned scaling-in versus improvised averaging down</h2>
+<p>Both look like "buying in pieces", but they are different things. A planned scale-in fixes the total target size, the number of purchases and the condition for each step in advance, so total exposure sits within the limit from day one; a falling price simply triggers the next scheduled step. Improvised averaging down decides amount and count after seeing the drop. It is easily driven by the pain of a loss and has no ceiling on exposure. The test is simple: were the amount and conditions of the add written down before the decline? If not, it is a reaction, not a plan.</p>
+<p>Also check for an exit condition. Without a price or event at which you stop adding and reassess, averaging down has no endpoint. Write down a cap on the number of adds and the facts that would reverse your thesis, and the average-cost calculation becomes a management tool rather than a rationalization.</p>
+
+<h2 id="en-checklist">Questions to ask before adding</h2>
+<ol>
+<li>Is the original reason for owning this still valid? What changed?</li>
+<li>Would I buy this price and size if I were starting today?</li>
+<li>What share of my total assets would it be after adding, and is it inside my limit?</li>
+<li>Is the money separate from living costs and emergency funds?</li>
+<li>Could I hold if the price fell another 20 to 30%? What is my plan then?</li>
+<li>Is the goal to lower the average, or do I have real conviction?</li>
+<li>Would I reach the same conclusion tomorrow?</li>
+</ol>
+
+<h2 id="en-app">Where the Multagi app fits</h2>
+<p>Multagi, made by SETLOG, is an iPhone calculator for running these numbers quickly. Per its App Store description it does two things: compute the average price automatically, and compute how many additional shares are needed to reach a target average. SETLOG's privacy policy states that all calculation happens offline on the device and no personal or financial data is collected. There are no screenshots here; the diagram and the tool above show the same math. See the <a href="/guides/multagi">Multagi guide</a> for usage.</p>
+<div class="fit"><div><h4>A good fit</h4><ul><li>You want to see the average and required cash before adding</li><li>You want to compare several scenarios without a spreadsheet</li><li>You prefer your holdings never leave the device</li></ul></div>
+<div><h4>Not a fit</h4><ul><li>You need quotes, stock picks or trading signals</li><li>You need exact profit and loss with fees, tax and currency (use broker records)</li><li>You use Android (the site lists an App Store link only)</li></ul></div></div>
+
+<h2 id="en-sources">Sources and further reading</h2>
+<ol class="sources"><li>The figures here (weighted average, 1/(1-x)-1 break-even gain, position-size formula) are arithmetic and need no outside source; verify them with the tool above. All example numbers are hypothetical.</li><li><a href="/guides/multagi">Multagi guide</a> — app features and limits (per App Store description)</li><li><a href="/privacy">SETLOG privacy policy</a> — the statement on offline calculation</li></ol>
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>How is average cost calculated?</summary><p>Sum of (shares x price) divided by total shares. 100 at 50,000 plus 100 at 40,000 gives 9,000,000 / 200 = 45,000.</p></details><details class="faq"><summary>After a 30% drop, what gain is needed to break even?</summary><p>1 / (1 - 0.3) - 1, about 42.9%. The deeper the drop, the steeper the required gain.</p></details><details class="faq"><summary>Does averaging down reduce my loss?</summary><p>It lowers your average and the gain needed to break even, but invests more money, so a further drop can cost more. It puts more on the same direction rather than reducing loss.</p></details><details class="faq"><summary>Why does my broker show a different average?</summary><p>Brokers differ on whether fees are included, how fractions are rounded and which exchange rate is used for foreign stocks. Use your broker's records.</p></details><details class="faq"><summary>Is this advice?</summary><p>No. It is educational and does not recommend buying or selling any security.</p></details>
   </section>
 
+  <aside class="author-box"><div>
+    <p><strong>SETLOG</strong> — iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 이 글은 광고나 제휴 대가 없이 작성했고, 글에 나오는 앱은 모두 SETLOG가 만든 앱에 한정됩니다.</p>
+    <p>오류나 정정할 내용이 있으면 <a href="/contact">Contact</a>로 알려 주세요. · SETLOG builds and runs its own iOS, Android and macOS apps. This article carries no advertising or affiliate payment, and any app mentioned is one SETLOG makes. Send corrections via <a href="/contact">Contact</a>.</p>
+  </div></aside>
 
   <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
-    <li><a href="/guides/multagi">물타기 (Multagi) 사용 가이드 · Multagi Guide</a></li>
-    <li><a href="/support">Support · 지원</a></li>
+<li><a href="/guides/multagi">물타기 (Multagi) 사용 가이드 · Multagi Guide</a></li><li><a href="/guides/">SETLOG 가이드 전체 · All guides</a></li><li><a href="/support">Support · 지원</a></li>
   </ul></div>
 </main>
 
@@ -171,5 +223,7 @@
   <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
   <span>© 2026 SETLOG</span>
 </footer>
+<script src="/js/tools/common.js" defer></script>
+<script src="/js/tools/avgprice.js" defer></script>
 </body>
 </html>

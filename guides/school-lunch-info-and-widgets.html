@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>학교 급식 정보 확인하는 방법과 위젯 활용 | School Meal Info and Widgets — SETLOG</title>
-<meta name="description" content="학교 급식 식단 데이터의 출처, 확인 방법, 알레르기 정보 주의점과 위젯·알림 활용 요령. How to check Korean school meal info and use widgets.">
+<meta name="description" content="급식 식단이 학교에서 앱까지 오는 경로, 확인 방법 비교, 알레르기 번호 1~19 전체 표와 읽는 법, 위젯 설정과 한계를 정리했습니다.">
 <link rel="canonical" href="https://setlog.net/guides/school-lunch-info-and-widgets">
-<meta property="og:title" content="학교 급식 정보 확인하는 방법과 위젯 활용 | School Meal Info and Widgets — SETLOG"><meta property="og:description" content="학교 급식 식단 데이터의 출처, 확인 방법, 알레르기 정보 주의점과 위젯·알림 활용 요령. How to check Korean school meal info and use widgets."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/school-lunch-info-and-widgets">
+<meta property="og:title" content="학교 급식 정보 확인하는 방법과 위젯 활용 | School Meal Info and Widgets — SETLOG"><meta property="og:description" content="급식 식단이 학교에서 앱까지 오는 경로, 확인 방법 비교, 알레르기 번호 1~19 전체 표와 읽는 법, 위젯 설정과 한계를 정리했습니다."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/school-lunch-info-and-widgets"><meta property="og:image" content="https://setlog.net/images/guides/lunchlog/01.webp"><meta property="og:site_name" content="SETLOG"><meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "학교 급식 정보 확인하는 방법과 위젯 활용", "description": "급식 식단이 학교에서 앱까지 오는 경로, 확인 방법 비교, 알레르기 번호 1~19 전체 표와 읽는 법, 위젯 설정과 한계를 정리했습니다.", "inLanguage": "ko", "datePublished": "2026-10-07", "dateModified": "2026-10-07", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "image": "https://setlog.net/images/guides/lunchlog/01.webp", "mainEntityOfPage": "https://setlog.net/guides/school-lunch-info-and-widgets"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "앱에 나온 식단과 학교 안내가 다르면 무엇을 믿어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "학교의 공식 안내를 우선하세요. 앱은 개방 포털에 올라간 시점의 값을 보여 주기 때문에 학교가 홈페이지만 먼저 고친 경우 시차가 생길 수 있습니다."}}, {"@type": "Question", "name": "학교 급식 알레르기 번호는 몇 번까지 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "1번 난류부터 19번 잣까지 19종입니다. 전체 목록은 이 글의 표에 정리했고, 13번 아황산류는 표시기준상 권장 항목으로 안내되며 19번 잣은 2020년 1월 1일부터 적용된 항목입니다."}}, {"@type": "Question", "name": "방학 중에는 왜 급식이 보이지 않나요?", "acceptedAnswer": {"@type": "Answer", "text": "급식을 제공하지 않으면 학교가 식단을 입력하지 않기 때문입니다. 방학 중에도 급식을 하는 학교(예: 기숙사 운영)는 데이터가 보일 수 있습니다."}}, {"@type": "Question", "name": "다음 달 식단은 언제 확인할 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "학교마다 다릅니다. SETLOG이 2026-10-01에 표본 30곳을 확인했을 때 다음 달 식단을 공개한 곳은 없었고, 보통 월말이나 월초에 올라옵니다. 정해진 규칙은 확인하지 못했습니다."}}, {"@type": "Question", "name": "위젯에 오래된 식단이 보여요.", "acceptedAnswer": {"@type": "Answer", "text": "앱을 한 번 열어 최신 데이터를 받고, 기기의 백그라운드 새로 고침이나 배터리 절약 설정이 앱을 막고 있지 않은지 확인하세요. 위젯이 다시 그려지는 빈도는 운영체제가 정합니다."}}, {"@type": "Question", "name": "유치원이나 어린이집 급식도 볼 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "나이스 개방 포털 식단 데이터에는 유치원과 어린이집이 없어서 급식로그를 포함한 이 방식의 앱에서는 볼 수 없습니다. 해당 기관의 공지를 확인하세요."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,162 +16,234 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
 <p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / School lunch info and widgets</p>
 <main class="article">
   <h1>학교 급식 정보 확인하는 방법과 위젯 활용</h1>
-  <p class="sub">How to check Korean school meal info and use widgets</p>
-  
+  <p class="sub">How to check Korean school meal info, read allergy numbers 1 to 19 and use widgets</p>
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
-
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 8분</p>
   <section id="ko" lang="ko">
+<nav class="toc" aria-label="목차"><b>목차</b><ol><li><a href="#ko-1">급식 정보가 내 폰에 오기까지</a></li><li><a href="#ko-2">급식 정보를 확인하는 방법 비교</a></li><li><a href="#ko-3">알레르기 번호 1~19 읽는 법</a></li><li><a href="#ko-4">데이터가 어긋나는 이유와 한계</a></li><li><a href="#ko-5">위젯과 알림으로 확인 시간 줄이기</a></li><li><a href="#ko-6">상황별 활용</a></li><li><a href="#ko-7">급식 앱을 고르는 기준</a></li><li><a href="#ko-8">급식로그: 이 기준에 맞춰 만든 앱</a></li><li><a href="#ko-9">출처 및 더 읽을거리</a></li><li><a href="#ko-faq">자주 묻는 질문</a></li></ol></nav>
 
-<p>"오늘 급식 뭐야?"는 학교 다니는 아이와 학부모가 매일 묻는 질문입니다. 급식 정보는 공개되어 있지만 어디서 어떻게 보는지, 그 정보를 얼마나 믿어도 되는지, 알레르기가 있을 때 무엇을 조심해야 하는지는 의외로 정리된 곳이 드뭅니다. 이 글은 학교 급식 정보가 어디에서 오는지, 확인할 수 있는 방법들, 위젯과 알림으로 시간을 아끼는 요령, 그리고 알레르기 정보를 볼 때 꼭 지킬 원칙을 정리했습니다.</p>
+<p>"오늘 급식 뭐야?"는 학교에 다니는 아이와 학부모가 거의 매일 묻는 질문입니다. 식단은 공개돼 있지만 정작 어디에서 오는 정보인지, 몇 시쯤 믿을 수 있는지, 알레르기 번호는 어떻게 읽는지는 한곳에 정리된 글이 드뭅니다. 이 글은 식단 정보가 학교에서 여러분의 휴대폰까지 오는 경로를 먼저 풀고, 확인 방법을 비교한 다음, 알레르기 번호 1번부터 19번까지를 표로 정리합니다. 그 뒤에 데이터가 어긋나는 이유, 위젯으로 확인 시간을 줄이는 방법, 급식 앱을 고르는 기준을 다룹니다.</p>
+<div class="callout"><p>알레르기가 있는 경우 앱·화면에 보이는 번호는 참고용입니다. 그날의 최종 안내는 항상 학교(영양교사·담임)의 공식 안내를 기준으로 하세요. 이 글은 의료 조언이 아닙니다.</p></div>
 
-<h2>급식 정보는 어디에서 오나요</h2>
-<p>학교 급식 식단은 각 학교의 영양교사나 영양사가 작성하고, 학교는 이를 학교 홈페이지, 학교 알림 앱, 가정통신문 같은 경로로 안내합니다. 이 중 상당수의 학교 식단 정보는 교육 관련 기관이 운영하는 나이스 교육정보 개방 포털을 통해 공개 데이터로도 제공됩니다. 개방 포털의 데이터는 학교 단위로 조회할 수 있어서 여러 앱이 이 정보를 가져다 화면에 보여 줍니다.</p>
-<p>중요한 점은 원본이 학교이고 앱은 그 정보를 전달한다는 것입니다. 앱이 가진 내용은 학교가 입력해 개방 포털에 올라간 시점의 정보입니다. 따라서 학교가 식단을 늦게 올리거나 나중에 수정하면 앱에 반영되기까지 시간이 걸릴 수 있고, 급식이 없는 날에는 당연히 데이터가 비어 있습니다.</p>
+<h2 id="ko-1">급식 정보가 내 폰에 오기까지</h2>
+<p>학교 급식 식단은 학교의 영양교사나 영양사가 작성해 교육행정정보시스템(나이스, NEIS)에 입력합니다. 이 가운데 일반에 공개해도 되는 항목, 즉 학교, 날짜, 끼니 구분, 요리명, 알레르기 번호, 열량, 영양 정보, 원산지 같은 값이 나이스 교육정보 개방 포털(open.neis.go.kr)과 공공데이터포털(data.go.kr)의 오픈 API로 제공됩니다. 급식 전용 앱 대부분은 이 API를 직접 또는 자체 서버를 거쳐 호출해서 화면을 그립니다. 결국 경로는 학교, 나이스, 개방 포털, 앱 순서이고, 원본은 어디까지나 학교가 입력한 값입니다.</p>
+<p>개방 포털의 급식식단정보 API는 학교 단위로 조회합니다. 교육청 코드와 학교 코드를 함께 보내야 하고, 날짜 하나나 기간을 지정할 수 있으며, 응답에는 끼니(조식·중식·석식), 요리명 목록, 열량(예: 1048.9 Kcal), 영양 정보, 원산지 정보, 적재 일시가 들어 있습니다. 영양 정보는 탄수화물, 단백질, 지방, 비타민 A, 티아민, 리보플라빈, 비타민 C, 칼슘, 철분의 아홉 가지 라벨로 제공되는 것이 SETLOG의 점검(2026-10-01) 기준 관찰이었고, 원산지는 값이 비어 있는 줄이 흔합니다. 이 숫자들은 학교가 입력한 만큼만 나옵니다. 입력이 없으면 API도 비어 있습니다.</p>
+<p>그래서 앱에서 본 식단이 학교 홈페이지와 다르면 앱이 틀렸다고 단정하기보다, 둘 중 어느 쪽이 더 최근에 갱신됐는지부터 보세요. 학교가 홈페이지 식단표만 고치고 나이스 입력은 늦게 하는 경우도, 반대의 경우도 있습니다. 점검에서 확인한 바로는 포털은 최소 하루 한 번 전체를 다시 적재했고, 급식일로부터 약 일주일이 지난 행은 더 바뀌지 않는 패턴이었습니다. 이는 우리가 관찰한 동작이지 포털이 약속한 규칙은 아니므로, 갱신 시각이 정확히 몇 시라고 믿고 계획을 세우지는 마세요.</p>
 
-<h2>급식 정보를 확인하는 방법</h2>
+<h2 id="ko-2">급식 정보를 확인하는 방법 비교</h2>
+<p>어떤 경로가 더 좋다는 정답은 없습니다. 목적이 "오늘 점심 한눈에"인지, "알레르기 때문에 정확히"인지에 따라 쓰는 방법이 달라집니다.</p>
+<div class="tbl-wrap"><table><caption>급식 정보 확인 경로 비교</caption><thead><tr><th>경로</th><th>장점</th><th>한계</th><th>이럴 때</th></tr></thead><tbody>
+<tr><td>학교 홈페이지·가정통신문</td><td>학교가 직접 올린 원본. 변경 공지가 가장 먼저 올라옴</td><td>학교마다 형식이 달라 찾기 번거롭고 모바일에서 보기 불편한 경우가 있음</td><td>알레르기 확인, 변경 여부 확인</td></tr>
+<tr><td>학교가 쓰는 알림 앱</td><td>푸시로 공지와 함께 받음</td><td>식단이 앱마다 노출 방식이 다르고 학교가 쓰지 않으면 없음</td><td>학교가 이미 쓰는 경우</td></tr>
+<tr><td>나이스 대국민서비스(교육청별)</td><td>교육행정 정보를 공식 경로로 조회</td><td>교육청별 서비스 점검·중지 공지가 있었고 화면 구성이 복잡함</td><td>공식 화면으로 확인하고 싶을 때</td></tr>
+<tr><td>개방 포털 API 직접 조회</td><td>가공 없는 원 데이터와 필드를 볼 수 있음</td><td>인증키가 필요하고 JSON을 읽어야 함. 일반 사용자용이 아님</td><td>개발자, 데이터 검증</td></tr>
+<tr><td>급식 전용 앱·위젯</td><td>하루·주간 보기, 위젯, 알림이 편함</td><td>앱이 가진 값은 포털에 올라간 시점의 값. 앱마다 갱신 주기가 다름</td><td>매일 빠르게 훑어볼 때</td></tr>
+</tbody></table></div>
+<p>실용적인 조합은 두 가지입니다. 매일 빠르게 볼 때는 위젯이나 앱으로 확인하고, 알레르기가 걸린 날이나 이례적인 메뉴가 보이는 날에만 학교 공식 경로를 한 번 더 확인하는 방식입니다. 이렇게 하면 앱의 편의를 누리면서 중요한 순간에는 원본으로 검증하게 됩니다.</p>
+
+<h2 id="ko-3">알레르기 번호 1~19 읽는 법</h2>
+<p>식단표에서 요리명 끝에 붙는 괄호 속 숫자는 그 요리에 쓰인 원재료 가운데 알레르기를 일으킬 수 있는 식품의 번호입니다. 학교급식법령은 2013년 11월에 개정되어 학교가 식단표에 알레르기 유발식품 정보를 알리도록 하고 있고, 항목은 식품의약품안전처가 고시한 표시기준의 19종을 따릅니다. 시도교육청 안내 자료에 따르면 식품 원재료는 의무 적용이고, 그 밖의 식재료와 성분은 권장 사항으로 설명됩니다. 번호는 아래 표와 같습니다.</p>
+<div class="tbl-wrap"><table><caption>학교 급식 식단표의 알레르기 유발식품 표시 번호(19종)</caption><thead><tr><th>번호</th><th>항목</th><th>참고</th></tr></thead><tbody><tr><td>1</td><td>난류</td><td></td></tr><tr><td>2</td><td>우유</td><td></td></tr><tr><td>3</td><td>메밀</td><td></td></tr><tr><td>4</td><td>땅콩</td><td></td></tr><tr><td>5</td><td>대두</td><td></td></tr><tr><td>6</td><td>밀</td><td></td></tr><tr><td>7</td><td>고등어</td><td></td></tr><tr><td>8</td><td>게</td><td></td></tr><tr><td>9</td><td>새우</td><td></td></tr><tr><td>10</td><td>돼지고기</td><td></td></tr><tr><td>11</td><td>복숭아</td><td></td></tr><tr><td>12</td><td>토마토</td><td></td></tr><tr><td>13</td><td>아황산류</td><td>표시기준상 권장 항목으로 안내되는 경우가 많음</td></tr><tr><td>14</td><td>호두</td><td></td></tr><tr><td>15</td><td>닭고기</td><td></td></tr><tr><td>16</td><td>쇠고기</td><td></td></tr><tr><td>17</td><td>오징어</td><td></td></tr><tr><td>18</td><td>조개류(굴, 전복, 홍합 포함)</td><td></td></tr><tr><td>19</td><td>잣</td><td>2020년 1월 1일부터 적용된 항목</td></tr></tbody></table></div>
+<p>번호는 보통 마침표로 이어서 씁니다. 예를 들어 식단에 <b>떡잡채 (5.6.10.13.18)</b>이라고 적혀 있으면 대두, 밀, 돼지고기, 아황산류, 조개류가 쓰였다는 뜻입니다. 번호가 하나도 없으면 해당 원재료가 없다는 뜻일 수도 있지만 입력이 빠졌을 수도 있다는 점을 같이 기억해야 합니다.</p>
+<h3>번호를 읽을 때 헷갈리는 경우</h3>
+<ul>
+<li><b>이름 속 숫자</b>: 새우튀김1, 전복솥밥(1+1), 사과(홍로,9월)처럼 번호가 아닌 숫자가 요리명에 섞이는 경우가 있습니다. 우리 점검에서는 전체 요리명 약 29,000줄 가운데 1% 안팎이었습니다.</li>
+<li><b>범위 밖 숫자</b>: 22, 20, 0처럼 1~19에 없는 숫자는 알레르기 번호가 아니라 크기, 학년, 반 표기일 가능성이 큽니다.</li>
+<li><b>괄호가 두 번 나오는 경우</b>: <b>깍두기(2) (9.13)</b>처럼 앞뒤 괄호가 서로 다르면 한쪽이 입력 오류일 수 있습니다. 가장 뒤쪽 괄호를 공식 표기로 보는 앱이 많지만, 의심이 가면 학교에 물어보는 편이 안전합니다.</li>
+<li><b>구분 기호</b>: 마침표 대신 쉼표를 쓴 학교도 있습니다. 읽는 방법은 같습니다.</li>
+<li><b>공개 알레르기와 식단 알레르기</b>: 나이스에서 학교가 "공개 알레르기"를 따로 관리하면 그 값이 우선하는 구조라서, 학교 홈페이지 표기와 값이 다를 수 있습니다.</li>
+</ul>
+<p>또 하나 짚어 둘 점은 이 번호가 식단에 쓰인 원재료를 기준으로 한다는 사실입니다. 같은 조리 설비를 쓰는 데서 생기는 교차 접촉이나, 가공식품에 미량 들어간 성분까지 번호만으로 알 수는 없습니다. 중증 알레르기라면 번호 확인에 더해 영양교사와 미리 상담해 대체식 가능 여부를 확인해 두는 것이 안전합니다.</p>
+
+<h2 id="ko-4">데이터가 어긋나는 이유와 한계</h2>
+<ul>
+<li><b>공개 시점</b>: 학교가 한 달치 식단을 미리 입력하는 경우가 많습니다. SETLOG이 2026-10-01에 표본 200곳을 조회했을 때 194곳에 이번 달 식단이 있었습니다. 반면 같은 날 다음 달 식단을 조회한 표본 30곳 중에는 공개된 곳이 없었습니다. 다음 달 식단은 월말이나 월초에야 올라오는 경우가 많다고 보면 됩니다. 정해진 규칙은 확인하지 못했습니다.</li>
+<li><b>당일 변경</b>: 식재료 수급, 행사, 학사 일정으로 식단이 바뀌면 학교가 수정해 입력하지만 앱에는 시차를 두고 반영됩니다. 앱은 식단의 변경 이력을 보여 주지 않으니 바뀐 것을 알 수 없다는 점도 한계입니다.</li>
+<li><b>학교 코드 변경</b>: 2026년 7월 1일 전남광주통합특별시교육청이 출범하며 소속 학교들의 행정표준코드가 한꺼번에 바뀐 사례가 있었습니다. 이런 일이 있으면 앱에서 학교가 갑자기 조회되지 않을 수 있고, 이때는 학교를 다시 선택하면 대부분 해결됩니다.</li>
+<li><b>대상 범위</b>: 개방 포털 식단은 초·중·고 중심입니다. 유치원과 어린이집은 나이스 식단 데이터에 없어서 이 방식으로 볼 수 없습니다.</li>
+<li><b>학교가 입력하지 않은 날</b>: 방학, 휴업일, 급식이 없는 날은 데이터가 비어 있습니다. 좋은 앱은 "급식 없는 날", "학교가 아직 입력하지 않음", "일시적 오류"를 구분해서 보여 줍니다. 그렇지 않은 앱은 세 경우가 모두 "정보 없음"으로 보여 헷갈립니다.</li>
+<li><b>서비스 장애</b>: 포털이나 교육청 시스템에 점검과 과부하가 있었던 사례가 공지된 바 있습니다. 갑자기 식단이 안 뜰 때 앱 문제가 아니라 원본 시스템 문제일 수도 있습니다.</li>
+</ul>
+
+<h2 id="ko-5">위젯과 알림으로 확인 시간 줄이기</h2>
+<p>식단 확인은 하루 한 번, 몇 초면 끝나야 하는 일입니다. 앱을 열어 학교와 날짜를 고르는 과정이 반복되면 귀찮아져 점점 확인을 빼먹게 되는데, 위젯은 이 마찰을 없앱니다. 위젯의 구조적 장점은 앱이 미리 받아 저장해 둔 데이터를 화면에 그린다는 점입니다. 그래서 전파가 약한 곳에서도 마지막으로 받은 식단은 보입니다. 다만 위젯이 얼마나 자주 다시 그려지는지는 운영체제가 정하므로, 앱을 한동안 열지 않았다면 오래된 식단이 보일 수 있습니다.</p>
+<h3>iPhone</h3>
+<p>홈 화면의 빈 곳을 길게 눌러 편집 모드에 들어간 뒤 왼쪽 위의 더하기(+) 버튼을 누르고 앱을 검색해 크기를 고릅니다. 잠금 화면은 잠금 화면을 길게 눌러 맞춤화로 들어가 위젯 영역을 눌러 추가합니다. 크기는 작은 것이 한눈에 보기 좋고, 중간 이상은 메뉴가 더 많이 보입니다.</p>
+<h3>Android</h3>
+<p>홈 화면의 빈 곳을 길게 눌러 위젯 메뉴를 열고 앱을 찾아 원하는 크기를 끌어다 놓습니다. 제조사 런처마다 메뉴 이름이 조금씩 다릅니다.</p>
+<h3>위젯이 오래된 식단을 보여 줄 때</h3>
 <ol>
-<li>학교 홈페이지: 가장 원본에 가깝습니다. 월별 식단표를 올리는 곳이 많습니다.</li>
-<li>학교가 쓰는 알림 앱이나 가정통신문: 학교가 직접 안내하는 공식 경로입니다. 변경 안내도 여기에 먼저 올라오는 경우가 많습니다.</li>
-<li>나이스 교육정보 개방 포털: 공개 데이터로 학교별 식단을 조회할 수 있지만 일반 사용자에게는 다소 불편한 형태입니다.</li>
-<li>급식 전용 앱: 개방 포털 같은 공개 데이터를 알기 쉽게 보여 주며, 위젯과 알림 같은 편의 기능이 있습니다.</li>
+<li>앱을 한 번 열어 최신 데이터를 받게 합니다.</li>
+<li>기기의 백그라운드 새로 고침(iOS)이나 배터리 절약 설정(Android)이 앱을 막고 있지 않은지 확인합니다.</li>
+<li>위젯을 지웠다가 다시 추가해 봅니다.</li>
+<li>학교가 아직 오늘 식단을 입력하지 않았다면 앱을 고쳐도 소용없습니다. 학교 홈페이지에 있는지 확인하세요.</li>
 </ol>
-<p>어떤 방법을 쓰든 급식이 꼭 정해진 대로 나온다고 단정하지 않는 것이 좋습니다. 식재료 수급, 행사, 학사 일정 때문에 식단은 바뀔 수 있습니다.</p>
+<p>알림을 쓴다면 "내가 좋아하는 메뉴가 내일 나온다"처럼 가치가 분명한 알림만 켜 두는 편이 오래갑니다. 식단 전체를 매일 푸시로 받으면 곧 꺼 버리게 됩니다.</p>
 
-<h2>알레르기 정보를 볼 때의 원칙</h2>
-<p>급식 식단에는 메뉴 옆에 알레르기 유발 식품을 뜻하는 번호가 함께 표시되는 경우가 많습니다. 난류, 우유, 메밀, 땅콩, 대두, 밀 같은 항목이 번호로 정리되어 있습니다. 이 번호를 눈에 띄게 보여 주는 앱도 있어 편리하지만 다음을 지켜 주세요.</p>
-<ul>
-<li>앱은 학교가 입력한 정보를 그대로 보여 줄 뿐입니다. 입력 누락이나 지연이 있을 수 있습니다.</li>
-<li>식단은 당일에 바뀔 수 있습니다. 알레르기가 있다면 앱 화면만 믿지 말고 학교의 공식 안내를 먼저 확인하세요.</li>
-<li>중증 알레르기가 있는 경우에는 학교의 영양교사나 담임 교사와 미리 상의해 두는 것이 좋습니다. 이 글은 의료적 조언이 아닙니다.</li>
-<li>번호 체계는 법령으로 정해진 항목을 따르므로, 앱에서 내가 고른 번호가 학교 표기와 맞는지 한 번씩 확인하세요.</li>
-</ul>
-
-<h2>위젯과 알림이 시간을 아껴 주는 이유</h2>
-<p>급식을 확인하는 일은 하루에 한 번, 몇 초면 끝나야 하는 일입니다. 그런데 앱을 열고 학교와 날짜를 고르는 과정이 반복되면 귀찮아져서 점점 확인하지 않게 됩니다. 위젯은 이 과정을 줄입니다.</p>
-<ul>
-<li>홈 화면 위젯은 휴대폰을 켜는 순간 오늘 식단이 보입니다.</li>
-<li>잠금 화면 위젯은 잠금 해제 없이 확인하는 데 적합해서 아침 등교 준비 때 편합니다.</li>
-<li>시간대에 따라 조식, 중식, 석식을 알아서 바꿔 보여 주는 위젯은 일일이 끼니를 고를 필요가 없습니다.</li>
-<li>좋아하는 메뉴 알림은 전날 미리 알려 줘서 도시락이나 간식을 조정할 때 도움이 됩니다.</li>
-</ul>
-<p>학부모는 아침에 잠금 화면만 봐도 오늘 급식을 알 수 있어서 아이에게 매번 묻지 않아도 됩니다. 학생은 점심 전에 급식을 확인하는 습관을 만들 수 있습니다. 위젯은 네트워크가 느린 순간에도 저장된 최근 데이터를 보여 줄 수 있다는 점도 장점입니다.</p>
-
-<h2>상황별 활용 팁</h2>
+<h2 id="ko-6">상황별 활용</h2>
 <h3>학부모</h3>
-<p>주간 보기로 한 주 식단을 일요일 저녁에 훑어보면 도시락이나 간식 계획을 세우기 쉽습니다. 자녀가 여러 명이면 학교가 다를 수 있으니 각각 확인하세요.</p>
+<p>일요일 저녁에 주간 보기를 훑어 도시락이나 간식이 필요한 날을 정합니다. 자녀가 둘 이상이고 학교가 다르면 앱에서 학교를 따로 확인해야 합니다. 아침 등교 준비 때는 잠금 화면 위젯으로 충분합니다.</p>
 <h3>학생</h3>
-<p>좋아하는 메뉴를 등록해 두면 기대할 거리가 생깁니다. 먹은 급식을 가볍게 평가해 두면 나중에 어떤 메뉴가 괜찮았는지 돌아볼 수 있습니다.</p>
+<p>좋아하는 메뉴 키워드를 등록해 두면 기다릴 이유가 생깁니다. 먹은 급식에 좋아요·싫어요를 간단히 남겨 두면 한 달 뒤에 어떤 메뉴가 괜찮았는지 돌아볼 수 있습니다.</p>
 <h3>알레르기가 있는 가정</h3>
-<p>월초에 한 달 식단을 훑어보고 걱정되는 날을 표시해 두세요. 그리고 그날의 안내는 학교 공식 경로로 다시 확인하세요.</p>
+<p>월초에 한 달 식단을 훑으며 걱정되는 날을 표시합니다. 그날은 앱의 번호 표시와 학교 공식 식단표를 둘 다 확인하고, 필요하면 영양교사에게 대체식을 미리 요청합니다. 번호가 바뀌었는지는 전날 저녁과 당일 아침에 한 번씩 보면 충분합니다.</p>
 
-<h2>급식 정보 앱을 고를 때 볼 것</h2>
+<h2 id="ko-7">급식 앱을 고르는 기준</h2>
 <ul>
-<li>출처와 갱신 시각이 화면에 표시되는가.</li>
-<li>급식이 없는 날과 정보가 아직 없는 날을 구분해서 보여 주는가.</li>
-<li>회원가입이나 로그인을 요구하지 않는가, 불필요한 개인정보를 요구하지 않는가.</li>
-<li>알레르기나 선호 정보가 기기 안에만 저장되는가.</li>
-<li>광고가 어떻게 나오는지, 아동이 쓸 때의 보호 조치가 있는가.</li>
+<li>출처와 마지막 확인 시각이 화면에 나오는지</li>
+<li>급식 없는 날, 학교 미입력, 일시 오류를 구분하는지</li>
+<li>가입이나 로그인 없이 쓸 수 있는지, 불필요한 개인정보를 요구하지 않는지</li>
+<li>알레르기와 선호 설정이 기기 안에만 저장되는지</li>
+<li>광고가 어떤 형태로 나오는지, 아이가 쓸 때의 보호 조치가 있는지</li>
+<li>번호를 눌렀을 때 항목 이름을 풀어서 보여 주는지</li>
 </ul>
-<p>SETLOG의 <a href="/guides/lunchlog">급식로그</a>는 이 기준에 맞춰 만든 선택지 중 하나입니다. 로그인 없이 쓰고, 출처를 나이스 교육정보 개방 포털로 표시하며, 알레르기와 기록이 기기 안에만 저장됩니다. 광고가 포함되어 있다는 점은 미리 알아 두세요. iPhone과 Android에서 쓸 수 있고 한국어만 지원합니다.</p>
 
-<h2>자주 묻는 질문</h2>
-<h3>앱에 나온 식단과 학교 안내가 다르면 무엇을 믿어야 하나요?</h3>
-<p>학교의 공식 안내를 우선하세요. 앱은 개방 포털에 올라간 시점의 정보를 보여 줍니다.</p>
-<h3>방학 중에는 왜 급식이 보이지 않나요?</h3>
-<p>급식을 제공하지 않으면 학교가 식단을 입력하지 않습니다. 기숙사처럼 방학에도 급식을 하는 학교는 보일 수 있습니다.</p>
-<h3>다음 달 식단은 언제 확인할 수 있나요?</h3>
-<p>학교마다 공개 시점이 다릅니다. 월말이나 월초에 올라오는 경우가 많지만 정해진 규칙은 없습니다.</p>
-<h3>위젯에 오래된 식단이 보여요.</h3>
-<p>앱을 한 번 열어 데이터를 새로 받고, 기기의 백그라운드 새로 고침 설정을 확인하세요.</p>
-<h3>알레르기 번호를 직접 외워야 하나요?</h3>
-<p>학교 식단표에 번호와 항목 설명이 함께 나오는 경우가 많습니다. 처음에는 대조하면서 확인하면 됩니다.</p>
-<h3>문의가 있으면 어디로 하나요?</h3>
-<p><a href="/support">지원 페이지</a>를 이용해 주세요.</p>
+<h2 id="ko-8">급식로그: 이 기준에 맞춰 만든 앱</h2>
+<p>SETLOG의 <a href="/guides/lunchlog">급식로그</a>는 위 기준을 염두에 두고 만든 iPhone·Android용 앱입니다. 학교를 고르면 로그인 없이 바로 오늘 식단이 나오고, 하루 보기와 주간 보기를 오갈 수 있으며, 화면 아래에는 "나이스 교육정보 개방 포털"이라는 출처와 확인 시각, "학교 사정에 따라 바뀔 수 있어요"라는 안내가 항상 표시됩니다. 내가 설정한 알레르기에 해당하는 메뉴는 색을 달리해 눈에 띄게 하고, 학교가 공개한 19종 번호와 비교해 어떤 항목 때문인지(예: 오징어, 난류)를 함께 보여 줍니다.</p>
+<div class="shots"><figure><img src="/images/guides/lunchlog/01.webp" alt="급식로그 하루 보기 화면. 학교 이름과 요일 선택 아래에 중식 메뉴 7개와 열량, 출처 안내가 보인다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>하루 보기: 학교를 고르면 로그인 없이 오늘 중식과 열량, 출처·확인 시각이 보입니다.</figcaption></figure><figure><img src="/images/guides/lunchlog/02.webp" alt="iPhone 홈 화면에 놓인 급식로그 위젯 세 개. 오늘 중식 메뉴와 확인 시각이 표시된다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>홈 화면 위젯: 앱을 열지 않아도 오늘 끼니와 확인 시각을 봅니다.</figcaption></figure><figure><img src="/images/guides/lunchlog/03.webp" alt="알레르기에 해당하는 메뉴가 붉은 배경과 알러지 배지로 강조된 급식로그 화면" width="560" height="1212" loading="lazy" decoding="async"><figcaption>알레르기 강조: 오징어, 난류처럼 해당 항목 이름과 함께 표시됩니다.</figcaption></figure><figure><img src="/images/guides/lunchlog/04.webp" alt="좋아하는 메뉴가 다음 날 나온다는 급식로그 알림과 하트 표시가 보이는 화면" width="560" height="1212" loading="lazy" decoding="async"><figcaption>좋아하는 메뉴 알림: 전날 저녁에 알려 줍니다.</figcaption></figure><figure><img src="/images/guides/lunchlog/05.webp" alt="급식로그 주간 보기. 10월 12일부터 18일까지 날짜별 중식 메뉴 요약 카드 목록" width="560" height="1212" loading="lazy" decoding="async"><figcaption>주간 보기: 일주일 식단을 한 화면에서 훑습니다.</figcaption></figure><figure><img src="/images/guides/lunchlog/06.webp" alt="급식로그 기록 탭. 월별로 날짜별 중식에 좋아요와 싫어요 개수가 표시된다" width="560" height="1212" loading="lazy" decoding="async"><figcaption>기록: 먹은 급식에 좋아요·싫어요를 남겨 돌아봅니다.</figcaption></figure></div>
+<h3>급식로그의 한계</h3>
+<ul>
+<li>국내 초·중·고 급식만 다루고 한국어 화면만 지원합니다. 유치원·어린이집 식단은 볼 수 없습니다.</li>
+<li>식단 변경 이력은 보관·비교하지 않습니다. 업데이트 알림도 오늘과 내일 식단에 한해 중립적인 문구로만 나갑니다.</li>
+<li>광고가 포함됩니다. 급식 홈 하단 배너와, 평가 시트를 닫을 때·학교를 직접 바꿀 때의 전면 광고가 있으며 하루 노출 횟수는 제한되어 있습니다.</li>
+<li>번호는 학교가 공개한 값을 그대로 비교할 뿐입니다. 학교 입력이 틀리면 앱도 틀립니다. 입력 오류가 의심되면 학교 공식 안내를 따르세요.</li>
+</ul>
+<h3>누구에게 맞고, 누구에게 안 맞나</h3>
+<div class="fit"><div><h4>잘 맞는 경우</h4><ul><li>매일 학교 급식을 빠르게 훑고 싶은 학생·학부모</li><li>로그인과 회원가입이 번거로운 사람</li><li>위젯으로 확인하는 습관을 원하는 사람</li></ul></div><div><h4>맞지 않는 경우</h4><ul><li>광고가 있는 앱이 싫은 사람</li><li>유치원·어린이집 식단이 필요한 경우</li><li>중증 알레르기로 학교와 직접 소통이 필수인 경우(앱은 보조 수단일 뿐)</li></ul></div></div>
+
+<h2 id="ko-9">출처 및 더 읽을거리</h2>
+<ol class="sources"><li><a href="https://www.ice.go.kr/icefood/cm/cntnts/cntntsView.do?mi=10779&cntntsId=629" target="_blank" rel="noopener noreferrer">인천광역시교육청 식생활관리 · 식품알레르기(19종 목록·식단표 표시 방법)</a></li><li><a href="https://open.neis.go.kr/portal/data/service/selectServicePage.do?infId=OPEN17320190722180924242823&infSeq=1" target="_blank" rel="noopener noreferrer">나이스 교육정보 개방 포털 · 급식식단정보 API 명세</a></li><li><a href="https://www.data.go.kr/data/15139198/openapi.do" target="_blank" rel="noopener noreferrer">공공데이터포털 · 교육부 학교급식 식단 정보(오픈 API)</a></li><li><a href="https://www.law.go.kr/법령/학교급식법시행규칙" target="_blank" rel="noopener noreferrer">국가법령정보센터 · 학교급식법 시행규칙</a></li></ol>
+
+<h2 id="ko-faq">자주 묻는 질문</h2>
+<details class="faq"><summary>앱에 나온 식단과 학교 안내가 다르면 무엇을 믿어야 하나요?</summary><p>학교의 공식 안내를 우선하세요. 앱은 개방 포털에 올라간 시점의 값을 보여 주기 때문에 학교가 홈페이지만 먼저 고친 경우 시차가 생길 수 있습니다.</p></details>
+<details class="faq"><summary>학교 급식 알레르기 번호는 몇 번까지 있나요?</summary><p>1번 난류부터 19번 잣까지 19종입니다. 전체 목록은 이 글의 표에 정리했고, 13번 아황산류는 표시기준상 권장 항목으로 안내되며 19번 잣은 2020년 1월 1일부터 적용된 항목입니다.</p></details>
+<details class="faq"><summary>방학 중에는 왜 급식이 보이지 않나요?</summary><p>급식을 제공하지 않으면 학교가 식단을 입력하지 않기 때문입니다. 방학 중에도 급식을 하는 학교(예: 기숙사 운영)는 데이터가 보일 수 있습니다.</p></details>
+<details class="faq"><summary>다음 달 식단은 언제 확인할 수 있나요?</summary><p>학교마다 다릅니다. SETLOG이 2026-10-01에 표본 30곳을 확인했을 때 다음 달 식단을 공개한 곳은 없었고, 보통 월말이나 월초에 올라옵니다. 정해진 규칙은 확인하지 못했습니다.</p></details>
+<details class="faq"><summary>위젯에 오래된 식단이 보여요.</summary><p>앱을 한 번 열어 최신 데이터를 받고, 기기의 백그라운드 새로 고침이나 배터리 절약 설정이 앱을 막고 있지 않은지 확인하세요. 위젯이 다시 그려지는 빈도는 운영체제가 정합니다.</p></details>
+<details class="faq"><summary>유치원이나 어린이집 급식도 볼 수 있나요?</summary><p>나이스 개방 포털 식단 데이터에는 유치원과 어린이집이 없어서 급식로그를 포함한 이 방식의 앱에서는 볼 수 없습니다. 해당 기관의 공지를 확인하세요.</p></details>
 
   </section>
   <section id="en" lang="en" class="lang-ko">
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#en-1">How a menu reaches your phone</a></li><li><a href="#en-2">Comparing the ways to check</a></li><li><a href="#en-3">Reading allergy numbers 1 to 19</a></li><li><a href="#en-4">Why data goes out of step</a></li><li><a href="#en-5">Cutting the checking time with widgets and alerts</a></li><li><a href="#en-6">Using it in your situation</a></li><li><a href="#en-7">Choosing a meal app</a></li><li><a href="#en-8">LunchLog: an app built around these criteria</a></li><li><a href="#en-9">Sources and further reading</a></li><li><a href="#en-faq">FAQ</a></li></ol></nav>
 
-<p>"What is for lunch today?" is a question students and parents ask every day. School meal information is public, but there is surprisingly little guidance on where to look, how far to trust it, and what to be careful about when someone has an allergy. This article explains where school meal data comes from, the ways you can check it, how widgets and notifications save time, and the principles to follow when reading allergy information.</p>
+<p>"What is for lunch today?" is a question Korean students and parents ask almost every day. The menus are public, yet it is hard to find one place that explains where the data comes from, how current it is and how to read the allergy numbers. This article first traces the path a menu takes from a school to your phone, then compares the ways to check it, and lays out allergy numbers 1 to 19 in a table. After that it covers why data can disagree, how widgets cut the time you spend checking, and what to look for in a meal app.</p>
+<div class="callout"><p>If you have an allergy, treat numbers shown on a screen as a reference. Always take the school's own notice (the nutrition teacher or class teacher) as the final word for the day. This article is not medical advice.</p></div>
 
-<h2>Where does meal information come from?</h2>
-<p>School menus are written by each school's nutrition teacher or dietitian, and schools announce them through channels such as the school website, a school notification app or a letter sent home. For many schools, the menu data is also available as public data through the NEIS Open Education Information Portal, which is run by education-related institutions. The portal's data can be queried school by school, so many apps pull it in and display it.</p>
-<p>The key point is that the source is the school and apps are only passing the information along. What an app has is what the school entered at the time it was published to the portal. If a school posts a menu late or edits it afterward, it can take time to show up in an app, and on days with no meal service the data is naturally empty.</p>
+<h2 id="en-1">How a menu reaches your phone</h2>
+<p>A school's nutrition teacher or dietitian writes the menu and enters it into NEIS, the national education administration information system. The parts that can be public, such as the school, date, meal type, dish names, allergy numbers, calories, nutrition and country of origin, are offered as open APIs through the NEIS Open Education Information Portal (open.neis.go.kr) and the national open data portal (data.go.kr). Most meal apps call that API directly or through their own server. The path is school, NEIS, open portal, app, and the source of truth is always what the school entered.</p>
+<p>The portal's meal API is queried per school. You send an education office code and a school code together, pick one date or a range, and the response carries the meal type (breakfast, lunch, dinner), the list of dishes, calories (for example 1048.9 Kcal), nutrition, origin information and a load timestamp. In SETLOG's own check on 2026-10-01 the nutrition block came as nine fixed labels: carbohydrate, protein, fat, vitamin A, thiamine, riboflavin, vitamin C, calcium and iron, and origin lines were often empty. These values exist only as far as the school entered them. If nothing was entered, the API is empty too.</p>
+<p>So when an app and a school website disagree, do not assume the app is wrong; first ask which side was updated more recently. Some schools fix the web menu first and enter the NEIS change later, and sometimes it is the other way round. In our check the portal reloaded its data at least once a day, and rows about a week past the meal date stopped changing. That is behavior we observed, not a rule the portal promises, so do not plan around an exact refresh time.</p>
 
-<h2>Ways to check the menu</h2>
+<h2 id="en-2">Comparing the ways to check</h2>
+<p>There is no single best route. What you use depends on whether you want "lunch at a glance" or "exact information because of an allergy".</p>
+<div class="tbl-wrap"><table><caption>Ways to check school meal information</caption><thead><tr><th>Route</th><th>Strength</th><th>Limit</th><th>Use it when</th></tr></thead><tbody>
+<tr><td>School website, letters home</td><td>The school's own original; changes appear here first</td><td>Layouts differ by school and can be awkward on mobile</td><td>Checking allergens or changes</td></tr>
+<tr><td>A notification app the school uses</td><td>Arrives by push with other notices</td><td>Menus are shown differently per app and absent if the school does not use one</td><td>The school already uses it</td></tr>
+<tr><td>NEIS public services (per education office)</td><td>Official channel for education administration data</td><td>Some offices have posted maintenance or suspension notices; screens are complex</td><td>You want the official screen</td></tr>
+<tr><td>Open portal API directly</td><td>Raw data and fields without processing</td><td>Needs an API key and JSON reading; not for ordinary users</td><td>Developers, data checks</td></tr>
+<tr><td>A meal app or widget</td><td>Day and week views, widgets, alerts</td><td>Values are as of when the portal received them; refresh intervals differ</td><td>Quick daily glances</td></tr>
+</tbody></table></div>
+<p>Two habits work well together. Glance at a widget or app for the daily routine, and only on days with an allergy concern or an unusual dish check the school's official channel once more. You keep the convenience and still verify against the original when it matters.</p>
+
+<h2 id="en-3">Reading allergy numbers 1 to 19</h2>
+<p>The numbers in parentheses after a dish name stand for the allergy-causing foods among that dish's ingredients. Korea's school meal regulations were amended in November 2013 to require schools to announce allergen information on menus, and the items follow the 19 listed in the labeling standard issued by the Ministry of Food and Drug Safety. Education office guidance describes the food-ingredient items as mandatory and other ingredients and components as recommended. The numbers are in the table below.</p>
+<div class="tbl-wrap"><table><caption>The 19 allergen numbers used on Korean school menus</caption><thead><tr><th>No.</th><th>Item</th><th>Note</th></tr></thead><tbody><tr><td>1</td><td>Eggs (poultry)</td><td></td></tr><tr><td>2</td><td>Milk</td><td></td></tr><tr><td>3</td><td>Buckwheat</td><td></td></tr><tr><td>4</td><td>Peanuts</td><td></td></tr><tr><td>5</td><td>Soybeans</td><td></td></tr><tr><td>6</td><td>Wheat</td><td></td></tr><tr><td>7</td><td>Mackerel</td><td></td></tr><tr><td>8</td><td>Crab</td><td></td></tr><tr><td>9</td><td>Shrimp</td><td></td></tr><tr><td>10</td><td>Pork</td><td></td></tr><tr><td>11</td><td>Peach</td><td></td></tr><tr><td>12</td><td>Tomato</td><td></td></tr><tr><td>13</td><td>Sulfites</td><td>Listed as recommended rather than mandatory in the labeling standard</td></tr><tr><td>14</td><td>Walnut</td><td></td></tr><tr><td>15</td><td>Chicken</td><td></td></tr><tr><td>16</td><td>Beef</td><td></td></tr><tr><td>17</td><td>Squid</td><td></td></tr><tr><td>18</td><td>Shellfish (incl. oyster, abalone, mussel)</td><td></td></tr><tr><td>19</td><td>Pine nut</td><td>Applied from 1 January 2020</td></tr></tbody></table></div>
+<p>Numbers are normally joined with periods. For example, if the menu says <b>떡잡채 (5.6.10.13.18)</b>, it means soybeans, wheat, pork, sulfites and shellfish were used. A dish with no numbers may truly have none of these ingredients, but the entry may also have been left out.</p>
+<h3>Cases that cause confusion</h3>
+<ul>
+<li><b>Digits inside the name</b>: dishes such as 새우튀김1, 전복솥밥(1+1) or 사과(홍로,9월) contain digits that are not allergy numbers. In our check this affected about 1% of roughly 29,000 menu lines.</li>
+<li><b>Out-of-range digits</b>: values such as 22, 20 or 0 are not in 1 to 19 and are more likely to be sizes, grades or class marks.</li>
+<li><b>Two parenthesized groups</b>: in <b>깍두기(2) (9.13)</b> the two groups differ, so one may be an entry error. Many apps treat the last group as the official one, but if in doubt, ask the school.</li>
+<li><b>Separators</b>: some schools use commas rather than periods. Read them the same way.</li>
+<li><b>Public versus menu allergens</b>: when a school manages a separate public allergen field in NEIS, that value takes priority, so it can differ from what the school website shows.</li>
+</ul>
+<p>One more point: the numbers are based on the ingredients used in the dish. Cross-contact from shared cooking equipment, or traces in processed foods, cannot be read from the numbers alone. For severe allergies, talk with the nutrition teacher in advance and ask about substitute meals in addition to checking the numbers.</p>
+
+<h2 id="en-4">Why data goes out of step</h2>
+<ul>
+<li><b>Publication timing</b>: many schools enter a whole month in advance. When SETLOG sampled 200 schools on 2026-10-01, 194 had this month's menu. A sample of 30 schools queried for next month the same day showed none published. Expect next month's menu to appear around the end or start of the month; we did not find a fixed rule.</li>
+<li><b>Same-day changes</b>: if supplies, events or the school calendar change a menu, the school edits it, but an app picks it up with a delay. Apps that do not show change history also cannot tell you what changed.</li>
+<li><b>School code changes</b>: on 1 July 2026, when the Jeonnam-Gwangju Integrated Special City Office of Education was launched, the standard administrative codes of its schools changed all at once. In such cases a school may suddenly stop resolving in an app, and re-selecting the school usually fixes it.</li>
+<li><b>Coverage</b>: the open portal menus focus on elementary, middle and high schools. Kindergartens and daycare centers are not in NEIS meal data, so you cannot look them up this way.</li>
+<li><b>Days nothing was entered</b>: vacations, closures and no-meal days are empty. A good app separates "no meal today", "the school has not entered it yet" and "temporary error". Others show "no data" for all three, which is confusing.</li>
+<li><b>Outages</b>: maintenance and overload notices have been posted for the portal and for education office systems. A menu that suddenly does not load may be a source-system problem rather than an app problem.</li>
+</ul>
+
+<h2 id="en-5">Cutting the checking time with widgets and alerts</h2>
+<p>Checking a menu should take a few seconds once a day. If opening an app and picking a school and date each time is a chore, you eventually stop checking, and a widget removes that friction. Structurally, a widget draws data the app already downloaded and stored, so the most recently received menu still shows in a weak signal area. How often the operating system redraws a widget is its own decision, though, so after a long time without opening the app you may see an old menu.</p>
+<h3>iPhone</h3>
+<p>Long-press an empty spot on the Home Screen to enter edit mode, tap the plus (+) button at the top left, search for the app and choose a size. For the Lock Screen, long-press it, tap Customize, and add from the widget area. Small sizes are easy to scan; medium and larger show more dishes.</p>
+<h3>Android</h3>
+<p>Long-press an empty spot on the home screen, open the widget menu, find the app and drag the size you want onto the screen. Menu names vary a little between manufacturer launchers.</p>
+<h3>When a widget shows an old menu</h3>
 <ol>
-<li>The school website: closest to the original. Many schools post a monthly menu table.</li>
-<li>The school's notification app or letters home: the official route where the school itself communicates. Changes are often announced here first.</li>
-<li>The NEIS Open Education Information Portal: lets you look up a school's menu as public data, but the format is somewhat awkward for ordinary users.</li>
-<li>A dedicated meal app: presents public data such as the portal's in an easier form, with conveniences like widgets and notifications.</li>
+<li>Open the app once so it fetches fresh data.</li>
+<li>Check that Background App Refresh (iOS) or battery saving (Android) is not blocking the app.</li>
+<li>Remove the widget and add it again.</li>
+<li>If the school has not entered today's menu yet, fixing the app will not help. Check the school website.</li>
 </ol>
-<p>Whichever you use, do not assume the meal will come out exactly as listed. Ingredient supply, events and the school calendar can change a menu.</p>
+<p>If you use notifications, keep only the ones with clear value, such as "a favorite dish is served tomorrow". A daily push of the entire menu tends to get switched off soon.</p>
 
-<h2>Principles for reading allergy information</h2>
-<p>School menus often show numbers next to each dish that stand for allergy-causing foods, such as eggs, milk, buckwheat, peanuts, soybeans and wheat. Some apps highlight these numbers, which is convenient, but please keep the following in mind.</p>
-<ul>
-<li>An app only shows what the school entered. Entries can be missing or late.</li>
-<li>Menus can change on the day. If you have an allergy, do not rely on an app screen alone; check the school's official notice first.</li>
-<li>For severe allergies, it is wise to talk beforehand with the school's nutrition teacher or class teacher. This article is not medical advice.</li>
-<li>The numbering follows items set by regulation, so check once that the numbers you chose in an app match the school's notation.</li>
-</ul>
-
-<h2>Why widgets and notifications save time</h2>
-<p>Checking a school meal should take a few seconds once a day. If you have to open an app and choose a school and a date every time, it becomes tiresome and you gradually stop checking. Widgets cut that out.</p>
-<ul>
-<li>A Home Screen widget shows today's menu the moment you wake the phone.</li>
-<li>A Lock Screen widget suits checking without unlocking, which is handy while getting ready in the morning.</li>
-<li>A widget that switches between breakfast, lunch and dinner by time of day means you do not pick a meal each time.</li>
-<li>A favorite-menu alert tells you the day before, which can help with adjusting a packed lunch or snacks.</li>
-</ul>
-<p>A parent can learn today's meal from the Lock Screen in the morning without asking the child each time. A student can build a habit of checking the menu before lunch. Another advantage is that a widget can show recently stored data even when the network is slow.</p>
-
-<h2>Tips by situation</h2>
+<h2 id="en-6">Using it in your situation</h2>
 <h3>Parents</h3>
-<p>Skimming the weekly view on Sunday evening makes it easier to plan packed lunches or snacks. If you have several children, their schools may differ, so check each one.</p>
+<p>Skim the week view on Sunday evening and decide which days need a packed lunch or a snack. If you have more than one child at different schools, check each school separately. In the morning rush a Lock Screen widget is enough.</p>
 <h3>Students</h3>
-<p>Registering favorite menu words gives you something to look forward to. Lightly rating the meals you ate lets you look back later at which dishes were good.</p>
+<p>Register favorite dish keywords and you have something to look forward to. If you leave a quick thumbs up or down on what you ate, a month later you can look back at which dishes were good.</p>
 <h3>Families with allergies</h3>
-<p>Skim the month's menu at the start of the month and mark the days that worry you. Then recheck those days through the school's official channel.</p>
+<p>Skim the month at the start and mark worrying days. On those days compare the app's numbers with the school's official menu, and ask the nutrition teacher for a substitute in advance if needed. Checking the numbers once the evening before and once in the morning is enough.</p>
 
-<h2>What to look for in a meal app</h2>
+<h2 id="en-7">Choosing a meal app</h2>
 <ul>
-<li>Does it show the source and the update time on screen?</li>
-<li>Does it distinguish a day with no meal service from a day with no information yet?</li>
-<li>Does it avoid requiring sign-up or login, and avoid asking for unnecessary personal data?</li>
+<li>Does it show the source and the time of the last check on screen?</li>
+<li>Does it tell apart a no-meal day, a school that has not entered data and a temporary error?</li>
+<li>Can you use it without sign-up or login, and does it avoid unnecessary personal data?</li>
 <li>Are allergy and preference settings stored only on the device?</li>
-<li>How are ads shown, and are there protections for children using it?</li>
+<li>How are ads shown, and are there protections when children use it?</li>
+<li>Does it spell out the item name when you see a number?</li>
 </ul>
-<p>SETLOG's <a href="/guides/lunchlog">LunchLog (급식로그)</a> is one option built around these criteria. It works without login, labels the NEIS Open Education Information Portal as its source, and keeps allergies and records on the device. Be aware that it includes ads. It is available on iPhone and Android and supports Korean only.</p>
 
-<h2>FAQ</h2>
-<h3>If the app and the school notice disagree, which should I trust?</h3>
-<p>Put the school's official notice first. An app shows the information as of when it was published to the portal.</p>
-<h3>Why is there no meal during vacation?</h3>
-<p>When a school does not serve meals, it does not enter a menu. A school that serves meals during vacation, such as one with boarders, may still show data.</p>
-<h3>When can I see next month's menu?</h3>
-<p>The timing differs by school. It is often posted around the end or start of a month, but there is no fixed rule.</p>
-<h3>My widget shows an old menu.</h3>
-<p>Open the app once to fetch fresh data and check the device's background refresh setting.</p>
-<h3>Do I have to memorize the allergy numbers?</h3>
-<p>School menus often list the numbers alongside the item names. At first you can simply compare as you check.</p>
-<h3>Where do I ask for help?</h3>
-<p>Please use the <a href="/support">support page</a>.</p>
+<h2 id="en-8">LunchLog: an app built around these criteria</h2>
+<p>SETLOG's <a href="/guides/lunchlog">LunchLog (급식로그)</a> is an iPhone and Android app built with the criteria above in mind. Pick a school and today's menu appears with no login; you can move between day and week views, and the bottom of the screen always shows the source ("NEIS Open Education Information Portal"), the check time and a note that menus can change with school circumstances. Dishes that match your allergy settings are highlighted and compared with the 19 numbers the school published, so you see which item caused it (squid or eggs, for instance). The app interface is Korean only.</p>
+<div class="shots"><figure><img src="/images/guides/lunchlog/01.webp" alt="LunchLog day view showing the school name, weekday picker, seven lunch dishes, calories and the source note" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Day view: choose a school and today's lunch, calories, source and check time appear without login.</figcaption></figure><figure><img src="/images/guides/lunchlog/02.webp" alt="Three LunchLog widgets on an iPhone home screen showing today's lunch and the check time" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Home Screen widgets: see the current meal and check time without opening the app.</figcaption></figure><figure><img src="/images/guides/lunchlog/03.webp" alt="LunchLog screen with allergy-matching dishes highlighted by a red background and an allergy badge" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Allergy highlight: matching dishes are flagged along with the item name.</figcaption></figure><figure><img src="/images/guides/lunchlog/04.webp" alt="A LunchLog notification saying a favorite dish is served tomorrow, with a heart marker on the dish" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Favorite-dish alert: it arrives the evening before.</figcaption></figure><figure><img src="/images/guides/lunchlog/05.webp" alt="LunchLog week view with daily lunch summary cards from October 12 to 18" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Week view: skim the whole week on one screen.</figcaption></figure><figure><img src="/images/guides/lunchlog/06.webp" alt="LunchLog records tab listing each lunch of the month with thumbs up and thumbs down counts" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Records: leave a thumbs up or down on what you ate and look back.</figcaption></figure></div>
+<h3>LunchLog limits</h3>
+<ul>
+<li>It covers Korean elementary, middle and high school meals only, and has a Korean-only interface. Kindergarten and daycare menus are not available.</li>
+<li>It does not store or compare menu change history. Update notices are limited to today and tomorrow, with neutral wording.</li>
+<li>It includes ads: a banner at the bottom of the home screen and interstitials when you close the rating sheet or switch schools on purpose, with a daily cap.</li>
+<li>Numbers are simply the school's published values compared as they are. If a school entry is wrong, the app is wrong too. If you suspect an error, follow the school's official notice.</li>
+</ul>
+<h3>Who it suits and who it does not</h3>
+<div class="fit"><div><h4>A good fit</h4><ul><li>Students and parents who want a quick daily look at the school menu</li><li>People who dislike sign-up and login</li><li>Anyone who wants to check through a widget</li></ul></div><div><h4>Not a fit</h4><ul><li>People who do not want an ad-supported app</li><li>Anyone who needs kindergarten or daycare menus</li><li>Families with severe allergies who must talk to the school directly (an app is only an aid)</li></ul></div></div>
+
+<h2 id="en-9">Sources and further reading</h2>
+<ol class="sources"><li><a href="https://www.ice.go.kr/icefood/cm/cntnts/cntntsView.do?mi=10779&cntntsId=629" target="_blank" rel="noopener noreferrer">Incheon Metropolitan Office of Education: food allergy page (19-item list and menu labeling, Korean)</a></li><li><a href="https://open.neis.go.kr/portal/data/service/selectServicePage.do?infId=OPEN17320190722180924242823&infSeq=1" target="_blank" rel="noopener noreferrer">NEIS Open Education Information Portal: meal service API specification (Korean)</a></li><li><a href="https://www.data.go.kr/data/15139198/openapi.do" target="_blank" rel="noopener noreferrer">Public Data Portal: school meal menu open API (Korean)</a></li><li><a href="https://www.law.go.kr/법령/학교급식법시행규칙" target="_blank" rel="noopener noreferrer">Korean Law Information Center: Enforcement Rule of the School Meals Act (Korean)</a></li></ol>
+
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>If the app and the school notice disagree, which should I trust?</summary><p>Trust the school's official notice. An app shows values as of when they reached the open portal, so a school that edited only its website first can cause a lag.</p></details>
+<details class="faq"><summary>How many allergy numbers are there on Korean school menus?</summary><p>There are 19, from number 1 (eggs) to number 19 (pine nuts). The full list is in the table in this article; number 13, sulfites, is described as recommended in the labeling standard, and number 19, pine nuts, applies from 1 January 2020.</p></details>
+<details class="faq"><summary>Why is there no meal during vacation?</summary><p>Because a school that does not serve meals does not enter a menu. A school that serves meals during vacation, such as one with boarders, may still show data.</p></details>
+<details class="faq"><summary>When can I see next month's menu?</summary><p>It differs by school. When SETLOG checked 30 sample schools on 2026-10-01, none had published next month's menu; it usually appears around the end or start of a month. We did not find a fixed rule.</p></details>
+<details class="faq"><summary>My widget shows an old menu.</summary><p>Open the app once to fetch fresh data and check that Background App Refresh or battery saving is not blocking it. How often a widget is redrawn is decided by the operating system.</p></details>
+<details class="faq"><summary>Can I see kindergarten or daycare meals?</summary><p>Kindergartens and daycare centers are not in NEIS open portal meal data, so apps built on it, LunchLog included, cannot show them. Check the institution's own notices.</p></details>
 
   </section>
-
-  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/lunchlog">급식로그 사용 가이드</a></li><li><a href="/support">Support · 문의</a></li></ul></div>
+<aside class="author-box"><div>
+<p lang="ko"><b>작성: SETLOG</b> — iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 이 글은 광고·제휴 대가 없이 썼고, 언급한 앱은 모두 SETLOG가 만든 앱뿐입니다. 오류나 정정할 내용은 <a href="/contact">Contact</a>로 알려 주세요.</p>
+<p lang="en"><b>By SETLOG</b> — a developer who builds and runs iOS, Android and macOS apps. This article was written without payment or affiliate arrangements, and the only apps it mentions are SETLOG's own. Send corrections through <a href="/contact">Contact</a>.</p>
+</div></aside>
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/lunchlog">급식로그 사용 가이드 · LunchLog guide</a></li><li><a href="/guides/">모든 가이드 · All guides</a></li><li><a href="/support">Support · 문의</a></li></ul></div>
 </main>
-
 <footer class="site-footer">
   <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
   <span>© 2026 SETLOG</span>
 </footer>
+
 </body>
 </html>

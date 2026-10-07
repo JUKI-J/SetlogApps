@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>여러 기기를 동시에 맞추는 타이머·스톱워치 활용법 | Synchronized Timers for Groups — SETLOG</title>
-<meta name="description" content="교실, 운동, 회의, 기록 측정에서 여러 기기의 타이머를 동시에 맞추는 원리와 체크리스트. How synchronized timers and stopwatches work for groups.">
+<meta name="description" content="수업·운동·발표·릴레이에서 여러 기기의 타이머를 맞추는 법. 시계 오차(NTP)와 네트워크 지연, 호스트 방식 설계, 현장 대비책, TimerLync·LapLync 사용 예시 시나리오.">
 <link rel="canonical" href="https://setlog.net/guides/synchronized-timers-for-groups">
-<meta property="og:title" content="여러 기기를 동시에 맞추는 타이머·스톱워치 활용법 | Synchronized Timers for Groups — SETLOG"><meta property="og:description" content="교실, 운동, 회의, 기록 측정에서 여러 기기의 타이머를 동시에 맞추는 원리와 체크리스트. How synchronized timers and stopwatches work for groups."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/synchronized-timers-for-groups">
+<meta property="og:title" content="여러 기기를 동시에 맞추는 타이머·스톱워치 활용법 | Synchronized Timers for Groups — SETLOG"><meta property="og:description" content="수업·운동·발표·릴레이에서 여러 기기의 타이머를 맞추는 법. 시계 오차(NTP)와 네트워크 지연, 호스트 방식 설계, 현장 대비책, TimerLync·LapLync 사용 예시 시나리오."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/synchronized-timers-for-groups"><meta property="og:image" content="https://setlog.net/images/guides/timerlync/03.webp"><meta property="og:site_name" content="SETLOG">
+<meta name="twitter:card" content="summary"><meta property="article:modified_time" content="2026-10-07">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "여러 기기를 동시에 맞추는 타이머·스톱워치 활용법", "description": "수업·운동·발표·릴레이에서 여러 기기의 타이머를 맞추는 법. 시계 오차(NTP)와 네트워크 지연, 호스트 방식 설계, 현장 대비책, TimerLync·LapLync 사용 예시 시나리오.", "inLanguage": "ko", "dateModified": "2026-10-07", "datePublished": "2026-10-07", "author": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "publisher": {"@type": "Organization", "name": "SETLOG", "url": "https://setlog.net/"}, "mainEntityOfPage": "https://setlog.net/guides/synchronized-timers-for-groups", "image": "https://setlog.net/images/guides/timerlync/03.webp"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "여러 기기의 타이머가 어긋나는 가장 큰 이유는?", "acceptedAnswer": {"@type": "Answer", "text": "사람의 조작 시간차, 기기 시계의 오프셋, 네트워크 지연이 겹치기 때문입니다. 종료 시각 하나를 공유하고 각 기기가 보정한 시계로 세는 방식이 이를 줄입니다."}}, {"@type": "Question", "name": "NTP는 시계 오차를 어떻게 구하나요?", "acceptedAnswer": {"@type": "Answer", "text": "요청과 응답의 네 시각으로 오프셋 θ = ½[(T2−T1)+(T3−T4)]와 왕복 지연 δ = (T4−T1)−(T3−T2)를 계산합니다(RFC 5905)."}}, {"@type": "Question", "name": "TimerLync와 LapLync는 몇 대까지 연결되나요?", "acceptedAnswer": {"@type": "Answer", "text": "둘 다 호스트 기준으로 기본 2대이고 Pro를 열면 최대 8대입니다. 참가자는 결제가 필요 없습니다."}}, {"@type": "Question", "name": "Android 기기도 함께 쓸 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "TimerLync와 LapLync는 iPhone·iPad(TimerLync는 Apple Watch 포함) 앱입니다. Android는 지원 대상이 아닙니다."}}, {"@type": "Question", "name": "현장에서 동기화가 실패하면 어떻게 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "근처 연결 대신 룸 코드로 인터넷 중계에 참가하고, 호스트가 아닌 사람이 별도 타이머를 병행하며, 소리 신호를 준비하세요. 중요한 행사 전에는 리허설이 필요합니다."}}]}</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -14,7 +17,7 @@
 <header class="site-header">
   <a href="/" class="wordmark">SET<b>LOG</b></a>
   <nav class="site-nav" aria-label="Main">
-    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
   </nav>
 </header>
 
@@ -22,164 +25,201 @@
 <main class="article">
   <h1>여러 기기를 동시에 맞추는 타이머·스톱워치 활용법</h1>
   <p class="sub">Using synchronized timers and stopwatches for groups</p>
-  
   <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  <p class="meta-line">최종 업데이트 2026-10-07 · 작성: SETLOG · 읽는 시간 10분 · Last updated 2026-10-07</p>
 
   <section id="ko" lang="ko">
+<nav class="toc" aria-label="목차"><b>목차</b><ol><li><a href="#uses">언제 여러 기기를 동시에 맞춰야 하나</a></li><li><a href="#drift">왜 기기마다 시간이 어긋나는가</a></li><li><a href="#ntp">시계 오프셋은 어떻게 측정하나</a></li><li><a href="#design">호스트 권한 방식의 동기화 설계</a></li><li><a href="#fallback">현장 대비책</a></li><li><a href="#briefing">참가자에게 미리 알릴 것</a></li><li><a href="#scripts">현장 시나리오 두 가지</a></li><li><a href="#timerlync">TimerLync로 같은 카운트다운 공유하기</a></li><li><a href="#laplync">LapLync로 같은 시작점에서 기록하기</a></li></ol></nav>
 
-<p>혼자 쓰는 타이머는 단순합니다. 하지만 여러 사람이 같은 순간에 시작하고 끝내야 하는 자리에서는 이야기가 달라집니다. 교실, 운동장, 회의실, 주방에서 흔히 겪는 "우리 타이머가 서로 안 맞아요"라는 문제를 어떻게 줄일 수 있는지, 그리고 여러 기기를 동기화하는 방법이 어떤 원리로 동작하는지 정리했습니다. 특정 앱 없이도 적용할 수 있는 현장 요령을 중심으로 쓰고, 마지막에 선택지로 쓸 수 있는 앱도 소개합니다.</p>
-
-<h2>같은 시간이 필요한 상황들</h2>
-<h3>교실 활동</h3>
-<p>모둠별 토론 5분, 정리 발표 2분처럼 활동 시간을 학생들에게 보여 주려면 교사가 큰 화면 하나에 타이머를 띄우는 방법이 가장 흔합니다. 그런데 모둠이 교실 곳곳에 흩어져 있으면 화면이 잘 보이지 않습니다. 각 모둠 기기에 같은 카운트다운이 떠 있다면 교사가 중간에 시간을 늘리거나 멈출 때도 모두가 같은 시점에 반영된 화면을 보게 됩니다.</p>
-<h3>그룹 운동</h3>
-<p>서킷 트레이닝이나 인터벌 운동에서는 운동 40초, 휴식 20초 같은 구간이 칼같이 바뀌어야 합니다. 코치의 기기와 참가자 기기가 몇 초씩 어긋나면 누군가는 쉬는 시간에 계속 움직이고 누군가는 먼저 멈춥니다.</p>
-<h3>팀 뽀모도로</h3>
-<p>집중 25분, 휴식 5분의 주기를 팀이 함께 돌리면 한 사람이 쉬는 동안 다른 사람이 메시지를 보내 흐름을 깨는 일이 줄어듭니다. 이때 가장 중요한 것은 모두의 휴식이 같은 순간에 시작되고 끝나는 것입니다.</p>
-<h3>육상과 수영 같은 기록 측정</h3>
-<p>여러 선수의 기록을 여러 사람이 각자 측정할 때는 출발 순간이 같아야 비교가 됩니다. 구간마다 측정자를 두는 경우에는 모든 측정 기기가 같은 시작점에서 시간을 세어야 합니다. 이런 경우에는 카운트다운이 아니라 스톱워치와 랩 기록이 필요합니다.</p>
-<h3>주방과 가정</h3>
-<p>여러 요리를 동시에 진행할 때 각자 다른 방에서 같은 타이머를 확인하거나, 가족이 함께 하는 정리 시간 10분처럼 가볍게도 쓸 수 있습니다.</p>
-<h3>발표와 회의</h3>
-<p>발표자, 진행자, 청중 중 시간 관리자가 모두 같은 남은 시간을 보면 "몇 분 남았죠?"라고 묻는 시간이 줄어듭니다.</p>
-
-<h2>독립 타이머는 왜 어긋나는가</h2>
-<p>휴대폰마다 따로 돌아가는 타이머는 "누른 시점부터 N초 후"라는 규칙으로 작동합니다. 그래서 누른 시점이 다르면 끝나는 시점도 다릅니다. 여기에 몇 가지가 더해집니다.</p>
+<h2 id="uses">언제 여러 기기를 동시에 맞춰야 하나</h2>
+<p>타이머 한 대면 충분한 일이 대부분입니다. 하지만 "모두가 같은 순간에 시작하고 끝나야" 의미가 있는 일에서는 사람마다 따로 누른 타이머가 문제를 만듭니다.</p>
 <ul>
-<li>사람마다 구호를 듣고 버튼을 누르는 반응 시간이 다릅니다.</li>
-<li>화면이 꺼지거나 앱이 백그라운드로 가면 갱신 방식이 달라질 수 있습니다.</li>
-<li>기기 시계에는 작은 오차가 있고, 자동 시간 설정이 꺼져 있으면 오차가 더 커질 수 있습니다.</li>
-<li>남은 시간을 문자열로 전송하는 방식은 전송 지연만큼 늦게 도착합니다.</li>
+<li><strong>수업과 모둠 활동.</strong> 교사의 화면과 학생 화면이 같은 시간을 가리키면 "시간 됐어요?" 같은 질문이 사라집니다.</li>
+<li><strong>그룹 운동 수업.</strong> 인터벌 수업에서 강사와 참가자가 같은 작업·휴식 신호를 보면 동작 전환이 맞습니다.</li>
+<li><strong>발표와 회의.</strong> 발표자, 진행자, 방청석의 시간 감각을 맞추고 단계가 바뀔 때 함께 전환합니다.</li>
+<li><strong>릴레이와 구간 측정.</strong> 출발점, 중간 전환점, 도착점에서 같은 시작 시각을 기준으로 기록해야 구간 시간이 정확합니다.</li>
+<li><strong>스터디·원격 근무.</strong> 집중과 휴식을 모두 같은 리듬으로 반복하는 그룹 뽀모도로.</li>
 </ul>
 
-<h2>공유 종료 시각이라는 해법</h2>
-<p>더 안정적인 방식은 "N초 후"가 아니라 "몇 시 몇 분 몇 초에 끝난다"라는 절대 시각 하나를 모든 기기가 공유하는 것입니다. 각 기기는 네트워크 시간 서버를 기준으로 자기 시계의 오차를 계산해 둔 뒤, 그 절대 시각까지 남은 시간을 스스로 계산해 화면에 표시합니다. 이 방식에는 세 가지 장점이 있습니다.</p>
+<h2 id="drift">왜 기기마다 시간이 어긋나는가</h2>
+<p>한 가지 원인이 아니라 세 가지가 겹칩니다.</p>
+<h3>1. 사람의 조작 시간차</h3>
+<p>"하나, 둘, 셋, 시작!" 구호에 맞춰 각자 눌러도 반응 속도는 사람마다 다르고, 한 사람이 여러 기기를 동시에 누를 수도 없습니다. 먼저 누른 사람이 유리하거나 손해를 보게 되어 기록 비교의 공정성이 흔들립니다.</p>
+<h3>2. 기기 시계의 오프셋</h3>
+<p>기기의 시계는 서로 완전히 같지 않습니다. 자동 시간 설정이 꺼져 있거나 오래 보정되지 않으면 초 단위로 어긋나기도 합니다. 그래서 "정각에 울려라"를 기기 자기 시계에 맡기면 서로 다른 순간에 울립니다. 이 문제를 줄이려고 기기가 시간 서버와 주기적으로 시각을 맞추는 방식이 널리 쓰입니다.</p>
+<h3>3. 네트워크 지연</h3>
+<p>호스트가 "지금 시작"을 보내면 그 메시지가 다른 기기에 도착하기까지 시간이 걸립니다. 근처 연결은 짧고 인터넷 중계는 더 길며, 그 값도 매번 달라집니다. 메시지를 받은 순간에 시작하면 기기마다 다른 순간에 시작합니다.</p>
+
+<h2 id="ntp">시계 오프셋은 어떻게 측정하나</h2>
+<p>널리 쓰는 NTP(Network Time Protocol)는 네 개의 시각을 이용합니다. 클라이언트가 요청을 보낸 시각 T1(클라이언트 시계), 서버가 받은 시각 T2(서버 시계), 서버가 응답을 보낸 시각 T3(서버 시계), 클라이언트가 응답을 받은 시각 T4(클라이언트 시계)입니다. RFC 5905에 정의된 공식은 다음과 같습니다.</p>
+<ul>
+<li>시계 오프셋 θ = ½ × [(T2 − T1) + (T3 − T4)]</li>
+<li>왕복 지연 δ = (T4 − T1) − (T3 − T2)</li>
+</ul>
+<p>숫자로 보면 쉽습니다. 클라이언트가 100.000초에 요청을 보내고, 서버 시계로 100.130초에 받아 100.131초에 응답했고, 클라이언트는 자기 시계로 100.061초에 응답을 받았다고 합시다. 왕복 지연은 (100.061 − 100.000) − (100.131 − 100.130) = 0.060초, 오프셋은 ½ × [0.130 + 0.070] = 0.100초입니다. 즉 이 클라이언트의 시계는 서버보다 약 0.1초 느립니다. 이 계산은 갈 때와 올 때의 지연이 같다는 가정에 기대므로, 경로가 비대칭이면 오차가 남습니다. 그래서 실제 시스템은 여러 번 측정해서 가장 지연이 짧은 값을 신뢰합니다.</p>
+<p>이렇게 각 기기가 자기 시계의 오프셋을 알아내면 "서버 시간 기준 몇 시 몇 분 몇 초에 시작" 같은 절대 시각을 모두가 같은 의미로 해석할 수 있습니다.</p>
+
+<h2 id="design">호스트 권한 방식의 동기화 설계</h2>
+<p>동기화 설계에서 가장 중요한 선택은 "무엇을 전송하는가"입니다.</p>
+<ul>
+<li><strong>남은 시간을 계속 전송하는 방식.</strong> 메시지가 늦거나 끊기면 화면이 흔들립니다.</li>
+<li><strong>종료 시각 하나를 공유하는 방식.</strong> "언제 끝나는가"를 한 번 알려 주면 각 기기는 자기 보정 시계로 그 시각까지 스스로 셉니다. 중간에 연결이 끊겨도 숫자가 흔들리지 않고, 일시정지나 시간 추가 같은 이벤트가 있을 때만 다시 맞추면 됩니다.</li>
+<li><strong>시작도 같은 원리.</strong> "지금 시작"이라는 명령 대신 "정확한 시각 X에 시작"을 공유하면 도착이 늦은 기기도 같은 순간에 맞출 수 있습니다. 반대로 받은 즉시 로컬 3초 타이머를 돌리면 전파 지연만큼 어긋납니다.</li>
+<li><strong>호스트 권한.</strong> 제어 권한을 한 기기(호스트)가 갖고 나머지는 따르는 구조라 두 사람이 동시에 일시정지와 재개를 눌러 상태가 엇갈리는 문제를 막습니다. 호스트를 다른 사람에게 넘기거나 공동 호스트를 두는 확장이 가능한 설계도 있습니다.</li>
+</ul>
+
+<h2 id="fallback">현장 대비책</h2>
+<p>동기화 앱도 현장의 모든 변수를 막아 주지는 못합니다. 중요한 일정이라면 다음을 준비하세요.</p>
+<ul>
+<li><strong>리허설.</strong> 실제 기기와 실제 장소에서 한 번 돌려 봅니다. 강의실처럼 Wi-Fi가 격리된 곳은 근처 탐색이 안 될 수 있습니다.</li>
+<li><strong>설정 점검.</strong> 모든 기기의 날짜·시간이 자동 설정인지, 알림 권한과 방해 금지·집중 모드, 무음 스위치, 충전 상태를 확인합니다.</li>
+<li><strong>대체 경로 한 가지.</strong> 근처 연결이 안 되면 룸 코드를 입력해 인터넷 중계로 참가합니다.</li>
+<li><strong>사람 백업.</strong> 호스트가 아닌 사람 한 명이 별도 타이머를 같이 돌려 두면 앱 문제가 생겨도 행사가 이어집니다.</li>
+<li><strong>음향 신호.</strong> 소음이 있는 곳에서는 화면만 믿지 말고 호루라기나 큰 소리로 전환을 알립니다.</li>
+<li><strong>종료 알람의 이중화.</strong> 연결이 끊겨도 종료 시각에 울리도록 로컬 알림을 미리 예약하는 구조인지 확인합니다.</li>
+</ul>
+
+<h2 id="briefing">참가자에게 미리 알릴 것</h2>
+<p>도구가 아무리 좋아도 입장 단계에서 막히면 행사 시간이 줄어듭니다. 행사 하루 전이나 시작 10분 전에 다음 내용을 짧게 공지해 두세요. 첫째, 어떤 앱을 설치해야 하는지와 설치 링크. 둘째, 입장 방법(QR을 스캔하거나 6자리 코드 입력) 그리고 로컬 네트워크·카메라·알림 권한 요청이 뜨면 허용해야 한다는 점. 셋째, 화면을 계속 켜 두는 것이 좋은지, 화면이 꺼져도 알람이 울리는지. 넷째, 연결이 안 될 때 연락할 사람. 참가자가 많다면 모두를 앱에 연결하기보다, 호스트 기기와 대형 화면·태블릿 한 대만 연결하고 나머지는 큰 소리 신호로 따르게 하는 방법도 현실적입니다. 정원 제한이 있는 도구일수록 이런 단순화가 오히려 안정적입니다.</p>
+
+<h2 id="scripts">현장 시나리오 두 가지</h2>
+<h3>HIIT 그룹 수업 (40분)</h3>
 <ol>
-<li>전송 지연이 있어도 끝나는 시각 자체는 바뀌지 않습니다.</li>
-<li>연결이 잠시 끊겨도 각 기기가 로컬에서 계속 카운트다운할 수 있습니다.</li>
-<li>종료 알림을 미리 예약해 둘 수 있어서 마지막 순간에 신호를 받지 못해도 알람이 울릴 수 있습니다.</li>
+<li>수업 10분 전 강사가 호스트로 룸을 만들고 QR을 화면에 띄웁니다. 참가자는 스캔해서 입장하고 준비 확인을 누릅니다.</li>
+<li>시퀀스로 구성합니다. 예를 들어 작업 40초와 휴식 20초 두 단계를 만들고 반복 설정으로 8라운드를 돌립니다(편집 화면에 반복 항목이 있습니다. 워밍업과 쿨다운 단계를 앞뒤에 따로 붙일 수 있는지는 앱 버전에서 확인하세요). 단계가 바뀔 때마다 모든 화면이 같이 전환됩니다.</li>
+<li>강사는 3-2-1 리드인 후 시작을 누르고 라운드 중에는 동작 설명에만 집중합니다.</li>
+<li>참가자 수가 기본 정원(2대)을 넘으면 호스트 기기에서 Pro가 필요하다는 점을 미리 확인합니다. 모든 사람의 기기를 연결하지 않고, 강사 기기와 큰 화면 한 대만 연결하는 편이 현실적일 수 있습니다.</li>
+<li>수업 후 세션 기록을 확인합니다.</li>
 </ol>
-<p>시작 순간도 같은 원리로 맞출 수 있습니다. 시작을 누른 즉시가 아니라 "3초 뒤의 절대 시각"에 시작하도록 정해 두면, 신호가 도착하는 속도가 달라도 모두 같은 순간에 출발합니다. 3, 2, 1 카운트다운이 이런 용도로 쓰입니다.</p>
+<h3>발표와 질의응답 (15분)</h3>
+<ol>
+<li>발표자와 진행자가 룸에 들어가 "발표 10분 + Q&A 5분" 시퀀스를 만듭니다. 합계가 15:00으로 표시됩니다.</li>
+<li>진행자를 호스트로 두면 발표자는 말하는 데만 집중하고, 시간 연장은 호스트가 +1:00으로 처리합니다.</li>
+<li>발표 종료 1분 전 경고 단계가 표시되도록 설정해 두면 마무리 시점을 알려 줍니다.</li>
+<li>시퀀스가 Q&A 단계로 넘어가는 순간 모든 화면이 동시에 바뀌므로 청중에게도 구분이 분명합니다.</li>
+</ol>
 
-<h2>준비 체크리스트</h2>
-<ul>
-<li>모든 기기의 날짜와 시간이 자동 설정인지 확인한다.</li>
-<li>알림 권한과 소리를 확인하고, 방해 금지 모드나 집중 모드의 예외를 정한다.</li>
-<li>같은 공간이면 근거리 연결이 되는지, 격리된 Wi-Fi 때문에 막히지 않는지 미리 시험한다.</li>
-<li>누가 시작과 정지를 담당할지 정한다. 한 명이 조작하는 편이 혼선이 적다.</li>
-<li>배터리와 화면 자동 잠금 설정을 확인한다.</li>
-<li>본 행사 전에 짧은 30초 리허설을 한 번 한다.</li>
-<li>참가 방식은 코드나 QR처럼 한 번에 끝나는 방법으로 준비한다.</li>
-</ul>
+<h2 id="timerlync">TimerLync로 같은 카운트다운 공유하기</h2>
+<p>TimerLync는 SETLOG가 만든 iPhone·iPad·Apple Watch용 동기화 타이머입니다. 호스트가 카운트다운 시간을 정하고 룸을 만들면 코드나 QR로 참가자가 들어오고, 호스트가 시작·일시정지·1분 추가를 조작합니다. 종료 시각 하나를 공유하는 방식이어서 연결이 잠시 불안정해도 화면은 크게 흔들리지 않는다고 문서에 설명되어 있습니다. 기본 정원은 호스트 기준 2대이고, 일회성 Pro 언락을 열면 8대까지 늘어납니다. 참가자는 결제가 필요 없습니다.</p>
+<div class="shots"><figure><img src="/images/guides/timerlync/01.webp" alt="TimerLync 호스트 화면: 남은 시간 04:13, 2대 연결됨, 초기화 일시정지 1분 추가 버튼" width="560" height="1212" loading="lazy" decoding="async"><figcaption>호스트 화면. 04:13이 남았고 2대가 연결된 상태이며 초기화·일시정지·+1:00 버튼이 보입니다.</figcaption></figure><figure><img src="/images/guides/timerlync/02.webp" alt="TimerLync 참가자 화면: 남은 시간 04:13, 호스트가 제어 중이라는 안내" width="560" height="1212" loading="lazy" decoding="async"><figcaption>참가자 화면. 같은 04:13이 보이고, 제어는 호스트만 한다는 안내가 아래에 나옵니다.</figcaption></figure><figure><img src="/images/guides/timerlync/03.webp" alt="TimerLync 두 기기 화면에 동시에 표시된 3 카운트다운" width="560" height="1212" loading="lazy" decoding="async"><figcaption>3-2-1 리드인. 두 기기에서 같은 순간에 3이 표시됩니다.</figcaption></figure><figure><img src="/images/guides/timerlync/04.webp" alt="TimerLync 참가자 시트: 룸 코드 CJM9TZ, 준비 확인 스위치, 참가자 두 명" width="560" height="1212" loading="lazy" decoding="async"><figcaption>참가자 시트. 룸 코드와 QR, 준비 확인 스위치, 연결된 참가자 목록이 나옵니다.</figcaption></figure><figure><img src="/images/guides/timerlync/05.webp" alt="TimerLync 시퀀스 편집 화면: 그룹 뽀모도로와 발표+Q&A 프리셋, 단계 두 개, 합계 15분" width="560" height="1212" loading="lazy" decoding="async"><figcaption>시퀀스 편집. 발표 10분 + Q&A 5분처럼 단계를 이어 붙이고 합계가 15:00으로 표시됩니다.</figcaption></figure><figure><img src="/images/guides/timerlync/06.webp" alt="TimerLync 혼자 쓰는 타이머 화면: 남은 시간 04:53" width="560" height="1212" loading="lazy" decoding="async"><figcaption>룸 없이 혼자 쓰는 빠른 타이머.</figcaption></figure></div>
+<p>한계: Android는 지원 대상이 아닙니다(iPhone, iPad, Apple Watch용). 기본 정원이 2대라서 교실 전체를 한 룸에 연결하려면 Pro가 필요하며 그래도 8대가 상한입니다. 워치 알림 같은 일부 동작은 실기기에서 확인이 필요하니 중요한 행사 전에는 본인 기기로 한 번 시험하세요. 사용법은 <a href="/guides/timerlync">TimerLync 가이드</a>에 단계별로 정리했습니다.</p>
 
-<h2>현장 팁</h2>
-<ul>
-<li>시간이 정해진 일정은 단계 목록으로 만들어 두면 중간에 일일이 다시 맞출 필요가 없습니다.</li>
-<li>시간이 늘어날 가능성이 있는 활동은 종료 후에도 계속 세는 기능이 있는지 확인해 보세요.</li>
-<li>손목 알림이 필요한 활동에는 스마트워치의 별도 알림이 도움이 됩니다.</li>
-<li>작은 소리의 알람이 필요한 도서관이나 수업 중에는 진동 위주로 설정하세요.</li>
-<li>기록을 남겨야 하면 측정 직후 파일로 내보내 두세요.</li>
-</ul>
+<h2 id="laplync">LapLync로 같은 시작점에서 기록하기</h2>
+<p>LapLync는 같은 회사가 만든 동기화 스톱워치로, 방향이 반대입니다. 0에서 올라가며 시작 순간을 기기가 공유하고, 호스트가 찍은 랩이 참가자 화면에도 바로 나타납니다. 6자리 코드나 QR로 참가하며, 근처 기기는 직접 연결을, 먼 기기는 인터넷 중계를 씁니다. 무료로는 2대 룸을 만들 수 있고 Pro에서 최대 8대 룸, CSV 내보내기, 무제한 기록을 씁니다. 릴레이, 구간 측정, 팀 훈련처럼 같은 시작점을 기준으로 여러 사람의 시간을 비교하는 일에 맞습니다.</p>
+<div class="shots"><figure><img src="/images/guides/laplync/01.webp" alt="LapLync 스톱워치 화면: 02:29.98과 랩 네 개 목록, 랩·일시정지·정지 버튼" width="560" height="1212" loading="lazy" decoding="async"><figcaption>스톱워치 메인 화면. 02:29.98 경과, 아래에 랩 목록과 구간 시간이 정리됩니다.</figcaption></figure><figure><img src="/images/guides/laplync/02.webp" alt="LapLync 두 기기 시작 카운트다운 3" width="560" height="1212" loading="lazy" decoding="async"><figcaption>시작 카운트다운. 두 기기에 같은 3이 함께 표시됩니다.</figcaption></figure><figure><img src="/images/guides/laplync/03.webp" alt="LapLync 호스트와 참가자 화면: 같은 랩 목록과 분할 시간" width="560" height="1212" loading="lazy" decoding="async"><figcaption>호스트가 찍은 랩이 참가자 화면에도 바로 반영됩니다.</figcaption></figure><figure><img src="/images/guides/laplync/04.webp" alt="LapLync 룸 만들기 화면: QR 코드와 룸 코드, 연결 방식 아이콘" width="560" height="1212" loading="lazy" decoding="async"><figcaption>룸 만들기 화면. QR과 6자리 코드로 참가하며 근처는 직접 연결, 먼 기기는 코드로 연결합니다.</figcaption></figure><figure><img src="/images/guides/laplync/05.webp" alt="LapLync 기록 목록과 CSV 아이콘" width="560" height="1212" loading="lazy" decoding="async"><figcaption>세션 기록 화면. 기록은 자동 저장되고 CSV로 내보낼 수 있습니다.</figcaption></figure></div>
+<p>한계: 앱은 iPhone·iPad용이고, 모든 환경에서 완벽하다고 장담할 수 없어 중요한 대회는 리허설이 필요합니다. 기록 보관과 룸 정원은 무료/Pro에 따라 다릅니다. 자세한 내용은 <a href="/guides/laplync">LapLync 가이드</a>를 보세요.</p>
+<div class="fit"><div><h4>이런 경우에 맞습니다</h4><ul><li>여러 기기가 같은 순간에 끝나야 하는 수업·발표·운동</li><li>같은 시작점 기준으로 구간 기록을 비교해야 하는 경우</li><li>계정 없이 코드로 바로 참가시키고 싶은 경우</li></ul></div>
+<div><h4>이런 경우에는 맞지 않습니다</h4><ul><li>Android·Windows 기기를 함께 써야 하는 경우</li><li>무료 기본 정원(2대)을 넘는 대형 그룹을 비용 없이 연결해야 하는 경우</li><li>소리·화면 없이 백그라운드에서만 정확해야 하는 의료·안전 용도</li></ul></div></div>
 
-<h2>선택지로 쓸 수 있는 앱</h2>
-<p>꼭 특정 앱이 필요한 것은 아닙니다. 큰 화면 하나에 타이머를 띄우는 방식도 충분할 때가 많습니다. 다만 각자 기기에서 보고 싶을 때는 앱을 쓰면 편합니다. SETLOG의 <a href="/guides/timerlync">TimerLync</a>는 룸을 만들고 코드나 QR로 참가하는 방식의 카운트다운으로, 종료 시각을 공유하고 시퀀스와 그룹 뽀모도로, Apple Watch 알림을 지원합니다. 시작 순간과 랩이 중요한 측정이라면 <a href="/guides/laplync">LapLync</a>가 스톱워치와 랩 기록에 맞춰져 있습니다. 두 앱 모두 iPhone과 iPad용이며, 룸을 만드는 쪽의 기기 수 제한과 유료 Pro 범위는 각 가이드에 적어 두었습니다. 안드로이드 기기가 섞여 있다면 두 앱만으로는 부족하니 큰 화면 방식과 병행하세요.</p>
-
-<h2>자주 묻는 질문</h2>
-<h3>동기화 타이머는 인터넷이 꼭 필요한가요?</h3>
-<p>방식에 따라 다릅니다. 같은 공간의 기기는 근거리 연결로도 맞출 수 있고, 떨어진 기기는 인터넷이 필요합니다. 각 앱의 요건을 확인하세요.</p>
-<h3>기기 시계가 틀려 있으면 어떻게 되나요?</h3>
-<p>네트워크 시간으로 보정하는 방식이라면 영향이 줄지만, 자동 시간 설정은 켜 두는 편이 안전합니다.</p>
-<h3>몇 명까지 함께 쓸 수 있나요?</h3>
-<p>앱마다 룸 정원이 다릅니다. TimerLync와 LapLync는 기본 두 대, Pro를 연 호스트 기준 최대 여덟 대입니다.</p>
-<h3>학교에서 쓸 때 주의할 점은 무엇인가요?</h3>
-<p>학교 Wi-Fi가 기기 간 통신을 막는 경우가 있습니다. 사전 시험을 하고, 학생 기기 사용 규정을 먼저 확인하세요.</p>
-<h3>완전히 똑같은 순간에 울리나요?</h3>
-<p>수십 밀리초 정도의 오차는 있을 수 있습니다. 사람이 느끼기에는 같은 순간에 가깝지만, 환경에 따라 달라집니다.</p>
-<h3>도움이 필요하면 어디로 문의하나요?</h3>
-<p><a href="/support">지원 페이지</a>를 이용해 주세요.</p>
-
+<h2 id="sources">출처 및 더 읽을거리</h2>
+<ol class="sources"><li><a href="https://datatracker.ietf.org/doc/html/rfc5905" target="_blank" rel="noopener">IETF RFC 5905, Network Time Protocol Version 4 (오프셋·지연 공식)</a> (https://datatracker.ietf.org/doc/html/rfc5905)</li><li><a href="/guides/timerlync">TimerLync 사용 가이드</a> · <a href="/guides/laplync">LapLync 사용 가이드</a> (앱 기능과 정원은 프로젝트 문서·앱 설명 기준)</li></ol>
+<h2 id="faq">자주 묻는 질문</h2>
+<details class="faq"><summary>여러 기기의 타이머가 어긋나는 가장 큰 이유는?</summary><p>사람의 조작 시간차, 기기 시계의 오프셋, 네트워크 지연이 겹치기 때문입니다. 종료 시각 하나를 공유하고 각 기기가 보정한 시계로 세는 방식이 이를 줄입니다.</p></details><details class="faq"><summary>NTP는 시계 오차를 어떻게 구하나요?</summary><p>요청과 응답의 네 시각으로 오프셋 θ = ½[(T2−T1)+(T3−T4)]와 왕복 지연 δ = (T4−T1)−(T3−T2)를 계산합니다(RFC 5905).</p></details><details class="faq"><summary>TimerLync와 LapLync는 몇 대까지 연결되나요?</summary><p>둘 다 호스트 기준으로 기본 2대이고 Pro를 열면 최대 8대입니다. 참가자는 결제가 필요 없습니다.</p></details><details class="faq"><summary>Android 기기도 함께 쓸 수 있나요?</summary><p>TimerLync와 LapLync는 iPhone·iPad(TimerLync는 Apple Watch 포함) 앱입니다. Android는 지원 대상이 아닙니다.</p></details><details class="faq"><summary>현장에서 동기화가 실패하면 어떻게 하나요?</summary><p>근처 연결 대신 룸 코드로 인터넷 중계에 참가하고, 호스트가 아닌 사람이 별도 타이머를 병행하며, 소리 신호를 준비하세요. 중요한 행사 전에는 리허설이 필요합니다.</p></details>
   </section>
   <section id="en" lang="en" class="lang-ko">
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol><li><a href="#en-uses">When several devices must agree</a></li><li><a href="#en-drift">Why clocks disagree between devices</a></li><li><a href="#en-ntp">How a clock offset is measured</a></li><li><a href="#en-design">Host-authoritative sync design</a></li><li><a href="#en-fallback">On-site fallbacks</a></li><li><a href="#en-briefing">What to tell participants beforehand</a></li><li><a href="#en-scripts">Two sample sessions</a></li><li><a href="#en-timerlync">Sharing one countdown with TimerLync</a></li><li><a href="#en-laplync">Recording from one start with LapLync</a></li></ol></nav>
 
-<p>A timer used alone is simple. Things change when several people must start and finish at the same moment. This article looks at how to reduce the familiar complaint "our timers do not match" in classrooms, sports fields, meeting rooms and kitchens, and explains how syncing several devices works. It focuses on practical advice that applies without any particular app, and at the end it mentions apps you can use as options.</p>
-
-<h2>Situations that need a shared clock</h2>
-<h3>Classroom activities</h3>
-<p>To show students the time for a five-minute group discussion or a two-minute summary, teachers usually put one timer on a large screen. If groups are spread around the room, that screen is hard to see. When every group device shows the same countdown, an extension or pause by the teacher reaches everyone at the same point.</p>
-<h3>Group workouts</h3>
-<p>In circuit training or intervals, segments such as 40 seconds of work and 20 seconds of rest must change sharply. If the coach's device and the participants' devices are seconds apart, some people keep moving during rest and others stop early.</p>
-<h3>Team pomodoro</h3>
-<p>When a team runs a 25-minute focus and 5-minute break cycle together, one person's break is less likely to be broken by another's message. What matters most is that everyone's break starts and ends at the same moment.</p>
-<h3>Track and swim timing</h3>
-<p>When several people time several athletes, results are only comparable if the start moment is shared. If you place a timer at each segment, all devices need to count from the same starting point. This calls for a stopwatch with laps rather than a countdown.</p>
-<h3>Kitchen and home</h3>
-<p>You can check the same timer from different rooms while cooking several dishes, or use it lightly for something like a ten-minute family tidy-up.</p>
-<h3>Presentations and meetings</h3>
-<p>When the presenter, the facilitator and the timekeeper see the same remaining time, there is less asking how many minutes are left.</p>
-
-<h2>Why independent timers drift</h2>
-<p>A timer that runs separately on each phone follows the rule "N seconds after I pressed start". If the press moments differ, the end moments differ. Several other things add to this.</p>
+<h2 id="en-uses">When several devices must agree</h2>
+<p>One timer is enough for most things. But when the point is that everyone starts and ends at the same moment, separately pressed timers cause trouble.</p>
 <ul>
-<li>People react to a spoken cue at different speeds.</li>
-<li>When a screen turns off or an app moves to the background, how it updates can change.</li>
-<li>Device clocks have small errors, which can grow if automatic time setting is off.</li>
-<li>Sending the remaining time as a number arrives late by the transmission delay.</li>
+<li><strong>Classes and group work.</strong> When the teacher's screen and the students' screens show the same time, the "is time up?" questions stop.</li>
+<li><strong>Group fitness.</strong> In an interval class, instructor and participants see the same work and rest signal so transitions line up.</li>
+<li><strong>Presentations and meetings.</strong> Presenter, chair and audience share a sense of time and switch together when a stage changes.</li>
+<li><strong>Relays and split timing.</strong> Start, handoff and finish points must record against the same start instant for splits to be meaningful.</li>
+<li><strong>Study and remote work.</strong> Group Pomodoro: everyone focuses and rests on the same rhythm.</li>
 </ul>
 
-<h2>The shared end timestamp approach</h2>
-<p>A steadier method is for all devices to share one absolute moment, such as a specific time of day at which the timer ends, rather than "N seconds from now". Each device first works out how far its own clock is from a network time server, then calculates the remaining time to that absolute moment by itself. This has three advantages.</p>
+<h2 id="en-drift">Why clocks disagree between devices</h2>
+<p>It is three effects stacked together.</p>
+<h3>1. Human timing differences</h3>
+<p>Even with "ready, set, go", reaction speed varies and one person cannot tap several devices at once. Whoever presses first gains or loses, which undermines fair comparison.</p>
+<h3>2. Clock offset</h3>
+<p>Device clocks are not identical. With automatic time off or long without correction, they can be seconds apart. Leaving "ring at 10:00:00" to each device's own clock makes them ring at different moments. Devices commonly reduce this by periodically syncing with a time server.</p>
+<h3>3. Network latency</h3>
+<p>When the host sends "start now", the message takes time to arrive: short on a local link, longer through an internet relay, and different each time. Starting on receipt makes each device start at a different instant.</p>
+
+<h2 id="en-ntp">How a clock offset is measured</h2>
+<p>NTP, the Network Time Protocol, uses four timestamps: T1, when the client sent its request (client clock); T2, when the server received it (server clock); T3, when the server replied (server clock); and T4, when the client received the reply (client clock). RFC 5905 defines:</p>
+<ul>
+<li>Clock offset: theta = 1/2 x [(T2 - T1) + (T3 - T4)]</li>
+<li>Round-trip delay: delta = (T4 - T1) - (T3 - T2)</li>
+</ul>
+<p>A worked example. The client sends at 100.000 s; the server receives at 100.130 s on its clock and replies at 100.131 s; the client receives at 100.061 s on its own clock. Delay = (100.061 - 100.000) - (100.131 - 100.130) = 0.060 s and offset = 1/2 x [0.130 + 0.070] = 0.100 s. This client's clock is about 0.1 s behind the server. The calculation assumes the outbound and return delays are equal, so an asymmetric path leaves some error; real systems therefore measure several times and trust the sample with the shortest delay.</p>
+<p>Once each device knows its own offset, an absolute instant such as "start at server time X" means the same thing to everyone.</p>
+
+<h2 id="en-design">Host-authoritative sync design</h2>
+<p>The key design choice is what you transmit.</p>
+<ul>
+<li><strong>Streaming remaining time.</strong> If messages are late or lost, the display jitters.</li>
+<li><strong>Sharing one end time.</strong> Tell everyone when it ends once; each device counts down to that instant on its corrected clock. A brief disconnection does not make the digits jump, and you resync only on events such as pause or added time.</li>
+<li><strong>Start works the same way.</strong> Share "start at instant X" instead of "start now" so even a late arrival lines up. Running a local 3-second timer on receipt leaves you off by the propagation delay.</li>
+<li><strong>Host authority.</strong> One device holds control and the others follow, which prevents two people pausing and resuming at once and leaving states inconsistent. Some designs let the host role be handed over or shared.</li>
+</ul>
+
+<h2 id="en-fallback">On-site fallbacks</h2>
+<p>No sync app removes every variable on site. For anything important:</p>
+<ul>
+<li><strong>Rehearse</strong> on the real devices in the real place. A classroom with isolated Wi-Fi may not allow nearby discovery.</li>
+<li><strong>Check settings:</strong> automatic date and time on every device, notification permission, Do Not Disturb or Focus, the silent switch and battery.</li>
+<li><strong>Know a second path.</strong> If nearby connection fails, join by room code through the internet relay.</li>
+<li><strong>Keep a human backup.</strong> A non-host with a separate timer lets the event continue if the app misbehaves.</li>
+<li><strong>Use sound.</strong> In a noisy room do not rely on the screen; use a whistle or a loud call for transitions.</li>
+<li><strong>Double the end alarm.</strong> Confirm the end alert is scheduled locally ahead of time so it fires even if the connection drops.</li>
+</ul>
+
+<h2 id="en-briefing">What to tell participants beforehand</h2>
+<p>However good the tool, trouble at entry eats into your event time. A day before, or ten minutes before the start, send a short notice covering: which app to install and the link; how to join (scan the QR or type the 6-character code) and that local-network, camera and notification prompts should be allowed; whether to keep the screen on and whether the alarm sounds with the screen off; and who to contact if connection fails. With a large group, connecting only the host device and one big display or tablet, and letting everyone else follow a loud signal, is often more practical than connecting every phone. The tighter the capacity limit, the more this simplification helps stability.</p>
+
+<h2 id="en-scripts">Two sample sessions</h2>
+<h3>HIIT group class (40 minutes)</h3>
 <ol>
-<li>Transmission delay does not change the end moment itself.</li>
-<li>If the connection drops briefly, each device can keep counting down locally.</li>
-<li>The end alert can be scheduled in advance, so an alarm can still ring even if a final signal never arrives.</li>
+<li>Ten minutes before class the instructor creates a room as host and shows the QR. Participants scan, join and tap ready.</li>
+<li>Build a sequence: for example two steps, 40 s work and 20 s rest, run for 8 rounds with the repeat setting (the editor has a repeat field; check in your app version whether you can attach separate warm-up and cool-down steps). All screens switch together at every step.</li>
+<li>After a 3-2-1 lead-in the instructor taps start and focuses on coaching during rounds.</li>
+<li>If participants exceed the default capacity (2 devices) the host's device needs Pro. It may be more practical to connect only the instructor's device and one large display than every phone.</li>
+<li>Review the session history afterwards.</li>
 </ol>
-<p>The same idea can align the start. If the start is set to an absolute time three seconds ahead instead of the instant of the press, everyone begins together even when the signal arrives at different speeds. A 3-2-1 countdown serves that purpose.</p>
+<h3>Presentation plus Q&A (15 minutes)</h3>
+<ol>
+<li>Presenter and moderator join a room and create a "10 min presentation + 5 min Q&A" sequence; the total reads 15:00.</li>
+<li>Make the moderator host so the presenter can just talk, and the host handles an extension with +1:00.</li>
+<li>Enable a one-minute warning step so the wrap-up point is signalled.</li>
+<li>When the sequence moves to Q&A every screen changes at the same moment, so the audience sees the boundary clearly.</li>
+</ol>
 
-<h2>Setup checklist</h2>
-<ul>
-<li>Confirm date and time are set automatically on every device.</li>
-<li>Check notification permission and sound, and decide on exceptions for Do Not Disturb or Focus modes.</li>
-<li>If everyone is in one place, test that a local connection works and is not blocked by isolated Wi-Fi.</li>
-<li>Decide who handles start and stop. One person operating it causes less confusion.</li>
-<li>Check battery level and screen auto-lock.</li>
-<li>Run a short 30-second rehearsal before the real event.</li>
-<li>Prepare a join method that takes one step, such as a code or QR code.</li>
-</ul>
+<h2 id="en-timerlync">Sharing one countdown with TimerLync</h2>
+<p>TimerLync, made by SETLOG, is a synchronized timer for iPhone, iPad and Apple Watch. The host sets the countdown and creates a room; participants join by code or QR, and the host controls start, pause and add one minute. Because it shares a single end time, the documentation says the display stays steady through brief connection trouble. Default capacity is 2 devices based on the host, rising to 8 with the one-time Pro unlock. Participants never need to pay.</p>
+<div class="shots"><figure><img src="/images/guides/timerlync/01.webp" alt="TimerLync host screen: 04:13 remaining, 2 devices connected, reset pause and add one minute buttons" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Host screen with 04:13 left, two devices connected and Reset, Pause and +1:00 buttons.</figcaption></figure><figure><img src="/images/guides/timerlync/02.webp" alt="TimerLync participant screen: 04:13 remaining and a note that the host is controlling" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Participant screen showing the same 04:13, with a note that only the host controls it.</figcaption></figure><figure><img src="/images/guides/timerlync/03.webp" alt="TimerLync countdown 3 shown at the same moment on two device screens" width="560" height="1212" loading="lazy" decoding="async"><figcaption>3-2-1 lead-in: the 3 appears at the same instant on two devices.</figcaption></figure><figure><img src="/images/guides/timerlync/04.webp" alt="TimerLync participants sheet with room code CJM9TZ, ready-check switch and two participants" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Participants sheet: room code and QR, a ready-check switch and the connected participants.</figcaption></figure><figure><img src="/images/guides/timerlync/05.webp" alt="TimerLync sequence editor with Group Pomodoro and Presentation + Q&A presets, two steps and a 15-minute total" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Sequence editor: chain steps such as a 10-minute presentation and 5-minute Q&A; the total reads 15:00.</figcaption></figure><figure><img src="/images/guides/timerlync/06.webp" alt="TimerLync solo timer screen with 04:53 remaining" width="560" height="1212" loading="lazy" decoding="async"><figcaption>A solo quick timer that needs no room.</figcaption></figure></div>
+<p>Limits: Android is not supported (iPhone, iPad and Apple Watch only). With a default capacity of 2, connecting a whole classroom to one room needs Pro, and 8 is still the ceiling. Some behavior, such as watch alerts, must be verified on real devices, so test on your own hardware before a big event. Step-by-step usage is in the <a href="/guides/timerlync">TimerLync guide</a>.</p>
 
-<h2>Practical tips</h2>
-<ul>
-<li>For a fixed agenda, build it as a list of steps so you do not need to retime things midway.</li>
-<li>For activities that may overrun, check whether the tool keeps counting after zero.</li>
-<li>Where a wrist alert helps, a smartwatch's own alert is useful.</li>
-<li>In a library or a lesson where sound is a problem, rely on vibration.</li>
-<li>If you need records, export them to a file right after measuring.</li>
-</ul>
+<h2 id="en-laplync">Recording from one start with LapLync</h2>
+<p>LapLync, by the same developer, is a synchronized stopwatch, the opposite direction. It counts up from zero, devices share the start instant and a lap marked by the host appears on participants' screens at once. Join with a 6-character code or QR; nearby devices connect directly and distant ones through an internet relay. Free use allows a 2-device room; Pro adds rooms of up to 8, CSV export and unlimited history. It suits relays, split timing and team training, where several people's times are compared from one start point.</p>
+<div class="shots"><figure><img src="/images/guides/laplync/01.webp" alt="LapLync stopwatch showing 02:29.98 with a list of four laps and lap, pause and stop buttons" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Main stopwatch at 02:29.98 with the lap list and split times below.</figcaption></figure><figure><img src="/images/guides/laplync/02.webp" alt="LapLync start countdown 3 on two devices" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Start countdown: the same 3 appears on both devices.</figcaption></figure><figure><img src="/images/guides/laplync/03.webp" alt="LapLync host and participant screens with the same lap list and splits" width="560" height="1212" loading="lazy" decoding="async"><figcaption>A lap marked by the host shows up on the participant's screen at once.</figcaption></figure><figure><img src="/images/guides/laplync/04.webp" alt="LapLync create room screen with a QR code, room code and connection-method icons" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Create-room screen: join by QR or 6-character code; nearby devices connect directly and remote ones by code.</figcaption></figure><figure><img src="/images/guides/laplync/05.webp" alt="LapLync history list with a CSV icon" width="560" height="1212" loading="lazy" decoding="async"><figcaption>Session history: records are saved automatically and can be exported as CSV.</figcaption></figure></div>
+<p>Limits: the app is for iPhone and iPad, and since nobody can promise perfection in every environment, an important race deserves a rehearsal. History retention and room size differ between free and Pro. See the <a href="/guides/laplync">LapLync guide</a> for details.</p>
+<div class="fit"><div><h4>A good fit</h4><ul><li>Classes, talks or workouts where devices must finish together</li><li>Split times compared against one start point</li><li>Joining by code with no accounts</li></ul></div>
+<div><h4>Not a fit</h4><ul><li>You need Android or Windows devices in the same room</li><li>A large group beyond the free capacity of 2 devices at no cost</li><li>Medical or safety uses where it must be accurate with no sound or screen</li></ul></div></div>
 
-<h2>Apps you can use</h2>
-<p>You do not strictly need a special app. One timer on a large screen is often enough. An app helps when people want to see the time on their own devices. SETLOG's <a href="/guides/timerlync">TimerLync</a> is a countdown where you create a room and others join with a code or QR code. It shares an end timestamp and supports sequences, group pomodoro and Apple Watch alerts. If the start moment and laps matter, <a href="/guides/laplync">LapLync</a> is built around a stopwatch with lap recording. Both are for iPhone and iPad, and the room size limits and what the paid Pro unlock covers are described in each guide. If Android devices are in the mix, these two apps alone are not enough, so combine them with a shared big screen.</p>
-
-<h2>FAQ</h2>
-<h3>Does a synchronized timer require internet?</h3>
-<p>It depends on the method. Devices in one place can sync through a local connection, while devices far apart need the internet. Check each app's requirements.</p>
-<h3>What if a device clock is wrong?</h3>
-<p>Correcting against network time reduces the effect, but it is safer to leave automatic time setting on.</p>
-<h3>How many people can join?</h3>
-<p>It varies by app. In TimerLync and LapLync a room holds two devices by default and up to eight when the host has unlocked Pro.</p>
-<h3>What should I watch for in a school?</h3>
-<p>Some school Wi-Fi blocks device-to-device traffic. Test beforehand and check the rules on student device use first.</p>
-<h3>Will the alarms ring at exactly the same instant?</h3>
-<p>There can be an error of tens of milliseconds. It is close to simultaneous for a person, but it depends on conditions.</p>
-<h3>Where do I get help?</h3>
-<p>Please use the <a href="/support">support page</a>.</p>
-
+<h2 id="en-sources">Sources and further reading</h2>
+<ol class="sources"><li><a href="https://datatracker.ietf.org/doc/html/rfc5905" target="_blank" rel="noopener">IETF RFC 5905, Network Time Protocol Version 4 (offset and delay formulas)</a> (https://datatracker.ietf.org/doc/html/rfc5905)</li><li><a href="/guides/timerlync">TimerLync guide</a> · <a href="/guides/laplync">LapLync guide</a> (app features and capacity per project documentation and app descriptions)</li></ol>
+<h2 id="en-faq">FAQ</h2>
+<details class="faq"><summary>Why do timers on several devices drift apart?</summary><p>Human timing differences, clock offsets and network latency stack up. Sharing one end time that each device counts to on a corrected clock reduces this.</p></details><details class="faq"><summary>How does NTP find the clock error?</summary><p>From four timestamps it computes offset theta = 1/2[(T2-T1)+(T3-T4)] and round-trip delay delta = (T4-T1)-(T3-T2) (RFC 5905).</p></details><details class="faq"><summary>How many devices can TimerLync and LapLync connect?</summary><p>Both default to 2 based on the host and reach 8 with Pro. Participants never pay.</p></details><details class="faq"><summary>Can Android devices join?</summary><p>TimerLync and LapLync are iPhone and iPad apps (TimerLync also has Apple Watch). Android is not supported.</p></details><details class="faq"><summary>What if sync fails on site?</summary><p>Join by room code through the internet relay instead of nearby discovery, keep a non-host timer in parallel and prepare an audible signal. Rehearse before an important event.</p></details>
   </section>
 
-  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/timerlync">TimerLync 사용 가이드</a></li><li><a href="/guides/laplync">LapLync 사용 가이드</a></li><li><a href="/support">Support · 문의</a></li></ul></div>
+  <aside class="author-box"><div>
+    <p><strong>SETLOG</strong> — iOS·Android·macOS 앱을 직접 만들고 운영하는 개발자입니다. 이 글은 광고나 제휴 대가 없이 작성했고, 글에 나오는 앱은 모두 SETLOG가 만든 앱에 한정됩니다.</p>
+    <p>오류나 정정할 내용이 있으면 <a href="/contact">Contact</a>로 알려 주세요. · SETLOG builds and runs its own iOS, Android and macOS apps. This article carries no advertising or affiliate payment, and any app mentioned is one SETLOG makes. Send corrections via <a href="/contact">Contact</a>.</p>
+  </div></aside>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
+<li><a href="/guides/timerlync">TimerLync 사용 가이드 · TimerLync Guide</a></li><li><a href="/guides/laplync">LapLync 사용 가이드 · LapLync Guide</a></li><li><a href="/guides/interval-running-workout-basics">인터벌 러닝 입문 · Interval running basics</a></li><li><a href="/support">Support · 문의</a></li>
+  </ul></div>
 </main>
 
 <footer class="site-footer">
   <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
   <span>© 2026 SETLOG</span>
 </footer>
+
+
 </body>
 </html>
