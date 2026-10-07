@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IntervalRunner 사용 가이드 | IntervalRunner Guide — SETLOG</title>
+<meta name="description" content="IntervalRunner로 시간·거리·심박 존 인터벌을 설정하고 음성·효과음·햅틱 알림으로 목표 페이스를 지키는 방법. Interval pace coach guide.">
+<link rel="canonical" href="https://setlog.net/guides/intervalrunner">
+<meta property="og:title" content="IntervalRunner 사용 가이드 | IntervalRunner Guide — SETLOG"><meta property="og:description" content="IntervalRunner로 시간·거리·심박 존 인터벌을 설정하고 음성·효과음·햅틱 알림으로 목표 페이스를 지키는 방법. Interval pace coach guide."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/intervalrunner">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / IntervalRunner</p>
+<main class="article">
+  <div class="app-head"><img src="/images/intervalrunner-icon.png" alt="IntervalRunner icon" width="64" height="64"><div><h1>IntervalRunner 사용 가이드</h1></div></div>
+  <p class="sub">IntervalRunner Guide: interval coaching with voice, sound and haptic alerts</p>
+  <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+
+  <section id="ko" lang="ko">
+
+<div class="store-links"><a href="https://apps.apple.com/app/id6817994370" target="_blank" rel="noopener noreferrer">App Store</a> · <a href="https://play.google.com/store/apps/details?id=net.setlog.intervalrunner" target="_blank" rel="noopener noreferrer">Google Play</a></div>
+
+<h2>IntervalRunner가 해결하는 문제</h2>
+<p>인터벌 러닝은 "빠르게 뛰는 구간"과 "회복 구간"을 정해진 순서로 반복하는 훈련입니다. 문제는 뛰는 도중에 내가 정말 목표 속도로 달리고 있는지 알기 어렵다는 점입니다. 손목을 자꾸 들여다보면 자세가 흐트러지고, 흥분해서 첫 반복을 너무 빠르게 시작하면 마지막 반복에서 무너집니다. IntervalRunner는 시간, 거리, 심박 존으로 인터벌을 짜 두면 현재 속도가 목표에서 벗어날 때 소리와 진동으로 알려 주는 코치 앱입니다. 화면을 보지 않고도 "지금 너무 느리다" 또는 "너무 빠르다"를 알 수 있게 하는 것이 목적입니다.</p>
+<p>이 앱은 달리기 전체를 대신 결정해 주지 않습니다. 목표 페이스나 구성은 사용자가 정하고, 앱은 그 설정을 지킬 수 있게 알림으로 보조합니다. 일반적인 훈련 정보는 <a href="/guides/interval-running-workout-basics">인터벌 러닝 입문 글</a>에서 따로 정리했습니다.</p>
+
+<h2>지원 환경</h2>
+<ul>
+<li><strong>iPhone</strong> 앱은 iOS 26 이상을 대상으로 합니다.</li>
+<li><strong>Apple Watch</strong> 앱은 watchOS 10 이상을 지원합니다. 시계가 있으면 측정은 항상 시계에서 하고, iPhone은 화면과 음성 안내를 맡습니다.</li>
+<li><strong>iPhone 단독 실행</strong>도 가능합니다. 시작할 때 이 iPhone에서만 실행을 선택하면 시계 없이 폰의 위치와 센서로 측정합니다. 이때 심박은 별도 센서가 없으면 쓸 수 없습니다.</li>
+<li><strong>Android</strong> 버전은 Google Play에 등록되어 있습니다. 지원 기기와 기능 범위는 스토어 설명을 기준으로 확인해 주세요.</li>
+</ul>
+<p>위치 권한은 앱을 사용하는 동안만 요청합니다. 앱은 계정이나 별도 분석 도구 없이 동작하고, 구독 결제는 스토어가 처리합니다. 뛰는 데 필요한 핵심 기능은 무료로 쓸 수 있고, 일부 부가 기능은 구독 대상입니다.</p>
+
+<h2>인터벌 설정하는 법</h2>
+<ol>
+<li><strong>구성 요소 고르기.</strong> 워밍업, 반복, 회복, 쿨다운을 차례로 추가합니다. 반복 구간은 시간(예: 목표 속도로 3분) 또는 거리(예: 목표 속도로 400미터)로 정할 수 있고, 두 방식을 섞어도 됩니다.</li>
+<li><strong>회복 방식 정하기.</strong> 회복은 조깅, 걷기, 정지 중에서 선택합니다. 심박 기반으로 회복 종료를 설정하면 정해진 시간이 아니라 심박이 내려갈 때까지 기다린 뒤 다음 반복으로 넘어갑니다.</li>
+<li><strong>목표 정하기.</strong> 목표는 속도(페이스) 또는 심박 존으로 줄 수 있습니다. 허용 범위를 두기 때문에 정확히 한 값이 아니라 범위 안에 있으면 정상으로 취급됩니다.</li>
+<li><strong>카운트 방식 선택.</strong> 목표 속도에 도달한 뒤 시작, 범위 안에 있을 때만 누적, 즉시 시작 중에서 고릅니다. 정확히 목표 속도로 달린 시간만 세고 싶다면 두 번째 방식이 맞고, 단순히 시간표대로 가고 싶다면 즉시 시작이 어울립니다.</li>
+<li><strong>알림 확인.</strong> 음성 안내, 빠름과 느림을 구분하는 효과음, Apple Watch 햅틱을 각각 켜고 끌 수 있습니다. 이어폰 없이도 들릴지 시험해 보세요.</li>
+<li><strong>시작.</strong> 시작을 누르면 카운트다운 후 구성이 순서대로 진행됩니다.</li>
+</ol>
+<p>사전 설정을 만들 필요 없이 거리나 페이스만 정해 바로 달리는 빠른 시작과, 사다리나 피라미드 같은 흔한 구성의 템플릿도 기획되어 있습니다. 앱 버전에 따라 제공되는 범위가 다를 수 있으니 앱 안의 목록을 확인해 주세요.</p>
+
+<h2>알림이 작동하는 방식</h2>
+<p>순간 속도는 GPS 오차 때문에 크게 흔들립니다. 그래서 앱은 값을 일정 시간 평활화해서 판단하고, 이탈이 몇 초 이상 이어질 때만 알립니다. 같은 알림이 연달아 울리지 않도록 간격을 두며, 이탈이 길어지면 알림이 점차 강해집니다. 효과음은 빠름과 느림의 톤이 달라서 말을 알아듣지 않아도 구분됩니다. 음성은 미리 만들어 둔 문장 파일을 재생하는 방식이며, 합성 음성이라는 점이 앱에서 안내됩니다. 12개 언어를 지원합니다.</p>
+
+<h2>사용 팁</h2>
+<ul>
+<li>첫 번째 반복은 목표보다 살짝 느리게 시작해도 괜찮습니다. 알림이 빠르다고 말하면 따르세요.</li>
+<li>허용 범위를 너무 좁게 잡으면 알림이 계속 울립니다. 처음에는 넓게 두고 익숙해지면 줄이세요.</li>
+<li>언덕이나 맞바람에서는 속도 대신 심박 목표가 더 현실적일 수 있습니다.</li>
+<li>시계 햅틱은 소음이 큰 곳에서 특히 유용하고, 음성은 이어폰을 끼고 있을 때 가장 명확합니다.</li>
+<li>시작 전에 시계와 폰의 배터리와 GPS 신호를 확인하세요.</li>
+</ul>
+
+<h2>문제가 생겼을 때</h2>
+<ul>
+<li><strong>알림이 너무 자주 울려요.</strong> 허용 범위를 넓히거나 카운트 방식을 바꿔 보세요.</li>
+<li><strong>심박 목표가 작동하지 않아요.</strong> Watch나 심박 센서가 연결되어 있는지, 건강 데이터 권한이 허용되어 있는지 확인하세요. iPhone 단독 실행에서는 심박이 없습니다.</li>
+<li><strong>음성이 들리지 않아요.</strong> 무음 스위치나 미디어 볼륨, 블루투스 연결을 확인하세요.</li>
+<li><strong>속도가 튀어요.</strong> 건물 사이나 출발 직후에는 GPS가 불안정합니다. 신호가 잡힌 뒤에 시작하세요.</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. Apple Watch가 꼭 필요한가요?</h3>
+<p>아니요. 이 iPhone에서만 실행하는 방식으로 폰 단독으로도 뛸 수 있습니다. 다만 손목 햅틱과 시계 측정 심박은 사용할 수 없습니다.</p>
+<h3>Q. 무료로 어디까지 가능한가요?</h3>
+<p>뛰는 데 필요한 핵심 기능은 무료입니다. 구독이 필요한 항목과 가격은 앱 안 구독 화면에 표시된 내용이 기준입니다.</p>
+<h3>Q. 초보자도 쓸 수 있나요?</h3>
+<p>설정이 단순한 구성부터 시작할 수 있지만, 훈련 강도와 몸 상태는 본인이 판단해야 합니다. 건강이 걱정된다면 전문가와 상의하세요.</p>
+<h3>Q. 데이터는 어디에 저장되나요?</h3>
+<p>기록은 기기와 건강 앱을 중심으로 저장되며, 앱은 계정 없이 동작합니다. 자세한 내용은 <a href="/privacy">개인정보 처리방침</a>을 참고하세요.</p>
+<h3>Q. 영상으로 남기고 싶어요.</h3>
+<p>건강 앱에 저장된 러닝은 <a href="/guides/runvue">RunVue</a> 같은 앱으로 영상으로 만들 수 있습니다.</p>
+<p>그 밖의 질문은 <a href="/support">지원 페이지</a>에서 받습니다.</p>
+
+  </section>
+  <section id="en" lang="en" class="lang-ko">
+
+<h2>The problem IntervalRunner solves</h2>
+<p>Interval running alternates fast efforts with recovery in a planned order. The hard part is knowing, mid-run, whether you are truly running at your target pace. Staring at your wrist wrecks your form, and starting the first repetition too fast tends to cost you in the last one. IntervalRunner is a coaching app: you build intervals by time, distance or heart rate zone, and it alerts you by sound and vibration when your speed drifts away from the target. The goal is that you can tell "too slow" or "too fast" without looking at a screen.</p>
+<p>It does not decide your workout for you. You choose the target pace and structure, and the app helps you stick to it with alerts. For general training background, see our separate <a href="/guides/interval-running-workout-basics">interval running basics</a> article.</p>
+
+<h2>Supported platforms</h2>
+<ul>
+<li>The <strong>iPhone</strong> app targets iOS 26 and later.</li>
+<li>The <strong>Apple Watch</strong> app supports watchOS 10 and later. When a watch is available it does the measuring, and the iPhone handles the screen and voice guidance.</li>
+<li><strong>iPhone-only</strong> running also works. Choose to run on this iPhone only and it measures with the phone's location and sensors. Heart rate is then unavailable unless you have a separate sensor.</li>
+<li>An <strong>Android</strong> version is listed on Google Play. Check the store description for supported devices and feature scope.</li>
+</ul>
+<p>Location permission is requested only while the app is in use. The app works without an account or extra analytics tools, and subscription payments are handled by the store. The core features you need to run are free, and some extras are part of a subscription.</p>
+
+<h2>How to build an interval workout</h2>
+<ol>
+<li><strong>Pick the building blocks.</strong> Add a warm-up, repeats, recovery and a cool-down in order. Repeats can be defined by time (for example three minutes at target pace) or distance (for example 400 meters at target pace), and you can mix both.</li>
+<li><strong>Choose recovery.</strong> Recovery can be a jog, a walk or a stop. If you set heart-rate-based recovery, the app waits for your heart rate to come down rather than for a fixed time before moving on.</li>
+<li><strong>Set the target.</strong> The target can be a pace or a heart rate zone. A tolerance band is used, so being anywhere inside the range counts as on target rather than a single exact value.</li>
+<li><strong>Select a counting mode.</strong> Choose between starting after you reach the target, accumulating only while inside the band, or starting immediately. If you want to count only the time actually spent on target, the second fits; for a plain timetable, immediate start fits.</li>
+<li><strong>Check the alerts.</strong> Voice, distinct tones for fast and slow, and Apple Watch haptics can each be switched on or off. Test whether you can hear them without earphones.</li>
+<li><strong>Start.</strong> After a countdown the workout moves through your plan in order.</li>
+</ol>
+<p>A quick start where you set only a distance or pace, and templates for common structures such as ladders and pyramids, are part of the design. What is available depends on the app version, so check the lists inside the app.</p>
+
+<h2>How the alerts behave</h2>
+<p>Instant speed from GPS fluctuates a lot. The app smooths values over a short time and alerts only when a deviation lasts for a few seconds. It keeps a gap between alerts so you are not nagged repeatedly, and alerts escalate if the deviation continues. The sound cues use different tones for fast and slow, so you can tell them apart without parsing speech. Voice guidance plays pre-generated sentence files, and the app discloses that the voice is synthetic. Twelve languages are supported.</p>
+
+<h2>Tips</h2>
+<ul>
+<li>Starting the first repetition slightly under target is fine. If the alert says you are fast, follow it.</li>
+<li>A very narrow tolerance band makes alerts fire constantly. Start wide and tighten as you get used to it.</li>
+<li>On hills or in a headwind, a heart rate target can be more realistic than pace.</li>
+<li>Watch haptics are especially useful in noisy places, while voice is clearest with earphones.</li>
+<li>Before you start, check battery and GPS signal on both watch and phone.</li>
+</ul>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>Alerts fire too often.</strong> Widen the tolerance band or change the counting mode.</li>
+<li><strong>Heart rate targets do not work.</strong> Check that a Watch or heart rate sensor is connected and health data permission is granted. There is no heart rate in iPhone-only mode without a sensor.</li>
+<li><strong>I cannot hear the voice.</strong> Check the silent switch, media volume and Bluetooth connection.</li>
+<li><strong>Speed jumps around.</strong> GPS is unstable between buildings and right after starting. Wait for a good signal before you begin.</li>
+</ul>
+
+<h2>FAQ</h2>
+<h3>Do I need an Apple Watch?</h3>
+<p>No. You can run with the iPhone alone using the run-on-this-iPhone-only option, though wrist haptics and watch-measured heart rate will not be available.</p>
+<h3>What is free?</h3>
+<p>The core features you need to run are free. Which items need a subscription, and the price, are shown on the in-app subscription screen.</p>
+<h3>Can beginners use it?</h3>
+<p>You can start with simple structures, but you are responsible for judging intensity and your condition. If you have health concerns, consult a professional.</p>
+<h3>Where is my data stored?</h3>
+<p>Records live mainly on your device and in the health app, and the app works without an account. See the <a href="/privacy">privacy policy</a>.</p>
+<h3>Can I turn a run into a video?</h3>
+<p>Runs saved to your health app can be turned into videos with an app such as <a href="/guides/runvue">RunVue</a>.</p>
+<p>For other questions, visit the <a href="/support">support page</a>.</p>
+
+  </section>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
+<li><a href="/guides/interval-running-workout-basics">인터벌 러닝 입문 · Interval running basics</a></li>
+<li><a href="/guides/runvue">RunVue 사용 가이드</a></li>
+<li><a href="/guides/running-replay-video-guide">러닝 기록을 영상으로 남기는 법</a></li>
+<li><a href="/support">Support · 지원</a></li>
+  </ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaudeMiner 사용 가이드 | ClaudeMiner Guide — SETLOG</title>
+<meta name="description" content="ClaudeMiner 사용 가이드: Claude Code 세션을 마이너 캐릭터로 보여주는 오픈소스 모니터의 설치, 상태 읽는 법, 알림, 한계. English guide included.">
+<link rel="canonical" href="https://setlog.net/guides/claudeminer">
+<meta property="og:title" content="ClaudeMiner 사용 가이드 | ClaudeMiner Guide — SETLOG"><meta property="og:description" content="ClaudeMiner 사용 가이드: Claude Code 세션을 마이너 캐릭터로 보여주는 오픈소스 모니터의 설치, 상태 읽는 법, 알림, 한계. English guide included."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/claudeminer">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / ClaudeMiner</p>
+<main class="article">
+  <div class="app-head"><img src="/images/claudeminer-icon.png" alt="ClaudeMiner icon" width="64" height="64"><div><h1>ClaudeMiner 사용 가이드</h1></div></div>
+  <p class="sub">ClaudeMiner guide: a visual monitor for your Claude Code sessions</p>
+  <div class="store-links"><a href="https://github.com/JUKI-J/claudeminer" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+  <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+
+  <section id="ko" lang="ko">
+  <h2>ClaudeMiner는 무엇인가</h2>
+  <p>ClaudeMiner는 컴퓨터에서 돌아가고 있는 Claude Code 프로세스를 작은 광부 캐릭터로 보여 주는 시각 모니터입니다. 터미널을 여러 개 열어 두고 Claude Code에 작업을 맡기다 보면, 어느 창에서 아직 일하는 중이고 어느 창이 끝났는지, 혹은 터미널을 닫았는데 프로세스만 남아 있는 건 아닌지 알기 어렵습니다. ClaudeMiner는 이 질문에 한눈에 답하려고 만든 가벼운 앱이며, MIT 라이선스의 오픈소스입니다. 앱 자체는 Rust 기반의 Tauri로 만들어져 시스템 WebView를 쓰므로 Chromium을 따로 내장하지 않고, 공개된 문서 기준으로 메모리는 약 20MB 안팎을 사용합니다.</p>
+
+  <h2>누구에게 필요한가</h2>
+  <ul>
+    <li>Claude Code 세션을 두세 개 이상 동시에 돌리는 사람</li>
+    <li>긴 작업을 맡겨 두고 다른 일을 하다가, 끝났는지 계속 터미널을 확인하는 사람</li>
+    <li>터미널을 닫은 뒤에도 프로세스가 남아 CPU를 쓰는 것 같다고 느낀 적이 있는 사람</li>
+  </ul>
+  <p>세션이 하나뿐이고 터미널을 계속 지켜보는 습관이라면 이 앱이 주는 이득은 크지 않습니다. 반대로 여러 세션을 병렬로 굴리는 작업 방식에서는 "지금 누가 일하고 있나"를 눈으로 확인할 수 있다는 점이 가장 큰 장점입니다.</p>
+
+  <h2>세 가지 마이너 상태 읽는 법</h2>
+  <p>ClaudeMiner는 감지한 Claude Code 프로세스마다 캐릭터 하나를 보여 주고, 프로세스의 상태에 따라 세 가지 모습 중 하나로 표시합니다. 공식 README가 정리한 기준은 다음과 같습니다.</p>
+  <ul>
+    <li><b>작업 중(Working)</b>: 프로세스의 CPU 사용률이 10%를 넘을 때입니다. Claude Code가 응답을 생성하거나 도구를 실행하며 실제로 일하는 구간과 대체로 겹칩니다.</li>
+    <li><b>휴식(Resting)</b>: CPU 사용률이 10% 아래일 때입니다. 사용자의 입력을 기다리거나 한가한 상태로 볼 수 있습니다.</li>
+    <li><b>좀비(Zombie)</b>: 연결된 터미널(TTY)이 없는 프로세스입니다. 터미널 창이 닫혔는데 프로세스만 남은 경우를 가리킵니다.</li>
+  </ul>
+  <div class="callout"><p>중요한 점: 상태는 CPU 사용률이라는 간접 지표로 판정합니다. 네트워크 응답을 기다리는 중이라 CPU가 낮은 순간에도 "휴식"으로 보일 수 있으니, 휴식은 "끝났다"가 아니라 "지금 CPU를 거의 안 쓴다"는 뜻으로 받아들이세요.</p></div>
+
+  <h2>어떻게 세션을 감지하는가</h2>
+  <p>프로젝트 문서에 따르면 ClaudeMiner는 설정한 주기(기본 2초)마다 실행 중인 프로세스 목록에서 Claude Code 프로세스를 찾아 CPU와 메모리 사용량을 읽습니다. macOS에서는 ps 명령으로 TTY 정보를 확인해 좀비를 가려냅니다. 읽는 정보는 프로세스 ID와 CPU·메모리 수치에 한정되며, 대화 내용이나 코드를 읽지 않는다고 문서에 명시되어 있습니다. 분석이나 원격 전송도 없고, 모든 것이 로컬에서 이루어집니다.</p>
+
+  <h2>설치와 요구 사항</h2>
+  <ol>
+    <li>GitHub 저장소(위 링크)의 Releases에서 최신 릴리스를 확인합니다. 이 글을 쓰는 시점의 README는 Apple Silicon용 macOS 빌드(.dmg)를 안내하고 있습니다.</li>
+    <li>.dmg를 열어 앱을 응용 프로그램 폴더로 옮기고 실행합니다.</li>
+    <li>알림을 사용하려면 처음 실행할 때 나오는 macOS 알림 권한 요청을 허용합니다. 나중에 바꾸려면 시스템 설정의 알림 항목에서 조정할 수 있습니다.</li>
+    <li>Claude Code를 평소처럼 터미널에서 실행하면 몇 초 안에 해당 세션이 광부로 나타납니다.</li>
+  </ol>
+  <p>요구 사항은 README 기준으로 macOS 10.15 이상 또는 Windows 10 이상, 그리고 Claude Code가 설치되어 있어야 한다는 것입니다. 다만 내부 문서에는 Windows에서는 프로세스 감지는 되지만 TTY 감지가 꺼져 있다고 적혀 있으므로, 좀비 판정은 macOS에서 가장 정확합니다. 소스에서 직접 빌드하려면 development/app 폴더에서 npm install 후 npm run tauri build를 실행하는 방식이 README에 소개되어 있습니다.</p>
+
+  <h2>알림과 설정</h2>
+  <p>macOS에서는 작업을 마친 마이너가 있을 때, 새 Claude Code 세션이 시작될 때, 좀비 프로세스가 발견될 때 알림을 받을 수 있습니다. 설정 창에서는 알림 켜기/끄기와 갱신 주기(1초, 2초, 5초, 10초)를 고를 수 있습니다. 또 마이너 배지의 PID를 클릭하면 복사되고, 좀비 프로세스는 앱에서 한 번에 종료할 수 있다고 문서에 적혀 있습니다.</p>
+
+  <h2>활용 팁</h2>
+  <ul>
+    <li>긴 작업을 시작하고 다른 창에서 일하다가, 완료 알림이 오면 돌아와 결과를 검토하세요. 터미널을 번갈아 확인하는 습관이 줄어듭니다.</li>
+    <li>갱신 주기를 길게(5~10초) 두면 배터리와 CPU 부담이 더 줄어듭니다. 빠른 반응이 필요하면 1~2초가 적당합니다.</li>
+    <li>PID 복사 기능은 다른 터미널에서 특정 세션을 직접 확인하거나 종료할 때 유용합니다.</li>
+  </ul>
+
+  <h2>주의할 점</h2>
+  <ul>
+    <li>좀비를 종료하기 전에 정말 더 이상 쓰지 않는 프로세스인지 확인하세요. 종료한 프로세스는 되돌릴 수 없습니다.</li>
+    <li>CPU 10% 기준은 단순한 휴리스틱이라 잠깐의 오판이 있을 수 있습니다.</li>
+    <li>ClaudeMiner는 Claude Code를 대신 제어하는 도구가 아니라 관찰용 도구이며, Claude Code 개발사와 무관한 독립 프로젝트입니다.</li>
+  </ul>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>무료인가요?</h3>
+  <p>README에 100% 무료이며 계속 무료로 유지된다고 적혀 있고, 라이선스는 MIT입니다.</p>
+  <h3>제 코드나 대화가 외부로 전송되나요?</h3>
+  <p>프로젝트 문서에 따르면 앱은 프로세스 ID와 CPU·메모리 수치만 읽고, 텔레메트리나 분석 도구가 없으며 데이터는 기기를 떠나지 않습니다. 소스가 공개되어 있으니 직접 확인할 수도 있습니다.</p>
+  <h3>Windows에서도 되나요?</h3>
+  <p>README는 Windows 10 이상을 지원 대상으로 적지만, 좀비를 가려내는 TTY 감지는 macOS 중심입니다. 알림 또한 macOS 기준으로 설명되어 있습니다.</p>
+  <h3>마이너가 보이지 않아요.</h3>
+  <p>Claude Code가 실제로 실행 중인지, 갱신 주기가 너무 길지 않은지 확인하세요. 계속 문제가 있다면 GitHub 이슈나 <a href="/support">지원 페이지</a>로 알려 주세요.</p>
+  <h3>여러 세션을 어떻게 운영하면 좋을까요?</h3>
+  <p>작업 단위 분리와 알림 활용법은 <a href="/guides/monitor-claude-code-sessions">여러 Claude Code 세션을 동시에 관리하는 법</a>에서 정리했습니다.</p>
+  </section>
+
+  <section id="en" lang="en" class="lang-ko">
+  <h2>What ClaudeMiner is</h2>
+  <p>ClaudeMiner is a small visual monitor that shows each Claude Code process running on your computer as a little miner character. If you keep several terminals open and hand tasks to Claude Code in each, it is hard to tell at a glance which window is still working, which one has finished, and whether a process is lingering after you closed its terminal. ClaudeMiner exists to answer those questions quickly. It is open source under the MIT license, built with Rust and Tauri on the system WebView rather than a bundled Chromium, and the project documentation puts its memory use at roughly 20MB.</p>
+
+  <h2>Who it is for</h2>
+  <ul>
+    <li>People who run two or more Claude Code sessions at the same time</li>
+    <li>People who start a long task, switch to other work, and keep checking the terminal to see whether it is done</li>
+    <li>Anyone who has suspected that a process kept using CPU after the terminal was closed</li>
+  </ul>
+  <p>If you run a single session and watch it continuously, the benefit is small. When you work with several sessions in parallel, being able to see who is busy at a glance is the main value.</p>
+
+  <h2>Reading the three miner states</h2>
+  <p>For every Claude Code process it detects, ClaudeMiner shows one character in one of three states. The README defines them as follows.</p>
+  <ul>
+    <li><b>Working</b>: the process is using more than 10% CPU. This usually overlaps with Claude Code generating a response or running tools.</li>
+    <li><b>Resting</b>: CPU use is below 10%. The session is idle or waiting for your input.</li>
+    <li><b>Zombie</b>: the process has no controlling terminal (no TTY). This is the case where the terminal window is gone but the process remains.</li>
+  </ul>
+  <div class="callout"><p>One caveat: states are inferred from CPU usage, which is an indirect signal. While Claude Code waits on a network response, CPU can be low and the miner may look like it is resting. Read "resting" as "currently using little CPU", not as "definitely finished".</p></div>
+
+  <h2>How it detects sessions</h2>
+  <p>According to the project documentation, ClaudeMiner scans the running process list at a configurable interval (2 seconds by default), finds Claude Code processes and reads their CPU and memory usage. On macOS it also checks TTY information through the ps command to identify zombies. The data it reads is limited to process IDs and CPU and memory figures; the documentation states that it does not read your conversations or code, has no analytics, and keeps everything local.</p>
+
+  <h2>Installation and requirements</h2>
+  <ol>
+    <li>Open the Releases section of the GitHub repository linked above and find the latest release. At the time of writing the README points to a macOS build for Apple Silicon (.dmg).</li>
+    <li>Open the .dmg, move the app into your Applications folder and launch it.</li>
+    <li>To receive notifications, allow the macOS notification permission prompt on first launch. You can change it later in System Settings under Notifications.</li>
+    <li>Start Claude Code in a terminal as usual. Within a few seconds the session should appear as a miner.</li>
+  </ol>
+  <p>The README lists macOS 10.15 or later, or Windows 10 or later, plus an installed Claude Code. The internal docs add that on Windows process detection works but TTY detection is disabled, so zombie detection is most accurate on macOS. To build from source, the README describes running npm install and then npm run tauri build inside development/app.</p>
+
+  <h2>Notifications and settings</h2>
+  <p>On macOS you can be notified when a miner finishes working, when a new Claude Code session starts and when a zombie process is found. The settings panel lets you toggle notifications and pick a refresh interval of 1, 2, 5 or 10 seconds. Clicking a miner badge copies its PID, and the docs say a zombie process can be terminated from the app in one click.</p>
+
+  <h2>Practical tips</h2>
+  <ul>
+    <li>Start a long task, work in another window, and come back when the completion notification arrives. It cuts down on cycling through terminals.</li>
+    <li>A longer refresh interval (5 to 10 seconds) lowers battery and CPU overhead further. Use 1 to 2 seconds if you want quicker feedback.</li>
+    <li>The PID copy feature helps when you want to inspect or stop a specific session from another terminal.</li>
+  </ul>
+
+  <h2>Things to watch out for</h2>
+  <ul>
+    <li>Before terminating a zombie, make sure the process is truly unused. A terminated process cannot be brought back.</li>
+    <li>The 10% CPU threshold is a simple heuristic, so brief misreadings are possible.</li>
+    <li>ClaudeMiner observes; it does not control Claude Code, and it is an independent project not affiliated with the makers of Claude Code.</li>
+  </ul>
+
+  <h2>FAQ</h2>
+  <h3>Is it free?</h3>
+  <p>The README says it is 100% free and will stay free, and the license is MIT.</p>
+  <h3>Is my code or conversation sent anywhere?</h3>
+  <p>Per the project documentation, the app only reads process IDs and CPU and memory numbers, has no telemetry or analytics, and nothing leaves your machine. The source is public if you want to verify that yourself.</p>
+  <h3>Does it work on Windows?</h3>
+  <p>The README lists Windows 10 or later as supported, but the TTY-based zombie detection is macOS-centered, and the notifications are described for macOS.</p>
+  <h3>I do not see any miners.</h3>
+  <p>Check that Claude Code is actually running and that the refresh interval is not set too long. If the problem persists, open a GitHub issue or contact us through the <a href="/support">support page</a>.</p>
+  <h3>How should I organize multiple sessions?</h3>
+  <p>Task separation and notification habits are covered in <a href="/guides/monitor-claude-code-sessions">Managing multiple Claude Code sessions at once</a>.</p>
+  </section>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
+    <li><a href="/guides/monitor-claude-code-sessions">Managing multiple Claude Code sessions at once · 여러 Claude Code 세션을 동시에 관리하는 법</a></li>
+    <li><a href="/support">Support · 지원</a></li>
+  </ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>

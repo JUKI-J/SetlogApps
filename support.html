@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SETLOG — Support / 지원</title>
+<title>Support — 지원 센터 | SETLOG Apps</title>
 <meta name="description" content="Support hub for SETLOG apps — Charcoal Player, slplayer, IntervalRunner, RunVue, Multagi, OneSync, ClaudeMiner, LapLync, LottoTown, LunchLog(급식로그), TimerLync, Zipda. Questions, bug reports, and feature requests.">
 <!-- 2026-08-18: charcoalplay/infrastructure/site/support.html 에서 SetlogApps(Cloudflare Pages)로 이관 — 이 파일이 정본.
      SETLOG 범용 지원 페이지(오너 2026-07-24 개편 + 디자인 적용).
@@ -14,6 +14,9 @@
      스크립트: 동일 출처 /js/support.js 1개(인라인 스크립트 없음) — 앱 진입 쿼리(?app=lunchlog&type=contact|ad&v=&os=) 처리.
        JS가 꺼져도 모든 섹션은 정적으로 보인다. 응답 보장 문구는 급식로그 문맥에서만 data-ctx로 교체(급식로그 R7).
      2026-10-02: 급식로그(LunchLog) 섹션 추가 — #lunchlog / 광고 신고 #lunchlog-ad. -->
+<link rel="canonical" href="https://setlog.net/support">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
 <style>
   :root {
     --ember: #E8843C;
@@ -152,9 +155,11 @@
 <script src="/js/support.js" defer></script>
 </head>
 <body>
-<header>
-  <span class="wordmark">SET<b>LOG</b></span>
-  <a href="https://setlog.net/">setlog.net →</a>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support" aria-current="page">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
 </header>
 
 <div class="wave" aria-hidden="true">
@@ -342,14 +347,9 @@
   </div>
 </section>
 
-<footer>
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/faq">FAQ</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
   <span>© 2026 SETLOG</span>
-  <div style="display:flex; gap:12px;">
-    <a href="https://setlog.net/">Apps</a>
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Terms</a>
-  </div>
 </footer>
 </body>
 </html>

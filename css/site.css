@@ -1,0 +1,64 @@
+/* SETLOG shared site styles: navigation, footer, guide/article pages */
+:root{--ember:#E8843C;--ember-deep:#C2561F;--bg:#F3F1EE;--card:#FFFFFF;--text:#201C18;--muted:#6B655D;--line:rgba(0,0,0,.09);--mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#131110;--card:#1C1917;--text:#EDEAE6;--muted:#A39D94;--line:rgba(255,255,255,.08)}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;max-width:720px;margin:0 auto;padding:28px 20px 64px}
+a{color:var(--ember-deep);text-decoration:none}
+@media (prefers-color-scheme:dark){a{color:var(--ember)}}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px}
+img{max-width:100%}
+
+/* header / nav */
+.site-header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px 20px;margin-bottom:36px}
+.site-header .wordmark{font-family:var(--mono);font-size:15px;font-weight:700;letter-spacing:.28em;color:var(--text)}
+.site-header .wordmark b{color:var(--ember);font-weight:700}
+.site-nav{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:12px}
+.site-nav a{color:var(--muted);padding:2px 0}
+.site-nav a:hover,.site-nav a[aria-current="page"]{color:var(--ember);text-decoration:none}
+.site-nav a[aria-current="page"]{border-bottom:1px solid var(--ember)}
+
+/* footer */
+.site-footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--muted)}
+.site-footer .links{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:10px}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:var(--ember)}
+
+/* page heading */
+h1{font-size:36px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.sub{color:var(--muted);margin:10px 0 0;font-size:17px}
+.eyebrow{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.eyebrow::before{content:"— ";color:var(--ember)}
+.crumbs{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:18px}
+.crumbs a{color:var(--muted)}
+
+/* article body */
+.article{margin-top:32px}
+.article h2{font-size:22px;font-weight:700;margin:40px 0 12px;line-height:1.3}
+.article h3{font-size:17px;font-weight:700;margin:24px 0 8px}
+.article p{font-size:16px;margin-bottom:14px;line-height:1.75}
+.article ul,.article ol{margin:0 0 16px 22px;font-size:16px}
+.article li{margin-bottom:8px;line-height:1.7}
+.article .lang-ko{border-top:1px solid var(--line);margin-top:48px;padding-top:8px}
+.lang-switch{font-family:var(--mono);font-size:12px;margin:14px 0 0;color:var(--muted)}
+.callout{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--ember);border-radius:10px;padding:14px 18px;margin:18px 0;font-size:15px}
+.callout p{margin:0;font-size:15px}
+.app-head{display:flex;gap:16px;align-items:center;margin:0 0 8px}
+.app-head img{width:64px;height:64px;border-radius:14px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.store-links{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.store-links a,.btn{font-family:var(--mono);font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:6px 12px;background:var(--card)}
+.store-links a:hover,.btn:hover{color:var(--ember);border-color:var(--ember);text-decoration:none}
+.related{margin-top:48px;padding-top:8px;border-top:1px solid var(--line)}
+.related ul{list-style:none;margin:0}
+.related li{margin-bottom:6px}
+
+/* guide index cards */
+.cards{display:grid;gap:12px;margin-top:8px}
+.gcard{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--text)}
+.gcard:hover{border-color:var(--ember);text-decoration:none}
+.gcard b{display:block;font-size:16px;margin-bottom:4px}
+.gcard span{display:block;font-size:13.5px;color:var(--muted);line-height:1.55}
+section.block{margin-top:44px}
+@media (max-width:480px){h1{font-size:28px}.article h2{font-size:20px}}
+.site-footer{display:block}
+.site-header{display:flex}

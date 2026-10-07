@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TimerLync 사용 가이드 | TimerLync Guide — SETLOG</title>
+<meta name="description" content="여러 기기가 같은 순간에 울리는 동기화 카운트다운 TimerLync의 룸 만들기, 시퀀스, 워치 사용법. A guide to the synced countdown timer for iPhone, iPad and Apple Watch.">
+<link rel="canonical" href="https://setlog.net/guides/timerlync">
+<meta property="og:title" content="TimerLync 사용 가이드 | TimerLync Guide — SETLOG"><meta property="og:description" content="여러 기기가 같은 순간에 울리는 동기화 카운트다운 TimerLync의 룸 만들기, 시퀀스, 워치 사용법. A guide to the synced countdown timer for iPhone, iPad and Apple Watch."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/timerlync">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / TimerLync</p>
+<main class="article">
+  <div class="app-head"><img src="/images/timerlync-icon.png" alt="TimerLync icon" width="64" height="64"><div><h1>TimerLync 사용 가이드</h1></div></div>
+  <p class="sub">TimerLync Guide: one countdown, every device, one alarm</p>
+  <div class="store-links"><a href="https://apps.apple.com/kr/app/timerlync-sync/id6795109124" target="_blank" rel="noopener noreferrer">App Store</a> </div>
+  <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+
+  <section id="ko" lang="ko">
+
+<p>TimerLync는 여러 기기에서 같은 카운트다운을 함께 보고, 0이 되는 순간 모든 기기에서 동시에 알람이 울리도록 만든 타이머 앱입니다. iPhone, iPad, Apple Watch에서 쓸 수 있고 계정을 만들거나 로그인할 필요가 없습니다. 이 글은 앱이 어떤 문제를 풀려고 만들어졌는지, 처음 쓰는 사람이 어떤 순서로 시작하면 되는지, 그리고 자주 막히는 지점을 어떻게 풀면 되는지 정리한 안내서입니다.</p>
+
+<h2>어떤 문제를 해결하나요</h2>
+<p>여러 사람이 각자 휴대폰 타이머를 맞춰 놓고 "하나, 둘, 셋, 시작" 하면 생각보다 자주 어긋납니다. 누가 먼저 눌렀는지, 누구의 화면이 꺼졌는지에 따라 몇 초씩 차이가 나고, 알람 소리도 제각각 울립니다. 수업의 모둠 활동, 회의 발표 시간 관리, 팀 단위 운동처럼 "모두가 같은 순간에 끝나야 하는" 상황에서는 이 작은 차이가 계속 신경 쓰입니다.</p>
+<p>TimerLync는 남은 시간을 서로 전송하는 대신 "언제 끝나는가"라는 종료 시각 하나를 공유합니다. 각 기기는 네트워크 시간을 기준으로 자기 시계를 보정한 뒤, 그 종료 시각까지 스스로 카운트다운합니다. 일시정지나 시간 추가처럼 상태가 바뀔 때만 다시 맞추면 되기 때문에 연결이 잠시 불안정해도 화면의 숫자는 크게 흔들리지 않습니다.</p>
+
+<h2>누구에게 맞나요</h2>
+<ul>
+<li>모둠 활동과 발표 시간을 학생 전원에게 같은 화면으로 보여 주고 싶은 교사와 강사</li>
+<li>회의나 발표에서 발표자와 진행자의 시간 감각을 맞추고 싶은 팀</li>
+<li>여러 명이 같은 시간에 휴식과 집중을 반복하는 그룹 뽀모도로를 해 보고 싶은 스터디 그룹과 원격 근무 팀</li>
+<li>운동 세트나 요리 단계를 함께 맞춰야 하는 코치, 가족, 룸메이트</li>
+<li>혼자 쓰는 카운트다운에도 믿을 만한 알람이 필요한 사람. 룸 없이 쓰는 빠른 타이머가 따로 있습니다.</li>
+</ul>
+
+<h2>처음 시작하기</h2>
+<h3>1. 설치와 기본 요건</h3>
+<p>앱은 App Store에서 받을 수 있으며 iOS 17 이상을 기준으로 만들어졌습니다. 가까이 있는 기기를 찾을 때는 로컬 네트워크 권한이 필요합니다. 권한을 허용하지 않아도 룸 코드를 직접 입력해 인터넷 중계 방식으로 참가할 수 있습니다.</p>
+<h3>2. 룸 만들기</h3>
+<ol>
+<li>홈 화면에서 룸 만들기를 누르고 카운트다운 시간을 정합니다.</li>
+<li>세션을 시작하면 룸이 열리고 참가용 코드와 QR이 표시됩니다.</li>
+<li>다른 기기의 사용자에게 코드를 말로 알려 주거나 메신저로 보내거나, QR을 스캔하게 합니다.</li>
+</ol>
+<h3>3. 룸 참가하기</h3>
+<p>참가하는 기기에서는 룸 참가를 누르면 근처에 열린 룸이 목록에 나타납니다. 목록에서 고르거나 코드를 입력하면 같은 카운트다운 화면이 열립니다. 참가자는 결제나 계정 없이 언제든 들어올 수 있습니다.</p>
+<h3>4. 시작하고 제어하기</h3>
+<p>기본적으로 호스트가 시작, 일시정지, 1분 추가를 조작합니다. 호스트는 공동 호스트를 지정하거나 호스트 역할을 다른 사람에게 넘길 수 있고, 모두가 같은 화면을 조작하게 열어 둘 수도 있습니다. 룸에 두 대 이상이 있을 때 시작하면 3, 2, 1 리드인이 모든 화면에 같은 시각 기준으로 표시된 뒤 카운트다운이 시작됩니다. 준비 확인 기능을 쓰면 참가자 전원이 확인을 누를 때까지 시작을 미룰 수 있습니다.</p>
+
+<h2>알아 두면 좋은 기능</h2>
+<h3>시퀀스와 그룹 뽀모도로</h3>
+<p>시퀀스는 여러 단계를 이어 붙인 타이머입니다. 예를 들어 발표 10분 다음에 질의응답 5분을 넣어 두면 단계가 바뀌는 순간 모든 기기가 함께 전환됩니다. 같은 방식으로 집중과 휴식을 반복하는 그룹 뽀모도로를 만들 수 있어서, 팀 전체가 같은 리듬으로 일하고 쉴 수 있습니다.</p>
+<h3>오버타임</h3>
+<p>세션이 길어질 때 00:00을 넘겨도 계속 세어 주는 오버타임 기능이 있습니다. 필요 없다면 설정에서 끌 수 있습니다.</p>
+<h3>Apple Watch, 잠금화면, 위젯</h3>
+<p>Apple Watch 컴패니언 앱이 자체 종료 알림을 갖고 있어 아이폰과 떨어져 있어도 손목에서 알림을 받을 수 있습니다. 잠금 해제 없이 남은 시간을 확인할 수 있는 라이브 현황 표시와 다이내믹 아일랜드, 잠금화면 위젯, Siri 단축 동작도 지원합니다. 다만 워치 알림 같은 일부 동작은 실기기에서의 확인이 필요한 영역이므로, 중요한 행사 전에는 반드시 본인 기기로 한 번 시험해 보시기 바랍니다.</p>
+<h3>세션 기록</h3>
+<p>끝난 세션은 기록으로 남습니다. 기록을 CSV 파일로 내보내는 기능은 유료 Pro 기능에 포함됩니다.</p>
+
+<h2>무료와 Pro의 차이</h2>
+<p>앱은 한 번 결제하는 Pro 언락을 제공하며 구독이 아닙니다. 룸을 만드는 호스트의 기기를 기준으로, 기본 상태에서는 한 룸에 두 대까지 참가할 수 있고 Pro를 열면 최대 여덟 대까지 늘어납니다. 룸 정원 확대와 CSV 내보내기가 Pro의 범위이고, 룸 참가, 빠른 타이머, 시퀀스, 워치 앱은 제한이 없습니다. 참가자는 구매가 필요 없습니다. 가격은 스토어 화면에서 확인해 주세요.</p>
+
+<h2>잘 쓰는 요령</h2>
+<ul>
+<li>행사 전에 호스트 기기와 참가 기기 각각에서 알림 권한과 로컬 네트워크 권한을 한 번 확인하세요.</li>
+<li>방해 금지 모드나 집중 모드가 켜져 있으면 알림이 조용해질 수 있으니 필요하면 예외를 설정하세요.</li>
+<li>강의실처럼 Wi-Fi가 격리된 곳에서는 근처 탐색이 안 될 수 있습니다. 이때는 코드를 입력해 참가하면 인터넷 중계로 연결됩니다.</li>
+<li>시간을 연장할 가능성이 있다면 처음부터 오버타임을 켜 두는 쪽이 편합니다.</li>
+<li>발표처럼 단계가 정해진 일정은 단순 타이머 여러 개보다 시퀀스 하나로 만드는 편이 실수가 적습니다.</li>
+</ul>
+
+<h2>문제가 생겼을 때</h2>
+<ul>
+<li>근처 룸이 목록에 보이지 않을 때: 두 기기가 같은 네트워크에 있는지, 로컬 네트워크 권한이 허용되어 있는지 확인하고, 그래도 안 되면 코드를 직접 입력하세요.</li>
+<li>세 번째 기기가 들어가지 못할 때: 호스트가 Pro를 열지 않은 상태라면 룸 정원이 두 대입니다. 참가 기기가 아니라 호스트의 설정이 기준입니다.</li>
+<li>화면 숫자가 한두 기기에서만 어긋나 보일 때: 기기의 날짜와 시간을 자동으로 설정해 두었는지 확인하세요. 앱은 네트워크 시간으로 보정하지만 인터넷에 전혀 닿지 않는 환경에서는 보정 정확도가 떨어질 수 있습니다.</li>
+<li>알람이 울리지 않을 때: 알림 권한, 무음 모드, 집중 모드를 차례로 점검하세요.</li>
+</ul>
+
+<h2>개인정보</h2>
+<p>계정이나 로그인은 없고 광고도 없습니다. 룸에서 참가자를 구분하기 위해 기기 식별자가 룸이 유지되는 동안 중계 서버에 보관되며, 룸이 사라지면 삭제됩니다. 위치 정보나 연락처는 수집하지 않습니다. 자세한 내용은 <a href="/privacy">개인정보처리방침</a>을 참고하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<h3>인터넷이 없어도 쓸 수 있나요?</h3>
+<p>가까이 있는 기기끼리는 블루투스와 Wi-Fi 기반의 근거리 연결을 쓸 수 있습니다. 서로 멀리 떨어져 있으면 인터넷 연결이 필요합니다. 혼자 쓰는 빠른 타이머는 룸이 필요 없습니다.</p>
+<h3>안드로이드에서도 되나요?</h3>
+<p>현재 TimerLync는 iPhone, iPad, Apple Watch용입니다. 안드로이드 기기는 지원 대상이 아닙니다.</p>
+<h3>참가자도 결제해야 하나요?</h3>
+<p>아니요. 결제 확인은 룸을 만든 호스트 기기만 대상입니다.</p>
+<h3>중간에 연결이 끊기면 알람은 어떻게 되나요?</h3>
+<p>종료 알림은 종료 시각을 기준으로 미리 예약되므로, 연결이 끊겨도 정해진 시각에 울리도록 설계되어 있습니다. 다만 기기 설정에서 알림이 꺼져 있으면 울리지 않습니다.</p>
+<h3>시간이 얼마나 정확하게 맞나요?</h3>
+<p>네트워크 시간 서버로 보정하며 보통 수십 밀리초 수준을 목표로 합니다. 실제 오차는 네트워크 상태에 따라 달라질 수 있습니다.</p>
+<h3>문의는 어디로 하나요?</h3>
+<p><a href="/support">지원 페이지</a>에서 접수할 수 있습니다.</p>
+
+  </section>
+  <section id="en" lang="en" class="lang-ko">
+
+<p>TimerLync is a countdown timer that shows the same time on several devices and sounds the alarm on all of them at the same moment. It runs on iPhone, iPad and Apple Watch, and it does not ask you to create an account or sign in. This guide explains what problem the app is meant to solve, how a first-time user can get started, and how to deal with the places where people most often get stuck.</p>
+
+<h2>What problem does it solve?</h2>
+<p>When several people each set a countdown on their own phone and say "three, two, one, go", the timers drift apart more often than you would expect. Who pressed first, whose screen went to sleep and which phone has a different alarm sound all add up to a few seconds of difference. For classroom group work, meeting time-boxes or team workouts, where everyone should finish at the same instant, that small gap is a constant annoyance.</p>
+<p>Instead of sending remaining seconds back and forth, TimerLync shares a single value: the moment the timer ends. Each device corrects its own clock against network time and then counts down to that end time by itself. Devices only need to resynchronize when something changes, such as a pause or added time, so a brief connection wobble does not make the numbers jump around.</p>
+
+<h2>Who is it for?</h2>
+<ul>
+<li>Teachers and trainers who want every student to see the same clock during group work or presentations.</li>
+<li>Teams that want the presenter and the facilitator to share one sense of time in a meeting.</li>
+<li>Study groups and remote teams who want to try a group pomodoro, where everyone focuses and rests together.</li>
+<li>Coaches, families and housemates who need to line up workout sets or cooking steps.</li>
+<li>Anyone who simply wants a dependable alarm for a solo countdown. A quick timer that needs no room is included.</li>
+</ul>
+
+<h2>Getting started</h2>
+<h3>1. Install and requirements</h3>
+<p>Download the app from the App Store. It is built for iOS 17 or later. Finding nearby devices uses the Local Network permission. If you decline it, you can still join a room by typing the room code, which connects through an internet relay.</p>
+<h3>2. Create a room</h3>
+<ol>
+<li>On the home screen, choose Create Room and pick a countdown duration.</li>
+<li>Start the session. The room opens and shows a join code and a QR code.</li>
+<li>Tell the others the code, send it in a chat message, or let them scan the QR code.</li>
+</ol>
+<h3>3. Join a room</h3>
+<p>On the joining device, tap Join Room. Rooms opened nearby appear in a list. Pick one, or type the code, and the same countdown screen opens. Participants can join at any time without paying or signing up.</p>
+<h3>4. Start and control</h3>
+<p>By default the host controls start, pause and adding a minute. The host can name co-hosts, hand the host role to someone else, or open control to everyone. When two or more devices are in the room, starting shows a 3-2-1 lead-in on every screen, timed against the same shared moment, before the countdown begins. A ready check can hold the start until every participant confirms.</p>
+
+<h2>Features worth knowing</h2>
+<h3>Sequences and group pomodoro</h3>
+<p>A sequence chains several steps into one timer. For example, a ten-minute talk followed by five minutes of Q&amp;A switches on every device at the moment the step changes. The same idea powers a group pomodoro, so a whole team can follow one rhythm of focus and break.</p>
+<h3>Overtime</h3>
+<p>If a session runs long, overtime keeps counting past 00:00. You can turn it off in settings if you do not want it.</p>
+<h3>Apple Watch, Lock Screen and widgets</h3>
+<p>The Apple Watch companion has its own end-of-timer alert, so you can be notified on your wrist even when the phone is elsewhere. The app also offers a live status on the Lock Screen and Dynamic Island, a Lock Screen widget and Siri shortcuts. Some behavior, such as the Watch alert, can only be confirmed on real hardware, so test with your own devices before an important event.</p>
+<h3>Session history</h3>
+<p>Finished sessions are kept in a history. Exporting that history as a CSV file is part of the paid Pro unlock.</p>
+
+<h2>Free versus Pro</h2>
+<p>The app offers a one-time Pro unlock, not a subscription. Counted on the host's device, a room holds two devices by default, and Pro raises that to eight. Larger rooms and CSV export are what Pro covers. Joining rooms, the quick timer, sequences and the Watch app have no such limits, and participants never need to buy anything. Check the store page for the current price.</p>
+
+<h2>Practical tips</h2>
+<ul>
+<li>Before an event, check notification and Local Network permissions on both the host and the participant devices.</li>
+<li>Do Not Disturb and Focus modes can silence alerts, so set exceptions if needed.</li>
+<li>On networks that isolate devices, such as some classroom Wi-Fi, nearby discovery may fail. Entering the code connects through the internet relay instead.</li>
+<li>If a session might run over, turn overtime on from the start.</li>
+<li>For a fixed agenda like a presentation, one sequence is less error-prone than several separate timers.</li>
+</ul>
+
+<h2>Troubleshooting</h2>
+<ul>
+<li>A nearby room does not show up: confirm both devices are on the same network and the Local Network permission is allowed. If it still fails, type the code.</li>
+<li>A third device cannot join: if the host has not unlocked Pro, the room holds two devices. The host's setting decides, not the joining device's.</li>
+<li>Numbers look off on one or two devices: make sure the date and time are set automatically. The app corrects with network time, but accuracy can suffer where the internet is unreachable.</li>
+<li>The alarm does not sound: check notification permission, silent mode and Focus mode in that order.</li>
+</ul>
+
+<h2>Privacy</h2>
+<p>There are no accounts, no sign-in and no ads. To tell participants apart, a device identifier is kept on the relay server only while the room exists and is deleted when the room goes away. The app does not collect location or contacts. See the <a href="/privacy">privacy policy</a> for details.</p>
+
+<h2>FAQ</h2>
+<h3>Does it work without internet?</h3>
+<p>Devices that are close together can use a Bluetooth and Wi-Fi based local connection. When devices are far apart, an internet connection is needed. The solo quick timer needs no room at all.</p>
+<h3>Is there an Android version?</h3>
+<p>Not at present. TimerLync is for iPhone, iPad and Apple Watch.</p>
+<h3>Do participants have to pay?</h3>
+<p>No. The purchase check applies only to the host who creates the room.</p>
+<h3>What happens to the alarm if the connection drops?</h3>
+<p>The end alert is scheduled ahead of time from the end timestamp, so it is designed to ring on time even if the connection drops. It will not sound if notifications are turned off on the device.</p>
+<h3>How accurate is the sync?</h3>
+<p>It corrects against a network time server and aims for tens of milliseconds. Real-world error depends on network conditions.</p>
+<h3>Where can I ask for help?</h3>
+<p>Use the <a href="/support">support page</a>.</p>
+
+  </section>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/laplync">LapLync 사용 가이드</a></li><li><a href="/guides/synchronized-timers-for-groups">여러 기기를 동시에 맞추는 타이머 활용법</a></li><li><a href="/support">Support · 문의</a></li></ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>

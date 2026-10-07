@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자막 싱크·깨짐 문제 해결법 | Fixing Subtitle Sync & Garbled Text — SETLOG</title>
+<meta name="description" content="자막 싱크 어긋남과 EUC-KR 한글 깨짐의 원인과 해결 방법. How to fix subtitle timing offset and garbled-text encoding problems.">
+<link rel="canonical" href="https://setlog.net/guides/subtitle-sync-and-encoding-fixes">
+<meta property="og:title" content="자막 싱크·깨짐 문제 해결법 | Fixing Subtitle Sync & Garbled Text — SETLOG"><meta property="og:description" content="자막 싱크 어긋남과 EUC-KR 한글 깨짐의 원인과 해결 방법. How to fix subtitle timing offset and garbled-text encoding problems."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/subtitle-sync-and-encoding-fixes">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Subtitle fixes</p>
+<main class="article">
+  <h1>자막 싱크·깨짐 문제 해결법</h1>
+  <p class="sub">Fixing subtitle sync and garbled-text problems</p>
+  <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+
+  <section id="ko" lang="ko">
+
+<h2>자막 문제는 크게 두 종류입니다</h2>
+<p>영상을 보다가 자막이 이상하다면 원인은 대개 둘 중 하나입니다. 하나는 싱크 문제로, 자막은 정상적으로 읽히는데 대사와 타이밍이 맞지 않는 경우입니다. 다른 하나는 인코딩 문제로, 글자가 물음표나 알 수 없는 기호로 깨져 나오는 경우입니다. 두 문제는 원인도 해결법도 다르기 때문에 먼저 어느 쪽인지 구분하는 것이 중요합니다. 이 글에서는 각각의 원인을 짚고, 직접 확인하고 고치는 방법을 순서대로 설명합니다.</p>
+
+<h2>1부. 싱크 문제</h2>
+<h3>싱크가 어긋나는 흔한 원인</h3>
+<ul>
+<li><strong>일정한 오프셋</strong>: 영상 시작 부분의 로고나 광고가 있고 없고의 차이로 자막 전체가 같은 시간만큼 빠르거나 늦습니다. 가장 쉽게 고칠 수 있는 유형입니다.</li>
+<li><strong>프레임레이트 불일치</strong>: 자막이 24fps 기준으로 만들어졌는데 영상이 25fps나 23.976fps라면 시간이 지날수록 어긋남이 커집니다. 처음에는 맞다가 끝으로 갈수록 벌어지는 것이 특징입니다.</li>
+<li><strong>다른 판본(컷)</strong>: 극장판과 확장판, 방송본과 디스크본처럼 편집이 다르면 중간에 장면이 추가되거나 빠져서 어느 구간부터 갑자기 어긋납니다. 이 경우 단순한 오프셋 조정으로는 해결되지 않습니다.</li>
+</ul>
+<h3>어긋남을 정확히 측정하는 방법</h3>
+<ol>
+<li>영상의 앞부분에서 첫 대사가 나오는 지점을 찾습니다. 자막이 그 대사보다 얼마나 빠르거나 늦은지 눈으로 확인합니다.</li>
+<li>영상의 뒷부분에서도 같은 방법으로 확인합니다. 두 지점의 어긋남이 같다면 일정한 오프셋이고, 다르다면 프레임레이트나 판본 문제입니다.</li>
+<li>어긋남이 일정하면 그 값을 기억해 두었다가 보정값으로 씁니다.</li>
+<li>값이 점점 커진다면 프레임레이트 변환이 가능한 자막 편집 도구에서 프레임레이트를 맞춰야 합니다.</li>
+</ol>
+<h3>0.1초 단위로 조정하기</h3>
+<p>대부분의 플레이어는 재생 중 자막 싱크를 앞뒤로 옮길 수 있습니다. slplayer는 0.1초 단위로 조정할 수 있습니다. 요령은 한 번에 큰 값을 넣지 않는 것입니다. 한 문장을 기준으로 0.5초 정도 옮겨 보고, 입 모양이 아니라 소리가 시작되는 순간과 자막이 뜨는 순간을 비교하며 0.1초씩 다듬으세요. 영상 앞부분에서 맞췄다면 뒷부분에서도 한 번 확인해야 합니다. 앞에서는 맞는데 뒤에서 어긋난다면 프레임레이트 문제를 의심하세요.</p>
+
+<h2>2부. 글자 깨짐 문제</h2>
+<h3>왜 한글이 깨지는가</h3>
+<p>자막 파일은 글자를 숫자로 저장하는 방식(인코딩)이 정해져 있습니다. 한국어 자막은 오랫동안 EUC-KR(CP949) 방식으로 저장된 파일이 많았고, 최근 파일은 대부분 UTF-8을 씁니다. 플레이어가 파일의 인코딩을 잘못 추측하면 같은 바이트가 엉뚱한 글자로 해석되어 깨집니다. 자막 내용이 잘못된 것이 아니라 읽는 방식이 어긋난 것이므로 파일 자체를 고칠 수 있습니다.</p>
+<h3>형식별 특징: SMI, SRT, VTT</h3>
+<ul>
+<li><strong>SMI(.smi)</strong>: 한국에서 오래 쓰인 HTML 비슷한 형식입니다. 한 파일에 여러 언어를 넣을 수 있고 EUC-KR로 저장된 경우가 많습니다.</li>
+<li><strong>SRT(.srt)</strong>: 번호, 시간, 텍스트로 이루어진 가장 단순하고 널리 호환되는 형식입니다.</li>
+<li><strong>VTT(.vtt)</strong>: 웹 영상에서 쓰는 형식으로 UTF-8이 기본입니다.</li>
+</ul>
+<h3>깨졌을 때 해결 순서</h3>
+<ol>
+<li>다른 플레이어나 텍스트 편집기에서 자막 파일을 열어 글자가 보이는지 확인합니다. 편집기에서 인코딩을 바꿔 열 수 있다면 EUC-KR과 UTF-8을 번갈아 선택해 읽히는 쪽을 찾습니다.</li>
+<li>읽히는 인코딩을 찾으면 UTF-8로 다시 저장합니다. 이렇게 하면 대부분의 플레이어에서 문제가 없습니다.</li>
+<li>저장할 때 원본 파일은 반드시 따로 보관하세요.</li>
+<li>인코딩을 자동 감지하는 플레이어를 쓰면 이 과정을 건너뛸 수 있는 경우가 많습니다. slplayer는 EUC-KR 한글 SMI를 자동 인식합니다.</li>
+</ol>
+
+<h2>3부. 외부 자막과 내장 자막</h2>
+<p>자막은 영상 파일 안에 들어 있는 내장 자막과 별도 파일인 외부 자막으로 나뉩니다. 내장 자막은 파일을 옮길 때 함께 움직이고 싱크가 영상에 맞춰져 있다는 장점이 있습니다. 반면 이미지 형식 자막은 일부 플레이어에서 표시되지 않을 수 있습니다. 외부 자막은 교체와 수정이 쉽지만, 영상 판본과 맞지 않을 위험이 있습니다. 외부 자막을 쓸 때는 영상과 같은 이름으로 같은 폴더에 두는 것이 가장 단순한 관리법입니다.</p>
+
+<h2>이중 자막을 학습에 활용하기</h2>
+<p>두 언어 자막을 동시에 띄우면 어학 학습에 도움이 됩니다. 예를 들어 영어 자막을 위에, 한국어 자막을 아래에 두고 영어 문장의 표현이 어떻게 번역되었는지 비교합니다. 모르는 표현이 나오면 일시정지하고 구간을 다시 들어 봅니다. 두 자막은 각각 싱크가 다를 수 있으므로 한쪽을 먼저 맞춘 다음 다른 쪽을 조정하세요. 번역 자막은 의역이 많으니 직역이라고 믿지 말고 참고 자료로 쓰세요. slplayer는 SRT, VTT, SMI를 지원하며 이중 자막 표시와 0.1초 싱크 조정이 가능한 Mac용 플레이어로, 자세한 사용법은 <a href="/guides/slplayer">slplayer 사용 가이드</a>에 있습니다. 다른 플레이어에도 비슷한 기능이 있으니 쓰던 도구로 같은 방법을 적용해도 됩니다.</p>
+
+<h2>자막 파일 관리 요령</h2>
+<ul>
+<li>영상과 자막의 파일 이름을 같게 맞추고 언어 코드를 덧붙입니다. 예를 들어 영화.ko.srt, 영화.en.srt처럼 구분하면 헷갈리지 않습니다.</li>
+<li>싱크를 맞춘 자막은 보정값을 파일 이름이나 메모에 적어 두세요.</li>
+<li>출처가 불분명한 자막 파일은 영상과 판본이 맞는지 앞뒤 두 지점에서 먼저 확인합니다.</li>
+<li>자막과 영상은 본인이 이용 권한을 가진 것만 쓰세요. 이 글은 일반적인 안내이며 법률 자문이 아닙니다.</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<h3>자막이 전부 같은 시간만큼 늦는데 어떻게 하나요?</h3>
+<p>일정한 오프셋입니다. 플레이어의 싱크 조정으로 같은 값만큼 앞당기면 됩니다.</p>
+<h3>처음엔 맞다가 갈수록 벌어집니다.</h3>
+<p>프레임레이트 불일치일 가능성이 높습니다. 자막 편집 도구에서 프레임레이트를 변환하거나 영상에 맞는 자막을 다시 구하세요.</p>
+<h3>글자가 물음표로 나옵니다.</h3>
+<p>인코딩 문제입니다. 인코딩을 바꿔 열어 보고 UTF-8로 저장하거나 자동 감지를 지원하는 플레이어를 쓰세요.</p>
+<h3>특정 장면부터 갑자기 어긋납니다.</h3>
+<p>영상과 자막의 판본이 다른 경우입니다. 같은 판본의 자막을 찾는 것이 가장 확실합니다.</p>
+<h3>더 도움이 필요하면요?</h3>
+<p><a href="/support">지원 페이지</a>를 이용하세요.</p>
+
+  </section>
+  <section id="en" lang="en" class="lang-ko">
+
+<h2>Subtitle problems come in two kinds</h2>
+<p>When subtitles look wrong while you watch, the cause is almost always one of two things. The first is a sync problem: the text reads fine but the timing does not match the dialogue. The second is an encoding problem: the characters show up as question marks or strange symbols. The two have different causes and different fixes, so the first step is deciding which one you have. This article explains each cause and walks through how to check and fix it yourself.</p>
+
+<h2>Part 1: Sync problems</h2>
+<h3>Common causes of drift</h3>
+<ul>
+<li><strong>A constant offset</strong>: a logo or intro is present in one version of the video and missing in another, so every subtitle is early or late by the same amount. This is the easiest kind to fix.</li>
+<li><strong>Frame-rate mismatch</strong>: the subtitles were timed for 24 fps but the video runs at 25 fps or 23.976 fps. The error grows over time, so lines match at the start and drift further apart toward the end.</li>
+<li><strong>Different cuts</strong>: theatrical versus extended editions, or broadcast versus disc releases, have scenes added or removed, so the subtitles go wrong from a certain point onward. A simple offset cannot repair this.</li>
+</ul>
+<h3>Measuring the offset accurately</h3>
+<ol>
+<li>Find the first line of dialogue near the start of the video and note how early or late its subtitle appears.</li>
+<li>Do the same near the end of the video. If the error is the same in both places it is a constant offset; if it differs, suspect frame rate or a different cut.</li>
+<li>For a constant offset, remember the value and use it as the correction.</li>
+<li>If the error keeps growing, you need a subtitle editing tool that can convert the frame rate to match your video.</li>
+</ol>
+<h3>Adjusting in 0.1-second steps</h3>
+<p>Most players let you shift subtitle timing while the video plays, and slplayer does it in 0.1-second steps. The trick is not to type a large value at once. Take one sentence, shift by about half a second, then fine-tune by 0.1 seconds, comparing the moment the voice starts with the moment the text appears rather than watching lip movement. After matching the early part, check the late part as well. If it fits early but not late, think frame rate.</p>
+
+<h2>Part 2: Garbled characters</h2>
+<h3>Why Korean text breaks</h3>
+<p>A subtitle file stores letters as numbers using an encoding. Korean subtitles were long saved in EUC-KR (CP949), while newer files mostly use UTF-8. When a player guesses the encoding wrongly, the same bytes are read as the wrong characters and the text turns to garbage. The content is not damaged; it is being read the wrong way, which means the file itself can be repaired.</p>
+<h3>Format differences: SMI, SRT, VTT</h3>
+<ul>
+<li><strong>SMI (.smi)</strong>: an HTML-like format used widely in Korea for many years. One file can hold several languages and it is often saved in EUC-KR.</li>
+<li><strong>SRT (.srt)</strong>: the simplest and most widely compatible format, built from an index, a time range, and text.</li>
+<li><strong>VTT (.vtt)</strong>: the format used for web video, with UTF-8 as the default.</li>
+</ul>
+<h3>Fixing it, step by step</h3>
+<ol>
+<li>Open the subtitle file in another player or a text editor and see whether the text is readable. If the editor lets you reopen with a chosen encoding, try EUC-KR and UTF-8 in turn and keep the one that reads correctly.</li>
+<li>Once you find the readable encoding, save the file again as UTF-8. Most players handle that without trouble.</li>
+<li>Always keep the original file as a backup before saving.</li>
+<li>A player that detects encodings automatically often lets you skip this process. slplayer automatically recognizes Korean SMI files saved in EUC-KR.</li>
+</ol>
+
+<h2>Part 3: External versus embedded subtitles</h2>
+<p>Subtitles are either embedded inside the video file or provided as a separate external file. Embedded subtitles travel with the video and are already timed to it. However, image-based embedded subtitles may not display in some players. External subtitles are easy to swap and edit, but they risk not matching your video release. The simplest way to manage external subtitles is to keep them in the same folder with the same base name as the video.</p>
+
+<h2>Using dual subtitles for study</h2>
+<p>Showing two subtitle languages at once is a useful study technique. Put the English track on top and the Korean track below, then compare how an English expression was translated. When you meet an unfamiliar phrase, pause and replay the section. Because each track may have its own timing, align one first and then adjust the other. Translated subtitles often paraphrase, so treat them as a reference rather than a literal translation. slplayer is a Mac player that supports SRT, VTT, and SMI with dual subtitle display and 0.1-second sync adjustment, and the <a href="/guides/slplayer">slplayer guide</a> explains how to use it. Other players have similar features, so you can apply the same method with whatever you already use.</p>
+
+<h2>Keeping subtitle files tidy</h2>
+<ul>
+<li>Give the video and subtitle the same base name and add a language code, such as movie.ko.srt and movie.en.srt, so they are never confused.</li>
+<li>Write the correction value that worked in the file name or a note.</li>
+<li>For a subtitle of unknown origin, check at two points, early and late, to see whether it matches your release.</li>
+<li>Use only videos and subtitles you have the right to use. This is general guidance, not legal advice.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>Every line is late by the same amount. What should I do?</h3>
+<p>That is a constant offset. Use the player's sync adjustment to move everything earlier by the same value.</p>
+<h3>It fits at first but drifts further apart.</h3>
+<p>That is likely a frame-rate mismatch. Convert the frame rate in a subtitle editor or find subtitles that match your video.</p>
+<h3>The text shows as question marks.</h3>
+<p>That is an encoding problem. Reopen with a different encoding and save as UTF-8, or use a player with automatic detection.</p>
+<h3>It goes wrong from a particular scene onward.</h3>
+<p>The video and subtitle are from different cuts. Finding a subtitle made for the same release is the most reliable fix.</p>
+<h3>Where can I get more help?</h3>
+<p>Use the <a href="/support">support page</a>.</p>
+
+  </section>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
+<li><a href="/guides/slplayer">slplayer 사용 가이드 · slplayer Guide</a></li>
+<li><a href="/guides/stem-separation-practice-guide">악기 연습용 스템 분리 활용법 · Stem separation practice</a></li>
+<li><a href="/support">Support · 지원</a></li>
+  </ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>

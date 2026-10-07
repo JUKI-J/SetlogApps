@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>여러 Claude Code 세션을 동시에 관리하는 법 | Managing Multiple Claude Code Sessions — SETLOG</title>
+<meta name="description" content="여러 Claude Code 세션을 동시에 돌릴 때의 작업 분리, 알림, 좀비 프로세스 확인, worktree 활용 팁. Practical workflow for parallel Claude Code sessions.">
+<link rel="canonical" href="https://setlog.net/guides/monitor-claude-code-sessions">
+<meta property="og:title" content="여러 Claude Code 세션을 동시에 관리하는 법 | Managing Multiple Claude Code Sessions — SETLOG"><meta property="og:description" content="여러 Claude Code 세션을 동시에 돌릴 때의 작업 분리, 알림, 좀비 프로세스 확인, worktree 활용 팁. Practical workflow for parallel Claude Code sessions."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/monitor-claude-code-sessions">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Managing multiple Claude Code sessions</p>
+<main class="article">
+  <h1>여러 Claude Code 세션을 동시에 관리하는 법</h1>
+  <p class="sub">Managing multiple Claude Code sessions at once</p>
+  <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+
+  <section id="ko" lang="ko">
+  <h2>왜 세션 관리가 문제가 되는가</h2>
+  <p>Claude Code에 익숙해지면 자연스럽게 터미널 창이 늘어납니다. 한쪽에서는 테스트를 고치게 하고, 다른 쪽에서는 문서를 정리하게 하고, 또 다른 쪽에서는 리팩터링 계획을 세우게 합니다. 이렇게 병렬로 일하면 처리량은 늘지만, 대가로 주의력이 분산됩니다. 어떤 세션이 무슨 일을 하고 있는지 잊어버리고, 끝난 줄 모르고 방치하고, 두 세션이 같은 파일을 동시에 고쳐 충돌을 일으키기도 합니다. 이 글은 그런 혼란을 줄이기 위한 실용적인 습관을 정리한 것입니다.</p>
+
+  <h2>1. 세션 하나에 작업 하나</h2>
+  <p>가장 효과가 큰 규칙은 한 세션에 한 가지 목적만 주는 것입니다. 버그 수정, 기능 추가, 코드 리뷰를 한 세션에 섞으면 대화가 길어지고, 앞선 맥락이 뒤 작업을 방해합니다. 작업이 끝나면 그 세션은 닫고, 다음 작업은 새 세션에서 시작하세요. 이어서 하고 싶다면 Claude Code의 세션 재개 기능을 쓸 수 있지만, 목적이 달라졌다면 새로 시작하는 편이 대체로 깔끔합니다.</p>
+
+  <h2>2. 이름과 위치로 구분하기</h2>
+  <p>Claude Code가 제공하는 기능에만 기대지 말고 터미널 쪽에서 구분 장치를 만드세요. 탭이나 창 제목에 작업 이름을 붙이고, 가능하면 프로젝트(또는 브랜치)마다 별도 디렉터리에서 실행합니다. "tab 3이 뭘 하던 거였지?"라는 질문이 사라지는 것만으로도 전환 비용이 크게 줄어듭니다. 작업을 시작하며 첫 프롬프트에 목표와 완료 기준을 한 줄로 적어 두면, 나중에 화면을 봤을 때 맥락을 복원하기도 쉽습니다.</p>
+
+  <h2>3. 같은 파일을 두 세션이 건드리지 않게 하기: worktree</h2>
+  <p>여러 세션이 같은 저장소의 같은 작업 폴더에서 일하면 서로의 수정을 덮어쓰거나 반쯤 끝난 변경을 읽게 됩니다. Git의 worktree 기능은 하나의 저장소에서 브랜치마다 별도 작업 폴더를 만들어 주므로 이 문제의 정석적인 해법입니다. 예를 들어 git worktree add ../myapp-fix-login fix-login 같은 명령으로 폴더를 만들고, 그 폴더에서 Claude Code를 실행하면 두 세션이 물리적으로 다른 파일을 다룹니다. 작업이 끝나면 브랜치를 병합하고 git worktree remove로 정리합니다. 병렬 작업은 가능하면 서로 다른 파일을 건드리는 단위로 쪼개는 것이 좋고, 같은 파일을 고쳐야 한다면 순서를 정해 한 세션씩 진행하는 편이 안전합니다.</p>
+
+  <h2>4. 긴 작업이 끝났음을 놓치지 않기</h2>
+  <p>병렬 작업의 이점은 기다리는 동안 다른 일을 할 수 있다는 것인데, 끝났는지 확인하려고 계속 창을 오가면 그 이점이 사라집니다. 몇 가지 선택지가 있습니다.</p>
+  <ul>
+    <li>Claude Code의 훅(hooks) 기능으로 응답이 끝날 때나 알림이 필요할 때 사용자 정의 명령(예: 시스템 알림 띄우기)을 실행하도록 설정할 수 있습니다. 정확한 설정 방법은 공식 문서를 확인하세요.</li>
+    <li>터미널 앱 자체의 벨·알림 기능을 켜 두는 방법도 있습니다.</li>
+    <li>프로세스 상태를 밖에서 지켜보는 별도 도구를 쓰는 방법이 있습니다. 예를 들어 오픈소스 앱 <a href="/guides/claudeminer">ClaudeMiner</a>는 실행 중인 Claude Code 프로세스를 캐릭터로 보여 주고 macOS에서 작업 완료 알림을 줍니다.</li>
+  </ul>
+  <p>어떤 방법이든 "끝났다"를 판단하는 기준이 완벽하지 않다는 점은 기억하세요. CPU 사용률처럼 간접 지표에 기대는 도구는 응답을 기다리는 순간을 휴식으로 오인할 수 있습니다. 중요한 작업은 알림을 받은 뒤 결과를 직접 확인하세요.</p>
+
+  <h2>5. 멈춘 세션과 좀비 프로세스 알아보기</h2>
+  <p>세션이 오래 반응이 없을 때는 먼저 정말 멈춘 것인지 확인합니다. 큰 작업이나 느린 명령을 실행 중일 수 있기 때문입니다. 출력이 더 나오지 않고 CPU도 계속 바닥이면 입력 대기 상태이거나 멈춘 것일 수 있습니다. 한편 터미널 창을 닫았는데도 프로세스가 남는 경우가 있습니다. 연결된 터미널(TTY)이 없는 프로세스는 아무도 볼 수 없으므로 자원만 쓰는 고아가 되기 쉽습니다. macOS나 리눅스에서는 ps 명령으로 프로세스의 TTY 열을 확인해 이런 프로세스를 찾을 수 있고, 확신이 있을 때만 종료하세요. 종료 전에 그 프로세스가 진행 중인 작업이 없는지 반드시 확인하는 것이 좋습니다.</p>
+
+  <h2>6. 컨텍스트를 작게 유지하기</h2>
+  <p>세션이 길어질수록 대화 기록이 커지고, 응답 품질과 속도 모두에 부담이 됩니다. 작업 하나가 끝나면 세션을 정리하거나 새로 시작하고, 필요하다면 /compact로 대화를 요약해 이어가는 방법이 있습니다. 반복해서 알려 줘야 하는 규칙(빌드 명령, 코딩 규칙 등)은 프로젝트의 CLAUDE.md 파일에 적어 두면 새 세션에서도 매번 다시 설명하지 않아도 됩니다. 문서는 짧게 유지하세요. 긴 지침은 오히려 중요한 규칙을 묻히게 만듭니다.</p>
+
+  <h2>시작용 체크리스트</h2>
+  <ol>
+    <li>세션을 열기 전에 오늘 할 작업을 3개 이하로 적는다.</li>
+    <li>작업마다 별도 브랜치와 worktree 폴더를 만든다.</li>
+    <li>탭 제목에 작업 이름을 붙인다.</li>
+    <li>완료 알림 수단(훅, 터미널 알림, 외부 도구)을 하나 정한다.</li>
+    <li>하루가 끝나면 남은 세션과 낯선 프로세스를 점검한다.</li>
+  </ol>
+
+  <h2>자주 묻는 질문</h2>
+  <h3>동시에 몇 개까지 돌리는 게 좋은가요?</h3>
+  <p>정해진 숫자는 없습니다. 각 결과를 제때 검토할 수 있는 개수가 한계입니다. 검토 대기가 쌓이기 시작하면 이미 너무 많은 것입니다. 보통 두세 개로 시작해 보세요.</p>
+  <h3>한 세션에서 오래 이어가는 것은 나쁜가요?</h3>
+  <p>같은 목적이 이어진다면 괜찮지만, 대화가 길수록 앞의 맥락이 간섭할 수 있습니다. 목적이 바뀌면 새 세션을 권합니다.</p>
+  <h3>worktree는 꼭 필요한가요?</h3>
+  <p>같은 저장소에서 동시에 코드를 고치는 경우에만 필요합니다. 읽기 위주의 조사 세션은 별도 폴더가 없어도 됩니다.</p>
+  <h3>좀비 프로세스를 그냥 둬도 되나요?</h3>
+  <p>대개 큰 문제는 아니지만 CPU와 메모리를 계속 쓸 수 있으니 주기적으로 확인하는 편이 좋습니다.</p>
+  <h3>ClaudeMiner가 꼭 필요한가요?</h3>
+  <p>아닙니다. 훅이나 터미널 알림만으로도 충분할 수 있습니다. 여러 세션을 한 화면에서 시각적으로 보고 싶을 때 고려할 선택지 중 하나입니다.</p>
+  </section>
+
+  <section id="en" lang="en" class="lang-ko">
+  <h2>Why session management becomes a problem</h2>
+  <p>Once you get comfortable with Claude Code, terminal windows multiply. One session fixes tests, another tidies documentation, a third drafts a refactoring plan. Working in parallel raises throughput, but it costs attention. You forget which session is doing what, you leave finished sessions sitting there unnoticed, and sometimes two sessions edit the same file and collide. This article collects practical habits that reduce that confusion.</p>
+
+  <h2>1. One task per session</h2>
+  <p>The highest-impact rule is to give each session a single purpose. Mixing a bug fix, a new feature and a code review in one session makes the conversation long, and earlier context starts to interfere with later work. When a task is done, close the session and start the next task in a fresh one. Claude Code can resume earlier sessions, but if the goal has changed, starting clean is usually tidier.</p>
+
+  <h2>2. Distinguish sessions by name and location</h2>
+  <p>Do not rely only on what Claude Code provides; build cues on the terminal side. Put the task name in the tab or window title, and where possible run each project or branch from its own directory. Removing the question "what was tab 3 doing?" cuts switching cost noticeably. Writing the goal and a completion criterion in one line in your first prompt also makes it easier to rebuild context when you look at the screen later.</p>
+
+  <h2>3. Keep two sessions off the same files: worktrees</h2>
+  <p>When several sessions work in the same folder of the same repository, they can overwrite each other or read half-finished changes. Git worktrees give each branch its own working folder from a single repository, which is the standard fix. For example, a command such as git worktree add ../myapp-fix-login fix-login creates a folder, and running Claude Code inside it means the two sessions touch physically different files. When the work is finished, merge the branch and clean up with git worktree remove. Split parallel work into units that touch different files where you can; if two tasks must change the same file, run them one after another.</p>
+
+  <h2>4. Do not miss the end of a long task</h2>
+  <p>The benefit of parallel work is doing something else while you wait, and that disappears if you keep flipping between windows to check. There are several options.</p>
+  <ul>
+    <li>Claude Code supports hooks, which let you run a custom command (for example, show a system notification) at certain events such as when a response finishes or when attention is needed. Check the official documentation for the exact configuration.</li>
+    <li>Turn on the bell or notification features of your terminal app.</li>
+    <li>Use a separate tool that watches processes from outside. For example, the open-source app <a href="/guides/claudeminer">ClaudeMiner</a> shows running Claude Code processes as characters and sends task-completion notifications on macOS.</li>
+  </ul>
+  <p>Whichever you pick, remember that no signal for "finished" is perfect. A tool that relies on an indirect measure such as CPU usage can mistake a wait for a network response for idleness. For important work, check the result yourself after the notification arrives.</p>
+
+  <h2>5. Recognizing hung sessions and zombie processes</h2>
+  <p>When a session has been silent for a long time, first confirm that it is really stuck, since it may be running a large job or a slow command. If no output appears and CPU stays near zero, it may be waiting for input or stalled. Separately, a process can remain after you close its terminal window. A process with no controlling terminal (TTY) cannot be seen by anyone and easily becomes an orphan that only consumes resources. On macOS or Linux you can look at the TTY column of the ps command to find such processes, and you should terminate one only when you are sure. Always confirm it has no work in progress first.</p>
+
+  <h2>6. Keep context small</h2>
+  <p>As a session grows, the conversation history becomes heavier, which affects both quality and speed. When a task is done, wrap up or restart the session, and if you want to continue, /compact can summarize the conversation. Rules you would otherwise repeat (build commands, coding conventions) belong in the project CLAUDE.md file so new sessions pick them up without re-explaining. Keep that file short; long instructions tend to bury the rules that matter.</p>
+
+  <h2>A starter checklist</h2>
+  <ol>
+    <li>Before opening sessions, write down no more than three tasks for the day.</li>
+    <li>Create a separate branch and worktree folder for each task.</li>
+    <li>Put the task name in each tab title.</li>
+    <li>Choose one completion-alert method: hooks, terminal notifications or an external tool.</li>
+    <li>At the end of the day, review leftover sessions and unfamiliar processes.</li>
+  </ol>
+
+  <h2>FAQ</h2>
+  <h3>How many sessions should I run at once?</h3>
+  <p>There is no fixed number. The limit is how many results you can review on time. When review work starts piling up, you already have too many. Starting with two or three is reasonable.</p>
+  <h3>Is it bad to keep one session going for a long time?</h3>
+  <p>It is fine if the purpose stays the same, but the longer the conversation, the more earlier context can interfere. When the goal changes, a new session is recommended.</p>
+  <h3>Do I really need worktrees?</h3>
+  <p>Only when sessions edit code in the same repository at the same time. Read-only research sessions do not need separate folders.</p>
+  <h3>Can I just leave zombie processes alone?</h3>
+  <p>Usually it is not a serious problem, but they may keep using CPU and memory, so a periodic check is a good habit.</p>
+  <h3>Do I need ClaudeMiner?</h3>
+  <p>No. Hooks or terminal notifications may be enough. It is one option to consider if you want to see several sessions visually in one place.</p>
+  </section>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul>
+    <li><a href="/guides/claudeminer">ClaudeMiner 사용 가이드 · ClaudeMiner Guide</a></li>
+    <li><a href="/support">Support · 지원</a></li>
+  </ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>

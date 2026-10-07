@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZIP RAR 7z 압축 포맷 차이 | Archive Formats Explained — SETLOG</title>
+<meta name="description" content="ZIP, RAR, 7z, tar.gz의 차이와 압축·암호화의 구분, 분할 압축, 암호 압축 모범 사례를 정리했습니다. ZIP, RAR, 7z and tar compared.">
+<link rel="canonical" href="https://setlog.net/guides/zip-rar-7z-archive-formats-explained">
+<meta property="og:title" content="ZIP RAR 7z 압축 포맷 차이 | Archive Formats Explained — SETLOG"><meta property="og:description" content="ZIP, RAR, 7z, tar.gz의 차이와 압축·암호화의 구분, 분할 압축, 암호 압축 모범 사례를 정리했습니다. ZIP, RAR, 7z and tar compared."><meta property="og:type" content="article"><meta property="og:url" content="https://setlog.net/guides/zip-rar-7z-archive-formats-explained">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641985249796016" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="/#apps">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Archive formats explained</p>
+<main class="article">
+  <h1>ZIP·RAR·7z·tar 압축 포맷 한눈에 이해하기</h1>
+  <p class="sub">ZIP, RAR, 7z and tar explained: formats, encryption and split archives</p>
+  <p class="lang-switch"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+  
+  <section id="ko" lang="ko">
+
+<h2>압축 파일이란 무엇인가</h2>
+<p>압축 파일(아카이브)은 두 가지 일을 합니다. 하나는 여러 파일과 폴더를 하나로 묶는 것이고, 다른 하나는 데이터를 더 작게 줄이는 것입니다. 포맷마다 이 두 역할을 분담하는 방식이 다릅니다. ZIP처럼 묶기와 줄이기를 한 번에 하는 포맷도 있고, tar처럼 묶기만 하고 줄이기는 gzip 같은 다른 도구에 맡기는 포맷도 있습니다. 포맷 이름만 외우기보다 이 구분을 알고 있으면 확장자가 낯설어도 대략 어떤 성질인지 짐작할 수 있습니다.</p>
+
+<h2>주요 포맷 비교</h2>
+<h3>ZIP</h3>
+<p>가장 널리 쓰이는 포맷입니다. 윈도우, 맥, 아이폰의 파일 앱, 대부분의 안드로이드 파일 관리 앱이 기본 수준에서 다룹니다. 파일을 하나씩 따로 압축하기 때문에 한 파일만 빠르게 꺼낼 수 있다는 장점이 있습니다. 압축률은 7z보다 대체로 낮습니다. 받는 사람의 환경을 모를 때 가장 무난한 선택입니다.</p>
+<h3>7z</h3>
+<p>오픈 포맷이며 LZMA 계열 알고리즘으로 같은 자료를 더 작게 만드는 경우가 많습니다. 파일 여러 개를 하나의 덩어리로 묶어 압축하는 "솔리드" 방식을 쓰면 비슷한 파일이 많을수록 유리하지만, 일부만 꺼낼 때 앞부분을 함께 풀어야 해서 느려질 수 있습니다. 최근 윈도우 11은 7z도 열 수 있지만, 구버전 환경에서는 별도 도구가 필요할 수 있습니다.</p>
+<h3>RAR</h3>
+<p>높은 압축률과 복구 정보 기능으로 알려진 독점 포맷입니다. 만드는 쪽은 WinRAR 같은 정식 도구가 필요하고, 푸는 쪽은 여러 도구가 지원합니다. 받을 일은 많아도 직접 만들 일은 드문 포맷이라고 보면 됩니다.</p>
+<h3>tar, gz, bz2, xz</h3>
+<p>리눅스와 개발 환경에서 자주 보는 계열입니다. tar는 묶기만 하고, 그 위에 gzip(.tar.gz), bzip2(.tar.bz2), xz(.tar.xz)를 입혀 줄입니다. 권한 정보 같은 유닉스 속성을 보존하는 데 강합니다. 윈도우 일반 사용자에게는 낯설어서, 받는 사람이 누구인지 먼저 따져야 합니다.</p>
+<h3>LZH, ALZ, EGG</h3>
+<p>일본이나 한국에서 한때 널리 쓰인 포맷들로, 지금은 받아서 풀기만 하는 경우가 대부분입니다. 풀 수 있는 도구가 제한적이므로 오래된 자료를 열 때 만나게 됩니다.</p>
+
+<h2>압축과 암호화는 별개다</h2>
+<p>압축은 크기를 줄이는 것이고, 암호화는 내용을 숨기는 것입니다. 포맷에 따라 두 기능이 한 화면에서 같이 설정되지만 원리는 별개입니다. 암호를 건다고 해서 파일이 더 작아지지 않으며, 압축했다고 해서 안전해지지도 않습니다.</p>
+<ul>
+<li>ZIP의 전통적 암호 방식(ZipCrypto)은 오래되어 취약한 것으로 알려져 있습니다. 중요한 자료라면 AES-256을 지원하는 방식을 고르세요. 단, 일부 구형 도구는 AES 방식 ZIP을 열지 못할 수 있으므로 받는 사람의 환경을 확인해야 합니다.</li>
+<li>ZIP은 암호를 걸어도 파일 이름 목록은 보일 수 있습니다. 7z는 "헤더 암호화" 옵션으로 파일명까지 숨길 수 있습니다.</li>
+<li>암호 자체가 약하면 암호화 방식이 강해도 소용이 없습니다. 길고 추측하기 어려운 문구를 쓰세요.</li>
+</ul>
+
+<h2>암호 압축 파일 모범 사례</h2>
+<ol>
+<li>암호는 압축 파일을 보낸 경로와 다른 경로로 전달하세요. 같은 메신저에 파일과 암호를 함께 올리면 의미가 줄어듭니다.</li>
+<li>다른 사이트에서 쓰는 암호를 재사용하지 마세요.</li>
+<li>받는 사람이 열 수 있는 방식인지 한 번 확인하세요(AES ZIP인지, 7z인지).</li>
+<li>보낸 뒤에 원본 폴더의 임시 복사본을 정리하세요.</li>
+<li>암호를 잊으면 복구할 방법이 사실상 없다는 점을 기억하세요. 안전한 곳에 기록해 두세요.</li>
+</ol>
+
+<h2>분할 압축</h2>
+<p>용량 제한이 있는 곳으로 보내야 할 때 큰 아카이브를 여러 조각으로 나눕니다. 이름은 .zip.001, .z01, .part1.rar처럼 다양합니다. 받을 때는 모든 조각을 같은 폴더에 두고 첫 번째 조각(또는 마지막 .zip 조각)을 열어야 합니다. 이름을 바꾸거나 하나라도 빠지면 풀리지 않고, 일부만 받은 상태에서 풀면 오류가 납니다. 요즘은 클라우드 링크로 큰 파일을 통째로 보내는 일이 많아 분할 압축의 필요가 줄었지만, 용량 제한이 있는 환경에서는 여전히 유효합니다.</p>
+
+<h2>언제 무엇을 쓸까</h2>
+<ul>
+<li>누구에게 보낼지 모른다: ZIP</li>
+<li>용량이 가장 중요하다: 7z (받는 쪽이 열 수 있는지 확인)</li>
+<li>리눅스 서버나 개발 파일: tar.gz 또는 tar.xz</li>
+<li>민감한 자료: AES-256 방식, 파일명까지 숨기려면 7z 헤더 암호화</li>
+<li>사진·동영상: 이미 압축된 형식이라 아카이브로 묶어도 크기는 거의 줄지 않으므로, 묶는 목적일 때만 쓰세요.</li>
+</ul>
+
+<h2>폰에서 압축 파일 다루기</h2>
+<p>아이폰의 파일 앱은 ZIP을 풀고 만드는 기능을 기본 제공하지만, RAR나 7z, 암호 압축은 기본 기능으로 처리하기 어렵습니다. 안드로이드는 기기와 파일 관리 앱에 따라 다릅니다. 이런 경우 전용 앱을 쓰게 됩니다. 한 가지 선택지로 아이폰과 맥용 Zipda가 있습니다. 개발 문서상 ZIP, 7z, tar 계열을 압축·해제하고 RAR, LZH, ALZ를 해제하며, 한글 파일명 인코딩을 감지하고 분할 세트를 열 수 있습니다. 자세한 내용은 <a href="/guides/zipda">Zipda 사용 가이드</a>에 있습니다. 어떤 앱을 쓰든 출처를 모르는 압축 파일은 풀기 전에 신뢰할 수 있는지 먼저 판단하세요.</p>
+
+<h2>문제 해결</h2>
+<h3>파일명이 깨져 보인다</h3>
+<p>압축한 쪽이 지역 인코딩으로 이름을 저장했기 때문일 수 있습니다. 인코딩을 감지하거나 직접 선택해 주는 도구를 쓰세요.</p>
+<h3>"손상된 아카이브"라고 나온다</h3>
+<p>다운로드가 중간에 끊겼거나 분할 조각이 빠졌을 가능성이 큽니다. 크기를 확인하고 다시 받으세요.</p>
+<h3>암호가 맞는데 열리지 않는다</h3>
+<p>해당 도구가 그 암호 방식(AES 등)을 지원하는지 확인하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. ZIP과 7z 중 무엇이 더 좋은가요?</h3>
+<p>호환성은 ZIP, 크기는 보통 7z가 유리합니다. 받는 사람이 누구인지에 따라 정하세요.</p>
+<h3>Q. 압축하면 보안이 되나요?</h3>
+<p>아닙니다. 암호를 걸어야 하고, 방식도 중요합니다.</p>
+<h3>Q. 압축 파일을 여러 번 압축하면 더 작아지나요?</h3>
+<p>대개 아닙니다. 이미 압축된 데이터는 거의 줄지 않습니다.</p>
+<h3>Q. RAR를 폰에서 만들 수 있나요?</h3>
+<p>라이선스상 대부분의 앱은 RAR 생성을 하지 못하고 해제만 합니다. 보낼 때는 ZIP이나 7z를 쓰세요.</p>
+<h3>Q. 도움이 필요하면요?</h3>
+<p><a href="/support">지원 페이지</a>를 확인해 주세요.</p>
+
+  </section>
+  <section id="en" lang="en" class="lang-ko">
+
+<h2>What an archive actually does</h2>
+<p>An archive does two jobs. One is bundling many files and folders into a single file; the other is making the data smaller. Formats divide these jobs differently. ZIP does both at once, while tar only bundles and leaves shrinking to another tool such as gzip. Knowing this split lets you guess the nature of an unfamiliar extension instead of memorizing names.</p>
+
+<h2>The main formats compared</h2>
+<h3>ZIP</h3>
+<p>The most widely used format. Windows, macOS, the iPhone Files app and most Android file managers handle it at a basic level. Because each file is compressed separately, pulling out one file is quick. Compression is generally weaker than 7z. It is the safest choice when you do not know the recipient's environment.</p>
+<h3>7z</h3>
+<p>An open format using LZMA-family algorithms that often produces smaller output. Its solid mode compresses many files as one block, which helps when files are similar but can make extracting a single file slower. Recent Windows 11 builds can open 7z, but older setups may need an extra tool.</p>
+<h3>RAR</h3>
+<p>A proprietary format known for strong compression and recovery records. Creating it needs official tools such as WinRAR, while many programs can extract it. You will receive RAR files far more often than you create them.</p>
+<h3>tar, gz, bz2, xz</h3>
+<p>Common in Linux and developer workflows. tar only bundles; gzip (.tar.gz), bzip2 (.tar.bz2) or xz (.tar.xz) is layered on top to shrink it. It is good at preserving Unix attributes such as permissions. It is unfamiliar to many Windows users, so consider the recipient first.</p>
+<h3>LZH, ALZ, EGG</h3>
+<p>Formats that were popular in Japan and Korea for a while. Today you mostly meet them when opening old material, and few tools can extract them.</p>
+
+<h2>Compression and encryption are separate</h2>
+<p>Compression reduces size; encryption hides content. Some formats let you set both in one dialog, but they work independently. A password does not make a file smaller, and compression does not make it secure.</p>
+<ul>
+<li>The traditional ZIP password scheme (ZipCrypto) is old and known to be weak. For anything important, choose a method that supports AES-256. Some older tools cannot open AES-protected ZIP files, so check the recipient's software.</li>
+<li>A password-protected ZIP may still reveal its list of filenames. 7z has a header-encryption option that hides names too.</li>
+<li>A weak password defeats a strong cipher. Use a long, hard-to-guess passphrase.</li>
+</ul>
+
+<h2>Best practices for password-protected archives</h2>
+<ol>
+<li>Send the password through a different channel from the archive. Posting both in the same chat undermines the point.</li>
+<li>Do not reuse a password from another site.</li>
+<li>Confirm that the recipient can open the method you chose (AES ZIP, 7z).</li>
+<li>After sending, clean up temporary copies of the source folder.</li>
+<li>Remember that a forgotten password is effectively unrecoverable. Keep a record somewhere safe.</li>
+</ol>
+
+<h2>Split archives</h2>
+<p>When a destination has a size cap, a large archive is cut into parts. Names vary: .zip.001, .z01, .part1.rar. To extract, put every part in the same folder and open the first part (or, for some ZIP sets, the final .zip part). Renaming a part or losing one makes extraction fail, and trying to extract a partial download produces errors. Cloud links have reduced the need for splitting, but it still matters where size limits apply.</p>
+
+<h2>Which to use when</h2>
+<ul>
+<li>You do not know who will open it: ZIP</li>
+<li>Size matters most: 7z, after checking the recipient can open it</li>
+<li>Linux servers or developer files: tar.gz or tar.xz</li>
+<li>Sensitive material: an AES-256 method, and 7z header encryption if filenames must be hidden</li>
+<li>Photos and videos: they are already compressed, so archiving barely shrinks them; bundle them only for convenience.</li>
+</ul>
+
+<h2>Handling archives on a phone</h2>
+<p>The iPhone Files app can extract and create ZIP files, but RAR, 7z and encrypted archives are harder to handle with built-in features. Android varies by device and file manager. In those cases people turn to a dedicated app. One option on iPhone and Mac is Zipda. According to its development notes it creates and extracts ZIP, 7z and the tar family, extracts RAR, LZH and ALZ, detects Korean and Japanese filename encodings and can open split sets. See the <a href="/guides/zipda">Zipda guide</a> for details. Whatever app you use, decide whether you trust an archive of unknown origin before you extract it.</p>
+
+<h2>Troubleshooting</h2>
+<h3>Filenames look broken</h3>
+<p>The creator may have stored names in a regional encoding. Use a tool that detects or lets you choose the encoding.</p>
+<h3>"Corrupted archive"</h3>
+<p>The download may have been cut off or a split part may be missing. Compare sizes and download again.</p>
+<h3>The password is correct but it will not open</h3>
+<p>Check that your tool supports that encryption method, such as AES.</p>
+
+<h2>FAQ</h2>
+<h3>Q. ZIP or 7z?</h3>
+<p>ZIP wins on compatibility, 7z usually on size. Decide based on the recipient.</p>
+<h3>Q. Does compressing make a file secure?</h3>
+<p>No. You need a password, and the method matters.</p>
+<h3>Q. Does compressing twice make it smaller?</h3>
+<p>Usually not. Already compressed data barely shrinks.</p>
+<h3>Q. Can I create RAR on a phone?</h3>
+<p>Because of licensing, most apps only extract RAR. Use ZIP or 7z when sending.</p>
+<h3>Q. Where can I get help?</h3>
+<p>See the <a href="/support">support page</a>.</p>
+
+  </section>
+
+  <div class="related"><p class="eyebrow">Related · 관련 글</p><ul><li><a href="/guides/zipda">Zipda 사용 가이드 · Zipda guide</a></li><li><a href="/guides/share-files-between-iphone-android-pc">아이폰 ↔ 안드로이드 ↔ PC 파일 옮기는 법 · Moving files between devices</a></li><li><a href="/support">Support · 지원</a></li></ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>
