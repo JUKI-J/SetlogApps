@@ -62,3 +62,49 @@ section.block{margin-top:44px}
 @media (max-width:480px){h1{font-size:28px}.article h2{font-size:20px}}
 .site-footer{display:block}
 .site-header{display:flex}
+
+/* ---- guide upgrade: toc, tables, figures, tools, trust boxes ---- */
+.meta-line{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:12px}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:22px 0}
+.toc b{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--muted);display:block;margin-bottom:6px}
+.toc ol{margin:0 0 0 20px;font-size:14.5px}.toc li{margin-bottom:3px}
+.tbl-wrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.tbl-wrap table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+.tbl-wrap th,.tbl-wrap td{padding:9px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);line-height:1.5}
+.tbl-wrap th{font-size:12.5px;color:var(--muted);font-weight:700;background:rgba(0,0,0,.025)}
+.tbl-wrap tr:last-child td{border-bottom:0}
+.tbl-wrap caption{caption-side:top;text-align:left;padding:10px 12px 0;font-size:13px;color:var(--muted)}
+.shots{display:flex;gap:12px;overflow-x:auto;margin:18px 0;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+.shots figure{flex:0 0 auto;margin:0;width:200px}
+.shots figure.wide{width:min(100%,520px)}
+.shots img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+.shots figcaption,figure.one figcaption{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5}
+figure.one{margin:18px 0}figure.one img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+figure.one.phone img{max-width:260px}
+.diagram{margin:18px 0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px}
+.diagram svg{display:block;width:100%;height:auto}
+.tool{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--ember);border-radius:12px;padding:16px 18px;margin:22px 0}
+.tool h3{margin:0 0 4px!important;font-size:17px}
+.tool .tool-desc{font-size:13.5px!important;color:var(--muted);margin-bottom:12px!important}
+.tool label{display:block;font-size:13.5px;font-weight:600;margin:10px 0 4px}
+.tool input,.tool select{font:inherit;font-size:16px;width:100%;max-width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text)}
+.tool input:focus-visible,.tool select:focus-visible,.tool button:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+.tool .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}
+.tool button{font:inherit;font-size:14px;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;padding:8px 14px;margin:8px 8px 0 0}
+.tool button.primary{background:var(--ember);border-color:var(--ember);color:#fff;font-weight:700}
+.tool button:hover{border-color:var(--ember)}
+.tool .out{margin-top:14px;padding:12px 14px;border-radius:8px;background:rgba(232,132,60,.10);font-size:15px;line-height:1.6}
+.tool .out b{font-family:var(--mono)}
+.tool .out p{margin:0 0 6px;font-size:15px}
+.tool .err{color:#B3261E}
+.tool fieldset{border:0;margin:10px 0 0}.tool legend{font-size:13.5px;font-weight:600;margin-bottom:4px}
+.tool .opt{display:flex;gap:8px;align-items:flex-start;font-weight:400;margin:4px 0}.tool .opt input{width:auto;margin-top:5px}
+.author-box{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:36px 0 0;font-size:14px}
+.author-box img{width:48px;height:48px;border-radius:11px;flex:0 0 auto}
+.author-box p{margin:0 0 4px!important;font-size:14px!important;line-height:1.6!important}
+.sources{font-size:13.5px}.sources li{margin-bottom:5px;word-break:break-word}
+.fit{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:14px 0}
+.fit>div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14.5px}
+.fit h4{font-size:14px;margin-bottom:6px}.fit ul{margin:0 0 0 18px;font-size:14.5px}.fit li{margin-bottom:4px}
+details.faq{border-bottom:1px solid var(--line);padding:8px 0}details.faq summary{cursor:pointer;font-weight:700;font-size:15.5px}details.faq p{margin:8px 0 0}
+.toc-ko-en{font-size:13px;color:var(--muted)}
