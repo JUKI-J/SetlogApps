@@ -40,11 +40,11 @@ const translations = {
         'laplync-feature-3': '연결이 끊겨도 측정 유지, 자동 병합',
         'laplync-feature-4': '랩·분할 기록 CSV 내보내기',
         'lottotown-name': '우리동네로또',
-        'lottotown-desc': '지역 기반 로또 번호 추천',
-        'lottotown-feature-1': '우리 동네 핫번호·콜드번호 통계',
-        'lottotown-feature-2': '주변 명당 판매점 찾기, 전국 명당 TOP 30',
-        'lottotown-feature-3': 'QR코드로 당첨 여부 즉시 확인',
-        'lottotown-feature-4': '번호 저장 및 회차별 당첨 정보'
+        'lottotown-desc': '로또 추첨 결과 통계·데이터 분석',
+        'lottotown-feature-1': '과거 추첨 기반 번호별 출현 빈도·핫/콜드 통계',
+        'lottotown-feature-2': '회차별 추첨 결과와 1등 배출 판매점 정보',
+        'lottotown-feature-3': 'QR코드로 회차별 결과 대조',
+        'lottotown-feature-4': '통계 정보 제공용이며 당첨을 보장하지 않습니다'
     },
     en: {
         'multagi-name': 'Multagi',
@@ -84,11 +84,11 @@ const translations = {
         'laplync-feature-3': 'Keeps timing offline, auto-merges on reconnect',
         'laplync-feature-4': 'Export laps & splits as CSV',
         'lottotown-name': 'LottoTown',
-        'lottotown-desc': 'Region-based Korean Lotto Number Picks',
-        'lottotown-feature-1': 'Hot & cold number stats for your area',
-        'lottotown-feature-2': 'Nearby lucky retailers & nationwide Top 30',
-        'lottotown-feature-3': 'Instant QR code win check',
-        'lottotown-feature-4': 'Save numbers & view draw results'
+        'lottotown-desc': 'Korean Lotto Draw Statistics & Data',
+        'lottotown-feature-1': 'Number frequency & hot/cold stats from past draws',
+        'lottotown-feature-2': 'Draw results by round & top-prize retailer info',
+        'lottotown-feature-3': 'Compare tickets to round results via QR',
+        'lottotown-feature-4': 'For statistical reference only; does not guarantee results'
     }
 };
 
