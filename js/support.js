@@ -1,17 +1,18 @@
 // ========================================
-// support.html — 앱별 진입 문맥 처리 (현재: 급식로그)
+// support.html — 앱별 진입 문맥 처리 (현재: 급식로그·Belvue)
 // 앱이 여는 URL: /support?app=lunchlog&type=contact|ad&v=<ver>&os=<ios|android>
 //  - app=lunchlog → 급식로그 섹션만 남기고(다른 앱 칩·섹션 숨김) 스크롤·강조, 상단 응답 보장 문구를 급식로그 문맥용으로 교체
 //  - type=ad      → 광고 신고 안내 항목을 펼치고 강조
 //  - 문의 폼 버튼에 app·type·v·os를 붙여 넘긴다(Tally 숨은 필드 — 정의 안 된 키는 폼이 무시)
+// 앱이 여는 URL: /support?app=belvue (Belvue — 섹션만 남기고 강조, 문의 폼에 app·v·os 전달)
 // 외부 리소스·추적·저장소 사용 없음. JS가 꺼져 있어도 섹션·안내는 모두 정적으로 보인다.
 // ========================================
 (function () {
     'use strict';
 
-    var APPS = { lunchlog: 'lunchlog' };
+    var APPS = { lunchlog: 'lunchlog', belvue: 'belvue' };
     var TYPES = { contact: 'contact', ad: 'ad' };
-    var OSES = { ios: 'ios', android: 'android' };
+    var OSES = { ios: 'ios', android: 'android', macos: 'macos' };
 
     function readParams() {
         var p;
@@ -36,9 +37,12 @@
         if (!section) return;
 
         // 상단 소개 문구: 응답 보장 문안 → 급식로그 문맥 문안 (R7 — 응답 보장 상담 없음)
-        var subs = document.querySelectorAll('[data-ctx]');
-        for (var i = 0; i < subs.length; i++) {
-            subs[i].hidden = subs[i].getAttribute('data-ctx') !== ctx.app;
+        // 해당 앱 전용 소개 문구([data-ctx])가 있을 때만 교체한다(Belvue 등은 없음 → 기존 문구 유지)
+        if (document.querySelector('[data-ctx="' + ctx.app + '"]')) {
+            var subs = document.querySelectorAll('[data-ctx]');
+            for (var i = 0; i < subs.length; i++) {
+                subs[i].hidden = subs[i].getAttribute('data-ctx') !== ctx.app;
+            }
         }
 
         // 앱 문맥 진입이면 그 앱 섹션만 보인다 — 다른 앱 목록·FAQ·공용 문의를 숨긴다(스토어 지원 URL 심사 대응)
