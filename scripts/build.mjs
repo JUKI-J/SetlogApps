@@ -4,8 +4,11 @@
 //   node scripts/build.mjs --allow-plain-links   LOCAL PREVIEW ONLY: falls back to https://apps.apple.com/app/id<ID>
 //   node scripts/build.mjs --check-live          also verify every live appStoreId (iTunes Lookup) and every playUrl (must be HTTP 200)
 //   node scripts/build.mjs --today=YYYY-MM-DD    override "today" for lastmod
+//   node scripts/build.mjs --indexnow [--since=YYYY-MM-DD] [--dry-run]
+//                                                after a passing build, POST URLs whose lastmod >= since (default: today)
+//                                                to https://api.indexnow.org/indexnow, one request per host. --dry-run only prints.
 // Reads data/apps.json + data/i18n/*.json + templates/*.html, writes apps/<slug>/**, apps/ko/index.html,
-// the marker regions of apps/index.html, sitemap.xml, apps-sitemap.xml, data/lastmod.json.
+// the marker regions of apps/index.html + support.html + about.html (@gen:support-chips|support-privacy|about-en|about-ko), sitemap.xml, apps-sitemap.xml, data/lastmod.json.
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
@@ -15,6 +18,8 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ARGS = process.argv.slice(2);
 const ALLOW_PLAIN = ARGS.includes('--allow-plain-links');
 const CHECK_LIVE = ARGS.includes('--check-live');
+const INDEXNOW = ARGS.includes('--indexnow');
+const DRY_RUN = ARGS.includes('--dry-run');
 const TODAY = (ARGS.find((a) => a.startsWith('--today=')) || '').slice(8) || new Date().toISOString().slice(0, 10);
 const MAIN = 'https://setlog.net';
 const APPS = 'https://apps.setlog.net';
@@ -258,10 +263,46 @@ function itemListLd(loc) {
 }
 const catHreflang = () => hreflangLinks([['en', APPS + '/'], ['ko', APPS + '/ko/'], ['x-default', APPS + '/']]);
 
-function replaceMarker(html, name, inner) {
+function replaceMarker(html, name, inner, file = 'apps/index.html') {
   const re = new RegExp(`(<!-- @gen:${name} -->)[\\s\\S]*?(<!-- /@gen -->)`);
-  if (!re.test(html)) throw new Error(`marker @gen:${name} missing in apps/index.html`);
+  if (!re.test(html)) throw new Error(`marker @gen:${name} missing in ${file}`);
   return html.replace(re, (m, a, b) => `${a}\n${inner}\n${b}`);
+}
+
+// ---------- site pages (support / about): marker regions generated from data/apps.json (live apps only)
+const PRIV_BASE = 'https://juki-j.github.io/privacy-policy/';
+const PRIV_LABEL = { en: 'English', kr: '한국어', ja: '日本語' };
+const byName = (x, y) => x.name.toLowerCase().localeCompare(y.name.toLowerCase());
+function siteOf(a) {
+  if (!a.site) { err(`${a.slug}: site{} missing (supportLabel/supportHref/privacyName/privacyLangs/about{en,ko}) — needed for support/privacy/about regions`); return null; }
+  return a.site;
+}
+function supportChips() {
+  return apps.slice().sort(byName).map((a) => {
+    const s = siteOf(a); if (!s) return '';
+    const ext = /^https?:/.test(s.supportHref);
+    return `  <a class="chip" href="${esc(s.supportHref)}"${ext ? ' target="_blank" rel="noopener noreferrer"' : ''}>${esc(s.supportLabel)}</a>`;
+  }).filter(Boolean).join('\n');
+}
+function supportPrivacy() {
+  return apps.slice().sort(byName).map((a) => {
+    const s = siteOf(a); if (!s) return '';
+    const links = (s.privacyLangs || []).map((l) => `<a href="${PRIV_BASE}${a.slug}-${l}.html">${PRIV_LABEL[l]}</a>`).join('');
+    return `    <div><span>${esc(s.privacyName || a.name)}</span><small>${links}</small></div>`;
+  }).filter(Boolean).join('\n');
+}
+function aboutList(lang) {
+  return apps.map((a) => {
+    const s = siteOf(a); if (!s) return '';
+    const t = s.about && s.about[lang];
+    if (!t) { err(`${a.slug}: site.about.${lang} missing`); return ''; }
+    return `      <li><strong>${esc(t.name)}:</strong> ${esc(t.text)}</li>`;
+  }).filter(Boolean).join('\n');
+}
+function regenMarkers(file, regions) {
+  let html = fs.readFileSync(path.join(ROOT, file), 'utf8');
+  for (const [name, inner] of regions) html = replaceMarker(html, name, inner, file);
+  return writeIfChanged(file, html);
 }
 
 // ---------- build pages
@@ -295,6 +336,8 @@ if (!errors.length || true) {
     h1: esc(ko.h1), sub: esc(ko.sub), eyebrow: esc(ko.eyebrow), cards: cardsHtml('ko'), footerLinks: footerLinks('ko'),
   });
   if (writeIfChanged('apps/ko/index.html', koHtml)) changed++;
+  if (regenMarkers('support.html', [['support-chips', supportChips()], ['support-privacy', supportPrivacy()]])) changed++;
+  if (regenMarkers('about.html', [['about-en', aboutList('en')], ['about-ko', aboutList('ko')]])) changed++;
 }
 
 // ---------- page inventory (disk) for sitemap + validators
@@ -338,6 +381,7 @@ const urlset = (items) => '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns
 const mainItems = mainPages.map((f) => [fileToUrl(f), lastmodFor(f)]).sort((x, y) => (x[0] === MAIN + '/' ? -1 : y[0] === MAIN + '/' ? 1 : 0) || order(x[0], y[0]));
 // keep the historical order: home, about, support, faq, contact, privacy, terms, guides/, guides... (home first, then lexical is fine for crawlers)
 const appItems = appPages.map((f) => [fileToUrl(f), lastmodFor(f)]).sort((x, y) => order(x[0], y[0]));
+for (const u of Object.keys(lm)) if (u.startsWith(APPS + '/') && !appItems.some(([x]) => x === u)) delete lm[u]; // removed app pages leave no stale lastmod state
 writeIfChanged('sitemap.xml', urlset(mainItems));
 writeIfChanged('apps-sitemap.xml', urlset(appItems));
 writeIfChanged(lmPath, JSON.stringify(Object.fromEntries(Object.entries(lm).sort(([x], [y]) => order(x, y))), null, 1) + '\n');
@@ -432,6 +476,33 @@ if (CHECK_LIVE) {
       try { const r = await fetch(a.playUrl, { redirect: 'follow' }); if (r.status !== 200) err(`${a.slug}: playUrl returned HTTP ${r.status} (${a.playUrl})`); } catch (e) { err(`${a.slug}: playUrl fetch failed (${e.message})`); }
     }
     if (!ok) err(`${a.slug}: appStoreId ${a.appStoreId} not found on iTunes Lookup (kr/us)`);
+  }
+}
+
+// ---------- IndexNow
+if (INDEXNOW) {
+  if (errors.length) { console.error('IndexNow skipped: build has errors'); }
+  else {
+    const keyFiles = fs.readdirSync(ROOT).filter((f) => /^[0-9a-f]{32}\.txt$/.test(f));
+    if (keyFiles.length !== 1) { err(`IndexNow: expected exactly one <32-hex>.txt key file at the repo root, found ${keyFiles.length}`); }
+    else {
+      const key = keyFiles[0].slice(0, -4);
+      if (fs.readFileSync(path.join(ROOT, keyFiles[0]), 'utf8').trim() !== key) err('IndexNow: key file content must equal its file name');
+      const since = (ARGS.find((a) => a.startsWith('--since=')) || '').slice(8) || TODAY;
+      const live = new Set([...mainItems, ...appItems].map(([u]) => u));
+      const urls = Object.entries(lm).filter(([u, v]) => live.has(u) && v.date >= since).map(([u]) => u);
+      for (const host of [MAIN, APPS]) {
+        const list = urls.filter((u) => u.startsWith(host + '/'));
+        if (!list.length) { console.log(`IndexNow ${host}: no changed URLs since ${since}`); continue; }
+        const body = { host: new URL(host).hostname, key, keyLocation: `${host}/${key}.txt`, urlList: list };
+        if (DRY_RUN) { console.log(`IndexNow DRY-RUN POST https://api.indexnow.org/indexnow\n${JSON.stringify(body, null, 2)}`); continue; }
+        try {
+          const r = await fetch('https://api.indexnow.org/indexnow', { method: 'POST', headers: { 'content-type': 'application/json; charset=utf-8' }, body: JSON.stringify(body) });
+          console.log(`IndexNow ${host}: HTTP ${r.status} (${list.length} urls)`);
+          if (r.status >= 300) err(`IndexNow ${host}: HTTP ${r.status}`);
+        } catch (e) { err(`IndexNow ${host}: ${e.message}`); }
+      }
+    }
   }
 }
 

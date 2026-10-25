@@ -10,15 +10,18 @@
 (function () {
     'use strict';
 
-    var APPS = { lunchlog: 'lunchlog', belvue: 'belvue' };
+    // 앱 slug는 하드코딩하지 않는다: <section id="<slug>">가 페이지에 있으면 그 앱의 문맥 진입이 동작한다.
+    var SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
     var TYPES = { contact: 'contact', ad: 'ad' };
     var OSES = { ios: 'ios', android: 'android', macos: 'macos' };
 
     function readParams() {
         var p;
         try { p = new URLSearchParams(window.location.search); } catch (e) { return null; }
-        var app = APPS[(p.get('app') || '').toLowerCase()];
-        if (!app) return null;
+        var app = (p.get('app') || '').toLowerCase();
+        if (!SLUG.test(app)) return null;
+        var el = document.getElementById(app);
+        if (!el || el.tagName !== 'SECTION') return null;
         var v = p.get('v') || '';
         return {
             app: app,

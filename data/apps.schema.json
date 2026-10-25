@@ -24,6 +24,7 @@
           "locales": {"type": "array", "items": {"enum": ["en", "ko", "de", "fr", "ja"]}, "minItems": 1},
           "primaryLocale": {"enum": ["en", "ko", "de", "fr", "ja"]},
           "icon": {"type": "string", "pattern": "^/images/"},
+          "site": {"description": "support/about/privacy regions: supportLabel, supportHref, privacyName, privacyLangs[en|kr|ja], about{en,ko}{name,text}", "type": "object", "required": ["supportLabel", "supportHref", "privacyName", "privacyLangs", "about"]},
           "guides": {"type": "array", "items": {"type": "object", "required": ["href", "title"], "properties": {"href": {"type": "string", "pattern": "^/"}, "title": {"type": "object"}}}},
           "keywords": {"type": "object"},
           "forbiddenClaims": {"type": "array", "items": {"type": "string"}},

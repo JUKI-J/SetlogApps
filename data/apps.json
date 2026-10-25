@@ -70,7 +70,26 @@
         "iPad app",
         "sync across devices"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "Charcoal Player · macOS",
+        "supportHref": "https://apps.apple.com/kr/app/charcoal-player/id1212179275?mt=12",
+        "privacyName": "Charcoal Player",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "Charcoal Player",
+            "text": "A macOS practice player that splits songs into stems, with pitch-preserving speed control and A-B looping"
+          },
+          "ko": {
+            "name": "Charcoal Player",
+            "text": "곡을 스템으로 분리하고 음정 유지 배속·A-B 구간 반복을 지원하는 macOS 음악 연습 플레이어"
+          }
+        }
+      }
     },
     {
       "status": "live",
@@ -171,7 +190,26 @@
         "iOS app",
         "DTS support",
         "TrueHD support"
-      ]
+      ],
+      "site": {
+        "supportLabel": "slplayer · macOS",
+        "supportHref": "https://apps.apple.com/app/id6811089277",
+        "privacyName": "slplayer",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "slplayer",
+            "text": "A lightweight macOS video player that opens MKV and SRT/SMI subtitles out of the box, with dual subtitles and sync adjustment"
+          },
+          "ko": {
+            "name": "slplayer",
+            "text": "MKV와 SRT·SMI 자막이 그냥 열리고 이중 자막·싱크 조정을 지원하는 가벼운 macOS 동영상 플레이어"
+          }
+        }
+      }
     },
     {
       "status": "live",
@@ -221,7 +259,26 @@
         "iPad",
         "batch rename",
         "image editing"
-      ]
+      ],
+      "site": {
+        "supportLabel": "Belvue · macOS",
+        "supportHref": "https://apps.apple.com/app/id6821348645",
+        "privacyName": "Belvue",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "Belvue",
+            "text": "A macOS image viewer: open one image, then flip through the rest of its folder with the arrow keys"
+          },
+          "ko": {
+            "name": "Belvue",
+            "text": "이미지 하나를 열면 같은 폴더의 나머지를 방향키로 넘겨 볼 수 있는 macOS 이미지 뷰어"
+          }
+        }
+      }
     },
     {
       "slug": "runvue",
@@ -297,7 +354,26 @@
         "광고 없는",
         "실시간 추적"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "RunVue · iPhone·Android",
+        "supportHref": "https://apps.apple.com/app/id6817999096",
+        "privacyName": "RunVue",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "RunVue",
+            "text": "An iPhone running app that turns your runs from Apple Health into 3D replay videos from a runner's-eye view"
+          },
+          "ko": {
+            "name": "RunVue",
+            "text": "건강 앱의 러닝 기록을 달린 사람의 시선으로 3D 리플레이 영상으로 만들어 주는 iPhone 러닝 앱"
+          }
+        }
+      }
     },
     {
       "slug": "intervalrunner",
@@ -398,7 +474,26 @@
         "built-in VMA test",
         "VMA calculator"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "IntervalRunner · iPhone·Watch·Android",
+        "supportHref": "https://apps.apple.com/app/id6817994370",
+        "privacyName": "IntervalRunner",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "IntervalRunner",
+            "text": "An Apple Watch + iPhone interval running coach that alerts you by voice, sound and haptics when you drift off target pace"
+          },
+          "ko": {
+            "name": "IntervalRunner",
+            "text": "목표 속도에서 벗어나면 음성·효과음·햅틱으로 알려 주는 Apple Watch + iPhone 인터벌 러닝 코치"
+          }
+        }
+      }
     },
     {
       "slug": "lunchlog",
@@ -468,7 +563,25 @@
         "유치원 급식 지원",
         "해외 학교 지원"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "급식로그 · iPhone·Android",
+        "supportHref": "#lunchlog",
+        "privacyName": "LunchLog 급식로그",
+        "privacyLangs": [
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "LunchLog (급식로그)",
+            "text": "A no-login Korean school lunch app with home-screen widgets and a meal log"
+          },
+          "ko": {
+            "name": "급식로그",
+            "text": "로그인 없이 우리 학교 급식을 위젯으로 보고 먹은 급식을 기록하는 앱"
+          }
+        }
+      }
     },
     {
       "slug": "zipda",
@@ -561,7 +674,27 @@
         "OCR",
         "Android"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "Zipda · 압축·해제",
+        "supportHref": "https://apps.apple.com/app/id6804219752",
+        "privacyName": "Zipda",
+        "privacyLangs": [
+          "en",
+          "kr",
+          "ja"
+        ],
+        "about": {
+          "en": {
+            "name": "Zipda",
+            "text": "A fast, privacy-first archive tool for macOS — compress and extract with no data collection"
+          },
+          "ko": {
+            "name": "Zipda (집다)",
+            "text": "데이터 수집 없이 빠르게 압축·해제하는 macOS 아카이브 도구"
+          }
+        }
+      }
     },
     {
       "slug": "onesync",
@@ -640,7 +773,26 @@
         "데스크톱 앱 출시",
         "20대"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "OneSync",
+        "supportHref": "https://apps.apple.com/kr/app/onesync-file-share/id6753986352",
+        "privacyName": "OneSync",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "OneSync",
+            "text": "Cross-platform file and text sharing between iOS and Android without accounts, using temporary secure storage"
+          },
+          "ko": {
+            "name": "OneSync",
+            "text": "계정 없이 iOS·Android 간 파일과 텍스트를 임시 보안 저장소로 공유"
+          }
+        }
+      }
     },
     {
       "slug": "timerlync",
@@ -710,7 +862,26 @@
         "무제한 기기",
         "공인 기록 보장"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "TimerLync",
+        "supportHref": "https://apps.apple.com/kr/app/timerlync-sync/id6795109124",
+        "privacyName": "TimerLync",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "TimerLync",
+            "text": "A countdown timer that stays in sync across iPhone, iPad, and Apple Watch and alarms at the same moment"
+          },
+          "ko": {
+            "name": "TimerLync",
+            "text": "iPhone·iPad·Apple Watch가 같은 잔여 시간을 보여주고 같은 순간에 울리는 동기화 카운트다운 타이머"
+          }
+        }
+      }
     },
     {
       "slug": "laplync",
@@ -781,7 +952,26 @@
         "공인 기록 보장",
         "무제한 기기"
       ],
-      "updated": "2026-10-25"
+      "updated": "2026-10-25",
+      "site": {
+        "supportLabel": "LapLync",
+        "supportHref": "https://apps.apple.com/kr/app/laplync/id6793554365",
+        "privacyName": "LapLync",
+        "privacyLangs": [
+          "en",
+          "kr"
+        ],
+        "about": {
+          "en": {
+            "name": "LapLync",
+            "text": "A synced stopwatch and lap timer that starts up to 8 devices in the same millisecond, built for coaches and race officials"
+          },
+          "ko": {
+            "name": "LapLync",
+            "text": "최대 8대 기기를 같은 밀리초에 시작시키는 코치·기록원용 동기화 스톱워치·랩 타이머"
+          }
+        }
+      }
     }
   ]
 }
