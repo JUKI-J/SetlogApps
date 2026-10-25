@@ -28,11 +28,13 @@ SetlogApps/
 node scripts/build.mjs                       # 검증 + 생성 (campaignLink가 null이면 실패)
 node scripts/build.mjs --allow-plain-links   # 로컬 미리보기 전용(평문 App Store 링크로 폴백, 배포 금지)
 node scripts/build.mjs --check-live          # appStoreId를 iTunes Lookup으로 확인(네트워크)
+node scripts/build.mjs --indexnow --dry-run  # IndexNow 대상 URL(오늘 바뀐 것, --since=YYYY-MM-DD) 출력만
+node scripts/build.mjs --indexnow            # 빌드 통과 후 api.indexnow.org에 호스트별 POST (배포 후 실행)
 ```
 
 - 캠페인 링크는 **ASC 캠페인 링크 생성기 결과를 그대로** `data/apps.json`의 `campaignLink`(로케일 맵)에 붙여넣는다. `ct=web-<slug>-<locale>`. 직접 조립 금지.
 - 절차 전체: `docs/new-app-checklist.md`. 계획 정본: `.claude/plans/drafts/20261025-app-pages-seo.md`.
-- 생성 파일(`apps/<slug>/**`, `apps/ko/`, 사이트맵)은 직접 수정하지 말고 `data/`를 고친다. `apps/index.html`은 `@gen` 마커 사이만 생성된다.
+- 생성 파일(`apps/<slug>/**`, `apps/ko/`, 사이트맵)은 직접 수정하지 말고 `data/`를 고친다. `apps/index.html`·`support.html`·`about.html`은 `@gen` 마커 사이만 생성된다(앱 목록 = `data/apps.json`의 live 앱 + `site` 객체; 물타기·ClaudeMiner·우리동네로또는 마커 밖 수작업). IndexNow 키 파일은 루트의 `<32hex>.txt`(공개용).
 - 앱 페이지에는 광고 코드를 넣지 않는다.
 
 ## 🚀 Cloudflare Pages 배포 가이드

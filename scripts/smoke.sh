@@ -9,5 +9,6 @@ for u in $(git show HEAD:sitemap.xml | grep -o '<loc>[^<]*' | sed 's/<loc>https:
 for u in / /ko/ /robots.txt /sitemap.xml /guides/slplayer /apps/ /apps/slplayer/; do chk apps.setlog.net "$u"; done
 for u in $(grep -o '<loc>[^<]*' apps-sitemap.xml | sed 's/<loc>https:\/\/apps.setlog.net//'); do chk apps.setlog.net "$u"; done
 for u in $(grep -o '<loc>[^<]*' sitemap.xml | sed 's/<loc>https:\/\/setlog.net//'); do chk setlog.net "$u"; done
+for k in $(ls [0-9a-f]*.txt 2>/dev/null | grep -E '^[0-9a-f]{32}\.txt$'); do chk setlog.net "/$k"; chk apps.setlog.net "/$k"; done
 chk apps.setlog.net /slplayer; chk apps.setlog.net /nonexistent/; chk setlog.net /apps/slplayer/; chk www.setlog.net /about
 exit $bad
