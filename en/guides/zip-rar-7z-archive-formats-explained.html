@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZIP vs 7z vs RAR: Differences and How to Open RAR on Mac</title>
+<meta name="description" content="ZIP vs 7z vs RAR compared: compression, encryption, file name problems and split archives, plus how to open a RAR file on a Mac or iPhone.">
+<link rel="canonical" href="https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained">
+<link rel="alternate" hreflang="en" href="https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained">
+<link rel="alternate" hreflang="ko" href="https://setlog.net/guides/zip-rar-7z-archive-formats-explained">
+<link rel="alternate" hreflang="x-default" href="https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained">
+<meta property="og:title" content="ZIP vs 7z vs RAR: Differences and How to Open RAR on Mac">
+<meta property="og:description" content="Format comparison table, ZipCrypto versus AES, garbled file names, macOS metadata, split archives and how to open RAR on a Mac.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained">
+<meta property="og:image" content="https://setlog.net/images/zipda-icon.png">
+<meta property="og:site_name" content="SETLOG">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta property="article:modified_time" content="2026-10-25">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"ZIP vs 7z vs RAR: Differences and How to Open RAR on Mac","description":"A comparison of ZIP, 7z, RAR and tar: compression, encryption, cross-platform file name problems, split archives and how to open RAR on Mac.","inLanguage":"en","datePublished":"2026-10-25","dateModified":"2026-10-25","author":{"@type":"Organization","name":"SETLOG","url":"https://setlog.net/"},"publisher":{"@type":"Organization","name":"SETLOG","url":"https://setlog.net/"},"mainEntityOfPage":"https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained","image":"https://setlog.net/images/zipda-icon.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://setlog.net/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://setlog.net/guides/"},{"@type":"ListItem","position":3,"name":"ZIP vs 7z vs RAR: Differences and How to Open RAR on Mac","item":"https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"How do I open a RAR file on a Mac?","acceptedAnswer":{"@type":"Answer","text":"macOS cannot extract RAR with its built-in Archive Utility, so you need a third-party app that supports RAR. Zipda for Mac extracts RAR archives and lets you browse and preview the contents first; extracting RAR is part of its optional Pro unlock."}},{"@type":"Question","name":"Is ZIP or 7z better?","acceptedAnswer":{"@type":"Answer","text":"ZIP wins on compatibility; 7z usually wins on size. If you do not know the recipient's setup, pick ZIP. If they have a tool like 7-Zip and size matters, pick 7z."}},{"@type":"Question","name":"Does archiving make files secure?","acceptedAnswer":{"@type":"Answer","text":"No. You must add a password and the method matters. Traditional ZipCrypto is weak, so choose AES-256, and use 7z file name encryption if names are sensitive."}},{"@type":"Question","name":"Does compressing twice make a file smaller?","acceptedAnswer":{"@type":"Answer","text":"Usually not. Already-compressed data barely shrinks. For photos and video, archiving is for bundling, not for saving space."}},{"@type":"Question","name":"Can I create a RAR file on a phone or Mac?","acceptedAnswer":{"@type":"Answer","text":"RAR creation needs the official tool because of licensing, so most third-party apps only extract RAR. Use ZIP or 7z when sending files to someone."}},{"@type":"Question","name":"What if Korean or Japanese file names are garbled after unzipping?","acceptedAnswer":{"@type":"Answer","text":"The names' character encoding is mismatched, not the contents. Open the archive with a tool that lets you switch the encoding, or use a name-repair feature. As a sender, a Windows-compatible names option reduces the problem."}}]}</script>
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="/" class="wordmark">SET<b>LOG</b></a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="/">Home</a><a href="https://apps.setlog.net/">Apps</a><a href="/guides/" aria-current="page">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / ZIP vs 7z vs RAR</p>
+<main class="article">
+  <h1>ZIP vs 7z vs RAR: differences, encryption and how to open RAR on Mac</h1>
+  <p class="sub">Formats, encryption and cross-platform pitfalls, explained for anyone who just received an archive they cannot open</p>
+  <p class="lang-switch"><a href="/guides/zip-rar-7z-archive-formats-explained" hreflang="ko" lang="ko">한국어 버전</a></p>
+  <p class="meta-line">Updated 2026-10-25 · By SETLOG · 8 min read</p>
+
+<nav class="toc" aria-label="Contents"><b>Contents</b><ol>
+<li><a href="#what">The two jobs of an archive</a></li>
+<li><a href="#table">ZIP vs 7z vs RAR: format comparison</a></li>
+<li><a href="#open-rar">How to open RAR on Mac</a></li>
+<li><a href="#crypto">Encryption: ZipCrypto, AES and file names</a></li>
+<li><a href="#pitfalls">Cross-platform pitfalls</a></li>
+<li><a href="#split">Large files and split archives</a></li>
+<li><a href="#choose">Which format should you choose?</a></li>
+<li><a href="#zipda">On Mac and iPhone: Zipda</a></li>
+<li><a href="#trouble">Troubleshooting</a></li>
+<li><a href="#sources">Sources</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ol></nav>
+
+<h2 id="what">The two jobs of an archive</h2>
+<p>An archive does two separate things: it bundles many files and folders into one, and it shrinks the data. ZIP and 7z do both at once, while tar only bundles and leaves shrinking to a separate compressor such as gzip, xz or zstd, which is why Linux files carry double extensions like <code>.tar.gz</code>. Knowing this lets you guess what an unfamiliar extension does.</p>
+<p>In practice the problem is rarely the compression ratio. It is whether the recipient can open the file, whether non-English file names survive the trip, and whether the recipient's tool supports the encryption you chose. This guide tabulates the formats, shows how to open a RAR file on a Mac, and then covers encryption and cross-platform traps separately.</p>
+
+<h2 id="table">ZIP vs 7z vs RAR: format comparison</h2>
+<div class="tbl-wrap"><table>
+<caption>Ratios depend heavily on content, so they are described qualitatively. Numbers are limited to what the sources below confirm.</caption>
+<thead><tr><th>Format</th><th>Structure and compression</th><th>Encryption</th><th>Compatibility</th><th>Large files, splitting</th></tr></thead>
+<tbody>
+<tr><td>ZIP</td><td>Each file compressed separately, so extracting one file is quick. Ratio is generally lower than 7z</td><td>Traditional ZipCrypto is called weak by today's standards in the spec itself <a href="#src1">[1]</a>. AES only where the tool supports it</td><td>Windows, macOS, the iOS Files app and most Android file managers handle it at a basic level</td><td>ZIP64 extends beyond 4 GB files and 65,535 entries <a href="#src1">[1]</a>. Multi-volume splitting is defined (section 4.3.3)</td></tr>
+<tr><td>7z</td><td>LZMA/LZMA2 for a high ratio; solid compression and header compression <a href="#src2">[2]</a></td><td>AES-256, key derived by repeated SHA-256 <a href="#src2">[2]</a>. 7-Zip has a header-encryption option that hides file names</td><td>7-Zip, some recent OS built-ins, dedicated apps; older systems need extra tools</td><td>The spec allows sizes up to 16000000000 GB per its documentation <a href="#src2">[2]</a>. Volume splitting supported</td></tr>
+<tr><td>RAR</td><td>Proprietary. The changelog records that RAR5 recovery records can reach 1000% of protected data <a href="#src3">[3]</a></td><td>AES-based encryption and file name encryption (WinRAR)</td><td>Many tools can extract it; creating one needs WinRAR or similar. macOS has no built-in RAR extraction</td><td>Splitting (part1.rar) and recovery records are strengths. RAR5 dictionaries extend to 64 GB <a href="#src3">[3]</a></td></tr>
+<tr><td>tar.gz / tar.xz</td><td>tar bundles; gzip or xz shrinks. xz is usually smaller but slower</td><td>None in the format itself</td><td>Native on Linux and macOS; unfamiliar to many Windows users</td><td>Good at preserving Unix permissions, owners and symlinks</td></tr>
+<tr><td>tar.zst</td><td>Zstandard balances speed and ratio and is standardized as IETF RFC 8878 <a href="#src4">[4]</a></td><td>None in the format itself</td><td>Developer-oriented; consumer tool support is uneven</td><td>Decompression stays fast across levels per the project <a href="#src4">[4]</a></td></tr>
+<tr><td>LZH, ALZ, EGG</td><td>Legacy formats once common in Japan and Korea</td><td>Tool-specific</td><td>Usually extract-only, with limited tool support</td><td>—</td></tr>
+</tbody></table></div>
+<p>A spec ceiling such as 7z's 16000000000 GB is not a practical limit. The real limits are the file system, available disk space and the recipient's tool. A ZIP over 4 GB needs a tool that understands ZIP64, which is a frequent problem with older software.</p>
+
+<h2 id="open-rar">How to open RAR on Mac</h2>
+<p>This is the question that sends most people to this page. Double-clicking a ZIP on a Mac works because the built-in Archive Utility handles it. Double-click a <code>.rar</code> or <code>.7z</code> and macOS has nothing to offer, because those formats are not part of the system tools. You have three realistic options:</p>
+<ol>
+<li><strong>Use an app that supports RAR.</strong> A third-party extractor such as Zipda (described below) opens the archive, lets you look inside, and extracts it to a folder you choose. This is the quickest route when you receive an occasional RAR attachment.</li>
+<li><strong>Use a command-line tool.</strong> Open-source tools can unpack RAR and 7z from Terminal. This suits developers, but it is awkward for one-off files and for password-protected or split sets.</li>
+<li><strong>Ask for another format.</strong> If the sender can re-send as ZIP, a Mac opens it with no extra software. This is the simplest fix when you can reach the sender.</li>
+</ol>
+<p>Whichever route you take, remember that RAR is a proprietary format: creating RAR needs the official tool, so Mac and iPhone apps generally extract RAR but do not create it. If you need to send files to someone else, ZIP is the safest choice and 7z the smallest.</p>
+
+<h2 id="crypto">Encryption: ZipCrypto, AES and file names</h2>
+<p>Compression shrinks; encryption hides. They are configured on one screen but are independent: a password does not make a file smaller, and compressing does not make it safe. Three points matter.</p>
+<h3>1) ZipCrypto and AES are different</h3>
+<p>The PKWARE APPNOTE (section 6.0.1) describes traditional ZIP encryption as "considered weak by today's standards" and recommends it only for low-security needs or compatibility with old ZIP software. Section 7.0 defines strong encryption with ciphers including AES <a href="#src1">[1]</a>. Many tools just say "set password", so you may silently get the old method. For anything important, choose AES-256 explicitly. The cost is compatibility: some older tools cannot open AES ZIPs, so confirm the recipient can.</p>
+<h3>2) A password may not hide file names</h3>
+<p>A password-protected ZIP often still shows its file list. If names reveal content, information leaks. In 7-Zip, turning on file name (header) encryption for a 7z hides the list until the password is entered. If names are sensitive, use that option, or bundle everything into one neutrally named file before encrypting.</p>
+<h3>3) A weak password defeats any algorithm</h3>
+<p>AES-256 with "1234" is pointless. 7z derives its key through repeated SHA-256 hashing to slow brute force <a href="#src2">[2]</a>, but that cannot rescue a weak password. Use a long, hard-to-guess phrase and send it through a different channel than the archive.</p>
+
+<h2 id="pitfalls">Cross-platform pitfalls</h2>
+<h3>Garbled file names (Korean, Japanese, Chinese and other non-English names)</h3>
+<p>The most common problem. The ZIP spec's default file name character set is IBM Code Page 437, and names are read as UTF-8 only when general-purpose bit 11 is set <a href="#src1">[1]</a>. Archivers on Korean Windows that do not set the bit often store names in the system code page (CP949, Microsoft identifier 949) <a href="#src5">[5]</a>, and the same happens with other regional code pages. Opening that ZIP in a tool that assumes UTF-8 produces gibberish; the reverse also garbles names in old Windows tools that read UTF-8 as a local code page.</p>
+<p>Fix it on both ends. As a receiver, use a tool that detects or lets you choose the encoding (for example CP949 versus UTF-8). As a sender, use a "Windows-compatible names" option if your tool has one, or use formats such as 7z or tar that store Unicode names. File contents are intact; only names are misread, so restoring names is enough. The Zipda section below shows this on screen.</p>
+<h3>Metadata macOS adds</h3>
+<p>A ZIP made on a Mac may show <code>__MACOSX</code>, <code>.DS_Store</code> and <code>._filename</code> helper files when opened on Windows. They hold resource forks, extended attributes and folder view settings; they are hidden on macOS and look like clutter elsewhere. Deleting them does not damage your data. When sending to Windows or Linux users, use a tool or option that leaves them out. Another Mac-originated quirk is Korean letters shown split into separate jamo, caused by a different Unicode normalization form. That is a name representation issue, not corruption.</p>
+<h3>Already-compressed data does not shrink</h3>
+<p>JPG, MP4, existing ZIPs and images inside PDFs barely shrink. Bundling a photo folder is for sending one object, not for saving space; recompressing only costs time.</p>
+
+<h2 id="split">Large files and split archives</h2>
+<p>Mail or messenger limits sometimes force splitting. Naming differs: 7z and ZIP use numbered parts such as <code>.7z.001</code> and <code>.zip.001</code>, or <code>.z01</code>, <code>.z02</code> followed by <code>.zip</code>; RAR uses <code>.part1.rar</code>. The ZIP spec itself allows spanning multiple volumes or user-defined segment sizes <a href="#src1">[1]</a>.</p>
+<ol>
+<li>Keep every part in one folder; a missing part blocks extraction.</li>
+<li>Do not rename parts; tools find the set by naming pattern.</li>
+<li>Open the first part (<code>.001</code>, <code>.part1.rar</code>, or the final <code>.zip</code>) and the rest follow.</li>
+<li>Compare part sizes with the sender's. "Corrupted archive" usually means an interrupted download or a missing part.</li>
+</ol>
+<p>Splitting is convenient, but losing one part loses everything. Often a different sharing route is better; see <a href="/guides/share-files-between-iphone-android-pc">moving files between devices</a> (Korean and English) for alternatives by size limit.</p>
+
+<h2 id="choose">Which format should you choose?</h2>
+<p>The deciding factor is who receives the archive.</p>
+<div class="tbl-wrap"><table>
+<thead><tr><th>Situation</th><th>Pick</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>You do not know the recipient's setup</td><td>ZIP</td><td>Every major OS opens it without extra software</td></tr>
+<tr><td>Size matters and the recipient has 7-Zip or a similar tool</td><td>7z</td><td>Higher compression ratio, optional file name encryption</td></tr>
+<tr><td>File names themselves are sensitive</td><td>7z with header encryption</td><td>The list stays hidden until the password is entered</td></tr>
+<tr><td>Linux or developer environment</td><td>tar.gz, tar.xz or tar.zst</td><td>Keeps permissions and symlinks</td></tr>
+<tr><td>Someone sent you a RAR</td><td>Extract it; reply with ZIP</td><td>RAR is easy to extract but not to create</td></tr>
+</tbody></table></div>
+
+<h2 id="zipda">On Mac and iPhone: Zipda</h2>
+<p>The built-in tools on iPhone and Mac create and extract ZIPs, but RAR, 7z, encrypted archives and encoding problems are beyond them. Zipda, an iOS, iPadOS and macOS app I develop, targets those cases. This is the only section about it; everything above applies regardless of app. From the developer documentation and store listing:</p>
+<ul>
+<li>Opens, browses and previews ZIP, RAR, 7z and TAR archives and unzips ZIP and TAR in one step. Extracting RAR, 7z, ALZ and LZH is part of the optional Zipda Pro unlock. Creating ZIP is available, with AES-256 encryption for ZIP; creating 7z, password-protected and split archives is also part of Pro.</li>
+<li>No EGG support because of licensing and patent issues, and no RAR creation. LZH is extract-only.</li>
+<li>Opens password-protected ZIPs that use either the older ZipCrypto or AES (Pro).</li>
+<li>Detects file name encodings on the device and has a repair tool for garbled names. The developer docs note a limitation: very short Japanese names can be misread as Korean, so try another encoding if results look wrong.</li>
+<li>Opens files over 4 GB (ZIP64) and split sets without loading them into memory.</li>
+<li>Runs on the device with no account, no analytics and no advertising SDKs.</li>
+</ul>
+<div class="fit">
+<div><h4>Good fit</h4><ul><li>Opening RAR, 7z or LZH files on a Mac or iPhone</li><li>Opening ZIPs made on Windows whose non-English names arrive garbled</li><li>Keeping files on the device</li></ul></div>
+<div><h4>Poor fit</h4><ul><li>A single plain ZIP: the built-in tools are enough</li><li>Creating RAR files: not supported</li><li>Android or Windows users: the app is for Apple devices only</li></ul></div>
+</div>
+<p>See the <a href="https://apps.setlog.net/zipda/">Zipda app page</a> or the <a href="/guides/zipda">Zipda guide</a> (Korean and English) for details. Whatever app you use, decide whether an archive from an unknown source is trustworthy before extracting it.</p>
+
+<h2 id="trouble">Troubleshooting</h2>
+<div class="tbl-wrap"><table>
+<thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr></thead>
+<tbody>
+<tr><td>Double-clicking a RAR does nothing on a Mac</td><td>macOS has no built-in RAR extraction</td><td>Use a RAR-capable app, or ask the sender for a ZIP</td></tr>
+<tr><td>File names look like gibberish</td><td>Regional code page names read as UTF-8, or the reverse</td><td>Use a tool that lets you pick the encoding; repair names</td></tr>
+<tr><td>"Corrupted archive"</td><td>Interrupted download, missing split part</td><td>Compare sizes, re-download, keep parts in one folder</td></tr>
+<tr><td>Right password but will not open</td><td>Tool lacks AES support</td><td>Try 7-Zip or similar; ask the sender which method was used</td></tr>
+<tr><td>ZIP over 4 GB will not open</td><td>No ZIP64 support</td><td>Use a newer tool or ask for a 7z</td></tr>
+<tr><td>__MACOSX or .DS_Store visible</td><td>macOS metadata</td><td>Safe to delete; exclude when sending</td></tr>
+<tr><td>.egg file</td><td>Many tools do not support it</td><td>Ask the sender for ZIP or 7z</td></tr>
+</tbody></table></div>
+
+<h2 id="sources">Sources</h2>
+<ol class="sources">
+<li id="src1">PKWARE, ZIP File Format Specification APPNOTE 6.3.9 (ZIP64 4.5.3, spanning 4.3.3, encryption 6.0.1 and 7.0, language encoding appendix D): <a href="https://pkwaredownloads.blob.core.windows.net/pkware-general/Documentation/APPNOTE-6.3.9.TXT" target="_blank" rel="noopener">APPNOTE-6.3.9.TXT</a></li>
+<li id="src2">7-Zip, 7z format page: <a href="https://www.7-zip.org/7z.html" target="_blank" rel="noopener">7-zip.org/7z.html</a></li>
+<li id="src3">RARLAB, WinRAR version history: <a href="https://www.rarlab.com/rarnew.htm" target="_blank" rel="noopener">rarlab.com/rarnew.htm</a></li>
+<li id="src4">Zstandard official site: <a href="https://facebook.github.io/zstd/" target="_blank" rel="noopener">facebook.github.io/zstd</a></li>
+<li id="src5">Microsoft Learn, code page identifiers (949 Korean, 65001 UTF-8): <a href="https://learn.microsoft.com/en-us/windows/win32/intl/code-page-identifiers" target="_blank" rel="noopener">code-page-identifiers</a></li>
+</ol>
+<p>Not verified, so no figure is given: the maximum RAR file size and AES details, tar size limits, and per-version format support in the macOS and Windows built-in tools.</p>
+
+<h2 id="faq">FAQ</h2>
+<details class="faq"><summary>How do I open a RAR file on a Mac?</summary><p>macOS cannot extract RAR with its built-in Archive Utility, so you need a third-party app that supports RAR. Zipda for Mac extracts RAR archives and lets you browse and preview the contents first; extracting RAR is part of its optional Pro unlock.</p></details>
+<details class="faq"><summary>Is ZIP or 7z better?</summary><p>ZIP wins on compatibility; 7z usually wins on size. If you do not know the recipient's setup, pick ZIP. If they have a tool like 7-Zip and size matters, pick 7z.</p></details>
+<details class="faq"><summary>Does archiving make files secure?</summary><p>No. You must add a password and the method matters. Traditional ZipCrypto is weak, so choose AES-256, and use 7z file name encryption if names are sensitive.</p></details>
+<details class="faq"><summary>Does compressing twice make a file smaller?</summary><p>Usually not. Already-compressed data barely shrinks. For photos and video, archiving is for bundling, not for saving space.</p></details>
+<details class="faq"><summary>Can I create a RAR file on a phone or Mac?</summary><p>RAR creation needs the official tool because of licensing, so most third-party apps only extract RAR. Use ZIP or 7z when sending files to someone.</p></details>
+<details class="faq"><summary>What if Korean or Japanese file names are garbled after unzipping?</summary><p>The names' character encoding is mismatched, not the contents. Open the archive with a tool that lets you switch the encoding, or use a name-repair feature. As a sender, a Windows-compatible names option reduces the problem.</p></details>
+
+  <aside class="author-box"><div><p>SETLOG is a developer who builds and runs iOS, Android and macOS apps. Send corrections through <a href="/contact">Contact</a>. This article carries no paid placement or affiliate links; the only app mentioned, Zipda, is the author's own, as stated in the text.</p></div></aside>
+
+  <div class="related"><p class="eyebrow">Related</p><ul><li><a href="https://apps.setlog.net/zipda/">Zipda for Mac, iPhone and iPad</a></li><li><a href="/guides/zipda">Zipda guide (Korean and English)</a></li><li><a href="/guides/zip-rar-7z-archive-formats-explained">Archive formats explained (Korean and English)</a></li><li><a href="/support">Support</a></li></ul></div>
+</main>
+
+<footer class="site-footer">
+  <div class="links"><a href="/">Home</a><a href="/guides/">Guides</a><a href="/about">About</a><a href="/support">Support</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div>
+  <span>© 2026 SETLOG</span>
+</footer>
+</body>
+</html>

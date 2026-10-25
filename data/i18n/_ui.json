@@ -1,0 +1,75 @@
+{
+  "en": {
+    "langName": "English", "ogLocale": "en_US",
+    "nav": {"home": "Home", "apps": "Apps", "guides": "Guides", "about": "About", "support": "Support", "contact": "Contact", "privacy": "Privacy", "terms": "Terms"},
+    "crumbApps": "Apps",
+    "storeBtn": {"mac": "View on the Mac App Store", "ios": "View on the App Store"},
+    "playBtn": "Get it on Google Play",
+    "detailsBtn": "App details",
+    "h": {"summary": "At a glance", "features": "What it does", "screenshots": "Screenshots", "specs": "Requirements and details", "limits": "Limits, stated honestly", "faq": "Frequently asked questions", "related": "Related guides", "others": "More apps from SETLOG", "languages": "Languages"},
+    "spec": {"platforms": "Platforms", "requires": "Requires"},
+    "guideLabel": "Guide",
+    "footerSupport": "Questions? See the support page.",
+    "catalog": {
+      "title": "SETLOG Apps for Mac, iPhone and Apple Watch",
+      "description": "Apps by SETLOG: Zipda, slplayer, Charcoal Player, Belvue, IntervalRunner, RunVue, LapLync, TimerLync, OneSync and LunchLog - details, screenshots and guides.",
+      "h1": "Apps", "sub": "Simple tools that solve real problems.", "eyebrow": "All apps"
+    }
+  },
+  "ko": {
+    "langName": "한국어", "ogLocale": "ko_KR",
+    "nav": {"home": "홈", "apps": "앱", "guides": "가이드", "about": "소개", "support": "지원", "contact": "문의", "privacy": "개인정보", "terms": "약관"},
+    "crumbApps": "앱",
+    "storeBtn": {"mac": "Mac App Store에서 보기", "ios": "App Store에서 보기"},
+    "playBtn": "Google Play에서 보기",
+    "detailsBtn": "앱 자세히 보기",
+    "h": {"summary": "한눈에 보기", "features": "주요 기능", "screenshots": "화면 미리보기", "specs": "요구 사항과 상세", "limits": "한계를 솔직하게", "faq": "자주 묻는 질문", "related": "관련 가이드", "others": "SETLOG의 다른 앱", "languages": "언어"},
+    "spec": {"platforms": "지원 기기", "requires": "요구 사항"},
+    "guideLabel": "가이드",
+    "footerSupport": "문의는 지원 페이지를 이용하세요.",
+    "catalog": {
+      "title": "SETLOG 앱 모음 - Mac·iPhone·Apple Watch 앱",
+      "description": "SETLOG의 앱: Zipda, slplayer, Charcoal Player, Belvue, IntervalRunner, RunVue, LapLync, TimerLync, OneSync, 급식로그의 기능 소개, 화면, 사용 가이드.",
+      "h1": "앱", "sub": "실생활의 문제를 해결하는 심플한 도구.", "eyebrow": "전체 앱"
+    }
+  },
+  "de": {
+    "langName": "Deutsch", "ogLocale": "de_DE",
+    "nav": {"home": "Start", "apps": "Apps", "guides": "Ratgeber", "about": "Über uns", "support": "Support", "contact": "Kontakt", "privacy": "Datenschutz", "terms": "Nutzungsbedingungen"},
+    "crumbApps": "Apps",
+    "storeBtn": {"mac": "Im Mac App Store ansehen", "ios": "Im App Store ansehen"},
+    "playBtn": "Bei Google Play ansehen",
+    "detailsBtn": "App-Details",
+    "h": {"summary": "Auf einen Blick", "features": "Funktionen", "screenshots": "Screenshots", "specs": "Voraussetzungen und Details", "limits": "Grenzen, offen benannt", "faq": "Häufige Fragen", "related": "Passende Ratgeber", "others": "Weitere Apps von SETLOG", "languages": "Sprachen"},
+    "spec": {"platforms": "Plattformen", "requires": "Voraussetzung"},
+    "guideLabel": "Ratgeber",
+    "footerSupport": "Fragen? Besuche die Support-Seite.",
+    "catalog": {"title": "", "description": "", "h1": "", "sub": "", "eyebrow": ""}
+  },
+  "fr": {
+    "langName": "Français", "ogLocale": "fr_FR",
+    "nav": {"home": "Accueil", "apps": "Apps", "guides": "Guides", "about": "À propos", "support": "Assistance", "contact": "Contact", "privacy": "Confidentialité", "terms": "Conditions"},
+    "crumbApps": "Apps",
+    "storeBtn": {"mac": "Voir sur le Mac App Store", "ios": "Voir sur l'App Store"},
+    "playBtn": "Voir sur Google Play",
+    "detailsBtn": "Détails de l'app",
+    "h": {"summary": "En bref", "features": "Fonctions", "screenshots": "Captures d'écran", "specs": "Prérequis et détails", "limits": "Limites, sans détour", "faq": "Questions fréquentes", "related": "Guides associés", "others": "Autres apps de SETLOG", "languages": "Langues"},
+    "spec": {"platforms": "Plateformes", "requires": "Prérequis"},
+    "guideLabel": "Guide",
+    "footerSupport": "Une question ? Consultez la page d'assistance.",
+    "catalog": {"title": "", "description": "", "h1": "", "sub": "", "eyebrow": ""}
+  },
+  "ja": {
+    "langName": "日本語", "ogLocale": "ja_JP",
+    "nav": {"home": "ホーム", "apps": "アプリ", "guides": "ガイド", "about": "概要", "support": "サポート", "contact": "お問い合わせ", "privacy": "プライバシー", "terms": "利用規約"},
+    "crumbApps": "アプリ",
+    "storeBtn": {"mac": "Mac App Storeで見る", "ios": "App Storeで見る"},
+    "playBtn": "Google Playで見る",
+    "detailsBtn": "アプリの詳細",
+    "h": {"summary": "ひと目でわかる概要", "features": "主な機能", "screenshots": "スクリーンショット", "specs": "動作環境と詳細", "limits": "できないこと", "faq": "よくある質問", "related": "関連ガイド", "others": "SETLOGのほかのアプリ", "languages": "言語"},
+    "spec": {"platforms": "対応機器", "requires": "動作環境"},
+    "guideLabel": "ガイド",
+    "footerSupport": "ご質問はサポートページへ。",
+    "catalog": {"title": "", "description": "", "h1": "", "sub": "", "eyebrow": ""}
+  }
+}

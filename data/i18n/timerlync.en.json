@@ -1,0 +1,151 @@
+{
+  "locale": "en",
+  "title": "Synchronized Timer for Groups - TimerLync for iOS",
+  "description": "A synchronized timer for groups: one countdown on every iPhone, iPad and Apple Watch, with the alarm at the same instant. Join by code or QR, no account.",
+  "h1": "A synchronized timer that rings on every device at once",
+  "tagline": "One countdown. Every device. One alarm.",
+  "summary": [
+    "TimerLync is a countdown timer that stays in sync across every iPhone, iPad and Apple Watch in a room. Set the time once, and every device shows the same remaining seconds and alarms at the same instant.",
+    "It is made for teachers and trainers, presenters and facilitators, study groups and teams, and anyone who needs a group to start and stop together.",
+    "Devices join with a room code or a QR code, with no account. Nearby devices connect over Bluetooth and Wi-Fi, and devices that are apart connect over the network."
+  ],
+  "overview": [
+    "When several people each start a countdown on their own phone, the timers drift: someone taps first, a screen goes to sleep, an alarm sound differs. A multi device timer fixes that by sharing a single end time instead of streaming remaining seconds. TimerLync devices agree on one end time using network time, then count down locally. Even if Wi-Fi drops or a device goes to sleep, the alarm still fires on schedule, because it is scheduled ahead of time rather than pushed at the last second.",
+    "Fair starts matter in group work and workouts. A 3-2-1 lead-in lands at the same instant on every screen, so whoever taps Start does not get a head start. The host can run a ready check that waits until everyone confirms, name co-hosts, and hand the host role to someone else. For talks and events there is a full-screen Stage View with big digits, host messages such as Please wrap up, and a choice of what to show at 00:00.",
+    "A synchronized timer for groups is also more than a single countdown. Sequences chain steps, for example Talk 10 min then Q&A 5 min, and every device switches at the same moment. Group Pomodoro shares focus and break cycles with a whole team. If you just want a reliable alarm for yourself, Quick Timer works without a room."
+  ],
+  "features": [
+    {
+      "h": "One end time, one alarm on every device",
+      "p": "Devices share a single end time and count down locally, so a brief connection wobble does not make the numbers jump. The alarm is scheduled ahead of time, and Strong Alarm can ring even in Silent mode or Focus on iOS 26 or later."
+    },
+    {
+      "h": "Fair starts with a shared 3-2-1 lead-in",
+      "p": "The lead-in is tied to one shared moment, so every screen counts down together. The host starts the timer; pause, +0:30, +1:00 and reset can be opened to everyone. Ready check holds the start until all participants confirm."
+    },
+    {
+      "h": "Rooms for groups, with no account",
+      "p": "Create a room and share a code or QR. Nearby devices connect over Bluetooth and Wi-Fi, and devices that are apart connect across networks. Joining a room is always included; rooms hold two devices without Pro, and Pro raises that to eight."
+    },
+    {
+      "h": "Sequences, Group Pomodoro and Stage View",
+      "p": "Chain steps that switch on every device, share focus and break cycles, show a full-screen display for the podium, and send a message to every screen. When the timer ends it can hold at 00:00, count overtime, flash, or show the clock, set once for the whole room."
+    },
+    {
+      "h": "Apple Watch, Live Activity, widget and Siri",
+      "p": "The Apple Watch companion has its own alarm, even away from your phone. A Live Activity and Dynamic Island show the countdown without unlocking, and there is a Lock Screen widget and Siri support for starting a countdown."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/timerlync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync host screen on a purple background showing 04:13 remaining, a Running label, and Reset, Pause and +1:00 buttons",
+      "caption": "Host screen"
+    },
+    {
+      "src": "/images/apps/timerlync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync participant screen showing the same 04:13 remaining with a note that the host controls the timer",
+      "caption": "Same time on a joined device"
+    },
+    {
+      "src": "/images/apps/timerlync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Two TimerLync screens side by side, both showing the number 3 of the shared 3-2-1 lead-in and a banner that Alex started the timer",
+      "caption": "3-2-1 at the same instant"
+    },
+    {
+      "src": "/images/apps/timerlync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync participants sheet with a room code and QR icon, a Ready Check switch and two connected participants",
+      "caption": "Room code and ready check"
+    },
+    {
+      "src": "/images/apps/timerlync/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync Sequence editor with Group Pomodoro and Talk plus Q&A presets, steps of 10 and 5 minutes and a 15:00 total",
+      "caption": "Sequences and Group Pomodoro"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requirements",
+      "v": "iPhone and iPad with iOS 17 or later; Apple Watch companion"
+    },
+    {
+      "k": "Joining",
+      "v": "Room code or QR code, no account or sign-in"
+    },
+    {
+      "k": "Connections",
+      "v": "Bluetooth and Wi-Fi nearby, across networks when devices are apart"
+    },
+    {
+      "k": "Time sync",
+      "v": "Network time agrees on one end time; each device counts down locally"
+    },
+    {
+      "k": "Devices per room",
+      "v": "2 without Pro, up to 8 with Pro (counted on the host's device)"
+    },
+    {
+      "k": "Group tools",
+      "v": "Ready check, co-hosts, host hand-off, sequences, Group Pomodoro, Stage View, host messages"
+    },
+    {
+      "k": "Alarm",
+      "v": "Scheduled ahead of time; Strong Alarm rings in Silent mode or Focus on iOS 26 or later"
+    },
+    {
+      "k": "History",
+      "v": "Session history on device; CSV export with Pro"
+    }
+  ],
+  "limits": [
+    "TimerLync runs on iPhone, iPad and Apple Watch only. There is no Android or Windows version, so those devices cannot join a room.",
+    "A room holds two devices without Pro and eight with Pro, counted on the host's device. It is not suited to a class of 30 joining on their own phones; connect one device per group or show the host screen on a projector.",
+    "Time correction uses network time. A device that has never reached the internet can be less accurate, and tens of milliseconds is a target, not a guarantee.",
+    "Silent mode, Focus and notification settings can still silence an alert, except for Strong Alarm on iOS 26 or later. Some networks, such as certain classroom Wi-Fi, block nearby discovery; in that case type the room code to connect over the network.",
+    "Test the Apple Watch alert on your own devices before an important event."
+  ],
+  "faq": [
+    {
+      "q": "How do I run a synchronized timer on multiple devices?",
+      "a": "Create a room, choose the countdown time and start it. Others join by room code or QR, and every device shows the same remaining time and rings at the same instant."
+    },
+    {
+      "q": "What if a device loses Wi-Fi or goes to sleep?",
+      "a": "Each device counts down locally to a shared end time, and the alarm is scheduled ahead of time. The alarm still fires on schedule, though a dead battery or a silenced phone will not ring."
+    },
+    {
+      "q": "How many devices can use one room?",
+      "a": "A room holds two devices without Pro and up to eight with Pro, counted on the host's device. Joining any room is always included, and only the host needs Pro."
+    },
+    {
+      "q": "Do I need an account?",
+      "a": "No. You create or join a room with a code or QR. Pro is a one-time in-app purchase that unlocks rooms of up to eight devices and CSV export of session history."
+    },
+    {
+      "q": "Can I use it alone, or with Apple Watch?",
+      "a": "Yes. Quick Timer is a plain countdown with the same reliable alarm and needs no room. The Apple Watch companion has its own alarm, even away from your phone."
+    },
+    {
+      "q": "Can I chain steps like a talk and Q&A?",
+      "a": "Yes. A sequence chains steps such as Talk 10 min and Q&A 5 min, and every device switches at the same moment. Group Pomodoro uses the same idea for focus and break cycles."
+    }
+  ],
+  "card": {
+    "tagline": "One countdown on every iPhone, iPad and Apple Watch, with one alarm",
+    "features": [
+      "Same time and alarm on every device",
+      "Join by code or QR, no account",
+      "Sequences and Group Pomodoro"
+    ]
+  }
+}

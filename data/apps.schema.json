@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SetlogApps registry",
+  "type": "object",
+  "required": ["apps"],
+  "properties": {
+    "apps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "status", "name", "appStoreId", "storeKind", "platforms", "minOS", "category", "campaignLink", "locales", "primaryLocale", "icon", "keywords", "forbiddenClaims", "updated"],
+        "properties": {
+          "slug": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+          "status": {"enum": ["live", "hidden", "retired"]},
+          "name": {"type": "string", "minLength": 1},
+          "storeNames": {"type": "object"},
+          "appStoreId": {"type": "string", "pattern": "^[0-9]{6,12}$"},
+          "storeKind": {"enum": ["mac", "ios"]},
+          "platforms": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+          "minOS": {"type": "string"},
+          "category": {"enum": ["Utilities", "Photo & Video", "Music", "Health & Fitness", "Sports", "Productivity", "Food & Drink"]},
+          "campaignLink": {"description": "null until pasted from the ASC campaign link generator (ct=web-<slug>-<locale>). When set: an object {locale: url}.", "type": ["object", "null"]},
+          "playUrl": {"type": ["string", "null"]},
+          "locales": {"type": "array", "items": {"enum": ["en", "ko", "de", "fr", "ja"]}, "minItems": 1},
+          "primaryLocale": {"enum": ["en", "ko", "de", "fr", "ja"]},
+          "icon": {"type": "string", "pattern": "^/images/"},
+          "guides": {"type": "array", "items": {"type": "object", "required": ["href", "title"], "properties": {"href": {"type": "string", "pattern": "^/"}, "title": {"type": "object"}}}},
+          "keywords": {"type": "object"},
+          "forbiddenClaims": {"type": "array", "items": {"type": "string"}},
+          "updated": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"}
+        }
+      }
+    }
+  }
+}

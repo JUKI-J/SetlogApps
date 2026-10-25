@@ -1,0 +1,134 @@
+{
+  "locale": "en",
+  "title": "Play MKV on Mac with Subtitles - slplayer for Mac",
+  "description": "Play MKV files on your Mac without a codec pack. slplayer uses the macOS media engine, with dual subtitles, 0.1 s sync and no account needed.",
+  "h1": "Play MKV files on your Mac",
+  "tagline": "A light video player for MKV, MP4 and MOV, with subtitles that just work",
+  "summary": [
+    "slplayer is a video player for the Mac that opens MKV, MP4, M4V, MOV and MPEG-TS files and plays them with the media engine built into macOS.",
+    "It is for anyone who asks how to play MKV files on a Mac, whose subtitles show up as garbled characters, or who watches two-language episodes and wants to pick the audio track.",
+    "It adds no codec pack and no bundled decoder, so it stays light on battery, and it needs no account."
+  ],
+  "overview": [
+    "QuickTime Player often refuses MKV files. The reason is that MKV is a container, a kind of box, and the video and audio inside use codecs that decide whether a Mac can decode them. slplayer opens the MKV container and hands the streams to macOS, so files with H.264 or HEVC video and common audio such as AAC, AC-3, E-AC-3 or FLAC play without extra software.",
+    "If you are searching for an MKV player for Mac or just a video player for Mac that does not feel heavy, the idea is simple: drag a file onto the window, open it from Finder, or drop several files at once to build a queue. Subtitles in SRT, VTT and SMI load next to the video, two tracks can show at the same time, and you can choose which audio track you hear. Everything runs on your Mac and the app makes no network requests of its own."
+  ],
+  "features": [
+    {
+      "h": "MKV and other containers, no codec pack",
+      "p": "MKV, MP4, M4V, MOV and MPEG-TS open directly. H.264 and HEVC, including 10-bit and HDR10, plus AAC, AC-3, E-AC-3 and FLAC are supported. HDR, picture in picture and energy efficiency come from macOS itself."
+    },
+    {
+      "h": "Subtitles in SRT, VTT and SMI",
+      "p": "Subtitle files load alongside the video. Korean SMI files saved in EUC-KR are detected automatically, so they do not turn into gibberish. You can show two subtitle tracks at once, shift timing in 0.1-second steps, and the sync is remembered per file."
+    },
+    {
+      "h": "Audio tracks and playback speed",
+      "p": "Pick the audio track you want from episodes that carry two languages. Playback speed runs from 0.5x to 2.0x in 0.1 steps, and every action has a keyboard shortcut."
+    },
+    {
+      "h": "Playlists and resume",
+      "p": "Drop several files to build a queue, organise playlists with folders, reopen recent items, and continue from where you stopped."
+    },
+    {
+      "h": "Optional Pro for power use",
+      "p": "Basic playback needs no purchase. slplayer Pro adds split view for up to four videos, picture in picture, a menu bar mini player, A-B loop and a sleep timer, and a 7-day in-app trial of all Pro features starts at first launch, with no payment details. After the trial, Pro features lock and basic playback stays available."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/slplayer/en/01.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "slplayer window playing an MKV movie with an English subtitle line and a playback control bar, on a dark background with the headline 'MKV and subtitles, just working'",
+      "caption": "MKV and subtitles open with no extra setup."
+    },
+    {
+      "src": "/images/apps/slplayer/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "slplayer split view showing four videos in a two by two grid with one shared set of controls underneath",
+      "caption": "Split view plays up to four videos side by side (Pro)."
+    },
+    {
+      "src": "/images/apps/slplayer/en/06.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "slplayer settings sheet for subtitle style with presets and a live preview of the subtitle text",
+      "caption": "Subtitle style presets with a live preview."
+    },
+    {
+      "src": "/images/apps/slplayer/en/07.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "slplayer recents list with playlist folders and recently opened video files",
+      "caption": "Recent items and playlists with resume."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requirements",
+      "v": "Mac with macOS 14 or later"
+    },
+    {
+      "k": "Containers",
+      "v": "MKV, MP4, M4V, MOV, MPEG-TS"
+    },
+    {
+      "k": "Video and audio",
+      "v": "H.264, HEVC (10-bit, HDR10), AAC, AC-3, E-AC-3, FLAC"
+    },
+    {
+      "k": "Subtitles",
+      "v": "SRT, VTT, SMI (EUC-KR detected automatically)"
+    },
+    {
+      "k": "Playback speed",
+      "v": "0.5x to 2.0x in 0.1 steps"
+    },
+    {
+      "k": "App languages",
+      "v": "12, switchable inside the app"
+    },
+    {
+      "k": "Privacy",
+      "v": "No account, no analytics, no ads; the app makes no network requests of its own"
+    }
+  ],
+  "limits": [
+    "slplayer plays only what your Mac supports. If a file's audio cannot be decoded by macOS, the video plays without sound and a notice appears when playback starts.",
+    "Image-based subtitles, such as picture subtitles on discs, are not shown. Files that cannot be opened show an error.",
+    "The documented subtitle formats are SRT, VTT and SMI; other formats are not guaranteed.",
+    "It is a Mac app only. Split view, picture in picture, A-B loop and other extras need the optional Pro upgrade."
+  ],
+  "faq": [
+    {
+      "q": "How do I play MKV files on a Mac?",
+      "a": "QuickTime Player often cannot open MKV because it is only a container. Open the file in slplayer by dragging it onto the window or choosing it in Finder. If the video and audio inside use codecs macOS supports, such as H.264, HEVC, AAC or AC-3, it plays."
+    },
+    {
+      "q": "Why does an MKV play with no sound?",
+      "a": "The audio codec inside the file is not one your Mac can decode. slplayer then plays the video and shows a notice when playback starts, because it plays only formats macOS supports."
+    },
+    {
+      "q": "Does slplayer support ASS or picture subtitles?",
+      "a": "The documented subtitle formats are SRT, VTT and SMI. Image-based subtitles are not shown, and other formats are not guaranteed."
+    },
+    {
+      "q": "Do I need an account or a purchase?",
+      "a": "No account is needed. Opening files, MKV, subtitles, sync, speed and playlists work without Pro. slplayer Pro is optional and adds split view, picture in picture and A-B loop."
+    },
+    {
+      "q": "Can I try Pro before buying?",
+      "a": "Yes. A 7-day in-app trial of all Pro features starts at first launch, with no payment details needed. Afterwards the Pro features lock and basic playback keeps working."
+    }
+  ],
+  "card": {
+    "tagline": "Plays MKV on your Mac with subtitles, using the macOS media engine",
+    "features": [
+      "MKV, MP4, MOV, no codec pack",
+      "SRT, VTT, SMI and dual subtitles",
+      "No account, no ads"
+    ]
+  }
+}
