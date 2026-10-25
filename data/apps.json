@@ -271,11 +271,11 @@
         "about": {
           "en": {
             "name": "Belvue",
-            "text": "A macOS image viewer: open one image, then flip through the rest of its folder with the arrow keys"
+            "text": "A light, fast image viewer for Mac: open one image and the whole folder is ready to flip through with the arrow keys"
           },
           "ko": {
             "name": "Belvue",
-            "text": "이미지 하나를 열면 같은 폴더의 나머지를 방향키로 넘겨 볼 수 있는 macOS 이미지 뷰어"
+            "text": "가볍고 빠른 맥 이미지 뷰어 — 한 장만 열어도 폴더 전체 이미지를 바로 불러와 방향키로 넘겨 봅니다"
           }
         }
       }
