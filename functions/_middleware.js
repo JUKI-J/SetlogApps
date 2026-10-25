@@ -53,7 +53,7 @@ export async function onRequest(context) {
       const dir = '/apps/' + m[1] + (m[2] || '') + '/';
       const res = await env.ASSETS.fetch(new URL(dir, url));
       if (res.status === 200) {
-        if (!path.endsWith('/') && !path.endsWith('index.html')) {
+        if (!path.endsWith('/')) {
           return Response.redirect(APPS + dir.slice('/apps'.length) + url.search, 301);
         }
         return new Response(res.body, { status: 200, headers: res.headers });

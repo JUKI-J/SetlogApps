@@ -33,7 +33,7 @@
     },
     {
       "h": "Create ZIP files on Mac and iPhone",
-      "p": "Select files, photos or videos and compress them into a ZIP, including from the share sheet on iPhone. A Windows-compatible filename preset keeps non-English names intact for the person who opens the file on a PC, and AES-256 encryption is available for ZIP. Creating 7z, password-protected and split archives is part of Pro."
+      "p": "Select files, photos or videos and compress them into a ZIP, including from the share sheet on iPhone. A Windows-compatible filename preset keeps non-English names intact for the person who opens the file on a PC, and ZIP can be encrypted with AES-256 as a Pro feature. Creating 7z, password-protected and split archives is part of Pro."
     }
   ],
   "screenshots": [
@@ -46,7 +46,7 @@
     {"k": "Platforms", "v": "Mac, iPhone and iPad (one App Store listing)"},
     {"k": "Requirements", "v": "macOS 14 or later; iOS 16.1 or later"},
     {"k": "Extract", "v": ".zip, .tar, .tar.gz, .tar.bz2, .tar.xz; with Pro also .rar, .7z, .lzh, .alz"},
-    {"k": "Create", "v": ".zip with AES-256 encryption; 7z, password-protected and split archives with Pro"},
+    {"k": "Create", "v": ".zip and .tar without a password; AES-256 encrypted ZIP, 7z, password-protected and split archives with Pro"},
     {"k": "Passwords", "v": "ZIP with ZipCrypto or AES (Pro)"},
     {"k": "Filename encodings", "v": "CP949/EUC-KR, Shift_JIS, GB18030, Big5 and more, detected on the device"},
     {"k": "Privacy", "v": "No account, no analytics, no advertising SDKs; App Store label Data Not Collected"},
@@ -64,7 +64,7 @@
     {"q": "How do I unzip a file on a Mac?", "a": "Double-clicking a ZIP uses the built-in Archive Utility. With Zipda you can also browse the archive, preview a single file, choose where the files go and unzip in one step, which helps when names are garbled or the archive is very large."},
     {"q": "Can Zipda open 7z files on Mac?", "a": "Yes. Zipda opens, browses and previews 7z archives, and extracting 7z is included in Zipda Pro."},
     {"q": "Why are my file names garbled after unzipping?", "a": "The archive stored names in a regional code page instead of Unicode. Zipda detects the likely encoding on your device, and you can change it with one tap. For folders you already extracted, use the Repair File Names tool."},
-    {"q": "Can I create a RAR file with Zipda?", "a": "No. Zipda creates ZIP archives, with AES-256 encryption available, and 7z archives with Pro. For sending files to others, ZIP is the safest choice."},
+    {"q": "Can I create a RAR file with Zipda?", "a": "No. Zipda creates plain ZIP archives, and with Pro also AES-256 encrypted ZIP and 7z archives. For sending files to others, ZIP is the safest choice."},
     {"q": "Are my files uploaded anywhere?", "a": "No. Everything is processed on your device. The app has no account, no analytics and no advertising SDKs."}
   ],
   "card": {

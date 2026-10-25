@@ -32,7 +32,7 @@
     },
     {
       "h": "Optional Pro for power use",
-      "p": "Basic playback needs no subscription. slplayer Pro adds split view for up to four videos, picture in picture, a menu bar mini player, A-B loop and a sleep timer, and all Pro features can be tried for the first 7 days without payment details."
+      "p": "Basic playback needs no purchase. slplayer Pro adds split view for up to four videos, picture in picture, a menu bar mini player, A-B loop and a sleep timer, and a 7-day in-app trial of all Pro features starts at first launch, with no payment details. After the trial, Pro features lock and basic playback stays available."
     }
   ],
   "screenshots": [
@@ -99,7 +99,7 @@
     "slplayer plays only what your Mac supports. If a file's audio cannot be decoded by macOS, the video plays without sound and a notice appears when playback starts.",
     "Image-based subtitles, such as picture subtitles on discs, are not shown. Files that cannot be opened show an error.",
     "The documented subtitle formats are SRT, VTT and SMI; other formats are not guaranteed.",
-    "It is a Mac app only. Split view, picture in picture, A-B loop and other extras need the optional Pro subscription."
+    "It is a Mac app only. Split view, picture in picture, A-B loop and other extras need the optional Pro upgrade."
   ],
   "faq": [
     {
@@ -115,12 +115,12 @@
       "a": "The documented subtitle formats are SRT, VTT and SMI. Image-based subtitles are not shown, and other formats are not guaranteed."
     },
     {
-      "q": "Do I need an account or a subscription?",
-      "a": "No account is needed. Opening files, MKV, subtitles, sync, speed and playlists work without a subscription. slplayer Pro is optional and adds split view, picture in picture and A-B loop."
+      "q": "Do I need an account or a purchase?",
+      "a": "No account is needed. Opening files, MKV, subtitles, sync, speed and playlists work without Pro. slplayer Pro is optional and adds split view, picture in picture and A-B loop."
     },
     {
-      "q": "Can I try Pro before subscribing?",
-      "a": "Yes. All Pro features can be tried for the first 7 days, with no payment details and no subscription needed to try them."
+      "q": "Can I try Pro before buying?",
+      "a": "Yes. A 7-day in-app trial of all Pro features starts at first launch, with no payment details needed. Afterwards the Pro features lock and basic playback keeps working."
     }
   ],
   "card": {

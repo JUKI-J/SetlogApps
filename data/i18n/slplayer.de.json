@@ -32,7 +32,7 @@
     },
     {
       "h": "Optionales Pro für Vielnutzer",
-      "p": "Die normale Wiedergabe braucht kein Abo. slplayer Pro ergänzt Splitscreen für bis zu vier Videos, Bild-in-Bild, einen Mini-Player in der Menüleiste, A-B-Loop und einen Einschlaftimer. Alle Pro-Funktionen lassen sich die ersten 7 Tage ohne Zahlungsdaten ausprobieren."
+      "p": "Die normale Wiedergabe braucht kein Pro. slplayer Pro ergänzt Splitscreen für bis zu vier Videos, Bild-in-Bild, einen Mini-Player in der Menüleiste, A-B-Loop und einen Einschlaftimer. Eine 7-tägige In-App-Testphase für alle Pro-Funktionen beginnt beim ersten Start, ohne Zahlungsdaten. Danach sind die Pro-Funktionen gesperrt, die normale Wiedergabe bleibt."
     }
   ],
   "screenshots": [
@@ -99,7 +99,7 @@
     "slplayer spielt nur Formate, die dein Mac unterstützt. Kann macOS den Ton einer Datei nicht dekodieren, läuft das Bild ohne Ton, und beim Start erscheint ein Hinweis.",
     "Bildbasierte Untertitel, wie sie auf Discs vorkommen, werden nicht angezeigt. Dateien, die sich nicht öffnen lassen, zeigen einen Fehler.",
     "Dokumentiert sind die Untertitelformate SRT, VTT und SMI; andere Formate sind nicht zugesichert.",
-    "Die App gibt es nur für den Mac. Splitscreen, Bild-in-Bild, A-B-Loop und weitere Extras setzen das optionale Pro-Abo voraus."
+    "Die App gibt es nur für den Mac. Splitscreen, Bild-in-Bild, A-B-Loop und weitere Extras setzen das optionale Pro voraus."
   ],
   "faq": [
     {
@@ -115,12 +115,12 @@
       "a": "Dokumentiert sind SRT, VTT und SMI. Bildbasierte Untertitel werden nicht angezeigt, andere Formate sind nicht zugesichert."
     },
     {
-      "q": "Brauche ich ein Konto oder ein Abo?",
-      "a": "Ein Konto ist nicht nötig. Dateien öffnen, MKV, Untertitel, Sync, Geschwindigkeit und Wiedergabelisten funktionieren ohne Abo. slplayer Pro ist optional und ergänzt Splitscreen, Bild-in-Bild und A-B-Loop."
+      "q": "Brauche ich ein Konto oder Pro?",
+      "a": "Ein Konto ist nicht nötig. Dateien öffnen, MKV, Untertitel, Sync, Geschwindigkeit und Wiedergabelisten funktionieren ohne Pro. slplayer Pro ist optional und ergänzt Splitscreen, Bild-in-Bild und A-B-Loop."
     },
     {
-      "q": "Kann ich Pro vor dem Abo ausprobieren?",
-      "a": "Ja. Alle Pro-Funktionen lassen sich die ersten 7 Tage nutzen, ohne Zahlungsdaten und ohne Abo."
+      "q": "Kann ich Pro vor dem Kauf ausprobieren?",
+      "a": "Ja. Eine 7-tägige In-App-Testphase aller Pro-Funktionen beginnt beim ersten Start, ohne Zahlungsdaten. Danach sind die Pro-Funktionen gesperrt, die normale Wiedergabe bleibt."
     }
   ],
   "card": {

@@ -2,7 +2,7 @@
 // SetlogApps page generator + validators. Node stdlib only.
 //   node scripts/build.mjs                       build (fails when a campaignLink is missing)
 //   node scripts/build.mjs --allow-plain-links   LOCAL PREVIEW ONLY: falls back to https://apps.apple.com/app/id<ID>
-//   node scripts/build.mjs --check-live          also verify every live appStoreId via iTunes Lookup (network)
+//   node scripts/build.mjs --check-live          also verify every live appStoreId (iTunes Lookup) and every playUrl (must be HTTP 200)
 //   node scripts/build.mjs --today=YYYY-MM-DD    override "today" for lastmod
 // Reads data/apps.json + data/i18n/*.json + templates/*.html, writes apps/<slug>/**, apps/ko/index.html,
 // the marker regions of apps/index.html, sitemap.xml, apps-sitemap.xml, data/lastmod.json.
@@ -427,6 +427,9 @@ if (CHECK_LIVE) {
     let ok = false;
     for (const c of ['kr', 'us']) {
       try { const r = await fetch(`https://itunes.apple.com/lookup?id=${a.appStoreId}&country=${c}`); const t = JSON.parse(await r.text()); if (t.resultCount > 0) { ok = true; break; } } catch (e) { warns.push(`live check ${a.slug}: ${e.message}`); }
+    }
+    if (a.playUrl) {
+      try { const r = await fetch(a.playUrl, { redirect: 'follow' }); if (r.status !== 200) err(`${a.slug}: playUrl returned HTTP ${r.status} (${a.playUrl})`); } catch (e) { err(`${a.slug}: playUrl fetch failed (${e.message})`); }
     }
     if (!ok) err(`${a.slug}: appStoreId ${a.appStoreId} not found on iTunes Lookup (kr/us)`);
   }

@@ -15,7 +15,10 @@
       ],
       "minOS": "macOS 15",
       "category": "Music",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-ko&mt=8"
+      },
       "playUrl": null,
       "locales": [
         "en",
@@ -71,7 +74,11 @@
     },
     {
       "status": "live",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-en&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-de&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-ko&mt=8"
+      },
       "playUrl": null,
       "storeKind": "mac",
       "platforms": [
@@ -168,7 +175,10 @@
     },
     {
       "status": "live",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-ko&mt=8"
+      },
       "playUrl": null,
       "storeKind": "mac",
       "platforms": [
@@ -229,7 +239,10 @@
       ],
       "minOS": "iOS 17",
       "category": "Health & Fitness",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-ko&mt=8"
+      },
       "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.runvue",
       "locales": [
         "en",
@@ -299,13 +312,16 @@
       "storeKind": "ios",
       "platforms": [
         "iPhone",
-        "Apple Watch",
-        "Android"
+        "Apple Watch"
       ],
       "minOS": "iOS 26",
       "category": "Health & Fitness",
-      "campaignLink": null,
-      "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.intervalrunner",
+      "campaignLink": {
+        "fr": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-fr&mt=8",
+        "en": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-ko&mt=8"
+      },
+      "playUrl": null,
       "locales": [
         "fr",
         "en",
@@ -399,7 +415,9 @@
       ],
       "minOS": "iOS 18",
       "category": "Food & Drink",
-      "campaignLink": null,
+      "campaignLink": {
+        "ko": "https://apps.apple.com/app/apple-store/id6818362178?pt=118586419&ct=web-lunchlog-ko&mt=8"
+      },
       "playUrl": null,
       "locales": [
         "ko"
@@ -471,7 +489,12 @@
       ],
       "minOS": "iOS 16.1 / macOS 14",
       "category": "Utilities",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-ko&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-de&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-ja&mt=8"
+      },
       "playUrl": null,
       "locales": [
         "en",
@@ -558,7 +581,10 @@
       ],
       "minOS": "iOS 15",
       "category": "Productivity",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-ko&mt=8"
+      },
       "playUrl": "https://play.google.com/store/apps/details?id=setlog.onesync.android",
       "locales": [
         "en",
@@ -633,7 +659,10 @@
       ],
       "minOS": "iOS 17",
       "category": "Utilities",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-ko&mt=8"
+      },
       "playUrl": null,
       "locales": [
         "en",
@@ -699,7 +728,10 @@
       ],
       "minOS": "iOS 17",
       "category": "Sports",
-      "campaignLink": null,
+      "campaignLink": {
+        "en": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-en&mt=8",
+        "ko": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-ko&mt=8"
+      },
       "playUrl": null,
       "locales": [
         "en",

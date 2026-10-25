@@ -33,7 +33,7 @@
     },
     {
       "h": "ZIP-Dateien erstellen",
-      "p": "Wählen Sie Dateien, Fotos oder Videos aus und komprimieren Sie sie zu einer ZIP-Datei, auf dem iPhone auch direkt über das Teilen-Menü. Eine Windows-kompatible Namensvoreinstellung sorgt dafür, dass Namen mit Nicht-ASCII-Zeichen auf Windows-Rechnern nicht kaputtgehen. ZIP lässt sich mit AES-256 verschlüsseln. 7z-, passwortgeschützte und geteilte Archive zu erstellen gehört zu Pro."
+      "p": "Wählen Sie Dateien, Fotos oder Videos aus und komprimieren Sie sie zu einer ZIP-Datei, auf dem iPhone auch direkt über das Teilen-Menü. Eine Windows-kompatible Namensvoreinstellung sorgt dafür, dass Namen mit Nicht-ASCII-Zeichen auf Windows-Rechnern nicht kaputtgehen. Die AES-256-Verschlüsselung von ZIP gehört zu Pro, ebenso das Erstellen von 7z-, passwortgeschützten und geteilten Archiven."
     }
   ],
   "screenshots": [
@@ -46,7 +46,7 @@
     {"k": "Plattformen", "v": "Mac, iPhone und iPad (ein App-Store-Eintrag)"},
     {"k": "Voraussetzungen", "v": "macOS 14 oder neuer, iOS 16.1 oder neuer"},
     {"k": "Entpacken", "v": ".zip, .tar, .tar.gz, .tar.bz2, .tar.xz; mit Pro zusätzlich .rar, .7z, .lzh, .alz"},
-    {"k": "Erstellen", "v": ".zip mit AES-256-Verschlüsselung; 7z, passwortgeschützte und geteilte Archive mit Pro"},
+    {"k": "Erstellen", "v": ".zip und .tar ohne Passwort; AES-256-verschlüsseltes ZIP, 7z, passwortgeschützte und geteilte Archive mit Pro"},
     {"k": "Passwörter", "v": "ZIP mit ZipCrypto oder AES (Pro)"},
     {"k": "Dateinamen-Kodierungen", "v": "CP949/EUC-KR, Shift_JIS, GB18030, Big5 und weitere, auf dem Gerät erkannt"},
     {"k": "Datenschutz", "v": "Kein Konto, keine Analyse, keine Werbe-SDKs; App-Store-Kennzeichnung: Keine Daten erfasst"},
@@ -63,7 +63,7 @@
     {"q": "Wie kann ich eine RAR-Datei auf dem Mac öffnen?", "a": "Installieren Sie Zipda und ziehen Sie die RAR-Datei auf das App-Fenster. Sie sehen zuerst den Inhalt und können dann alles oder einzelne Dateien entpacken. Das Entpacken von RAR gehört zum optionalen Zipda Pro."},
     {"q": "Welcher Entpacker für Mac kann RAR und 7z?", "a": "Zipda öffnet, durchsucht und zeigt ZIP, RAR, 7z und TAR an. Das Entpacken von RAR und 7z ist Teil von Pro; ZIP und TAR entpacken Sie ohne Pro."},
     {"q": "Warum sind meine Dateinamen nach dem Entpacken kaputt?", "a": "Das Archiv wurde unter Windows mit einer regionalen Codepage statt Unicode erstellt. Zipda erkennt die Kodierung auf dem Gerät, und Sie können sie mit einem Tipp ändern. Bereits entpackte Ordner repariert das Werkzeug Dateinamen reparieren."},
-    {"q": "Kann Zipda RAR-Dateien erstellen?", "a": "Nein. RAR kann nur entpackt werden. Zum Weitergeben eignet sich ZIP am besten, optional mit AES-256, oder 7z mit Pro."},
+    {"q": "Kann Zipda RAR-Dateien erstellen?", "a": "Nein. RAR kann nur entpackt werden. Zum Weitergeben eignet sich ZIP am besten; mit Pro auch AES-256-verschlüsselt, oder 7z."},
     {"q": "Kann ich Archive auch auf dem iPhone entpacken?", "a": "Ja. Teilen Sie das Archiv aus Mail, einer Messenger-App oder der Dateien-App mit Zipda. Den Zielordner wählen Sie in der Dateien-App."},
     {"q": "Werden meine Dateien hochgeladen?", "a": "Nein. Alles wird auf Ihrem Gerät verarbeitet. Die App hat kein Konto, keine Analyse und keine Werbe-SDKs."}
   ],
