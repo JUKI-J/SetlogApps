@@ -1,0 +1,238 @@
+{
+ "https://apps.setlog.net/": {
+  "hash": "ab2b76243cc864b7bc432fc056a95bb622f43b4b",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/belvue/": {
+  "hash": "ab37d8cb567d23873498e3835ca9cbf787897e88",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/belvue/ko/": {
+  "hash": "87e4fc1e7c091ca48cdef3dcc598caf6d25d662a",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/charcoalplayer/": {
+  "hash": "7142c14f4a4fe79629cc1061c67eb060c51c95d3",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/charcoalplayer/ko/": {
+  "hash": "9f01a521ee8c2ff4e4598078379c62e22b680c6a",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/intervalrunner/": {
+  "hash": "76b2b2fde3830ad75dd093eb690cf901dd42b0f4",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/intervalrunner/fr/": {
+  "hash": "2e07518d5c65cbd36ed24620f2bef52d5785502e",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/intervalrunner/ko/": {
+  "hash": "3486d76dab3bcc4289a8b361b58b156013689768",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/ko/": {
+  "hash": "de3d4838742bf23c9790ea329cb2340e9b4d8683",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/laplync/": {
+  "hash": "cbc90f345f0922dbd141fe0a68ef1a32d75264a6",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/laplync/ko/": {
+  "hash": "aa91ef9137d9552d4e3628844d039278367fc1f6",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/lunchlog/": {
+  "hash": "1733eb494501b8eac25648d35e51fbbfc8487e09",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/onesync/": {
+  "hash": "92f6baa6ebc40a8ba006c1196d5280458ab58127",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/onesync/ko/": {
+  "hash": "6cfec6df14960f8d9ec99d0cbd749ce3207b43aa",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/runvue/": {
+  "hash": "e06e312e2ec80396706e4b97b1fefec427995fdf",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/runvue/ko/": {
+  "hash": "dd63d4ac0f8d8b7e13489f956d947013b6703b76",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/slplayer/": {
+  "hash": "3a2daa9c04ec82c131b60f9956a934f0f96ea0d4",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/slplayer/de/": {
+  "hash": "fca217026360b297495f53af7151679ed8b81fb3",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/slplayer/ko/": {
+  "hash": "52bfd2f946137cb7b52a387dfe59b1db65bb687b",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/timerlync/": {
+  "hash": "995164419cdb762e2740d7ed50a0633f76e6fe36",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/timerlync/ko/": {
+  "hash": "7dbf2291255c1e92678af390d3c33a3e94c87b09",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/zipda/": {
+  "hash": "1509815b5f3227a5f09bba2a29b5d8cca04a34d2",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/zipda/de/": {
+  "hash": "3f358c805e29e2f5ff87e81ee65505d7e45d9cf3",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/zipda/ja/": {
+  "hash": "fadfa460158bafe2c34bae8bf92eba2e8422d4ed",
+  "date": "2026-10-25"
+ },
+ "https://apps.setlog.net/zipda/ko/": {
+  "hash": "a37ae27ea5ec250e41d8dbe4cd5b2b54b191688a",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/": {
+  "hash": "6bcfe2f75db24f14e90c064d358de8316d949ddd",
+  "date": "2026-10-12"
+ },
+ "https://setlog.net/about": {
+  "hash": "b04439592770844be3448123352f0bf868d4faf9",
+  "date": "2026-10-07"
+ },
+ "https://setlog.net/contact": {
+  "hash": "d2c85711cec29c507e2aada7918b915f522d312b",
+  "date": "2026-10-07"
+ },
+ "https://setlog.net/de/guides/play-mkv-on-mac": {
+  "hash": "531838215e14036c645a668827f887f0f3ab21ee",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/en/guides/play-mkv-on-mac": {
+  "hash": "5cf9869f39b3696206a5342ce750afec64f97831",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/en/guides/zip-rar-7z-archive-formats-explained": {
+  "hash": "9a996289f07e7ce24e3e60c84d4fc7d5442e5066",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/faq": {
+  "hash": "296116e72b1486898651e9c286529ca62fb66bed",
+  "date": "2026-10-07"
+ },
+ "https://setlog.net/fr/guides/fractionne-test-vma": {
+  "hash": "e21f9754535504bb73609b532aae7990d4fc1f01",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/": {
+  "hash": "fe59b984173312b406bce7e026717e5e45b48ff4",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/average-price-calculation-explained": {
+  "hash": "54bdda160fd0f3bb48758a7b6571691f271eccc0",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/charcoalplayer": {
+  "hash": "43d44c9a2c811f346182b52124fb690bffbdf8ad",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/claudeminer": {
+  "hash": "8e3801b8826557d419d5f5887caaa92c455b8b71",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/interval-running-workout-basics": {
+  "hash": "208bfccf06444e6d43a4ae1b72c7e85a048ddfb0",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/intervalrunner": {
+  "hash": "80b5199bc37f2f2aa3b521ac566399ab5a5f9bf3",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/laplync": {
+  "hash": "bcc53b9e24550000f5bfd26f2c358fa2a74fd882",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/lunchlog": {
+  "hash": "6513f8629d21a4b7e6b977ab30915cb540dc1e89",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/monitor-claude-code-sessions": {
+  "hash": "d1037cac4180c52049ee2bc40a773766ec76bfe1",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/multagi": {
+  "hash": "352e071d37d9d03a778432ea40887facd66c1fb7",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/onesync": {
+  "hash": "88688270a3da41cd23acdd43d3ffe8876b374eda",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/play-mkv-on-mac": {
+  "hash": "dfdd90cbbf948d574999fdc5288c4ce3c69244b8",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/running-replay-video-guide": {
+  "hash": "62417f83dbd55dd4eb471efc100637341976f86c",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/runvue": {
+  "hash": "78f7af2ddaf25711638b53d4bb1e143321dadb68",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/school-lunch-info-and-widgets": {
+  "hash": "ffcf63bbe2e473a911672719ae55945e74ba7e15",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/share-files-between-iphone-android-pc": {
+  "hash": "0947e68d2f54785b4774e0bb69a92a343ac38362",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/slplayer": {
+  "hash": "941b398c1b853190bfb09649843d1942433ce522",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/stem-separation-practice-guide": {
+  "hash": "b1229459a1768099fae2919524c3618dd5f6d7ad",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/subtitle-sync-and-encoding-fixes": {
+  "hash": "7d6c64516cf5c674db4520130458bcbf5cf4c2c7",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/synchronized-timers-for-groups": {
+  "hash": "fd80540179cb968f71fcdf15a8079f921291b8d6",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/timerlync": {
+  "hash": "de48d25d0a80e4d6e2b04ac658c64792ba525b2a",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/zip-rar-7z-archive-formats-explained": {
+  "hash": "05c61ed23d968cbaa4b65a1f8b04435681dd1457",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/guides/zipda": {
+  "hash": "a8a2bff186f052f6fa778cbd44c71b74e63667c7",
+  "date": "2026-10-25"
+ },
+ "https://setlog.net/privacy": {
+  "hash": "f076865ee6daced2b3954ce60326786d4caf9e67",
+  "date": "2026-10-07"
+ },
+ "https://setlog.net/support": {
+  "hash": "3781538243f674ef615dfcaa025a162896f4b88c",
+  "date": "2026-10-12"
+ },
+ "https://setlog.net/terms": {
+  "hash": "5038987b0ceb57513a9bf0906df2b05249eca7fc",
+  "date": "2026-10-07"
+ }
+}

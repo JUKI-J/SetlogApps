@@ -1,0 +1,755 @@
+{
+  "apps": [
+    {
+      "slug": "charcoalplayer",
+      "status": "live",
+      "name": "Charcoal Player",
+      "storeNames": {
+        "en": "Charcoal Player",
+        "ko": "Charcoal Player"
+      },
+      "appStoreId": "1212179275",
+      "storeKind": "mac",
+      "platforms": [
+        "macOS"
+      ],
+      "minOS": "macOS 15",
+      "category": "Music",
+      "campaignLink": null,
+      "playUrl": null,
+      "locales": [
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/charcoalplayer-icon.png",
+      "guides": [
+        {
+          "href": "/guides/charcoalplayer",
+          "title": {
+            "en": "Charcoal Player guide",
+            "ko": "Charcoal Player 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/stem-separation-practice-guide",
+          "title": {
+            "en": "Practicing with stem separation",
+            "ko": "스템 분리 연습 활용법"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "mac music player flac",
+          "mac audio player loop",
+          "ab repeat mac"
+        ],
+        "ko": [
+          "맥 음악 플레이어",
+          "맥 구간반복 플레이어"
+        ]
+      },
+      "forbiddenClaims": [
+        "iCloud",
+        "change pitch",
+        "pitch change",
+        "pitch shift",
+        "transpose",
+        "key change",
+        "피치 변경",
+        "피치 조절",
+        "키 변경",
+        "Spotify",
+        "Apple Music",
+        "streaming service",
+        "iPhone app",
+        "iPad app",
+        "sync across devices"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "status": "live",
+      "campaignLink": null,
+      "playUrl": null,
+      "storeKind": "mac",
+      "platforms": [
+        "macOS"
+      ],
+      "updated": "2026-10-25",
+      "slug": "slplayer",
+      "name": "slplayer",
+      "storeNames": {
+        "en": "slplayer: Video Player",
+        "ko": "slplayer: 동영상 플레이어",
+        "de": "slplayer: Videoplayer"
+      },
+      "appStoreId": "6811089277",
+      "minOS": "macOS 14",
+      "category": "Photo & Video",
+      "locales": [
+        "en",
+        "de",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/slplayer-icon.png",
+      "guides": [
+        {
+          "href": "/guides/slplayer",
+          "title": {
+            "en": "slplayer Guide",
+            "ko": "slplayer 사용 가이드",
+            "de": "slplayer-Anleitung"
+          }
+        },
+        {
+          "href": "/en/guides/play-mkv-on-mac",
+          "title": {
+            "en": "How to play MKV files on a Mac"
+          }
+        },
+        {
+          "href": "/de/guides/play-mkv-on-mac",
+          "title": {
+            "de": "MKV auf dem Mac abspielen"
+          }
+        },
+        {
+          "href": "/guides/play-mkv-on-mac",
+          "title": {
+            "ko": "맥에서 MKV 파일 재생하는 방법"
+          }
+        },
+        {
+          "href": "/guides/subtitle-sync-and-encoding-fixes",
+          "title": {
+            "en": "Fixing subtitle sync and garbled text",
+            "ko": "자막 싱크·깨짐 문제 해결법",
+            "de": "Untertitel-Sync und Zeichensalat beheben"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "how to play mkv files on mac",
+          "mkv player mac",
+          "video player for mac",
+          "play mkv on mac"
+        ],
+        "de": [
+          "mkv auf mac abspielen",
+          "mkv datei öffnen mac",
+          "mkv abspielen mac",
+          "videoplayer für mac"
+        ],
+        "ko": [
+          "맥 mkv 플레이어",
+          "맥 mkv 재생",
+          "맥 동영상 플레이어",
+          "맥 mkv 자막"
+        ]
+      },
+      "forbiddenClaims": [
+        "NAS",
+        "SMB",
+        "network drive",
+        "network share",
+        "Netzwerklaufwerk",
+        "Netzwerkfreigabe",
+        "네트워크 드라이브",
+        "네트워크 공유",
+        "iPhone app",
+        "iOS app",
+        "DTS support",
+        "TrueHD support"
+      ]
+    },
+    {
+      "status": "live",
+      "campaignLink": null,
+      "playUrl": null,
+      "storeKind": "mac",
+      "platforms": [
+        "macOS"
+      ],
+      "updated": "2026-10-25",
+      "slug": "belvue",
+      "name": "Belvue",
+      "storeNames": {
+        "en": "Belvue",
+        "ko": "Belvue"
+      },
+      "appStoreId": "6821348645",
+      "minOS": "macOS 15",
+      "category": "Photo & Video",
+      "locales": [
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/belvue-icon.png",
+      "guides": [],
+      "keywords": {
+        "en": [
+          "mac image viewer",
+          "fast image viewer for mac",
+          "image viewer mac arrow keys"
+        ],
+        "ko": [
+          "맥 이미지 뷰어",
+          "맥 이미지 뷰어 방향키",
+          "맥 사진 뷰어"
+        ]
+      },
+      "forbiddenClaims": [
+        "iCloud",
+        "cloud sync",
+        "Windows",
+        "iPhone",
+        "iPad",
+        "batch rename",
+        "image editing"
+      ]
+    },
+    {
+      "slug": "runvue",
+      "status": "live",
+      "name": "RunVue",
+      "storeNames": {
+        "en": "RunVue",
+        "ko": "RunVue"
+      },
+      "appStoreId": "6817999096",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "Android"
+      ],
+      "minOS": "iOS 17",
+      "category": "Health & Fitness",
+      "campaignLink": null,
+      "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.runvue",
+      "locales": [
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/runvue-icon.png",
+      "guides": [
+        {
+          "href": "/guides/runvue",
+          "title": {
+            "en": "RunVue guide",
+            "ko": "RunVue 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/running-replay-video-guide",
+          "title": {
+            "en": "Turn your runs into videos",
+            "ko": "러닝 기록을 영상으로 남기는 법"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "running replay video",
+          "3d run replay",
+          "run replay video",
+          "running video from gpx"
+        ],
+        "ko": [
+          "러닝 영상",
+          "러닝 리플레이",
+          "3D 러닝 영상",
+          "러닝 기록 영상"
+        ]
+      },
+      "forbiddenClaims": [
+        "record your run",
+        "live tracking",
+        "real-time tracking",
+        "privacy zone",
+        "hide your home",
+        "ad-free",
+        "프라이버시 구역",
+        "building height data from government",
+        "국토부",
+        "Strava",
+        "travel replay",
+        "Android GPX import",
+        "ads-free",
+        "광고 없는",
+        "실시간 추적"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "slug": "intervalrunner",
+      "status": "live",
+      "name": "IntervalRunner",
+      "storeNames": {
+        "en": "IntervalRunner: Pace Coach",
+        "ko": "IntervalRunner: 페이스 코치",
+        "fr": "IntervalRunner : fractionné"
+      },
+      "appStoreId": "6817994370",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "Apple Watch",
+        "Android"
+      ],
+      "minOS": "iOS 26",
+      "category": "Health & Fitness",
+      "campaignLink": null,
+      "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.intervalrunner",
+      "locales": [
+        "fr",
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/intervalrunner-icon.png",
+      "guides": [
+        {
+          "href": "/guides/intervalrunner",
+          "title": {
+            "en": "IntervalRunner guide",
+            "ko": "IntervalRunner 사용 가이드",
+            "fr": "Guide IntervalRunner"
+          }
+        },
+        {
+          "href": "/guides/interval-running-workout-basics",
+          "title": {
+            "en": "Interval running basics: structure and pacing",
+            "ko": "인터벌 러닝 입문: 구성과 페이스 잡는 법",
+            "fr": "Fractionné : bases de la séance et de l'allure"
+          }
+        },
+        {
+          "href": "/fr/guides/fractionne-test-vma",
+          "title": {
+            "fr": "Fractionné et test VMA : calculer ses allures",
+            "en": "Fractionné and VMA test (French guide)",
+            "ko": "프랑스어 가이드: 인터벌과 VMA 테스트"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "interval timer",
+          "interval running timer",
+          "running interval workout",
+          "pace coach",
+          "treadmill interval timer"
+        ],
+        "ko": [
+          "인터벌 러닝",
+          "인터벌 타이머",
+          "러닝 페이스 코치",
+          "400m 반복"
+        ],
+        "fr": [
+          "interval timer",
+          "course fractionné",
+          "minuteur fractionné",
+          "fractionné",
+          "test vma",
+          "vma",
+          "programme course à pied",
+          "chrono fractionné"
+        ]
+      },
+      "forbiddenClaims": [
+        "mesure votre VMA automatiquement",
+        "calcule votre VMA",
+        "training plan generator",
+        "plan d'entraînement personnalisé",
+        "race predictor",
+        "prédiction de temps",
+        "Wear OS",
+        "Strava",
+        "Garmin",
+        "ad-free",
+        "sans publicité",
+        "no ads",
+        "leaderboard",
+        "test VMA intégré",
+        "built-in VMA test",
+        "VMA calculator"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "slug": "lunchlog",
+      "status": "live",
+      "name": "급식로그",
+      "storeNames": {
+        "ko": "급식로그"
+      },
+      "appStoreId": "6818362178",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "minOS": "iOS 18",
+      "category": "Food & Drink",
+      "campaignLink": null,
+      "playUrl": null,
+      "locales": [
+        "ko"
+      ],
+      "primaryLocale": "ko",
+      "icon": "/images/lunchlog-icon.png",
+      "guides": [
+        {
+          "href": "/guides/lunchlog",
+          "title": {
+            "ko": "급식로그 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/school-lunch-info-and-widgets",
+          "title": {
+            "ko": "학교 급식 정보 확인하는 방법과 위젯 활용"
+          }
+        }
+      ],
+      "keywords": {
+        "ko": [
+          "급식 앱",
+          "오늘 급식",
+          "급식 위젯",
+          "급식표",
+          "학교 급식 알러지",
+          "급식 알림"
+        ]
+      },
+      "forbiddenClaims": [
+        "Android",
+        "안드로이드",
+        "갤럭시",
+        "군부대",
+        "육군",
+        "해군",
+        "국방",
+        "병영",
+        "급식 사진",
+        "리뷰 작성",
+        "커뮤니티",
+        "개인정보 0",
+        "3초",
+        "바뀌었어요",
+        "원래는",
+        "영양사 상담",
+        "유치원 급식 지원",
+        "해외 학교 지원"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "slug": "zipda",
+      "status": "live",
+      "name": "Zipda",
+      "storeNames": {
+        "en": "Zipda: Unzip & Zip Files",
+        "ko": "Zipda: Unzip & Zip Files",
+        "de": "Zipda: Unzip & Zip Files",
+        "ja": "Zipda: Unzip & Zip Files"
+      },
+      "appStoreId": "6804219752",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "iPad",
+        "macOS"
+      ],
+      "minOS": "iOS 16.1 / macOS 14",
+      "category": "Utilities",
+      "campaignLink": null,
+      "playUrl": null,
+      "locales": [
+        "en",
+        "ko",
+        "de",
+        "ja"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/zipda-icon.png",
+      "guides": [
+        {
+          "href": "/guides/zipda",
+          "title": {
+            "en": "Zipda guide: archive and extract on iPhone, iPad and Mac",
+            "ko": "Zipda 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/zip-rar-7z-archive-formats-explained",
+          "title": {
+            "en": "ZIP, RAR, 7z and tar explained (Korean and English)",
+            "ko": "ZIP·RAR·7z·tar 압축 포맷 한눈에 이해하기"
+          }
+        },
+        {
+          "href": "/en/guides/zip-rar-7z-archive-formats-explained",
+          "title": {
+            "en": "ZIP vs 7z vs RAR: formats, encryption and how to open RAR on Mac",
+            "ko": "ZIP vs 7z vs RAR 포맷 비교 (영어판)"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "how to unzip a file on mac",
+          "open rar on mac",
+          "7z mac",
+          "unrar mac"
+        ],
+        "ko": [
+          "맥 압축 풀기",
+          "알집 맥",
+          "아이폰 압축 해제",
+          "zip 한글 깨짐"
+        ],
+        "de": [
+          "rar entpacken mac",
+          "rar datei öffnen mac",
+          "entpacker"
+        ],
+        "ja": [
+          "zip 解凍 mac",
+          "rar 解凍",
+          "7z 解凍",
+          "zip 文字化け",
+          "lzh 解凍"
+        ]
+      },
+      "forbiddenClaims": [
+        "EGG support",
+        "Windows version",
+        "cloud sync",
+        "iCloud",
+        "OCR",
+        "Android"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "slug": "onesync",
+      "status": "live",
+      "name": "OneSync",
+      "storeNames": {
+        "en": "OneSync - File Share",
+        "ko": "OneSync - 파일 공유"
+      },
+      "appStoreId": "6753986352",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "iPad",
+        "Android",
+        "Web"
+      ],
+      "minOS": "iOS 15",
+      "category": "Productivity",
+      "campaignLink": null,
+      "playUrl": "https://play.google.com/store/apps/details?id=setlog.onesync.android",
+      "locales": [
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/onesync-icon.png",
+      "guides": [
+        {
+          "href": "/guides/onesync",
+          "title": {
+            "en": "OneSync guide",
+            "ko": "OneSync 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/share-files-between-iphone-android-pc",
+          "title": {
+            "en": "Share files between iPhone, Android and PC",
+            "ko": "아이폰·안드로이드·PC 파일 공유하기"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "iphone android file transfer",
+          "send files iphone to android",
+          "transfer files to pc without cable",
+          "cross platform file sharing"
+        ],
+        "ko": [
+          "아이폰 안드로이드 파일 전송",
+          "아이폰 안드로이드 파일 공유",
+          "pc 폰 파일 전송 케이블 없이"
+        ]
+      },
+      "forbiddenClaims": [
+        "end-to-end encrypted",
+        "peer-to-peer",
+        "P2P",
+        "direct device-to-device",
+        "Windows app",
+        "Mac app",
+        "desktop app",
+        "Linux app",
+        "20 devices",
+        "instantly deleted",
+        "종단 간 암호화를 지원",
+        "종단 간 암호화 적용",
+        "기기 간 직접 전송",
+        "즉시 삭제",
+        "윈도우 앱",
+        "데스크톱 앱 출시",
+        "20대"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "slug": "timerlync",
+      "status": "live",
+      "name": "TimerLync",
+      "storeNames": {
+        "en": "TimerLync",
+        "ko": "TimerLync - sync"
+      },
+      "appStoreId": "6795109124",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "iPad",
+        "Apple Watch"
+      ],
+      "minOS": "iOS 17",
+      "category": "Utilities",
+      "campaignLink": null,
+      "playUrl": null,
+      "locales": [
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/timerlync-icon.png",
+      "guides": [
+        {
+          "href": "/guides/timerlync",
+          "title": {
+            "en": "TimerLync guide",
+            "ko": "TimerLync 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/synchronized-timers-for-groups",
+          "title": {
+            "en": "Synchronized timers for groups",
+            "ko": "그룹을 위한 동기화 타이머"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "synchronized timer",
+          "multi device timer",
+          "group countdown timer",
+          "shared timer app"
+        ],
+        "ko": [
+          "동기화 타이머",
+          "여러 기기 타이머",
+          "그룹 뽀모도로"
+        ]
+      },
+      "forbiddenClaims": [
+        "Android app",
+        "Windows app",
+        "Mac app",
+        "macOS",
+        "unlimited devices",
+        "subscription required",
+        "안드로이드 앱",
+        "무제한 기기",
+        "공인 기록 보장"
+      ],
+      "updated": "2026-10-25"
+    },
+    {
+      "slug": "laplync",
+      "status": "live",
+      "name": "LapLync",
+      "storeNames": {
+        "en": "LapLync: Stopwatch",
+        "ko": "LapLync: 동기화 스톱워치"
+      },
+      "appStoreId": "6793554365",
+      "storeKind": "ios",
+      "platforms": [
+        "iPhone",
+        "iPad"
+      ],
+      "minOS": "iOS 17",
+      "category": "Sports",
+      "campaignLink": null,
+      "playUrl": null,
+      "locales": [
+        "en",
+        "ko"
+      ],
+      "primaryLocale": "en",
+      "icon": "/images/laplync-icon.png",
+      "guides": [
+        {
+          "href": "/guides/laplync",
+          "title": {
+            "en": "LapLync guide",
+            "ko": "LapLync 사용 가이드"
+          }
+        },
+        {
+          "href": "/guides/synchronized-timers-for-groups",
+          "title": {
+            "en": "Synchronized timers for groups",
+            "ko": "그룹을 위한 동기화 타이머"
+          }
+        }
+      ],
+      "keywords": {
+        "en": [
+          "synchronized stopwatch",
+          "multi device stopwatch",
+          "group stopwatch app",
+          "shared lap timer"
+        ],
+        "ko": [
+          "동기화 스톱워치",
+          "여러 기기 스톱워치",
+          "랩 타이머 공유"
+        ]
+      },
+      "forbiddenClaims": [
+        "Android app",
+        "Windows app",
+        "Apple Watch",
+        "watchOS",
+        "GPS",
+        "unlimited devices",
+        "subscription required",
+        "안드로이드 앱",
+        "애플워치",
+        "공인 기록 보장",
+        "무제한 기기"
+      ],
+      "updated": "2026-10-25"
+    }
+  ]
+}

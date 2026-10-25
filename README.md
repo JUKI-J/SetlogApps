@@ -1,16 +1,39 @@
 # Setlog Apps - 앱 소개 웹사이트
 
-Setlog 앱(물타기, OneSync, ClaudeMiner, Charcoal Player, slplayer, RunVue, IntervalRunner, 급식로그, TimerLync, LapLync, 우리동네로또)을 소개하는 정적 웹페이지입니다.
+Cloudflare Pages 단일 프로젝트(`setlogapps`)가 두 호스트를 서빙하는 정적 사이트입니다.
 
-## 📦 프로젝트 구조
+- `setlog.net` — 콘텐츠 허브(`index.html`, `guides/*`, `{en,de,fr}/guides/*`, about/faq/support/contact/privacy/terms)
+- `apps.setlog.net` — 앱 카탈로그(`/`, `/ko/`)와 **앱별 의도 검색 랜딩**(`/<slug>/`, `/<slug>/<locale>/`)
+- 호스트 라우팅은 `functions/_middleware.js`: apps 호스트의 `/<slug>/…`를 `/apps/<slug>/…`로 리라이트, `sitemap.xml`은 정적 `apps-sitemap.xml`, 콘텐츠 경로는 setlog.net으로 301
+
+## 프로젝트 구조
 
 ```
 SetlogApps/
-├── index.html          # 메인 페이지
-├── css/
-│   └── styles.css     # 스타일시트
-└── README.md          # 이 파일
+├── data/apps.json            # 앱 레지스트리(단일 정본) + apps.schema.json
+├── data/i18n/<slug>.<locale>.json   # 로케일별 앱 페이지 카피, _ui.json = 공통 UI 문구
+├── data/lastmod.json         # sitemap lastmod 상태(파일 해시 → 날짜), 빌드가 갱신
+├── scripts/build.mjs         # 생성기 + 검증기 (Node 표준 라이브러리만, 로컬에서 실행 후 커밋)
+├── templates/                # app-page.html, catalog.html
+├── apps/                     # apps.setlog.net 정적 파일 (index.html=카탈로그, <slug>/** 생성물)
+├── guides/ en/ de/ fr/       # 가이드(수작업)
+├── images/apps/<slug>/<locale>/NN.webp   # 앱 페이지 스크린샷
+├── sitemap.xml, apps-sitemap.xml         # 생성물
+└── docs/new-app-checklist.md # 신규 앱 추가 절차
 ```
+
+## 앱 추가 · 페이지 생성
+
+```bash
+node scripts/build.mjs                       # 검증 + 생성 (campaignLink가 null이면 실패)
+node scripts/build.mjs --allow-plain-links   # 로컬 미리보기 전용(평문 App Store 링크로 폴백, 배포 금지)
+node scripts/build.mjs --check-live          # appStoreId를 iTunes Lookup으로 확인(네트워크)
+```
+
+- 캠페인 링크는 **ASC 캠페인 링크 생성기 결과를 그대로** `data/apps.json`의 `campaignLink`(로케일 맵)에 붙여넣는다. `ct=web-<slug>-<locale>`. 직접 조립 금지.
+- 절차 전체: `docs/new-app-checklist.md`. 계획 정본: `.claude/plans/drafts/20261025-app-pages-seo.md`.
+- 생성 파일(`apps/<slug>/**`, `apps/ko/`, 사이트맵)은 직접 수정하지 말고 `data/`를 고친다. `apps/index.html`은 `@gen` 마커 사이만 생성된다.
+- 앱 페이지에는 광고 코드를 넣지 않는다.
 
 ## 🚀 Cloudflare Pages 배포 가이드
 
@@ -158,51 +181,19 @@ git push
 
 ## 🔧 로컬 테스트
 
-로컬에서 웹사이트를 미리보기하려면:
+미들웨어(호스트 라우팅)까지 확인하려면 Wrangler를 쓴다:
 
 ```bash
-# Python 3 사용
-cd /Users/Juki/Documents/claude_workspace/SetlogApps
-python3 -m http.server 8000
-
-# 브라우저에서 열기
-open http://localhost:8000
+npx wrangler pages dev . --port 8788
+curl -s -o /dev/null -w "%{http_code}\n" -H 'Host: apps.setlog.net' http://localhost:8788/slplayer/de/
+curl -s -o /dev/null -w "%{http_code}\n" -H 'Host: setlog.net'      http://localhost:8788/guides/slplayer
 ```
 
-또는
-
-```bash
-# Node.js의 http-server 사용
-npx http-server -p 8000
-
-# 브라우저에서 열기
-open http://localhost:8000
-```
+단순 정적 확인은 `python3 -m http.server 8000`(미들웨어 없음 — `/apps/<slug>/`로 접근).
 
 ## 📱 포함된 앱
 
-1. **물타기**
-   - App Store: https://apps.apple.com/kr/app/물타기/id1521767089
-
-2. **OneSync**
-   - Google Play: https://play.google.com/store/apps/details?id=setlog.onesync.android
-   - App Store: https://apps.apple.com/kr/app/onesync-file-share/id6753986352
-
-3. **ClaudeMiner**
-   - GitHub: https://github.com/JUKI-J/claudeminer
-
-4. **Charcoal Player** (macOS)
-   - Mac App Store: https://apps.apple.com/kr/app/charcoal-player/id1212179275?mt=12
-
-5. **TimerLync**
-   - App Store: https://apps.apple.com/kr/app/timerlync-sync/id6795109124
-
-6. **LapLync**
-   - App Store: https://apps.apple.com/kr/app/laplync/id6793554365
-
-7. **우리동네로또 (LottoTown)**
-   - App Store: https://apps.apple.com/kr/app/id6755963369
-   - Google Play: https://play.google.com/store/apps/details?id=net.setlog.lottotown
+현재 목록과 스토어 정보는 `data/apps.json`이 정본입니다(판매 중 10개: zipda, slplayer, charcoalplayer, belvue, intervalrunner, runvue, lunchlog, laplync, timerlync, onesync). 수작업 카드: 물타기(스토어 조회 불가 — 점검 필요), ClaudeMiner(GitHub).
 
 ## 📄 라이선스
 

@@ -1,0 +1,134 @@
+{
+  "locale": "en",
+  "title": "Fast Image Viewer for Mac - Belvue for Mac",
+  "description": "Open one image and flip through the whole folder with the arrow keys. Belvue is a light Mac image viewer in Finder order, with no ads and no tracking.",
+  "h1": "A fast image viewer for Mac",
+  "tagline": "Open one image, flip through the whole folder with the arrow keys",
+  "summary": [
+    "Belvue is a light image viewer for the Mac. Open a single image and the rest of its folder is ready to browse with the arrow keys, in the same order as Finder.",
+    "It is for anyone looking for a Mac image viewer that moves quickly through folders of photos, screenshots or scans, even with thousands of images.",
+    "Your images and file paths stay on your Mac, with no ads and no tracking."
+  ],
+  "overview": [
+    "Preview and Quick Look are fine for one picture, but going through a whole folder often means opening images one by one. In Belvue you open one image and the next one appears right away when you press the arrow key. Folders with thousands of images use the same natural order as Finder, and the list follows changes in the folder.",
+    "If you search for a fast image viewer for Mac, the useful parts are the small ones: a thumbnail strip, zoom, pan, full screen and an information panel with EXIF details. You can also pick images as you flip with the P key, then act on all your picks at once. Copying the current image is a plain Command-C."
+  ],
+  "features": [
+    {
+      "h": "Open one, browse the whole folder",
+      "p": "Open one image and move through its folder with the arrow keys. The next image appears right away, and the order matches Finder, including folders with thousands of images."
+    },
+    {
+      "h": "Thumbnail strip, zoom and full screen",
+      "p": "A thumbnail strip, zoom, pan and full screen are built in, along with an information panel that shows EXIF details."
+    },
+    {
+      "h": "Pick as you flip",
+      "p": "Press P to pick images while you browse. With Belvue Pro you can move, copy or send all picks to the Trash at once, with undo, and the original is never changed when you copy."
+    },
+    {
+      "h": "Convert to JPEG, PNG or HEIC",
+      "p": "Belvue Pro converts picked images to JPEG, PNG or HEIC and creates a new file, so the original stays as it was."
+    },
+    {
+      "h": "Private by design",
+      "p": "Images and file paths never leave your Mac. Belvue has no ads and no tracking, and its only network use is App Store purchases."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue window showing a mountain sunset image with a thumbnail strip along the bottom and the headline 'Open one. Browse them all.'",
+      "caption": "Open one image and its whole folder is ready."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue showing an abstract blue bokeh image from a folder of ten thousand images with a thumbnail strip",
+      "caption": "Folders with thousands of images, in Finder order."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue in full screen showing a mountain sunset image with a thumbnail strip at the bottom",
+      "caption": "Full screen with zoom and a thumbnail strip."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue with a confirmation dialog for moving five picked images to the Trash, shown over the current image",
+      "caption": "Pick as you flip, then act on all picks (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requirements",
+      "v": "Mac with macOS 15 or later"
+    },
+    {
+      "k": "Image formats",
+      "v": "JPEG, PNG, HEIC, RAW and more"
+    },
+    {
+      "k": "Convert to",
+      "v": "JPEG, PNG, HEIC (Belvue Pro)"
+    },
+    {
+      "k": "Sorting",
+      "v": "Natural order, the same as Finder"
+    },
+    {
+      "k": "Extras",
+      "v": "Thumbnail strip, zoom, pan, full screen, EXIF panel, Copy with Command-C, recent folders"
+    },
+    {
+      "k": "Privacy",
+      "v": "No ads, no tracking; network use only for App Store purchases"
+    },
+    {
+      "k": "Pro options",
+      "v": "Optional subscription (monthly or yearly) or a one-time Lifetime purchase"
+    }
+  ],
+  "limits": [
+    "Because of the Mac App Store sandbox, macOS gives Belvue access only to the image you open. To browse the rest of its folder, Belvue asks you to allow that folder once. If you decline, the image you opened still opens, but you cannot flip through its siblings.",
+    "Batch move, copy, Trash, conversion, sharing, Open With and the extra backgrounds need Belvue Pro. Viewing, browsing and picking do not.",
+    "Belvue is an image viewer, not a photo library or an editor, and it does not edit your images.",
+    "It is a Mac app only."
+  ],
+  "faq": [
+    {
+      "q": "What is a fast image viewer for Mac?",
+      "a": "Belvue is a light Mac image viewer: open one image and flip through the rest of the folder with the arrow keys, in the same order as Finder, even with thousands of images."
+    },
+    {
+      "q": "Why does Belvue ask me to allow a folder?",
+      "a": "The Mac App Store sandbox lets an app read only the file you opened. Belvue asks once for access to that folder so it can show the other images. If you decline, the opened image still displays."
+    },
+    {
+      "q": "Which image formats does it open?",
+      "a": "JPEG, PNG, HEIC, RAW and more."
+    },
+    {
+      "q": "Do I need a subscription?",
+      "a": "No. Viewing, browsing and picking need no subscription. Belvue Pro is optional for batch move, copy, Trash, conversion and sharing, as a monthly or yearly subscription or a one-time Lifetime purchase."
+    },
+    {
+      "q": "Does Belvue send my images anywhere?",
+      "a": "No. Images and file paths never leave your Mac. Belvue has no ads and no tracking, and its only network use is App Store purchases."
+    }
+  ],
+  "card": {
+    "tagline": "A light Mac image viewer: open one image, flip the whole folder",
+    "features": [
+      "Arrow-key browsing in Finder order",
+      "Thumbnail strip, zoom, EXIF",
+      "No ads, no tracking"
+    ]
+  }
+}

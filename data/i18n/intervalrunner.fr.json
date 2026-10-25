@@ -1,0 +1,150 @@
+{
+  "locale": "fr",
+  "title": "Course fractionné et minuteur - IntervalRunner pour iPhone",
+  "description": "Créez vos séances de fractionné en temps ou en distance : IntervalRunner signale par la voix, un son et le poignet dès que votre allure dévie de la cible.",
+  "h1": "Course fractionné : un coach d'allure pour iPhone et Apple Watch",
+  "tagline": "Courez chaque intervalle exactement comme prévu, sans regarder l'écran.",
+  "summary": [
+    "IntervalRunner est une app de fractionné pour iPhone et Apple Watch : elle compare votre allure à la cible de chaque étape et vous prévient par la voix, un signal sonore et une touche au poignet.",
+    "Elle s'adresse aux coureurs qui préparent des séances de fractionné (8 × 400 m, 6 × 800 m, 30/30, tempo) et veulent tenir leurs allures sans fixer un chrono.",
+    "Ce qui la distingue : une allure lissée plutôt que les à-coups du GPS, une marge de tolérance réglable, et des sons et vibrations différents pour trop vite et trop lent."
+  ],
+  "overview": [
+    "Un minuteur de fractionné classique sonne à la fin de chaque intervalle, mais il ne dit pas si vous couriez au bon rythme. IntervalRunner ajoute ce contrôle : chaque étape, en temps ou en distance, reçoit une allure ou une vitesse cible, et l'app vous avertit dès que vous sortez de la marge que vous avez choisie. Vous savez dans quel sens corriger sans sortir le téléphone de la poche ni regarder la montre.",
+    "L'app convient aussi bien à une séance de piste qu'à un chrono fractionné sur un chemin de campagne. Sans Apple Watch, l'iPhone mesure, affiche et parle. Avec une Apple Watch, la montre mesure et vous tapote le poignet pendant que l'iPhone affiche les chiffres et annonce les consignes. Le mode tapis de course fonctionne sans GPS.",
+    "Un point d'honnêteté pour les coureurs qui cherchent un test VMA : IntervalRunner ne mesure pas votre VMA et ne propose pas de protocole de test. Si vous connaissez déjà votre VMA, par exemple après un test sur piste, vous pouvez en déduire vos allures de séance et les saisir comme cibles dans l'éditeur."
+  ],
+  "features": [
+    {
+      "h": "Alertes d'allure fiables pendant le fractionné",
+      "p": "L'app juge votre allure lissée plutôt que la valeur instantanée du GPS, qui saute facilement, et vous choisissez la marge de tolérance. Quand vous courez trop vite ou trop lentement, le son et la vibration sont différents : vous entendez le sens de la correction avant de lire un chiffre."
+    },
+    {
+      "h": "Voix, sons et haptique, écran verrouillé",
+      "p": "Les annonces vocales, générées par IA, baissent la musique le temps de la consigne et continuent écran verrouillé. Le retour haptique au poignet est actif avec une Apple Watch. Vous pouvez donc courir téléphone en poche."
+    },
+    {
+      "h": "Un éditeur de séances en temps ou en distance",
+      "p": "Chaque étape se règle en temps ou en distance avec une allure ou une vitesse cible. Sept modèles sont prêts à l'emploi : marche-course initiation, 1 min rapide / 1 min lent, 8 × 400 m, 6 × 800 m, tempo, slow jogging et zone 2 (la zone 2 demande Pro). Trois modes de décompte permettent de démarrer à l'allure cible, de ne compter que dans la cible ou de compter tout de suite."
+    },
+    {
+      "h": "Avec ou sans Apple Watch, ou sur tapis de course",
+      "p": "Courez avec l'iPhone seul, avec la montre seule, ou avec les deux. Le mode tapis de course se passe de GPS : vous courez au temps, à la vitesse réglée sur la machine, puis vous confirmez la distance affichée par le tapis."
+    },
+    {
+      "h": "Bilan étape par étape après la course",
+      "p": "À la fin, l'app compare la cible et le réel pour chaque étape, et la séance est enregistrée dans Santé si vous l'autorisez. Pro ajoute l'analyse par étape détaillée, les tendances et les records personnels, ainsi que les zones de fréquence cardiaque comme cible."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/intervalrunner/fr/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran de course d'IntervalRunner : « Dans la cible » en vert, 214 m restants en grand, allure 4:01 /km pour une cible de 4:00 et fréquence cardiaque 158",
+      "caption": "Écran de course : dans la cible"
+    },
+    {
+      "src": "/images/apps/intervalrunner/fr/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran de course sur fond ambre indiquant « Lent de 26 s » avec une bulle vocale « Trop lent, accélère »",
+      "caption": "Trop lent : alerte visuelle et vocale"
+    },
+    {
+      "src": "/images/apps/intervalrunner/fr/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Liste des séances d'IntervalRunner avec démarrage rapide, récentes et modèles comme slow jogging 30 min et footing 40 min en zone 2",
+      "caption": "Séances et modèles prêts à l'emploi"
+    },
+    {
+      "src": "/images/apps/intervalrunner/fr/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran de course iPhone avec une Apple Watch affichée devant, 152 m restants dans la cible",
+      "caption": "iPhone et Apple Watch ensemble"
+    },
+    {
+      "src": "/images/apps/intervalrunner/fr/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Bilan d'une séance 400 m ×8 : 86 % du temps à l'allure cible et liste des étapes avec cible et temps réel",
+      "caption": "Bilan : cible et réel, étape par étape"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plateformes",
+      "v": "iPhone, Apple Watch et Android (app Play Store)"
+    },
+    {
+      "k": "Configuration requise",
+      "v": "iOS 26 ou ultérieur ; Apple Watch avec watchOS 10 ou ultérieur pour la montre"
+    },
+    {
+      "k": "Étapes",
+      "v": "En temps ou en distance, avec allure ou vitesse cible, km ou miles"
+    },
+    {
+      "k": "Modèles",
+      "v": "7 modèles dont 8 × 400 m, 6 × 800 m, tempo, slow jogging et zone 2 (Pro)"
+    },
+    {
+      "k": "Alertes",
+      "v": "Voix générée par IA, sons distincts trop vite et trop lent, vibration au poignet"
+    },
+    {
+      "k": "Données",
+      "v": "Santé (si autorisé), export GPX et JSON, activité en direct ; export CSV à la seconde avec Pro"
+    },
+    {
+      "k": "Langues",
+      "v": "12 langues, dont le français"
+    },
+    {
+      "k": "Compte",
+      "v": "Aucun compte et aucun serveur de notre côté ; essai de 7 jours sur l'abonnement annuel Pro pour les nouveaux abonnés éligibles"
+    }
+  ],
+  "limits": [
+    "IntervalRunner ne mesure pas votre VMA et ne propose ni test VMA ni protocole de test : vous saisissez vous-même les allures cibles, par exemple calculées à partir d'une VMA déjà connue.",
+    "Ce n'est pas un plan d'entraînement : l'app ne génère pas de programme sur plusieurs semaines et ne prédit pas de temps de course. Elle vous aide à exécuter les séances que vous avez définies.",
+    "Les fonctions cardio (zones, récupération qui s'arrête quand le cœur redescend) demandent une Apple Watch ou une ceinture cardio Bluetooth et font partie de Pro.",
+    "La précision de l'allure dépend du GPS : sous couvert d'arbres ou entre des immeubles, l'allure lissée peut réagir avec retard. Le mode tapis de course dépend de la vitesse que vous réglez sur la machine."
+  ],
+  "faq": [
+    {
+      "q": "IntervalRunner permet-il de faire un test VMA ?",
+      "a": "Non. L'app ne contient ni test VMA ni protocole de test et ne calcule pas votre VMA. Si vous la connaissez déjà, vous pouvez en déduire des allures de séance (par exemple un pourcentage de VMA) et les saisir comme cibles dans l'éditeur."
+    },
+    {
+      "q": "Comment créer un chrono fractionné avec IntervalRunner ?",
+      "a": "Choisissez un modèle (par exemple 8 × 400 m ou 1 min rapide / 1 min lent) ou créez vos propres étapes en temps ou en distance, avec une allure cible. Démarrez la séance : l'app compte les étapes et vous prévient si vous sortez de la marge de tolérance."
+    },
+    {
+      "q": "Faut-il une Apple Watch ?",
+      "a": "Non. Vous pouvez courir avec l'iPhone seul. Avec une Apple Watch, la montre mesure et vibre au poignet pendant que l'iPhone affiche et parle. Courir avec la montre seule est aussi possible."
+    },
+    {
+      "q": "L'app fonctionne-t-elle sur tapis de course ?",
+      "a": "Oui. Le mode tapis de course n'utilise pas le GPS : vous courez au temps à la vitesse réglée sur la machine, puis vous confirmez la distance affichée."
+    },
+    {
+      "q": "Que comprend la version Pro ?",
+      "a": "Pro ajoute notamment l'analyse par étape, les tendances et records, les zones de fréquence cardiaque comme cible, les séances enregistrées en nombre illimité, les séries imbriquées et les générateurs d'échelle, de pyramide et de Yasso 800, ainsi que l'export CSV à la seconde. Courir avec les alertes, les modèles et les modes de décompte ne demande pas Pro."
+    },
+    {
+      "q": "Où sont enregistrées mes données ?",
+      "a": "Vos courses, parcours et données de santé restent sur vos appareils. Il n'y a pas de compte ni de serveur de notre côté. Si vous l'autorisez, les séances sont enregistrées dans Santé."
+    }
+  ],
+  "card": {
+    "tagline": "Coach d'allure pour le fractionné : voix, son et vibration au poignet",
+    "features": [
+      "Étapes en temps ou en distance avec allure cible",
+      "Alertes trop vite / trop lent sur iPhone et Apple Watch",
+      "Mode tapis de course et bilan étape par étape"
+    ]
+  }
+}

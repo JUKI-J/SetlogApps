@@ -1,0 +1,74 @@
+{
+  "locale": "de",
+  "title": "RAR entpacken am Mac - Zipda Entpacker für Mac & iPhone",
+  "description": "RAR-Datei auf dem Mac öffnen und entpacken: Zipda öffnet ZIP, RAR, 7z und TAR, repariert kaputte Dateinamen. Ohne Werbung und Konto.",
+  "h1": "RAR entpacken am Mac und iPhone: ZIP, RAR und 7z öffnen",
+  "tagline": "Entpacker für Mac, iPhone und iPad, der auch kaputte Dateinamen repariert.",
+  "summary": [
+    "Zipda ist eine leichte Archiv-App für Mac, iPhone und iPad. Sie öffnet, durchsucht und zeigt ZIP-, RAR-, 7z- und TAR-Archive an und entpackt ZIP und TAR in einem Schritt.",
+    "Sie richtet sich an alle, die RAR-Dateien als Mail-Anhang oder Download bekommen, passwortgeschützte ZIPs öffnen müssen oder Archive aus Windows erhalten, deren Dateinamen als Zeichensalat ankommen.",
+    "Besonders ist der Umgang mit Dateinamen: Zipda erkennt die ursprüngliche Kodierung direkt auf dem Gerät und zeigt den wahrscheinlichsten Namen an. Ein Reparatur-Werkzeug stellt ganze Ordner in einem Durchgang wieder her."
+  ],
+  "overview": [
+    "Wer eine RAR-Datei auf dem Mac öffnen möchte, stößt schnell auf eine Lücke: Das Archivierungsprogramm von macOS entpackt ZIP zuverlässig, kennt aber weder RAR noch 7z. Genau dafür ist Zipda gedacht. Sie ziehen die Datei auf das App-Fenster, sehen den Inhalt des Archivs, prüfen einzelne Dateien in der Vorschau und entpacken entweder alles oder nur das, was Sie brauchen. Auf dem iPhone teilen Sie das Archiv aus Mail oder der Dateien-App mit Zipda, und es öffnet sich.",
+    "Auch bei großen oder beschädigten Archiven soll Zipda nicht aufgeben. Archive über 4 GB (Zip64), Archive mit Zehntausenden Einträgen und gesplittete Archive werden gestreamt, statt komplett in den Speicher geladen zu werden. Ist ein Download abgebrochen oder ein Sektor defekt, entpackt Zipda alles, was noch lesbar ist, und zeigt danach genau, welche Einträge übersprungen wurden und warum.",
+    "Alles läuft auf Ihrem Gerät. Es gibt kein Konto, keine Analyse und keine Werbe-SDKs, und die App stellt selbst keine Netzwerkanfragen. Öffnen, Durchsuchen und Ansehen jedes Archivs sowie ZIP und TAR im Alltag brauchen kein Pro. Das Entpacken von RAR, 7z, ALZ und LZH, geteilte und passwortgeschützte Archive sowie die Dateinamen-Reparatur gehören zum optionalen Zipda Pro, das auf iPhone, iPad und Mac dieselben Funktionen freischaltet."
+  ],
+  "features": [
+    {
+      "h": "RAR-Datei öffnen und entpacken",
+      "p": "Zipda entpackt RAR, 7z, LZH und ALZ sowie ZIP und die TAR-Familie (.tar, .tar.gz, .tar.bz2, .tar.xz). Bevor Sie etwas entpacken, durchsuchen Sie das Archiv und ziehen bei Bedarf nur eine einzelne Datei heraus. Das Entpacken von RAR, 7z, ALZ und LZH gehört zu Pro."
+    },
+    {
+      "h": "Kaputte Dateinamen nach dem Entpacken",
+      "p": "Unter Windows erstellte Archive speichern Namen oft in einer regionalen Codepage statt in Unicode, weshalb sie wie ÇÑ±Û.txt aussehen. Zipda ermittelt die Kodierung auf dem Gerät (CP949/EUC-KR, Shift_JIS, GB18030, Big5 und weitere) und blendet ein Banner ein, welche Kodierung erkannt wurde. Mit einem Tipp lässt sie sich ändern. Wurde ein Ordner schon entpackt, benennt das Werkzeug Dateinamen reparieren ihn nach einer Vorher-Nachher-Vorschau komplett um; Dateiinhalte bleiben unberührt."
+    },
+    {
+      "h": "Passwortgeschützte ZIP-Dateien",
+      "p": "Passwortgeschützte ZIPs öffnen sich unabhängig davon, ob sie das ältere ZipCrypto oder AES verwenden. Die Passwortabfrage und die Entschlüsselung laufen auf Ihrem Gerät. Das Öffnen passwortgeschützter Archive gehört zu Pro."
+    },
+    {
+      "h": "Geteilte und sehr große Archive",
+      "p": "Bei mehrteiligen Archiven wählen Sie den ersten Teil, und Zipda findet die übrigen. Die Fortschrittsanzeige zeigt echte Byte- und Eintragszahlen samt realistischer Zeitschätzung, und ein Abbruch stoppt sofort und räumt halb geschriebene Dateien auf. Geteilte Archive entpacken ist ein Pro-Feature."
+    },
+    {
+      "h": "ZIP-Dateien erstellen",
+      "p": "Wählen Sie Dateien, Fotos oder Videos aus und komprimieren Sie sie zu einer ZIP-Datei, auf dem iPhone auch direkt über das Teilen-Menü. Eine Windows-kompatible Namensvoreinstellung sorgt dafür, dass Namen mit Nicht-ASCII-Zeichen auf Windows-Rechnern nicht kaputtgehen. ZIP lässt sich mit AES-256 verschlüsseln. 7z-, passwortgeschützte und geteilte Archive zu erstellen gehört zu Pro."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/zipda/de/01.webp", "w": 1000, "h": 625, "alt": "Zipda auf dem Mac zeigt den Inhalt von Geteilte_Dateien_2026.zip mit einem Banner zur Kodierung der Dateinamen und der Schaltfläche Alle entpacken", "caption": "Archiv durchsuchen, bevor Sie entpacken."},
+    {"src": "/images/apps/zipda/de/02.webp", "w": 1000, "h": 625, "alt": "Zipda-Passwortabfrage für Finanzbericht_Q2.zip mit verdecktem Passwortfeld sowie den Schaltflächen Abbrechen und Öffnen", "caption": "Passwortgeschützte ZIPs werden auf dem Gerät geöffnet."},
+    {"src": "/images/apps/zipda/de/03.webp", "w": 1000, "h": 625, "alt": "Zipda-Ansicht Archiv erstellen mit sieben ausgewählten Dateien, ZIP als Format und der Option Windows-kompatible Dateinamen", "caption": "ZIP erstellen, mit Windows-kompatiblen Dateinamen."},
+    {"src": "/images/apps/zipda/de/04.webp", "w": 1000, "h": 625, "alt": "Zipda-Ansicht Dateinamen reparieren mit durchgestrichenen kaputten Namen über den reparierten Namen, erkannter Kodierung CP949 und der Schaltfläche Namen reparieren", "caption": "Kaputte Dateinamen ganzer Ordner in einem Durchgang reparieren."}
+  ],
+  "specs": [
+    {"k": "Plattformen", "v": "Mac, iPhone und iPad (ein App-Store-Eintrag)"},
+    {"k": "Voraussetzungen", "v": "macOS 14 oder neuer, iOS 16.1 oder neuer"},
+    {"k": "Entpacken", "v": ".zip, .tar, .tar.gz, .tar.bz2, .tar.xz; mit Pro zusätzlich .rar, .7z, .lzh, .alz"},
+    {"k": "Erstellen", "v": ".zip mit AES-256-Verschlüsselung; 7z, passwortgeschützte und geteilte Archive mit Pro"},
+    {"k": "Passwörter", "v": "ZIP mit ZipCrypto oder AES (Pro)"},
+    {"k": "Dateinamen-Kodierungen", "v": "CP949/EUC-KR, Shift_JIS, GB18030, Big5 und weitere, auf dem Gerät erkannt"},
+    {"k": "Datenschutz", "v": "Kein Konto, keine Analyse, keine Werbe-SDKs; App-Store-Kennzeichnung: Keine Daten erfasst"},
+    {"k": "Sprachen", "v": "12, in der App umschaltbar"}
+  ],
+  "limits": [
+    "Zipda kann keine RAR-Archive erstellen, sondern nur entpacken. Auch LZH ist reine Entpack-Funktion.",
+    "EGG-Dateien werden nicht unterstützt.",
+    "Ein geteiltes Archiv braucht alle Teile. Fehlt ein Teil, lässt es sich nicht entpacken.",
+    "Die Erkennung der Dateinamen-Kodierung ist eine Schätzung. Sehr kurze japanische Namen können als Koreanisch erkannt werden; ändern Sie dann die Kodierung von Hand.",
+    "Das Entpacken von RAR, 7z, ALZ und LZH, geteilte und passwortgeschützte Archive sowie die Dateinamen-Reparatur setzen das optionale Pro voraus."
+  ],
+  "faq": [
+    {"q": "Wie kann ich eine RAR-Datei auf dem Mac öffnen?", "a": "Installieren Sie Zipda und ziehen Sie die RAR-Datei auf das App-Fenster. Sie sehen zuerst den Inhalt und können dann alles oder einzelne Dateien entpacken. Das Entpacken von RAR gehört zum optionalen Zipda Pro."},
+    {"q": "Welcher Entpacker für Mac kann RAR und 7z?", "a": "Zipda öffnet, durchsucht und zeigt ZIP, RAR, 7z und TAR an. Das Entpacken von RAR und 7z ist Teil von Pro; ZIP und TAR entpacken Sie ohne Pro."},
+    {"q": "Warum sind meine Dateinamen nach dem Entpacken kaputt?", "a": "Das Archiv wurde unter Windows mit einer regionalen Codepage statt Unicode erstellt. Zipda erkennt die Kodierung auf dem Gerät, und Sie können sie mit einem Tipp ändern. Bereits entpackte Ordner repariert das Werkzeug Dateinamen reparieren."},
+    {"q": "Kann Zipda RAR-Dateien erstellen?", "a": "Nein. RAR kann nur entpackt werden. Zum Weitergeben eignet sich ZIP am besten, optional mit AES-256, oder 7z mit Pro."},
+    {"q": "Kann ich Archive auch auf dem iPhone entpacken?", "a": "Ja. Teilen Sie das Archiv aus Mail, einer Messenger-App oder der Dateien-App mit Zipda. Den Zielordner wählen Sie in der Dateien-App."},
+    {"q": "Werden meine Dateien hochgeladen?", "a": "Nein. Alles wird auf Ihrem Gerät verarbeitet. Die App hat kein Konto, keine Analyse und keine Werbe-SDKs."}
+  ],
+  "card": {
+    "tagline": "RAR, 7z und ZIP auf Mac und iPhone entpacken.",
+    "features": ["ZIP, RAR, 7z und TAR öffnen", "Kaputte Dateinamen reparieren", "Ohne Werbung, ohne Konto"]
+  }
+}
