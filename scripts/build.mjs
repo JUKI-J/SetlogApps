@@ -516,9 +516,9 @@ function renderAppPage(a, loc) {
     '@context': 'https://schema.org', '@type': 'SoftwareApplication',
     name: (a.storeNames && a.storeNames[loc]) || a.name, url, image: icon,
     applicationCategory: SCHEMA_CATEGORY[a.category], operatingSystem: osLabel(a),
-    description: c.description, inLanguage: tagOf(loc), downloadUrl: link,
+    // Google Ads '무료 데스크톱 소프트웨어' 인증 트리거 회피(2026-11-09 비승인): offers price 0·downloadUrl 제거, 스토어 링크는 sameAs로만
+    description: c.description, inLanguage: tagOf(loc), sameAs: [link],
     screenshot: c.screenshots.map((s) => MAIN + s.src),
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
     author: { '@type': 'Organization', name: 'SETLOG', url: MAIN + '/' },
     publisher: { '@type': 'Organization', name: 'SETLOG', url: MAIN + '/' },
     dateModified: a.updated,
