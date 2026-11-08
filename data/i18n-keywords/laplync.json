@@ -1,0 +1,14 @@
+{
+  "en": ["synchronized stopwatch", "multi device stopwatch", "group stopwatch app", "shared lap timer"],
+  "ko": ["동기화 스톱워치", "여러 기기 스톱워치", "랩 타이머 공유", "스톱워치 앱 아이패드"],
+  "ja": ["ストップウォッチ 同期", "複数端末 ストップウォッチ", "ラップタイム 共有", "ストップウォッチ アプリ iPad"],
+  "zh-hans": ["同步秒表", "多设备秒表", "计圈秒表", "团队计时 App"],
+  "zh-hant": ["同步碼錶", "多裝置碼錶", "分圈計時", "同步秒錶"],
+  "de": ["Stoppuhr mehrere Geräte synchron", "synchronisierte Stoppuhr", "Rundenzeiten Stoppuhr App", "Stoppuhr App iPad"],
+  "fr": ["chronomètre synchronisé", "chronomètre multi-appareils", "chronomètre tours partagés", "application chronométrage groupe"],
+  "es": ["cronómetro sincronizado", "cronómetro varios dispositivos", "cronómetro de vueltas compartido", "app cronometraje grupo"],
+  "it": ["cronometro sincronizzato", "cronometro più dispositivi", "cronometro giri condiviso", "app cronometraggio gruppo"],
+  "pt-br": ["cronômetro sincronizado", "cronômetro vários dispositivos", "cronômetro de voltas compartilhado", "app cronometragem em grupo"],
+  "ru": ["синхронный секундомер", "секундомер на нескольких устройствах", "секундомер с кругами", "общий секундомер для команды"],
+  "tr": ["senkronize kronometre", "çoklu cihaz kronometre", "tur zamanlayıcı", "grup kronometre uygulaması"]
+}

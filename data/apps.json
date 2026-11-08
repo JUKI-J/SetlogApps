@@ -13,16 +13,37 @@
       "platforms": [
         "macOS"
       ],
+      "heroOrientation": "landscape",
       "minOS": "macOS 15",
       "category": "Music",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-de&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id1212179275?pt=118586419&ct=web-charcoalplayer-tr&mt=8"
       },
       "playUrl": null,
       "locales": [
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/charcoalplayer-icon.png",
@@ -96,7 +117,16 @@
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-en&mt=8",
         "de": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-de&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-zh-hant&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6811089277?pt=118586419&ct=web-slplayer-tr&mt=8"
       },
       "playUrl": null,
       "storeKind": "mac",
@@ -112,12 +142,22 @@
         "de": "slplayer: Videoplayer"
       },
       "appStoreId": "6811089277",
+      "heroOrientation": "landscape",
       "minOS": "macOS 14",
       "category": "Photo & Video",
       "locales": [
         "en",
         "de",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/slplayer-icon.png",
@@ -215,7 +255,17 @@
       "status": "live",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-de&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6821348645?pt=118586419&ct=web-belvue-tr&mt=8"
       },
       "playUrl": null,
       "storeKind": "mac",
@@ -230,11 +280,22 @@
         "ko": "Belvue"
       },
       "appStoreId": "6821348645",
+      "heroOrientation": "landscape",
       "minOS": "macOS 15",
       "category": "Photo & Video",
       "locales": [
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/belvue-icon.png",
@@ -242,7 +303,7 @@
       "keywords": {
         "en": [
           "mac image viewer",
-          "fast image viewer for mac",
+          "light image viewer for mac",
           "image viewer mac arrow keys"
         ],
         "ko": [
@@ -271,11 +332,11 @@
         "about": {
           "en": {
             "name": "Belvue",
-            "text": "A light, fast image viewer for Mac: open one image and the whole folder is ready to flip through with the arrow keys"
+            "text": "A light image viewer for Mac: open one image and the whole folder is ready to flip through with the arrow keys"
           },
           "ko": {
             "name": "Belvue",
-            "text": "가볍고 빠른 맥 이미지 뷰어 — 한 장만 열어도 폴더 전체 이미지를 바로 불러와 방향키로 넘겨 봅니다"
+            "text": "가벼운 맥 이미지 뷰어 — 한 장만 열어도 폴더 전체 이미지를 바로 불러와 방향키로 넘겨 봅니다"
           }
         }
       }
@@ -294,16 +355,37 @@
         "iPhone",
         "Android"
       ],
+      "heroOrientation": "portrait",
       "minOS": "iOS 17",
       "category": "Health & Fitness",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-de&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6817999096?pt=118586419&ct=web-runvue-tr&mt=8"
       },
       "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.runvue",
       "locales": [
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/runvue-icon.png",
@@ -388,20 +470,38 @@
       "storeKind": "ios",
       "platforms": [
         "iPhone",
-        "Apple Watch"
-      ],
+        "Apple Watch", "Android"],
+      "heroOrientation": "portrait",
       "minOS": "iOS 26",
       "category": "Health & Fitness",
       "campaignLink": {
         "fr": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-fr&mt=8",
         "en": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-de&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6817994370?pt=118586419&ct=web-intervalrunner-tr&mt=8"
       },
-      "playUrl": null,
+      "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.intervalrunner",
       "locales": [
         "fr",
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/intervalrunner-icon.png",
@@ -506,14 +606,14 @@
       "storeKind": "ios",
       "platforms": [
         "iPhone",
-        "iPad"
-      ],
+        "iPad", "Android"],
+      "heroOrientation": "portrait",
       "minOS": "iOS 18",
       "category": "Food & Drink",
       "campaignLink": {
         "ko": "https://apps.apple.com/app/apple-store/id6818362178?pt=118586419&ct=web-lunchlog-ko&mt=8"
       },
-      "playUrl": null,
+      "playUrl": "https://play.google.com/store/apps/details?id=net.setlog.lunchlog",
       "locales": [
         "ko"
       ],
@@ -544,9 +644,6 @@
         ]
       },
       "forbiddenClaims": [
-        "Android",
-        "안드로이드",
-        "갤럭시",
         "군부대",
         "육군",
         "해군",
@@ -600,20 +697,37 @@
         "iPad",
         "macOS"
       ],
+      "heroOrientation": "landscape",
       "minOS": "iOS 16.1 / macOS 14",
       "category": "Utilities",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-en&mt=8",
         "ko": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-ko&mt=8",
         "de": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-de&mt=8",
-        "ja": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-ja&mt=8"
+        "ja": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-zh-hant&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6804219752?pt=118586419&ct=web-zipda-tr&mt=8"
       },
       "playUrl": null,
       "locales": [
         "en",
         "ko",
         "de",
-        "ja"
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/zipda-icon.png",
@@ -687,11 +801,11 @@
         "about": {
           "en": {
             "name": "Zipda",
-            "text": "A fast, privacy-first archive tool for macOS — compress and extract with no data collection"
+            "text": "A privacy-first archive tool for macOS that compresses and extracts with no data collection"
           },
           "ko": {
             "name": "Zipda (집다)",
-            "text": "데이터 수집 없이 빠르게 압축·해제하는 macOS 아카이브 도구"
+            "text": "데이터 수집 없이 압축·해제하는 macOS 아카이브 도구"
           }
         }
       }
@@ -712,16 +826,37 @@
         "Android",
         "Web"
       ],
+      "heroOrientation": "portrait",
       "minOS": "iOS 15",
       "category": "Productivity",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-de&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6753986352?pt=118586419&ct=web-onesync-tr&mt=8"
       },
       "playUrl": "https://play.google.com/store/apps/details?id=setlog.onesync.android",
       "locales": [
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/onesync-icon.png",
@@ -809,16 +944,37 @@
         "iPad",
         "Apple Watch"
       ],
+      "heroOrientation": "portrait",
       "minOS": "iOS 17",
       "category": "Utilities",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-de&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6795109124?pt=118586419&ct=web-timerlync-tr&mt=8"
       },
       "playUrl": null,
       "locales": [
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/timerlync-icon.png",
@@ -897,16 +1053,37 @@
         "iPhone",
         "iPad"
       ],
+      "heroOrientation": "portrait",
       "minOS": "iOS 17",
       "category": "Sports",
       "campaignLink": {
         "en": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-en&mt=8",
-        "ko": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-ko&mt=8"
+        "ko": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-ko&mt=8",
+        "ja": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-ja&mt=8",
+        "zh-hans": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-zh-hans&mt=8",
+        "zh-hant": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-zh-hant&mt=8",
+        "de": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-de&mt=8",
+        "fr": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-fr&mt=8",
+        "es": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-es&mt=8",
+        "it": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-it&mt=8",
+        "pt-br": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-pt-br&mt=8",
+        "ru": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-ru&mt=8",
+        "tr": "https://apps.apple.com/app/apple-store/id6793554365?pt=118586419&ct=web-laplync-tr&mt=8"
       },
       "playUrl": null,
       "locales": [
         "en",
-        "ko"
+        "ko",
+        "ja",
+        "zh-hans",
+        "zh-hant",
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt-br",
+        "ru",
+        "tr"
       ],
       "primaryLocale": "en",
       "icon": "/images/laplync-icon.png",

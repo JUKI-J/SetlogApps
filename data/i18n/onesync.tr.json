@@ -1,0 +1,135 @@
+{
+  "locale": "tr",
+  "title": "iPhone Android dosya aktarma - OneSync Uygulama ve Web",
+  "description": "iPhone, Android ve her bilgisayarın tarayıcısı arasında dosya ve metin aktarın. Oturum başlatın, QR kodu tarayın veya kod girin. Hesap ve kablo gerekmez.",
+  "h1": "iPhone ve Android arasında kablo ve hesap olmadan dosya aktarma",
+  "tagline": "Telefon, tablet ve bilgisayar arasında kablo ve hesap olmadan dosya ve metin gönderin.",
+  "summary": [
+    "OneSync; iPhone, Android telefon ve tabletler ile web tarayıcısı olan her bilgisayar arasında dosya ve metin gönderir. Hesap, kablo veya eşleştirme gerekmez.",
+    "AirDrop'u birlikte kullanamayan cihazlar arasında, örneğin bir iPhone ile Android tablet ya da iş bilgisayarı ile telefon arasında fotoğraf, belge veya kopyalanmış bir bağlantı taşımak isteyenler için tasarlandı.",
+    "Bir cihazda oturum başlatırsınız, diğer cihazlar QR kodu tarayarak veya kodu girerek katılır. Oturumdaki her cihaz gönderdiklerinizi alır."
+  ],
+  "overview": [
+    "iPhone'dan Android'e dosya aktarmak zahmetlidir, çünkü AirDrop platformlar arasında çalışmaz ve kablo için doğru adaptör gerekir. OneSync bunun yerine geçici bir oturumla çalışır. Uygulamayı bir cihazda açıp oturum başlatın, bir QR kod ve kısa bir oturum kodu alın. Diğer cihazda QR kodu tarayın veya kodu yazın. Bilgisayara hiçbir şey kurmanız gerekmez. Tarayıcıda OneSync web istemcisini, örneğin onesync.setlog.net adresini açın ve aynı şekilde katılın.",
+    "Cihazlar oturuma katıldığında hepsine dosya ve metin gönderebilirsiniz. Paylaşım menüsüyle diğer uygulamalardan doğrudan paylaşabilir, bir cihazda kopyaladığınız bağlantıyı veya cümleyi diğerinde alabilir, QR kod, kod veya bağlantıyla katılabilirsiniz. Büyük dosya aktarımları ağ kesintisinden sonra kaldığı yerden devam edebilir.",
+    "OneSync, dosyaları cihazdan cihaza geçirmek için kullanılan geçici bir aktarım kanalıdır. Aktarımlar şifreli bağlantılarla (HTTPS/TLS) sunucumuz üzerinden yapılır ve oturum bittikten sonra dosyalar ve metinler sunucudan silinir. Ortak bir bilgisayarda ya da aile üyelerinin telefonları arasında kısa süreli paylaşımlar için uygundur, çok hassas dosyalar için uygun değildir."
+  ],
+  "features": [
+    {
+      "h": "iPhone ve Android arasında dosya aktarın",
+      "p": "Bir iPhone'da veya Android telefonda oturum başlatın, diğer cihaz QR kod veya oturum koduyla katılsın. Gönderdiğiniz dosyalar oturumdaki her cihaza ulaşır. Her oturum ayrıca kısa bir doğrulama numarası gösterir, böylece doğru oturuma katıldığınızı kontrol edebilirsiniz."
+    },
+    {
+      "h": "Her bilgisayar için bir web istemcisi",
+      "p": "Bilgisayarlar tarayıcı üzerinden katılır, bu yüzden Windows PC, Mac veya Linux makineye bir şey kurmanız gerekmez. Oturum ekranı bilgisayar için web adresini gösterir ve bu adresi kopyalayabilirsiniz. QR tarama ekranı, QR kodu bilgisayarınızda nasıl göstereceğinizi anlatır."
+    },
+    {
+      "h": "Dosyaların yanında metin ve bağlantılar",
+      "p": "Kopyaladığınız bir cümleyi veya bağlantıyı oturumdaki tüm cihazlarla paylaşın. Gönderdiğiniz her şey oturum etkinliğinde listelenir, böylece her cihazda indirebilir veya kopyalayabilirsiniz."
+    },
+    {
+      "h": "Diğer uygulamalardan paylaşın, bağlantıyla katılın",
+      "p": "Paylaşım menüsüyle başka bir uygulamadaki fotoğrafı veya belgeyi doğrudan oturumunuza gönderin. QR kodla, kod girerek veya bir bağlantı açarak katılın."
+    },
+    {
+      "h": "Hesap yok, oturumlar ardını kendisi toplar",
+      "p": "Kayıt ya da giriş yoktur. Oturum ekranı kalan süreyi gösterir ve oturum bittiğinde içindeki dosyalar ve metinler sunucudan silinir."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/onesync/en/01.webp",
+      "w": 420,
+      "h": 880,
+      "alt": "Koyu mavi zemin üzerinde \"All your devices, as one\" başlığı, Start sharing düğmesi, Enter code ve Scan QR seçenekleri bulunan OneSync ana ekranı",
+      "caption": "Paylaşımı başlatın veya katılın"
+    },
+    {
+      "src": "/images/apps/onesync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "QR kod, oturum kodu, doğrulama numarası, kalan süre, bağlı cihazlar ve gönderilen dosya ile metinlerin listesini gösteren OneSync oturum ekranı",
+      "caption": "QR kodlu oturum ve etkinlik"
+    },
+    {
+      "src": "/images/apps/onesync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Aynı oturuma bağlı bir iPhone, MacBook Pro, iPad, iMac ve web istemcisini listeleyen OneSync Devices sayfası",
+      "caption": "Telefonlar, bilgisayarlar ve tarayıcılar bir arada"
+    }
+  ],
+  "specs": [
+    { "k": "Platformlar", "v": "iPhone ve iPad (iOS 15 veya üzeri), Android ve web tarayıcısı olan her bilgisayar" },
+    { "k": "Katılım", "v": "QR kod, oturum kodu veya bağlantı ve kısa bir doğrulama numarası; kayıt veya giriş yok" },
+    { "k": "Neler gönderilebilir", "v": "Dosyalar ve metin; paylaşım menüsüyle diğer uygulamalardan gönderme" },
+    { "k": "Pro (isteğe bağlı)", "v": "Daha büyük dosyalar, daha uzun oturumlar, bir oturumda daha fazla cihaz ve reklamsız kullanım" },
+    { "k": "Güvenlik", "v": "Sunucumuz üzerinden şifreli bağlantılar (HTTPS/TLS); oturum bittikten sonra dosyalar ve metinler sunucudan silinir" },
+    { "k": "Büyük dosyalar", "v": "Aktarımlar ağ kesintisinden sonra devam edebilir" }
+  ],
+  "limits": [
+    "OneSync uçtan uca şifreleme kullanmaz, bu yüzden çok hassas dosyalar için kullanmayın. Aktarımlar HTTPS/TLS kullanır ve sunucumuzdan geçer.",
+    "Geçici bir kanaldır. Oturumlar sona erer ve ardından dosyalar ile metinler sunucudan silinir, bu yüzden dosyaları aylarca saklamaz.",
+    "Her oturum, oturum ekranında gösterilen belirli bir süre boyunca açık kalır. Süre dolduğunda bir sonraki aktarım için herhangi bir cihazda yeni oturum başlatın.",
+    "Bilgisayarlar tarayıcıdaki web istemcisini kullanır; mağaza sayfası Windows, Mac veya Linux için ayrı bir uygulama tanımlamaz.",
+    "Dosyalar cihazlar arasında sunucumuz üzerinden taşındığı için iki tarafın da internet bağlantısı olmalıdır."
+  ],
+  "faq": [
+    {
+      "q": "iPhone'dan Android'e nasıl dosya aktarırım?",
+      "a": "Bir cihazda OneSync'i açıp oturum başlatın, bir QR kod ve kod alın. Diğer cihazda QR kodu tarayın veya kodu girin, ardından dosya ve metin gönderin. Oturumdaki her cihaz bunları alır."
+    },
+    {
+      "q": "Hiçbir şey kurmadan bilgisayara dosya gönderebilir miyim?",
+      "a": "Evet. OneSync web istemcisini herhangi bir tarayıcıda, örneğin onesync.setlog.net adresinde açın ve QR kod veya kodla oturuma katılın. Uygulamadaki oturum ekranı bilgisayar için web adresini gösterir."
+    },
+    {
+      "q": "Hesap veya kablo gerekir mi?",
+      "a": "Hayır. Kayıt, giriş, kablo veya eşleştirme yoktur. Oturum bir cihazda oluşturulur, diğerleri QR kod, kod veya bağlantıyla katılır."
+    },
+    {
+      "q": "Büyük dosyalar gönderebilir miyim?",
+      "a": "Evet. Büyük dosya aktarımları ağ kesintisinden sonra devam edebilir, yani bağlantı koptuğunda baştan başlamanız gerekmez. Oturum ekranı kalan süreyi gösterir, Pro (isteğe bağlı) ise daha büyük dosyalar ve daha uzun oturumlar ekler."
+    },
+    {
+      "q": "OneSync güvenli mi, dosyalarıma ne olur?",
+      "a": "Aktarımlar şifreli bağlantılar (HTTPS/TLS) kullanır ve oturum bittikten sonra dosyalar ile metinler sunucudan silinir. OneSync uçtan uca şifreleme kullanmaz, bu yüzden çok hassas dosyaları paylaşmaktan kaçının."
+    },
+    {
+      "q": "Bir oturuma hangi cihazlar katılabilir?",
+      "a": "iPhone, iPad ve Android cihazlar uygulamayla, her bilgisayar ise tarayıcıdaki web istemcisiyle katılır. Gönderdiğiniz her şey oturumdaki her cihaza ulaşır. Pro (isteğe bağlı) ile aynı oturuma daha fazla cihaz katılabilir."
+    }
+  ],
+  "card": {
+    "tagline": "iPhone, Android ve her tarayıcı arasında dosya ve metin gönderin",
+    "features": [
+      "QR kod veya kısa kod, hesap yok",
+      "Her bilgisayar için web istemcisi",
+      "Diğer uygulamalardan paylaşım"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "dosya aktarma uygulaması",
+      "h1": "iPhone, iPad, Android ve web için en iyi dosya aktarma uygulaması.",
+      "sub": "Telefonlar, tabletler ve tarayıcısı olan her bilgisayar arasında kablo ve hesap olmadan dosya ve metin gönderir.",
+      "shots": ["01", "02"]
+    },
+    "pillars": [
+      { "title": "iPhone'dan Android'e ve tersine.", "text": "İki telefondan birinde oturum başlatın, diğeri QR kod veya kısa kodla katılsın." },
+      { "title": "Her bilgisayar, kurulum yok.", "text": "Bilgisayarlar Windows, Mac veya Linux'ta web tarayıcısıyla katılır." },
+      { "title": "Kayıt yok.", "text": "Hesap ve giriş yoktur. Her oturum kısa bir doğrulama numarası gösterir, böylece doğru oturuma katıldığınızı bilirsiniz." }
+    ],
+    "features": [
+      { "h2": "Oturumdaki her cihaza ulaşır.", "p": "Gönderdiğiniz dosyalar katılan her cihaza ulaşır. Büyük aktarımlar ağ kesintisinden sonra devam eder.", "shot": "03" },
+      { "h2": "Metin ve bağlantılar da.", "p": "Kopyaladığınız bir cümleyi veya bağlantıyı oturumdaki herkese gönderin. Etkinlik listesinde kalır, her cihaz kopyalayabilir veya indirebilir.", "shot": "02" },
+      { "h2": "Diğer uygulamalardan doğrudan gönderin.", "p": "Paylaşım menüsüyle bir fotoğrafı veya belgeyi oturumunuza gönderin. Diğerleri QR kod, kod veya bağlantıyla katılır.", "shot": "01" }
+    ],
+    "midCta": {
+      "h2": "O dosyayı taşımaya hazır mısınız?",
+      "p": "Telefonunuzda oturum başlatın ve kodu diğer cihazdan tarayın."
+    },
+    "closeH2": "Ardını kendi toplayan dosya aktarımı.",
+    "trust": ["Hesap yok", "Kablo yok", "TLS ile şifreli bağlantılar", "Her oturumdan sonra silinir"]
+  }
+}

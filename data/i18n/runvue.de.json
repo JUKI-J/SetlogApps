@@ -1,0 +1,207 @@
+{
+  "locale": "de",
+  "title": "Lauf Video in 3D: Lauf-Replay aus Straßensicht - RunVue",
+  "description": "Mach aus einem bereits aufgezeichneten Lauf ein kurzes 3D-Replay-Video entlang deiner Strecke, mit Pace- und Puls-HUD, erstellt direkt auf deinem iPhone.",
+  "h1": "Lauf Video in 3D: dein Lauf als Replay aus Straßensicht",
+  "tagline": "Ein 3D-Lauf-Replay mit einer Kamera, die tief über der gelaufenen Straße folgt.",
+  "summary": [
+    "RunVue macht aus einem Lauf, den du bereits aufgezeichnet hast, ein kurzes vertikales 3D-Replay-Video. Eine Kamera folgt dir tief über der Straße durch genau die Straßen, die du gelaufen bist.",
+    "Die App ist für Läuferinnen und Läufer, die mit der Apple Watch oder einer Lauf-App aufzeichnen und von einer Strecke, einem Wettkampf oder einem Monatsrückblick lieber ein Video als einen Screenshot einer Karte behalten möchten.",
+    "Das Besondere: eine Verfolgerkamera auf Straßenhöhe an Stelle einer Satellitenansicht, ein HUD mit Pace und Puls und ein Video, das vollständig auf deinem iPhone entsteht."
+  ],
+  "overview": [
+    "Wer nach einer Lauf Video 3D App oder einem 3D-Lauf-Replay sucht, findet meist Apps, die den Lauf aufzeichnen oder eine flache Linie auf eine Karte zeichnen. RunVue setzt nach dem Lauf an. Importiere ein Lauftraining aus Apple Health, also die Route, die deine Apple Watch oder deine Lauf-App dort gespeichert hat, oder lade eine GPX- oder FIT-Datei von einem Gerät, das keine Routen in Health speichert. RunVue baut eine 3D-Szene der Straßen und Gebäude entlang deiner Strecke, legt deinen GPS-Track auf die Straße und rendert das Replay auf deinem iPhone.",
+    "Das Ergebnis ist ein 9:16-Video, das du in Fotos sicherst oder teilst. Eine Verfolgerkamera aus der dritten Person begleitet deinen Lauf, ein HUD zeigt Pace und Puls, eine Minikarte und Abschnittskarten zeigen deine Splits, und ein Überflug am Schluss zeigt die ganze Strecke. Kartenthema und Musik wählst du vor dem Speichern, und eine Vorschau siehst du vorher.",
+    "Über einen einzelnen Lauf hinaus kannst du gegen einen früheren Lauf auf derselben Strecke antreten, Licht und Wetter vom Tag deines Laufs nachstellen, deinen schnellsten Abschnitt in Zeitlupe zeigen lassen und alle Läufe auf einer Stadtkarte übereinanderlegen, um Monatsrückblicke als Video zu erstellen."
+  ],
+  "features": [
+    {
+      "h": "Ein 3D-Lauf-Replay aus Straßensicht",
+      "p": "Die Kamera folgt tief über der Straße durch die 3D-Straßen und Gebäude, die aus deiner Route entstehen. So fühlt sich das Video an, als würdest du die Strecke noch einmal laufen. Am Ende zeigt ein Überflug die ganze Strecke mit den Straßen und Orten, an denen du vorbeigekommen bist."
+    },
+    {
+      "h": "Pace- und Puls-HUD, Minikarte und Abschnittskarten",
+      "p": "Pace und Puls erscheinen im Bild, dazu eine Minikarte, Abschnittskarten mit Splits und eine Kurve aus Pace und Puls am unteren Rand und im Abspann."
+    },
+    {
+      "h": "Himmel des Tages, Ghost-Rennen und Momente",
+      "p": "Himmel des Tages stellt Licht und Wetter zur Zeit deines Laufs nach. Das Ghost-Rennen setzt einen früheren Lauf auf derselben Strecke neben dich. Momente zeigt deinen schnellsten Abschnitt, den größten Anstieg und den Endspurt in Zeitlupe."
+    },
+    {
+      "h": "Meine Stadt und Monatsrückblicke als Video",
+      "p": "Meine Stadt legt deine Läufe auf eine gemeinsame Stadtkarte und macht aus diesem und dem letzten Monat Rückblick-Videos. Pro ergänzt Rückblicke für das Jahr und für die gesamte Zeit."
+    },
+    {
+      "h": "Hochformat-Video, Kartenthemen und Musik",
+      "p": "Exportiere ein 9:16-Video in Fotos. Drei Kartenthemen und fünf Musikstücke sind enthalten, mit Vorschau vor dem Speichern, und jeder Lauf lässt sich mit 1x und Zusammenfassung erstellen."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/runvue/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "RunVue-Replay bei Nacht: eine 3D-Stadt aus einer Kamera tief über der Straße, blaue Läufermarkierung, Pace 7:40 pro Meile, Minikarte und Pace-Puls-Kurve im HUD am unteren Rand",
+      "caption": "Dein Lauf unter dem Himmel jenes Tages"
+    },
+    {
+      "src": "/images/apps/runvue/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Replay mit einer Ghost-Markierung eines früheren Laufs neben dem aktuellen Läufer, Pace 8:05 pro Meile",
+      "caption": "Lauf neben deinem früheren Ich"
+    },
+    {
+      "src": "/images/apps/runvue/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Replay mit einer Hinweiskarte zum schnellsten Abschnitt und dem HUD mit 8:21 pro Meile",
+      "caption": "Dein schnellster Abschnitt in Zeitlupe"
+    },
+    {
+      "src": "/images/apps/runvue/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Dunkle Stadtkarte mit vielen leuchtend blauen Laufrouten übereinander, Titel Meine Stadt",
+      "caption": "Deine Läufe lassen die Stadt leuchten"
+    },
+    {
+      "src": "/images/apps/runvue/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "RunVue-Einstellungen vor dem Erstellen eines Videos mit Kamera, Kartenthema, Himmel des Tages, Lauf gegen einen früheren Lauf und Musik sowie einer Schaltfläche für die Vorschau",
+      "caption": "Erst auswählen, dann erstellen"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plattformen",
+      "v": "iPhone und Android (bei Google Play)"
+    },
+    {
+      "k": "Voraussetzungen",
+      "v": "iOS 17 oder neuer; Trainings in Apple Health mit GPS-Route oder eine GPX- oder FIT-Datei"
+    },
+    {
+      "k": "Eingabe",
+      "v": "Lauftrainings aus Apple Health; Import von GPX oder FIT"
+    },
+    {
+      "k": "Ausgabe",
+      "v": "Vertikales 9:16-Video, in Fotos gesichert oder geteilt"
+    },
+    {
+      "k": "Tempi",
+      "v": "1x und Zusammenfassung; Pro ergänzt 2x bis 60x"
+    },
+    {
+      "k": "Kameras",
+      "v": "Verfolger- und Navigationskamera; Presets Filmisch, Ruhig, Schräg und Luftbild mit Pro"
+    },
+    {
+      "k": "Karten",
+      "v": "Daten von OpenStreetMap, im Abspann jedes Videos genannt; Kartenkacheln werden nach grober Region geladen"
+    },
+    {
+      "k": "Sprachen",
+      "v": "12 Sprachen"
+    },
+    {
+      "k": "Rendering",
+      "v": "Auf dem Gerät; GPS-Route, genauer Standort und Gesundheitsdaten werden an keinen Server gesendet"
+    }
+  ],
+  "limits": [
+    "RunVue zeichnet keine Läufe auf. Die App macht nur aus Läufen, die schon in Apple Health gespeichert sind oder als GPX oder FIT importiert werden, ein Video. Sie ist weder ein Live-Tracker noch ein Coach. Laufband- und Indoor-Trainings ohne GPS-Route haben keinen Weg, dem die Kamera folgen kann.",
+    "Das Video zeigt die ganze Strecke vom Start bis zum Ziel, und die App kann keinen Abschnitt ausblenden. Ein Lauf, der zu Hause beginnt, kann also zeigen, wo du wohnst. Überlege genau, mit wem du ihn teilst.",
+    "Gespeicherte Videos tragen ein kleines RunVue-Wasserzeichen. Das Speichern ohne Wasserzeichen gehört zu Pro. Der OpenStreetMap-Hinweis im Abspann lässt sich nicht abschalten.",
+    "Wo Daten zur Gebäudehöhe fehlen, zeichnet die App eine durchschnittliche Höhe. Strecken zwischen Hochhäusern oder durch Tunnel können daher unvollkommen aussehen. Das 3D-Rendering läuft auf deinem iPhone, ältere Geräte brauchen dafür länger.",
+    "Nach dem Speichern eines Videos kann eine Werbeanzeige erscheinen. Tempi über 1x, weitere Kamera-Presets, Kamerahöhe und Zoom, das Rennen gegen jeden früheren Lauf sowie Rückblicke für das Jahr und die gesamte Zeit gehören zu Pro."
+  ],
+  "faq": [
+    {
+      "q": "Wie mache ich aus meinem Lauf ein Replay-Video?",
+      "a": "Öffne RunVue, wähle ein Lauftraining aus Apple Health oder importiere eine GPX- oder FIT-Datei, wähle Kamera, Kartenthema, Himmel und Musik, erstelle eine Vorschau und sichere das Video in Fotos. Laut Einstellungsbildschirm dauert eine Vorschau etwa 15 Sekunden."
+    },
+    {
+      "q": "Zeichnet RunVue meinen Lauf auf?",
+      "a": "Nein. Die App arbeitet mit Läufen, die schon in Apple Health gespeichert sind, oder mit einer GPX- oder FIT-Datei. Zum Aufzeichnen nutzt du deine Apple Watch oder deine Lauf-App."
+    },
+    {
+      "q": "Was ist ein 3D-Lauf-Replay?",
+      "a": "Ein kurzes Video, in dem eine Kamera deiner aufgezeichneten Route durch ein 3D-Modell der Straßen und Gebäude daneben folgt, mit einem HUD für Pace und Puls an Stelle einer flachen Linie auf der Karte."
+    },
+    {
+      "q": "Welche Funktionen gehören zu Pro?",
+      "a": "Pro ergänzt Tempi von 2x bis 60x, die Kamera-Presets Filmisch, Ruhig, Schräg und Luftbild, Kamerahöhe und Zoom, das Rennen gegen jeden früheren Lauf, Rückblicke für das Jahr und die gesamte Zeit sowie das Speichern von Videos ohne Wasserzeichen."
+    },
+    {
+      "q": "Kann ich meinen Wohnort verbergen?",
+      "a": "Das Video zeigt die gesamte Strecke, und die App kann keinen Abschnitt ausblenden. Entscheide deshalb vor dem Teilen, wer das Video sehen soll."
+    },
+    {
+      "q": "Verlässt das Video mein iPhone?",
+      "a": "Das Video wird auf deinem iPhone gerendert. Deine GPS-Route, dein genauer Standort und deine Gesundheitsdaten gehen weder an einen Server noch an Werbe- oder Mess-SDKs, außer bei Videos, die du selbst teilst. Karten werden nur als grobe regionale Kacheln geladen."
+    }
+  ],
+  "card": {
+    "tagline": "Aufgezeichnete Läufe als 3D-Replay-Video entlang deiner Strecke",
+    "features": [
+      "3D-Replay auf Straßenhöhe mit Pace- und Puls-HUD",
+      "Import aus Apple Health, GPX oder FIT",
+      "Ghost-Rennen, Himmel des Tages und Rückblicke für Meine Stadt"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "Lauf-Replay-App",
+      "h1": "Die beste 3D-Lauf-Replay-App für iPhone und Android.",
+      "sub": "Macht aus einem bereits aufgezeichneten Lauf ein kurzes 3D-Video, mit einer Kamera, die tief über deinen gelaufenen Straßen folgt.",
+      "shots": [
+        "01",
+        "04"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Aus Sicht der Straße.",
+        "text": "Die Kamera bleibt tief über der Straße, zwischen 3D-Gebäuden aus deiner Route. Es fühlt sich an, als liefest du noch einmal."
+      },
+      {
+        "title": "Pace und Puls im Bild.",
+        "text": "Ein HUD zeigt Pace und Puls, dazu eine Minikarte und eine Karte für jeden Abschnitt."
+      },
+      {
+        "title": "Das Licht deines Lauftags.",
+        "text": "Himmel des Tages holt Licht und Wetter der Stunde zurück, in der du unterwegs warst."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Gegen einen früheren Lauf auf derselben Strecke.",
+        "p": "Das Ghost-Rennen setzt einen früheren Lauf auf derselben Strecke neben dich. So siehst du, wo du Zeit gewonnen und verloren hast.",
+        "shot": "02"
+      },
+      {
+        "h2": "Der Anstieg und der Endspurt, noch einmal.",
+        "p": "Momente findet deinen zügigsten Abschnitt, den größten Anstieg und den Endspurt und spielt sie in Zeitlupe ab.",
+        "shot": "03"
+      },
+      {
+        "h2": "Drei Kartenthemen, fünf Songs, ein Hochformat-Video.",
+        "p": "Sieh dir Kartenthemen und Musik vor dem Speichern an und exportiere dann ein 9:16-Video in Fotos.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Deinen letzten Lauf noch einmal sehen?",
+      "p": "Wähle einen gespeicherten Lauf, eine Kamera und ein Thema und sichere das Video."
+    },
+    "closeH2": "Ein Lauf, den man gern noch einmal sieht.",
+    "trust": [
+      "Vertikales 9:16-Video",
+      "Daten von OpenStreetMap",
+      "12 Sprachen"
+    ]
+  }
+}

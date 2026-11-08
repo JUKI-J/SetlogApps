@@ -1,0 +1,95 @@
+{
+  "locale": "pt-br",
+  "title": "Abrir arquivo RAR no Mac - Zipda para Mac e iPhone",
+  "description": "Descompacte RAR, 7z, ZIP e TAR no Mac, iPhone e iPad. Veja o conteúdo antes de extrair, com ZIP protegido e arquivos divididos. Sem anúncios, sem conta.",
+  "h1": "Abra arquivos RAR, 7z e ZIP no Mac e no iPhone",
+  "tagline": "Descompacte, explore e extraia arquivos compactados no seu aparelho, sem enviar nada para a internet.",
+  "summary": [
+    "O Zipda é um app leve de arquivos compactados para Mac, iPhone e iPad. Ele abre, explora e mostra a prévia de arquivos ZIP, RAR, 7z e TAR, e descompacta ZIP e TAR em uma única etapa.",
+    "Ele é para quem recebe arquivos compactados de usuários de Windows ou de programas antigos, como um anexo RAR, um 7z baixado, um ZIP com senha ou um conjunto enorme dividido em várias partes.",
+    "Para abrir um arquivo RAR no Mac ou descompactar um ZIP no iPhone, você primeiro vê o que tem dentro e depois extrai um único arquivo ou tudo na pasta que escolher. Arquivos grandes, divididos ou danificados são processados no próprio aparelho."
+  ],
+  "overview": [
+    "No Mac, o Utilitário de Compactação integrado descompacta bem um ZIP comum. O problema começa com todo o resto, por exemplo um RAR de um site de downloads, um 7z enviado por um colega, um ZIP com mais de 4 GB dividido em várias partes ou um download que parou no meio. O Zipda foi feito para esses casos. Você abre o arquivo, vê o que ele contém e confere a prévia antes de extrair qualquer coisa.",
+    "Tudo acontece no seu próprio aparelho. Não há conta, nem análise de uso, nem SDK de publicidade, e o app não faz requisições de rede por conta própria, então os arquivos que você descompacta nunca saem do seu Mac ou iPhone. Durante a extração, o Zipda grava os arquivos grandes no armazenamento aos poucos, e é assim que ele dá conta de arquivos ZIP64 de vários gigabytes e de conjuntos com dezenas de milhares de itens.",
+    "Abrir, explorar e ver a prévia de qualquer arquivo compactado, além da extração de ZIP e TAR do dia a dia, funciona sem o Pro. A extração de RAR, 7z, ALZ e LZH, de arquivos divididos e de arquivos com senha está incluída no Zipda Pro, um recurso opcional que funciona do mesmo jeito no iPhone, no iPad e no Mac."
+  ],
+  "features": [
+    {
+      "h": "Abrir RAR e 7z no Mac",
+      "p": "Além de ZIP e da família TAR (.tar, .tar.gz, .tar.bz2, .tar.xz), o Zipda extrai RAR, 7z, LZH e ALZ. Você pode explorar e ver a prévia do conteúdo de um RAR ou 7z primeiro e tirar só o arquivo de que precisa, ou extrair tudo na pasta que escolher. A extração de RAR, 7z, ALZ e LZH faz parte do Pro."
+    },
+    {
+      "h": "Descompactar no iPhone e no iPad",
+      "p": "Um arquivo compactado recebido no Mail ou no app Arquivos abre no Zipda pela planilha de compartilhamento. Você explora, vê a prévia e depois extrai um arquivo ou tudo na pasta que escolher. É o mesmo app no iPhone, no iPad e no Mac, com uma única página na App Store, e funciona no iOS 16.1 ou posterior."
+    },
+    {
+      "h": "Arquivos ZIP com senha",
+      "p": "Um ZIP com senha abre tanto no método antigo ZipCrypto quanto em AES. O Zipda pede a senha e a verificação acontece no seu aparelho. Abrir arquivos com senha faz parte do Pro."
+    },
+    {
+      "h": "Arquivos grandes, divididos e danificados",
+      "p": "Arquivos Zip64 acima de 4 GB, conjuntos divididos em várias partes e arquivos com dezenas de milhares de itens são processados em fluxo, sem carregar tudo na memória. Em um arquivo dividido, escolha a primeira parte e o Zipda encontra o resto. Se um download foi interrompido ou há um setor com defeito, o Zipda extrai todos os itens que ainda consegue ler e depois mostra exatamente quais pulou e por quê. Cancelar para na hora e apaga os arquivos gravados pela metade."
+    },
+    {
+      "h": "Criar arquivos ZIP no Mac e no iPhone",
+      "p": "Selecione arquivos, fotos ou vídeos e compacte em um ZIP, inclusive pela planilha de compartilhamento no iPhone. ZIP e TAR sem senha são criados sem o Pro. A criação de ZIP com criptografia AES-256, 7z, arquivos com senha e arquivos divididos faz parte do Pro."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/zipda/en/01.webp", "w": 1000, "h": 625, "alt": "Zipda em um Mac mostrando o conteúdo de Shared_Photos_2026.zip, com um botão para extrair tudo", "caption": "Explore um arquivo antes de extrair."},
+    {"src": "/images/apps/zipda/en/02.webp", "w": 1000, "h": 625, "alt": "Janela de senha do Zipda para Finance_Q2_Report.zip, com um campo oculto e os botões Cancelar e Abrir", "caption": "A senha de um ZIP protegido é digitada no seu aparelho."},
+    {"src": "/images/apps/zipda/en/03.webp", "w": 1000, "h": 625, "alt": "Tela de criação de arquivo do Zipda com sete arquivos selecionados e um menu de formato ZIP", "caption": "Crie um ZIP com os arquivos que você escolher."},
+    {"src": "/images/apps/zipda/en/04.webp", "w": 1000, "h": 625, "alt": "Janela do Zipda em um Mac com a lista de arquivos de uma pasta extraída e um botão de ação embaixo", "caption": "Os arquivos extraídos ficam no seu aparelho."}
+  ],
+  "specs": [
+    {"k": "Plataformas", "v": "Mac, iPhone e iPad (uma única página na App Store)"},
+    {"k": "Requisitos", "v": "macOS 14 ou posterior; iOS 16.1 ou posterior"},
+    {"k": "Extração", "v": ".zip, .tar, .tar.gz, .tar.bz2, .tar.xz; com o Pro também .rar, .7z, .lzh, .alz"},
+    {"k": "Criação", "v": ".zip e .tar sem senha; ZIP com AES-256, 7z, arquivos com senha e divididos com o Pro"},
+    {"k": "Senhas", "v": "ZIP com ZipCrypto ou AES (Pro)"},
+    {"k": "Arquivos grandes", "v": "Zip64 acima de 4 GB, arquivos divididos e dezenas de milhares de itens, processados em fluxo"},
+    {"k": "Privacidade", "v": "Sem conta, sem análise de uso, sem SDK de publicidade; etiqueta da App Store Dados não coletados"},
+    {"k": "Idiomas", "v": "12, alteráveis dentro do app"}
+  ],
+  "limits": [
+    "O Zipda não cria arquivos RAR. Nenhum app de terceiros pode criar RAR, então o Zipda só os extrai. LZH também é só para extração.",
+    "Arquivos EGG não são compatíveis.",
+    "Um arquivo dividido precisa de todas as partes. Se faltar uma, o conjunto não pode ser extraído.",
+    "De um arquivo danificado, o Zipda extrai só os itens que ainda consegue ler e lista os que pulou.",
+    "A extração de RAR, 7z, ALZ e LZH, de arquivos divididos e de arquivos com senha está incluída no Zipda Pro, que é opcional."
+  ],
+  "faq": [
+    {"q": "Como abrir um arquivo RAR no Mac?", "a": "Instale o Zipda e arraste o RAR para a janela do app (no iPhone, compartilhe com o Zipda pelo Mail ou pelo app Arquivos). Você pode explorar e ver a prévia do conteúdo antes. A extração de um arquivo RAR está incluída no Zipda Pro, que é opcional."},
+    {"q": "Como descompactar um arquivo ZIP no Mac?", "a": "Clicar duas vezes em um ZIP usa o Utilitário de Compactação integrado. Com o Zipda você também pode explorar o arquivo, ver a prévia de um item, escolher para onde vão os arquivos e descompactar em uma etapa, o que ajuda quando o arquivo é muito grande ou dividido."},
+    {"q": "O Zipda abre arquivos 7z no Mac?", "a": "Sim. O Zipda abre, explora e mostra a prévia de arquivos 7z, e a extração de 7z está incluída no Zipda Pro."},
+    {"q": "Consigo abrir um ZIP com senha?", "a": "Sim. ZIPs protegidos com ZipCrypto ou AES abrem normalmente. O Zipda pede a senha e a verificação acontece no seu aparelho. Abrir arquivos com senha está incluído no Zipda Pro."},
+    {"q": "Dá para criar um arquivo RAR com o Zipda?", "a": "Não. O Zipda cria arquivos ZIP comuns e, com o Pro, também ZIP com criptografia AES-256 e arquivos 7z. Para enviar arquivos a outras pessoas, o ZIP é a escolha mais segura."},
+    {"q": "Meus arquivos são enviados para algum lugar?", "a": "Não. Tudo é processado no seu aparelho. O app não tem conta, análise de uso nem SDK de publicidade."}
+  ],
+  "card": {
+    "tagline": "Abra RAR, 7z e ZIP no Mac e no iPhone, e veja o conteúdo antes de extrair.",
+    "features": ["Extrai ZIP, RAR, 7z e TAR", "Arquivos com senha e divididos", "Sem anúncios, sem conta"]
+  },
+  "landing": {
+    "hero": {
+      "category": "descompactador",
+      "h1": "O melhor descompactador para iPhone, iPad e Mac.",
+      "sub": "Abre RAR, 7z e ZIP no seu Mac, iPhone e iPad, e tira só o arquivo de que você precisa.",
+      "shots": ["01"]
+    },
+    "pillars": [
+      {"title": "Abre RAR e 7z.", "text": "O Zipda extrai RAR, 7z, LZH e ALZ, além de ZIP e da família TAR. Tire um único arquivo ou extraia tudo na pasta que você escolher."},
+      {"title": "Arquivos grandes e divididos.", "text": "Arquivos Zip64 acima de 4 GB e com dezenas de milhares de itens são processados em fluxo. Escolha a primeira parte de um arquivo dividido e o Zipda encontra o resto."},
+      {"title": "Mac, iPhone e iPad.", "text": "O Zipda tem uma única página na App Store para os três. Funciona no macOS 14 e no iOS 16.1 ou posterior."}
+    ],
+    "features": [
+      {"h2": "Veja o que tem dentro. Tire só o que precisa.", "p": "Explore e veja a prévia do que um arquivo contém. Depois extraia um item, ou tudo, na pasta que você escolher.", "shot": "01"},
+      {"h2": "ZIPs protegidos abrem no seu aparelho.", "p": "ZIPs protegidos com ZipCrypto ou AES abrem assim que você digita a senha. A verificação acontece no seu aparelho.", "shot": "02"},
+      {"h2": "Crie ZIPs com arquivos, fotos e vídeos.", "p": "Selecione arquivos, fotos ou vídeos e compacte em um ZIP, também pela planilha de compartilhamento no iPhone.", "shot": "03"}
+    ],
+    "midCta": {"h2": "Tem um RAR ou 7z para abrir?", "p": "Abra no Zipda, veja o que tem dentro e extraia o que precisar."},
+    "closeH2": "Um só descompactador para o seu Mac, iPhone e iPad.",
+    "trust": ["Sem conta", "Sem anúncios", "Sem análise de uso"]
+  }
+}

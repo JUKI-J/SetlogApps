@@ -1,0 +1,184 @@
+{
+  "locale": "es",
+  "title": "Visor de imágenes ligero para Mac - Belvue",
+  "description": "Abre una imagen y recorre toda la carpeta con las flechas del teclado. Belvue es un visor de imágenes ligero para Mac, sin anuncios y sin rastreo.",
+  "h1": "Un visor de imágenes ligero para Mac",
+  "tagline": "Abre una imagen y recorre toda la carpeta con las flechas",
+  "summary": [
+    "Belvue es un visor de imágenes ligero para Mac. Abres una sola imagen y el resto de la carpeta queda listo para recorrerlo con las teclas de flecha, en el mismo orden que el Finder.",
+    "Está pensado para quien busca un visor de imágenes para Mac con el que revisar carpetas de fotos, capturas de pantalla o escaneos, incluso si contienen miles de imágenes.",
+    "Tus imágenes y las rutas de tus archivos se quedan en tu Mac, sin anuncios y sin rastreo."
+  ],
+  "overview": [
+    "Vista Previa y Quick Look sirven para una imagen, pero revisar una carpeta entera suele obligar a abrir las imágenes una por una. En Belvue abres una imagen y la siguiente aparece en cuanto pulsas la flecha. Las carpetas con miles de imágenes siguen el mismo orden natural que el Finder, y la lista se actualiza cuando cambia la carpeta.",
+    "En un visor de imágenes para Mac, lo que más se usa son los detalles pequeños. Belvue trae una tira de miniaturas, zoom, desplazamiento por la imagen, pantalla completa y un panel de información con los datos EXIF. Mientras recorres la carpeta, marcas imágenes con la tecla P y después actúas sobre todas las marcadas a la vez. Para copiar la imagen actual basta con ⌘C."
+  ],
+  "features": [
+    {
+      "h": "Abre una, recorre toda la carpeta",
+      "p": "Abre una imagen y recorre su carpeta con las teclas de flecha. La siguiente aparece al instante y el orden coincide con el del Finder, también en carpetas con miles de imágenes."
+    },
+    {
+      "h": "Tira de miniaturas, zoom y pantalla completa",
+      "p": "La tira de miniaturas, el zoom, el desplazamiento y la pantalla completa vienen incluidos, junto con un panel de información que muestra los datos EXIF."
+    },
+    {
+      "h": "Marca mientras recorres",
+      "p": "Pulsa P para marcar imágenes mientras navegas. Con Belvue Pro puedes mover, copiar o enviar a la Papelera todas las marcadas a la vez, con opción de deshacer, y al copiar el original nunca cambia."
+    },
+    {
+      "h": "Convierte a JPEG, PNG o HEIC",
+      "p": "Belvue Pro convierte las imágenes marcadas a JPEG, PNG o HEIC y crea un archivo nuevo, de modo que el original queda como estaba."
+    },
+    {
+      "h": "Privacidad desde el diseño",
+      "p": "Las imágenes y las rutas de archivo nunca salen de tu Mac. Belvue no tiene anuncios ni rastreo, y su única conexión de red es con el App Store para Belvue Pro."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Ventana de Belvue con una puesta de sol sobre montañas, una tira de miniaturas abajo y el titular en inglés 'Open one. Browse them all.'",
+      "caption": "Abre una imagen y toda su carpeta está lista."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue mostrando una imagen abstracta de bokeh azul de una carpeta con diez mil imágenes y una tira de miniaturas",
+      "caption": "Carpetas con miles de imágenes, en el orden del Finder."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue a pantalla completa con una puesta de sol sobre montañas y una tira de miniaturas abajo",
+      "caption": "Pantalla completa con zoom y tira de miniaturas."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue con un cuadro de confirmación para enviar cinco imágenes marcadas a la Papelera, sobre la imagen actual",
+      "caption": "Marca mientras recorres y actúa sobre todas a la vez (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisitos",
+      "v": "Mac con macOS 15 o posterior"
+    },
+    {
+      "k": "Formatos de imagen",
+      "v": "JPEG, PNG, HEIC, RAW y más"
+    },
+    {
+      "k": "Convierte a",
+      "v": "JPEG, PNG, HEIC"
+    },
+    {
+      "k": "Orden",
+      "v": "Orden natural, igual que en el Finder"
+    },
+    {
+      "k": "Extras",
+      "v": "Tira de miniaturas, zoom, desplazamiento, pantalla completa, panel EXIF, copiar con ⌘C, carpetas recientes"
+    },
+    {
+      "k": "Privacidad",
+      "v": "Sin anuncios ni rastreo; conexión de red solo con el App Store"
+    },
+    {
+      "k": "Pro (opcional)",
+      "v": "Mover, copiar y enviar a la Papelera las imágenes marcadas a la vez, conversión a JPEG, PNG o HEIC, compartir, Abrir con, fondos adicionales"
+    }
+  ],
+  "limits": [
+    "Por el sandbox del Mac App Store, macOS solo da a Belvue acceso a la imagen que abres. Para recorrer el resto de la carpeta, Belvue te pide que autorices esa carpeta una vez. Si no lo haces, la imagen que abriste se abre igualmente, pero no puedes pasar a las demás imágenes de la carpeta.",
+    "Mover, copiar y enviar a la Papelera por lotes, convertir, compartir, Abrir con y los fondos adicionales forman parte de Belvue Pro. Ver, recorrer y marcar imágenes funciona sin Pro.",
+    "Belvue está hecho para ver imágenes. No gestiona una fototeca ni modifica tus imágenes.",
+    "Solo está disponible para Mac."
+  ],
+  "faq": [
+    {
+      "q": "¿Qué visor de imágenes para Mac permite recorrer toda una carpeta?",
+      "a": "Belvue es un visor de imágenes ligero para Mac. Abres una imagen y recorres el resto de la carpeta con las teclas de flecha, en el mismo orden que el Finder, incluso con miles de imágenes."
+    },
+    {
+      "q": "¿Por qué Belvue me pide permiso para una carpeta?",
+      "a": "El sandbox del Mac App Store solo deja que una app lea el archivo que abriste. Belvue pide una vez acceso a esa carpeta para poder mostrar las demás imágenes. Si lo rechazas, la imagen abierta se sigue viendo."
+    },
+    {
+      "q": "¿Qué formatos de imagen abre?",
+      "a": "JPEG, PNG, HEIC, RAW y otros formatos."
+    },
+    {
+      "q": "¿Qué añade Belvue Pro?",
+      "a": "Ver, recorrer y marcar imágenes funciona sin Pro. Belvue Pro es opcional y añade mover, copiar y enviar a la Papelera todas las marcadas a la vez, la conversión a JPEG, PNG o HEIC, compartir, Abrir con y fondos adicionales."
+    },
+    {
+      "q": "¿Belvue envía mis imágenes a algún sitio?",
+      "a": "No. Las imágenes y las rutas de archivo nunca salen de tu Mac. Belvue no tiene anuncios ni rastreo, y su única conexión de red es con el App Store para Belvue Pro."
+    }
+  ],
+  "card": {
+    "tagline": "Visor de imágenes ligero para Mac. Abre una imagen y recorre toda la carpeta",
+    "features": [
+      "Flechas en el orden del Finder",
+      "Miniaturas, zoom, EXIF",
+      "Sin anuncios ni rastreo"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "visor de imágenes",
+      "h1": "El mejor visor de imágenes ligero para Mac.",
+      "sub": "Abre una imagen y recorre toda la carpeta con las teclas de flecha.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "La carpeta, flecha a flecha.",
+        "text": "Las teclas de flecha pasan por cada imagen junto a la que abriste. La siguiente aparece al instante."
+      },
+      {
+        "title": "Mira de cerca.",
+        "text": "Tira de miniaturas, zoom, desplazamiento y pantalla completa incluidos, con un panel de información para los datos EXIF."
+      },
+      {
+        "title": "Se queda en tu Mac.",
+        "text": "Las imágenes y las rutas de archivo nunca salen de tu Mac. Belvue no tiene anuncios ni rastreo."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Cada imagen de la carpeta, a una tecla.",
+        "p": "Abre una imagen y el resto de su carpeta está listo para recorrer. El orden coincide con el del Finder, incluso en carpetas con miles de imágenes.",
+        "shot": "02"
+      },
+      {
+        "h2": "Acerca, desplázate, pantalla completa.",
+        "p": "Zoom, desplazamiento y pantalla completa vienen incluidos, con la tira de miniaturas siempre a mano. El panel de información muestra los datos EXIF.",
+        "shot": "04"
+      },
+      {
+        "h2": "Pulsa P para quedártela.",
+        "p": "Marca imágenes con P mientras recorres. Después mueve, copia o envía a la Papelera todas las marcadas a la vez, con opción de deshacer.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "¿Listo para recorrer esa carpeta?",
+      "p": "Abre cualquier imagen de la carpeta con Belvue y autoriza la carpeta una vez. Después, solo tienes que pulsar las flechas."
+    },
+    "closeH2": "Un visor de imágenes ligero que deja tus fotos tal como están.",
+    "trust": [
+      "Sin anuncios",
+      "Sin rastreo"
+    ]
+  }
+}

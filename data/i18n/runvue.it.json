@@ -1,0 +1,207 @@
+{
+  "locale": "it",
+  "title": "Video corsa 3D e replay della corsa su iPhone - RunVue",
+  "description": "Trasforma una corsa già registrata in un breve video replay 3D lungo le strade che hai percorso, con passo e battito a schermo, creato sul tuo iPhone.",
+  "h1": "Video corsa 3D: la tua corsa rivista a livello della strada",
+  "tagline": "Un replay della corsa in 3D con una videocamera che segue bassa sopra la strada che hai corso.",
+  "summary": [
+    "RunVue trasforma una corsa che hai già registrato in un breve video verticale di replay 3D. Una videocamera ti segue a bassa quota sopra la carreggiata, lungo le strade che hai davvero percorso.",
+    "È pensata per chi corre e registra le uscite con Apple Watch o con un'app di running, e vuole un video da ricordare di un percorso, di una gara o di un riepilogo del mese al posto di uno screenshot della mappa.",
+    "Cosa la distingue: una videocamera che insegue a livello della strada al posto della vista satellitare, un HUD con passo e battito cardiaco e un video creato interamente sul tuo iPhone."
+  ],
+  "overview": [
+    "Se cerchi un video corsa 3D o un replay della corsa in 3D, di solito trovi app che registrano l'allenamento o disegnano una linea piatta su una mappa. RunVue comincia dopo la corsa. Importa un allenamento di corsa dall'app Salute di Apple (Apple Health), cioè il percorso che Apple Watch o la tua app di running hanno già salvato lì, oppure aggiungi un file GPX o FIT da un dispositivo che non salva i percorsi in Salute. RunVue costruisce una scena 3D delle strade e degli edifici lungo il percorso, allinea la traccia GPS alla strada e genera il replay sul tuo iPhone.",
+    "Il risultato è un video 9:16 da salvare in Foto o da condividere. Una videocamera in terza persona segue la tua corsa, un HUD mostra passo e battito cardiaco, una minimappa e le schede dei tratti mostrano i tuoi parziali, e un sorvolo finale mostra l'intero percorso. Scegli il tema della mappa e la musica prima di salvare, e puoi guardare prima un'anteprima.",
+    "Oltre alla singola corsa, puoi correre contro una tua corsa passata sullo stesso percorso, ricreare la luce e il meteo del giorno in cui hai corso, lasciare che l'app rallenti il tuo tratto più veloce e sovrapporre tutte le corse su una mappa della città per creare video di riepilogo mensile."
+  ],
+  "features": [
+    {
+      "h": "Un replay della corsa in 3D visto dalla strada",
+      "p": "La videocamera segue bassa sopra la strada tra le vie e gli edifici in 3D ricostruiti dal tuo percorso, così il video sembra correre di nuovo quel tragitto. Si chiude con un sorvolo di tutto il percorso, con le strade e i luoghi che hai attraversato."
+    },
+    {
+      "h": "HUD con passo e battito, minimappa e schede dei tratti",
+      "p": "Passo e battito cardiaco compaiono a schermo, insieme a una minimappa, alle schede dei tratti con i parziali e a una curva di passo e battito nella parte bassa e nel finale."
+    },
+    {
+      "h": "Il cielo di quel giorno, gara fantasma e momenti",
+      "p": "Il cielo di quel giorno ricrea la luce e il meteo dell'ora in cui hai corso. La gara fantasma mette accanto a te una corsa passata sullo stesso percorso. Momenti mostra al rallentatore il tuo tratto più veloce, la salita maggiore e la volata finale."
+    },
+    {
+      "h": "La mia città e video di riepilogo mensile",
+      "p": "La mia città sovrappone le tue corse su un'unica mappa della città e trasforma Questo mese e Mese scorso in video di riepilogo. Pro aggiunge i riepiloghi dell'anno e di sempre."
+    },
+    {
+      "h": "Video verticale, temi della mappa e musica",
+      "p": "Esporta un video 9:16 in Foto. Sono inclusi tre temi della mappa e cinque brani musicali, con anteprima prima di salvare, e ogni corsa si può creare a 1x e in Riepilogo."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/runvue/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Fotogramma notturno di RunVue: una città in 3D vista da una videocamera bassa sopra la strada, con un indicatore blu del corridore, passo 7:40 al miglio, una minimappa e una curva di passo e battito in basso",
+      "caption": "Rivivi la corsa sotto il cielo di quel giorno"
+    },
+    {
+      "src": "/images/apps/runvue/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Fotogramma del replay con l'indicatore fantasma di una corsa passata accanto al corridore attuale, passo 8:05 al miglio",
+      "caption": "Corri accanto a te stesso di ieri"
+    },
+    {
+      "src": "/images/apps/runvue/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Fotogramma del replay con una scheda che segnala il tratto più veloce e l'HUD che indica 8:21 al miglio",
+      "caption": "Il tuo tratto più veloce, al rallentatore"
+    },
+    {
+      "src": "/images/apps/runvue/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Mappa scura di una città con molti percorsi di corsa blu e luminosi sovrapposti, con il titolo La mia città",
+      "caption": "Le tue corse illuminano la città"
+    },
+    {
+      "src": "/images/apps/runvue/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Schermata delle impostazioni di RunVue prima di creare un video, con videocamera, tema della mappa, cielo di quel giorno, corsa contro una corsa passata e musica, e un pulsante per creare l'anteprima",
+      "caption": "Scegli prima di creare"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Piattaforme",
+      "v": "iPhone e Android (su Google Play)"
+    },
+    {
+      "k": "Requisiti",
+      "v": "iOS 17 o versioni successive; allenamenti in Salute con percorso GPS, oppure un file GPX o FIT"
+    },
+    {
+      "k": "Ingresso",
+      "v": "Allenamenti di corsa da Salute; importazione GPX o FIT"
+    },
+    {
+      "k": "Uscita",
+      "v": "Video verticale 9:16 salvato in Foto o condiviso"
+    },
+    {
+      "k": "Velocità",
+      "v": "1x e Riepilogo; Pro aggiunge da 2x a 60x"
+    },
+    {
+      "k": "Videocamere",
+      "v": "Videocamera che insegue e videocamera Navigazione; preset Cinematico, Calmo, Obliqua e Aerea con Pro"
+    },
+    {
+      "k": "Mappe",
+      "v": "Dati OpenStreetMap, citati nei titoli di coda di ogni video; riquadri della mappa scaricati per area ampia"
+    },
+    {
+      "k": "Lingue",
+      "v": "12 lingue"
+    },
+    {
+      "k": "Elaborazione",
+      "v": "Sul dispositivo; percorso GPS, posizione precisa e dati di salute non vengono inviati a nessun server"
+    }
+  ],
+  "limits": [
+    "RunVue non registra le corse. Trasforma in video solo le corse già salvate in Salute o importate come GPX o FIT, e non è un tracker in diretta né un coach. Gli allenamenti su tapis roulant o al chiuso senza percorso GPS non hanno una strada da seguire.",
+    "Il video mostra l'intero percorso dalla partenza all'arrivo e l'app non ha una funzione per nascondere un tratto, quindi una corsa che parte da casa può rivelare dove abiti. Scegli con cura con chi condividerla.",
+    "I video salvati riportano una piccola filigrana di RunVue, e il salvataggio senza filigrana fa parte di Pro. Il riconoscimento di OpenStreetMap nel finale non si può disattivare.",
+    "Dove mancano i dati sull'altezza degli edifici, l'app disegna un'altezza media, quindi i percorsi tra palazzi alti o in galleria possono apparire imperfetti. Il rendering 3D avviene sul tuo iPhone, per cui i dispositivi più vecchi impiegano più tempo.",
+    "Dopo il salvataggio di un video può comparire un annuncio. Le velocità oltre 1x, i preset aggiuntivi della videocamera, altezza e zoom della videocamera, la gara contro qualsiasi corsa passata e i riepiloghi dell'anno e di sempre fanno parte di Pro."
+  ],
+  "faq": [
+    {
+      "q": "Come creo un video replay della mia corsa?",
+      "a": "Apri RunVue, scegli un allenamento di corsa da Salute o importa un file GPX o FIT, imposta videocamera, tema della mappa, cielo e musica, poi crea un'anteprima e salva il video in Foto. La schermata delle impostazioni indica che un'anteprima richiede circa 15 secondi."
+    },
+    {
+      "q": "RunVue registra la mia corsa?",
+      "a": "No. Lavora con le corse già salvate in Salute o con un file GPX o FIT. Per registrare usa Apple Watch o la tua app di running."
+    },
+    {
+      "q": "Che cos'è un replay della corsa in 3D?",
+      "a": "È un breve video in cui una videocamera segue il percorso registrato attraverso un modello 3D delle strade e degli edifici lungo il tragitto, con un HUD per passo e battito, al posto di una linea piatta sulla mappa."
+    },
+    {
+      "q": "Quali funzioni fanno parte di Pro?",
+      "a": "Pro aggiunge le velocità da 2x a 60x, i preset Cinematico, Calmo, Obliqua e Aerea, altezza e zoom della videocamera, la gara contro qualsiasi corsa passata, i riepiloghi dell'anno e di sempre e il salvataggio dei video senza filigrana."
+    },
+    {
+      "q": "Posso nascondere dove abito?",
+      "a": "Il video mostra tutto il percorso e l'app non può nascondere un tratto, quindi decidi chi vedrà il video prima di condividerlo."
+    },
+    {
+      "q": "Il video esce dal mio iPhone?",
+      "a": "Il video viene creato sul tuo iPhone, e il percorso GPS, la posizione precisa e i dati di Salute non vengono inviati a un server né a SDK pubblicitari o di misurazione, tranne i video che condividi tu. Le mappe vengono scaricate solo come riquadri regionali approssimativi."
+    }
+  ],
+  "card": {
+    "tagline": "Le corse registrate diventano video replay 3D lungo il tuo percorso",
+    "features": [
+      "Replay 3D a livello della strada con HUD di passo e battito",
+      "Importazione da Salute, GPX o FIT",
+      "Gara fantasma, cielo di quel giorno e riepiloghi La mia città"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "app di replay della corsa",
+      "h1": "La migliore app di replay della corsa in 3D per iPhone e Android.",
+      "sub": "Trasforma una corsa già registrata in un breve video 3D, con una videocamera che segue bassa le strade che hai corso.",
+      "shots": [
+        "01",
+        "04"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Visto dalla strada.",
+        "text": "La videocamera resta bassa sopra la strada, tra edifici 3D ricostruiti dal tuo percorso. Sembra di correre di nuovo."
+      },
+      {
+        "title": "Passo e battito a schermo.",
+        "text": "Un HUD mostra passo e battito cardiaco, con una minimappa e una scheda per ogni tratto."
+      },
+      {
+        "title": "La luce del giorno della corsa.",
+        "text": "Il cielo di quel giorno riporta la luce e il meteo dell'ora in cui eri fuori a correre."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Sfida una corsa passata sullo stesso percorso.",
+        "p": "La gara fantasma mette accanto a te una corsa precedente sullo stesso percorso, così vedi dove hai guadagnato e dove hai perso.",
+        "shot": "02"
+      },
+      {
+        "h2": "La salita e la volata finale, di nuovo.",
+        "p": "Momenti individua il tuo tratto più brillante, la salita maggiore e la volata finale, e li mostra al rallentatore.",
+        "shot": "03"
+      },
+      {
+        "h2": "Tre temi della mappa, cinque brani, un video verticale.",
+        "p": "Guarda in anteprima temi della mappa e musica prima di salvare, poi esporta un video 9:16 in Foto.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Vuoi rivedere la tua ultima corsa?",
+      "p": "Scegli una corsa già salvata, una videocamera e un tema, poi salva il video."
+    },
+    "closeH2": "Una corsa che vale la pena rivedere.",
+    "trust": [
+      "Video verticale 9:16",
+      "Dati OpenStreetMap",
+      "12 lingue"
+    ]
+  }
+}

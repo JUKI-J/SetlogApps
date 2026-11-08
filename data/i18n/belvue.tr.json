@@ -1,0 +1,184 @@
+{
+  "locale": "tr",
+  "title": "Mac için hafif resim görüntüleyici - Belvue",
+  "description": "Tek bir resim açın ve klasörün tamamında ok tuşlarıyla gezinin. Belvue, Mac için hafif bir resim görüntüleyicidir ve içinde reklam ya da izleme yoktur.",
+  "h1": "Mac için hafif bir resim görüntüleyici",
+  "tagline": "Tek resim açın, tüm klasörde ok tuşlarıyla gezinin",
+  "summary": [
+    "Belvue, Mac için hafif bir resim görüntüleyicidir. Tek bir resim açtığınızda klasördeki diğer resimler, Finder'daki sırayla ok tuşlarıyla gezinmeye hazır olur.",
+    "Fotoğraf, ekran görüntüsü veya tarama dolu klasörlere göz atmak için Mac'te bir resim ya da fotoğraf görüntüleyici arayan herkes için tasarlandı. Klasörde binlerce resim olsa bile aynı şekilde çalışır.",
+    "Resimleriniz ve dosya yollarınız Mac'inizde kalır. Reklam ve izleme yoktur."
+  ],
+  "overview": [
+    "Önizleme ve Quick Look tek bir resim için yeterlidir, ama bütün bir klasöre bakmak çoğu zaman resimleri tek tek açmak demektir. Belvue'da bir resim açarsınız ve ok tuşuna bastığınız anda sıradaki resim görünür. Binlerce resim içeren klasörler de Finder'daki doğal sırayı izler ve klasör değiştikçe liste de güncellenir.",
+    "Bir Mac resim görüntüleyicide günlük kullanımda asıl işe yarayan küçük ayrıntılardır. Belvue'da küçük resim şeridi, yakınlaştırma, resim içinde kaydırma, tam ekran ve EXIF bilgilerini gösteren bir bilgi paneli bulunur. Gezinirken P tuşuyla resimleri seçip ardından seçtiklerinizin hepsine tek seferde işlem yapabilirsiniz. Geçerli resmi kopyalamak için ⌘C yeterlidir."
+  ],
+  "features": [
+    {
+      "h": "Birini açın, tüm klasörde gezinin",
+      "p": "Bir resim açın ve ok tuşlarıyla klasöründe gezinin. Sıradaki resim hemen görünür ve sıralama Finder ile aynıdır, binlerce resim içeren klasörlerde bile."
+    },
+    {
+      "h": "Küçük resim şeridi, yakınlaştırma ve tam ekran",
+      "p": "Küçük resim şeridi, yakınlaştırma, kaydırma ve tam ekran yerleşik olarak gelir. EXIF bilgilerini gösteren bir bilgi paneli de vardır."
+    },
+    {
+      "h": "Gezinirken seçin",
+      "p": "Göz atarken resimleri seçmek için P tuşuna basın. Belvue Pro ile seçtiğiniz tüm resimleri tek seferde taşıyabilir, kopyalayabilir veya Çöp Sepeti'ne gönderebilirsiniz. Geri alma da vardır ve kopyalarken orijinal hiçbir zaman değişmez."
+    },
+    {
+      "h": "JPEG, PNG veya HEIC'e dönüştürün",
+      "p": "Belvue Pro seçilen resimleri JPEG, PNG veya HEIC biçimine dönüştürür ve yeni bir dosya oluşturur. Orijinal olduğu gibi kalır."
+    },
+    {
+      "h": "Gizlilik en baştan",
+      "p": "Resimler ve dosya yolları Mac'inizden asla çıkmaz. Belvue'da reklam ve izleme yoktur, tek ağ bağlantısı da Belvue Pro için App Store'a yapılır."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Dağlarda gün batımı resmini, altta küçük resim şeridini ve İngilizce 'Open one. Browse them all.' başlığını gösteren Belvue penceresi",
+      "caption": "Bir resim açın, klasörün tamamı hazır."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "On bin resimlik bir klasörden soyut mavi bokeh resmini ve küçük resim şeridini gösteren Belvue",
+      "caption": "Binlerce resimlik klasörler, Finder sırasıyla."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Dağlarda gün batımı resmini tam ekranda ve altta küçük resim şeridiyle gösteren Belvue",
+      "caption": "Yakınlaştırma ve küçük resim şeridiyle tam ekran."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Geçerli resmin üzerinde, seçilen beş resmi Çöp Sepeti'ne taşımak için onay penceresi gösteren Belvue",
+      "caption": "Gezinirken seçin, sonra hepsine birden işlem yapın (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Gereksinimler",
+      "v": "macOS 15 veya sonrası yüklü Mac"
+    },
+    {
+      "k": "Resim biçimleri",
+      "v": "JPEG, PNG, HEIC, RAW ve daha fazlası"
+    },
+    {
+      "k": "Dönüştürme",
+      "v": "JPEG, PNG, HEIC"
+    },
+    {
+      "k": "Sıralama",
+      "v": "Finder ile aynı doğal sıra"
+    },
+    {
+      "k": "Ekstralar",
+      "v": "Küçük resim şeridi, yakınlaştırma, kaydırma, tam ekran, EXIF paneli, ⌘C ile kopyalama, son klasörler"
+    },
+    {
+      "k": "Gizlilik",
+      "v": "Reklam yok, izleme yok; ağ bağlantısı yalnızca App Store'a"
+    },
+    {
+      "k": "Pro (isteğe bağlı)",
+      "v": "Seçilen resimleri tek seferde taşıma, kopyalama ve Çöp Sepeti'ne gönderme, JPEG, PNG veya HEIC'e dönüştürme, paylaşma, Birlikte Aç, ek arka planlar"
+    }
+  ],
+  "limits": [
+    "Mac App Store sandbox kuralları nedeniyle macOS, Belvue'ya yalnızca açtığınız resme erişim verir. Klasörün geri kalanında gezinmek için Belvue sizden o klasöre bir kez izin vermenizi ister. İzin vermezseniz açtığınız resim yine açılır, ancak klasördeki diğer resimlere geçemezsiniz.",
+    "Toplu taşıma, kopyalama ve Çöp Sepeti'ne gönderme, dönüştürme, paylaşma, Birlikte Aç ve ek arka planlar Belvue Pro'ya dahildir. Görüntüleme, gezinme ve seçme Pro olmadan çalışır.",
+    "Belvue resimlere bakmak için yapıldı. Fotoğraf arşivi yönetmez ve resimlerinizi değiştirmez.",
+    "Belvue yalnızca Mac için sunulur."
+  ],
+  "faq": [
+    {
+      "q": "Hangi Mac resim görüntüleyici tüm klasörde gezinmeyi sağlar?",
+      "a": "Belvue, Mac için hafif bir resim görüntüleyicidir. Tek bir resim açar, klasörün geri kalanında Finder'daki sırayla ok tuşlarıyla gezinirsiniz. Binlerce resim olsa bile aynı şekilde çalışır."
+    },
+    {
+      "q": "Belvue neden bir klasöre izin istiyor?",
+      "a": "Mac App Store sandbox kuralları, bir uygulamanın yalnızca açtığınız dosyayı okumasına izin verir. Belvue diğer resimleri gösterebilmek için o klasöre bir kez erişim ister. Reddederseniz açtığınız resim görünmeye devam eder."
+    },
+    {
+      "q": "Hangi resim biçimlerini açar?",
+      "a": "JPEG, PNG, HEIC, RAW ve diğer biçimleri açar."
+    },
+    {
+      "q": "Belvue Pro neler ekler?",
+      "a": "Görüntüleme, gezinme ve seçme Pro olmadan çalışır. Belvue Pro isteğe bağlıdır ve seçilen tüm resimleri tek seferde taşıma, kopyalama ve Çöp Sepeti'ne gönderme, JPEG, PNG veya HEIC'e dönüştürme, paylaşma, Birlikte Aç ve ek arka planlar ekler."
+    },
+    {
+      "q": "Belvue resimlerimi bir yere gönderiyor mu?",
+      "a": "Hayır. Resimler ve dosya yolları Mac'inizden asla çıkmaz. Belvue'da reklam ve izleme yoktur, tek ağ bağlantısı da Belvue Pro için App Store'a yapılır."
+    }
+  ],
+  "card": {
+    "tagline": "Mac için hafif resim görüntüleyici. Bir resim açın, tüm klasörde gezinin",
+    "features": [
+      "Finder sırasıyla ok tuşları",
+      "Küçük resimler, yakınlaştırma, EXIF",
+      "Reklam ve izleme yok"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "resim görüntüleyici",
+      "h1": "Mac için en iyi hafif resim görüntüleyici.",
+      "sub": "Bir resim açın, sonra tüm klasörde ok tuşlarıyla gezinin.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Ok tuşlarıyla klasör boyunca.",
+        "text": "Ok tuşları, açtığınız resmin yanındaki her resimde gezdirir. Sıradaki hemen görünür."
+      },
+      {
+        "title": "Daha yakından bakın.",
+        "text": "Küçük resim şeridi, yakınlaştırma, kaydırma ve tam ekran yerleşiktir. Bilgi paneli EXIF ayrıntılarını gösterir."
+      },
+      {
+        "title": "Mac'inizde kalır.",
+        "text": "Resimler ve dosya yolları Mac'inizden asla çıkmaz. Belvue'da reklam ve izleme yoktur."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Klasördeki her resim bir tuş uzağınızda.",
+        "p": "Bir resim açtığınızda klasörün geri kalanı gezinmeye hazırdır. Sıralama Finder ile aynıdır, binlerce resimlik klasörlerde bile.",
+        "shot": "02"
+      },
+      {
+        "h2": "Yakınlaştırın, kaydırın, tam ekrana geçin.",
+        "p": "Yakınlaştırma, kaydırma ve tam ekran yerleşiktir, küçük resim şeridi de hep yanınızda. Bilgi paneli EXIF ayrıntılarını gösterir.",
+        "shot": "04"
+      },
+      {
+        "h2": "Saklamak için P'ye basın.",
+        "p": "Gezinirken resimleri P ile seçin. Sonra seçtiklerinizin hepsini tek seferde taşıyın, kopyalayın veya Çöp Sepeti'ne gönderin. Geri alma da vardır.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "O klasöre göz atmaya hazır mısınız?",
+      "p": "Klasördeki herhangi bir resmi Belvue ile açın ve klasöre bir kez izin verin. Sonrasında yalnızca ok tuşlarına basmanız yeterli."
+    },
+    "closeH2": "Fotoğraflarınızı olduğu gibi bırakan hafif bir resim görüntüleyici.",
+    "trust": [
+      "Reklam yok",
+      "İzleme yok"
+    ]
+  }
+}

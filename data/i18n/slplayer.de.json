@@ -32,7 +32,7 @@
     },
     {
       "h": "Optionales Pro für Vielnutzer",
-      "p": "Die normale Wiedergabe braucht kein Pro. slplayer Pro ergänzt Splitscreen für bis zu vier Videos, Bild-in-Bild, einen Mini-Player in der Menüleiste, A-B-Loop und einen Einschlaftimer. Eine 7-tägige In-App-Testphase für alle Pro-Funktionen beginnt beim ersten Start, ohne Zahlungsdaten. Danach sind die Pro-Funktionen gesperrt, die normale Wiedergabe bleibt."
+      "p": "Die normale Wiedergabe braucht kein Pro. slplayer Pro ergänzt Splitscreen für bis zu vier Videos, Bild-in-Bild, einen Mini-Player in der Menüleiste, A-B-Loop und einen Einschlaftimer."
     }
   ],
   "screenshots": [
@@ -93,6 +93,10 @@
     {
       "k": "Datenschutz",
       "v": "Kein Konto, keine Analyse, keine Werbung; die App stellt selbst keine Netzwerkverbindungen her"
+    },
+    {
+      "k": "Pro (optional)",
+      "v": "Geteilte Ansicht, Bild-in-Bild, A-B-Schleife"
     }
   ],
   "limits": [
@@ -119,8 +123,8 @@
       "a": "Ein Konto ist nicht nötig. Dateien öffnen, MKV, Untertitel, Sync, Geschwindigkeit und Wiedergabelisten funktionieren ohne Pro. slplayer Pro ist optional und ergänzt Splitscreen, Bild-in-Bild und A-B-Loop."
     },
     {
-      "q": "Kann ich Pro vor dem Kauf ausprobieren?",
-      "a": "Ja. Eine 7-tägige In-App-Testphase aller Pro-Funktionen beginnt beim ersten Start, ohne Zahlungsdaten. Danach sind die Pro-Funktionen gesperrt, die normale Wiedergabe bleibt."
+      "q": "Was bringt slplayer Pro?",
+      "a": "slplayer Pro ist optional und ergänzt Splitscreen für bis zu vier Videos, Bild-in-Bild, einen Mini-Player in der Menüleiste, A-B-Loop und einen Einschlaftimer. Die normale Wiedergabe funktioniert ohne Pro genauso."
     }
   ],
   "card": {
@@ -129,6 +133,57 @@
       "MKV, MP4, MOV ohne Codec-Paket",
       "SRT, VTT, SMI und Doppel-Untertitel",
       "Kein Konto, keine Werbung"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "Videoplayer",
+      "h1": "Der beste schlanke Videoplayer für den Mac.",
+      "sub": "Öffnet MKV und zeigt Ihre Untertitel richtig an, mit der in macOS eingebauten Medien-Engine.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Öffnet MKV.",
+        "text": "MKV, MP4, M4V, MOV und MPEG-TS öffnen sich direkt. Ein Codec-Paket brauchen Sie nicht."
+      },
+      {
+        "title": "Untertitel, die man lesen kann.",
+        "text": "SRT, VTT und SMI werden mit dem Video geladen. Koreanische SMI-Dateien in EUC-KR erkennt slplayer automatisch, damit kein Zeichensalat entsteht."
+      },
+      {
+        "title": "Schont den Akku.",
+        "text": "slplayer bringt keinen eigenen Decoder mit. macOS übernimmt die Wiedergabe, deshalb bleibt die App akkuschonend."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Doppelte Untertitel und Sync an einem Ort.",
+        "p": "Zeigen Sie zwei Untertitelzeilen gleichzeitig an, verschieben Sie den Sync in 0,1-Sekunden-Schritten und wählen Sie den Stil mit Live-Vorschau.",
+        "shot": "06"
+      },
+      {
+        "h2": "Vier Videos. Eine Steuerung.",
+        "p": "Der Splitscreen spielt bis zu vier Videos nebeneinander. Bild-in-Bild und ein Mini-Player in der Menüleiste sind auch dabei.",
+        "shot": "02"
+      },
+      {
+        "h2": "Weiterschauen, wo Sie aufgehört haben.",
+        "p": "Ziehen Sie mehrere Dateien hinein, um eine Warteschlange zu bilden, und ordnen Sie Wiedergabelisten in Ordnern. Jedes Video läuft an der letzten Stelle weiter.",
+        "shot": "07"
+      }
+    ],
+    "midCta": {
+      "h2": "Bereit für Ihre MKV-Datei?",
+      "p": "Ziehen Sie die Datei auf slplayer und klicken Sie auf Wiedergabe. Einrichten müssen Sie vorher nichts."
+    },
+    "closeH2": "Ein Videoplayer, der Ihnen nicht im Weg steht.",
+    "trust": [
+      "Kein Konto",
+      "Keine Werbung",
+      "Keine Analyse"
     ]
   }
 }

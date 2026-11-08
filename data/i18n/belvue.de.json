@@ -1,0 +1,184 @@
+{
+  "locale": "de",
+  "title": "Leichter Bildbetrachter für Mac - Belvue",
+  "description": "Ein Bild öffnen und den ganzen Ordner mit den Pfeiltasten durchblättern. Belvue ist ein leichter Bildbetrachter für Mac, ohne Werbung und ohne Tracking.",
+  "h1": "Ein leichter Bildbetrachter für den Mac",
+  "tagline": "Ein Bild öffnen, den ganzen Ordner mit den Pfeiltasten durchblättern",
+  "summary": [
+    "Belvue ist ein leichter Bildbetrachter für den Mac. Sie öffnen ein einziges Bild, und der Rest des Ordners lässt sich sofort mit den Pfeiltasten durchblättern, in derselben Reihenfolge wie im Finder.",
+    "Belvue richtet sich an alle, die einen Bildbetrachter für Mac suchen, um Ordner mit Fotos, Bildschirmfotos oder Scans durchzusehen, auch wenn darin Tausende Bilder liegen.",
+    "Ihre Bilder und Dateipfade bleiben auf Ihrem Mac. Es gibt keine Werbung und kein Tracking."
+  ],
+  "overview": [
+    "Vorschau und Übersicht reichen für ein einzelnes Bild. Wer aber einen ganzen Ordner durchsehen will, öffnet dort oft ein Bild nach dem anderen. In Belvue öffnen Sie ein Bild, und mit der Pfeiltaste erscheint sofort das nächste. Auch Ordner mit Tausenden Bildern folgen der natürlichen Sortierung des Finders, und die Liste passt sich an, wenn sich der Ordner ändert.",
+    "Bei einem Bildbetrachter für den Mac zählen im Alltag die kleinen Dinge. Belvue hat eine Miniaturleiste, Zoom, Verschieben des Bildausschnitts, Vollbild und ein Informationsfenster mit EXIF-Daten. Beim Blättern wählen Sie Bilder mit der Taste P aus und kümmern sich danach in einem Schritt um alle ausgewählten. Das aktuelle Bild kopieren Sie einfach mit ⌘C."
+  ],
+  "features": [
+    {
+      "h": "Ein Bild öffnen, den ganzen Ordner sehen",
+      "p": "Öffnen Sie ein Bild und blättern Sie mit den Pfeiltasten durch seinen Ordner. Das nächste Bild erscheint sofort, und die Reihenfolge entspricht dem Finder, auch bei Ordnern mit Tausenden Bildern."
+    },
+    {
+      "h": "Miniaturleiste, Zoom und Vollbild",
+      "p": "Miniaturleiste, Zoom, Verschieben und Vollbild sind eingebaut, dazu ein Informationsfenster mit EXIF-Daten."
+    },
+    {
+      "h": "Beim Blättern auswählen",
+      "p": "Mit der Taste P wählen Sie Bilder beim Durchsehen aus. Mit Belvue Pro verschieben oder kopieren Sie alle ausgewählten Bilder auf einmal oder legen sie in den Papierkorb, jeweils mit Widerrufen. Beim Kopieren bleibt das Original unverändert."
+    },
+    {
+      "h": "In JPEG, PNG oder HEIC umwandeln",
+      "p": "Belvue Pro wandelt ausgewählte Bilder in JPEG, PNG oder HEIC um und legt dabei eine neue Datei an. Das Original bleibt, wie es war."
+    },
+    {
+      "h": "Privatsphäre von Anfang an",
+      "p": "Bilder und Dateipfade verlassen Ihren Mac nie. Belvue hat keine Werbung und kein Tracking, und die einzige Netzwerkverbindung geht für Belvue Pro an den App Store."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue-Fenster mit einem Sonnenuntergang über Bergen, unten eine Miniaturleiste und die englische Überschrift 'Open one. Browse them all.'",
+      "caption": "Ein Bild öffnen, und der ganze Ordner ist bereit."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue zeigt ein abstraktes blaues Bokeh-Bild aus einem Ordner mit zehntausend Bildern, darunter eine Miniaturleiste",
+      "caption": "Ordner mit Tausenden Bildern, sortiert wie im Finder."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue im Vollbild mit einem Sonnenuntergang über Bergen und einer Miniaturleiste am unteren Rand",
+      "caption": "Vollbild mit Zoom und Miniaturleiste."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue mit einem Bestätigungsdialog, der fünf ausgewählte Bilder in den Papierkorb legen will, über dem aktuellen Bild",
+      "caption": "Beim Blättern auswählen und alle auf einmal erledigen (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Voraussetzung",
+      "v": "Mac mit macOS 15 oder neuer"
+    },
+    {
+      "k": "Bildformate",
+      "v": "JPEG, PNG, HEIC, RAW und mehr"
+    },
+    {
+      "k": "Umwandeln in",
+      "v": "JPEG, PNG, HEIC"
+    },
+    {
+      "k": "Sortierung",
+      "v": "Natürliche Reihenfolge wie im Finder"
+    },
+    {
+      "k": "Extras",
+      "v": "Miniaturleiste, Zoom, Verschieben, Vollbild, EXIF-Fenster, Kopieren mit ⌘C, zuletzt geöffnete Ordner"
+    },
+    {
+      "k": "Datenschutz",
+      "v": "Keine Werbung, kein Tracking; Netzwerkverbindung nur zum App Store"
+    },
+    {
+      "k": "Pro (optional)",
+      "v": "Ausgewählte Bilder gemeinsam verschieben, kopieren und in den Papierkorb legen, Umwandlung in JPEG, PNG oder HEIC, Teilen, Öffnen mit, zusätzliche Hintergründe"
+    }
+  ],
+  "limits": [
+    "Wegen der Sandbox des Mac App Store gibt macOS Belvue nur Zugriff auf das Bild, das Sie öffnen. Damit Sie den Rest des Ordners durchblättern können, bittet Belvue Sie einmal, diesen Ordner freizugeben. Lehnen Sie ab, öffnet sich das gewählte Bild trotzdem, aber die übrigen Bilder im Ordner lassen sich nicht durchblättern.",
+    "Gemeinsames Verschieben, Kopieren und in den Papierkorb Legen, Umwandeln, Teilen, Öffnen mit und die zusätzlichen Hintergründe gehören zu Belvue Pro. Ansehen, Durchblättern und Auswählen funktionieren ohne Pro.",
+    "Belvue ist zum Ansehen von Bildern gemacht. Es verwaltet keine Fotomediathek und verändert Ihre Bilder nicht.",
+    "Belvue gibt es nur für den Mac."
+  ],
+  "faq": [
+    {
+      "q": "Welcher Bildbetrachter für Mac zeigt einen ganzen Ordner?",
+      "a": "Belvue ist ein leichter Bildbetrachter für den Mac. Sie öffnen ein Bild und blättern mit den Pfeiltasten durch den restlichen Ordner, in derselben Reihenfolge wie im Finder, auch bei Tausenden Bildern."
+    },
+    {
+      "q": "Warum fragt Belvue nach einem Ordner?",
+      "a": "Die Sandbox des Mac App Store erlaubt einer App nur, die geöffnete Datei zu lesen. Belvue fragt einmal nach Zugriff auf den Ordner, um die anderen Bilder zeigen zu können. Lehnen Sie ab, wird das geöffnete Bild trotzdem angezeigt."
+    },
+    {
+      "q": "Welche Bildformate öffnet Belvue?",
+      "a": "JPEG, PNG, HEIC, RAW und weitere Formate."
+    },
+    {
+      "q": "Was bringt Belvue Pro?",
+      "a": "Ansehen, Durchblättern und Auswählen funktionieren ohne Pro. Belvue Pro ist optional und ergänzt das gemeinsame Verschieben, Kopieren und in den Papierkorb Legen ausgewählter Bilder, die Umwandlung in JPEG, PNG oder HEIC, Teilen, Öffnen mit und zusätzliche Hintergründe."
+    },
+    {
+      "q": "Schickt Belvue meine Bilder irgendwohin?",
+      "a": "Nein. Bilder und Dateipfade verlassen Ihren Mac nie. Belvue hat keine Werbung und kein Tracking, und die einzige Netzwerkverbindung geht für Belvue Pro an den App Store."
+    }
+  ],
+  "card": {
+    "tagline": "Leichter Bildbetrachter für den Mac. Ein Bild öffnen, den ganzen Ordner durchblättern",
+    "features": [
+      "Pfeiltasten in Finder-Reihenfolge",
+      "Miniaturleiste, Zoom, EXIF",
+      "Keine Werbung, kein Tracking"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "Bildbetrachter",
+      "h1": "Der beste leichte Bildbetrachter für den Mac.",
+      "sub": "Ein Bild öffnen und mit den Pfeiltasten durch den ganzen Ordner blättern.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Mit Pfeiltasten durch den Ordner.",
+        "text": "Die Pfeiltasten führen durch jedes Bild neben dem geöffneten. Das nächste erscheint sofort."
+      },
+      {
+        "title": "Genauer hinsehen.",
+        "text": "Miniaturleiste, Zoom, Verschieben und Vollbild sind eingebaut, dazu ein Informationsfenster mit EXIF-Daten."
+      },
+      {
+        "title": "Bleibt auf Ihrem Mac.",
+        "text": "Bilder und Dateipfade verlassen Ihren Mac nie. Belvue hat keine Werbung und kein Tracking."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Jedes Bild im Ordner, nur eine Taste entfernt.",
+        "p": "Öffnen Sie ein Bild, und der Rest des Ordners ist bereit. Die Reihenfolge entspricht dem Finder, auch in Ordnern mit Tausenden Bildern.",
+        "shot": "02"
+      },
+      {
+        "h2": "Zoomen, verschieben, Vollbild.",
+        "p": "Zoom, Verschieben und Vollbild sind eingebaut, die Miniaturleiste ist immer dabei. Das Informationsfenster zeigt EXIF-Daten.",
+        "shot": "04"
+      },
+      {
+        "h2": "P drücken und behalten.",
+        "p": "Wählen Sie beim Blättern Bilder mit P aus. Danach verschieben oder kopieren Sie alle auf einmal oder legen sie in den Papierkorb, mit Widerrufen.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Bereit für diesen Ordner?",
+      "p": "Öffnen Sie ein beliebiges Bild daraus mit Belvue und geben Sie den Ordner einmal frei. Danach genügen die Pfeiltasten."
+    },
+    "closeH2": "Ein leichter Bildbetrachter, der Ihre Fotos lässt, wie sie sind.",
+    "trust": [
+      "Keine Werbung",
+      "Kein Tracking"
+    ]
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "locale": "tr",
+  "title": "Mac'te MKV'yi altyazıyla oynatın - Mac için slplayer",
+  "description": "Mac'te MKV dosyalarını codec paketi kurmadan oynatın. slplayer, macOS'in medya motorunu kullanır; çift altyazı ve 0,1 sn senkron sunar, hesap gerekmez.",
+  "h1": "Mac'te MKV dosyalarını oynatın",
+  "tagline": "MKV, MP4 ve MOV için altyazıların sorunsuz çalıştığı hafif bir video oynatıcı",
+  "summary": [
+    "slplayer, MKV, MP4, M4V, MOV ve MPEG-TS dosyalarını açıp macOS'e yerleşik medya motoruyla oynatan bir Mac video oynatıcısıdır.",
+    "Mac'te MKV nasıl açılır diye arayanlar, altyazıları bozuk karakterlerle görünenler ve iki dilli bölümler izleyip ses parçasını seçmek isteyenler için tasarlandı.",
+    "Codec paketi ya da kendi kod çözücüsünü eklemez, bu yüzden pili yormaz ve hiçbir hesap istemez."
+  ],
+  "overview": [
+    "QuickTime Player çoğu zaman MKV dosyalarını açmaz. Bunun nedeni, MKV'nin bir kapsayıcı, yani bir tür kutu olmasıdır. Mac'in dosyayı çözüp çözemeyeceğini içindeki video ve ses codec'leri belirler. slplayer MKV kapsayıcısını açar ve akışları macOS'e devreder; böylece H.264 ya da HEVC videolu, AAC, AC-3, E-AC-3 veya FLAC gibi yaygın sesli dosyalar ek yazılım olmadan oynar.",
+    "İster Mac için bir MKV oynatıcı arıyor olun ister yalnızca ağır gelmeyen bir Mac video oynatıcı, kullanımı basittir. Bir dosyayı pencereye sürükleyin, Finder'dan açın ya da birkaç dosyayı birden bırakıp bir sıra oluşturun. SRT, VTT ve SMI altyazılar videoyla birlikte yüklenir, iki altyazı parçası aynı anda gösterilebilir ve hangi ses parçasını dinleyeceğinizi siz seçersiniz. Her şey Mac'inizde çalışır ve uygulama kendiliğinden hiçbir ağ isteği göndermez."
+  ],
+  "features": [
+    {
+      "h": "MKV ve diğer kapsayıcılar, codec paketi olmadan",
+      "p": "MKV, MP4, M4V, MOV ve MPEG-TS doğrudan açılır. 10 bit ve HDR10 dahil H.264 ve HEVC ile AAC, AC-3, E-AC-3 ve FLAC desteklenir. HDR, Resim İçinde Resim ve enerji verimliliği doğrudan macOS'ten gelir."
+    },
+    {
+      "h": "SRT, VTT ve SMI altyazılar",
+      "p": "Altyazı dosyaları videoyla birlikte yüklenir. EUC-KR ile kaydedilmiş Korece SMI dosyaları otomatik olarak algılanır, bu yüzden anlamsız karakterlere dönüşmez. İki altyazı parçasını aynı anda gösterebilir, zamanlamayı 0,1 saniyelik adımlarla kaydırabilirsiniz ve senkron her dosya için ayrı hatırlanır."
+    },
+    {
+      "h": "Ses parçaları ve oynatma hızı",
+      "p": "İki dil içeren bölümlerde istediğiniz ses parçasını seçin. Oynatma hızı 0,1 adımlarla 0,5x ile 2,0x arasında ayarlanır ve her işlemin bir klavye kısayolu vardır."
+    },
+    {
+      "h": "Oynatma listeleri ve kaldığınız yerden devam",
+      "p": "Birkaç dosyayı bırakıp bir sıra oluşturun, oynatma listelerini klasörlerle düzenleyin, son öğeleri yeniden açın ve kaldığınız yerden devam edin."
+    },
+    {
+      "h": "Daha fazlasını isteyenler için Pro",
+      "p": "MKV ve altyazılardan hız ayarına ve oynatma listelerine kadar günlük oynatma Pro olmadan çalışır. slplayer Pro; dört videoya kadar bölünmüş ekran, Resim İçinde Resim, menü çubuğunda mini oynatıcı, A-B döngüsü ve uyku zamanlayıcısı ekler."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/slplayer/en/01.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "İngilizce bir altyazı satırı ve oynatma kontrol çubuğuyla MKV film oynatan slplayer penceresi, koyu arka planda 'MKV and subtitles, just working' başlığı",
+      "caption": "MKV ve altyazılar hiçbir ayar yapmadan açılır."
+    },
+    {
+      "src": "/images/apps/slplayer/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Dört videoyu ikiye iki ızgarada, altında tek bir ortak kontrol setiyle gösteren slplayer bölünmüş ekranı",
+      "caption": "Bölünmüş ekran dört videoya kadar yan yana oynatır (Pro)."
+    },
+    {
+      "src": "/images/apps/slplayer/en/06.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Hazır stiller ve altyazı metninin canlı önizlemesini içeren slplayer altyazı stili ayarları",
+      "caption": "Canlı önizlemeli hazır altyazı stilleri."
+    },
+    {
+      "src": "/images/apps/slplayer/en/07.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Oynatma listesi klasörleri ve son açılan video dosyalarını gösteren slplayer son öğeler listesi",
+      "caption": "Son öğeler ve oynatma listeleri, kaldığınız yerden devam."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Gereksinimler",
+      "v": "macOS 14 veya sonrası yüklü Mac"
+    },
+    {
+      "k": "Kapsayıcılar",
+      "v": "MKV, MP4, M4V, MOV, MPEG-TS"
+    },
+    {
+      "k": "Video ve ses",
+      "v": "H.264, HEVC (10 bit, HDR10), AAC, AC-3, E-AC-3, FLAC"
+    },
+    {
+      "k": "Altyazılar",
+      "v": "SRT, VTT, SMI (EUC-KR otomatik algılanır)"
+    },
+    {
+      "k": "Oynatma hızı",
+      "v": "0,1 adımlarla 0,5x ile 2,0x arası"
+    },
+    {
+      "k": "Uygulama dilleri",
+      "v": "12, uygulama içinden değiştirilebilir"
+    },
+    {
+      "k": "Gizlilik",
+      "v": "Hesap yok, analiz yok, reklam yok; uygulama kendiliğinden hiçbir ağ isteği göndermez"
+    },
+    {
+      "k": "Pro (isteğe bağlı)",
+      "v": "Bölünmüş ekran, Resim İçinde Resim, A-B döngüsü"
+    }
+  ],
+  "limits": [
+    "slplayer yalnızca Mac'inizin desteklediği biçimleri oynatır. Bir dosyanın sesini macOS çözemezse video sessiz oynar ve oynatma başlarken bir bildirim görünür.",
+    "Disklerdeki resim altyazılar gibi görüntü tabanlı altyazılar gösterilmez. Açılamayan dosyalarda hata mesajı görünür.",
+    "Belgelenen altyazı biçimleri SRT, VTT ve SMI'dır; diğer biçimler garanti edilmez.",
+    "Yalnızca Mac için bir uygulamadır. Bölünmüş ekran, Resim İçinde Resim, A-B döngüsü ve diğer ekstralar isteğe bağlı slplayer Pro'nun parçasıdır."
+  ],
+  "faq": [
+    {
+      "q": "Mac'te MKV dosyaları nasıl oynatılır?",
+      "a": "MKV yalnızca bir kapsayıcı olduğu için QuickTime Player çoğu zaman açamaz. Dosyayı slplayer penceresine sürükleyerek ya da Finder'da seçerek açın. İçindeki video ve ses H.264, HEVC, AAC veya AC-3 gibi macOS'in desteklediği codec'leri kullanıyorsa oynar."
+    },
+    {
+      "q": "MKV neden sessiz oynuyor?",
+      "a": "Dosyadaki ses codec'i Mac'inizin çözebildiği bir codec değildir. slplayer yalnızca macOS'in desteklediği biçimleri oynattığı için bu durumda videoyu oynatır ve oynatma başlarken bir bildirim gösterir."
+    },
+    {
+      "q": "slplayer ASS ya da resim altyazıları destekliyor mu?",
+      "a": "Belgelenen altyazı biçimleri SRT, VTT ve SMI'dır. Görüntü tabanlı altyazılar gösterilmez, diğer biçimler de garanti edilmez."
+    },
+    {
+      "q": "Hesap gerekiyor mu?",
+      "a": "Hesap gerekmez ve uygulama kendiliğinden hiçbir ağ isteği göndermez. Dosya açma, MKV, altyazılar, senkron, hız ve oynatma listeleri Pro olmadan çalışır."
+    },
+    {
+      "q": "slplayer Pro neler ekler?",
+      "a": "slplayer Pro isteğe bağlıdır. Dört videoya kadar bölünmüş ekran, Resim İçinde Resim, menü çubuğunda mini oynatıcı, A-B döngüsü ve uyku zamanlayıcısı ekler. Temel oynatma Pro olmadan da aynı şekilde çalışır."
+    }
+  ],
+  "card": {
+    "tagline": "macOS medya motoruyla Mac'te MKV'yi altyazıyla oynatır",
+    "features": [
+      "MKV, MP4, MOV, codec paketi olmadan",
+      "SRT, VTT, SMI ve çift altyazı",
+      "Hesap yok, reklam yok"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "video oynatıcı",
+      "h1": "Mac için en iyi hafif video oynatıcı.",
+      "sub": "macOS'e yerleşik medya motoruyla MKV'yi açar, altyazılarınızı doğru gösterir.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "MKV açar.",
+        "text": "MKV, MP4, M4V, MOV ve MPEG-TS doğrudan açılır. Kurulacak bir codec paketi yoktur."
+      },
+      {
+        "title": "Okunan altyazılar.",
+        "text": "SRT, VTT ve SMI altyazılar videoyla birlikte yüklenir. EUC-KR ile kaydedilmiş Korece SMI dosyaları otomatik algılanır, asla anlamsız karakterlere dönüşmez."
+      },
+      {
+        "title": "Pili yormaz.",
+        "text": "slplayer kendi kod çözücüsünü içermez. Oynatmayı macOS üstlenir, bu yüzden pil üzerinde yükü hafiftir."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Çift altyazı ve senkron tek yerde.",
+        "p": "İki altyazı satırını aynı anda gösterin, senkronu 0,1 saniyelik adımlarla kaydırın ve stili canlı önizlemeyle seçin. Her dosya kendi kaydırma ayarını saklar.",
+        "shot": "06"
+      },
+      {
+        "h2": "Dört video. Tek kontrol seti.",
+        "p": "Bölünmüş ekran dört videoya kadar yan yana oynatır. Resim İçinde Resim ve menü çubuğunda mini oynatıcı da var.",
+        "shot": "02"
+      },
+      {
+        "h2": "Kaldığınız yerden devam edin.",
+        "p": "Birkaç dosyayı bırakıp bir sıra oluşturun ve oynatma listelerini klasörlerde tutun. Her video durdurduğunuz yerden devam eder.",
+        "shot": "07"
+      }
+    ],
+    "midCta": {
+      "h2": "O MKV'yi açmaya hazır mısınız?",
+      "p": "Dosyayı slplayer'a sürükleyin ve oynat'a basın. Önceden ayarlanacak bir şey yok."
+    },
+    "closeH2": "Size engel olmayan bir video oynatıcı.",
+    "trust": [
+      "Hesap yok",
+      "Reklam yok",
+      "Analiz yok"
+    ]
+  }
+}

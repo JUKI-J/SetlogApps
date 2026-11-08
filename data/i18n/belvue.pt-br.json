@@ -1,0 +1,184 @@
+{
+  "locale": "pt-br",
+  "title": "Visualizador de imagens leve para Mac - Belvue",
+  "description": "Abra uma imagem e navegue pela pasta inteira com as setas do teclado. Belvue é um visualizador de imagens leve para Mac, sem anúncios e sem rastreamento.",
+  "h1": "Um visualizador de imagens leve para Mac",
+  "tagline": "Abra uma imagem e passe pela pasta inteira com as setas",
+  "summary": [
+    "Belvue é um visualizador de imagens leve para Mac. Você abre uma única imagem e o resto da pasta já fica pronto para navegar com as teclas de seta, na mesma ordem do Finder.",
+    "É para quem procura um visualizador de imagens para Mac que dê conta de pastas de fotos, capturas de tela ou digitalizações, mesmo com milhares de imagens.",
+    "Suas imagens e os caminhos dos arquivos ficam no seu Mac, sem anúncios e sem rastreamento."
+  ],
+  "overview": [
+    "O Pré-Visualização e o Quick Look servem para uma imagem, mas olhar uma pasta inteira muitas vezes significa abrir as imagens uma por uma. No Belvue você abre uma imagem e a próxima aparece assim que aperta a seta. Pastas com milhares de imagens seguem a mesma ordem natural do Finder, e a lista acompanha as mudanças na pasta.",
+    "Num visualizador de imagens para Mac, o que faz diferença no dia a dia são os detalhes. O Belvue tem uma faixa de miniaturas, zoom, movimentação pela imagem, tela cheia e um painel de informações com os dados EXIF. Enquanto navega, você marca imagens com a tecla P e depois age sobre todas as marcadas de uma vez. Para copiar a imagem atual, basta ⌘C."
+  ],
+  "features": [
+    {
+      "h": "Abra uma, veja a pasta inteira",
+      "p": "Abra uma imagem e navegue pela pasta dela com as teclas de seta. A próxima imagem aparece na hora e a ordem é a mesma do Finder, inclusive em pastas com milhares de imagens."
+    },
+    {
+      "h": "Miniaturas, zoom e tela cheia",
+      "p": "A faixa de miniaturas, o zoom, a movimentação e a tela cheia já vêm incluídos, junto com um painel de informações que mostra os dados EXIF."
+    },
+    {
+      "h": "Marque enquanto navega",
+      "p": "Aperte P para marcar imagens enquanto navega. Com o Belvue Pro você move, copia ou manda para a Lixeira todas as marcadas de uma vez, com opção de desfazer, e ao copiar o original nunca muda."
+    },
+    {
+      "h": "Converta para JPEG, PNG ou HEIC",
+      "p": "O Belvue Pro converte as imagens marcadas para JPEG, PNG ou HEIC e cria um arquivo novo, então o original continua como estava."
+    },
+    {
+      "h": "Privacidade desde o projeto",
+      "p": "Imagens e caminhos de arquivos nunca saem do seu Mac. O Belvue não tem anúncios nem rastreamento, e a única conexão de rede é com a App Store para o Belvue Pro."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Janela do Belvue com um pôr do sol nas montanhas, uma faixa de miniaturas embaixo e o título em inglês 'Open one. Browse them all.'",
+      "caption": "Abra uma imagem e a pasta inteira fica pronta."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue mostrando uma imagem abstrata de bokeh azul de uma pasta com dez mil imagens e uma faixa de miniaturas",
+      "caption": "Pastas com milhares de imagens, na ordem do Finder."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue em tela cheia mostrando um pôr do sol nas montanhas com uma faixa de miniaturas embaixo",
+      "caption": "Tela cheia com zoom e faixa de miniaturas."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue com uma caixa de confirmação para mandar cinco imagens marcadas para a Lixeira, sobre a imagem atual",
+      "caption": "Marque enquanto navega e aja sobre todas de uma vez (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisitos",
+      "v": "Mac com macOS 15 ou posterior"
+    },
+    {
+      "k": "Formatos de imagem",
+      "v": "JPEG, PNG, HEIC, RAW e outros"
+    },
+    {
+      "k": "Converte para",
+      "v": "JPEG, PNG, HEIC"
+    },
+    {
+      "k": "Ordenação",
+      "v": "Ordem natural, igual à do Finder"
+    },
+    {
+      "k": "Extras",
+      "v": "Faixa de miniaturas, zoom, movimentação, tela cheia, painel EXIF, copiar com ⌘C, pastas recentes"
+    },
+    {
+      "k": "Privacidade",
+      "v": "Sem anúncios, sem rastreamento; conexão de rede só com a App Store"
+    },
+    {
+      "k": "Pro (opcional)",
+      "v": "Mover, copiar e mandar para a Lixeira as imagens marcadas de uma vez, conversão para JPEG, PNG ou HEIC, compartilhamento, Abrir com, fundos extras"
+    }
+  ],
+  "limits": [
+    "Por causa do sandbox da Mac App Store, o macOS só dá ao Belvue acesso à imagem que você abre. Para navegar pelo resto da pasta, o Belvue pede que você autorize essa pasta uma vez. Se recusar, a imagem aberta continua abrindo, mas não dá para passar para as outras imagens da pasta.",
+    "Mover, copiar e mandar para a Lixeira em lote, converter, compartilhar, Abrir com e os fundos extras fazem parte do Belvue Pro. Ver, navegar e marcar imagens funciona sem o Pro.",
+    "O Belvue foi feito para ver imagens. Ele não gerencia uma fototeca e não altera suas imagens.",
+    "Ele existe apenas para Mac."
+  ],
+  "faq": [
+    {
+      "q": "Qual visualizador de imagens para Mac deixa navegar por uma pasta inteira?",
+      "a": "O Belvue é um visualizador de imagens leve para Mac. Você abre uma imagem e passa pelo resto da pasta com as teclas de seta, na mesma ordem do Finder, mesmo com milhares de imagens."
+    },
+    {
+      "q": "Por que o Belvue pede para autorizar uma pasta?",
+      "a": "O sandbox da Mac App Store só deixa um app ler o arquivo que você abriu. O Belvue pede uma vez acesso a essa pasta para mostrar as outras imagens. Se você recusar, a imagem aberta continua aparecendo."
+    },
+    {
+      "q": "Quais formatos de imagem ele abre?",
+      "a": "JPEG, PNG, HEIC, RAW e outros formatos."
+    },
+    {
+      "q": "O que o Belvue Pro acrescenta?",
+      "a": "Ver, navegar e marcar imagens funciona sem o Pro. O Belvue Pro é opcional e acrescenta mover, copiar e mandar para a Lixeira todas as marcadas de uma vez, a conversão para JPEG, PNG ou HEIC, o compartilhamento, Abrir com e fundos extras."
+    },
+    {
+      "q": "O Belvue envia minhas imagens para algum lugar?",
+      "a": "Não. Imagens e caminhos de arquivos nunca saem do seu Mac. O Belvue não tem anúncios nem rastreamento, e a única conexão de rede é com a App Store para o Belvue Pro."
+    }
+  ],
+  "card": {
+    "tagline": "Visualizador de imagens leve para Mac. Abra uma imagem e veja a pasta inteira",
+    "features": [
+      "Setas na ordem do Finder",
+      "Miniaturas, zoom, EXIF",
+      "Sem anúncios nem rastreamento"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "visualizador de imagens",
+      "h1": "O melhor visualizador de imagens leve para Mac.",
+      "sub": "Abra uma imagem e passe pela pasta inteira com as teclas de seta.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "A pasta, seta por seta.",
+        "text": "As teclas de seta passam por cada imagem ao lado da que você abriu. A próxima aparece na hora."
+      },
+      {
+        "title": "Veja de perto.",
+        "text": "Faixa de miniaturas, zoom, movimentação e tela cheia já vêm incluídos, com um painel de informações para os dados EXIF."
+      },
+      {
+        "title": "Fica no seu Mac.",
+        "text": "Imagens e caminhos de arquivos nunca saem do seu Mac. O Belvue não tem anúncios nem rastreamento."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Cada imagem da pasta, a uma tecla.",
+        "p": "Abra uma imagem e o resto da pasta fica pronto para navegar. A ordem é a do Finder, mesmo em pastas com milhares de imagens.",
+        "shot": "02"
+      },
+      {
+        "h2": "Amplie, mova, tela cheia.",
+        "p": "Zoom, movimentação e tela cheia já vêm incluídos, com a faixa de miniaturas sempre à vista. O painel de informações mostra os dados EXIF.",
+        "shot": "04"
+      },
+      {
+        "h2": "Aperte P para guardar.",
+        "p": "Marque imagens com P enquanto navega. Depois mova, copie ou mande para a Lixeira todas as marcadas de uma vez, com opção de desfazer.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto para ver aquela pasta?",
+      "p": "Abra qualquer imagem dela no Belvue e autorize a pasta uma vez. Depois é só apertar as setas."
+    },
+    "closeH2": "Um visualizador de imagens leve que deixa suas fotos do jeito que estão.",
+    "trust": [
+      "Sem anúncios",
+      "Sem rastreamento"
+    ]
+  }
+}

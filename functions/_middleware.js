@@ -5,6 +5,10 @@
 //   apps.setlog.net/<slug>/[<locale>/] -> served from /apps/<slug>/... (generated app pages, see scripts/build.mjs)
 //   apps.setlog.net/sitemap.xml -> static /apps-sitemap.xml (generated)
 //   setlog.net/apps/...  -> 301 https://apps.setlog.net/...
+import { locales, primaryLocale } from './_generated.js';
+import { BOT_UA } from './_bots.js';
+import { normalizeLang, parseAcceptLanguage } from './_lang.js';
+
 const MAIN = 'https://setlog.net';
 const APPS = 'https://apps.setlog.net';
 // content pages that live only on the main host (avoid duplicate content on apps host)
@@ -12,7 +16,23 @@ const MAIN_ONLY = /^\/((en|de|fr|ja)\/)?(guides|about|faq|support|contact|privac
 // first path segments that are real top-level assets/dirs, never app slugs
 const NOT_SLUG = new Set(['css', 'js', 'images', 'functions', 'apps', 'guides', 'data', 'scripts', 'templates', 'docs']);
 // /<slug>/ or /<slug>/<locale>/ (also /ko/ for the Korean catalogue)
-const APP_PATH = /^\/([a-z0-9]+(?:-[a-z0-9]+)*)(\/(?:en|ko|de|fr|ja))?\/?(?:index\.html)?$/;
+const APP_PATH = /^\/([a-z0-9]+(?:-[a-z0-9]+)*)(\/[a-z]{2}(?:-[a-z]{2,4})?)?\/?(?:index\.html)?$/;
+
+// language detection (plan 20261108 §3): only /<slug>/ without locale segment, GET/HEAD
+
+function readCookie(header, name) {
+  for (const part of (header || '').split(';')) {
+    const i = part.indexOf('=');
+    if (i > 0 && part.slice(0, i).trim() === name) return part.slice(i + 1).trim();
+  }
+  return null;
+}
+
+function redirect302(location, extra) {
+  const h = new Headers({ Location: location, Vary: 'Accept-Language, Cookie', 'Cache-Control': 'private, no-store' });
+  if (extra) h.append('Set-Cookie', extra);
+  return new Response(null, { status: 302, headers: h });
+}
 
 export async function onRequest(context) {
   const { request, next, env } = context;
@@ -24,9 +44,11 @@ export async function onRequest(context) {
     return Response.redirect(MAIN + path + url.search, 301);
   }
 
-  if (host === 'apps.setlog.net') {
+  // 로컬 리뷰(wrangler pages dev)에서는 127.0.0.1/localhost를 apps 호스트로 취급한다. 운영 호스트에는 영향 없음.
+  const isAppsHost = host === 'apps.setlog.net' || host === '127.0.0.1' || host === 'localhost';
+  if (isAppsHost) {
     if (path === '/robots.txt') {
-      return new Response('User-agent: *\nAllow: /\n\nSitemap: ' + APPS + '/sitemap.xml\n', {
+      return new Response('User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: ' + APPS + '/sitemap.xml\n', {
         headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=3600' },
       });
     }
@@ -48,15 +70,62 @@ export async function onRequest(context) {
     if (path.startsWith('/apps/')) {
       return Response.redirect(APPS + path.slice('/apps'.length).replace(/index\.html$/, '') + url.search, 301);
     }
-    const m = path.match(APP_PATH);
-    if (m && !NOT_SLUG.has(m[1])) {
-      const dir = '/apps/' + m[1] + (m[2] || '') + '/';
+    const lower = path.toLowerCase();
+    let m = lower.match(APP_PATH);
+    if (m && NOT_SLUG.has(m[1])) m = null;
+    if (m && lower !== path) {
+      // upper-case slug: canonicalise known slugs, ignore anything else (as before)
+      if (Object.hasOwn(locales, m[1])) return Response.redirect(APPS + lower + url.search, 301);
+      m = null;
+    }
+    const slug = m && Object.hasOwn(locales, m[1]) ? m[1] : null;
+    const isRead = request.method === 'GET' || request.method === 'HEAD';
+    let serveLocale = m ? (m[2] || '') : '';
+    let setCookie = null;
+    if (slug && isRead) {
+      const langs = locales[slug];
+      const primary = primaryLocale[slug] || 'en';
+      const base = '/' + slug + '/';
+      if (m[2] === '/' + primary) {
+        // /<slug>/<primary>/ duplicates /<slug>/
+        return Response.redirect(APPS + base + url.search, 301);
+      }
+      // explicit choice: ?lang=<x> (case-insensitive) -> cookie + serve that locale directly (200, no redirect loop with detection)
+      const q = normalizeLang(url.searchParams.get('lang')) || '';
+      if (q && langs.includes(q) && path.endsWith('/')) {
+        const pathLoc = m[2] ? m[2].slice(1) : primary;
+        if (pathLoc !== q) {
+          // path locale != ?lang= : go to the requested locale's URL (drop lang, keep other params) and remember the choice
+          url.searchParams.delete('lang');
+          const rest = url.searchParams.toString();
+          return redirect302((q === primary ? base : base + q + '/') + (rest ? '?' + rest : ''),
+            'lang=' + q + '; Path=/; Max-Age=31536000; SameSite=Lax; Secure');
+        }
+        serveLocale = q === primary ? '' : '/' + q;
+        setCookie = 'lang=' + q + '; Path=/; Max-Age=31536000; SameSite=Lax; Secure';
+      } else if (!m[2] && !BOT_UA.test(request.headers.get('User-Agent') || '')) {
+        // invalid/empty ?lang= is ignored and falls through to detection
+        let want = normalizeLang(readCookie(request.headers.get('Cookie'), 'lang'));
+        if (!want || !langs.includes(want)) {
+          want = parseAcceptLanguage(request.headers.get('Accept-Language')).find((l) => langs.includes(l)) || null;
+        }
+        if (want && want !== primary) return redirect302(base + want + '/' + url.search);
+      }
+    }
+    if (m) {
+      const dir = '/apps/' + m[1] + serveLocale + '/';
       const res = await env.ASSETS.fetch(new URL(dir, url));
       if (res.status === 200) {
         if (!path.endsWith('/')) {
-          return Response.redirect(APPS + dir.slice('/apps'.length) + url.search, 301);
+          return Response.redirect(APPS + ('/apps/' + m[1] + (m[2] || '') + '/').slice('/apps'.length) + url.search, 301);
         }
-        return new Response(res.body, { status: 200, headers: res.headers });
+        const ok = new Response(res.body, { status: 200, headers: res.headers });
+        if (slug) ok.headers.set('Vary', 'Accept-Language, Cookie');
+        if (setCookie) {
+          ok.headers.append('Set-Cookie', setCookie);
+          ok.headers.set('Cache-Control', 'private, no-store');
+        }
+        return ok;
       }
     }
     return next();

@@ -1,0 +1,189 @@
+{
+  "locale": "pt-br",
+  "title": "Abrir MKV no Mac com legendas - slplayer para Mac",
+  "description": "Reproduza arquivos MKV no Mac sem pacote de codecs. O slplayer usa o mecanismo de mídia do macOS, com legendas duplas, sincronia de 0,1 s e sem conta.",
+  "h1": "Reproduza arquivos MKV no Mac",
+  "tagline": "Um player de vídeo leve para MKV, MP4 e MOV, com legendas que aparecem do jeito certo",
+  "summary": [
+    "O slplayer é um player de vídeo para Mac que abre arquivos MKV, MP4, M4V, MOV e MPEG-TS e os reproduz com o mecanismo de mídia integrado ao macOS.",
+    "Ele é feito para quem procura como abrir MKV no Mac, para quem vê as legendas cheias de caracteres estranhos e para quem assiste a episódios em dois idiomas e quer escolher a faixa de áudio.",
+    "Ele não adiciona pacote de codecs nem decodificador próprio, por isso pesa pouco na bateria, e não pede nenhuma conta."
+  ],
+  "overview": [
+    "O QuickTime Player muitas vezes se recusa a abrir arquivos MKV. Isso acontece porque o MKV é um contêiner, uma espécie de caixa, e são os codecs do vídeo e do áudio lá dentro que decidem se o Mac consegue decodificá-los. O slplayer abre o contêiner MKV e entrega as faixas ao macOS, então arquivos com vídeo H.264 ou HEVC e áudio comum como AAC, AC-3, E-AC-3 ou FLAC tocam sem nenhum programa extra.",
+    "Se você está procurando um player MKV para Mac ou só um player de vídeo para Mac que não seja pesado, o uso é simples. Arraste um arquivo para a janela, abra pelo Finder ou solte vários arquivos de uma vez para montar uma fila. Legendas SRT, VTT e SMI carregam junto com o vídeo, duas faixas podem aparecer ao mesmo tempo e você escolhe qual faixa de áudio quer ouvir. Tudo roda no seu Mac, e o app não faz por conta própria nenhuma requisição de rede."
+  ],
+  "features": [
+    {
+      "h": "MKV e outros contêineres, sem pacote de codecs",
+      "p": "MKV, MP4, M4V, MOV e MPEG-TS abrem direto. Há suporte a H.264 e HEVC, inclusive 10 bits e HDR10, além de AAC, AC-3, E-AC-3 e FLAC. HDR, Picture in Picture e eficiência de energia vêm do próprio macOS."
+    },
+    {
+      "h": "Legendas SRT, VTT e SMI",
+      "p": "Os arquivos de legenda carregam junto com o vídeo. Arquivos SMI coreanos salvos em EUC-KR são detectados automaticamente e não viram caracteres embaralhados. Você pode mostrar duas faixas de legenda ao mesmo tempo, ajustar a sincronia em passos de 0,1 segundo, e o ajuste fica salvo para cada arquivo."
+    },
+    {
+      "h": "Faixas de áudio e velocidade de reprodução",
+      "p": "Escolha a faixa de áudio que quiser nos episódios que trazem dois idiomas. A velocidade de reprodução vai de 0,5x a 2,0x em passos de 0,1, e cada ação tem um atalho de teclado."
+    },
+    {
+      "h": "Playlists e continuar de onde parou",
+      "p": "Solte vários arquivos para montar uma fila, organize playlists em pastas, reabra os itens recentes e continue de onde você parou."
+    },
+    {
+      "h": "Pro, para quem usa muito",
+      "p": "A reprodução do dia a dia funciona sem o Pro, do MKV e das legendas até a velocidade e as playlists. O slplayer Pro adiciona tela dividida com até quatro vídeos, Picture in Picture, um miniplayer na barra de menus, loop A-B e timer de desligamento."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/slplayer/en/01.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Janela do slplayer reproduzindo um filme MKV com uma linha de legenda em inglês e a barra de controles, sobre fundo escuro com o título \"MKV and subtitles, just working\"",
+      "caption": "MKV e legendas abrem sem nenhuma configuração."
+    },
+    {
+      "src": "/images/apps/slplayer/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Tela dividida do slplayer mostrando quatro vídeos em uma grade dois por dois, com um único conjunto de controles embaixo",
+      "caption": "A tela dividida reproduz até quatro vídeos lado a lado (Pro)."
+    },
+    {
+      "src": "/images/apps/slplayer/en/06.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Painel de ajustes de estilo de legenda do slplayer com predefinições e prévia ao vivo do texto",
+      "caption": "Predefinições de estilo de legenda com prévia ao vivo."
+    },
+    {
+      "src": "/images/apps/slplayer/en/07.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Lista de recentes do slplayer com pastas de playlists e arquivos de vídeo abertos recentemente",
+      "caption": "Itens recentes e playlists, para continuar de onde parou."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisitos",
+      "v": "Mac com macOS 14 ou posterior"
+    },
+    {
+      "k": "Contêineres",
+      "v": "MKV, MP4, M4V, MOV, MPEG-TS"
+    },
+    {
+      "k": "Vídeo e áudio",
+      "v": "H.264, HEVC (10 bits, HDR10), AAC, AC-3, E-AC-3, FLAC"
+    },
+    {
+      "k": "Legendas",
+      "v": "SRT, VTT, SMI (EUC-KR detectado automaticamente)"
+    },
+    {
+      "k": "Velocidade de reprodução",
+      "v": "De 0,5x a 2,0x em passos de 0,1"
+    },
+    {
+      "k": "Idiomas do app",
+      "v": "12, com troca dentro do app"
+    },
+    {
+      "k": "Privacidade",
+      "v": "Sem conta, sem análises, sem anúncios; o app não faz por conta própria nenhuma requisição de rede"
+    },
+    {
+      "k": "Pro (opcional)",
+      "v": "Tela dividida, Picture in Picture, loop A-B"
+    }
+  ],
+  "limits": [
+    "O slplayer reproduz apenas o que o seu Mac suporta. Se o macOS não conseguir decodificar o áudio de um arquivo, o vídeo toca sem som e um aviso aparece no início da reprodução.",
+    "Legendas em forma de imagem, como as de discos, não são exibidas. Arquivos que não podem ser abertos mostram um erro.",
+    "Os formatos de legenda documentados são SRT, VTT e SMI; outros formatos não são garantidos.",
+    "É um app só para Mac. Tela dividida, Picture in Picture, loop A-B e outros extras fazem parte do slplayer Pro, que é opcional."
+  ],
+  "faq": [
+    {
+      "q": "Como abrir arquivos MKV no Mac?",
+      "a": "O QuickTime Player muitas vezes não abre MKV porque ele é só um contêiner. Abra o arquivo no slplayer arrastando-o para a janela ou escolhendo-o no Finder. Se o vídeo e o áudio lá dentro usam codecs que o macOS suporta, como H.264, HEVC, AAC ou AC-3, ele toca."
+    },
+    {
+      "q": "Por que um MKV toca sem som?",
+      "a": "O codec de áudio do arquivo não é um que o seu Mac consiga decodificar. Nesse caso o slplayer reproduz o vídeo e mostra um aviso no início, porque ele toca apenas formatos que o macOS suporta."
+    },
+    {
+      "q": "O slplayer suporta legendas ASS ou em imagem?",
+      "a": "Os formatos de legenda documentados são SRT, VTT e SMI. Legendas em forma de imagem não são exibidas e outros formatos não são garantidos."
+    },
+    {
+      "q": "Preciso criar uma conta?",
+      "a": "Não é preciso conta, e o app não se conecta à rede sozinho. Abrir arquivos, MKV, legendas, sincronia, velocidade e playlists funcionam sem o Pro."
+    },
+    {
+      "q": "O que o slplayer Pro adiciona?",
+      "a": "O slplayer Pro é opcional. Ele adiciona tela dividida com até quatro vídeos, Picture in Picture, um miniplayer na barra de menus, loop A-B e timer de desligamento. A reprodução básica funciona do mesmo jeito sem ele."
+    }
+  ],
+  "card": {
+    "tagline": "Reproduz MKV no seu Mac com legendas, usando o mecanismo de mídia do macOS",
+    "features": [
+      "MKV, MP4, MOV, sem pacote de codecs",
+      "SRT, VTT, SMI e legendas duplas",
+      "Sem conta, sem anúncios"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "player de vídeo",
+      "h1": "O melhor player de vídeo leve para Mac.",
+      "sub": "Abre MKV e mostra suas legendas do jeito certo, com o mecanismo de mídia integrado ao macOS.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Abre MKV.",
+        "text": "MKV, MP4, M4V, MOV e MPEG-TS abrem direto. Não há pacote de codecs para instalar."
+      },
+      {
+        "title": "Legendas legíveis.",
+        "text": "Legendas SRT, VTT e SMI carregam com o vídeo. Arquivos SMI coreanos salvos em EUC-KR são detectados automaticamente e nunca viram caracteres embaralhados."
+      },
+      {
+        "title": "Leve na bateria.",
+        "text": "O slplayer não traz decodificador próprio. O macOS cuida da reprodução, por isso ele pesa pouco na bateria."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Legendas duplas e sincronia, num lugar só.",
+        "p": "Mostre duas linhas de legenda ao mesmo tempo, ajuste a sincronia em passos de 0,1 segundo e defina o estilo com prévia ao vivo. Cada arquivo guarda o próprio ajuste.",
+        "shot": "06"
+      },
+      {
+        "h2": "Quatro vídeos. Um só controle.",
+        "p": "A tela dividida reproduz até quatro vídeos lado a lado. Picture in Picture e um miniplayer na barra de menus também estão lá.",
+        "shot": "02"
+      },
+      {
+        "h2": "Continue de onde parou.",
+        "p": "Solte vários arquivos para montar uma fila e organize as playlists em pastas. Cada vídeo continua do ponto em que você parou.",
+        "shot": "07"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto para abrir aquele MKV?",
+      "p": "Arraste o arquivo para o slplayer e aperte play. Não há nada para configurar antes."
+    },
+    "closeH2": "Um player de vídeo que não atrapalha.",
+    "trust": [
+      "Sem conta",
+      "Sem anúncios",
+      "Sem análises"
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "locale": "es",
+  "title": "Temporizador de intervalos para correr - IntervalRunner",
+  "description": "Crea entrenamientos por intervalos para correr, por tiempo o distancia. IntervalRunner avisa con voz, tono y vibración en la muñeca si tu ritmo se desvía.",
+  "h1": "Temporizador de intervalos con entrenador de ritmo para iPhone y Apple Watch",
+  "tagline": "Corre cada intervalo tal como lo planeaste, sin mirar la pantalla.",
+  "summary": [
+    "IntervalRunner es un temporizador de intervalos para correr y un entrenador de ritmo para iPhone y Apple Watch. Compara tu ritmo con el objetivo de cada tramo y te avisa en cuanto te desvías, con la voz, con un tono y con un toque en la muñeca.",
+    "Está pensado para corredores que hacen series en pista, tempo, intervalos de caminar y correr o rodajes en zona 2 y quieren mantener sus ritmos sin estar pendientes del reloj.",
+    "Tres cosas lo distinguen. Usa un ritmo suavizado en lugar del GPS a saltos, tú eliges el margen de tolerancia, e ir demasiado rápido o demasiado lento suena y se siente distinto."
+  ],
+  "overview": [
+    "Un temporizador de intervalos normal pita al terminar cada tramo, pero no te dice si lo corriste al ritmo correcto. IntervalRunner añade esa comprobación. Cada tramo, por tiempo o por distancia, lleva un ritmo o una velocidad objetivo, y la app te avisa en cuanto sales del margen que elegiste. Sabes hacia dónde corregir antes de mirar un número.",
+    "Sirve igual para una sesión de series de 400 m u 800 m en pista que para 1 minuto rápido y 1 minuto suave por un sendero. Sin reloj, el iPhone mide, muestra y habla. Con un Apple Watch, el reloj mide y te toca la muñeca mientras el iPhone muestra los datos y los anuncia. El modo cinta no necesita GPS.",
+    "Después de cada carrera puedes comparar el objetivo y el resultado real de cada tramo, y los entrenamientos se guardan en Salud si lo permites. Las imágenes para compartir convierten una carrera en foto, video o Live Photo con tus datos."
+  ],
+  "features": [
+    {
+      "h": "Alertas de ritmo fiables en el entrenamiento por intervalos",
+      "p": "La app evalúa el ritmo suavizado en lugar de la lectura bruta del GPS, que da saltos, y tú eliges el margen de tolerancia. Ir demasiado rápido y demasiado lento suena y se siente diferente, así que oyes hacia dónde corregir antes de leer un número."
+    },
+    {
+      "h": "Voz, tonos y vibración en la muñeca con la pantalla bloqueada",
+      "p": "Los avisos de voz, naturales y generados con IA, bajan la música un momento y siguen funcionando con la pantalla bloqueada. Con un Apple Watch también recibes vibraciones en la muñeca, así que el teléfono puede ir en el bolsillo."
+    },
+    {
+      "h": "Crea entrenamientos por tiempo o distancia",
+      "p": "Cada tramo se define por tiempo o distancia con un ritmo o una velocidad objetivo. Hay siete plantillas listas para correr, entre ellas caminar y correr para empezar, 1 min rápido / 1 min suave, series de 400 m y 800 m, tempo, trote lento y zona 2 (la zona 2 forma parte de Pro). Tres modos de conteo te permiten empezar al alcanzar el ritmo objetivo, contar solo mientras estás dentro del objetivo o contar desde el principio."
+    },
+    {
+      "h": "Con o sin Apple Watch, o en cinta",
+      "p": "Corre solo con el iPhone, solo con el reloj o con los dos. El modo cinta no necesita GPS. Corres por tiempo a la velocidad configurada en la máquina y luego confirmas la distancia que muestra su pantalla."
+    },
+    {
+      "h": "Objetivo frente a resultado, tramo a tramo",
+      "p": "El resumen compara cada tramo con su objetivo. Pro añade un análisis detallado por tramo, tendencias y mejores marcas personales, además de objetivos por zonas de frecuencia cardiaca y recuperaciones que terminan cuando baja tu pulso."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/intervalrunner/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Pantalla de carrera de IntervalRunner con «On target» en verde, 0.13 mi restantes en cifras grandes, ritmo actual de 6:28 por milla frente a un objetivo de 6:26 y frecuencia cardiaca de 158",
+      "caption": "Pantalla de carrera dentro del objetivo"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Pantalla de carrera con fondo ámbar que indica «Slow 42 s» y un globo de voz que dice «Too slow, pick it up»",
+      "caption": "Demasiado lento, aviso visual y por voz"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Lista de entrenamientos de IntervalRunner con inicio rápido, un entrenamiento en escalera reciente y plantillas como Slow run 30 min y Zone 2 run 40 min",
+      "caption": "Entrenamientos y plantillas listas"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Pantalla de carrera del iPhone con un Apple Watch delante, ambos con «On target»",
+      "caption": "iPhone y Apple Watch juntos"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Resumen de un entrenamiento de 400 m ×8 con el 86 % del tiempo en el ritmo objetivo y una lista de tramos con tiempos objetivo y reales",
+      "caption": "Resumen con objetivo y resultado por tramo"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plataformas",
+      "v": "iPhone, Apple Watch y Android"
+    },
+    {
+      "k": "Requisitos",
+      "v": "iOS 26 o posterior; watchOS 10 o posterior para Apple Watch"
+    },
+    {
+      "k": "Tramos",
+      "v": "Por tiempo o distancia, con ritmo o velocidad objetivo, en km o millas"
+    },
+    {
+      "k": "Plantillas",
+      "v": "7 plantillas, entre ellas series de 400 m y 800 m, tempo, trote lento y zona 2 (Pro)"
+    },
+    {
+      "k": "Avisos",
+      "v": "Voz generada con IA, tonos distintos para demasiado rápido y demasiado lento, vibración en la muñeca"
+    },
+    {
+      "k": "Datos",
+      "v": "Salud (si lo permites), exportación GPX y JSON, Actividad en vivo; exportación CSV segundo a segundo con Pro"
+    },
+    {
+      "k": "Idiomas",
+      "v": "12 idiomas"
+    },
+    {
+      "k": "Cuenta",
+      "v": "Sin cuenta y sin servidores propios"
+    }
+  ],
+  "limits": [
+    "IntervalRunner no genera programas de varias semanas ni predice tiempos de carrera. Te ayuda a ejecutar los entrenamientos que tú defines.",
+    "Las funciones de frecuencia cardiaca, como los objetivos por zonas y las recuperaciones que terminan cuando baja tu pulso, necesitan un Apple Watch o un pulsómetro Bluetooth y forman parte de Pro.",
+    "La precisión del ritmo depende del GPS. Bajo los árboles o entre edificios altos, el ritmo suavizado puede reaccionar con retraso. El modo cinta depende de la velocidad que configures en la máquina.",
+    "El análisis por tramo, las tendencias, la biblioteca de entrenamientos con carpetas y los generadores de escalera, pirámide y Yasso 800 forman parte de Pro."
+  ],
+  "faq": [
+    {
+      "q": "¿Cómo configuro un temporizador de intervalos para correr?",
+      "a": "Elige una plantilla como 1 min rápido / 1 min suave o series de 400 m, o crea tus propios tramos por tiempo o distancia con un ritmo objetivo. Inicia el entrenamiento y la app cuenta los tramos y te avisa si sales del margen de tolerancia."
+    },
+    {
+      "q": "¿Necesito un Apple Watch?",
+      "a": "No. Puedes correr solo con el iPhone. Con un Apple Watch, el reloj mide y te toca la muñeca mientras el iPhone muestra los datos y los anuncia. También puedes correr solo con el reloj."
+    },
+    {
+      "q": "¿Funciona en cinta de correr?",
+      "a": "Sí. El modo cinta no usa GPS. Corres por tiempo a la velocidad configurada en la máquina y luego confirmas la distancia que muestra su pantalla."
+    },
+    {
+      "q": "¿Puedo usar zonas de frecuencia cardiaca en los intervalos?",
+      "a": "Sí, con Pro. Los objetivos por zonas de frecuencia cardiaca y las recuperaciones que terminan cuando baja tu pulso forman parte de Pro y necesitan un Apple Watch o un pulsómetro Bluetooth."
+    },
+    {
+      "q": "¿Qué añade Pro?",
+      "a": "Pro añade análisis por tramo, tendencias y mejores marcas, objetivos por zonas de frecuencia cardiaca, una biblioteca de entrenamientos con carpetas, repeticiones anidadas, generadores de escalera, pirámide y Yasso 800 y exportación CSV segundo a segundo."
+    },
+    {
+      "q": "¿Dónde se guardan mis datos de carrera?",
+      "a": "Tus carreras, rutas y datos de salud se quedan en tus dispositivos. No hay cuenta ni servidores propios. Si lo permites, los entrenamientos se guardan en Salud."
+    }
+  ],
+  "card": {
+    "tagline": "Temporizador de intervalos y entrenador de ritmo con avisos por voz, tono y muñeca",
+    "features": [
+      "Tramos por tiempo o distancia con ritmo objetivo",
+      "Avisos de demasiado rápido o lento en iPhone y Apple Watch",
+      "Modo cinta y resumen por tramo"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "temporizador de intervalos",
+      "h1": "El mejor temporizador de intervalos para correr en iPhone, Apple Watch y Android.",
+      "sub": "Te avisa con la voz, un tono y un toque en la muñeca en cuanto tu ritmo se aparta del objetivo.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Un ritmo en el que confiar.",
+        "text": "Los avisos usan el ritmo suavizado en lugar de la lectura del GPS a saltos, y tú eliges el margen de tolerancia."
+      },
+      {
+        "title": "Oye hacia dónde corregir.",
+        "text": "Ir por delante o por detrás del ritmo tiene su propio tono y su propia vibración, así sabes qué hacer antes de leer un número."
+      },
+      {
+        "title": "Funciona con la pantalla bloqueada.",
+        "text": "Los avisos de voz bajan la música un momento y el teléfono se queda en el bolsillo."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Arma la sesión por tiempo o distancia.",
+        "p": "Asigna a cada tramo un ritmo o una velocidad objetivo en km o millas. Hay siete plantillas listas, desde caminar y correr para empezar hasta series de 400 m y 800 m.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch o los dos.",
+        "p": "Corre solo con el teléfono, solo con el reloj o con ambos. El modo cinta no necesita GPS y va por tiempo a la velocidad de la máquina.",
+        "shot": "04"
+      },
+      {
+        "h2": "Mira cómo fue cada tramo.",
+        "p": "Al terminar, el resumen compara cada tramo con su objetivo. Los entrenamientos se guardan en Salud si lo permites.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "¿Listo para clavar cada ritmo?",
+      "p": "Elige una plantilla o define tus tramos, guarda el teléfono y a correr."
+    },
+    "closeH2": "Un entrenador de ritmo que habla en el momento justo.",
+    "trust": [
+      "Sin cuenta",
+      "Sin servidores propios",
+      "Tus carreras se quedan en tus dispositivos",
+      "12 idiomas"
+    ]
+  }
+}

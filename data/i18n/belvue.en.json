@@ -1,17 +1,17 @@
 {
   "locale": "en",
-  "title": "Fast Image Viewer for Mac - Belvue for Mac",
+  "title": "Light Image Viewer for Mac - Belvue for Mac",
   "description": "Open one image and flip through the whole folder with the arrow keys. Belvue is a light Mac image viewer in Finder order, with no ads and no tracking.",
-  "h1": "A fast image viewer for Mac",
+  "h1": "A light image viewer for Mac",
   "tagline": "Open one image, flip through the whole folder with the arrow keys",
   "summary": [
     "Belvue is a light image viewer for the Mac. Open a single image and the rest of its folder is ready to browse with the arrow keys, in the same order as Finder.",
-    "It is for anyone looking for a Mac image viewer that moves quickly through folders of photos, screenshots or scans, even with thousands of images.",
+    "It is for anyone looking for a Mac image viewer to browse folders of photos, screenshots or scans, even with thousands of images.",
     "Your images and file paths stay on your Mac, with no ads and no tracking."
   ],
   "overview": [
     "Preview and Quick Look are fine for one picture, but going through a whole folder often means opening images one by one. In Belvue you open one image and the next one appears right away when you press the arrow key. Folders with thousands of images use the same natural order as Finder, and the list follows changes in the folder.",
-    "If you search for a fast image viewer for Mac, the useful parts are the small ones: a thumbnail strip, zoom, pan, full screen and an information panel with EXIF details. You can also pick images as you flip with the P key, then act on all your picks at once. Copying the current image is a plain Command-C."
+    "In a Mac image viewer, the useful parts are the small ones. Belvue has a thumbnail strip, zoom, pan, full screen and an information panel with EXIF details. You can also pick images as you flip with the P key, then act on all your picks at once. Copying the current image is a plain Command-C."
   ],
   "features": [
     {
@@ -32,7 +32,7 @@
     },
     {
       "h": "Private by design",
-      "p": "Images and file paths never leave your Mac. Belvue has no ads and no tracking, and its only network use is App Store purchases."
+      "p": "Images and file paths never leave your Mac. Belvue has no ads and no tracking, and its only network connection is to the App Store for Belvue Pro."
     }
   ],
   "screenshots": [
@@ -67,7 +67,7 @@
   ],
   "specs": [
     {
-      "k": "Requirements",
+      "k": "Requires",
       "v": "Mac with macOS 15 or later"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
       "k": "Convert to",
-      "v": "JPEG, PNG, HEIC (Belvue Pro)"
+      "v": "JPEG, PNG, HEIC"
     },
     {
       "k": "Sorting",
@@ -88,11 +88,11 @@
     },
     {
       "k": "Privacy",
-      "v": "No ads, no tracking; network use only for App Store purchases"
+      "v": "No ads, no tracking; network connection only to the App Store"
     },
     {
-      "k": "Pro options",
-      "v": "Optional subscription (monthly or yearly) or a one-time Lifetime purchase"
+      "k": "Pro (optional)",
+      "v": "Batch move, copy and Trash for picks, conversion to JPEG, PNG or HEIC, sharing, Open With, extra backgrounds"
     }
   ],
   "limits": [
@@ -103,8 +103,8 @@
   ],
   "faq": [
     {
-      "q": "What is a fast image viewer for Mac?",
-      "a": "Belvue is a light Mac image viewer: open one image and flip through the rest of the folder with the arrow keys, in the same order as Finder, even with thousands of images."
+      "q": "Which Mac image viewer lets me browse a whole folder?",
+      "a": "Belvue is a light Mac image viewer. Open one image and flip through the rest of the folder with the arrow keys, in the same order as Finder, even with thousands of images."
     },
     {
       "q": "Why does Belvue ask me to allow a folder?",
@@ -115,12 +115,12 @@
       "a": "JPEG, PNG, HEIC, RAW and more."
     },
     {
-      "q": "Do I need a subscription?",
-      "a": "No. Viewing, browsing and picking need no subscription. Belvue Pro is optional for batch move, copy, Trash, conversion and sharing, as a monthly or yearly subscription or a one-time Lifetime purchase."
+      "q": "What does Belvue Pro add?",
+      "a": "Viewing, browsing and picking work without Pro. Belvue Pro is optional and adds batch move, copy and Trash for your picks, conversion to JPEG, PNG or HEIC, sharing, Open With and extra backgrounds."
     },
     {
       "q": "Does Belvue send my images anywhere?",
-      "a": "No. Images and file paths never leave your Mac. Belvue has no ads and no tracking, and its only network use is App Store purchases."
+      "a": "No. Images and file paths never leave your Mac. Belvue has no ads and no tracking, and its only network connection is to the App Store for Belvue Pro."
     }
   ],
   "card": {
@@ -129,6 +129,56 @@
       "Arrow-key browsing in Finder order",
       "Thumbnail strip, zoom, EXIF",
       "No ads, no tracking"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "image viewer",
+      "h1": "The best light image viewer for Mac.",
+      "sub": "Open one image, then browse the whole folder with the arrow keys.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Arrow through the folder.",
+        "text": "The arrow keys move through every image beside the one you opened. The next one appears right away."
+      },
+      {
+        "title": "A closer look.",
+        "text": "A thumbnail strip, zoom, pan and full screen are built in, with an information panel for EXIF details."
+      },
+      {
+        "title": "Stays on your Mac.",
+        "text": "Images and file paths never leave your Mac. Belvue has no ads and no tracking."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Every image in the folder, one key away.",
+        "p": "Open one image and the rest of its folder is ready to browse. The order matches Finder, even in folders with thousands of images.",
+        "shot": "02"
+      },
+      {
+        "h2": "Zoom in, pan around, go full screen.",
+        "p": "Zoom, pan and full screen are built in, with a thumbnail strip along the way. The information panel shows EXIF details.",
+        "shot": "04"
+      },
+      {
+        "h2": "Press P to keep it.",
+        "p": "Pick images with P while you browse. Then move, copy or send all picks to the Trash at once, with undo.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Ready to browse that folder?",
+      "p": "Open any image in it with Belvue and allow the folder once. Then just press the arrow keys."
+    },
+    "closeH2": "A light image viewer that leaves your photos as they are.",
+    "trust": [
+      "No ads",
+      "No tracking"
     ]
   }
 }

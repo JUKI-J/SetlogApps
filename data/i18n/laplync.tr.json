@@ -1,0 +1,197 @@
+{
+  "locale": "tr",
+  "title": "Senkronize Kronometre - LapLync, iPhone ve iPad için",
+  "description": "Birden fazla cihaz için senkronize kronometre. Tek başlangıç, her ekranda 3-2-1 geri sayım ve paylaşılan turlar. Kod veya QR ile katılın, hesap gerekmez.",
+  "h1": "Odadaki her cihazda birlikte çalışan senkronize kronometre",
+  "tagline": "Çok cihaz. Tek kronometre.",
+  "summary": [
+    "LapLync, iPhone ve iPad için çoklu cihaz kronometresidir. Bir cihaz başlatır, odadaki tüm cihazlar aynı anda başlar, turlar ve ara süreler hepsinde görünür.",
+    "Antrenörler ve çalıştırıcılar, etkinliklerdeki zaman hakemleri ve görevliler, ayrıca birkaç kişinin aynı başlangıç anından süre tutması gereken herkes için tasarlandı.",
+    "Cihazlar 6 karakterli bir oda koduyla veya QR koduyla, hesap olmadan katılır. Yakındaki cihazlar Bluetooth ve Wi-Fi ile, uzaktakiler internet üzerinden bağlanır ve tüm bağlantılar koparsa her cihaz süreyi kendi başına tutmaya devam eder."
+  ],
+  "overview": [
+    "Bir grubun süresini birkaç sıradan kronometreyle tutmak güvenilir değildir. Biri başla der, tepki süreleri farklıdır ve tek bir kişi tüm cihazlara aynı anda basamaz. LapLync bunun yerine ortak bir başlangıç sunar. Ev sahibi Başlat'a dokunduğunda her ekranda aynı anda 3-2-1 geri sayımı belirir ve tüm kronometreler birlikte başlar. Saatler Apple'ın zaman sunucularına (NTP) göre ayarlanır ve cihazlar arasındaki fark ağa bağlı olarak genellikle birkaç on milisaniye, yaklaşık 50 ms içinde kalır.",
+    "Çoklu cihaz kronometresi, farklı noktalarda alınan sürelerin karşılaştırılması gereken her yerde işe yarar. Bir antrenör saha kenarındaki sporculara telefon dağıtabilir, bir yüzme yarışında her zaman tutma noktasına bir cihaz konabilir ve bir bayrak yarışında devir anları tek bir başlangıca göre kaydedilebilir. Odadaki herkes tur alabilir ve her tur ile ara süre tüm cihazlarda görünür, böylece sonradan kimsenin sayıları elle aktarması gerekmez.",
+    "Aynı oda, cihazlar aynı Wi-Fi ağını paylaşsa da her biri kendi mobil verisini kullansa da çalışır. LapLync, cihazlar yakınken önce Bluetooth ve Wi-Fi dener, farklı ağlardayken internet aktarıcısına geçer ve her şey başarısız olursa her cihazın NTP referansından bağımsız zaman tutmaya devam eder. Bağlantı geri geldiğinde kayıtlar otomatik olarak birleşir."
+  ],
+  "features": [
+    {
+      "h": "3-2-1 geri sayımla senkronize başlangıç",
+      "p": "Ev sahibi kronometreyi başlatır ve geri sayım her ekrana aynı anda gelir, bu yüzden Başlat'a dokunan kişi öne geçmez. Başlatma, duraklatma ve durdurma yalnızca ev sahibindedir; katılımcılar tur kaydeder."
+    },
+    {
+      "h": "Paylaşılan turlar ve ara sürelerle çoklu cihaz kronometresi",
+      "p": "Odadaki herkes tur kaydedebilir ve turlar ile ara süreler her cihazda görünür. Yanlış tur kaydederseniz hemen ardından Geri Al'a dokunun veya silmek için tura uzun basın. Ev sahibi her turu, katılımcılar kendi turlarını silebilir ve silmeler her yerde senkronize olur."
+    },
+    {
+      "h": "Yakında, farklı ağlarda veya çevrimdışı",
+      "p": "Yakın cihazlar Bluetooth ve Wi-Fi ile bağlanır. Farklı ağlardaki cihazlar, farklı ülkelerde olsalar bile, internet üzerinden bağlanır. Tüm bağlantı kesilirse her cihaz kendi NTP referansından devam eder. Kronometre çalışmaya devam ederken kısa bir Yeniden bağlanıyor bildirimi görünür ve bağlantıyı hemen yenilemek için Yeniden Bağlan'a dokunabilirsiniz."
+    },
+    {
+      "h": "Ekrana dokunmadan tur kaydedin",
+      "p": "Bu isteğe bağlıdır ve varsayılan olarak kapalıdır. Turları ses düğmeleri, Bluetooth deklanşör kumandası, klavye veya sunum kumandasıyla kaydedebilirsiniz. Canlı Etkinlik, çalışan kronometreyi Kilit Ekranı'nda ve Dynamic Island'da gösterir ve Ayarlar'dan kapatılabilir."
+    },
+    {
+      "h": "Hesap yok, Pro yalnızca odayı kuran kişi için",
+      "p": "Bir oda oluşturun ve kodu sesli, sohbetle veya QR ile paylaşın. Herhangi bir odaya katılmak her zaman dahildir. Pro, oluşturduğunuz odayı sekiz cihaza kadar genişletir, CSV dışa aktarma ve tam oturum geçmişi ekler. Pro yalnızca odayı oluşturan kişiye gerekir."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/laplync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Yan yana iki koyu LapLync ekranı, ikisi de ortak başlangıçtan önceki 3-2-1 geri sayımının büyük 3 rakamını gösteriyor",
+      "caption": "Her ekranda 3-2-1"
+    },
+    {
+      "src": "/images/apps/laplync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "02:37 ve 02:59 gösteren LapLync ev sahibi ve misafir ekranları, kronometrenin altında tur ve ara süre listesi",
+      "caption": "Her cihazda turlar ve ara süreler"
+    },
+    {
+      "src": "/images/apps/laplync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "QR kodu, 6 karakterli oda kodu, PIN seçeneği ve bağlı cihaz listesiyle LapLync Oda Oluştur ekranı",
+      "caption": "Kod veya QR ile katılın"
+    },
+    {
+      "src": "/images/apps/laplync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Kaydedilmiş oturumları ve toplam sürelerini listeleyen LapLync geçmiş ekranı, yanında bir CSV dosya simgesi",
+      "caption": "Oturum geçmişi ve CSV dışa aktarma"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Gereksinimler",
+      "v": "iPhone ve iPad, iOS 17 veya sonrası"
+    },
+    {
+      "k": "Katılma",
+      "v": "6 karakterli oda kodu veya QR kodu, isteğe bağlı PIN, hesap yok"
+    },
+    {
+      "k": "Bağlantılar",
+      "v": "Yakında Bluetooth ve Wi-Fi, ağlar arasında internet aktarıcısı, yedek olarak bağımsız zaman tutma"
+    },
+    {
+      "k": "Zaman senkronizasyonu",
+      "v": "Apple zaman sunucuları (NTP), genellikle birkaç on milisaniye içinde (yaklaşık 50 ms)"
+    },
+    {
+      "k": "Tur kaydetme yolları",
+      "v": "Ekran, ses düğmeleri, Bluetooth deklanşör kumandası, klavye veya sunum kumandası"
+    },
+    {
+      "k": "Geçmiş",
+      "v": "Son oturumlar cihazda saklanır, antrenmandan sonra tekrar bakılabilir"
+    },
+    {
+      "k": "Pro",
+      "v": "8 cihaza kadar odalar, CSV dışa aktarma ve tam oturum geçmişi; Pro yalnızca odayı oluşturan kişiye gerekir"
+    },
+    {
+      "k": "Gizlilik",
+      "v": "Hesap yok, reklam yok, konum veya kişilere erişim yok; cihaz UUID'si ve adı yalnızca oda açıkken kullanılır"
+    }
+  ],
+  "limits": [
+    "LapLync yalnızca iPhone ve iPad'de çalışır. Android ve Windows cihazlar bir odaya katılamaz.",
+    "Cihazlar arasındaki yaklaşık 50 ms'lik fark ağa göre değişen tipik bir değerdir ve LapLync, foto finiş sistemleri gibi profesyonel zaman ölçüm ekipmanlarının yerini tutmaz. Tur düğmesine basan kişi de kendi tepki gecikmesini ekler.",
+    "Pro ile odayı oluşturan kişi sekiz cihaza kadar odalar açabilir, ayrıca CSV dışa aktarma ve tam oturum geçmişi kazanır. Pro yalnızca odayı oluşturan kişiye gerekir.",
+    "Yalnızca ev sahibi başlatabilir, durdurabilir ve sıfırlayabilir. Katılımcılar tur kaydedebilir ve kendi turlarını silebilir.",
+    "Ekransız tur kaydetme ve Canlı Etkinlik isteğe bağlıdır, Ayarlar'dan açılıp kapatılır. Önemli bir etkinlikten önce gerçek cihazlarınızla kısa bir test yapın."
+  ],
+  "faq": [
+    {
+      "q": "Bir kronometreyi birden fazla telefonda nasıl senkronize ederim?",
+      "a": "Bir cihazda oda oluşturun, diğerleri 6 karakterli kodla veya QR'ı tarayarak katılsın. Ev sahibi Başlat'a dokunduğunda her ekranda 3-2-1 geri sayımı belirir ve tüm kronometreler birlikte başlar."
+    },
+    {
+      "q": "Çoklu cihaz kronometresi internet üzerinden çalışır mı?",
+      "a": "Evet. Yakındaki cihazlar Bluetooth ve Wi-Fi kullanır, farklı ağlardaki cihazlar ise farklı şehirlerde veya ülkelerde olsalar bile otomatik olarak internet aktarıcısı üzerinden bağlanır. Bağlantılar koparsa her cihaz süre tutmaya devam eder ve bağlantı geri geldiğinde kayıtlar birleşir."
+    },
+    {
+      "q": "Bir odaya kaç cihaz katılabilir?",
+      "a": "Pro ile odayı oluşturan kişi sekiz cihaza kadar odalar açabilir. Başka birinin oluşturduğu odaya katılmak her zaman dahildir, bu yüzden katılımcıların Pro'ya hiç ihtiyacı olmaz."
+    },
+    {
+      "q": "Yarışlar ve antrenmanlar için ne kadar hassas?",
+      "a": "Cihazlar Apple'ın zaman sunucularına göre ayarlanır ve ağa bağlı olarak genellikle birkaç on milisaniye, yaklaşık 50 ms içinde uyuşur. Bu, antrenmanlar, antrenman kayıtları ve gayriresmî yarışlar için uygundur. Resmî sonuçlar için profesyonel zaman ölçüm ekipmanı kullanın."
+    },
+    {
+      "q": "Hesap veya e-posta gerekir mi?",
+      "a": "Hesap, şifre veya e-posta gerekmez ve reklam yoktur. Bir cihaz odaya 6 karakterli kodla veya QR'ı tarayarak katılır, bu kadar."
+    },
+    {
+      "q": "Telefona bakmadan tur kaydedebilir miyim?",
+      "a": "Evet, isteğe bağlı olarak. Ayarlar'dan ses düğmelerini, Bluetooth deklanşör kumandasını, klavyeyi veya sunum kumandasını açın. Varsayılan olarak kapalıdır."
+    }
+  ],
+  "card": {
+    "tagline": "Odadaki tüm cihazların paylaştığı tek kronometre, ortak turlarla",
+    "features": [
+      "Her ekranda 3-2-1 başlangıç",
+      "Kod veya QR ile katılım, hesap yok",
+      "Bluetooth, Wi-Fi ve internet"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "senkronize kronometre",
+      "h1": "iPhone ve iPad için en iyi senkronize kronometre.",
+      "sub": "Bir kez başlatın, odadaki her cihaz sizinle birlikte başlasın, turlar ve ara süreler hepsinde görünsün.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Kimse önde başlamaz.",
+        "text": "3-2-1 geri sayımı her ekrana aynı anda gelir, bu yüzden Başlat'a dokunan kişi avantaj kazanmaz."
+      },
+      {
+        "title": "Yakın, uzak veya çevrimdışı.",
+        "text": "Yakında Bluetooth ve Wi-Fi, ağlar arasında internet, tüm bağlantılar koparsa her cihaz süre tutmaya devam eder."
+      },
+      {
+        "title": "Ekransız turlar.",
+        "text": "Turları ses düğmeleri, Bluetooth deklanşör kumandası veya klavyeyle kaydedin. Siz açana kadar kapalı kalır."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Odadaki herkes tur alabilir.",
+        "p": "Turlar ve ara süreler her cihazda görünür, yanlış bir tur kaydedildikten hemen sonra geri alınabilir.",
+        "shot": "02"
+      },
+      {
+        "h2": "Altı karakterli bir kodla katılın.",
+        "p": "Oda kodunu sesli, sohbetle veya QR ile paylaşın. Hesap, şifre veya e-posta gerekmez.",
+        "shot": "03"
+      },
+      {
+        "h2": "Son oturumlara tekrar bakın.",
+        "p": "Son oturumlar cihazda saklanır, antrenmandan sonra tekrar bakmaya hazırdır.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Bir sonraki başlangıç çizgisine hazır mısınız?",
+      "p": "Bir oda oluşturun, kodu paylaşın ve Başlat'a dokunun."
+    },
+    "closeH2": "Herkesi aynı andan itibaren ölçün.",
+    "trust": [
+      "Hesap yok",
+      "Reklam yok",
+      "Konum veya kişiler yok",
+      "Çevrimdışı da süre tutar"
+    ]
+  }
+}

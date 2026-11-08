@@ -10,9 +10,9 @@
     "Besonders ist der Umgang mit Dateinamen: Zipda erkennt die ursprüngliche Kodierung direkt auf dem Gerät und zeigt den wahrscheinlichsten Namen an. Ein Reparatur-Werkzeug stellt ganze Ordner in einem Durchgang wieder her."
   ],
   "overview": [
-    "Wer eine RAR-Datei auf dem Mac öffnen möchte, stößt schnell auf eine Lücke: Das Archivierungsprogramm von macOS entpackt ZIP zuverlässig, kennt aber weder RAR noch 7z. Genau dafür ist Zipda gedacht. Sie ziehen die Datei auf das App-Fenster, sehen den Inhalt des Archivs, prüfen einzelne Dateien in der Vorschau und entpacken entweder alles oder nur das, was Sie brauchen. Auf dem iPhone teilen Sie das Archiv aus Mail oder der Dateien-App mit Zipda, und es öffnet sich.",
+    "Wer eine RAR-Datei auf dem Mac öffnen möchte, stößt bald auf eine Lücke: Das Archivierungsprogramm von macOS entpackt ZIP zuverlässig, kennt aber weder RAR noch 7z. Genau dafür ist Zipda gedacht. Sie ziehen die Datei auf das App-Fenster, sehen den Inhalt des Archivs, prüfen einzelne Dateien in der Vorschau und entpacken entweder alles oder nur das, was Sie brauchen. Auf dem iPhone teilen Sie das Archiv aus Mail oder der Dateien-App mit Zipda, und es öffnet sich.",
     "Auch bei großen oder beschädigten Archiven soll Zipda nicht aufgeben. Archive über 4 GB (Zip64), Archive mit Zehntausenden Einträgen und gesplittete Archive werden gestreamt, statt komplett in den Speicher geladen zu werden. Ist ein Download abgebrochen oder ein Sektor defekt, entpackt Zipda alles, was noch lesbar ist, und zeigt danach genau, welche Einträge übersprungen wurden und warum.",
-    "Alles läuft auf Ihrem Gerät. Es gibt kein Konto, keine Analyse und keine Werbe-SDKs, und die App stellt selbst keine Netzwerkanfragen. Öffnen, Durchsuchen und Ansehen jedes Archivs sowie ZIP und TAR im Alltag brauchen kein Pro. Das Entpacken von RAR, 7z, ALZ und LZH, geteilte und passwortgeschützte Archive sowie die Dateinamen-Reparatur gehören zum optionalen Zipda Pro, das auf iPhone, iPad und Mac dieselben Funktionen freischaltet."
+    "Alles läuft auf Ihrem Gerät. Es gibt kein Konto, keine Analyse und keine Werbe-SDKs, und die App stellt selbst keine Netzwerkanfragen. Öffnen, Durchsuchen und Ansehen jedes Archivs sowie ZIP und TAR im Alltag brauchen kein Pro. Das Entpacken von RAR, 7z, ALZ und LZH, geteilte und passwortgeschützte Archive sowie die Dateinamen-Reparatur gehören zum optionalen Zipda Pro, das auf iPhone, iPad und Mac dieselben Funktionen bietet."
   ],
   "features": [
     {
@@ -70,5 +70,56 @@
   "card": {
     "tagline": "RAR, 7z und ZIP auf Mac und iPhone entpacken.",
     "features": ["ZIP, RAR, 7z und TAR öffnen", "Kaputte Dateinamen reparieren", "Ohne Werbung, ohne Konto"]
+  },
+  "landing": {
+    "hero": {
+      "category": "Entpacker",
+      "h1": "Der beste Entpacker für iPhone, iPad und Mac.",
+      "sub": "Öffnet RAR, 7z und ZIP auf Mac, iPhone und iPad und holt nur die Datei heraus, die Sie brauchen.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Öffnet RAR und 7z.",
+        "text": "Neben ZIP und der TAR-Familie entpackt Zipda auch RAR, 7z, LZH und ALZ. Holen Sie eine einzelne Datei heraus oder alles in einen Ordner Ihrer Wahl."
+      },
+      {
+        "title": "Groß und mehrteilig.",
+        "text": "Zip64-Archive über 4 GB und Archive mit Zehntausenden Einträgen werden gestreamt. Bei geteilten Archiven wählen Sie den ersten Teil, den Rest findet Zipda."
+      },
+      {
+        "title": "Mac, iPhone und iPad.",
+        "text": "Zipda ist ein einziger App-Store-Eintrag für alle drei Geräte. Die App läuft ab macOS 14 und iOS 16.1."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Erst hineinschauen. Dann nur das Nötige.",
+        "p": "Durchsuchen Sie das Archiv und sehen Sie Dateien in der Vorschau an. Dann entpacken Sie eine Datei oder alles in den Ordner Ihrer Wahl.",
+        "shot": "01"
+      },
+      {
+        "h2": "Passwortgeschützte ZIPs, direkt auf dem Gerät.",
+        "p": "ZIPs mit ZipCrypto oder AES öffnen sich nach der Passworteingabe. Die Prüfung findet auf Ihrem Gerät statt.",
+        "shot": "02"
+      },
+      {
+        "h2": "ZIPs aus Dateien, Fotos und Videos.",
+        "p": "Wählen Sie Dateien, Fotos oder Videos und packen Sie sie als ZIP, auf dem iPhone auch über das Teilen-Menü.",
+        "shot": "03"
+      }
+    ],
+    "midCta": {
+      "h2": "Eine RAR- oder 7z-Datei bekommen?",
+      "p": "Öffnen Sie sie in Zipda, schauen Sie hinein und entpacken Sie, was Sie brauchen."
+    },
+    "closeH2": "Ein Entpacker für Mac, iPhone und iPad.",
+    "trust": [
+      "Kein Konto",
+      "Keine Werbung",
+      "Keine Analyse"
+    ]
   }
 }

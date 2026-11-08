@@ -1,0 +1,203 @@
+{
+  "locale": "pt-br",
+  "title": "Cronômetro de treino intervalado e pace - IntervalRunner",
+  "description": "Monte treinos intervalados de corrida por tempo ou distância. O IntervalRunner avisa por voz, som e vibração no pulso assim que seu pace sai da meta.",
+  "h1": "Cronômetro de treino intervalado com coach de pace para iPhone e Apple Watch",
+  "tagline": "Corra cada tiro exatamente como planejou, sem olhar para a tela.",
+  "summary": [
+    "O IntervalRunner é um cronômetro de treino intervalado de corrida e um coach de pace para iPhone e Apple Watch. Ele compara seu pace com a meta de cada etapa e avisa no momento em que você se desvia, por voz, por som e com um toque no pulso.",
+    "Ele é feito para quem corre tiros na pista, treinos de limiar, intervalos de caminhada e corrida ou rodagens na zona 2 e quer segurar o pace sem ficar olhando para o relógio.",
+    "Três coisas fazem a diferença. Ele usa um pace suavizado em vez do GPS que oscila, você escolhe a margem de tolerância, e correr rápido demais ou devagar demais tem som e vibração diferentes."
+  ],
+  "overview": [
+    "Um cronômetro intervalado comum apita no fim de cada etapa, mas não diz se você correu no pace certo. O IntervalRunner acrescenta essa verificação. Cada etapa, definida por tempo ou distância, tem um pace ou uma velocidade alvo, e o app avisa assim que você sai da margem escolhida. Você sabe para que lado corrigir antes de olhar um número.",
+    "Serve tanto para uma sessão de tiros de 400 m ou 800 m na pista quanto para 1 minuto rápido e 1 minuto leve numa trilha. Sem relógio, o iPhone mede, mostra e fala. Com um Apple Watch, o relógio mede e toca seu pulso enquanto o iPhone mostra os números e faz os anúncios. O modo esteira não precisa de GPS.",
+    "Depois de cada corrida, você pode comparar meta e resultado de cada etapa, e os treinos são salvos no app Saúde se você permitir. As imagens para compartilhar transformam uma corrida em foto, vídeo ou Live Photo com seus dados."
+  ],
+  "features": [
+    {
+      "h": "Alertas de pace confiáveis no treino intervalado",
+      "p": "O app avalia o pace suavizado em vez da leitura bruta do GPS, que oscila bastante, e você escolhe a margem de tolerância. Rápido demais e devagar demais têm som e vibração diferentes, então você ouve para que lado corrigir antes de ler um número."
+    },
+    {
+      "h": "Voz, sons e vibração no pulso com a tela bloqueada",
+      "p": "Os avisos de voz, naturais e gerados por IA, abaixam a música por um instante e continuam funcionando com a tela bloqueada. Com um Apple Watch você também sente vibrações no pulso, então o celular pode ficar no bolso."
+    },
+    {
+      "h": "Treinos montados por tempo ou distância",
+      "p": "Cada etapa é definida por tempo ou distância, com um pace ou uma velocidade alvo. Sete modelos estão prontos para correr, entre eles caminhar e correr para iniciantes, 1 min rápido / 1 min leve, tiros de 400 m e 800 m, limiar, corrida lenta e zona 2 (a zona 2 faz parte do Pro). Três modos de contagem permitem começar ao atingir o pace alvo, contar só enquanto estiver na meta ou contar na hora."
+    },
+    {
+      "h": "Com ou sem Apple Watch, ou na esteira",
+      "p": "Corra só com o iPhone, só com o relógio ou com os dois. O modo esteira dispensa GPS. Você corre por tempo na velocidade configurada no aparelho e depois confirma a distância mostrada no painel."
+    },
+    {
+      "h": "Meta e resultado, etapa por etapa",
+      "p": "O resumo compara cada etapa com a sua meta. O Pro acrescenta análise detalhada por etapa, tendências e recordes pessoais, além de metas por zona de frequência cardíaca e recuperações que terminam quando seus batimentos caem."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/intervalrunner/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela de corrida do IntervalRunner com “On target” em verde, 0.13 mi restantes em números grandes, pace atual de 6:28 por milha contra uma meta de 6:26 e frequência cardíaca 158",
+      "caption": "Tela de corrida dentro da meta"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela de corrida com fundo âmbar mostrando “Slow 42 s” e um balão de voz dizendo “Too slow, pick it up”",
+      "caption": "Devagar demais, alerta visual e por voz"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Lista de treinos do IntervalRunner com início rápido, um treino em escada recente e modelos como Slow run 30 min e Zone 2 run 40 min",
+      "caption": "Treinos e modelos prontos"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela de corrida do iPhone com um Apple Watch na frente, os dois mostrando “On target”",
+      "caption": "iPhone e Apple Watch juntos"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Resumo de um treino de 400 m ×8 com 86% do tempo no pace alvo e uma lista de etapas com tempos de meta e reais",
+      "caption": "Resumo com meta e resultado por etapa"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plataformas",
+      "v": "iPhone, Apple Watch e Android"
+    },
+    {
+      "k": "Requisitos",
+      "v": "iOS 26 ou posterior; watchOS 10 ou posterior no Apple Watch"
+    },
+    {
+      "k": "Etapas",
+      "v": "Por tempo ou distância, com pace ou velocidade alvo, em km ou milhas"
+    },
+    {
+      "k": "Modelos",
+      "v": "7 modelos, entre eles tiros de 400 m e 800 m, limiar, corrida lenta e zona 2 (Pro)"
+    },
+    {
+      "k": "Alertas",
+      "v": "Voz gerada por IA, sons diferentes para rápido demais e devagar demais, vibração no pulso"
+    },
+    {
+      "k": "Dados",
+      "v": "Saúde (se permitido), exportação GPX e JSON, Atividade ao Vivo; exportação CSV por segundo com o Pro"
+    },
+    {
+      "k": "Idiomas",
+      "v": "12 idiomas"
+    },
+    {
+      "k": "Conta",
+      "v": "Sem conta e sem servidor nosso"
+    }
+  ],
+  "limits": [
+    "O IntervalRunner não cria programas de várias semanas nem prevê tempos de competição. Ele ajuda você a executar os treinos que você mesmo define.",
+    "Os recursos de frequência cardíaca, como metas por zona e recuperações que terminam quando os batimentos caem, exigem um Apple Watch ou uma cinta cardíaca Bluetooth e fazem parte do Pro.",
+    "A precisão do pace depende do GPS. Sob árvores ou entre prédios altos, o pace suavizado pode reagir com atraso. O modo esteira depende da velocidade que você configura no aparelho.",
+    "Análise por etapa, tendências, a biblioteca de treinos com pastas e os geradores de escada, pirâmide e Yasso 800 fazem parte do Pro."
+  ],
+  "faq": [
+    {
+      "q": "Como configurar um cronômetro intervalado para corrida?",
+      "a": "Escolha um modelo como 1 min rápido / 1 min leve ou tiros de 400 m, ou crie suas próprias etapas por tempo ou distância com um pace alvo. Inicie o treino e o app conta as etapas e avisa se você sair da margem de tolerância."
+    },
+    {
+      "q": "Preciso de um Apple Watch?",
+      "a": "Não. Você pode correr só com o iPhone. Com um Apple Watch, o relógio mede e toca seu pulso enquanto o iPhone mostra os números e faz os anúncios. Correr só com o relógio também funciona."
+    },
+    {
+      "q": "Funciona na esteira?",
+      "a": "Sim. O modo esteira não usa GPS. Você corre por tempo na velocidade configurada no aparelho e depois confirma a distância mostrada no painel."
+    },
+    {
+      "q": "Dá para usar zonas de frequência cardíaca nos intervalos?",
+      "a": "Sim, com o Pro. Metas por zona de frequência cardíaca e recuperações que terminam quando os batimentos caem fazem parte do Pro e exigem um Apple Watch ou uma cinta cardíaca Bluetooth."
+    },
+    {
+      "q": "O que o Pro acrescenta?",
+      "a": "O Pro acrescenta análise por etapa, tendências e recordes pessoais, metas por zona de frequência cardíaca, uma biblioteca de treinos com pastas, repetições aninhadas, geradores de escada, pirâmide e Yasso 800 e exportação CSV por segundo."
+    },
+    {
+      "q": "Onde ficam os dados das minhas corridas?",
+      "a": "Suas corridas, trajetos e dados de saúde ficam nos seus dispositivos. Não há conta nem servidor nosso. Se você permitir, os treinos são salvos no app Saúde."
+    }
+  ],
+  "card": {
+    "tagline": "Cronômetro intervalado e coach de pace com alertas por voz, som e no pulso",
+    "features": [
+      "Etapas por tempo ou distância com pace alvo",
+      "Alertas de rápido ou devagar demais no iPhone e no Apple Watch",
+      "Modo esteira e resumo por etapa"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "cronômetro de treino intervalado",
+      "h1": "O melhor cronômetro de treino intervalado para iPhone, Apple Watch e Android.",
+      "sub": "Avisa por voz, som e um toque no pulso no momento em que seu pace se afasta da meta.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Um pace confiável.",
+        "text": "Os alertas usam o pace suavizado em vez da leitura do GPS que oscila, e a margem de tolerância é você quem escolhe."
+      },
+      {
+        "title": "Ouça para que lado corrigir.",
+        "text": "Estar à frente ou atrás do pace tem som e vibração próprios, então você sabe o que fazer antes de ler um número."
+      },
+      {
+        "title": "Funciona com a tela bloqueada.",
+        "text": "Os avisos de voz abaixam a música por um instante e o celular fica no bolso."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Monte o treino por tempo ou distância.",
+        "p": "Dê a cada etapa um pace ou uma velocidade alvo, em km ou milhas. Sete modelos estão prontos, de caminhar e correr para iniciantes a tiros de 400 m e 800 m.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch ou os dois.",
+        "p": "Corra só com o celular, só com o relógio ou com os dois juntos. O modo esteira dispensa GPS e segue o tempo na velocidade do aparelho.",
+        "shot": "04"
+      },
+      {
+        "h2": "Veja como foi cada etapa.",
+        "p": "No fim da corrida, o resumo coloca cada etapa ao lado da meta. Os treinos vão para o app Saúde se você permitir.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto para segurar cada pace?",
+      "p": "Escolha um modelo ou monte suas etapas, guarde o celular e corra."
+    },
+    "closeH2": "Um coach de pace que fala na hora certa.",
+    "trust": [
+      "Sem conta",
+      "Sem servidor nosso",
+      "Corridas ficam nos seus dispositivos",
+      "12 idiomas"
+    ]
+  }
+}

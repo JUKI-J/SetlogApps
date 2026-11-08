@@ -1,0 +1,203 @@
+{
+  "locale": "de",
+  "title": "Intervall-Timer und Pace-Coach - IntervalRunner fürs iPhone",
+  "description": "Erstelle Intervallläufe nach Zeit oder Distanz. IntervalRunner meldet sich per Stimme, Ton und Vibration am Handgelenk, wenn deine Pace vom Ziel abweicht.",
+  "h1": "Intervall-Timer mit Pace-Coach für iPhone und Apple Watch",
+  "tagline": "Lauf jedes Intervall genau wie geplant, ohne auf den Bildschirm zu schauen.",
+  "summary": [
+    "IntervalRunner ist eine Intervalltraining-Timer-App und ein Pace-Coach für iPhone und Apple Watch. Die App vergleicht deine Pace in jedem Abschnitt mit dem Ziel und meldet sich, sobald du abweichst, per Stimme, per Ton und mit einem Tippen am Handgelenk.",
+    "Sie ist für Läuferinnen und Läufer gedacht, die Bahnintervalle, Tempoläufe, Lauf-Geh-Intervalle oder Zone-2-Läufe machen und ihre Pace halten wollen, ohne ständig auf die Uhr zu starren.",
+    "Drei Dinge machen den Unterschied. Die App bewertet eine geglättete Pace statt des sprunghaften GPS-Werts, du legst den Toleranzbereich selbst fest, und zu schnell und zu langsam klingen und fühlen sich unterschiedlich an."
+  ],
+  "overview": [
+    "Ein einfacher Intervall-Timer piept am Ende eines Abschnitts, sagt dir aber nicht, ob du ihn in der richtigen Pace gelaufen bist. IntervalRunner ergänzt genau diese Kontrolle. Jeder Abschnitt, nach Zeit oder Distanz festgelegt, bekommt eine Zielpace oder Zielgeschwindigkeit, und die App warnt dich, sobald du den gewählten Bereich verlässt. So weißt du, in welche Richtung du korrigieren musst, bevor du auf eine Zahl schaust.",
+    "Das passt zu einer Bahneinheit mit 400-m- oder 800-m-Wiederholungen genauso wie zu 1 Minute schnell und 1 Minute locker auf einem Waldweg. Ohne Uhr misst, zeigt und spricht das iPhone. Mit Apple Watch misst die Uhr und tippt dir aufs Handgelenk, während das iPhone die Zahlen anzeigt und ansagt. Der Laufbandmodus kommt ohne GPS aus.",
+    "Nach jedem Lauf kannst du Ziel und Ist für jeden Abschnitt vergleichen, und wenn du es erlaubst, werden Trainings in Apple Health gespeichert. Mit Teilen-Bildern wird ein Lauf zum Foto, Video oder Live Photo mit deinen Werten."
+  ],
+  "features": [
+    {
+      "h": "Verlässliche Pace-Hinweise im Intervalltraining",
+      "p": "Die App bewertet eine geglättete Pace statt des rohen GPS-Werts, der leicht springt, und du wählst den Toleranzbereich. Zu schnell und zu langsam klingen und fühlen sich verschieden an, also hörst du die Korrekturrichtung, bevor du eine Zahl liest."
+    },
+    {
+      "h": "Sprachansagen, Töne und Vibration bei gesperrtem Bildschirm",
+      "p": "Natürliche, KI-generierte Sprachansagen senken deine Musik kurz ab und funktionieren auch bei gesperrtem Bildschirm. Mit einer Apple Watch kommt haptisches Feedback am Handgelenk dazu, das iPhone kann also in der Tasche bleiben."
+    },
+    {
+      "h": "Trainings nach Zeit oder Distanz bauen",
+      "p": "Jeder Abschnitt wird nach Zeit oder Distanz mit einer Zielpace oder Zielgeschwindigkeit festgelegt. Sieben Vorlagen sind startklar, nämlich Lauf-Geh-Einstieg, 1 Min. schnell / 1 Min. locker, 400 m und 800 m Wiederholungen, Tempo, Slow Jogging und Zone 2 (Zone 2 gehört zu Pro). Drei Zählmodi stehen zur Wahl. Die Zeit startet, wenn du die Zielpace erreichst, zählt nur im Zielbereich oder läuft sofort los."
+    },
+    {
+      "h": "Mit oder ohne Apple Watch, auch auf dem Laufband",
+      "p": "Lauf nur mit dem iPhone, nur mit der Uhr oder mit beiden. Der Laufbandmodus braucht kein GPS. Du läufst nach Zeit mit der am Gerät eingestellten Geschwindigkeit und bestätigst danach die Distanz aus dessen Anzeige."
+    },
+    {
+      "h": "Ziel und Ist, Abschnitt für Abschnitt",
+      "p": "Die Zusammenfassung stellt jeden Abschnitt seinem Ziel gegenüber. Pro ergänzt eine detaillierte Abschnittsanalyse, Trends und Bestleistungen sowie Herzfrequenzzonen als Ziel und Erholungsphasen, die enden, wenn dein Puls sinkt."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/intervalrunner/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Laufbildschirm von IntervalRunner mit grünem „On target“, 0.13 mi verbleibend in großen Ziffern, aktuelle Pace 6:28 pro Meile bei einem Ziel von 6:26 und Herzfrequenz 158",
+      "caption": "Laufbildschirm im Zielbereich"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Laufbildschirm auf bernsteinfarbenem Hintergrund mit „Slow 42 s“ und einer Sprechblase „Too slow, pick it up“",
+      "caption": "Zu langsam, Hinweis auf dem Display und per Stimme"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Trainingsliste von IntervalRunner mit Schnellstart, einem zuletzt gelaufenen Leiter-Training und Vorlagen wie Slow run 30 min und Zone 2 run 40 min",
+      "caption": "Trainings und fertige Vorlagen"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Laufbildschirm auf dem iPhone mit einer Apple Watch davor, beide zeigen „On target“",
+      "caption": "iPhone und Apple Watch zusammen"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Zusammenfassung eines Trainings mit 400 m ×8, 86 Prozent der Zeit in der Zielpace und einer Liste der Abschnitte mit Ziel- und Ist-Zeiten",
+      "caption": "Zusammenfassung mit Ziel und Ist pro Abschnitt"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plattformen",
+      "v": "iPhone, Apple Watch und Android"
+    },
+    {
+      "k": "Voraussetzungen",
+      "v": "iOS 26 oder neuer; watchOS 10 oder neuer für die Apple Watch"
+    },
+    {
+      "k": "Abschnitte",
+      "v": "Nach Zeit oder Distanz, mit Zielpace oder Zielgeschwindigkeit, km oder Meilen"
+    },
+    {
+      "k": "Vorlagen",
+      "v": "7 Vorlagen, darunter 400 m und 800 m Wiederholungen, Tempo, Slow Jogging und Zone 2 (Pro)"
+    },
+    {
+      "k": "Hinweise",
+      "v": "KI-generierte Stimme, eigene Töne für zu schnell und zu langsam, Vibration am Handgelenk"
+    },
+    {
+      "k": "Daten",
+      "v": "Apple Health (wenn erlaubt), Export als GPX und JSON, Live-Aktivität; sekundengenauer CSV-Export mit Pro"
+    },
+    {
+      "k": "Sprachen",
+      "v": "12 Sprachen"
+    },
+    {
+      "k": "Konto",
+      "v": "Kein Konto und kein Server von uns"
+    }
+  ],
+  "limits": [
+    "IntervalRunner erstellt keine mehrwöchigen Trainingsprogramme und sagt keine Wettkampfzeiten voraus. Die App hilft dir, die Einheiten umzusetzen, die du selbst festlegst.",
+    "Herzfrequenzfunktionen wie Zonenziele und Erholung, die endet, wenn dein Puls sinkt, brauchen eine Apple Watch oder einen Bluetooth-Herzfrequenzsensor und gehören zu Pro.",
+    "Die Genauigkeit der Pace hängt vom GPS ab. Unter Bäumen oder zwischen hohen Gebäuden kann die geglättete Pace verzögert reagieren. Der Laufbandmodus richtet sich nach der Geschwindigkeit, die du am Gerät einstellst.",
+    "Abschnittsanalyse, Trends, die Trainingsbibliothek mit Ordnern sowie die Generatoren für Leiter, Pyramide und Yasso 800 gehören zu Pro."
+  ],
+  "faq": [
+    {
+      "q": "Wie stelle ich einen Intervall-Timer fürs Laufen ein?",
+      "a": "Wähle eine Vorlage wie 1 Min. schnell / 1 Min. locker oder 400 m Wiederholungen, oder baue eigene Abschnitte nach Zeit oder Distanz mit einer Zielpace. Starte das Training, dann zählt die App die Abschnitte mit und warnt dich, wenn du den Toleranzbereich verlässt."
+    },
+    {
+      "q": "Brauche ich eine Apple Watch?",
+      "a": "Nein. Du kannst nur mit dem iPhone laufen. Mit einer Apple Watch misst die Uhr und tippt dir aufs Handgelenk, während das iPhone die Zahlen anzeigt und ansagt. Laufen nur mit der Uhr geht auch."
+    },
+    {
+      "q": "Funktioniert die App auf dem Laufband?",
+      "a": "Ja. Der Laufbandmodus nutzt kein GPS. Du läufst nach Zeit mit der am Gerät eingestellten Geschwindigkeit und bestätigst danach die Distanz aus der Anzeige."
+    },
+    {
+      "q": "Kann ich Herzfrequenzzonen für Intervalle nutzen?",
+      "a": "Ja, mit Pro. Herzfrequenzzonen als Ziel und Erholung, die endet, wenn dein Puls sinkt, gehören zu Pro und brauchen eine Apple Watch oder einen Bluetooth-Herzfrequenzsensor."
+    },
+    {
+      "q": "Was bringt Pro zusätzlich?",
+      "a": "Pro ergänzt Abschnittsanalyse, Trends und Bestleistungen, Herzfrequenzzonen als Ziel, eine Trainingsbibliothek mit Ordnern, verschachtelte Wiederholungen, Generatoren für Leiter, Pyramide und Yasso 800 sowie sekundengenauen CSV-Export."
+    },
+    {
+      "q": "Wo werden meine Laufdaten gespeichert?",
+      "a": "Deine Läufe, Strecken und Gesundheitsdaten bleiben auf deinen Geräten. Es gibt kein Konto und keinen Server von uns. Wenn du es erlaubst, werden Trainings in Apple Health gespeichert."
+    }
+  ],
+  "card": {
+    "tagline": "Intervall-Timer und Pace-Coach mit Hinweisen per Stimme, Ton und Handgelenk",
+    "features": [
+      "Abschnitte nach Zeit oder Distanz mit Zielpace",
+      "Hinweise bei zu schnell und zu langsam auf iPhone und Apple Watch",
+      "Laufbandmodus und Auswertung pro Abschnitt"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "Intervall-Timer fürs Laufen",
+      "h1": "Der beste Intervall-Timer fürs Laufen auf iPhone, Apple Watch und Android.",
+      "sub": "Meldet sich per Stimme, Ton und Tippen am Handgelenk, sobald deine Pace vom Ziel abweicht.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Eine Pace, der du trauen kannst.",
+        "text": "Die Hinweise nutzen eine geglättete Pace statt des sprunghaften GPS-Werts, und den Toleranzbereich wählst du selbst."
+      },
+      {
+        "title": "Die Richtung hören.",
+        "text": "Zu schnell und zu langsam haben eigene Töne und Vibrationen. Du weißt, was zu tun ist, bevor du eine Zahl liest."
+      },
+      {
+        "title": "Läuft auch bei gesperrtem Bildschirm.",
+        "text": "Sprachansagen senken die Musik kurz ab, und das iPhone bleibt in der Tasche."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Einheiten nach Zeit oder Distanz.",
+        "p": "Gib jedem Abschnitt eine Zielpace oder Zielgeschwindigkeit in km oder Meilen. Sieben Vorlagen sind bereit, vom Lauf-Geh-Einstieg bis zu 400 m und 800 m Wiederholungen.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch oder beides.",
+        "p": "Lauf nur mit dem iPhone, nur mit der Uhr oder mit beiden zusammen. Der Laufbandmodus braucht kein GPS und läuft nach Zeit bei der Geschwindigkeit des Geräts.",
+        "shot": "04"
+      },
+      {
+        "h2": "Sieh, wie jeder Abschnitt lief.",
+        "p": "Nach dem Lauf stellt die Zusammenfassung jeden Abschnitt seinem Ziel gegenüber. Trainings landen in Apple Health, wenn du es erlaubst.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Bereit, jede Pace zu halten?",
+      "p": "Vorlage wählen oder eigene Abschnitte festlegen, iPhone wegstecken und loslaufen."
+    },
+    "closeH2": "Ein Pace-Coach, der sich im richtigen Moment meldet.",
+    "trust": [
+      "Kein Konto",
+      "Kein Server von uns",
+      "Läufe bleiben auf deinen Geräten",
+      "12 Sprachen"
+    ]
+  }
+}

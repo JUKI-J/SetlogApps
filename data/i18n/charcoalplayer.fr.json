@@ -1,0 +1,127 @@
+{
+  "locale": "fr",
+  "title": "Lecteur audio Mac avec boucle A-B et tempo - Charcoal Player",
+  "description": "Lecteur audio Mac pour FLAC, MP3 et M4A avec boucle A-B, vitesse de 0,5x à 3x et séparation en pistes. Sans pub, sans compte, sans collecte de données.",
+  "h1": "Un lecteur audio pour Mac avec boucle A-B, ralenti et pistes séparées",
+  "tagline": "Lisez vos propres fichiers audio, bouclez une phrase, ralentissez-la et séparez le morceau en pistes.",
+  "summary": [
+    "Charcoal Player est un lecteur audio pour Mac qui lit les fichiers et les dossiers que vous avez déjà, dont FLAC, MP3, M4A, WAV et AIFF, et qui ajoute les outils dont une séance de travail a besoin.",
+    "Il s'adresse à ceux qui apprennent la musique à l'oreille, relèvent ou transcrivent un morceau, jouent de leur instrument par-dessus un enregistrement, ou suivent un cours de langue, une conférence ou l'enregistrement d'une réunion phrase par phrase.",
+    "Sa particularité, c'est qu'il sait décomposer un morceau. Un clic suffit pour séparer la voix, la batterie, la basse, la guitare et le piano directement sur votre Mac. Vous gardez seulement la partie à apprendre, ou vous coupez la voix pour obtenir une version instrumentale."
+  ],
+  "overview": [
+    "Si vous cherchez un lecteur audio pour Mac qui lit le FLAC et vos autres fichiers locaux, Charcoal Player s'ouvre sur un écran de lecture avec une grande pochette, les informations du morceau et des paroles qui défilent avec la musique. Vous ajoutez votre dossier de travail une seule fois, et la bibliothèque reste en place après les redémarrages et les mises à jour. Si un dossier devient indisponible, par exemple quand un disque externe est débranché, les morceaux sont signalés sans être supprimés, et un clic suffit pour les retrouver.",
+    "Pour ralentir une musique sur Mac ou répéter un passage en boucle A-B, Charcoal Player place le point A avec une touche, le point B avec une deuxième et active la boucle avec une troisième. La boucle est précise à l'échantillon près et ne dérive pas à la jonction. Avec une vitesse réglable de 0,5x à 3,0x qui conserve la hauteur du son, un passage difficile devient quelque chose que l'on travaille lentement, sans effet de voix de dessin animé.",
+    "Tout reste sur votre Mac. Il n'y a ni publicité, ni compte, ni collecte de données, et votre musique ne quitte jamais l'ordinateur. La lecture, la vitesse, la boucle A-B et la séparation des sources se font entièrement sur la machine devant vous."
+  ],
+  "features": [
+    {
+      "h": "Boucle A-B et ralenti en conservant la hauteur",
+      "p": "Une touche pour A, une pour B et une pour activer la boucle. La répétition est précise à l'échantillon près, sans décalage à la jonction. La vitesse de lecture va de 0,5x à 3,0x tout en conservant la hauteur du son, ce qui convient au relevé, à la dictée, à l'éducation de l'oreille et au travail lent de tout ce que vous apprenez à l'oreille. Des sauts personnalisés de 0,5 à 30 secondes vous aident à avancer dans un enregistrement."
+    },
+    {
+      "h": "Séparer un morceau en pistes",
+      "p": "Séparez n'importe quel morceau en voix, batterie, basse, guitare et piano, jusqu'à six pistes, avec un traitement entièrement réalisé sur votre Mac. Gardez seulement la voix pour apprendre une mélodie, ou coupez-la pour obtenir un accompagnement. La séparation démarre quand vous la demandez pour un morceau, les morceaux déjà séparés s'ouvrent immédiatement, et un démarrage automatique peut être activé dans les réglages, à la rubrique séparation des sources."
+    },
+    {
+      "h": "Une piste par intervenant pour les réunions et les cours",
+      "p": "Les enregistrements de réunions, d'entretiens et de cours reçoivent une piste par intervenant. Vous pouvez suivre chaque voix de la salle, la couper ou l'écouter seule."
+    },
+    {
+      "h": "Des paroles issues de vos propres fichiers",
+      "p": "Les paroles proviennent d'un fichier .lrc placé à côté du morceau, des paroles intégrées au fichier ou d'un .txt correspondant. Rien n'est recherché en ligne, et si la synchronisation est décalée, vous ajustez le décalage morceau par morceau sans que le fichier audio soit modifié."
+    },
+    {
+      "h": "Exporter ce que vous avez isolé",
+      "p": "Exportez n'importe quelle combinaison de pistes ou d'intervenants en qualité d'origine ou en MP3, AAC, ALAC, WAV, AIFF ou FLAC. Les listes de lecture, la commande Ouvrir avec du Finder et un mini contrôleur dans la barre des menus avec trois lignes de paroles complètent l'écoute de tous les jours."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/charcoalplayer/en/01.webp", "w": 1000, "h": 625, "alt": "Charcoal Player sur un Mac avec l'écran de lecture, une grande pochette montrant des voiliers au coucher du soleil, une barre latérale avec listes de lecture et dossiers, et des paroles synchronisées qui défilent à côté", "caption": "L'écran de lecture avec pochette et paroles synchronisées."},
+    {"src": "/images/apps/charcoalplayer/en/02.webp", "w": 1000, "h": 625, "alt": "Charcoal Player avec le panneau de séparation des sources ouvert, montrant des pistes en forme d'onde pour la voix, la batterie, la basse, la guitare et le piano, chacune activable", "caption": "Séparez un morceau en pistes et gardez ce qu'il vous faut."},
+    {"src": "/images/apps/charcoalplayer/en/03.webp", "w": 1000, "h": 625, "alt": "Charcoal Player lisant une leçon d'écoute en anglais avec une forme d'onde, une zone de boucle A-B mise en évidence et des boutons de vitesse à partir de 0,5x", "caption": "Bouclez une phrase et ralentissez-la."},
+    {"src": "/images/apps/charcoalplayer/en/04.webp", "w": 1000, "h": 625, "alt": "Charcoal Player affichant l'enregistrement d'une réunion réparti sur trois pistes d'intervenants, chacune avec son propre interrupteur", "caption": "Une piste par intervenant pour les réunions et les cours."}
+  ],
+  "specs": [
+    {"k": "Plateforme", "v": "Mac"},
+    {"k": "Configuration requise", "v": "macOS 15 ou version ultérieure"},
+    {"k": "Lecture", "v": "Fichiers et dossiers audio locaux, dont MP3, M4A, WAV, AIFF et FLAC"},
+    {"k": "Vitesse", "v": "De 0,5x à 3,0x en conservant la hauteur"},
+    {"k": "Boucle A-B", "v": "Précise à l'échantillon, une touche pour A, B et la boucle"},
+    {"k": "Séparation des sources", "v": "Jusqu'à 6 pistes (voix, batterie, basse, guitare, piano et plus) ou pistes d'intervenants, traitées sur votre Mac"},
+    {"k": "Formats d'export", "v": "Qualité d'origine, MP3, AAC, ALAC, WAV, AIFF, FLAC"},
+    {"k": "Confidentialité", "v": "Ni publicité, ni compte, ni collecte de données"},
+    {"k": "Langues", "v": "12"}
+  ],
+  "limits": [
+    "Charcoal Player lit uniquement des fichiers locaux. Il ne lit pas de musique depuis des services en ligne et ne synchronise pas votre bibliothèque entre appareils.",
+    "Il change la vitesse de lecture en conservant la hauteur, mais il ne modifie pas la hauteur elle-même.",
+    "La séparation des sources ne démarre que lorsque vous la demandez pour un morceau, sauf si vous activez le démarrage automatique dans les réglages.",
+    "Les paroles sont lues uniquement dans des fichiers que vous avez déjà, comme un .lrc, des tags intégrés ou un .txt correspondant. Rien n'est recherché en ligne, donc un morceau sans paroles dans le fichier ou à côté n'en affiche pas.",
+    "L'app existe uniquement sur Mac. Il n'y a pas de version pour iPhone ou iPad."
+  ],
+  "faq": [
+    {"q": "Quel lecteur audio pour Mac lit les fichiers FLAC ?", "a": "Charcoal Player lit le FLAC local ainsi que MP3, M4A, WAV, AIFF et d'autres formats courants. Ajoutez un dossier une fois, et la bibliothèque reste en place après les redémarrages et les mises à jour."},
+    {"q": "Comment répéter un passage d'une chanson en boucle sur Mac ?", "a": "Appuyez sur la touche A au début de la phrase et sur la touche B à la fin, puis activez la boucle. La boucle A-B est précise à l'échantillon près et ne dérive pas à la jonction."},
+    {"q": "Peut-on ralentir une musique sur Mac en gardant la même hauteur ?", "a": "Oui. Charcoal Player lit de 0,5x à 3,0x en conservant la hauteur du son, donc le travail au ralenti ne donne pas une voix grave et déformée."},
+    {"q": "Peut-il supprimer la voix d'une chanson pour en faire une version karaoké ?", "a": "Oui. Séparez le morceau en pistes et coupez la voix pour obtenir un accompagnement, ou gardez seulement la voix pour apprendre la mélodie. Jusqu'à six pistes sont traitées sur votre Mac."},
+    {"q": "Faut-il un compte, et ma musique est-elle envoyée quelque part ?", "a": "Non. Il n'y a ni compte, ni publicité, ni collecte de données, et votre musique reste sur votre Mac."},
+    {"q": "Puis-je enregistrer les pistes séparées ?", "a": "Oui. Exportez n'importe quelle combinaison de pistes ou d'intervenants en qualité d'origine ou en MP3, AAC, ALAC, WAV, AIFF ou FLAC. Les morceaux déjà séparés s'ouvrent immédiatement, vous pouvez donc revenir plus tard et exporter un autre mélange."}
+  ],
+  "card": {
+    "tagline": "Lecteur audio pour Mac avec boucle A-B, ralenti et séparation en pistes.",
+    "features": ["Lit FLAC, MP3, M4A et plus", "Boucle A-B, vitesse de 0,5x à 3x", "Sépare les morceaux en pistes"]
+  },
+  "landing": {
+    "hero": {
+      "category": "lecteur audio",
+      "h1": "Le meilleur lecteur audio léger pour Mac.",
+      "sub": "Ralentit votre musique sans toucher à la hauteur et retire la voix pour vous laisser l'accompagnement.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Plus lent. Même hauteur.",
+        "text": "Lisez tout de 0,5x à 3x en conservant la hauteur. Bouclez une phrase avec une touche pour A, une pour B et une pour la boucle."
+      },
+      {
+        "title": "Retirez la voix.",
+        "text": "Un clic sépare une chanson en voix, batterie, basse, guitare et piano sur votre Mac. Coupez la voix et il vous reste l'accompagnement."
+      },
+      {
+        "title": "Vos fichiers, tels quels.",
+        "text": "FLAC, MP3, M4A, WAV et AIFF se lisent directement depuis vos dossiers. Les paroles viennent de vos propres fichiers .lrc ou des tags intégrés."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Des boucles A-B sans dérive.",
+        "p": "Une touche pour A, une pour B, une pour la boucle. La répétition est précise à l'échantillon près, la jonction ne glisse jamais.",
+        "shot": "03"
+      },
+      {
+        "h2": "Gardez la partie que vous apprenez.",
+        "p": "Séparez un morceau en six pistes au plus, avec un traitement entièrement réalisé sur votre Mac. Gardez seulement la voix pour la mélodie, ou exportez votre propre mélange.",
+        "shot": "02"
+      },
+      {
+        "h2": "Réunions et cours, une voix à la fois.",
+        "p": "Les enregistrements de réunions, d'entretiens et de cours reçoivent une piste par intervenant. Suivez, coupez ou isolez chaque voix.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Envie de ralentir une chanson ou d'en retirer la voix ?",
+      "p": "Ouvrez-la dans Charcoal Player et lancez la séparation. Tout se passe sur votre Mac."
+    },
+    "closeH2": "Un lecteur audio conçu pour travailler la musique.",
+    "trust": [
+      "Sans compte",
+      "Sans publicité",
+      "Sans collecte de données",
+      "Traité sur votre Mac"
+    ]
+  }
+}

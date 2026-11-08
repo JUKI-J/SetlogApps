@@ -40,3 +40,7 @@ Temporary Items
 
 # wrangler pages dev 로컬 캐시
 .wrangler/
+
+# 로컬 비밀(클릭 리포트 토큰 등)
+.env
+.env.*

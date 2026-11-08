@@ -1,0 +1,189 @@
+{
+  "locale": "es",
+  "title": "Reproducir MKV en Mac con subtítulos - slplayer para Mac",
+  "description": "Reproduce archivos MKV en tu Mac sin paquetes de códecs. slplayer usa el motor multimedia de macOS, con subtítulos dobles, sincronía de 0,1 s y sin cuenta.",
+  "h1": "Reproduce archivos MKV en tu Mac",
+  "tagline": "Un reproductor de video ligero para MKV, MP4 y MOV, con subtítulos que se ven bien",
+  "summary": [
+    "slplayer es un reproductor de video para Mac que abre archivos MKV, MP4, M4V, MOV y MPEG-TS y los reproduce con el motor multimedia integrado en macOS.",
+    "Está pensado para quien busca cómo reproducir MKV en Mac, para quien ve los subtítulos con caracteres extraños y para quien mira episodios en dos idiomas y quiere elegir la pista de audio.",
+    "No añade paquetes de códecs ni decodificadores propios, así que consume poca batería, y no necesita ninguna cuenta."
+  ],
+  "overview": [
+    "QuickTime Player a menudo no abre los archivos MKV. Esto ocurre porque MKV es un contenedor, una especie de caja, y son los códecs del video y del audio que lleva dentro los que deciden si un Mac puede decodificarlos. slplayer abre el contenedor MKV y entrega las pistas a macOS, de modo que los archivos con video H.264 o HEVC y audio habitual como AAC, AC-3, E-AC-3 o FLAC se reproducen sin instalar nada más.",
+    "Tanto si buscas un reproductor MKV para Mac como si solo quieres un reproductor de video para Mac que no resulte pesado, el uso es sencillo. Arrastra un archivo a la ventana, ábrelo desde el Finder o suelta varios archivos a la vez para crear una cola. Los subtítulos SRT, VTT y SMI se cargan junto al video, pueden mostrarse dos pistas a la vez y eliges qué pista de audio escuchas. Todo se ejecuta en tu Mac y la app no hace por su cuenta ninguna conexión de red."
+  ],
+  "features": [
+    {
+      "h": "MKV y otros contenedores, sin paquete de códecs",
+      "p": "MKV, MP4, M4V, MOV y MPEG-TS se abren directamente. Admite H.264 y HEVC, incluidos 10 bits y HDR10, además de AAC, AC-3, E-AC-3 y FLAC. El HDR, la imagen dentro de imagen y la eficiencia energética los aporta el propio macOS."
+    },
+    {
+      "h": "Subtítulos SRT, VTT y SMI",
+      "p": "Los archivos de subtítulos se cargan junto al video. Los SMI coreanos guardados en EUC-KR se detectan automáticamente, así que no se convierten en símbolos ilegibles. Puedes mostrar dos pistas de subtítulos a la vez, desplazar la sincronía en pasos de 0,1 segundos, y el ajuste se recuerda para cada archivo."
+    },
+    {
+      "h": "Pistas de audio y velocidad de reproducción",
+      "p": "Elige la pista de audio que quieras en los episodios que traen dos idiomas. La velocidad de reproducción va de 0,5x a 2,0x en pasos de 0,1, y cada acción tiene su atajo de teclado."
+    },
+    {
+      "h": "Listas de reproducción y continuar viendo",
+      "p": "Suelta varios archivos para crear una cola, organiza las listas de reproducción en carpetas, vuelve a abrir los elementos recientes y sigue desde donde lo dejaste."
+    },
+    {
+      "h": "Pro, para sacarle más partido",
+      "p": "La reproducción del día a día funciona sin Pro, desde el MKV y los subtítulos hasta la velocidad y las listas. slplayer Pro añade pantalla dividida con hasta cuatro videos, imagen dentro de imagen, un minirreproductor en la barra de menús, bucle A-B y temporizador de apagado."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/slplayer/en/01.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Ventana de slplayer reproduciendo una película MKV con una línea de subtítulos en inglés y una barra de controles, sobre fondo oscuro con el titular «MKV and subtitles, just working»",
+      "caption": "MKV y subtítulos se abren sin configurar nada."
+    },
+    {
+      "src": "/images/apps/slplayer/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Pantalla dividida de slplayer con cuatro videos en una cuadrícula de dos por dos y un solo juego de controles debajo",
+      "caption": "La pantalla dividida reproduce hasta cuatro videos a la vez (Pro)."
+    },
+    {
+      "src": "/images/apps/slplayer/en/06.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Ajustes de estilo de subtítulos de slplayer con estilos predefinidos y una vista previa en vivo del texto",
+      "caption": "Estilos de subtítulos predefinidos con vista previa en vivo."
+    },
+    {
+      "src": "/images/apps/slplayer/en/07.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Lista de recientes de slplayer con carpetas de listas de reproducción y videos abiertos hace poco",
+      "caption": "Recientes y listas de reproducción para seguir viendo."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisitos",
+      "v": "Mac con macOS 14 o posterior"
+    },
+    {
+      "k": "Contenedores",
+      "v": "MKV, MP4, M4V, MOV, MPEG-TS"
+    },
+    {
+      "k": "Video y audio",
+      "v": "H.264, HEVC (10 bits, HDR10), AAC, AC-3, E-AC-3, FLAC"
+    },
+    {
+      "k": "Subtítulos",
+      "v": "SRT, VTT, SMI (EUC-KR detectado automáticamente)"
+    },
+    {
+      "k": "Velocidad de reproducción",
+      "v": "De 0,5x a 2,0x en pasos de 0,1"
+    },
+    {
+      "k": "Idiomas de la app",
+      "v": "12, se cambian dentro de la app"
+    },
+    {
+      "k": "Privacidad",
+      "v": "Sin cuenta, sin analíticas, sin anuncios; la app no hace por su cuenta ninguna conexión de red"
+    },
+    {
+      "k": "Pro (opcional)",
+      "v": "Pantalla dividida, imagen dentro de imagen, bucle A-B"
+    }
+  ],
+  "limits": [
+    "slplayer reproduce solo lo que tu Mac admite. Si macOS no puede decodificar el audio de un archivo, el video se reproduce sin sonido y aparece un aviso al empezar.",
+    "Los subtítulos en forma de imagen, como los de los discos, no se muestran. Los archivos que no se pueden abrir muestran un error.",
+    "Los formatos de subtítulos documentados son SRT, VTT y SMI; otros formatos no están garantizados.",
+    "Es una app solo para Mac. La pantalla dividida, la imagen dentro de imagen, el bucle A-B y otros extras forman parte de slplayer Pro, que es opcional."
+  ],
+  "faq": [
+    {
+      "q": "¿Cómo reproduzco archivos MKV en un Mac?",
+      "a": "QuickTime Player a menudo no puede abrir un MKV porque es solo un contenedor. Abre el archivo en slplayer arrastrándolo a la ventana o eligiéndolo en el Finder. Si el video y el audio que lleva dentro usan códecs que macOS admite, como H.264, HEVC, AAC o AC-3, se reproduce."
+    },
+    {
+      "q": "¿Por qué un MKV se reproduce sin sonido?",
+      "a": "El códec de audio del archivo no es uno que tu Mac pueda decodificar. En ese caso slplayer reproduce el video y muestra un aviso al empezar, porque solo reproduce formatos que macOS admite."
+    },
+    {
+      "q": "¿slplayer admite subtítulos ASS o en imagen?",
+      "a": "Los formatos de subtítulos documentados son SRT, VTT y SMI. Los subtítulos en forma de imagen no se muestran y otros formatos no están garantizados."
+    },
+    {
+      "q": "¿Necesito una cuenta?",
+      "a": "No hace falta ninguna cuenta, y la app no se conecta a la red por sí sola. Abrir archivos, el MKV, los subtítulos, la sincronía, la velocidad y las listas de reproducción funcionan sin Pro."
+    },
+    {
+      "q": "¿Qué añade slplayer Pro?",
+      "a": "slplayer Pro es opcional. Añade pantalla dividida con hasta cuatro videos, imagen dentro de imagen, un minirreproductor en la barra de menús, bucle A-B y temporizador de apagado. La reproducción básica funciona igual sin él."
+    }
+  ],
+  "card": {
+    "tagline": "Reproduce MKV en tu Mac con subtítulos, usando el motor multimedia de macOS",
+    "features": [
+      "MKV, MP4, MOV, sin paquete de códecs",
+      "SRT, VTT, SMI y subtítulos dobles",
+      "Sin cuenta, sin anuncios"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "reproductor de video",
+      "h1": "El mejor reproductor de video ligero para Mac.",
+      "sub": "Abre MKV y muestra bien tus subtítulos, con el motor multimedia integrado en macOS.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Abre MKV.",
+        "text": "MKV, MP4, M4V, MOV y MPEG-TS se abren directamente. No hay que instalar ningún paquete de códecs."
+      },
+      {
+        "title": "Subtítulos que se leen.",
+        "text": "Los subtítulos SRT, VTT y SMI se cargan con el video. Los SMI coreanos guardados en EUC-KR se detectan automáticamente y nunca salen ilegibles."
+      },
+      {
+        "title": "Ligero con la batería.",
+        "text": "slplayer no incluye decodificadores propios. macOS se encarga de la reproducción, así que gasta poca batería."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Subtítulos dobles y sincronía, en un solo sitio.",
+        "p": "Muestra dos líneas de subtítulos a la vez, ajusta la sincronía en pasos de 0,1 segundos y elige el estilo con una vista previa en vivo. Cada archivo conserva su desfase.",
+        "shot": "06"
+      },
+      {
+        "h2": "Cuatro videos. Una sola barra de controles.",
+        "p": "La pantalla dividida reproduce hasta cuatro videos uno junto a otro. También tienes imagen dentro de imagen y un minirreproductor en la barra de menús.",
+        "shot": "02"
+      },
+      {
+        "h2": "Sigue donde lo dejaste.",
+        "p": "Suelta varios archivos para crear una cola y guarda las listas en carpetas. Cada video continúa desde donde lo paraste.",
+        "shot": "07"
+      }
+    ],
+    "midCta": {
+      "h2": "¿Listo para abrir ese MKV?",
+      "p": "Arrastra el archivo a slplayer y dale a reproducir. No hay nada que configurar antes."
+    },
+    "closeH2": "Un reproductor de video que no se interpone.",
+    "trust": [
+      "Sin cuenta",
+      "Sin anuncios",
+      "Sin analíticas"
+    ]
+  }
+}

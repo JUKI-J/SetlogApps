@@ -1,0 +1,207 @@
+{
+  "locale": "tr",
+  "title": "3D koşu videosu ve koşu tekrarı uygulaması - RunVue",
+  "description": "Kaydettiğiniz bir koşuyu, koştuğunuz sokaklarda ilerleyen kısa bir 3D tekrar videosuna dönüştürün. Tempo ve nabız ekranda, video iPhone'unuzda hazırlanır.",
+  "h1": "3D koşu videosu: koşunuz sokak seviyesinden yeniden",
+  "tagline": "Koştuğunuz yolun hemen üzerinden takip eden bir kamerayla 3D koşu tekrarı.",
+  "summary": [
+    "RunVue, zaten kaydettiğiniz bir koşuyu kısa, dikey bir 3D tekrar videosuna dönüştürür. Bir kamera, gerçekten koştuğunuz sokaklarda sizi yolun hemen üzerinden takip eder.",
+    "Koşularını Apple Watch ya da bir koşu uygulamasıyla kaydeden ve bir rotadan, bir yarıştan ya da aylık özetten harita ekran görüntüsü yerine akılda kalan bir video saklamak isteyen koşucular içindir.",
+    "Onu farklı kılan: uydu görünümünün yerine sokak seviyesinde bir takip kamerası, tempo ve nabız gösteren bir HUD ve tamamen iPhone'unuzda hazırlanan bir video."
+  ],
+  "overview": [
+    "3D koşu videosu ya da koşu tekrarı aradığınızda genellikle koşuyu kaydeden ya da haritaya düz bir çizgi çizen uygulamalar çıkar. RunVue koşudan sonra devreye girer. Apple Sağlık (Apple Health) uygulamasından bir koşu antrenmanını, yani Apple Watch'unuzun ya da koşu uygulamanızın oraya kaydettiği rotayı içe aktarın ya da rotaları Sağlık'a kaydetmeyen bir cihazdan GPX veya FIT dosyası getirin. RunVue rotanız boyunca uzanan sokakların ve binaların 3D sahnesini kurar, GPS izinizi yola oturtur ve tekrarı iPhone'unuzda oluşturur.",
+    "Sonuç, Fotoğraflar'a kaydedebileceğiniz ya da paylaşabileceğiniz 9:16 bir videodur. Üçüncü şahıs takip kamerası koşunuzu izler, HUD tempo ve nabzı gösterir, mini harita ve bölüm kartları ara sürelerinizi gösterir, sondaki havadan geçiş de tüm rotayı gösterir. Harita temasını ve müziği kaydetmeden önce seçersiniz ve önce bir önizleme izleyebilirsiniz.",
+    "Tek bir koşunun ötesinde, aynı parkurda kendi geçmiş koşunuzla yarışabilir, koştuğunuz günün ışığını ve havasını yeniden canlandırabilir, en hızlı bölümünüzü uygulamaya ağır çekimde gösterebilir ve tüm koşularınızı tek bir şehir haritasında üst üste koyarak aylık özet videoları hazırlayabilirsiniz."
+  ],
+  "features": [
+    {
+      "h": "Sokaktan görülen bir 3D koşu tekrarı",
+      "p": "Kamera, rotanızdan kurulan 3D sokaklar ve binalar arasında yolun hemen üzerinden ilerler, bu yüzden video o yolu yeniden koşuyormuş gibi hissettirir. Video, geçtiğiniz sokaklar ve yerlerle birlikte tüm parkurun havadan görünümüyle biter."
+    },
+    {
+      "h": "Tempo ve nabız HUD'u, mini harita ve bölüm kartları",
+      "p": "Tempo ve nabız ekranda görünür. Yanında bir mini harita, ara süreleri gösteren bölüm kartları ve ekranın altında ve kapanışta tempo ile nabız eğrisi yer alır."
+    },
+    {
+      "h": "O günün gökyüzü, hayalet yarış ve anlar",
+      "p": "O günün gökyüzü, koştuğunuz saatin ışığını ve havasını yeniden oluşturur. Hayalet yarış, aynı parkurdaki geçmiş bir koşuyu yanınıza koyar. Anlar ise en hızlı bölümünüzü, en büyük yokuşu ve son sprinti ağır çekimde gösterir."
+    },
+    {
+      "h": "Şehrim ve aylık özet videoları",
+      "p": "Şehrim, koşularınızı tek bir şehir haritasında üst üste gösterir ve Bu ay ile Geçen ay için özet videoları hazırlar. Pro, Yıl ve Tüm zamanlar özetlerini ekler."
+    },
+    {
+      "h": "Dikey video, harita temaları ve müzik",
+      "p": "9:16 bir videoyu Fotoğraflar'a aktarın. Üç harita teması ve beş müzik parçası dahildir, kaydetmeden önce önizleme yapılır. Her koşu 1x ve Özet hızında hazırlanabilir."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/runvue/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Gece RunVue tekrar karesi: yolun hemen üzerindeki bir kameradan görülen 3D şehir, mavi koşucu işareti, mil başına 7:40 tempo, mini harita ve altta tempo ile nabız eğrisi gösteren HUD",
+      "caption": "Koşunuzu o günün gökyüzü altında yeniden yaşayın"
+    },
+    {
+      "src": "/images/apps/runvue/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Mevcut koşucunun yanında geçmiş bir koşunun hayalet işaretini gösteren tekrar karesi, mil başına 8:05 tempo",
+      "caption": "Geçmişteki kendinizle yan yana koşun"
+    },
+    {
+      "src": "/images/apps/runvue/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "En hızlı bölümü belirten bir kart ve mil başına 8:21 gösteren HUD bulunan tekrar karesi",
+      "caption": "En hızlı bölümünüz, ağır çekimde"
+    },
+    {
+      "src": "/images/apps/runvue/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Üzerinde çok sayıda parlayan mavi koşu rotası üst üste binmiş koyu bir şehir haritası, başlık Şehrim",
+      "caption": "Koşularınız şehri aydınlatır"
+    },
+    {
+      "src": "/images/apps/runvue/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Video oluşturmadan önceki RunVue ayarlar ekranı: kamera, harita teması, o günün gökyüzü, geçmiş bir koşuyla yarış ve müzik seçenekleri ile önizleme oluşturma düğmesi",
+      "caption": "Oluşturmadan önce seçin"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Platformlar",
+      "v": "iPhone ve Android (Google Play'de)"
+    },
+    {
+      "k": "Gereksinimler",
+      "v": "iOS 17 veya üstü; GPS rotalı Apple Sağlık antrenmanları ya da GPX veya FIT dosyası"
+    },
+    {
+      "k": "Giriş",
+      "v": "Apple Sağlık'tan koşu antrenmanları; GPX veya FIT içe aktarma"
+    },
+    {
+      "k": "Çıktı",
+      "v": "Fotoğraflar'a kaydedilen ya da paylaşılan dikey 9:16 video"
+    },
+    {
+      "k": "Hızlar",
+      "v": "1x ve Özet; Pro ile 2x'ten 60x'e"
+    },
+    {
+      "k": "Kameralar",
+      "v": "Takip ve Navigasyon kamerası; Pro ile Sinematik, Sakin, Eğik ve Havadan ön ayarları"
+    },
+    {
+      "k": "Haritalar",
+      "v": "OpenStreetMap verileri, her videonun kapanış jeneriğinde belirtilir; harita karoları geniş bölgeler hâlinde indirilir"
+    },
+    {
+      "k": "Diller",
+      "v": "12 dil"
+    },
+    {
+      "k": "İşleme",
+      "v": "Cihazda; GPS rotası, kesin konum ve sağlık verileri hiçbir sunucuya gönderilmez"
+    }
+  ],
+  "limits": [
+    "RunVue koşu kaydetmez. Yalnızca Apple Sağlık'ta kayıtlı olan ya da GPX veya FIT olarak içe aktarılan koşuları videoya dönüştürür. Canlı bir izleyici ya da antrenör değildir. GPS rotası olmayan koşu bandı ve kapalı alan antrenmanlarında takip edilecek bir yol yoktur.",
+    "Video, rotanın tamamını başlangıçtan bitişe kadar gösterir ve uygulamada bir bölümü gizleme özelliği yoktur. Evden başlayan bir koşu evinizin yerini gösterebilir. Kiminle paylaşacağınızı dikkatle seçin.",
+    "Kaydedilen videolarda küçük bir RunVue filigranı bulunur; filigransız kaydetme Pro'ya dahildir. Kapanıştaki OpenStreetMap ibaresi kapatılamaz.",
+    "Bina yüksekliği verisi olmayan yerlerde uygulama ortalama bir yükseklik çizer, bu yüzden yüksek binalar arasındaki ya da tünellerden geçen rotalar kusurlu görünebilir. 3D işleme iPhone'unuzda yapılır, eski cihazlarda daha uzun sürer.",
+    "Bir videoyu kaydettikten sonra reklam gösterilebilir. 1x üzerindeki hızlar, ek kamera ön ayarları, kamera yüksekliği ve yakınlaştırma, herhangi bir geçmiş koşuyla yarış ve Yıl ile Tüm zamanlar özetleri Pro'ya dahildir."
+  ],
+  "faq": [
+    {
+      "q": "Koşumdan nasıl tekrar videosu yaparım?",
+      "a": "RunVue'yu açın, Apple Sağlık'tan bir koşu antrenmanı seçin ya da bir GPX veya FIT dosyası içe aktarın, kamerayı, harita temasını, gökyüzünü ve müziği seçin, ardından bir önizleme oluşturup videoyu Fotoğraflar'a kaydedin. Ayarlar ekranı, önizlemenin yaklaşık 15 saniye sürdüğünü belirtir."
+    },
+    {
+      "q": "RunVue koşumu kaydeder mi?",
+      "a": "Hayır. Apple Sağlık'ta zaten kayıtlı olan koşularla ya da bir GPX veya FIT dosyasıyla çalışır. Kayıt için Apple Watch'unuzu ya da koşu uygulamanızı kullanın."
+    },
+    {
+      "q": "3D koşu tekrarı nedir?",
+      "a": "Düz bir harita çizgisinin yerine, bir kameranın kaydedilmiş rotanızı çevresindeki sokakların ve binaların 3D modeli içinden takip ettiği, tempo ve nabız için HUD bulunan kısa bir videodur."
+    },
+    {
+      "q": "Hangi özellikler Pro'ya dahil?",
+      "a": "Pro; 2x'ten 60x'e hızları, Sinematik, Sakin, Eğik ve Havadan kamera ön ayarlarını, kamera yüksekliğini ve yakınlaştırmayı, herhangi bir geçmiş koşuyla yarışı, Yıl ile Tüm zamanlar özetlerini ve videoları filigransız kaydetmeyi ekler."
+    },
+    {
+      "q": "Evimin konumunu gizleyebilir miyim?",
+      "a": "Video rotanın tamamını gösterir ve uygulama bir bölümü gizleyemez. Bu yüzden paylaşmadan önce videoyu kimin göreceğine karar verin."
+    },
+    {
+      "q": "Video iPhone'umdan dışarı çıkar mı?",
+      "a": "Video iPhone'unuzda oluşturulur. GPS rotanız, kesin konumunuz ve Sağlık verileriniz, kendi paylaştığınız videolar dışında, hiçbir sunucuya ya da reklam veya ölçüm SDK'larına gönderilmez. Haritalar yalnızca kaba bölgesel karolar hâlinde indirilir."
+    }
+  ],
+  "card": {
+    "tagline": "Kaydedilmiş koşuları rotanız boyunca 3D tekrar videolarına dönüştürür",
+    "features": [
+      "Tempo ve nabız HUD'lu, sokak seviyesinde 3D tekrar",
+      "Apple Sağlık, GPX veya FIT'ten içe aktarma",
+      "Hayalet yarış, o günün gökyüzü ve Şehrim özetleri"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "koşu tekrarı uygulaması",
+      "h1": "iPhone ve Android için en iyi 3D koşu tekrarı uygulaması.",
+      "sub": "Kaydettiğiniz bir koşuyu, koştuğunuz sokakların hemen üzerinden takip eden bir kamerayla kısa bir 3D videoya dönüştürür.",
+      "shots": [
+        "01",
+        "04"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Sokaktan bakış.",
+        "text": "Kamera, rotanızdan kurulan 3D binalar arasında yolun hemen üzerinde kalır. Yeniden koşuyormuş gibi hissettirir."
+      },
+      {
+        "title": "Tempo ve nabız ekranda.",
+        "text": "HUD tempo ve nabzı gösterir, yanında bir mini harita ve her bölüm için bir kart vardır."
+      },
+      {
+        "title": "Koştuğunuz günün ışığı.",
+        "text": "O günün gökyüzü, dışarıda olduğunuz saatin ışığını ve havasını geri getirir."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Aynı parkurda geçmiş bir koşuyla yarışın.",
+        "p": "Hayalet yarış, aynı parkurdaki önceki bir koşuyu yanınıza koyar. Nerede zaman kazandığınızı ve kaybettiğinizi görürsünüz.",
+        "shot": "02"
+      },
+      {
+        "h2": "Yokuş ve son sprint, yeniden.",
+        "p": "Anlar, en hareketli bölümünüzü, en büyük yokuşu ve son sprinti bulur ve ağır çekimde oynatır.",
+        "shot": "03"
+      },
+      {
+        "h2": "Üç harita teması, beş parça, tek bir dikey video.",
+        "p": "Kaydetmeden önce harita temalarını ve müziği önizleyin, sonra 9:16 videoyu Fotoğraflar'a aktarın.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Son koşunuzu yeniden görmeye hazır mısınız?",
+      "p": "Kaydettiğiniz bir koşuyu, bir kamerayı ve bir temayı seçin, sonra videoyu kaydedin."
+    },
+    "closeH2": "Yeniden izlemeye değer bir koşu.",
+    "trust": [
+      "Dikey 9:16 video",
+      "OpenStreetMap verileri",
+      "12 dil"
+    ]
+  }
+}

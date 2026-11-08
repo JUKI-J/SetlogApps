@@ -1,0 +1,184 @@
+{
+  "locale": "fr",
+  "title": "Visionneuse d'images légère pour Mac - Belvue",
+  "description": "Ouvrez une image et parcourez tout le dossier avec les flèches du clavier. Belvue est une visionneuse d'images légère pour Mac, sans publicité ni pistage.",
+  "h1": "Une visionneuse d'images légère pour Mac",
+  "tagline": "Ouvrez une image, parcourez tout le dossier avec les flèches",
+  "summary": [
+    "Belvue est une visionneuse d'images légère pour Mac. Ouvrez une seule image et le reste du dossier se parcourt aussitôt avec les touches fléchées, dans le même ordre que le Finder.",
+    "Elle s'adresse à tous ceux qui cherchent une visionneuse d'images Mac pour passer en revue des dossiers de photos, de captures d'écran ou de numérisations, même lorsqu'ils contiennent des milliers d'images.",
+    "Vos images et vos chemins de fichiers restent sur votre Mac, sans publicité ni pistage."
+  ],
+  "overview": [
+    "Aperçu et Coup d'œil suffisent pour une image, mais pour parcourir un dossier entier il faut souvent ouvrir les images une par une. Dans Belvue, vous ouvrez une image et la suivante s'affiche dès que vous appuyez sur une flèche. Les dossiers de plusieurs milliers d'images suivent le même ordre naturel que le Finder, et la liste suit les changements du dossier.",
+    "Au quotidien, ce sont les petits outils qui comptent dans une visionneuse d'images pour Mac. Belvue offre une bande de vignettes, le zoom, le déplacement dans l'image, le plein écran et un panneau d'informations avec les données EXIF. En parcourant, vous retenez des images avec la touche P, puis vous agissez sur toute la sélection en une fois. Pour copier l'image affichée, un simple ⌘C suffit."
+  ],
+  "features": [
+    {
+      "h": "Ouvrir une image, parcourir tout le dossier",
+      "p": "Ouvrez une image et parcourez son dossier avec les touches fléchées. L'image suivante s'affiche aussitôt et l'ordre est celui du Finder, y compris dans les dossiers de milliers d'images."
+    },
+    {
+      "h": "Vignettes, zoom et plein écran",
+      "p": "La bande de vignettes, le zoom, le déplacement et le plein écran sont intégrés, avec un panneau d'informations qui affiche les données EXIF."
+    },
+    {
+      "h": "Sélectionner en parcourant",
+      "p": "Appuyez sur P pour retenir des images pendant que vous les parcourez. Avec Belvue Pro, vous déplacez, copiez ou envoyez à la Corbeille toute la sélection en une fois, avec annulation possible, et l'original ne change jamais lors d'une copie."
+    },
+    {
+      "h": "Convertir en JPEG, PNG ou HEIC",
+      "p": "Belvue Pro convertit les images sélectionnées en JPEG, PNG ou HEIC et crée un nouveau fichier, si bien que l'original reste intact."
+    },
+    {
+      "h": "Confidentialité dès la conception",
+      "p": "Les images et les chemins de fichiers ne quittent jamais votre Mac. Belvue n'affiche aucune publicité, ne fait aucun pistage, et sa seule connexion réseau sert à Belvue Pro via l'App Store."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Fenêtre de Belvue affichant un coucher de soleil sur les montagnes, avec une bande de vignettes en bas et le titre anglais « Open one. Browse them all. »",
+      "caption": "Ouvrez une image, tout son dossier est prêt."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue affichant une image abstraite de bokeh bleu tirée d'un dossier de dix mille images, avec une bande de vignettes",
+      "caption": "Des dossiers de milliers d'images, dans l'ordre du Finder."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue en plein écran affichant un coucher de soleil sur les montagnes, avec une bande de vignettes en bas",
+      "caption": "Plein écran avec zoom et bande de vignettes."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue avec une boîte de dialogue qui confirme l'envoi de cinq images sélectionnées à la Corbeille, au-dessus de l'image affichée",
+      "caption": "Sélectionnez en parcourant, puis agissez sur toute la sélection (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Prérequis",
+      "v": "Mac avec macOS 15 ou version ultérieure"
+    },
+    {
+      "k": "Formats d'image",
+      "v": "JPEG, PNG, HEIC, RAW et autres"
+    },
+    {
+      "k": "Conversion vers",
+      "v": "JPEG, PNG, HEIC"
+    },
+    {
+      "k": "Tri",
+      "v": "Ordre naturel, identique au Finder"
+    },
+    {
+      "k": "Extras",
+      "v": "Bande de vignettes, zoom, déplacement, plein écran, panneau EXIF, copie avec ⌘C, dossiers récents"
+    },
+    {
+      "k": "Confidentialité",
+      "v": "Aucune publicité, aucun pistage ; connexion réseau uniquement vers l'App Store"
+    },
+    {
+      "k": "Pro (optionnel)",
+      "v": "Déplacement, copie et envoi à la Corbeille de la sélection en une fois, conversion en JPEG, PNG ou HEIC, partage, Ouvrir avec, fonds supplémentaires"
+    }
+  ],
+  "limits": [
+    "À cause du bac à sable du Mac App Store, macOS ne donne à Belvue accès qu'à l'image que vous ouvrez. Pour parcourir le reste du dossier, Belvue vous demande d'autoriser ce dossier une seule fois. Si vous refusez, l'image ouverte s'affiche quand même, mais vous ne pouvez pas parcourir les autres images du dossier.",
+    "Le déplacement, la copie et l'envoi à la Corbeille en lot, la conversion, le partage, Ouvrir avec et les fonds supplémentaires font partie de Belvue Pro. L'affichage, le parcours et la sélection fonctionnent sans Pro.",
+    "Belvue sert à regarder des images. Elle ne gère pas de photothèque et ne modifie pas vos images.",
+    "Belvue existe uniquement sur Mac."
+  ],
+  "faq": [
+    {
+      "q": "Quelle visionneuse d'images Mac permet de parcourir tout un dossier ?",
+      "a": "Belvue est une visionneuse d'images légère pour Mac. Vous ouvrez une image et parcourez le reste du dossier avec les touches fléchées, dans le même ordre que le Finder, même avec des milliers d'images."
+    },
+    {
+      "q": "Pourquoi Belvue me demande-t-elle d'autoriser un dossier ?",
+      "a": "Le bac à sable du Mac App Store ne laisse une app lire que le fichier que vous avez ouvert. Belvue demande une seule fois l'accès à ce dossier pour afficher les autres images. Si vous refusez, l'image ouverte reste affichée."
+    },
+    {
+      "q": "Quels formats d'image Belvue ouvre-t-elle ?",
+      "a": "JPEG, PNG, HEIC, RAW et d'autres formats."
+    },
+    {
+      "q": "Qu'apporte Belvue Pro ?",
+      "a": "L'affichage, le parcours et la sélection fonctionnent sans Pro. Belvue Pro est optionnel et ajoute le déplacement, la copie et l'envoi à la Corbeille de toute la sélection, la conversion en JPEG, PNG ou HEIC, le partage, Ouvrir avec et des fonds supplémentaires."
+    },
+    {
+      "q": "Belvue envoie-t-elle mes images quelque part ?",
+      "a": "Non. Les images et les chemins de fichiers ne quittent jamais votre Mac. Belvue n'affiche aucune publicité, ne fait aucun pistage, et sa seule connexion réseau sert à Belvue Pro via l'App Store."
+    }
+  ],
+  "card": {
+    "tagline": "Une visionneuse d'images Mac légère. Ouvrez une image, parcourez tout le dossier",
+    "features": [
+      "Flèches dans l'ordre du Finder",
+      "Vignettes, zoom, EXIF",
+      "Sans publicité ni pistage"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "visionneuse d'images",
+      "h1": "La meilleure visionneuse d'images légère pour Mac.",
+      "sub": "Ouvrez une image, puis parcourez tout le dossier avec les touches fléchées.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Le dossier, flèche après flèche.",
+        "text": "Les touches fléchées passent par chaque image voisine de celle que vous avez ouverte. La suivante s'affiche aussitôt."
+      },
+      {
+        "title": "Voir de plus près.",
+        "text": "Bande de vignettes, zoom, déplacement et plein écran sont intégrés, avec un panneau d'informations pour les données EXIF."
+      },
+      {
+        "title": "Tout reste sur votre Mac.",
+        "text": "Les images et les chemins de fichiers ne quittent jamais votre Mac. Belvue n'a ni publicité ni pistage."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Chaque image du dossier, à une touche.",
+        "p": "Ouvrez une image et le reste de son dossier est prêt à parcourir. L'ordre est celui du Finder, même dans les dossiers de milliers d'images.",
+        "shot": "02"
+      },
+      {
+        "h2": "Zoomez, déplacez-vous, passez en plein écran.",
+        "p": "Zoom, déplacement et plein écran sont intégrés, avec la bande de vignettes en bas. Le panneau d'informations affiche les données EXIF.",
+        "shot": "04"
+      },
+      {
+        "h2": "Appuyez sur P pour la garder.",
+        "p": "Retenez des images avec P pendant que vous parcourez. Ensuite, déplacez, copiez ou envoyez toute la sélection à la Corbeille en une fois, avec annulation possible.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Prêt à parcourir ce dossier ?",
+      "p": "Ouvrez n'importe quelle image du dossier avec Belvue et autorisez le dossier une fois. Il ne reste plus qu'à appuyer sur les flèches."
+    },
+    "closeH2": "Une visionneuse d'images légère qui laisse vos photos telles quelles.",
+    "trust": [
+      "Sans publicité",
+      "Sans pistage"
+    ]
+  }
+}

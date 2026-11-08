@@ -1,0 +1,95 @@
+{
+  "locale": "zh-hans",
+  "title": "Mac 解压 RAR、7z - Zipda 解压缩工具 Mac 与 iPhone",
+  "description": "在 Mac、iPhone 和 iPad 上解压 RAR、7z、ZIP 和 TAR 文件。解压前先浏览和预览内容，支持带密码的 ZIP、分卷压缩包和超过 4 GB 的大文件。无广告，无需账号。",
+  "h1": "在 Mac 和 iPhone 上打开 RAR、7z 和 ZIP 文件",
+  "tagline": "在设备上浏览、预览并解压压缩包，文件不会被上传。",
+  "summary": [
+    "Zipda 是一款适用于 Mac、iPhone 和 iPad 的轻量压缩工具。它可以打开、浏览和预览 ZIP、RAR、7z 和 TAR 压缩包，ZIP 和 TAR 一步即可解压。",
+    "如果你经常收到 Windows 用户或旧工具做出的压缩包，比如邮件里的 RAR 附件、网上下载的 7z、带密码的 ZIP，或者体积很大、拆成多卷的压缩包，Zipda 就是为你准备的。",
+    "无论是在 Mac 上解压 RAR，还是在 iPhone 上解压 zip，都可以先看看压缩包里有什么，再只取出需要的那个文件，或者把全部内容解压到你选择的文件夹。大文件、分卷和损坏的压缩包也都在设备上处理。"
+  ],
+  "overview": [
+    "在 Mac 上，普通的 ZIP 文件双击就能用系统自带的归档实用工具解压。麻烦在于其他情况，比如从下载站拿到的 RAR、同事发来的 7z、超过 4 GB 并拆成好几卷的 ZIP，或者下载到一半就中断的文件。Zipda 正是为这些情况而做的。你可以先打开压缩包，看看里面有什么、预览内容，再决定解压哪些文件。",
+    "所有处理都在你自己的设备上完成。没有账号、没有分析工具，也没有广告 SDK，App 本身不会发出任何网络请求，所以解压的文件不会离开你的 Mac 或 iPhone。解压时，Zipda 把大型压缩包以流式方式写入存储，几 GB 的 ZIP64 文件和包含数万个条目的压缩包也能顺利处理。",
+    "打开、浏览和预览任何压缩包，以及日常的 ZIP 和 TAR 解压，都不需要 Pro。RAR、7z、ALZ 和 LZH 的解压，以及分卷压缩包和带密码压缩包的解压，都包含在可选的 Zipda Pro 中，在 iPhone、iPad 和 Mac 上功能相同。"
+  ],
+  "features": [
+    {
+      "h": "在 Mac 上解压 RAR 和 7z",
+      "p": "除了 ZIP 和 TAR 系列（.tar、.tar.gz、.tar.bz2、.tar.xz），Zipda 还能解压 RAR、7z、LZH 和 ALZ。你可以先浏览和预览 RAR 或 7z 里的内容，只取出需要的那个文件，也可以把全部内容解压到你选择的文件夹。RAR、7z、ALZ 和 LZH 的解压包含在 Pro 中。"
+    },
+    {
+      "h": "在 iPhone 和 iPad 上解压",
+      "p": "在邮件或“文件”App 里收到压缩包后，通过共享菜单交给 Zipda 就能打开。你可以浏览、预览，再把一个文件或全部内容解压到你选的文件夹。iPhone、iPad 和 Mac 用的是 App Store 上同一个 App，iOS 16.1 及以上即可使用。"
+    },
+    {
+      "h": "带密码的 ZIP 文件",
+      "p": "无论使用较早的 ZipCrypto 方式还是 AES 加密，带密码的 ZIP 都能打开。Zipda 会请你输入密码，密码校验在你的设备上完成。打开带密码的压缩包包含在 Pro 中。"
+    },
+    {
+      "h": "大文件、分卷和损坏的压缩包",
+      "p": "超过 4 GB 的 Zip64 压缩包、拆成多个分卷的压缩包，以及包含数万个条目的压缩包，都以流式方式处理，不会整个载入内存。对于分卷压缩包，只要选中第一卷，Zipda 会自动找到其余部分。如果下载中断或存在坏扇区，Zipda 会解压所有仍可读取的条目，然后列出具体跳过了哪些条目以及原因。点击取消会立即停止，并清理写了一半的文件。"
+    },
+    {
+      "h": "在 Mac 和 iPhone 上创建 ZIP",
+      "p": "选择文件、照片或视频，就能压缩成 ZIP，在 iPhone 上也可以直接从共享菜单操作。不带密码的 ZIP 和 TAR 随时可以创建，AES-256 加密 ZIP、7z、带密码压缩包和分卷压缩包的创建包含在 Pro 中。"
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/zipda/en/01.webp", "w": 1000, "h": 625, "alt": "Mac 上的 Zipda 正在显示 Shared_Photos_2026.zip 的内容，下方有全部解压按钮", "caption": "解压前先浏览压缩包内容。"},
+    {"src": "/images/apps/zipda/en/02.webp", "w": 1000, "h": 625, "alt": "Zipda 为 Finance_Q2_Report.zip 弹出的密码输入框，带有隐藏的密码栏以及取消和打开按钮", "caption": "带密码的 ZIP 在你的设备上输入密码打开。"},
+    {"src": "/images/apps/zipda/en/03.webp", "w": 1000, "h": 625, "alt": "Zipda 的创建压缩包界面，列出已选的七个文件和 ZIP 格式菜单", "caption": "把选中的文件压缩成 ZIP。"},
+    {"src": "/images/apps/zipda/en/04.webp", "w": 1000, "h": 625, "alt": "Mac 上的 Zipda 窗口，列出一个已解压文件夹里的文件，底部有一个操作按钮", "caption": "解压后的文件留在你的设备上。"}
+  ],
+  "specs": [
+    {"k": "平台", "v": "Mac、iPhone 和 iPad（App Store 上同一个页面）"},
+    {"k": "系统要求", "v": "macOS 14 或更高版本；iOS 16.1 或更高版本"},
+    {"k": "解压", "v": ".zip、.tar、.tar.gz、.tar.bz2、.tar.xz；Pro 另支持 .rar、.7z、.lzh、.alz"},
+    {"k": "创建", "v": "不带密码的 .zip 和 .tar；AES-256 加密 ZIP、7z、带密码和分卷压缩包需 Pro"},
+    {"k": "密码", "v": "支持 ZipCrypto 或 AES 加密的 ZIP（Pro）"},
+    {"k": "大型压缩包", "v": "超过 4 GB 的 Zip64、分卷压缩包和数万个条目，解压时以流式方式处理"},
+    {"k": "隐私", "v": "无账号、无分析工具、无广告 SDK；App Store 标签为“未收集数据”"},
+    {"k": "语言", "v": "12 种，可在 App 内切换"}
+  ],
+  "limits": [
+    "Zipda 不能创建 RAR 文件。第三方 App 无法创建 RAR，所以 Zipda 只解压 RAR。LZH 也只能解压。",
+    "不支持 EGG 文件。",
+    "分卷压缩包需要所有分卷齐全。缺少任何一卷都无法解压。",
+    "压缩包损坏时，Zipda 只能解压仍可读取的条目，并列出跳过的条目。",
+    "RAR、7z、ALZ 和 LZH 的解压，以及分卷和带密码压缩包的解压，包含在可选的 Zipda Pro 中。"
+  ],
+  "faq": [
+    {"q": "Mac 上怎么打开 RAR 文件？", "a": "安装 Zipda 后，把 RAR 文件拖到 App 窗口里即可（在 iPhone 上，从邮件或“文件”App 共享给 Zipda）。你可以先浏览和预览内容。解压 RAR 包含在可选的 Zipda Pro 中。"},
+    {"q": "Mac 上怎么解压 zip 文件？", "a": "双击 ZIP 会使用系统自带的归档实用工具。用 Zipda 还可以先浏览压缩包、预览单个文件、选择解压位置并一步解压，压缩包很大或拆成多卷时尤其方便。"},
+    {"q": "Zipda 能在 Mac 上打开 7z 文件吗？", "a": "可以。Zipda 能打开、浏览和预览 7z 压缩包，解压 7z 包含在 Zipda Pro 中。"},
+    {"q": "能打开带密码的 ZIP 吗？", "a": "可以。使用 ZipCrypto 或 AES 加密的 ZIP 都能打开。Zipda 会请你输入密码，校验在你的设备上完成。打开带密码的压缩包包含在 Zipda Pro 中。"},
+    {"q": "能用 Zipda 创建 RAR 文件吗？", "a": "不能。Zipda 可以创建普通 ZIP 压缩包，配合 Pro 还能创建 AES-256 加密 ZIP 和 7z。要把文件发给别人，ZIP 是最稳妥的选择。"},
+    {"q": "我的文件会被上传吗？", "a": "不会。所有处理都在你的设备上完成。App 没有账号、没有分析工具，也没有广告 SDK。"}
+  ],
+  "card": {
+    "tagline": "在 Mac 和 iPhone 上打开 RAR、7z 和 ZIP，解压前先看内容。",
+    "features": ["解压 ZIP、RAR、7z 和 TAR", "支持带密码和分卷压缩包", "无广告，无需账号"]
+  },
+  "landing": {
+    "hero": {
+      "category": "解压缩工具",
+      "h1": "适用于 iPhone、iPad 和 Mac 的最佳解压缩工具。",
+      "sub": "在 Mac、iPhone 和 iPad 上打开 RAR、7z 和 ZIP，只取出你需要的文件。",
+      "shots": ["01"]
+    },
+    "pillars": [
+      {"title": "能打开 RAR 和 7z。", "text": "除了 ZIP 和 TAR 系列，Zipda 还能解压 RAR、7z、LZH 和 ALZ。可以只取出一个文件，也可以全部解压到你选择的文件夹。"},
+      {"title": "大文件和分卷压缩包。", "text": "超过 4 GB 的 Zip64 和包含数万个条目的压缩包以流式方式处理。选中分卷的第一卷，Zipda 会找到其余部分。"},
+      {"title": "Mac、iPhone 和 iPad。", "text": "三种设备用的是 App Store 上同一个 Zipda，支持 macOS 14 和 iOS 16.1 及以上版本。"}
+    ],
+    "features": [
+      {"h2": "先看内容，只取所需。", "p": "浏览并预览压缩包里的内容，再把一个文件或全部内容解压到你选的文件夹。", "shot": "01"},
+      {"h2": "加密的 ZIP，在设备上打开。", "p": "使用 ZipCrypto 或 AES 加密的 ZIP，输入密码即可打开，校验在你的设备上完成。", "shot": "02"},
+      {"h2": "把文件、照片和视频压成 ZIP。", "p": "选择文件、照片或视频压缩成 ZIP，在 iPhone 上也可以从共享菜单操作。", "shot": "03"}
+    ],
+    "midCta": {"h2": "有 RAR 或 7z 要打开吗？", "p": "用 Zipda 打开，看看里面有什么，再解压你需要的部分。"},
+    "closeH2": "Mac、iPhone 和 iPad 共用的一款解压缩工具。",
+    "trust": ["无账号", "无广告", "无分析工具"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "en": ["interval running timer", "interval timer", "running interval workout", "pace coach"],
+  "ko": ["인터벌 러닝", "인터벌 타이머", "러닝 페이스 코치", "400m 반복"],
+  "ja": ["インターバル走 タイマー", "ランニング インターバル タイマー", "ペース走 アプリ", "Apple Watch ランニング ペース"],
+  "zh-hans": ["间歇跑 计时器", "间歇训练 计时器", "跑步 配速 提醒", "Apple Watch 跑步 配速"],
+  "zh-hant": ["間歇跑 計時器", "間歇訓練 計時器", "跑步 配速 提醒", "Apple Watch 跑步 配速"],
+  "de": ["Intervalltraining Timer App", "Intervall-Timer Laufen", "Intervalllauf App", "Pace Coach Laufen"],
+  "fr": ["minuteur fractionné", "course fractionné", "chrono fractionné", "fractionné"],
+  "es": ["temporizador intervalos correr", "entrenamiento por intervalos", "series running", "ritmo de carrera app"],
+  "it": ["timer ripetute corsa", "interval training corsa", "ripetute in pista", "passo di corsa app"],
+  "pt-br": ["cronômetro treino intervalado", "treino intervalado corrida", "tiros de corrida", "pace corrida app"],
+  "ru": ["таймер интервального бега", "интервальная тренировка бег", "темп бега", "интервалы на беговой дорожке"],
+  "tr": ["interval koşu zamanlayıcısı", "interval antrenmanı", "koşu temposu", "koşu bandı interval"]
+}

@@ -1,0 +1,203 @@
+{
+  "locale": "fr",
+  "title": "Minuteur synchronisé pour groupes - TimerLync iPhone",
+  "description": "Un minuteur synchronisé sur plusieurs appareils. Le même compte à rebours sur chaque iPhone, iPad et Apple Watch, une alarme au même instant. Sans compte.",
+  "h1": "Un minuteur synchronisé qui sonne sur tous les appareils à la fois",
+  "tagline": "Un compte à rebours. Tous les appareils. Une alarme.",
+  "summary": [
+    "TimerLync est un minuteur qui reste synchronisé sur tous les iPhone, iPad et Apple Watch d'une même salle. Réglez la durée une seule fois, et chaque appareil affiche les mêmes secondes restantes puis sonne au même instant.",
+    "Il s'adresse aux enseignants et aux coachs, aux intervenants et aux animateurs, aux groupes d'étude et aux équipes, et à tous ceux qui doivent faire démarrer et s'arrêter un groupe ensemble.",
+    "Pour un minuteur partagé sur plusieurs appareils, il suffit d'un code de salle ou d'un QR code, sans compte. Les appareils proches se connectent en Bluetooth et en Wi-Fi, et les appareils éloignés passent par le réseau."
+  ],
+  "overview": [
+    "Quand plusieurs personnes lancent chacune un compte à rebours sur leur téléphone, les minuteurs se décalent. Quelqu'un appuie en premier, un écran se met en veille, une alarme ne sonne pas pareil. Un minuteur multi-appareils règle ce problème avec une seule heure de fin partagée. Les appareils TimerLync s'accordent sur cette heure de fin grâce à l'heure réseau, puis décomptent chacun de leur côté. Même si le Wi-Fi tombe ou si un appareil se met en veille, l'alarme sonne à l'heure, car elle est programmée à l'avance sur chaque appareil.",
+    "Un départ équitable compte dans le travail de groupe comme à l'entraînement. Le décompte 3-2-1 tombe au même instant sur chaque écran, si bien que la personne qui appuie sur Démarrer ne part pas avant les autres. L'hôte peut lancer une vérification qui attend la confirmation de tout le monde, nommer des co-hôtes et confier son rôle à quelqu'un d'autre. Pour les présentations et les événements, la Vue scène affiche de grands chiffres en plein écran, l'hôte peut envoyer des messages comme « Merci de conclure » et choisir ce qui s'affiche à 00:00.",
+    "Un minuteur synchronisé pour groupes va aussi au-delà d'un simple compte à rebours. Les séquences enchaînent des étapes, par exemple 10 minutes de présentation puis 5 minutes de Q&A, et chaque appareil passe à l'étape suivante au même moment. Le Pomodoro de groupe partage les cycles de concentration et de pause avec toute l'équipe. Pour une alarme fiable rien que pour vous, le Minuteur rapide fonctionne sans salle."
+  ],
+  "features": [
+    {
+      "h": "Une heure de fin, une alarme sur chaque appareil",
+      "p": "Les appareils partagent une seule heure de fin et décomptent localement, donc une courte coupure de connexion ne fait pas sauter les chiffres. L'alarme est programmée à l'avance, et l'Alarme forte peut sonner même en mode Silencieux ou Concentration sous iOS 26 ou ultérieur."
+    },
+    {
+      "h": "Des départs équitables avec un 3-2-1 partagé",
+      "p": "Le décompte est lié à un instant commun, donc tous les écrans comptent ensemble. L'hôte lance le minuteur. Pause, +0:30, +1:00 et réinitialisation peuvent être ouverts à tous. La vérification retient le départ jusqu'à ce que tous les participants aient confirmé."
+    },
+    {
+      "h": "Des salles pour les groupes, sans compte",
+      "p": "Créez une salle et partagez un code ou un QR code. Les appareils proches se connectent en Bluetooth et en Wi-Fi, et les appareils éloignés se rejoignent à travers les réseaux. Toute personne qui a l'app peut rejoindre une salle, et avec Pro l'hôte ouvre des salles jusqu'à huit appareils."
+    },
+    {
+      "h": "Séquences, Pomodoro de groupe et Vue scène",
+      "p": "Enchaînez des étapes qui changent sur chaque appareil, partagez des cycles de concentration et de pause, affichez un plein écran pour le pupitre et envoyez un message à tous les écrans. À la fin, le minuteur peut rester à 00:00, compter le temps dépassé, clignoter ou afficher l'heure, réglé une seule fois pour toute la salle."
+    },
+    {
+      "h": "Apple Watch, Activité en direct, widget et Siri",
+      "p": "L'app Apple Watch a sa propre alarme, même loin de votre iPhone. Une Activité en direct et la Dynamic Island affichent le compte à rebours sans déverrouiller. Un widget d'écran verrouillé et Siri permettent aussi de lancer un compte à rebours."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/timerlync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran de l'hôte TimerLync sur fond violet avec 04:13 restantes, l'état En cours et les boutons Réinitialiser, Pause et +1:00",
+      "caption": "Écran de l'hôte"
+    },
+    {
+      "src": "/images/apps/timerlync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran participant TimerLync affichant les mêmes 04:13 avec une note indiquant que l'hôte contrôle le minuteur",
+      "caption": "Le même temps sur un appareil invité"
+    },
+    {
+      "src": "/images/apps/timerlync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Deux écrans TimerLync côte à côte, chacun affichant le chiffre 3 du décompte 3-2-1 partagé et un bandeau indiquant qu'Alex a lancé le minuteur",
+      "caption": "3-2-1 au même instant"
+    },
+    {
+      "src": "/images/apps/timerlync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Fiche des participants TimerLync avec un code de salle et une icône QR, un interrupteur de vérification et deux participants connectés",
+      "caption": "Code de salle et vérification"
+    },
+    {
+      "src": "/images/apps/timerlync/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Éditeur de séquence TimerLync avec les modèles Pomodoro de groupe et Présentation + Q&A, des étapes de 10 et 5 minutes et un total de 15:00",
+      "caption": "Séquences et Pomodoro de groupe"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Configuration requise",
+      "v": "iPhone et iPad sous iOS 17 ou ultérieur, app Apple Watch associée"
+    },
+    {
+      "k": "Rejoindre",
+      "v": "Code de salle ou QR code, sans compte ni connexion"
+    },
+    {
+      "k": "Connexions",
+      "v": "Bluetooth et Wi-Fi à proximité, à travers les réseaux quand les appareils sont éloignés"
+    },
+    {
+      "k": "Synchronisation",
+      "v": "L'heure réseau fixe une heure de fin commune, chaque appareil décompte localement"
+    },
+    {
+      "k": "Appareils par salle",
+      "v": "Jusqu'à 8 avec Pro, salle ouverte par l'hôte"
+    },
+    {
+      "k": "Outils de groupe",
+      "v": "Vérification, co-hôtes, transfert de l'hôte, séquences, Pomodoro de groupe, Vue scène, messages de l'hôte"
+    },
+    {
+      "k": "Alarme",
+      "v": "Programmée à l'avance, l'Alarme forte sonne en mode Silencieux ou Concentration sous iOS 26 ou ultérieur"
+    },
+    {
+      "k": "Historique",
+      "v": "Historique des sessions sur l'appareil, export CSV avec Pro"
+    }
+  ],
+  "limits": [
+    "TimerLync fonctionne uniquement sur iPhone, iPad et Apple Watch. Il n'existe pas de version Android ou Windows, ces appareils ne peuvent donc pas rejoindre une salle.",
+    "Avec Pro, l'hôte ouvre des salles jusqu'à huit appareils. Cela ne convient pas à une classe de 30 élèves qui rejoindraient chacun avec leur téléphone. Connectez un appareil par groupe ou projetez l'écran de l'hôte.",
+    "La correction de l'heure s'appuie sur l'heure réseau. Un appareil qui ne s'est jamais connecté à Internet peut être moins précis. Quelques dizaines de millisecondes restent un objectif et ne sont pas garanties.",
+    "Le mode Silencieux, la Concentration et les réglages de notification peuvent encore couper une alerte, sauf l'Alarme forte sous iOS 26 ou ultérieur. Certains réseaux, comme certains Wi-Fi scolaires, bloquent la détection des appareils proches. Dans ce cas, saisissez le code de salle pour vous connecter par le réseau.",
+    "Vérifiez l'alerte de l'Apple Watch sur vos propres appareils avant un événement important."
+  ],
+  "faq": [
+    {
+      "q": "Comment synchroniser un minuteur sur plusieurs appareils ?",
+      "a": "Créez une salle, choisissez la durée du compte à rebours et lancez-le. Les autres rejoignent avec le code de salle ou un QR code, et chaque appareil affiche le même temps restant et sonne au même instant."
+    },
+    {
+      "q": "Que se passe-t-il si un appareil perd le Wi-Fi ou se met en veille ?",
+      "a": "Chaque appareil décompte localement jusqu'à l'heure de fin partagée, et l'alarme est programmée à l'avance. Elle sonne donc à l'heure. Un téléphone à plat ou réglé en silencieux ne sonnera pas pour autant."
+    },
+    {
+      "q": "Combien d'appareils peuvent rejoindre une salle ?",
+      "a": "Avec Pro, l'hôte ouvre des salles jusqu'à huit appareils. Toute personne qui a l'app peut rejoindre, et seul l'hôte a besoin de Pro."
+    },
+    {
+      "q": "Faut-il créer un compte ?",
+      "a": "Non. Vous créez ou rejoignez une salle avec un code ou un QR code, sans vous connecter. L'historique des sessions reste sur votre appareil, et Pro ajoute l'export CSV de cet historique."
+    },
+    {
+      "q": "Puis-je l'utiliser seul ou avec l'Apple Watch ?",
+      "a": "Oui. Le Minuteur rapide est un compte à rebours simple avec la même alarme fiable, sans salle. L'app Apple Watch a sa propre alarme, même loin de votre iPhone."
+    },
+    {
+      "q": "Puis-je enchaîner des étapes comme une présentation et des questions ?",
+      "a": "Oui. Une séquence enchaîne des étapes comme 10 minutes de présentation et 5 minutes de Q&A, et chaque appareil change au même moment. Le Pomodoro de groupe applique la même idée aux cycles de concentration et de pause."
+    }
+  ],
+  "card": {
+    "tagline": "Un compte à rebours sur chaque iPhone, iPad et Apple Watch, avec une seule alarme",
+    "features": [
+      "Même temps et même alarme sur chaque appareil",
+      "Code ou QR pour rejoindre, sans compte",
+      "Séquences et Pomodoro de groupe"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "minuteur synchronisé",
+      "h1": "Le meilleur minuteur synchronisé pour iPhone, iPad et Apple Watch.",
+      "sub": "Réglez la durée une fois, et chaque appareil de la salle affiche les mêmes secondes et sonne au même instant.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Une heure de fin.",
+        "text": "Les appareils partagent une seule heure de fin et décomptent chacun de leur côté, donc une connexion instable ne fait pas sauter les chiffres."
+      },
+      {
+        "title": "Un code pour rejoindre.",
+        "text": "Partagez un code de salle ou un QR code. Personne n'a besoin de compte."
+      },
+      {
+        "title": "Une alarme au poignet.",
+        "text": "L'app Apple Watch a sa propre alarme, même loin de votre iPhone."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Tout le monde part en même temps.",
+        "p": "Un décompte 3-2-1 partagé défile ensemble sur chaque écran. Avec la vérification activée, le départ attend que tout le monde confirme.",
+        "shot": "03"
+      },
+      {
+        "h2": "Des salles qui relient de près comme de loin.",
+        "p": "Les appareils proches se connectent en Bluetooth et en Wi-Fi. Les appareils éloignés se rejoignent à travers les réseaux.",
+        "shot": "04"
+      },
+      {
+        "h2": "Étapes et cycles de concentration, partagés.",
+        "p": "Enchaînez des étapes qui changent sur tous les appareils à la fois, ou partagez les cycles de concentration et de pause avec le Pomodoro de groupe.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Prêts à démarrer ensemble ?",
+      "p": "Créez une salle, partagez le code et lancez le compte à rebours."
+    },
+    "closeH2": "Commencer ensemble. Finir ensemble.",
+    "trust": [
+      "Sans compte",
+      "Bluetooth et Wi-Fi à proximité",
+      "Historique sur l'appareil"
+    ]
+  }
+}

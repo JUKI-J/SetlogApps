@@ -1,0 +1,203 @@
+{
+  "locale": "tr",
+  "title": "Gruplar için senkron zamanlayıcı - TimerLync iPhone",
+  "description": "Birden fazla cihazda senkron zamanlayıcı. Her iPhone, iPad ve Apple Watch'ta aynı geri sayım, aynı anda tek alarm. Kodla katılım, hesap gerekmez.",
+  "h1": "Tüm cihazlarda aynı anda çalan senkron zamanlayıcı",
+  "tagline": "Tek geri sayım. Her cihaz. Tek alarm.",
+  "summary": [
+    "TimerLync, bir odadaki tüm iPhone, iPad ve Apple Watch'larda senkron kalan bir geri sayım zamanlayıcısıdır. Süreyi bir kez ayarlarsın, her cihaz aynı kalan saniyeleri gösterir ve aynı anda çalar.",
+    "Öğretmenler ve antrenörler, sunum yapanlar ve moderatörler, çalışma grupları ve ekipler için, yani bir grubun birlikte başlayıp birlikte bitirmesi gereken herkes için tasarlandı.",
+    "Birden fazla cihazda ortak geri sayım için bir oda kodu ya da QR kod yeterli, hesap gerekmez. Yakındaki cihazlar Bluetooth ve Wi-Fi ile, uzaktaki cihazlar ağ üzerinden bağlanır."
+  ],
+  "overview": [
+    "Birkaç kişi kendi telefonunda ayrı ayrı geri sayım başlattığında zamanlayıcılar kayar. Biri önce dokunur, bir ekran uykuya geçer, bir alarm farklı çalar. Çok cihazlı bir zamanlayıcı bunu tek bir ortak bitiş zamanıyla çözer. TimerLync cihazları bu bitiş zamanında ağ saatini kullanarak anlaşır, sonra her biri geri sayımı kendi üzerinde yürütür. Wi-Fi kopsa ya da bir cihaz uykuya geçse bile alarm zamanında çalar, çünkü her cihazda önceden planlanmış olur.",
+    "Grup çalışmasında da antrenmanda da adil başlangıç önemlidir. 3-2-1 ön sayımı her ekranda aynı anda düşer, böylece Başlat'a dokunan kişi öne geçmez. Ev sahibi herkesin onaylamasını bekleyen hazırlık kontrolünü açabilir, yardımcı sunucular atayabilir ve ev sahipliğini başka birine devredebilir. Sunumlar ve etkinlikler için büyük rakamlı tam ekran Sahne Görünümü, \"Lütfen toparlayın\" gibi ev sahibi mesajları ve 00:00'da ne gösterileceğini seçme imkânı vardır.",
+    "Gruplar için senkron bir zamanlayıcı tek bir geri sayımdan fazlasını sunar. Sıralar adımları birbirine bağlar, örneğin 10 dakika sunum ardından 5 dakika Q&A, ve her cihaz aynı anda bir sonraki adıma geçer. Grup Pomodoro odak ve mola döngülerini tüm ekiple paylaşır. Sadece kendin için güvenilir bir alarm istersen Hızlı zamanlayıcı odasız çalışır."
+  ],
+  "features": [
+    {
+      "h": "Tek bitiş zamanı, her cihazda tek alarm",
+      "p": "Cihazlar tek bir ortak bitiş zamanını paylaşır ve geri sayımı yerel olarak yürütür, bu yüzden bağlantıdaki kısa bir dalgalanma rakamları zıplatmaz. Alarm önceden planlanır ve Güçlü Alarm, iOS 26 veya üzerinde Sessiz modda ya da Odaklanma'da bile çalabilir."
+    },
+    {
+      "h": "Ortak 3-2-1 ile adil başlangıç",
+      "p": "Ön sayım tek bir ortak ana bağlıdır, bu yüzden tüm ekranlar birlikte sayar. Zamanlayıcıyı ev sahibi başlatır. Duraklat, +0:30, +1:00 ve sıfırla herkese açılabilir. Hazırlık kontrolü, tüm katılımcılar onaylayana kadar başlangıcı bekletir."
+    },
+    {
+      "h": "Hesapsız grup odaları",
+      "p": "Bir oda oluştur ve kodu ya da QR'ı paylaş. Yakındaki cihazlar Bluetooth ve Wi-Fi ile, uzaktaki cihazlar farklı ağlar üzerinden bağlanır. Uygulaması olan herkes bir odaya katılabilir, Pro ile ev sahibi sekiz cihaza kadar odalar açar."
+    },
+    {
+      "h": "Sıralar, Grup Pomodoro ve Sahne Görünümü",
+      "p": "Her cihazda birlikte değişen adımları birbirine bağla, odak ve mola döngülerini paylaş, kürsü için tam ekran gösterim aç ve tüm ekranlara mesaj gönder. Süre bitince zamanlayıcı 00:00'da durabilir, aşım süresini sayabilir, yanıp sönebilir ya da saati gösterebilir. Bunu tüm oda için bir kez ayarlarsın."
+    },
+    {
+      "h": "Apple Watch, Canlı Etkinlik, widget ve Siri",
+      "p": "Apple Watch uygulamasının kendi alarmı vardır, iPhone'dan uzaktayken bile çalar. Canlı Etkinlik ve Dynamic Island geri sayımı kilit açmadan gösterir. Ayrıca Kilitli Ekran widget'ı ve geri sayım başlatmak için Siri desteği bulunur."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/timerlync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Mor arka planlı TimerLync ev sahibi ekranında 04:13 kalan süre, Çalışıyor etiketi ve Sıfırla, Duraklat ve +1:00 düğmeleri",
+      "caption": "Ev sahibi ekranı"
+    },
+    {
+      "src": "/images/apps/timerlync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync katılımcı ekranında aynı 04:13 süresi ve zamanlayıcıyı ev sahibinin yönettiğini belirten bir not",
+      "caption": "Katılan cihazda aynı süre"
+    },
+    {
+      "src": "/images/apps/timerlync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Yan yana iki TimerLync ekranı, ikisinde de ortak 3-2-1 ön sayımındaki 3 rakamı ve zamanlayıcıyı Alex'in başlattığını bildiren bir bant",
+      "caption": "Aynı anda 3-2-1"
+    },
+    {
+      "src": "/images/apps/timerlync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync katılımcılar sayfasında oda kodu ve QR simgesi, hazırlık kontrolü anahtarı ve bağlı iki katılımcı",
+      "caption": "Oda kodu ve hazırlık kontrolü"
+    },
+    {
+      "src": "/images/apps/timerlync/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync sıra düzenleyicisinde Grup Pomodoro ve Sunum + Q&A şablonları, 10 ve 5 dakikalık adımlar ve 15:00 toplam süre",
+      "caption": "Sıralar ve Grup Pomodoro"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Gereksinimler",
+      "v": "iOS 17 veya üzeri iPhone ve iPad, Apple Watch eşlik uygulaması"
+    },
+    {
+      "k": "Katılım",
+      "v": "Oda kodu ya da QR kod, hesap ya da oturum açma yok"
+    },
+    {
+      "k": "Bağlantılar",
+      "v": "Yakında Bluetooth ve Wi-Fi, cihazlar uzaktayken ağ üzerinden"
+    },
+    {
+      "k": "Zaman eşitleme",
+      "v": "Ağ saati tek bir bitiş zamanı belirler, her cihaz yerel olarak geri sayar"
+    },
+    {
+      "k": "Oda başına cihaz",
+      "v": "Pro ile 8 cihaza kadar, odayı ev sahibi açar"
+    },
+    {
+      "k": "Grup araçları",
+      "v": "Hazırlık kontrolü, yardımcı sunucular, ev sahipliğini devretme, sıralar, Grup Pomodoro, Sahne Görünümü, ev sahibi mesajları"
+    },
+    {
+      "k": "Alarm",
+      "v": "Önceden planlanır, Güçlü Alarm iOS 26 veya üzerinde Sessiz modda ve Odaklanma'da çalar"
+    },
+    {
+      "k": "Geçmiş",
+      "v": "Oturum geçmişi cihazda, Pro ile CSV dışa aktarma"
+    }
+  ],
+  "limits": [
+    "TimerLync yalnızca iPhone, iPad ve Apple Watch'ta çalışır. Android ya da Windows sürümü yoktur, bu cihazlar bir odaya katılamaz.",
+    "Pro ile ev sahibi sekiz cihaza kadar odalar açar. Bu, herkesin kendi telefonuyla katıldığı 30 kişilik bir sınıfa uygun değildir. Her gruptan bir cihaz bağla ya da ev sahibi ekranını projeksiyonla göster.",
+    "Zaman düzeltmesi ağ saatini kullanır. İnternete hiç bağlanmamış bir cihaz daha az isabetli olabilir. Onlarca milisaniye bir hedeftir ve garanti edilemez.",
+    "Sessiz mod, Odaklanma ve bildirim ayarları yine de bir uyarıyı susturabilir, iOS 26 veya üzerindeki Güçlü Alarm hariç. Bazı ağlar, örneğin bazı okul Wi-Fi'ları, yakındaki cihazların bulunmasını engeller. Bu durumda ağ üzerinden bağlanmak için oda kodunu yaz.",
+    "Önemli bir etkinlikten önce Apple Watch uyarısını kendi cihazlarında kontrol et."
+  ],
+  "faq": [
+    {
+      "q": "Birden fazla cihazda senkron zamanlayıcı nasıl kullanılır?",
+      "a": "Bir oda oluştur, geri sayım süresini seç ve başlat. Diğerleri oda kodu ya da QR ile katılır, her cihaz aynı kalan süreyi gösterir ve aynı anda çalar."
+    },
+    {
+      "q": "Bir cihazın Wi-Fi'ı koparsa ya da uykuya geçerse ne olur?",
+      "a": "Her cihaz ortak bitiş zamanına kadar yerel olarak geri sayar ve alarm önceden planlanmıştır. Bu yüzden alarm zamanında çalar. Yine de şarjı bitmiş ya da sessize alınmış bir telefon çalmaz."
+    },
+    {
+      "q": "Bir odada kaç cihaz olabilir?",
+      "a": "Pro ile ev sahibi sekiz cihaza kadar odalar açar. Uygulaması olan herkes katılabilir, Pro yalnızca ev sahibinde gerekir."
+    },
+    {
+      "q": "Hesap gerekiyor mu?",
+      "a": "Hayır. Kod ya da QR ile oda oluşturur veya odaya katılırsın, oturum açmazsın. Oturum geçmişi cihazında kalır ve Pro bu geçmişin CSV olarak dışa aktarılmasını ekler."
+    },
+    {
+      "q": "Tek başıma ya da Apple Watch ile kullanabilir miyim?",
+      "a": "Evet. Hızlı zamanlayıcı aynı güvenilir alarmla çalışan basit bir geri sayımdır ve oda gerektirmez. Apple Watch uygulamasının kendi alarmı vardır, iPhone'dan uzaktayken bile çalar."
+    },
+    {
+      "q": "Sunum ve soru-cevap gibi adımları art arda bağlayabilir miyim?",
+      "a": "Evet. Bir sıra, 10 dakika sunum ve 5 dakika Q&A gibi adımları birbirine bağlar, her cihaz aynı anda bir sonraki adıma geçer. Grup Pomodoro aynı fikri odak ve mola döngüleri için kullanır."
+    }
+  ],
+  "card": {
+    "tagline": "Her iPhone, iPad ve Apple Watch'ta tek geri sayım, tek alarm",
+    "features": [
+      "Her cihazda aynı süre ve aynı alarm",
+      "Kod ya da QR ile hesapsız katılım",
+      "Sıralar ve Grup Pomodoro"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "senkron zamanlayıcı",
+      "h1": "iPhone, iPad ve Apple Watch için en iyi senkron zamanlayıcı.",
+      "sub": "Süreyi bir kez ayarla, odadaki her cihaz aynı saniyeleri gösterip aynı anda çalsın.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Tek bitiş zamanı.",
+        "text": "Cihazlar tek bir bitiş zamanını paylaşır ve kendi başına geri sayar, bu yüzden bağlantı dalgalansa da rakamlar zıplamaz."
+      },
+      {
+        "title": "Kodla katıl.",
+        "text": "Oda kodunu ya da QR'ı paylaş. Kimsenin hesaba ihtiyacı yok."
+      },
+      {
+        "title": "Bilekte alarm.",
+        "text": "Apple Watch uygulamasının kendi alarmı vardır, iPhone'dan uzaktayken bile çalar."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Herkes aynı vuruşta başlar.",
+        "p": "Ortak 3-2-1 ön sayımı her ekranda birlikte ilerler. Hazırlık kontrolü açıksa başlangıç herkes onaylayana kadar bekler.",
+        "shot": "03"
+      },
+      {
+        "h2": "Yakını da uzağı da bağlayan odalar.",
+        "p": "Yakındaki cihazlar Bluetooth ve Wi-Fi ile bağlanır. Uzaktaki cihazlar farklı ağlar üzerinden bağlanır.",
+        "shot": "04"
+      },
+      {
+        "h2": "Ortak adımlar ve odak döngüleri.",
+        "p": "Tüm cihazlarda aynı anda değişen adımları birbirine bağla ya da odak ve mola döngülerini Grup Pomodoro ile paylaş.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Birlikte başlamaya hazır mısınız?",
+      "p": "Bir oda oluştur, kodu paylaş ve geri sayımı başlat."
+    },
+    "closeH2": "Birlikte başla. Birlikte bitir.",
+    "trust": [
+      "Hesap gerekmez",
+      "Yakında Bluetooth ve Wi-Fi",
+      "Geçmiş cihazda kalır"
+    ]
+  }
+}

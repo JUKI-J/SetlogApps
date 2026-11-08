@@ -1,0 +1,203 @@
+{
+  "locale": "it",
+  "title": "Timer per ripetute e coach del passo - IntervalRunner",
+  "description": "Crea allenamenti a intervalli di corsa a tempo o distanza. IntervalRunner ti avvisa con voce, suono e vibrazione al polso se il passo esce dall'obiettivo.",
+  "h1": "Timer per interval training con coach del passo per iPhone e Apple Watch",
+  "tagline": "Corri ogni ripetuta esattamente come l'avevi programmata, senza guardare lo schermo.",
+  "summary": [
+    "IntervalRunner è un timer per l'interval training di corsa e un coach del passo per iPhone e Apple Watch. Confronta il tuo passo con l'obiettivo di ogni fase e ti avvisa appena ti allontani, con la voce, con un suono e con un tocco al polso.",
+    "È pensato per chi corre ripetute in pista, corse a ritmo, intervalli di cammino e corsa o uscite in zona 2 e vuole tenere il passo senza fissare l'orologio.",
+    "Tre cose lo distinguono. Usa un passo livellato al posto del GPS che salta, il margine di tolleranza lo scegli tu, e andare troppo veloce o troppo piano ha un suono e una vibrazione diversi."
+  ],
+  "overview": [
+    "Un normale timer per intervalli suona alla fine di ogni fase, ma non ti dice se l'hai corsa al passo giusto. IntervalRunner aggiunge questo controllo. Ogni fase, impostata a tempo o a distanza, ha un passo o una velocità obiettivo, e l'app ti avvisa non appena esci dal margine che hai scelto. Sai in che direzione correggere prima di guardare un numero.",
+    "Va bene per una seduta in pista con ripetute da 400 m o 800 m come per 1 minuto veloce e 1 minuto lento su un sentiero. Senza orologio, l'iPhone misura, mostra e parla. Con un Apple Watch, l'orologio misura e ti tocca il polso mentre l'iPhone mostra i numeri e li annuncia. La modalità tapis roulant non richiede il GPS.",
+    "Dopo ogni corsa puoi confrontare obiettivo e risultato reale di ogni fase, e gli allenamenti vengono salvati in Salute se lo consenti. Le immagini da condividere trasformano una corsa in foto, video o Live Photo con i tuoi dati."
+  ],
+  "features": [
+    {
+      "h": "Avvisi sul passo affidabili durante l'interval training",
+      "p": "L'app valuta il passo livellato anziché la lettura grezza del GPS, che salta facilmente, e il margine di tolleranza lo scegli tu. Troppo veloce e troppo piano hanno suono e vibrazione diversi, così senti in che direzione correggere prima di leggere un numero."
+    },
+    {
+      "h": "Voce, suoni e vibrazione al polso con lo schermo bloccato",
+      "p": "Gli annunci vocali, naturali e generati con l'IA, abbassano la musica per un attimo e continuano a funzionare con lo schermo bloccato. Con un Apple Watch ricevi anche vibrazioni al polso, quindi il telefono può restare in tasca."
+    },
+    {
+      "h": "Allenamenti a tempo o a distanza",
+      "p": "Ogni fase si imposta a tempo o a distanza con un passo o una velocità obiettivo. Sette modelli sono pronti all'uso, tra cui cammina e corri base, 1 min veloce / 1 min lento, ripetute da 400 m e 800 m, corsa a ritmo, slow jogging e zona 2 (la zona 2 fa parte di Pro). Tre modalità di conteggio ti fanno partire quando raggiungi il passo obiettivo, contare solo mentre sei nell'obiettivo o contare subito."
+    },
+    {
+      "h": "Con o senza Apple Watch, anche sul tapis roulant",
+      "p": "Corri solo con l'iPhone, solo con l'orologio o con entrambi. La modalità tapis roulant non usa il GPS. Corri a tempo alla velocità impostata sulla macchina e poi confermi la distanza mostrata dal display."
+    },
+    {
+      "h": "Obiettivo e reale, fase per fase",
+      "p": "Il riepilogo confronta ogni fase con il suo obiettivo. Pro aggiunge un'analisi dettagliata per fase, andamenti e record personali, oltre a obiettivi per zone di frequenza cardiaca e recuperi che finiscono quando i battiti scendono."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/intervalrunner/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Schermata di corsa di IntervalRunner con «On target» in verde, 0.13 mi rimanenti in cifre grandi, passo attuale 6:28 al miglio contro un obiettivo di 6:26 e frequenza cardiaca 158",
+      "caption": "Schermata di corsa nell'obiettivo"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Schermata di corsa su sfondo ambra con «Slow 42 s» e un fumetto vocale che dice «Too slow, pick it up»",
+      "caption": "Troppo piano, avviso visivo e vocale"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Elenco allenamenti di IntervalRunner con avvio rapido, un recente allenamento a scaletta e modelli come Slow run 30 min e Zone 2 run 40 min",
+      "caption": "Allenamenti e modelli pronti"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Schermata di corsa dell'iPhone con un Apple Watch davanti, entrambi con «On target»",
+      "caption": "iPhone e Apple Watch insieme"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Riepilogo di un allenamento 400 m ×8 con l'86% del tempo al passo obiettivo e un elenco di fasi con tempi obiettivo e reali",
+      "caption": "Riepilogo con obiettivo e reale per fase"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Piattaforme",
+      "v": "iPhone, Apple Watch e Android"
+    },
+    {
+      "k": "Requisiti",
+      "v": "iOS 26 o successivo; watchOS 10 o successivo per Apple Watch"
+    },
+    {
+      "k": "Fasi",
+      "v": "A tempo o a distanza, con passo o velocità obiettivo, in km o miglia"
+    },
+    {
+      "k": "Modelli",
+      "v": "7 modelli, tra cui ripetute da 400 m e 800 m, corsa a ritmo, slow jogging e zona 2 (Pro)"
+    },
+    {
+      "k": "Avvisi",
+      "v": "Voce generata con l'IA, suoni diversi per troppo veloce e troppo piano, vibrazione al polso"
+    },
+    {
+      "k": "Dati",
+      "v": "Salute (se consentito), esportazione GPX e JSON, attività in tempo reale; esportazione CSV al secondo con Pro"
+    },
+    {
+      "k": "Lingue",
+      "v": "12 lingue"
+    },
+    {
+      "k": "Account",
+      "v": "Nessun account e nessun server nostro"
+    }
+  ],
+  "limits": [
+    "IntervalRunner non genera programmi di più settimane e non prevede tempi di gara. Ti aiuta a eseguire gli allenamenti che imposti tu.",
+    "Le funzioni cardio, come gli obiettivi per zone e i recuperi che finiscono quando i battiti scendono, richiedono un Apple Watch o una fascia cardio Bluetooth e fanno parte di Pro.",
+    "La precisione del passo dipende dal GPS. Sotto gli alberi o tra edifici alti, il passo livellato può reagire in ritardo. La modalità tapis roulant si basa sulla velocità che imposti sulla macchina.",
+    "Analisi per fase, andamenti, la libreria di allenamenti con cartelle e i generatori di scaletta, piramide e Yasso 800 fanno parte di Pro."
+  ],
+  "faq": [
+    {
+      "q": "Come si imposta un timer per ripetute di corsa?",
+      "a": "Scegli un modello come 1 min veloce / 1 min lento o ripetute da 400 m, oppure crea le tue fasi a tempo o a distanza con un passo obiettivo. Avvia l'allenamento e l'app conta le fasi e ti avvisa se esci dal margine di tolleranza."
+    },
+    {
+      "q": "Serve un Apple Watch?",
+      "a": "No. Puoi correre solo con l'iPhone. Con un Apple Watch, l'orologio misura e ti tocca il polso mentre l'iPhone mostra i numeri e li annuncia. Si può correre anche solo con l'orologio."
+    },
+    {
+      "q": "Funziona sul tapis roulant?",
+      "a": "Sì. La modalità tapis roulant non usa il GPS. Corri a tempo alla velocità impostata sulla macchina e poi confermi la distanza mostrata dal display."
+    },
+    {
+      "q": "Posso usare le zone di frequenza cardiaca negli intervalli?",
+      "a": "Sì, con Pro. Gli obiettivi per zone di frequenza cardiaca e i recuperi che finiscono quando i battiti scendono fanno parte di Pro e richiedono un Apple Watch o una fascia cardio Bluetooth."
+    },
+    {
+      "q": "Cosa aggiunge Pro?",
+      "a": "Pro aggiunge analisi per fase, andamenti e record personali, obiettivi per zone di frequenza cardiaca, una libreria di allenamenti con cartelle, ripetute annidate, generatori di scaletta, piramide e Yasso 800 ed esportazione CSV al secondo."
+    },
+    {
+      "q": "Dove vengono salvati i dati delle mie corse?",
+      "a": "Corse, percorsi e dati sulla salute restano sui tuoi dispositivi. Non c'è un account né un server nostro. Se lo consenti, gli allenamenti vengono salvati in Salute."
+    }
+  ],
+  "card": {
+    "tagline": "Timer per ripetute e coach del passo con avvisi a voce, suono e al polso",
+    "features": [
+      "Fasi a tempo o a distanza con passo obiettivo",
+      "Avvisi troppo veloce o troppo piano su iPhone e Apple Watch",
+      "Modalità tapis roulant e riepilogo per fase"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "timer per ripetute di corsa",
+      "h1": "Il miglior timer per ripetute di corsa per iPhone, Apple Watch e Android.",
+      "sub": "Ti avvisa con la voce, un suono e un tocco al polso appena il passo si allontana dall'obiettivo.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Un passo affidabile.",
+        "text": "Gli avvisi usano il passo livellato invece della lettura del GPS che salta, con un margine di tolleranza scelto da te."
+      },
+      {
+        "title": "Senti da che parte correggere.",
+        "text": "Essere avanti o indietro sul passo ha un suono e una vibrazione propri, così sai cosa fare prima di leggere un numero."
+      },
+      {
+        "title": "Funziona a schermo bloccato.",
+        "text": "Gli annunci vocali abbassano la musica per un attimo e il telefono resta in tasca."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Costruisci la seduta a tempo o a distanza.",
+        "p": "Dai a ogni fase un passo o una velocità obiettivo, in km o miglia. Sette modelli sono pronti, da cammina e corri base alle ripetute da 400 m e 800 m.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch o entrambi.",
+        "p": "Corri solo con il telefono, solo con l'orologio o con tutti e due. La modalità tapis roulant non richiede il GPS e va a tempo alla velocità della macchina.",
+        "shot": "04"
+      },
+      {
+        "h2": "Guarda com'è andata ogni fase.",
+        "p": "A fine corsa, il riepilogo mette ogni fase accanto al suo obiettivo. Gli allenamenti finiscono in Salute se lo consenti.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto a tenere ogni passo?",
+      "p": "Scegli un modello o imposta le tue fasi, metti via il telefono e corri."
+    },
+    "closeH2": "Un coach del passo che parla al momento giusto.",
+    "trust": [
+      "Nessun account",
+      "Nessun server nostro",
+      "Le corse restano sui tuoi dispositivi",
+      "12 lingue"
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "locale": "it",
+  "title": "Visualizzatore di immagini leggero per Mac - Belvue",
+  "description": "Apri un'immagine e sfoglia tutta la cartella con i tasti freccia. Belvue è un visualizzatore di immagini leggero per Mac, senza pubblicità né tracciamento.",
+  "h1": "Un visualizzatore di immagini leggero per Mac",
+  "tagline": "Apri un'immagine e sfoglia tutta la cartella con i tasti freccia",
+  "summary": [
+    "Belvue è un visualizzatore di immagini leggero per Mac. Apri una sola immagine e il resto della cartella è subito pronto da sfogliare con i tasti freccia, nello stesso ordine del Finder.",
+    "È pensato per chi cerca un visualizzatore di immagini per Mac con cui passare in rassegna cartelle di foto, screenshot o scansioni, anche quando contengono migliaia di immagini.",
+    "Le tue immagini e i percorsi dei file restano sul tuo Mac, senza pubblicità e senza tracciamento."
+  ],
+  "overview": [
+    "Anteprima e Quick Look vanno bene per una foto, ma per guardare un'intera cartella spesso bisogna aprire le immagini una alla volta. In Belvue apri un'immagine e la successiva compare appena premi il tasto freccia. Le cartelle con migliaia di immagini seguono lo stesso ordine naturale del Finder, e l'elenco segue le modifiche alla cartella.",
+    "In un visualizzatore di immagini per Mac contano soprattutto i piccoli strumenti. Belvue offre una striscia di miniature, zoom, spostamento nell'immagine, schermo intero e un pannello informazioni con i dati EXIF. Mentre sfogli puoi selezionare le immagini con il tasto P e poi intervenire su tutte le selezionate in una volta. Per copiare l'immagine corrente basta ⌘C."
+  ],
+  "features": [
+    {
+      "h": "Aprine una, sfoglia tutta la cartella",
+      "p": "Apri un'immagine e sfoglia la sua cartella con i tasti freccia. La successiva compare subito e l'ordine è quello del Finder, anche nelle cartelle con migliaia di immagini."
+    },
+    {
+      "h": "Miniature, zoom e schermo intero",
+      "p": "La striscia di miniature, lo zoom, lo spostamento e lo schermo intero sono integrati, insieme a un pannello informazioni che mostra i dati EXIF."
+    },
+    {
+      "h": "Seleziona mentre sfogli",
+      "p": "Premi P per selezionare le immagini mentre le guardi. Con Belvue Pro puoi spostare, copiare o mettere nel Cestino tutte le selezionate in una volta, con la possibilità di annullare, e quando copi l'originale non cambia mai."
+    },
+    {
+      "h": "Converti in JPEG, PNG o HEIC",
+      "p": "Belvue Pro converte le immagini selezionate in JPEG, PNG o HEIC creando un nuovo file, così l'originale resta com'era."
+    },
+    {
+      "h": "Privacy fin dalla progettazione",
+      "p": "Le immagini e i percorsi dei file non lasciano mai il tuo Mac. Belvue non ha pubblicità né tracciamento, e l'unica connessione di rete è verso l'App Store per Belvue Pro."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/belvue/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Finestra di Belvue con un tramonto sulle montagne, una striscia di miniature in basso e il titolo in inglese 'Open one. Browse them all.'",
+      "caption": "Apri un'immagine e tutta la cartella è pronta."
+    },
+    {
+      "src": "/images/apps/belvue/en/03.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue mostra un'immagine astratta di bokeh blu da una cartella di diecimila immagini, con una striscia di miniature",
+      "caption": "Cartelle con migliaia di immagini, nell'ordine del Finder."
+    },
+    {
+      "src": "/images/apps/belvue/en/04.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue a schermo intero con un tramonto sulle montagne e una striscia di miniature in basso",
+      "caption": "Schermo intero con zoom e striscia di miniature."
+    },
+    {
+      "src": "/images/apps/belvue/en/05.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Belvue con una finestra di conferma per spostare nel Cestino cinque immagini selezionate, sopra l'immagine corrente",
+      "caption": "Seleziona mentre sfogli, poi agisci su tutte in una volta (Pro)."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisiti",
+      "v": "Mac con macOS 15 o successivo"
+    },
+    {
+      "k": "Formati immagine",
+      "v": "JPEG, PNG, HEIC, RAW e altri"
+    },
+    {
+      "k": "Conversione in",
+      "v": "JPEG, PNG, HEIC"
+    },
+    {
+      "k": "Ordinamento",
+      "v": "Ordine naturale, come nel Finder"
+    },
+    {
+      "k": "Extra",
+      "v": "Striscia di miniature, zoom, spostamento, schermo intero, pannello EXIF, copia con ⌘C, cartelle recenti"
+    },
+    {
+      "k": "Privacy",
+      "v": "Nessuna pubblicità, nessun tracciamento; connessione di rete solo verso l'App Store"
+    },
+    {
+      "k": "Pro (opzionale)",
+      "v": "Spostare, copiare e mettere nel Cestino le immagini selezionate in una volta, conversione in JPEG, PNG o HEIC, condivisione, Apri con, sfondi aggiuntivi"
+    }
+  ],
+  "limits": [
+    "A causa della sandbox del Mac App Store, macOS concede a Belvue l'accesso solo all'immagine che apri. Per sfogliare il resto della cartella, Belvue ti chiede di autorizzare quella cartella una volta sola. Se rifiuti, l'immagine aperta si apre comunque, ma non puoi passare alle altre immagini della cartella.",
+    "Spostamento, copia e Cestino in blocco, conversione, condivisione, Apri con e gli sfondi aggiuntivi fanno parte di Belvue Pro. Guardare, sfogliare e selezionare le immagini funziona senza Pro.",
+    "Belvue serve a guardare le immagini. Non gestisce una libreria di foto e non modifica le tue immagini.",
+    "È disponibile solo per Mac."
+  ],
+  "faq": [
+    {
+      "q": "Quale visualizzatore di immagini per Mac permette di sfogliare un'intera cartella?",
+      "a": "Belvue è un visualizzatore di immagini leggero per Mac. Apri un'immagine e sfogli il resto della cartella con i tasti freccia, nello stesso ordine del Finder, anche con migliaia di immagini."
+    },
+    {
+      "q": "Perché Belvue mi chiede di autorizzare una cartella?",
+      "a": "La sandbox del Mac App Store permette a un'app di leggere solo il file che hai aperto. Belvue chiede una volta l'accesso a quella cartella per mostrare le altre immagini. Se rifiuti, l'immagine aperta resta visibile."
+    },
+    {
+      "q": "Quali formati di immagine apre?",
+      "a": "JPEG, PNG, HEIC, RAW e altri formati."
+    },
+    {
+      "q": "Cosa aggiunge Belvue Pro?",
+      "a": "Guardare, sfogliare e selezionare le immagini funziona senza Pro. Belvue Pro è facoltativo e aggiunge lo spostamento, la copia e il Cestino per tutte le selezionate in una volta, la conversione in JPEG, PNG o HEIC, la condivisione, Apri con e sfondi aggiuntivi."
+    },
+    {
+      "q": "Belvue invia le mie immagini da qualche parte?",
+      "a": "No. Le immagini e i percorsi dei file non lasciano mai il tuo Mac. Belvue non ha pubblicità né tracciamento, e l'unica connessione di rete è verso l'App Store per Belvue Pro."
+    }
+  ],
+  "card": {
+    "tagline": "Visualizzatore di immagini leggero per Mac. Apri un'immagine, sfoglia tutta la cartella",
+    "features": [
+      "Tasti freccia in ordine Finder",
+      "Miniature, zoom, EXIF",
+      "Niente pubblicità né tracciamento"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "visualizzatore di immagini",
+      "h1": "Il miglior visualizzatore di immagini leggero per Mac.",
+      "sub": "Apri un'immagine, poi sfoglia tutta la cartella con i tasti freccia.",
+      "shots": [
+        "03"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "La cartella, freccia dopo freccia.",
+        "text": "I tasti freccia passano per ogni immagine accanto a quella che hai aperto. La successiva compare subito."
+      },
+      {
+        "title": "Da vicino.",
+        "text": "Striscia di miniature, zoom, spostamento e schermo intero sono integrati, con un pannello informazioni per i dati EXIF."
+      },
+      {
+        "title": "Resta sul tuo Mac.",
+        "text": "Le immagini e i percorsi dei file non lasciano mai il tuo Mac. Belvue non ha pubblicità né tracciamento."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Ogni immagine della cartella, a un tasto di distanza.",
+        "p": "Apri un'immagine e il resto della cartella è pronto da sfogliare. L'ordine è quello del Finder, anche nelle cartelle con migliaia di immagini.",
+        "shot": "02"
+      },
+      {
+        "h2": "Ingrandisci, spostati, schermo intero.",
+        "p": "Zoom, spostamento e schermo intero sono integrati, con la striscia di miniature sempre presente. Il pannello informazioni mostra i dati EXIF.",
+        "shot": "04"
+      },
+      {
+        "h2": "Premi P per tenerla.",
+        "p": "Seleziona le immagini con P mentre sfogli. Poi sposta, copia o metti nel Cestino tutte le selezionate in una volta, con la possibilità di annullare.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto a sfogliare quella cartella?",
+      "p": "Apri una qualsiasi immagine della cartella con Belvue e autorizza la cartella una volta. Poi basta premere i tasti freccia."
+    },
+    "closeH2": "Un visualizzatore di immagini leggero che lascia le tue foto come sono.",
+    "trust": [
+      "Nessuna pubblicità",
+      "Nessun tracciamento"
+    ]
+  }
+}

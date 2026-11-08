@@ -1,0 +1,14 @@
+{
+  "en": ["synchronized timer", "multi device timer", "group countdown timer", "shared timer app"],
+  "ko": ["동기화 타이머", "여러 기기 타이머", "그룹 뽀모도로", "발표 타이머 공유"],
+  "ja": ["同期タイマー", "タイマー 共有 複数端末", "グループ ポモドーロ", "プレゼン タイマー 共有"],
+  "zh-hans": ["多设备 同步 计时器", "共享倒计时", "团队番茄钟", "演讲计时器"],
+  "zh-hant": ["多裝置 同步 計時器", "共享倒數計時", "團隊番茄鐘", "演講計時器"],
+  "de": ["Timer synchronisieren mehrere Geräte", "synchroner Timer", "Gruppen-Countdown", "Gruppen-Pomodoro"],
+  "fr": ["minuteur synchronisé", "minuteur partagé plusieurs appareils", "compte à rebours de groupe", "Pomodoro de groupe"],
+  "es": ["temporizador sincronizado", "temporizador compartido varios dispositivos", "cuenta atrás en grupo", "Pomodoro en grupo"],
+  "it": ["timer sincronizzato", "timer condiviso più dispositivi", "conto alla rovescia di gruppo", "Pomodoro di gruppo"],
+  "pt-br": ["timer sincronizado", "timer compartilhado vários aparelhos", "contagem regressiva em grupo", "Pomodoro em grupo"],
+  "ru": ["синхронный таймер", "общий таймер на нескольких устройствах", "групповой обратный отсчёт", "групповой помодоро"],
+  "tr": ["senkron zamanlayıcı", "ortak geri sayım", "birden fazla cihazda zamanlayıcı", "grup pomodoro"]
+}

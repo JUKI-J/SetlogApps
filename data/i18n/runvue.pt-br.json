@@ -1,0 +1,207 @@
+{
+  "locale": "pt-br",
+  "title": "Vídeo de corrida 3D e replay da sua corrida - RunVue",
+  "description": "Transforme uma corrida já registrada em um vídeo curto de replay 3D pelas ruas que você percorreu, com ritmo e batimentos na tela, feito no seu iPhone.",
+  "h1": "Vídeo de corrida 3D: seu treino em replay rente à rua",
+  "tagline": "Um replay de corrida em 3D com uma câmera que acompanha de perto a rua que você correu.",
+  "summary": [
+    "O RunVue transforma uma corrida que você já registrou em um vídeo vertical curto de replay 3D. Uma câmera acompanha você bem perto do asfalto, pelas ruas que você realmente percorreu.",
+    "O app é para corredores que registram os treinos com o Apple Watch ou com um app de corrida e querem um vídeo marcante de um percurso, de uma competição ou de um resumo do mês no lugar de um print do mapa.",
+    "O que o diferencia: uma câmera que segue você rente à rua no lugar de uma visão de satélite, um HUD com ritmo e batimentos e um vídeo feito inteiramente no seu iPhone."
+  ],
+  "overview": [
+    "Quem procura um vídeo de corrida 3D ou um replay de corrida costuma encontrar apps que gravam o treino ou desenham uma linha plana no mapa. O RunVue começa depois da corrida. Importe um treino de corrida do app Saúde da Apple (Apple Health), ou seja, o percurso que o seu Apple Watch ou app de corrida já salvou lá, ou traga um arquivo GPX ou FIT de um aparelho que não salva percursos no Saúde. O RunVue monta uma cena 3D das ruas e dos prédios ao longo do percurso, encaixa o seu traçado GPS na rua e gera o replay no seu iPhone.",
+    "O resultado é um vídeo 9:16 para salvar no Fotos ou compartilhar. Uma câmera em terceira pessoa acompanha a sua corrida, um HUD mostra ritmo e batimentos, um minimapa e cartões de trecho mostram as suas parciais, e um sobrevoo final mostra o percurso inteiro. Você escolhe o tema do mapa e a música antes de salvar e pode ver uma prévia primeiro.",
+    "Além de uma corrida isolada, você pode correr contra uma corrida anterior no mesmo percurso, reproduzir a luz e o clima do dia em que correu, deixar o app mostrar em câmera lenta o seu trecho mais rápido e sobrepor todas as corridas em um mapa da cidade para criar vídeos de resumo do mês."
+  ],
+  "features": [
+    {
+      "h": "Um replay de corrida em 3D visto da rua",
+      "p": "A câmera segue bem perto do asfalto entre as ruas e os prédios em 3D montados a partir do seu percurso, então o vídeo parece correr aquele trajeto de novo. No fim, um sobrevoo mostra o percurso inteiro com as ruas e os lugares por onde você passou."
+    },
+    {
+      "h": "HUD de ritmo e batimentos, minimapa e cartões de trecho",
+      "p": "Ritmo e batimentos aparecem na tela, junto com um minimapa, cartões de trecho com as parciais e uma curva de ritmo e batimentos na parte de baixo e no encerramento."
+    },
+    {
+      "h": "O céu daquele dia, corrida fantasma e momentos",
+      "p": "O céu daquele dia reproduz a luz e o clima da hora em que você correu. A corrida fantasma coloca ao seu lado uma corrida anterior no mesmo percurso. Momentos mostra em câmera lenta o seu trecho mais rápido, a maior subida e a arrancada final."
+    },
+    {
+      "h": "Minha cidade e vídeos de resumo do mês",
+      "p": "Minha cidade sobrepõe as suas corridas em um único mapa da cidade e transforma Este mês e Mês passado em vídeos de resumo. O Pro acrescenta os resumos do ano e de todo o período."
+    },
+    {
+      "h": "Vídeo vertical, temas de mapa e música",
+      "p": "Exporte um vídeo 9:16 para o Fotos. Três temas de mapa e cinco faixas de música estão incluídos, com prévia antes de salvar, e cada corrida pode ser feita em 1x e em Resumo."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/runvue/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Quadro do replay do RunVue à noite: uma cidade em 3D vista por uma câmera rente à rua, com um marcador azul do corredor, ritmo de 7:40 por milha, um minimapa e uma curva de ritmo e batimentos na parte de baixo",
+      "caption": "Reviva a corrida sob o céu daquele dia"
+    },
+    {
+      "src": "/images/apps/runvue/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Quadro do replay com o marcador fantasma de uma corrida anterior ao lado do corredor atual, ritmo de 8:05 por milha",
+      "caption": "Corra ao lado do seu eu do passado"
+    },
+    {
+      "src": "/images/apps/runvue/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Quadro do replay com um cartão que destaca o trecho mais rápido e o HUD mostrando 8:21 por milha",
+      "caption": "Seu trecho mais rápido, em câmera lenta"
+    },
+    {
+      "src": "/images/apps/runvue/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Mapa escuro de uma cidade com muitos percursos de corrida azuis e brilhantes sobrepostos, com o título Minha cidade",
+      "caption": "Suas corridas iluminam a cidade"
+    },
+    {
+      "src": "/images/apps/runvue/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela de ajustes do RunVue antes de criar um vídeo, com câmera, tema do mapa, céu daquele dia, correr contra uma corrida anterior e música, e um botão para fazer a prévia",
+      "caption": "Escolha antes de criar"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plataformas",
+      "v": "iPhone e Android (no Google Play)"
+    },
+    {
+      "k": "Requisitos",
+      "v": "iOS 17 ou posterior; treinos no Saúde com percurso GPS, ou um arquivo GPX ou FIT"
+    },
+    {
+      "k": "Entrada",
+      "v": "Treinos de corrida do Saúde; importação de GPX ou FIT"
+    },
+    {
+      "k": "Saída",
+      "v": "Vídeo vertical 9:16 salvo no Fotos ou compartilhado"
+    },
+    {
+      "k": "Velocidades",
+      "v": "1x e Resumo; o Pro acrescenta de 2x a 60x"
+    },
+    {
+      "k": "Câmeras",
+      "v": "Câmera de acompanhamento e câmera Navegação; predefinições Cinemático, Calmo, Oblíqua e Aérea com o Pro"
+    },
+    {
+      "k": "Mapas",
+      "v": "Dados do OpenStreetMap, citados nos créditos finais de cada vídeo; blocos do mapa baixados por região ampla"
+    },
+    {
+      "k": "Idiomas",
+      "v": "12 idiomas"
+    },
+    {
+      "k": "Renderização",
+      "v": "No aparelho; percurso GPS, localização exata e dados de saúde não são enviados a nenhum servidor"
+    }
+  ],
+  "limits": [
+    "O RunVue não registra corridas. Ele só transforma em vídeo as corridas já salvas no Saúde ou importadas como GPX ou FIT, e não é um rastreador ao vivo nem um treinador. Treinos na esteira ou em ambiente fechado sem percurso GPS não têm caminho para seguir.",
+    "O vídeo mostra o percurso inteiro do início ao fim e o app não tem como esconder um trecho, então uma corrida que sai de casa pode revelar onde você mora. Escolha com cuidado com quem compartilhar.",
+    "Os vídeos salvos levam uma pequena marca d'água do RunVue, e salvar sem a marca d'água faz parte do Pro. O crédito do OpenStreetMap no encerramento não pode ser desativado.",
+    "Onde faltam dados de altura dos prédios, o app desenha uma altura média, então percursos entre prédios altos ou por túneis podem parecer imperfeitos. A renderização 3D acontece no seu iPhone, por isso aparelhos mais antigos demoram mais.",
+    "Um anúncio pode aparecer depois que você salva um vídeo. Velocidades acima de 1x, predefinições extras de câmera, altura e zoom da câmera, correr contra qualquer corrida anterior e os resumos do ano e de todo o período fazem parte do Pro."
+  ],
+  "faq": [
+    {
+      "q": "Como faço um vídeo de replay da minha corrida?",
+      "a": "Abra o RunVue, escolha um treino de corrida do Saúde ou importe um arquivo GPX ou FIT, defina câmera, tema do mapa, céu e música, faça uma prévia e salve o vídeo no Fotos. A tela de ajustes informa que uma prévia leva cerca de 15 segundos."
+    },
+    {
+      "q": "O RunVue grava a minha corrida?",
+      "a": "Não. Ele trabalha com corridas que já estão salvas no Saúde ou com um arquivo GPX ou FIT. Para registrar, use o seu Apple Watch ou o seu app de corrida."
+    },
+    {
+      "q": "O que é um replay de corrida em 3D?",
+      "a": "É um vídeo curto em que uma câmera segue o percurso registrado através de um modelo 3D das ruas e dos prédios ao redor, com um HUD de ritmo e batimentos, no lugar de uma linha plana no mapa."
+    },
+    {
+      "q": "Quais recursos fazem parte do Pro?",
+      "a": "O Pro acrescenta velocidades de 2x a 60x, as predefinições de câmera Cinemático, Calmo, Oblíqua e Aérea, altura e zoom da câmera, correr contra qualquer corrida anterior, os resumos do ano e de todo o período e salvar vídeos sem marca d'água."
+    },
+    {
+      "q": "Dá para esconder onde eu moro?",
+      "a": "O vídeo mostra o percurso inteiro e o app não consegue esconder um trecho, então decida quem vai ver o vídeo antes de compartilhar."
+    },
+    {
+      "q": "O vídeo sai do meu iPhone?",
+      "a": "O vídeo é gerado no seu iPhone, e o seu percurso GPS, a sua localização exata e os seus dados do Saúde não são enviados a um servidor nem a SDKs de anúncios ou de medição, exceto os vídeos que você mesmo compartilha. Os mapas são baixados apenas como blocos regionais aproximados."
+    }
+  ],
+  "card": {
+    "tagline": "Suas corridas registradas viram vídeos de replay 3D pelo seu percurso",
+    "features": [
+      "Replay 3D rente à rua com HUD de ritmo e batimentos",
+      "Importação do Saúde, GPX ou FIT",
+      "Corrida fantasma, céu daquele dia e resumos da Minha cidade"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "app de replay de corrida",
+      "h1": "O melhor app de replay de corrida em 3D para iPhone e Android.",
+      "sub": "Transforma uma corrida já registrada em um vídeo 3D curto, com uma câmera que acompanha de perto as ruas que você correu.",
+      "shots": [
+        "01",
+        "04"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Visto da rua.",
+        "text": "A câmera fica rente ao asfalto, entre prédios 3D montados a partir do seu percurso. Parece que você está correndo de novo."
+      },
+      {
+        "title": "Ritmo e batimentos na tela.",
+        "text": "Um HUD mostra ritmo e batimentos, com um minimapa e um cartão para cada trecho."
+      },
+      {
+        "title": "A luz do dia em que você correu.",
+        "text": "O céu daquele dia traz de volta a luz e o clima da hora em que você estava na rua."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Dispute com uma corrida anterior no mesmo percurso.",
+        "p": "A corrida fantasma coloca ao seu lado uma corrida anterior no mesmo percurso, para você ver onde ganhou e onde perdeu tempo.",
+        "shot": "02"
+      },
+      {
+        "h2": "A subida e a arrancada final, de novo.",
+        "p": "Momentos encontra o seu trecho mais forte, a maior subida e a arrancada final, e mostra tudo em câmera lenta.",
+        "shot": "03"
+      },
+      {
+        "h2": "Três temas de mapa, cinco faixas, um vídeo vertical.",
+        "p": "Veja os temas de mapa e as músicas em prévia antes de salvar e exporte um vídeo 9:16 para o Fotos.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto para rever a sua última corrida?",
+      "p": "Escolha uma corrida já salva, uma câmera e um tema, e salve o vídeo."
+    },
+    "closeH2": "Uma corrida que vale a pena rever.",
+    "trust": [
+      "Vídeo vertical 9:16",
+      "Dados do OpenStreetMap",
+      "12 idiomas"
+    ]
+  }
+}

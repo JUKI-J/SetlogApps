@@ -1,0 +1,197 @@
+{
+  "locale": "pt-br",
+  "title": "Cronômetro sincronizado - LapLync para iPhone e iPad",
+  "description": "Cronômetro sincronizado para vários dispositivos com uma só largada, contagem 3-2-1 em cada tela e voltas compartilhadas. Código ou QR, sem conta.",
+  "h1": "Um cronômetro sincronizado que roda em cada dispositivo da sala",
+  "tagline": "Vários dispositivos. Um só cronômetro.",
+  "summary": [
+    "LapLync é um cronômetro para vários dispositivos no iPhone e no iPad. Um dispositivo inicia, todos os dispositivos da sala começam juntos, e as voltas e os tempos parciais aparecem em todos eles.",
+    "Ele foi feito para treinadores e preparadores físicos, cronometristas e árbitros de provas, e para qualquer pessoa que precise que várias pessoas marquem tempo a partir do mesmo instante de largada.",
+    "Os dispositivos entram com um código de sala de 6 caracteres ou um QR code, sem conta. Dispositivos próximos se conectam por Bluetooth e Wi-Fi, os distantes pela internet, e cada dispositivo continua cronometrando sozinho se todas as conexões caírem."
+  ],
+  "overview": [
+    "Cronometrar um grupo com vários cronômetros comuns não é confiável. Alguém dá a largada, os tempos de reação variam e uma única pessoa não consegue apertar todos os dispositivos. O LapLync troca isso por uma largada compartilhada. Quando o anfitrião toca em Iniciar, uma contagem regressiva 3-2-1 aparece em todas as telas no mesmo momento e todos os cronômetros começam juntos. Os relógios são alinhados aos servidores de horário da Apple (NTP), e os dispositivos costumam ficar a poucas dezenas de milissegundos um do outro, cerca de 50 ms dependendo da rede.",
+    "Um cronômetro para vários dispositivos ajuda em qualquer lugar onde é preciso comparar tempos tomados em pontos diferentes. Um treinador pode entregar celulares aos atletas na lateral da pista, uma competição de natação pode colocar um dispositivo em cada posto de cronometragem e um revezamento pode registrar as passagens em relação a uma só largada. Qualquer pessoa na sala pode marcar uma volta, e cada volta e tempo parcial aparece em todos os dispositivos, então ninguém precisa copiar números à mão depois.",
+    "A mesma sala funciona tanto quando os dispositivos estão na mesma rede Wi-Fi quanto quando cada um usa seus próprios dados móveis. O LapLync tenta primeiro Bluetooth e Wi-Fi quando os dispositivos estão perto, muda para um relay pela internet quando estão em redes diferentes e, se tudo falhar, passa a cronometrar de forma independente a partir da âncora NTP de cada dispositivo. Os registros se juntam automaticamente quando a conexão volta."
+  ],
+  "features": [
+    {
+      "h": "Largada sincronizada com contagem regressiva 3-2-1",
+      "p": "O anfitrião inicia o cronômetro e a contagem chega a todas as telas ao mesmo tempo, então quem toca em Iniciar não larga na frente. Só o anfitrião inicia, pausa e para; os participantes marcam voltas."
+    },
+    {
+      "h": "Cronômetro para vários dispositivos com voltas e parciais compartilhados",
+      "p": "Qualquer pessoa na sala pode marcar uma volta, e as voltas e os tempos parciais aparecem em todos os dispositivos. Se marcar a volta errada, toque em Desfazer logo em seguida ou mantenha a volta pressionada para apagá-la. O anfitrião pode apagar qualquer volta e os participantes as suas, e as exclusões são sincronizadas em todos os dispositivos."
+    },
+    {
+      "h": "Perto, em redes diferentes ou offline",
+      "p": "Dispositivos próximos se conectam por Bluetooth e Wi-Fi. Dispositivos em redes diferentes, até em países diferentes, se conectam pela internet. Se toda a conectividade cair, cada dispositivo continua a partir da sua âncora NTP. Um aviso curto de Reconectando aparece enquanto o cronômetro segue rodando, e você pode tocar em Reconectar para tentar de novo."
+    },
+    {
+      "h": "Marque voltas sem tocar na tela",
+      "p": "É opcional e vem desligado. Você pode marcar voltas com os botões de volume, um controle Bluetooth de disparo de câmera, um teclado ou um passador de slides. Uma Atividade ao Vivo mostra o cronômetro rodando na Tela Bloqueada e na Dynamic Island, e pode ser desligada nos Ajustes."
+    },
+    {
+      "h": "Sem conta, e Pro só para quem cria a sala",
+      "p": "Crie uma sala e compartilhe o código falando, pelo chat ou por QR. Entrar em qualquer sala está sempre incluído. O Pro amplia uma sala que você cria para até oito dispositivos e adiciona exportação em CSV e o histórico completo de sessões. Só quem cria a sala precisa dele."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/laplync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Duas telas escuras do LapLync lado a lado, ambas mostrando o número 3 grande da contagem regressiva 3-2-1 antes de uma largada compartilhada",
+      "caption": "3-2-1 em todas as telas"
+    },
+    {
+      "src": "/images/apps/laplync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Telas de anfitrião e convidado do LapLync em 02:37 e 02:59 com uma lista de voltas e tempos parciais abaixo do cronômetro",
+      "caption": "Voltas e parciais em todos os dispositivos"
+    },
+    {
+      "src": "/images/apps/laplync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela Criar sala do LapLync com um QR code, um código de sala de 6 caracteres, uma opção de PIN e a lista de dispositivos conectados",
+      "caption": "Entre por código ou QR"
+    },
+    {
+      "src": "/images/apps/laplync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela de histórico do LapLync com as sessões salvas e seus tempos totais, ao lado de um ícone de arquivo CSV",
+      "caption": "Histórico de sessões e exportação CSV"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisitos",
+      "v": "iPhone e iPad, iOS 17 ou posterior"
+    },
+    {
+      "k": "Como entrar",
+      "v": "Código de sala de 6 caracteres ou QR code, PIN opcional, sem conta"
+    },
+    {
+      "k": "Conexões",
+      "v": "Bluetooth e Wi-Fi por perto, relay pela internet entre redes, cronometragem independente como reserva"
+    },
+    {
+      "k": "Sincronização de horário",
+      "v": "Servidores de horário da Apple (NTP), normalmente a poucas dezenas de milissegundos (cerca de 50 ms)"
+    },
+    {
+      "k": "Formas de marcar voltas",
+      "v": "Tela, botões de volume, controle Bluetooth de disparo de câmera, teclado ou passador de slides"
+    },
+    {
+      "k": "Histórico",
+      "v": "Sessões recentes salvas no dispositivo, prontas para rever depois do treino"
+    },
+    {
+      "k": "Pro",
+      "v": "Salas de até 8 dispositivos, exportação em CSV e histórico completo de sessões; só quem cria a sala precisa do Pro"
+    },
+    {
+      "k": "Privacidade",
+      "v": "Sem conta, sem anúncios, sem localização nem contatos; UUID e nome do dispositivo usados só enquanto a sala está ativa"
+    }
+  ],
+  "limits": [
+    "O LapLync funciona apenas no iPhone e no iPad. Dispositivos Android e Windows não podem entrar em uma sala.",
+    "A diferença de cerca de 50 ms entre dispositivos é um valor típico que varia com a rede, e o LapLync não substitui um equipamento de cronometragem profissional, como um sistema de photo finish. Quem aperta o botão de volta também adiciona o próprio tempo de reação.",
+    "Com o Pro, quem cria a sala pode abrir salas de até oito dispositivos e ganha exportação em CSV e o histórico completo de sessões. Só quem cria a sala precisa dele.",
+    "Só o anfitrião pode iniciar, parar e zerar. Os participantes podem marcar voltas e apagar as próprias voltas.",
+    "Marcar voltas sem a tela e a Atividade ao Vivo são opcionais e devem ser ligadas ou desligadas nos Ajustes. Faça um ensaio curto com seus dispositivos reais antes de um evento importante."
+  ],
+  "faq": [
+    {
+      "q": "Como sincronizar um cronômetro em vários celulares?",
+      "a": "Crie uma sala em um dispositivo e deixe os outros entrarem com o código de 6 caracteres ou escaneando o QR. Quando o anfitrião toca em Iniciar, uma contagem regressiva 3-2-1 aparece em todas as telas e todos os cronômetros começam juntos."
+    },
+    {
+      "q": "Um cronômetro sincronizado funciona pela internet?",
+      "a": "Sim. Dispositivos próximos usam Bluetooth e Wi-Fi, e os que estão em redes diferentes se conectam automaticamente por um relay pela internet, mesmo em outras cidades ou outros países. Se as conexões caírem, cada dispositivo continua cronometrando e os registros se juntam quando a conexão volta."
+    },
+    {
+      "q": "Quantos dispositivos podem entrar em uma sala?",
+      "a": "Com o Pro, quem cria a sala pode abrir salas de até oito dispositivos. Entrar em uma sala criada por outra pessoa está sempre incluído, então os participantes nunca precisam do Pro."
+    },
+    {
+      "q": "Qual é a precisão para provas e treinos?",
+      "a": "Os dispositivos são alinhados aos servidores de horário da Apple e costumam ficar a poucas dezenas de milissegundos um do outro, cerca de 50 ms dependendo da rede. Isso atende treinos, registros de treino e provas informais. Para resultados oficiais, use um equipamento de cronometragem profissional."
+    },
+    {
+      "q": "Preciso de conta ou de e-mail?",
+      "a": "Não é preciso conta, senha nem e-mail, e não há anúncios. Um dispositivo entra em uma sala com o código de 6 caracteres ou escaneando o QR, e isso basta."
+    },
+    {
+      "q": "Dá para marcar voltas sem olhar para o celular?",
+      "a": "Sim, de forma opcional. Ligue nos Ajustes os botões de volume, um controle Bluetooth de disparo de câmera, um teclado ou um passador de slides. Vem desligado."
+    }
+  ],
+  "card": {
+    "tagline": "Um cronômetro compartilhado por todos os dispositivos da sala, com voltas em comum",
+    "features": [
+      "Largada 3-2-1 em todas as telas",
+      "Entre por código ou QR, sem conta",
+      "Bluetooth, Wi-Fi e internet"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "cronômetro sincronizado",
+      "h1": "O melhor cronômetro sincronizado para iPhone e iPad.",
+      "sub": "Inicie uma vez e cada dispositivo da sala começa com você, com voltas e parciais aparecendo em todos eles.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Ninguém larga na frente.",
+        "text": "A contagem 3-2-1 chega a todas as telas no mesmo instante, então quem toca em Iniciar não leva vantagem."
+      },
+      {
+        "title": "Perto, longe ou offline.",
+        "text": "Bluetooth e Wi-Fi por perto, internet entre redes, e cada dispositivo continua cronometrando se todas as conexões caírem."
+      },
+      {
+        "title": "Voltas sem a tela.",
+        "text": "Marque voltas com os botões de volume, um controle Bluetooth de câmera ou um teclado. Fica desligado até você ligar."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Qualquer pessoa na sala marca uma volta.",
+        "p": "Voltas e tempos parciais aparecem em todos os dispositivos, e uma volta errada pode ser desfeita logo depois de marcada.",
+        "shot": "02"
+      },
+      {
+        "h2": "Entre com um código de seis caracteres.",
+        "p": "Compartilhe o código da sala falando, pelo chat ou por QR. Não é preciso conta, senha nem e-mail.",
+        "shot": "03"
+      },
+      {
+        "h2": "Reveja as sessões recentes.",
+        "p": "As sessões recentes ficam salvas no dispositivo, prontas para rever depois do treino.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto para a próxima largada?",
+      "p": "Crie uma sala, compartilhe o código e toque em Iniciar."
+    },
+    "closeH2": "Cronometre todo mundo a partir do mesmo instante.",
+    "trust": [
+      "Sem conta",
+      "Sem anúncios",
+      "Sem localização nem contatos",
+      "Continua medindo offline"
+    ]
+  }
+}

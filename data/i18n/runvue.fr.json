@@ -1,0 +1,207 @@
+{
+  "locale": "fr",
+  "title": "Vidéo de course 3D et replay de running - RunVue",
+  "description": "Transformez une course déjà enregistrée en courte vidéo de replay 3D le long des rues parcourues, avec allure et cardio à l'écran, créée sur votre iPhone.",
+  "h1": "Vidéo de course 3D : votre sortie rejouée au ras de la rue",
+  "tagline": "Un replay de course en 3D, avec une caméra qui suit de près la route que vous avez courue.",
+  "summary": [
+    "RunVue transforme une course déjà enregistrée en courte vidéo verticale de replay 3D. Une caméra vous suit de près, juste au-dessus de la chaussée, dans les rues que vous avez réellement parcourues.",
+    "L'app s'adresse aux coureurs qui enregistrent leurs sorties avec une Apple Watch ou une app de running et qui veulent garder une vidéo d'un parcours, d'une course officielle ou d'un récap mensuel plutôt qu'une capture de carte.",
+    "Ce qui la distingue : une caméra de suivi au niveau de la rue à la place d'une vue satellite, un affichage de l'allure et de la fréquence cardiaque, et une vidéo entièrement créée sur votre iPhone."
+  ],
+  "overview": [
+    "Quand on cherche une vidéo de course 3D ou un replay de course à pied, on tombe surtout sur des apps qui enregistrent la sortie ou tracent une ligne plate sur une carte. RunVue intervient après la course. Importez une séance de course depuis l'app Santé d'Apple (Apple Health), c'est-à-dire le tracé que votre Apple Watch ou votre app de running y a déjà enregistré, ou ajoutez un fichier GPX ou FIT provenant d'un appareil qui n'enregistre pas les tracés dans Santé. RunVue construit une scène 3D des rues et des bâtiments le long de votre parcours, cale votre trace GPS sur la route et calcule le replay sur votre iPhone.",
+    "Le résultat est une vidéo au format 9:16 que vous pouvez enregistrer dans Photos ou partager. Une caméra de suivi à la troisième personne accompagne votre course, un affichage tête haute montre l'allure et la fréquence cardiaque, une mini-carte et des cartes de tronçon montrent vos temps intermédiaires, et un survol final dévoile tout le parcours. Vous choisissez le thème de carte et la musique avant d'enregistrer, et vous pouvez d'abord regarder un aperçu.",
+    "Au-delà d'une seule sortie, vous pouvez courir contre une de vos courses passées sur le même parcours, retrouver la lumière et la météo du jour où vous avez couru, laisser l'app ralentir votre tronçon le plus rapide et superposer toutes vos sorties sur une carte de votre ville pour créer des vidéos de récap mensuel."
+  ],
+  "features": [
+    {
+      "h": "Un replay de course en 3D vu depuis la rue",
+      "p": "La caméra suit de près, juste au-dessus de la route, à travers les rues et les bâtiments en 3D construits à partir de votre tracé. La vidéo donne l'impression de refaire la course. Elle se termine par un survol de tout le parcours, avec les rues et les lieux que vous avez croisés."
+    },
+    {
+      "h": "Allure, fréquence cardiaque, mini-carte et cartes de tronçon",
+      "p": "L'allure et la fréquence cardiaque s'affichent à l'écran, avec une mini-carte, des cartes de tronçon avec vos temps intermédiaires et une courbe d'allure et de fréquence cardiaque en bas de l'image et dans la séquence de fin."
+    },
+    {
+      "h": "Le ciel du jour, course fantôme et moments forts",
+      "p": "Le ciel du jour reproduit la lumière et la météo du moment où vous avez couru. La course fantôme place une course passée sur le même parcours à côté de vous. Les moments forts montrent au ralenti votre tronçon le plus rapide, votre plus grande montée et votre sprint final."
+    },
+    {
+      "h": "Ma ville et vidéos de récap mensuel",
+      "p": "Ma ville superpose vos courses sur une seule carte de la ville et transforme Ce mois et Mois dernier en vidéos de récap. Pro ajoute les récaps de l'année et depuis le début."
+    },
+    {
+      "h": "Vidéo verticale, thèmes de carte et musique",
+      "p": "Exportez une vidéo 9:16 dans Photos. Trois thèmes de carte et cinq morceaux de musique sont inclus, avec un aperçu avant l'enregistrement, et chaque course peut être rendue en 1x et en Résumé."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/runvue/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Replay RunVue de nuit, une ville en 3D vue par une caméra au ras de la route avec un repère de coureur bleu, allure 7:40 par mile, une mini-carte et une courbe d'allure et de fréquence cardiaque en bas de l'écran",
+      "caption": "Revivez votre course sous le ciel de ce jour-là"
+    },
+    {
+      "src": "/images/apps/runvue/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Image du replay avec le repère fantôme d'une course passée à côté du coureur actuel, allure 8:05 par mile",
+      "caption": "Courez à côté de vous-même"
+    },
+    {
+      "src": "/images/apps/runvue/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Image du replay avec une carte signalant le tronçon le plus rapide et l'affichage indiquant 8:21 par mile",
+      "caption": "Votre tronçon le plus rapide, au ralenti"
+    },
+    {
+      "src": "/images/apps/runvue/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Carte sombre d'une ville sur laquelle se superposent de nombreux tracés de course bleus lumineux, avec le titre Ma ville",
+      "caption": "Vos courses illuminent la ville"
+    },
+    {
+      "src": "/images/apps/runvue/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran de réglages de RunVue avant la création d'une vidéo, avec caméra, thème de carte, ciel du jour, course contre une course passée et musique, et un bouton pour créer l'aperçu",
+      "caption": "Choisissez avant de créer"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Plateformes",
+      "v": "iPhone et Android (sur Google Play)"
+    },
+    {
+      "k": "Configuration requise",
+      "v": "iOS 17 ou version ultérieure ; séances Santé avec un tracé GPS, ou un fichier GPX ou FIT"
+    },
+    {
+      "k": "Entrée",
+      "v": "Séances de course depuis l'app Santé ; import GPX ou FIT"
+    },
+    {
+      "k": "Sortie",
+      "v": "Vidéo verticale 9:16 enregistrée dans Photos ou partagée"
+    },
+    {
+      "k": "Vitesses",
+      "v": "1x et Résumé ; Pro ajoute de 2x à 60x"
+    },
+    {
+      "k": "Caméras",
+      "v": "Caméra de suivi et caméra Navigation ; préréglages Cinématique, Calme, Oblique et Aérienne avec Pro"
+    },
+    {
+      "k": "Cartes",
+      "v": "Données OpenStreetMap, citées dans le générique de chaque vidéo ; tuiles de carte téléchargées par grande zone"
+    },
+    {
+      "k": "Langues",
+      "v": "12 langues"
+    },
+    {
+      "k": "Rendu",
+      "v": "Sur l'appareil ; le tracé GPS, la position précise et les données de santé ne sont envoyés à aucun serveur"
+    }
+  ],
+  "limits": [
+    "RunVue n'enregistre pas les courses. L'app transforme seulement en vidéo les courses déjà enregistrées dans Santé ou importées en GPX ou FIT. Ce n'est ni un outil de suivi en direct ni un coach. Les séances sur tapis ou en intérieur sans tracé GPS n'ont aucun chemin à suivre.",
+    "La vidéo montre tout votre parcours du départ à l'arrivée et l'app ne permet pas de masquer un tronçon. Une course qui part de chez vous peut donc révéler votre domicile. Choisissez avec soin les personnes avec qui vous la partagez.",
+    "Les vidéos enregistrées portent un petit filigrane RunVue, et l'enregistrement sans filigrane fait partie de Pro. La mention OpenStreetMap de la séquence de fin ne peut pas être désactivée.",
+    "Là où les données de hauteur des bâtiments manquent, l'app dessine une hauteur moyenne. Les parcours entre de grands immeubles ou dans des tunnels peuvent donc paraître imparfaits. Le rendu 3D se fait sur votre iPhone, et les appareils plus anciens mettent plus de temps.",
+    "Une publicité peut s'afficher après l'enregistrement d'une vidéo. Les vitesses au-delà de 1x, les préréglages de caméra supplémentaires, la hauteur et le zoom de la caméra, la course contre n'importe quelle course passée et les récaps de l'année et depuis le début font partie de Pro."
+  ],
+  "faq": [
+    {
+      "q": "Comment créer une vidéo de replay à partir de ma course ?",
+      "a": "Ouvrez RunVue, choisissez une séance de course dans Santé ou importez un fichier GPX ou FIT, réglez la caméra, le thème de carte, le ciel et la musique, puis créez un aperçu et enregistrez la vidéo dans Photos. L'écran de réglages indique qu'un aperçu prend environ 15 secondes."
+    },
+    {
+      "q": "RunVue enregistre-t-il ma course ?",
+      "a": "Non. L'app part des courses déjà enregistrées dans Santé, ou d'un fichier GPX ou FIT. Pour enregistrer, utilisez votre Apple Watch ou votre app de running."
+    },
+    {
+      "q": "Qu'est-ce qu'un replay de course en 3D ?",
+      "a": "C'est une courte vidéo dans laquelle une caméra suit votre tracé enregistré à travers un modèle 3D des rues et des bâtiments qui le bordent, avec un affichage de l'allure et de la fréquence cardiaque, à la place d'une simple ligne sur une carte."
+    },
+    {
+      "q": "Quelles fonctions font partie de Pro ?",
+      "a": "Pro ajoute les vitesses de 2x à 60x, les préréglages de caméra Cinématique, Calme, Oblique et Aérienne, la hauteur et le zoom de la caméra, la course contre n'importe quelle course passée, les récaps de l'année et depuis le début, et l'enregistrement des vidéos sans filigrane."
+    },
+    {
+      "q": "Puis-je cacher l'emplacement de mon domicile ?",
+      "a": "La vidéo montre tout le parcours et l'app ne peut pas masquer un tronçon. Décidez donc qui verra la vidéo avant de la partager."
+    },
+    {
+      "q": "La vidéo quitte-t-elle mon iPhone ?",
+      "a": "La vidéo est calculée sur votre iPhone. Votre tracé GPS, votre position précise et vos données de santé ne sont envoyés ni à un serveur ni à des SDK de publicité ou de mesure, sauf pour les vidéos que vous partagez vous-même. Les cartes sont téléchargées uniquement sous forme de tuiles régionales approximatives."
+    }
+  ],
+  "card": {
+    "tagline": "Vos courses enregistrées en vidéos de replay 3D le long de votre parcours",
+    "features": [
+      "Replay 3D au niveau de la rue avec allure et fréquence cardiaque",
+      "Import depuis Santé, GPX ou FIT",
+      "Course fantôme, ciel du jour et récaps Ma ville"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "app de replay de course",
+      "h1": "La meilleure app de replay de course en 3D pour iPhone et Android.",
+      "sub": "Elle transforme une course déjà enregistrée en courte vidéo 3D, avec une caméra qui suit de près les rues que vous avez courues.",
+      "shots": [
+        "01",
+        "04"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Vu depuis la rue.",
+        "text": "La caméra reste au ras de la route, entre des bâtiments 3D construits à partir de votre tracé. On a l'impression de refaire la course."
+      },
+      {
+        "title": "Allure et cardio à l'écran.",
+        "text": "L'affichage montre l'allure et la fréquence cardiaque, avec une mini-carte et une carte pour chaque tronçon."
+      },
+      {
+        "title": "La lumière du jour de votre course.",
+        "text": "Le ciel du jour fait revenir la lumière et la météo de l'heure où vous étiez dehors."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Affrontez une course passée sur le même parcours.",
+        "p": "La course fantôme place une sortie précédente sur le même parcours à côté de vous, pour voir où vous avez gagné et perdu du temps.",
+        "shot": "02"
+      },
+      {
+        "h2": "La montée et le sprint final, rejoués.",
+        "p": "Les moments forts repèrent votre tronçon le plus vif, votre plus grande montée et votre sprint final, puis les passent au ralenti.",
+        "shot": "03"
+      },
+      {
+        "h2": "Trois thèmes de carte, cinq morceaux, une vidéo verticale.",
+        "p": "Prévisualisez les thèmes de carte et la musique avant d'enregistrer, puis exportez une vidéo 9:16 dans Photos.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Envie de revoir votre dernière course ?",
+      "p": "Choisissez une course déjà enregistrée, une caméra et un thème, puis enregistrez la vidéo."
+    },
+    "closeH2": "Une course qui mérite d'être revue.",
+    "trust": [
+      "Vidéo verticale 9:16",
+      "Données OpenStreetMap",
+      "12 langues"
+    ]
+  }
+}

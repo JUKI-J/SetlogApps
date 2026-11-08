@@ -1,0 +1,135 @@
+{
+  "locale": "it",
+  "title": "Trasferire file da iPhone ad Android - OneSync App e Web",
+  "description": "Trasferisci file e testo tra iPhone, Android e il browser di ogni computer. Avvia una sessione, scansiona un codice QR o digita un codice. Senza account.",
+  "h1": "Trasferimento file tra iPhone e Android, senza cavi e senza account",
+  "tagline": "Invia file e testo tra telefono, tablet e computer, senza cavi e senza account.",
+  "summary": [
+    "OneSync invia file e testo tra iPhone, telefoni e tablet Android e qualsiasi computer tramite un browser web. Non servono account, cavi o abbinamenti.",
+    "È pensata per chi deve passare una foto, un documento o un link copiato tra dispositivi che non possono usare AirDrop insieme, come un iPhone e un tablet Android, oppure il PC dell'ufficio e un telefono.",
+    "Avvii una sessione su un dispositivo, poi gli altri si uniscono scansionando un codice QR o inserendo un codice. Ogni dispositivo nella sessione riceve ciò che invii."
+  ],
+  "overview": [
+    "Trasferire file da iPhone ad Android è scomodo perché AirDrop non funziona tra piattaforme diverse e un cavo richiede l'adattatore giusto. OneSync lavora invece con una sessione temporanea. Apri l'app su un dispositivo e avvia una sessione per ottenere un codice QR e un breve codice di sessione. Sull'altro dispositivo, scansiona il codice QR o digita il codice. Sul computer non installi nulla. Apri il client web di OneSync in un browser, ad esempio onesync.setlog.net, e unisciti allo stesso modo.",
+    "Quando i dispositivi sono nella sessione, puoi inviare file e testo a tutti. Puoi condividere direttamente da altre app con il menu di condivisione, copiare un link o una frase su un dispositivo e riceverla su un altro, e unirti con un codice QR, un codice o un link. I trasferimenti di file grandi possono riprendere dopo un'interruzione di rete.",
+    "OneSync è un canale di trasferimento temporaneo per passare file da un dispositivo all'altro. I trasferimenti passano dal nostro server tramite connessioni cifrate (HTTPS/TLS), e file e testi vengono eliminati dal server al termine della sessione. È adatto a passaggi occasionali su un PC condiviso o tra i telefoni di famiglia, e non è adatto a file molto sensibili."
+  ],
+  "features": [
+    {
+      "h": "Trasferire file tra iPhone e Android",
+      "p": "Avvia una sessione su un iPhone o su un telefono Android e fai unire l'altro dispositivo con il codice QR o il codice di sessione. I file inviati arrivano su ogni dispositivo della sessione. Ogni sessione mostra anche un breve numero di verifica, così puoi confermare di essere entrato in quella giusta."
+    },
+    {
+      "h": "Un client web per qualsiasi computer",
+      "p": "I computer si uniscono dal browser, quindi non c'è nulla da installare su un PC Windows, un Mac o una macchina Linux. La schermata della sessione mostra l'indirizzo web per PC, che puoi copiare. La schermata di scansione QR spiega come mostrare il codice QR sul PC."
+    },
+    {
+      "h": "Testo e link oltre ai file",
+      "p": "Condividi una frase o un link copiato con tutti i dispositivi della sessione. Tutto ciò che invii compare nell'attività della sessione, così puoi scaricarlo o copiarlo su ogni dispositivo."
+    },
+    {
+      "h": "Condividi da altre app e unisciti con un link",
+      "p": "Usa il menu di condivisione per inviare una foto o un documento da un'altra app direttamente nella sessione. Unisciti con un codice QR, inserendo un codice o aprendo un link."
+    },
+    {
+      "h": "Nessun account, e le sessioni si ripuliscono da sole",
+      "p": "Non ci sono registrazione né accesso. La schermata della sessione mostra il tempo rimanente e, quando una sessione termina, i suoi file e testi vengono eliminati dal server."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/onesync/en/01.webp",
+      "w": 420,
+      "h": 880,
+      "alt": "Schermata iniziale di OneSync su sfondo blu scuro con il titolo «All your devices, as one», un pulsante Start sharing, Enter code e Scan QR",
+      "caption": "Inizia a condividere o unisciti"
+    },
+    {
+      "src": "/images/apps/onesync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Schermata di sessione di OneSync con codice QR, codice di sessione, numero di verifica, tempo rimanente, dispositivi connessi e un elenco di file e testi inviati",
+      "caption": "Sessione con codice QR e attività"
+    },
+    {
+      "src": "/images/apps/onesync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Pannello Devices di OneSync con un iPhone, un MacBook Pro, un iPad, un iMac e un client web collegati alla stessa sessione",
+      "caption": "Telefoni, computer e browser insieme"
+    }
+  ],
+  "specs": [
+    { "k": "Piattaforme", "v": "iPhone e iPad (iOS 15 o successivo), Android e qualsiasi computer tramite un browser web" },
+    { "k": "Come unirsi", "v": "Codice QR, codice di sessione o link, con un breve numero di verifica; nessuna registrazione o accesso" },
+    { "k": "Cosa puoi inviare", "v": "File e testo; condivisione da altre app con il menu di condivisione" },
+    { "k": "Pro (opzionale)", "v": "File più grandi, sessioni più lunghe, più dispositivi per sessione e nessuna pubblicità" },
+    { "k": "Sicurezza", "v": "Connessioni cifrate (HTTPS/TLS) tramite il nostro server; file e testi eliminati dal server al termine della sessione" },
+    { "k": "File grandi", "v": "I trasferimenti possono riprendere dopo un'interruzione di rete" }
+  ],
+  "limits": [
+    "OneSync non usa la crittografia end-to-end, quindi non usarlo per file molto sensibili. I trasferimenti usano HTTPS/TLS e passano dal nostro server.",
+    "È un canale temporaneo. Le sessioni terminano e poi file e testi vengono eliminati dal server, quindi non conserva file per mesi.",
+    "Ogni sessione dura un tempo stabilito, indicato nella schermata della sessione. Quando termina, avvia una nuova sessione su qualsiasi dispositivo per il trasferimento successivo.",
+    "I computer usano il client web in un browser; la scheda dello store non descrive alcuna applicazione separata per Windows, Mac o Linux.",
+    "Entrambe le persone hanno bisogno di una connessione a internet, perché i file passano dal nostro server nel tragitto tra i dispositivi."
+  ],
+  "faq": [
+    {
+      "q": "Come trasferisco file da iPhone ad Android?",
+      "a": "Apri OneSync su un dispositivo e avvia una sessione per ottenere un codice QR e un codice. Scansiona il codice QR o inserisci il codice sull'altro dispositivo, poi invia file e testo. Ogni dispositivo della sessione li riceve."
+    },
+    {
+      "q": "Posso inviare file a un PC senza installare nulla?",
+      "a": "Sì. Apri il client web di OneSync in qualsiasi browser, ad esempio onesync.setlog.net, e unisciti alla sessione con il codice QR o il codice. La schermata della sessione nell'app mostra l'indirizzo web per PC."
+    },
+    {
+      "q": "Servono un account o un cavo?",
+      "a": "No. Non ci sono registrazione, accesso, cavi o abbinamenti. La sessione si crea su un dispositivo e gli altri si uniscono con codice QR, codice o link."
+    },
+    {
+      "q": "Posso inviare file grandi?",
+      "a": "Sì. I trasferimenti di file grandi possono riprendere dopo un'interruzione di rete, quindi perdere la connessione non ti riporta all'inizio. La schermata della sessione mostra il tempo rimanente, e Pro (opzionale) aggiunge file più grandi e sessioni più lunghe."
+    },
+    {
+      "q": "OneSync è sicuro e cosa succede ai miei file?",
+      "a": "I trasferimenti usano connessioni cifrate (HTTPS/TLS), e file e testi vengono eliminati dal server al termine della sessione. OneSync non usa la crittografia end-to-end, quindi evita di condividere file molto sensibili."
+    },
+    {
+      "q": "Quali dispositivi possono unirsi a una sessione?",
+      "a": "iPhone, iPad e dispositivi Android si uniscono con l'app, e qualsiasi computer con il client web in un browser. Tutto ciò che invii arriva a ogni dispositivo della sessione. Con Pro (opzionale) possono unirsi più dispositivi alla stessa sessione."
+    }
+  ],
+  "card": {
+    "tagline": "Invia file e testo tra iPhone, Android e qualsiasi browser",
+    "features": [
+      "Codice QR o codice breve, senza account",
+      "Client web per qualsiasi computer",
+      "Condivisione da altre app"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "app per trasferire file",
+      "h1": "La migliore app per trasferire file su iPhone, iPad, Android e web.",
+      "sub": "Invia file e testo tra telefoni, tablet e qualsiasi computer con un browser, senza cavi e senza account.",
+      "shots": ["01", "02"]
+    },
+    "pillars": [
+      { "title": "Da iPhone ad Android, e ritorno.", "text": "Avvia una sessione su uno dei due telefoni e l'altro si unisce con un codice QR o un codice breve." },
+      { "title": "Qualsiasi computer, senza installare nulla.", "text": "I computer si uniscono da un browser web su Windows, Mac o Linux." },
+      { "title": "Nessuna registrazione.", "text": "Non ci sono account né accesso. Ogni sessione mostra un breve numero di verifica, così sai di essere nella sessione giusta." }
+    ],
+    "features": [
+      { "h2": "Arriva a ogni dispositivo della sessione.", "p": "I file inviati arrivano su ogni dispositivo che si è unito. I trasferimenti grandi ripartono dopo un calo di rete.", "shot": "03" },
+      { "h2": "Anche testo e link.", "p": "Invia una frase o un link copiato a tutti nella sessione. Resta nell'elenco attività, così ogni dispositivo può copiarlo o scaricarlo.", "shot": "02" },
+      { "h2": "Invia direttamente da altre app.", "p": "Usa il menu di condivisione per inviare una foto o un documento nella sessione. Gli altri si uniscono con codice QR, codice o link.", "shot": "01" }
+    ],
+    "midCta": {
+      "h2": "Hai un file da passare?",
+      "p": "Avvia una sessione sul telefono e scansiona il codice dall'altro dispositivo."
+    },
+    "closeH2": "Un trasferimento di file che fa pulizia da solo.",
+    "trust": ["Nessun account", "Nessun cavo", "Connessioni cifrate TLS", "Eliminati dopo ogni sessione"]
+  }
+}

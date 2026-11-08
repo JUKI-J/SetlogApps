@@ -1,111 +1,455 @@
 {
  "https://apps.setlog.net/": {
-  "hash": "8cfdb472d84dc42235c975f5f31464219062de8e",
-  "date": "2026-10-25"
+  "hash": "c0bb698e79fe0783979160e06128fc18e283c45a",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/belvue/": {
-  "hash": "1c85a8a79cfe2a50e392c959d19f2b7661d8df00",
-  "date": "2026-10-25"
+  "hash": "7a98e3b18acfffa5eee74b22cab8120c3ae5d309",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/de/": {
+  "hash": "24869c8d1a7dcc4cefafe467e83975f0561e217e",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/es/": {
+  "hash": "aab7c8818e52e50a144edcf342b296dd100ee78d",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/fr/": {
+  "hash": "2c052f6fa09a8e38d76da92d8e184e2b24f2e14b",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/it/": {
+  "hash": "ac61fd57b28439d38e0297bc1d01f41d7f03488d",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/ja/": {
+  "hash": "e889f25c1285e40bda9684d4463e75f13c83ebf8",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/belvue/ko/": {
-  "hash": "0be2855284dcdb15a94fc6751584f8b9ee09e1bd",
-  "date": "2026-10-25"
+  "hash": "8267de108743efceaec50c1f5478ee33293980eb",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/pt-br/": {
+  "hash": "6901a0602b2258036d7c3338fcbe199fc1ca1cdd",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/ru/": {
+  "hash": "328eeacc87f7d4c8049ab536b3456076dbb38c71",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/tr/": {
+  "hash": "b785e3a611b1bd5bd102bf71216f2eb9d3c1e3b3",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/zh-hans/": {
+  "hash": "9c9d601f280b8a64d98de322dcfc6978cd22d098",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/belvue/zh-hant/": {
+  "hash": "036d1b048f5e72c336750b4a97502fc92dc8ca9f",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/charcoalplayer/": {
-  "hash": "7ef97be7025d437aefcc9f19cf8266a8953c34b7",
-  "date": "2026-10-25"
+  "hash": "abbf27cbf0f372d1a9d11e1e961565cc523a4139",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/de/": {
+  "hash": "f8f7a096e9588aa5c101871fbfbc3db527230141",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/es/": {
+  "hash": "80f00a50b1e38632e75eede8591dcad41e183e6d",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/fr/": {
+  "hash": "3e87330e1b45c800648ae325e4d93073c2b7ba0a",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/it/": {
+  "hash": "760db4532dcd6a5038165fbe444503df7ec90a45",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/ja/": {
+  "hash": "c44b97bc6cb261364225163937e4552715734bf5",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/charcoalplayer/ko/": {
-  "hash": "b5b71f61e8a2540aa53bd281a6d491a68ef37e58",
-  "date": "2026-10-25"
+  "hash": "18d2ab92da2418f13f907368779153d1c1f6939c",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/pt-br/": {
+  "hash": "ac389807324a1196ab7e59b2955b8f20ca1200ac",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/ru/": {
+  "hash": "8508401ecdc200b3f8dd0c795080a0cb65149d7a",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/tr/": {
+  "hash": "d548c2183994d5dafe2e2f7f35b056a54481e854",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/zh-hans/": {
+  "hash": "4ce64caeff2c590d22d60e91b5813b38c48d37bd",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/charcoalplayer/zh-hant/": {
+  "hash": "79747e69159d407b7f67c5b85e1cf2e48502ef0f",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/intervalrunner/": {
-  "hash": "8ff6b33d7181a668e96ca427c67da5e403a7cfd7",
-  "date": "2026-10-25"
+  "hash": "2f0022f97cc1a313f18ec0de81dba1f14661252d",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/de/": {
+  "hash": "7553487eddaffdb0a1c44fca6262c414fc4be3af",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/es/": {
+  "hash": "8083b99515b2f17eb936d2c63df639cb9cb82b81",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/intervalrunner/fr/": {
-  "hash": "4540be614e145344568c63be3836f924872fa28b",
-  "date": "2026-10-25"
+  "hash": "407e0f708d5a2cf4405d9bfd7bf99d6fb7174a2b",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/it/": {
+  "hash": "1f1ef7f90c122b627b92732824aa20b4e30a3037",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/ja/": {
+  "hash": "097591c9b68e54b23d882a7d69a8024a664865c6",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/intervalrunner/ko/": {
-  "hash": "ee30cae2d7aa36c54252ecfff99ef5ea99f5374a",
-  "date": "2026-10-25"
+  "hash": "6699bb8720d05f9190417bd17416bb1376342ac8",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/pt-br/": {
+  "hash": "9f3824a6dea2255ac9b837b2d4354281eb0043b9",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/ru/": {
+  "hash": "a762994e72d2904621401f7b7011294fad638395",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/tr/": {
+  "hash": "aa7203fcec6249b0d54140b77aa593737a6765d8",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/zh-hans/": {
+  "hash": "a13811417d29061ed4bc03925c5c7111413f7476",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/intervalrunner/zh-hant/": {
+  "hash": "86944a372d6d36434a0bb336e08ea4feb5e394ce",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/ko/": {
-  "hash": "57de8d6f08df711ab632d2f9bc934494dfd929d4",
-  "date": "2026-10-25"
+  "hash": "f3cabdde87269adb2f0ae7e029c6704437937500",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/laplync/": {
-  "hash": "923cbcffe5a5de8b1f20e15b3d97a00f09c21c3d",
-  "date": "2026-10-25"
+  "hash": "e1192fae3926e4e93244bd7648c933d9159e04fe",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/de/": {
+  "hash": "ed8d53e1c2ba4c1904dee386fa01c67de88998e6",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/es/": {
+  "hash": "75ecb3370023b6644713df9825258579d0f18c32",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/fr/": {
+  "hash": "5543603bb96d86c4c76d6efe259193b64c3c71c3",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/it/": {
+  "hash": "482f791dbbd51e50c1bebd64dff0485e46fb640e",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/ja/": {
+  "hash": "2db2f56d4aeee76246e33c88093fb67fa389008f",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/laplync/ko/": {
-  "hash": "049858c115d6253a4788f661d9b0ec7e88378bdd",
-  "date": "2026-10-25"
+  "hash": "b4dfbaec6c53acd617e2a2fae27072860709bb4d",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/pt-br/": {
+  "hash": "2a835ad66d5d75701423aa1bdbb68d79105e09f1",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/ru/": {
+  "hash": "d0eca3d6b20460b5f63169f631daa842175798ce",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/tr/": {
+  "hash": "68cd9788c12c9e01975c76dd5c4fb76696a552a1",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/zh-hans/": {
+  "hash": "ac39369581512e14f944b495e6d39eb60dc74875",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/laplync/zh-hant/": {
+  "hash": "2beb4bab2adb59fc34ae91280ee17e30255c86c0",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/lunchlog/": {
-  "hash": "59fca530e60c464a3166577090867188ba5f9c86",
-  "date": "2026-10-25"
+  "hash": "5e9222163a741321dce6fc3f6d6a594ea4724261",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/onesync/": {
-  "hash": "ef7da78248140df723f9f5cb59d6ccaae8aa3a05",
-  "date": "2026-10-25"
+  "hash": "df02af4435fe3782639609be0ff2196170000938",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/de/": {
+  "hash": "823d1bdb163bc0fbafc48012f777f3dd353cd7ad",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/es/": {
+  "hash": "eeb33ce231d13222e5d13309e48098085765995d",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/fr/": {
+  "hash": "cdf823eb4a96b0d4d2b645ade683b0c6594307d2",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/it/": {
+  "hash": "8097882bf2af2304cf03ad92819c9b5b43766769",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/ja/": {
+  "hash": "2bcd7e5b7439033abcdda4a1eeb6baee610c6d5b",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/onesync/ko/": {
-  "hash": "ed42e774c217cca2f9926d1ef3cbcd881bc2dea4",
-  "date": "2026-10-25"
+  "hash": "b66aef7cd1f42df9f31e9542526b073d44ad0085",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/pt-br/": {
+  "hash": "7fe6c0c62234a9238377ca3c1e2d3edfa770a0d0",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/ru/": {
+  "hash": "e5e092f3b8b53630a493b8316d0d89e4e2a1b8b6",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/tr/": {
+  "hash": "291525cbfa0b7998aa65594749fec60a02e97be5",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/zh-hans/": {
+  "hash": "d78b9106f97173370a7eaf2cf762e89f41d1a83c",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/onesync/zh-hant/": {
+  "hash": "b5eb6385382666597504418a52d4271693722ef2",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/runvue/": {
-  "hash": "77833ef632983308f967bb1d2e681d69c53db6c5",
-  "date": "2026-10-25"
+  "hash": "809db7c067cdfc55c4d2daf857e431ecc3d9c0b1",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/de/": {
+  "hash": "42192aad5276de641a33085b9df2d737586bc93a",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/es/": {
+  "hash": "7eb3136b4191e282f96d5c61b6be10905579ab41",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/fr/": {
+  "hash": "05f2aa74708e8feb273c2be717574f5473fcceb6",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/it/": {
+  "hash": "0d5dac814325cf8392bcbbd9f6eae2e9561b9ede",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/ja/": {
+  "hash": "8f7d1c9681fdaa9fcad55e749e289c5d6535ae6b",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/runvue/ko/": {
-  "hash": "b48fbba39bd5b114ec51a45993a978da87cd4b3b",
-  "date": "2026-10-25"
+  "hash": "5d747db9bcb4b26d6861423d895323e6d3bc778c",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/pt-br/": {
+  "hash": "29de9935c969e0dd985d170c6a354fdac6f5509a",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/ru/": {
+  "hash": "2e2abce07531549454dda5b532ec42e6f49c7d2f",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/tr/": {
+  "hash": "623eb72c093bd5c07b2039d545cfeb9950b04125",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/zh-hans/": {
+  "hash": "f095785d3e2b2483b055ed59e05cc21efacee060",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/runvue/zh-hant/": {
+  "hash": "8cd6a919b54e005ba51e9c6dc615f5fffd49d4e6",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/slplayer/": {
-  "hash": "0999317fbeae26b7ec909f2a5fad1d5865ea36f9",
-  "date": "2026-10-25"
+  "hash": "0998d6a7f78ce7eb858c1ab4c6c3d0f7c5f0e882",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/slplayer/de/": {
-  "hash": "f5d4c77cdb7f3eee0fdd5c72c0e2da0b2fe4abf1",
-  "date": "2026-10-25"
+  "hash": "1a15c28d42b1fdaa12a542f2c57ff8a11323b92a",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/es/": {
+  "hash": "8a76a59b6d00fd41b58eb04e01d58b447aa70e74",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/fr/": {
+  "hash": "81c1fc4c941d40f1d30ff9b103ae2a70e6c86d25",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/it/": {
+  "hash": "8f9fee3246b13975d3bca03e5eb285227bb786db",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/ja/": {
+  "hash": "6a27f617caff0cec2088486ad5f4b68412fb325e",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/slplayer/ko/": {
-  "hash": "2c7fbdb1f877c3178b088ea4adaf2cc91c8a67b9",
-  "date": "2026-10-25"
+  "hash": "b4bd9623a3e836ee875aeb154a55f09d2cf100b7",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/pt-br/": {
+  "hash": "faf4820fa76b26408b6be98f8d4f1dfa2f2f5992",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/ru/": {
+  "hash": "6f55fb67972644c6ffcffc4c955001d7c095c96e",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/tr/": {
+  "hash": "964f954d223fb14bbdde56bed0209186f5eabef4",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/zh-hans/": {
+  "hash": "a9ee2784265773430903b516979ffcbfce70232c",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/slplayer/zh-hant/": {
+  "hash": "23412dcda1c3043fc89edb25506b1ca6f125ba35",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/timerlync/": {
-  "hash": "29ab2f0d7b404c8811fb3bb3758b80d02fc6ade7",
-  "date": "2026-10-25"
+  "hash": "e874525c43893cee256aa3c33dc8af9f0db8984b",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/de/": {
+  "hash": "f8e596fe1a4f5481fb80770ade143d0ccb654958",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/es/": {
+  "hash": "5fb78eea98053763b2b56e567df0a35027a5754f",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/fr/": {
+  "hash": "d27be30b74dd1fe72acc43ac764e61e98e63dc04",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/it/": {
+  "hash": "428b84409b16218b008f58239c298e005eeddb9f",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/ja/": {
+  "hash": "2059a2b5d2ca91656569a5e895c220ba67dd223d",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/timerlync/ko/": {
-  "hash": "56e9a228ef9f377e8e3c6c371c4d26d6934d7710",
-  "date": "2026-10-25"
+  "hash": "c6ab02532dc83fd12eea6b57cbf80b6e181b6b07",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/pt-br/": {
+  "hash": "a19934c70338878a0b0838f688f6d14099b6660b",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/ru/": {
+  "hash": "87d11d64a2eaa3814d86397b876b73606d45dfd0",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/tr/": {
+  "hash": "6073eca5d98daa28c184f8b93f0ad5f85ae34184",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/zh-hans/": {
+  "hash": "f368d9951b241552596cc8413839372653c5c60c",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/timerlync/zh-hant/": {
+  "hash": "d079a2c2650556d99e0b4acf1655c78e6de46e8a",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/zipda/": {
-  "hash": "79e58ff2aa3d45e71640f3a5cbd3cf0988476891",
-  "date": "2026-10-25"
+  "hash": "705ea320620dc08a7ce72d8573ac925d625b7e5b",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/zipda/de/": {
-  "hash": "8ad50f720192e16cfa148fea4804ea43c73b7c59",
-  "date": "2026-10-25"
+  "hash": "fdfd7a54e93f7dfe56991047f33f89439e8d30ae",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/es/": {
+  "hash": "07c7e5adeb55616a4d6a61fb66e3eb8a7edfa164",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/fr/": {
+  "hash": "45eefb642bf9a94084c02b986010aa2f4ef7afb2",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/it/": {
+  "hash": "756de17bd290ac71c63cf897d3b19c67a4050614",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/zipda/ja/": {
-  "hash": "759e843628cc212ab4cb58fa04961e02cabb0dd9",
-  "date": "2026-10-25"
+  "hash": "e922c2d73e755b0fd113b2ed2bd2b6befd515bde",
+  "date": "2026-11-08"
  },
  "https://apps.setlog.net/zipda/ko/": {
-  "hash": "194d8bd802057caa3b1760156831f0927437845a",
-  "date": "2026-10-25"
+  "hash": "d29057618394aae92c6d19c793c39d56afb9cc04",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/pt-br/": {
+  "hash": "9d12c1e7215953a732ed46ca26e6c3a8119a35b3",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/ru/": {
+  "hash": "218ea6018f769a6a2144002f16133fc2d5cfb595",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/tr/": {
+  "hash": "eaed5ec2af3ae4bde05d3586025ad2831acc2bb8",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/zh-hans/": {
+  "hash": "5c66aee0abb6fc1d5cff9a92d4554f38390c350f",
+  "date": "2026-11-08"
+ },
+ "https://apps.setlog.net/zipda/zh-hant/": {
+  "hash": "25d62024efee053bd1efd33e2d3a4c316e912cd4",
+  "date": "2026-11-08"
  },
  "https://setlog.net/": {
   "hash": "6bcfe2f75db24f14e90c064d358de8316d949ddd",
   "date": "2026-10-12"
  },
  "https://setlog.net/about": {
-  "hash": "17a72d6662d58f544b514a8db0f0ceed8d7260de",
-  "date": "2026-10-25"
+  "hash": "f104f6eba176c80607034e191cac7b570122a2b9",
+  "date": "2026-11-08"
  },
  "https://setlog.net/contact": {
   "hash": "d2c85711cec29c507e2aada7918b915f522d312b",

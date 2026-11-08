@@ -1,0 +1,95 @@
+{
+  "locale": "it",
+  "title": "Aprire file RAR su Mac - Zipda per Mac e iPhone",
+  "description": "Estrai RAR, 7z, ZIP e TAR su Mac, iPhone e iPad. Guarda il contenuto prima di estrarre, con ZIP protetti e archivi divisi. Niente pubblicità né account.",
+  "h1": "Apri file RAR, 7z e ZIP su Mac e iPhone",
+  "tagline": "Decomprimi, sfoglia ed estrai gli archivi sul tuo dispositivo, senza caricare nulla online.",
+  "summary": [
+    "Zipda è un'app leggera per gli archivi compressi su Mac, iPhone e iPad. Apre, sfoglia e mostra in anteprima archivi ZIP, RAR, 7z e TAR, e decomprime ZIP e TAR in un solo passaggio.",
+    "È pensata per chi riceve archivi da utenti Windows o da vecchi programmi, come un allegato RAR, un 7z scaricato, uno ZIP protetto da password o un set enorme diviso in più parti.",
+    "Che tu debba aprire un file RAR su Mac o decomprimere uno ZIP su iPhone, prima guardi cosa c'è dentro e poi estrai un solo file o tutto nella cartella che scegli. Gli archivi grandi, divisi o danneggiati vengono gestiti direttamente sul dispositivo."
+  ],
+  "overview": [
+    "Su Mac, l'Utility Compressione integrata decomprime bene un normale file ZIP. I problemi iniziano con tutto il resto, per esempio un RAR preso da un sito di download, un 7z mandato da un collega, uno ZIP oltre i 4 GB diviso in più parti o un download interrotto a metà. Zipda è nato per questi casi. Puoi aprire l'archivio, vedere cosa contiene e guardare l'anteprima dei file prima di estrarre qualsiasi cosa.",
+    "Tutto avviene sul tuo dispositivo. Non ci sono account, strumenti di analisi né SDK pubblicitari, e l'app non effettua richieste di rete di sua iniziativa, quindi i file che estrai non lasciano mai il tuo Mac o il tuo iPhone. Durante l'estrazione Zipda scrive gli archivi grandi nello spazio di archiviazione un pezzo alla volta, ed è così che gestisce file ZIP64 di diversi gigabyte e archivi con decine di migliaia di elementi.",
+    "Aprire, sfogliare e vedere in anteprima qualsiasi archivio, oltre all'estrazione quotidiana di ZIP e TAR, funziona senza Pro. L'estrazione di RAR, 7z, ALZ e LZH, degli archivi divisi e di quelli protetti da password è inclusa in Zipda Pro, un'opzione che funziona allo stesso modo su iPhone, iPad e Mac."
+  ],
+  "features": [
+    {
+      "h": "Aprire RAR e 7z su Mac",
+      "p": "Oltre a ZIP e alla famiglia TAR (.tar, .tar.gz, .tar.bz2, .tar.xz), Zipda estrae RAR, 7z, LZH e ALZ. Puoi prima sfogliare e vedere in anteprima il contenuto di un RAR o di un 7z e poi tirare fuori solo il file che ti serve, oppure estrarre tutto nella cartella che preferisci. L'estrazione di RAR, 7z, ALZ e LZH fa parte di Pro."
+    },
+    {
+      "h": "Decomprimere su iPhone e iPad",
+      "p": "Un archivio ricevuto in Mail o nell'app File si apre in Zipda dal foglio di condivisione. Lo sfogli, guardi l'anteprima e poi estrai un file o tutto nella cartella che scegli. È la stessa app su iPhone, iPad e Mac, con un'unica scheda sull'App Store, e funziona con iOS 16.1 o versioni successive."
+    },
+    {
+      "h": "File ZIP protetti da password",
+      "p": "Uno ZIP protetto da password si apre sia con il vecchio metodo ZipCrypto sia con AES. Zipda ti chiede la password e il controllo avviene sul tuo dispositivo. L'apertura degli archivi protetti da password fa parte di Pro."
+    },
+    {
+      "h": "Archivi grandi, divisi e danneggiati",
+      "p": "Gli archivi Zip64 oltre i 4 GB, i set divisi in più parti e gli archivi con decine di migliaia di elementi vengono elaborati in streaming, senza caricarli interi in memoria. Per un archivio diviso basta scegliere la prima parte e Zipda trova le altre. Se un download si è interrotto o c'è un settore difettoso, Zipda estrae tutti gli elementi ancora leggibili e poi elenca con precisione quali ha saltato e perché. Annulla si ferma subito e ripulisce i file scritti a metà."
+    },
+    {
+      "h": "Creare file ZIP su Mac e iPhone",
+      "p": "Seleziona file, foto o video e comprimili in uno ZIP, anche dal foglio di condivisione su iPhone. ZIP e TAR senza password si creano senza Pro. La creazione di ZIP cifrati AES-256, di 7z, di archivi protetti da password e di archivi divisi fa parte di Pro."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/zipda/en/01.webp", "w": 1000, "h": 625, "alt": "Zipda su un Mac che mostra il contenuto di Shared_Photos_2026.zip, con un pulsante per estrarre tutto", "caption": "Sfoglia un archivio prima di estrarlo."},
+    {"src": "/images/apps/zipda/en/02.webp", "w": 1000, "h": 625, "alt": "Finestra della password di Zipda per Finance_Q2_Report.zip, con un campo nascosto e i pulsanti Annulla e Apri", "caption": "La password di uno ZIP protetto si inserisce sul tuo dispositivo."},
+    {"src": "/images/apps/zipda/en/03.webp", "w": 1000, "h": 625, "alt": "Schermata di creazione archivio di Zipda con sette file selezionati e un menu del formato ZIP", "caption": "Crea uno ZIP con i file che scegli."},
+    {"src": "/images/apps/zipda/en/04.webp", "w": 1000, "h": 625, "alt": "Finestra di Zipda su un Mac con l'elenco dei file di una cartella estratta e un pulsante di azione in basso", "caption": "I file estratti restano sul tuo dispositivo."}
+  ],
+  "specs": [
+    {"k": "Piattaforme", "v": "Mac, iPhone e iPad (un'unica scheda sull'App Store)"},
+    {"k": "Requisiti", "v": "macOS 14 o versioni successive; iOS 16.1 o versioni successive"},
+    {"k": "Estrazione", "v": ".zip, .tar, .tar.gz, .tar.bz2, .tar.xz; con Pro anche .rar, .7z, .lzh, .alz"},
+    {"k": "Creazione", "v": ".zip e .tar senza password; ZIP cifrato AES-256, 7z, archivi protetti e divisi con Pro"},
+    {"k": "Password", "v": "ZIP con ZipCrypto o AES (Pro)"},
+    {"k": "Archivi grandi", "v": "Zip64 oltre i 4 GB, archivi divisi e decine di migliaia di elementi, elaborati in streaming"},
+    {"k": "Privacy", "v": "Nessun account, nessuna analisi, nessun SDK pubblicitario; etichetta App Store Dati non raccolti"},
+    {"k": "Lingue", "v": "12, modificabili dall'interno dell'app"}
+  ],
+  "limits": [
+    "Zipda non può creare file RAR. Nessuna app di terze parti può creare RAR, quindi Zipda li estrae soltanto. Anche LZH è solo in estrazione.",
+    "I file EGG non sono supportati.",
+    "Un archivio diviso richiede tutte le parti. Se ne manca una, il set non può essere estratto.",
+    "Da un archivio danneggiato Zipda estrae solo gli elementi ancora leggibili ed elenca quelli che ha saltato.",
+    "L'estrazione di RAR, 7z, ALZ e LZH, degli archivi divisi e di quelli protetti da password è inclusa in Zipda Pro, che è facoltativo."
+  ],
+  "faq": [
+    {"q": "Come si apre un file RAR su Mac?", "a": "Installa Zipda e trascina il RAR nella finestra dell'app (su iPhone, condividilo con Zipda da Mail o dall'app File). Puoi prima sfogliare e vedere in anteprima il contenuto. L'estrazione di un archivio RAR è inclusa in Zipda Pro, che è facoltativo."},
+    {"q": "Come si decomprime un file ZIP su Mac?", "a": "Con un doppio clic su uno ZIP si usa l'Utility Compressione integrata. Con Zipda puoi anche sfogliare l'archivio, vedere l'anteprima di un singolo file, scegliere dove salvare i file ed estrarre in un passaggio, comodo quando l'archivio è molto grande o diviso."},
+    {"q": "Zipda apre i file 7z su Mac?", "a": "Sì. Zipda apre, sfoglia e mostra in anteprima gli archivi 7z, e l'estrazione dei 7z è inclusa in Zipda Pro."},
+    {"q": "Posso aprire uno ZIP protetto da password?", "a": "Sì. Si aprono gli ZIP protetti con ZipCrypto o con AES. Zipda chiede la password e il controllo avviene sul tuo dispositivo. L'apertura degli archivi protetti è inclusa in Zipda Pro."},
+    {"q": "Posso creare un file RAR con Zipda?", "a": "No. Zipda crea normali archivi ZIP e, con Pro, anche ZIP cifrati AES-256 e archivi 7z. Per inviare file ad altre persone, lo ZIP resta la scelta più sicura."},
+    {"q": "I miei file vengono caricati da qualche parte?", "a": "No. Tutto viene elaborato sul tuo dispositivo. L'app non ha account, strumenti di analisi né SDK pubblicitari."}
+  ],
+  "card": {
+    "tagline": "Apri RAR, 7z e ZIP su Mac e iPhone, e guarda il contenuto prima di estrarre.",
+    "features": ["Estrae ZIP, RAR, 7z e TAR", "Archivi protetti e divisi", "Niente pubblicità, niente account"]
+  },
+  "landing": {
+    "hero": {
+      "category": "app per estrarre archivi",
+      "h1": "La migliore app per estrarre archivi su iPhone, iPad e Mac.",
+      "sub": "Apre RAR, 7z e ZIP su Mac, iPhone e iPad, e tira fuori solo il file che ti serve.",
+      "shots": ["01"]
+    },
+    "pillars": [
+      {"title": "Apre RAR e 7z.", "text": "Zipda estrae RAR, 7z, LZH e ALZ oltre a ZIP e alla famiglia TAR. Tira fuori un solo file o estrai tutto nella cartella che scegli."},
+      {"title": "Archivi grandi e divisi.", "text": "Gli archivi Zip64 oltre i 4 GB e quelli con decine di migliaia di elementi vengono elaborati in streaming. Scegli la prima parte di un archivio diviso e Zipda trova le altre."},
+      {"title": "Mac, iPhone e iPad.", "text": "Zipda ha un'unica scheda sull'App Store per tutti e tre. Funziona con macOS 14 e iOS 16.1 o versioni successive."}
+    ],
+    "features": [
+      {"h2": "Prima guarda dentro. Poi prendi solo ciò che serve.", "p": "Sfoglia e guarda l'anteprima di ciò che contiene un archivio. Poi estrai un file, o tutto, nella cartella che scegli.", "shot": "01"},
+      {"h2": "Gli ZIP protetti si aprono sul tuo dispositivo.", "p": "Gli ZIP protetti con ZipCrypto o AES si aprono appena inserisci la password. Il controllo avviene sul tuo dispositivo.", "shot": "02"},
+      {"h2": "ZIP da file, foto e video.", "p": "Seleziona file, foto o video e comprimili in uno ZIP, anche dal foglio di condivisione su iPhone.", "shot": "03"}
+    ],
+    "midCta": {"h2": "Hai un RAR o un 7z da aprire?", "p": "Aprilo in Zipda, guarda cosa contiene ed estrai ciò che ti serve."},
+    "closeH2": "Un'unica app per estrarre archivi su Mac, iPhone e iPad.",
+    "trust": ["Nessun account", "Nessuna pubblicità", "Nessuna analisi"]
+  }
+}

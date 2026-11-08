@@ -159,3 +159,10 @@ git push
 ## 도움이 필요하다면
 - Cloudflare Pages 문서: https://developers.cloudflare.com/pages/
 - Cloudflare Community: https://community.cloudflare.com/
+
+## 클릭 집계 바인딩 (/go 리디렉트)
+
+`/go/<slug>`(functions/go/[slug].js)는 스토어 이동 클릭을 Workers Analytics Engine에 기록한다.
+- Cloudflare Pages 프로젝트 `setlogapps` → Settings → Bindings → Add → **Analytics Engine**, 변수명 `CLICKS`, dataset `setlogapps_clicks` (Production·Preview 각각).
+- 바인딩이 없어도 `/go`는 집계 없이 정상 리디렉트한다.
+- 리포트: `.env`(커밋 금지)에 `CF_ACCOUNT_ID`·`CF_API_TOKEN`(Account Analytics:Read) 기입 후 `node scripts/clicks-report.mjs [일수=14]` — 일자×앱×src×pos 클릭 수.

@@ -1,0 +1,14 @@
+{
+  "en": ["how to unzip a file on mac", "open rar on mac", "7z mac", "unrar mac"],
+  "ko": ["맥 압축 풀기", "알집 맥", "아이폰 압축 해제", "zip 한글 깨짐"],
+  "ja": ["zip 解凍 mac", "rar 解凍", "7z 解凍", "zip 文字化け", "lzh 解凍"],
+  "zh-hans": ["mac 解压 rar", "rar 解压", "7z 解压 mac", "iphone 解压 zip"],
+  "zh-hant": ["mac 解壓縮 rar", "rar 解壓縮", "7z 解壓縮 mac", "iphone 解壓縮 zip"],
+  "de": ["rar entpacken mac", "rar datei öffnen mac", "entpacker"],
+  "fr": ["ouvrir fichier rar mac", "décompresser rar mac", "ouvrir 7z mac", "décompresser zip iphone"],
+  "es": ["abrir archivo rar mac", "descomprimir rar mac", "descomprimir rar iphone", "abrir 7z mac"],
+  "it": ["aprire file rar mac", "estrarre rar mac", "aprire 7z mac", "decomprimere zip iphone"],
+  "pt-br": ["abrir arquivo rar mac", "descompactar rar mac", "abrir 7z mac", "descompactar zip iphone"],
+  "ru": ["открыть rar на mac", "архиватор для mac", "распаковать rar mac", "открыть 7z mac"],
+  "tr": ["mac rar açma", "rar dosyası açma", "7z açma mac", "iphone zip açma"]
+}

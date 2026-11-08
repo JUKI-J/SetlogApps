@@ -1,0 +1,14 @@
+{
+  "en": ["mac image viewer", "image viewer mac arrow keys", "light image viewer for mac", "mac photo viewer folder"],
+  "ko": ["맥 이미지 뷰어", "맥 이미지 뷰어 방향키", "맥 사진 뷰어", "맥 사진 넘겨보기"],
+  "ja": ["mac 画像ビューア", "mac 画像ビューワー", "mac 画像 矢印キー", "mac 写真 ビューア"],
+  "zh-hans": ["mac 图片查看器", "mac 看图软件", "mac 看图", "mac 图片浏览器"],
+  "zh-hant": ["mac 圖片檢視器", "mac 看圖軟體", "mac 看圖", "mac 圖片瀏覽"],
+  "de": ["bildbetrachter mac", "mac bildbetrachter pfeiltasten", "bilder ansehen mac", "foto viewer mac"],
+  "fr": ["visionneuse d'images mac", "visionneuse photo mac", "visionneuse images mac flèches", "afficher images mac"],
+  "es": ["visor de imágenes mac", "visor de fotos mac", "ver imágenes mac", "visor de imágenes mac flechas"],
+  "it": ["visualizzatore di immagini mac", "visualizzatore foto mac", "vedere immagini mac", "visualizzatore immagini mac cartella"],
+  "pt-br": ["visualizador de imagens mac", "visualizador de fotos mac", "ver imagens no mac", "visualizador de imagens mac pasta"],
+  "ru": ["просмотрщик изображений mac", "программа для просмотра фото mac", "просмотр фото на mac", "просмотрщик фото mac"],
+  "tr": ["mac resim görüntüleyici", "mac fotoğraf görüntüleyici", "mac resim görüntüleme", "mac fotoğraf görüntüleme programı"]
+}

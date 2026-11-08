@@ -1,0 +1,197 @@
+{
+  "locale": "fr",
+  "title": "Chronomètre synchronisé - LapLync pour iPhone et iPad",
+  "description": "Chronomètre synchronisé sur plusieurs appareils, avec un départ unique, un compte à rebours 3-2-1 sur chaque écran et des tours partagés. Sans compte.",
+  "h1": "Un chronomètre synchronisé qui tourne sur chaque appareil de la salle",
+  "tagline": "Plusieurs appareils. Un seul chronomètre.",
+  "summary": [
+    "LapLync est un chronomètre multi-appareils pour iPhone et iPad. Un appareil le lance, tous les appareils de la salle démarrent ensemble, et les tours et temps intermédiaires s'affichent sur chacun d'eux.",
+    "Il est conçu pour les entraîneurs et préparateurs, les chronométreurs et officiels d'épreuves, et pour tous ceux qui doivent chronométrer à plusieurs depuis le même instant de départ.",
+    "Les appareils rejoignent une salle avec un code de 6 caractères ou un QR code, sans compte. Les appareils proches se connectent en Bluetooth et en Wi-Fi, les appareils éloignés par Internet, et chaque appareil continue de chronométrer seul si toutes les connexions tombent."
+  ],
+  "overview": [
+    "Chronométrer un groupe avec plusieurs chronomètres ordinaires manque de fiabilité. Quelqu'un donne le top, les temps de réaction diffèrent, et une seule personne ne peut pas appuyer sur tous les appareils. LapLync remplace cela par un départ commun. Quand l'hôte touche Démarrer, un compte à rebours 3-2-1 apparaît au même instant sur chaque écran et tous les chronomètres partent ensemble. Les horloges sont alignées sur les serveurs de temps d'Apple (NTP), et les appareils concordent en général à quelques dizaines de millisecondes près, environ 50 ms selon le réseau.",
+    "Un chronomètre multi-appareils est utile partout où il faut comparer des temps pris à différents endroits. Un entraîneur peut confier des téléphones aux athlètes au bord de la piste, une compétition de natation peut placer un appareil à chaque poste de chronométrage, et un relais peut enregistrer les passages de témoin par rapport à un seul départ. Chacun dans la salle peut enregistrer un tour, et chaque tour et temps intermédiaire est visible sur tous les appareils, si bien que personne n'a à recopier les chiffres à la main ensuite.",
+    "La même salle fonctionne que les appareils partagent un seul réseau Wi-Fi ou utilisent chacun leurs données mobiles. LapLync tente d'abord le Bluetooth et le Wi-Fi quand les appareils sont proches, passe par un relais Internet quand ils sont sur des réseaux différents, et bascule sur un chronométrage indépendant à partir de l'ancrage NTP de chaque appareil si tout échoue. Les enregistrements fusionnent automatiquement au retour de la connexion."
+  ],
+  "features": [
+    {
+      "h": "Départ synchronisé avec un compte à rebours 3-2-1",
+      "p": "L'hôte lance le chronomètre et le compte à rebours arrive sur chaque écran au même moment, donc la personne qui touche Démarrer ne prend aucune avance. Seul l'hôte démarre, met en pause et arrête ; les participants enregistrent les tours."
+    },
+    {
+      "h": "Chronomètre multi-appareils avec tours et temps intermédiaires partagés",
+      "p": "Chacun dans la salle peut enregistrer un tour, et les tours et temps intermédiaires apparaissent sur chaque appareil. Si vous enregistrez un mauvais tour, touchez Annuler juste après, ou appuyez longuement sur un tour pour le supprimer. L'hôte peut supprimer n'importe quel tour et les participants les leurs, et les suppressions se synchronisent partout."
+    },
+    {
+      "h": "À proximité, entre réseaux ou hors ligne",
+      "p": "Les appareils proches se connectent en Bluetooth et en Wi-Fi. Les appareils sur des réseaux différents, même dans des pays différents, se connectent par Internet. Si toute connectivité est perdue, chaque appareil continue à partir de son ancrage NTP. Une courte bannière Reconnexion s'affiche pendant que le chronomètre continue de tourner, et vous pouvez toucher Se reconnecter pour réessayer."
+    },
+    {
+      "h": "Enregistrer des tours sans toucher l'écran",
+      "p": "Cette option est désactivée par défaut. Vous pouvez enregistrer des tours avec les boutons de volume, une télécommande Bluetooth pour appareil photo, un clavier ou une télécommande de présentation. Une Activité en direct affiche le chronomètre en cours sur l'écran verrouillé et dans la Dynamic Island, et peut être désactivée dans les Réglages."
+    },
+    {
+      "h": "Aucun compte, et Pro seulement pour le créateur de la salle",
+      "p": "Créez une salle et partagez le code à voix haute, par message ou par QR. Rejoindre une salle est toujours inclus. Pro étend une salle que vous créez jusqu'à huit appareils et ajoute l'export CSV et l'historique complet des sessions. Seule la personne qui crée la salle en a besoin."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/laplync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Deux écrans sombres de LapLync côte à côte affichant tous deux le grand chiffre 3 du compte à rebours 3-2-1 avant un départ commun",
+      "caption": "3-2-1 sur chaque écran"
+    },
+    {
+      "src": "/images/apps/laplync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écrans hôte et invité de LapLync à 02:37 et 02:59, avec la liste des tours et temps intermédiaires sous le chronomètre",
+      "caption": "Tours et temps intermédiaires sur chaque appareil"
+    },
+    {
+      "src": "/images/apps/laplync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran Créer une salle de LapLync avec un QR code, un code de salle de 6 caractères, une option PIN et la liste des appareils connectés",
+      "caption": "Rejoindre par code ou QR"
+    },
+    {
+      "src": "/images/apps/laplync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Écran Historique de LapLync listant les sessions enregistrées avec leur temps total, à côté d'une icône de fichier CSV",
+      "caption": "Historique des sessions et export CSV"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Configuration requise",
+      "v": "iPhone et iPad, iOS 17 ou version ultérieure"
+    },
+    {
+      "k": "Rejoindre une salle",
+      "v": "Code de salle de 6 caractères ou QR code, PIN facultatif, sans compte"
+    },
+    {
+      "k": "Connexions",
+      "v": "Bluetooth et Wi-Fi à proximité, relais Internet entre réseaux, chronométrage indépendant en secours"
+    },
+    {
+      "k": "Synchronisation de l'heure",
+      "v": "Serveurs de temps d'Apple (NTP), en général à quelques dizaines de millisecondes près (environ 50 ms)"
+    },
+    {
+      "k": "Déclenchement des tours",
+      "v": "Écran, boutons de volume, télécommande Bluetooth pour appareil photo, clavier ou télécommande de présentation"
+    },
+    {
+      "k": "Historique",
+      "v": "Sessions récentes enregistrées sur l'appareil, à revoir après l'entraînement"
+    },
+    {
+      "k": "Pro",
+      "v": "Salles jusqu'à 8 appareils, export CSV et historique complet des sessions ; seul le créateur de la salle a besoin de Pro"
+    },
+    {
+      "k": "Confidentialité",
+      "v": "Aucun compte, aucune publicité, ni localisation ni contacts ; UUID et nom de l'appareil utilisés seulement pendant qu'une salle est active"
+    }
+  ],
+  "limits": [
+    "LapLync fonctionne uniquement sur iPhone et iPad. Les appareils Android et Windows ne peuvent pas rejoindre une salle.",
+    "L'écart d'environ 50 ms entre appareils est une valeur typique qui varie avec le réseau, et LapLync ne remplace pas un équipement de chronométrage dédié comme une photo-finish. La personne qui appuie sur le bouton de tour ajoute aussi son temps de réaction.",
+    "Avec Pro, le créateur de la salle peut ouvrir des salles jusqu'à huit appareils et bénéficie de l'export CSV et de l'historique complet des sessions. Seul le créateur de la salle en a besoin.",
+    "Seul l'hôte peut démarrer, arrêter et réinitialiser. Les participants peuvent enregistrer des tours et supprimer les leurs.",
+    "Les déclencheurs de tour sans écran et l'Activité en direct sont facultatifs et s'activent ou se désactivent dans les Réglages. Faites une courte répétition avec vos vrais appareils avant un événement important."
+  ],
+  "faq": [
+    {
+      "q": "Comment synchroniser un chronomètre sur plusieurs téléphones ?",
+      "a": "Créez une salle sur un appareil, puis laissez les autres la rejoindre avec le code de 6 caractères ou en scannant le QR. Quand l'hôte touche Démarrer, un compte à rebours 3-2-1 s'affiche sur chaque écran et tous les chronomètres partent ensemble."
+    },
+    {
+      "q": "Un chronomètre multi-appareils fonctionne-t-il par Internet ?",
+      "a": "Oui. Les appareils proches utilisent le Bluetooth et le Wi-Fi, et les appareils sur des réseaux différents se connectent automatiquement par un relais Internet, même dans d'autres villes ou d'autres pays. Si les connexions tombent, chaque appareil continue de chronométrer et les enregistrements fusionnent au retour de la connexion."
+    },
+    {
+      "q": "Combien d'appareils peuvent rejoindre une salle ?",
+      "a": "Avec Pro, le créateur de la salle peut ouvrir des salles jusqu'à huit appareils. Rejoindre une salle créée par quelqu'un d'autre est toujours inclus, donc les participants n'ont jamais besoin de Pro."
+    },
+    {
+      "q": "Quelle est la précision pour les courses et l'entraînement ?",
+      "a": "Les appareils sont alignés sur les serveurs de temps d'Apple et concordent en général à quelques dizaines de millisecondes près, environ 50 ms selon le réseau. Cela convient à l'entraînement, aux carnets de séances et aux courses informelles. Pour des résultats officiels, utilisez un équipement de chronométrage dédié."
+    },
+    {
+      "q": "Faut-il un compte ou une adresse e-mail ?",
+      "a": "Ni compte, ni mot de passe, ni e-mail, et aucune publicité. Un appareil rejoint une salle avec le code de 6 caractères ou en scannant le QR, et c'est tout."
+    },
+    {
+      "q": "Peut-on enregistrer des tours sans regarder le téléphone ?",
+      "a": "Oui, en option. Activez dans les Réglages les boutons de volume, une télécommande Bluetooth pour appareil photo, un clavier ou une télécommande de présentation. L'option est désactivée par défaut."
+    }
+  ],
+  "card": {
+    "tagline": "Un chronomètre partagé par tous les appareils de la salle, avec des tours communs",
+    "features": [
+      "Départ 3-2-1 sur chaque écran",
+      "Code ou QR, sans compte",
+      "Bluetooth, Wi-Fi et Internet"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "chronomètre synchronisé",
+      "h1": "Le meilleur chronomètre synchronisé pour iPhone et iPad.",
+      "sub": "Lancez-le une fois et chaque appareil de la salle démarre avec vous, avec les tours et temps intermédiaires affichés sur tous.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Personne ne part en avance.",
+        "text": "Le compte à rebours 3-2-1 arrive sur chaque écran au même instant, donc la personne qui touche Démarrer n'a aucun avantage."
+      },
+      {
+        "title": "Proche, loin ou hors ligne.",
+        "text": "Bluetooth et Wi-Fi à proximité, Internet entre réseaux, et chaque appareil continue de chronométrer si toutes les connexions tombent."
+      },
+      {
+        "title": "Des tours sans l'écran.",
+        "text": "Enregistrez des tours avec les boutons de volume, une télécommande Bluetooth ou un clavier. L'option reste désactivée tant que vous ne l'activez pas."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Chacun dans la salle peut prendre un tour.",
+        "p": "Les tours et temps intermédiaires apparaissent sur chaque appareil, et un tour enregistré par erreur s'annule juste après.",
+        "shot": "02"
+      },
+      {
+        "h2": "Rejoindre avec un code de six caractères.",
+        "p": "Partagez le code de la salle à voix haute, par message ou par QR. Ni compte, ni mot de passe, ni e-mail.",
+        "shot": "03"
+      },
+      {
+        "h2": "Revoir les sessions récentes.",
+        "p": "Les sessions récentes restent sur l'appareil, prêtes à être revues après l'entraînement.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Prêt pour la prochaine ligne de départ ?",
+      "p": "Créez une salle, partagez le code et touchez Démarrer."
+    },
+    "closeH2": "Chronométrez tout le monde depuis le même instant.",
+    "trust": [
+      "Aucun compte",
+      "Aucune publicité",
+      "Ni localisation ni contacts",
+      "Chronomètre même hors ligne"
+    ]
+  }
+}

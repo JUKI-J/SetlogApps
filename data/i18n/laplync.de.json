@@ -1,0 +1,197 @@
+{
+  "locale": "de",
+  "title": "Synchronisierte Stoppuhr - LapLync für iPhone & iPad",
+  "description": "Stoppuhr für mehrere Geräte, synchron gestartet, mit 3-2-1-Countdown auf jedem Bildschirm und geteilten Runden. Beitritt per Code oder QR, ohne Konto.",
+  "h1": "Eine synchronisierte Stoppuhr, die auf jedem Gerät im Raum läuft",
+  "tagline": "Viele Geräte. Eine Stoppuhr.",
+  "summary": [
+    "LapLync ist eine Stoppuhr für mehrere Geräte auf iPhone und iPad. Ein Gerät startet sie, alle Geräte im Raum starten gleichzeitig, und Runden- und Zwischenzeiten erscheinen auf allen.",
+    "Die App ist für Trainerinnen und Trainer, für Zeitnehmer und Kampfrichter bei Veranstaltungen und für alle gemacht, die mit mehreren Personen vom selben Startmoment aus messen müssen.",
+    "Geräte treten mit einem 6-stelligen Raumcode oder einem QR-Code bei, ganz ohne Konto. Geräte in der Nähe verbinden sich über Bluetooth und WLAN, entfernte über das Internet, und jedes Gerät misst selbstständig weiter, wenn alle Verbindungen abbrechen."
+  ],
+  "overview": [
+    "Eine Gruppe mit mehreren gewöhnlichen Stoppuhren zu messen ist unzuverlässig. Jemand ruft Los, die Reaktionszeiten unterscheiden sich, und niemand kann alle Geräte gleichzeitig drücken. LapLync ersetzt das durch einen gemeinsamen Start. Tippt der Host auf Start, erscheint im selben Moment auf jedem Bildschirm ein 3-2-1-Countdown, und alle Stoppuhren laufen zusammen los. Die Uhren werden mit den Zeitservern von Apple (NTP) abgeglichen, und die Geräte liegen je nach Netzwerk meist nur einige Dutzend Millisekunden auseinander, etwa 50 ms.",
+    "Eine Stoppuhr, die auf mehreren Geräten synchron läuft, hilft überall dort, wo Zeiten von verschiedenen Orten verglichen werden. Ein Trainer kann Athleten an der Seitenlinie Handys in die Hand geben, bei einem Schwimmwettkampf steht an jedem Zeitnehmerplatz ein Gerät, und bei einer Staffel lassen sich die Wechsel gegen einen einzigen Start erfassen. Jeder im Raum kann eine Runde nehmen, und jede Runden- und Zwischenzeit ist auf jedem Gerät sichtbar, sodass hinterher niemand Zahlen abschreiben muss.",
+    "Derselbe Raum funktioniert, egal ob alle Geräte im selben WLAN sind oder jedes eigene mobile Daten nutzt. LapLync versucht zuerst Bluetooth und WLAN, wenn die Geräte nah beieinander sind, wechselt zu einem Internet-Relay, wenn sie in verschiedenen Netzen sind, und misst bei einem Totalausfall unabhängig vom NTP-Anker jedes Geräts weiter. Die Aufzeichnungen werden automatisch zusammengeführt, sobald die Verbindung zurück ist."
+  ],
+  "features": [
+    {
+      "h": "Synchroner Start mit 3-2-1-Countdown",
+      "p": "Der Host startet die Stoppuhr, und der Countdown erscheint gleichzeitig auf jedem Bildschirm, sodass niemand durch das Tippen auf Start einen Vorsprung bekommt. Nur der Host startet, pausiert und stoppt; Teilnehmende erfassen Runden."
+    },
+    {
+      "h": "Stoppuhr für mehrere Geräte mit geteilten Runden und Zwischenzeiten",
+      "p": "Jeder im Raum kann eine Runde erfassen, und Runden- und Zwischenzeiten erscheinen auf jedem Gerät. Wer die falsche Runde erwischt, tippt direkt danach auf Widerrufen oder drückt lange auf die Runde, um sie zu löschen. Der Host kann jede Runde löschen, Teilnehmende ihre eigenen, und Löschungen werden überall synchronisiert."
+    },
+    {
+      "h": "In der Nähe, über Netzwerke hinweg oder offline",
+      "p": "Nahe Geräte verbinden sich über Bluetooth und WLAN. Geräte in verschiedenen Netzen, sogar in verschiedenen Ländern, verbinden sich über das Internet. Fällt jede Verbindung aus, läuft jedes Gerät von seinem NTP-Anker aus weiter. Während die Stoppuhr weiterläuft, erscheint kurz ein Hinweis zur Wiederverbindung, und mit Erneut verbinden startest du einen neuen Versuch."
+    },
+    {
+      "h": "Runden erfassen, ohne den Bildschirm zu berühren",
+      "p": "Das ist optional und standardmäßig ausgeschaltet. Runden lassen sich mit den Lautstärketasten, einem Bluetooth-Kameraauslöser oder einer Tastatur bzw. einem Präsentations-Clicker erfassen. Eine Live-Aktivität zeigt die laufende Stoppuhr auf dem Sperrbildschirm und in der Dynamic Island und lässt sich in den Einstellungen ausschalten."
+    },
+    {
+      "h": "Kein Konto, und Pro nur für den Raumersteller",
+      "p": "Erstelle einen Raum und teile den Code per Zuruf, Chat oder QR. Der Beitritt zu jedem Raum ist immer enthalten. Pro erweitert einen selbst erstellten Raum auf bis zu acht Geräte und ergänzt CSV-Export und den vollständigen Sitzungsverlauf. Nur die Person, die den Raum erstellt, braucht Pro."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/laplync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Zwei dunkle LapLync-Bildschirme nebeneinander, beide mit der großen Zahl 3 des 3-2-1-Countdowns vor dem gemeinsamen Start",
+      "caption": "3-2-1 auf jedem Bildschirm"
+    },
+    {
+      "src": "/images/apps/laplync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Host- und Gastbildschirm von LapLync bei 02:37 und 02:59, darunter eine Liste mit Runden- und Zwischenzeiten",
+      "caption": "Runden und Zwischenzeiten auf jedem Gerät"
+    },
+    {
+      "src": "/images/apps/laplync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "LapLync-Bildschirm Raum erstellen mit QR-Code, 6-stelligem Raumcode, PIN-Option und der Liste verbundener Geräte",
+      "caption": "Beitritt per Code oder QR"
+    },
+    {
+      "src": "/images/apps/laplync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "LapLync-Verlauf mit gespeicherten Sitzungen und ihren Gesamtzeiten, daneben ein CSV-Dateisymbol",
+      "caption": "Sitzungsverlauf und CSV-Export"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Voraussetzungen",
+      "v": "iPhone und iPad, iOS 17 oder neuer"
+    },
+    {
+      "k": "Beitritt",
+      "v": "6-stelliger Raumcode oder QR-Code, optionale PIN, kein Konto"
+    },
+    {
+      "k": "Verbindungen",
+      "v": "Bluetooth und WLAN in der Nähe, Internet-Relay über Netzwerke hinweg, unabhängige Zeitmessung als Rückfallebene"
+    },
+    {
+      "k": "Zeitabgleich",
+      "v": "Apple-Zeitserver (NTP), meist innerhalb einiger Dutzend Millisekunden (etwa 50 ms)"
+    },
+    {
+      "k": "Rundenauslöser",
+      "v": "Bildschirm, Lautstärketasten, Bluetooth-Kameraauslöser, Tastatur oder Präsentations-Clicker"
+    },
+    {
+      "k": "Verlauf",
+      "v": "Letzte Sitzungen lokal auf dem Gerät gespeichert, nach dem Training jederzeit abrufbar"
+    },
+    {
+      "k": "Pro",
+      "v": "Räume mit bis zu 8 Geräten, CSV-Export und vollständiger Sitzungsverlauf; nur der Raumersteller braucht Pro"
+    },
+    {
+      "k": "Datenschutz",
+      "v": "Kein Konto, keine Werbung, kein Zugriff auf Standort oder Kontakte; Geräte-UUID und Gerätename nur, solange ein Raum aktiv ist"
+    }
+  ],
+  "limits": [
+    "LapLync läuft nur auf iPhone und iPad. Android- und Windows-Geräte können keinem Raum beitreten.",
+    "Die Abweichung von etwa 50 ms zwischen den Geräten ist ein typischer Wert, der vom Netzwerk abhängt, und LapLync ersetzt keine professionelle Zeitmessanlage wie ein Zielfoto-System. Wer die Rundentaste drückt, bringt außerdem die eigene Reaktionszeit mit.",
+    "Mit Pro kann der Raumersteller Räume mit bis zu acht Geräten öffnen und erhält CSV-Export und den vollständigen Sitzungsverlauf. Nur der Raumersteller braucht Pro.",
+    "Nur der Host kann starten, stoppen und zurücksetzen. Teilnehmende können Runden erfassen und ihre eigenen Runden löschen.",
+    "Rundenauslöser ohne Bildschirm und die Live-Aktivität sind optional und werden in den Einstellungen ein- oder ausgeschaltet. Mach vor einer wichtigen Veranstaltung einen kurzen Testlauf mit deinen echten Geräten."
+  ],
+  "faq": [
+    {
+      "q": "Wie synchronisiere ich eine Stoppuhr auf mehreren Handys?",
+      "a": "Erstelle auf einem Gerät einen Raum und lass die anderen mit dem 6-stelligen Code oder per QR-Scan beitreten. Tippt der Host auf Start, erscheint auf jedem Bildschirm ein 3-2-1-Countdown, und alle Stoppuhren starten gemeinsam."
+    },
+    {
+      "q": "Funktioniert eine Stoppuhr für mehrere Geräte auch über das Internet?",
+      "a": "Ja. Geräte in der Nähe nutzen Bluetooth und WLAN, Geräte in verschiedenen Netzen verbinden sich automatisch über ein Internet-Relay, auch in anderen Städten oder Ländern. Fallen die Verbindungen aus, misst jedes Gerät weiter, und die Aufzeichnungen werden zusammengeführt, sobald die Verbindung zurück ist."
+    },
+    {
+      "q": "Wie viele Geräte können einem Raum beitreten?",
+      "a": "Mit Pro kann der Raumersteller Räume mit bis zu acht Geräten öffnen. Der Beitritt zu einem Raum, den jemand anderes erstellt hat, ist immer enthalten, Teilnehmende brauchen also nie Pro."
+    },
+    {
+      "q": "Wie genau ist die Stoppuhr für Wettkämpfe und Training?",
+      "a": "Die Geräte werden mit den Zeitservern von Apple abgeglichen und liegen je nach Netzwerk meist nur einige Dutzend Millisekunden auseinander, etwa 50 ms. Das passt für Training, Trainingsprotokolle und inoffizielle Rennen. Für offizielle Ergebnisse ist eine professionelle Zeitmessanlage die richtige Wahl."
+    },
+    {
+      "q": "Brauche ich ein Konto oder eine E-Mail-Adresse?",
+      "a": "Weder Konto noch Passwort noch E-Mail sind nötig, und es gibt keine Werbung. Ein Gerät tritt einem Raum mit dem 6-stelligen Code oder per QR-Scan bei, mehr braucht es nicht."
+    },
+    {
+      "q": "Kann ich Runden erfassen, ohne aufs Handy zu schauen?",
+      "a": "Ja, optional. Schalte in den Einstellungen die Lautstärketasten, einen Bluetooth-Kameraauslöser oder eine Tastatur bzw. einen Präsentations-Clicker ein. Standardmäßig ist das ausgeschaltet."
+    }
+  ],
+  "card": {
+    "tagline": "Eine Stoppuhr, die alle Geräte im Raum teilen, mit gemeinsamen Runden",
+    "features": [
+      "3-2-1-Start auf jedem Bildschirm",
+      "Beitritt per Code oder QR, ohne Konto",
+      "Bluetooth, WLAN und Internet"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "synchronisierte Stoppuhr",
+      "h1": "Die beste synchronisierte Stoppuhr für iPhone und iPad.",
+      "sub": "Einmal starten, und jedes Gerät im Raum startet mit, mit Runden und Zwischenzeiten auf allen Bildschirmen.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Kein Vorsprung.",
+        "text": "Der 3-2-1-Countdown erscheint im selben Moment auf jedem Bildschirm, sodass niemand durch das Tippen auf Start einen Vorteil hat."
+      },
+      {
+        "title": "Nah, fern oder offline.",
+        "text": "Bluetooth und WLAN in der Nähe, das Internet über Netzwerke hinweg, und jedes Gerät misst weiter, wenn alle Verbindungen abbrechen."
+      },
+      {
+        "title": "Runden ohne Bildschirm.",
+        "text": "Erfasse Runden mit den Lautstärketasten, einem Bluetooth-Kameraauslöser oder einer Tastatur. Das bleibt aus, bis du es einschaltest."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Jeder im Raum kann eine Runde nehmen.",
+        "p": "Runden- und Zwischenzeiten erscheinen auf jedem Gerät, und eine falsche Runde lässt sich direkt nach dem Erfassen widerrufen.",
+        "shot": "02"
+      },
+      {
+        "h2": "Beitritt mit einem sechsstelligen Code.",
+        "p": "Teile den Raumcode per Zuruf, Chat oder QR. Konto, Passwort oder E-Mail sind nicht nötig.",
+        "shot": "03"
+      },
+      {
+        "h2": "Letzte Sitzungen im Blick.",
+        "p": "Die letzten Sitzungen bleiben auf dem Gerät gespeichert und lassen sich nach dem Training noch einmal ansehen.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Bereit für die nächste Startlinie?",
+      "p": "Raum erstellen, Code teilen und auf Start tippen."
+    },
+    "closeH2": "Alle vom selben Moment an messen.",
+    "trust": [
+      "Kein Konto",
+      "Keine Werbung",
+      "Kein Standort, keine Kontakte",
+      "Misst auch offline weiter"
+    ]
+  }
+}

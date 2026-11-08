@@ -1,0 +1,135 @@
+{
+  "locale": "pt-br",
+  "title": "Transferir arquivos iPhone Android - OneSync App e Web",
+  "description": "Transfira arquivos e textos entre iPhone, Android e o navegador de qualquer PC. Inicie uma sessão, escaneie um QR code ou digite um código. Sem conta.",
+  "h1": "Transferir arquivos entre iPhone e Android, sem cabo e sem conta",
+  "tagline": "Envie arquivos e textos entre celular, tablet e computador, sem cabo e sem conta.",
+  "summary": [
+    "O OneSync envia arquivos e textos entre iPhone, celulares e tablets Android e qualquer computador pelo navegador. Não precisa de conta, cabo nem pareamento.",
+    "Ele foi feito para quem precisa passar uma foto, um documento ou um link copiado entre aparelhos que não usam AirDrop juntos, como um iPhone e um tablet Android, ou o PC do trabalho e um celular.",
+    "Você inicia uma sessão em um aparelho, e os outros entram escaneando um QR code ou digitando um código. Todos os aparelhos da sessão recebem o que você envia."
+  ],
+  "overview": [
+    "Transferir arquivos do iPhone para Android é complicado porque o AirDrop não funciona entre plataformas e o cabo exige o adaptador certo. O OneSync usa uma sessão temporária. Abra o app em um aparelho e inicie uma sessão para receber um QR code e um código de sessão curto. No outro aparelho, escaneie o QR code ou digite o código. No computador você não instala nada. Abra o cliente web do OneSync no navegador, por exemplo onesync.setlog.net, e entre do mesmo jeito.",
+    "Com os aparelhos na sessão, você pode enviar arquivos e textos para todos. Dá para compartilhar direto de outros apps pelo menu de compartilhamento, copiar um link ou uma frase em um aparelho e receber em outro, e entrar com QR code, código ou link. Transferências de arquivos grandes podem continuar depois de uma queda de rede.",
+    "O OneSync é um canal de transferência temporário para passar arquivos de um aparelho para outro. As transferências passam pelo nosso servidor por conexões criptografadas (HTTPS/TLS), e arquivos e textos são apagados do servidor quando a sessão termina. Isso serve para trocas pontuais em um PC compartilhado ou entre os celulares da família, e não serve para arquivos muito sensíveis."
+  ],
+  "features": [
+    {
+      "h": "Transferir arquivos entre iPhone e Android",
+      "p": "Inicie uma sessão em um iPhone ou em um celular Android e deixe o outro aparelho entrar com o QR code ou o código de sessão. Os arquivos enviados chegam a todos os aparelhos da sessão. Cada sessão também mostra um número de verificação curto para você confirmar que entrou na sessão certa."
+    },
+    {
+      "h": "Um cliente web para qualquer computador",
+      "p": "Computadores entram pelo navegador, então não há nada para instalar em um PC com Windows, um Mac ou uma máquina Linux. A tela da sessão mostra o endereço web para PC, que você pode copiar. A tela de leitura do QR explica como exibir o QR code no seu PC."
+    },
+    {
+      "h": "Textos e links além de arquivos",
+      "p": "Compartilhe uma frase ou um link copiado com todos os aparelhos da sessão. Tudo o que você envia fica na atividade da sessão, para baixar ou copiar em cada aparelho."
+    },
+    {
+      "h": "Compartilhe de outros apps e entre por link",
+      "p": "Use o menu de compartilhamento para mandar uma foto ou um documento de outro app direto para a sessão. Entre por QR code, digitando um código ou abrindo um link."
+    },
+    {
+      "h": "Sem conta, e as sessões se limpam sozinhas",
+      "p": "Não há cadastro nem login. A tela da sessão mostra o tempo restante e, quando a sessão termina, os arquivos e textos dela são apagados do servidor."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/onesync/en/01.webp",
+      "w": 420,
+      "h": 880,
+      "alt": "Tela inicial do OneSync em fundo azul-escuro com o título “All your devices, as one”, um botão Start sharing, Enter code e Scan QR",
+      "caption": "Comece a compartilhar ou entre"
+    },
+    {
+      "src": "/images/apps/onesync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Tela de sessão do OneSync com QR code, código de sessão, número de verificação, tempo restante, aparelhos conectados e uma lista de arquivos e textos enviados",
+      "caption": "Sessão com QR code e atividade"
+    },
+    {
+      "src": "/images/apps/onesync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Painel Devices do OneSync com um iPhone, um MacBook Pro, um iPad, um iMac e um cliente web conectados à mesma sessão",
+      "caption": "Celulares, computadores e navegadores juntos"
+    }
+  ],
+  "specs": [
+    { "k": "Plataformas", "v": "iPhone e iPad (iOS 15 ou posterior), Android e qualquer computador pelo navegador" },
+    { "k": "Como entrar", "v": "QR code, código de sessão ou link, com um número de verificação curto; sem cadastro nem login" },
+    { "k": "O que dá para enviar", "v": "Arquivos e textos; compartilhamento de outros apps pelo menu de compartilhamento" },
+    { "k": "Pro (opcional)", "v": "Arquivos maiores, sessões mais longas, mais aparelhos por sessão e sem anúncios" },
+    { "k": "Segurança", "v": "Conexões criptografadas (HTTPS/TLS) pelo nosso servidor; arquivos e textos apagados do servidor ao fim da sessão" },
+    { "k": "Arquivos grandes", "v": "As transferências podem continuar depois de uma queda de rede" }
+  ],
+  "limits": [
+    "O OneSync não usa criptografia de ponta a ponta, então não o use para arquivos muito sensíveis. As transferências usam HTTPS/TLS e passam pelo nosso servidor.",
+    "É um canal temporário. As sessões terminam e depois os arquivos e textos são apagados do servidor, por isso ele não guarda arquivos por meses.",
+    "Cada sessão dura um tempo definido, mostrado na tela da sessão. Quando ela termina, inicie uma nova sessão em qualquer aparelho para a próxima transferência.",
+    "Computadores usam o cliente web no navegador; a página da loja não descreve nenhum aplicativo separado para Windows, Mac ou Linux.",
+    "As duas pessoas precisam de conexão com a internet, porque os arquivos passam pelo nosso servidor no caminho entre os aparelhos."
+  ],
+  "faq": [
+    {
+      "q": "Como transferir arquivos do iPhone para Android?",
+      "a": "Abra o OneSync em um aparelho e inicie uma sessão para receber um QR code e um código. Escaneie o QR code ou digite o código no outro aparelho e depois envie arquivos e textos. Todos os aparelhos da sessão recebem."
+    },
+    {
+      "q": "Posso enviar arquivos para um PC sem instalar nada?",
+      "a": "Sim. Abra o cliente web do OneSync em qualquer navegador, por exemplo onesync.setlog.net, e entre na sessão com o QR code ou o código. A tela da sessão no app mostra o endereço web para PC."
+    },
+    {
+      "q": "Preciso de conta ou de cabo?",
+      "a": "Não. Não há cadastro, login, cabo nem pareamento. A sessão é criada em um aparelho e os outros entram por QR code, código ou link."
+    },
+    {
+      "q": "Posso enviar arquivos grandes?",
+      "a": "Sim. Transferências de arquivos grandes podem continuar depois de uma queda de rede, então perder a conexão não faz você recomeçar do zero. A tela da sessão mostra o tempo restante, e o Pro (opcional) acrescenta arquivos maiores e sessões mais longas."
+    },
+    {
+      "q": "O OneSync é seguro e o que acontece com meus arquivos?",
+      "a": "As transferências usam conexões criptografadas (HTTPS/TLS), e arquivos e textos são apagados do servidor quando a sessão termina. O OneSync não usa criptografia de ponta a ponta, então evite compartilhar arquivos muito sensíveis."
+    },
+    {
+      "q": "Quais aparelhos podem entrar em uma sessão?",
+      "a": "iPhone, iPad e aparelhos Android entram pelo app, e qualquer computador entra pelo cliente web no navegador. Tudo o que você envia chega a cada aparelho da sessão. Com o Pro (opcional), mais aparelhos podem entrar na mesma sessão."
+    }
+  ],
+  "card": {
+    "tagline": "Envie arquivos e textos entre iPhone, Android e qualquer navegador",
+    "features": [
+      "QR code ou código curto, sem conta",
+      "Cliente web para qualquer computador",
+      "Compartilhe de outros apps"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "app de transferência de arquivos",
+      "h1": "O melhor app de transferência de arquivos para iPhone, iPad, Android e web.",
+      "sub": "Envia arquivos e textos entre celulares, tablets e qualquer computador com navegador, sem cabo e sem conta.",
+      "shots": ["01", "02"]
+    },
+    "pillars": [
+      { "title": "Do iPhone para o Android, e de volta.", "text": "Inicie uma sessão em qualquer um dos celulares e o outro entra com um QR code ou um código curto." },
+      { "title": "Qualquer computador, sem instalar nada.", "text": "Computadores entram por um navegador no Windows, Mac ou Linux." },
+      { "title": "Sem cadastro.", "text": "Não há conta nem login. Cada sessão mostra um número de verificação curto para você saber que entrou na sessão certa." }
+    ],
+    "features": [
+      { "h2": "Chega a todos os aparelhos da sessão.", "p": "Os arquivos enviados chegam a cada aparelho que entrou. Transferências grandes continuam depois de uma queda de rede.", "shot": "03" },
+      { "h2": "Textos e links também.", "p": "Envie uma frase ou um link copiado para todos na sessão. Ele fica na lista de atividade para cada aparelho copiar ou baixar.", "shot": "02" },
+      { "h2": "Envie direto de outros apps.", "p": "Use o menu de compartilhamento para mandar uma foto ou um documento para a sessão. Os outros entram por QR code, código ou link.", "shot": "01" }
+    ],
+    "midCta": {
+      "h2": "Pronto para passar esse arquivo?",
+      "p": "Inicie uma sessão no celular e escaneie o código no outro aparelho."
+    },
+    "closeH2": "Uma transferência de arquivos que se limpa sozinha.",
+    "trust": ["Sem conta", "Sem cabo", "Conexões criptografadas com TLS", "Apagado após cada sessão"]
+  }
+}

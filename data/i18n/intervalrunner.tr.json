@@ -1,0 +1,203 @@
+{
+  "locale": "tr",
+  "title": "İnterval koşu zamanlayıcısı ve tempo koçu - IntervalRunner",
+  "description": "Süreye veya mesafeye göre interval koşu antrenmanları oluşturun. IntervalRunner, temponuz hedeften saptığı anda sesle, tonla ve bilek titreşimiyle uyarır.",
+  "h1": "iPhone ve Apple Watch için tempo koçlu interval zamanlayıcısı",
+  "tagline": "Ekrana bakmadan her intervali tam planladığınız gibi koşun.",
+  "summary": [
+    "IntervalRunner, iPhone ve Apple Watch için bir interval koşu zamanlayıcısı ve tempo koçudur. Her bölümde temponuzu hedefle karşılaştırır ve saptığınız anda sesle, tonla ve bileğinize hafif bir dokunuşla haber verir.",
+    "Pistte tekrarlar, tempo koşuları, yürü-koş intervalleri veya 2. bölge koşuları yapan ve saate bakıp durmadan temposunu korumak isteyen koşucular için tasarlandı.",
+    "Onu farklı kılan üç şey var. Zıplayan GPS değeri yerine yumuşatılmış tempoyu kullanır, tolerans aralığını siz seçersiniz ve fazla hızlı ile fazla yavaş koşmanın sesi ve titreşimi birbirinden farklıdır."
+  ],
+  "overview": [
+    "Sıradan bir interval zamanlayıcısı bir bölüm bittiğinde bip sesi çıkarır ama o bölümü doğru tempoda koşup koşmadığınızı söyleyemez. IntervalRunner bu kontrolü ekler. Süreye veya mesafeye göre ayarlanan her bölümün bir hedef temposu veya hızı vardır ve seçtiğiniz aralığın dışına çıktığınız anda uygulama sizi uyarır. Bir sayıya bakmadan önce hangi yöne düzelteceğinizi bilirsiniz.",
+    "400 m veya 800 m tekrarlardan oluşan bir pist antrenmanına da, patikada 1 dakika hızlı ve 1 dakika yavaş bir antrenmana da uyar. Saat olmadan iPhone ölçer, gösterir ve konuşur. Apple Watch ile saat ölçer ve bileğinize dokunur, iPhone ise sayıları gösterip sesli bildirir. Koşu bandı modu GPS gerektirmez.",
+    "Her koşudan sonra her bölüm için hedefle gerçekleşeni karşılaştırabilirsiniz ve izin verirseniz antrenmanlar Sağlık uygulamasına kaydedilir. Paylaşım görselleri bir koşuyu istatistiklerinizle birlikte fotoğrafa, videoya veya Live Photo'ya dönüştürür."
+  ],
+  "features": [
+    {
+      "h": "İnterval antrenmanında güvenilir tempo uyarıları",
+      "p": "Uygulama, kolayca zıplayan ham GPS değeri yerine yumuşatılmış tempoya göre karar verir ve tolerans aralığını siz seçersiniz. Fazla hızlı ve fazla yavaş durumlarının sesi ve titreşimi farklıdır, böylece bir sayı okumadan önce hangi yöne düzelteceğinizi duyarsınız."
+    },
+    {
+      "h": "Ekran kilitliyken ses, ton ve bilek titreşimi",
+      "p": "Yapay zekâyla üretilen doğal sesli yönlendirmeler müziğinizi kısa bir süre kısar ve ekran kilitliyken de çalışmaya devam eder. Apple Watch ile bileğinizde dokunsal geri bildirim de alırsınız, telefon cebinizde kalabilir."
+    },
+    {
+      "h": "Süreye veya mesafeye göre antrenman oluşturucu",
+      "p": "Her bölüm, hedef tempo veya hızla birlikte süreye ya da mesafeye göre ayarlanır. Yedi hazır şablon arasında yürü-koş başlangıç, 1 dk hızlı / 1 dk yavaş, 400 m ve 800 m tekrarlar, tempo koşusu, yavaş koşu ve 2. bölge var (2. bölge Pro'ya dahildir). Üç sayım modu ile hedef tempoya ulaşınca başlayabilir, yalnızca hedefteyken sayabilir veya hemen saymaya başlayabilirsiniz."
+    },
+    {
+      "h": "Apple Watch ile ya da onsuz, koşu bandında da",
+      "p": "Yalnızca iPhone ile, yalnızca saatle veya ikisiyle birlikte koşun. Koşu bandı modu GPS gerektirmez. Makinede ayarlanan hızda süreye göre koşar, ardından mesafeyi bandın ekranından onaylarsınız."
+    },
+    {
+      "h": "Bölüm bölüm hedef ve gerçekleşen",
+      "p": "Özet, her bölümü kendi hedefiyle karşılaştırır. Pro, ayrıntılı bölüm analizi, eğilimler ve kişisel rekorların yanı sıra nabız bölgesi hedefleri ve nabzınız düştüğünde biten toparlanma bölümleri ekler."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/intervalrunner/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "IntervalRunner koşu ekranında yeşil “On target” yazısı, büyük rakamlarla kalan 0.13 mi, 6:26 hedefe karşı mil başına 6:28 anlık tempo ve 158 nabız",
+      "caption": "Hedefteyken koşu ekranı"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Kehribar arka planlı koşu ekranında “Slow 42 s” yazısı ve “Too slow, pick it up” diyen bir ses balonu",
+      "caption": "Fazla yavaş, görsel ve sesli uyarı"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "IntervalRunner antrenman listesinde hızlı başlat, son yapılan merdiven antrenmanı ve Slow run 30 min ile Zone 2 run 40 min gibi şablonlar",
+      "caption": "Antrenmanlar ve hazır şablonlar"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Önünde bir Apple Watch bulunan iPhone koşu ekranı, ikisinde de “On target” yazıyor",
+      "caption": "iPhone ve Apple Watch birlikte"
+    },
+    {
+      "src": "/images/apps/intervalrunner/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "400 m ×8 antrenmanının özetinde sürenin yüzde 86'sı hedef tempoda ve hedef ile gerçek süreleri gösteren bölüm listesi",
+      "caption": "Bölüm başına hedef ve gerçekleşen özeti"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Platformlar",
+      "v": "iPhone, Apple Watch ve Android"
+    },
+    {
+      "k": "Gereksinimler",
+      "v": "iOS 26 veya üzeri; Apple Watch için watchOS 10 veya üzeri"
+    },
+    {
+      "k": "Bölümler",
+      "v": "Süreye veya mesafeye göre, hedef tempo veya hızla, km ya da mil"
+    },
+    {
+      "k": "Şablonlar",
+      "v": "400 m ve 800 m tekrarlar, tempo koşusu, yavaş koşu ve 2. bölge (Pro) dahil 7 şablon"
+    },
+    {
+      "k": "Uyarılar",
+      "v": "Yapay zekâ sesi, fazla hızlı ve fazla yavaş için ayrı tonlar, bilek titreşimi"
+    },
+    {
+      "k": "Veriler",
+      "v": "Sağlık (izin verilirse), GPX ve JSON dışa aktarma, Canlı Etkinlik; Pro ile saniye saniye CSV dışa aktarma"
+    },
+    {
+      "k": "Diller",
+      "v": "12 dil"
+    },
+    {
+      "k": "Hesap",
+      "v": "Hesap yok, bize ait sunucu yok"
+    }
+  ],
+  "limits": [
+    "IntervalRunner çok haftalık programlar oluşturmaz ve yarış süresi tahmini yapmaz. Kendi belirlediğiniz antrenmanları uygulamanıza yardımcı olur.",
+    "Bölge hedefleri ve nabız düştüğünde biten toparlanma gibi nabız özellikleri Apple Watch veya Bluetooth nabız ölçer gerektirir ve Pro'ya dahildir.",
+    "Tempo doğruluğu GPS'e bağlıdır. Ağaç altında veya yüksek binalar arasında yumuşatılmış tempo geç tepki verebilir. Koşu bandı modu makinede ayarladığınız hıza dayanır.",
+    "Bölüm analizi, eğilimler, klasörlü antrenman kitaplığı ve merdiven, piramit ve Yasso 800 oluşturucuları Pro'ya dahildir."
+  ],
+  "faq": [
+    {
+      "q": "Koşu için interval zamanlayıcısı nasıl ayarlanır?",
+      "a": "1 dk hızlı / 1 dk yavaş veya 400 m tekrarlar gibi bir şablon seçin ya da hedef tempoyla süreye veya mesafeye göre kendi bölümlerinizi oluşturun. Antrenmanı başlattığınızda uygulama bölümleri sayar ve tolerans aralığının dışına çıkarsanız sizi uyarır."
+    },
+    {
+      "q": "Apple Watch gerekli mi?",
+      "a": "Hayır. Yalnızca iPhone ile koşabilirsiniz. Apple Watch ile saat ölçer ve bileğinize dokunur, iPhone ise sayıları gösterip sesli bildirir. Yalnızca saatle koşmak da mümkün."
+    },
+    {
+      "q": "Koşu bandında çalışır mı?",
+      "a": "Evet. Koşu bandı modu GPS kullanmaz. Makinede ayarlanan hızda süreye göre koşar, ardından mesafeyi bandın ekranından onaylarsınız."
+    },
+    {
+      "q": "İntervallerde nabız bölgelerini kullanabilir miyim?",
+      "a": "Evet, Pro ile. Nabız bölgesi hedefleri ve nabız düştüğünde biten toparlanma Pro'ya dahildir ve Apple Watch veya Bluetooth nabız ölçer gerektirir."
+    },
+    {
+      "q": "Pro neler ekler?",
+      "a": "Pro, bölüm analizi, eğilimler ve kişisel rekorlar, nabız bölgesi hedefleri, klasörlü antrenman kitaplığı, iç içe tekrarlar, merdiven, piramit ve Yasso 800 oluşturucuları ve saniye saniye CSV dışa aktarma ekler."
+    },
+    {
+      "q": "Koşu verilerim nerede saklanır?",
+      "a": "Koşularınız, rotalarınız ve sağlık verileriniz cihazlarınızda kalır. Hesap yoktur, bize ait sunucu da yoktur. İzin verirseniz antrenmanlar Sağlık uygulamasına kaydedilir."
+    }
+  ],
+  "card": {
+    "tagline": "Ses, ton ve bilek uyarılı interval koşu zamanlayıcısı ve tempo koçu",
+    "features": [
+      "Hedef tempolu, süre veya mesafe bölümleri",
+      "iPhone ve Apple Watch'ta fazla hızlı ve fazla yavaş uyarıları",
+      "Koşu bandı modu ve bölüm bölüm özet"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "interval koşu zamanlayıcısı",
+      "h1": "iPhone, Apple Watch ve Android için en iyi interval koşu zamanlayıcısı.",
+      "sub": "Temponuz hedeften saptığı anda sesle, tonla ve bileğe bir dokunuşla haber verir.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Güvenebileceğiniz tempo.",
+        "text": "Uyarılar zıplayan GPS değeri yerine yumuşatılmış tempoyu kullanır, tolerans aralığını da siz seçersiniz."
+      },
+      {
+        "title": "Hangi yöne düzelteceğinizi duyun.",
+        "text": "Temponun önünde ya da gerisinde olmanın kendine ait bir tonu ve titreşimi var, böylece bir sayı okumadan ne yapacağınızı bilirsiniz."
+      },
+      {
+        "title": "Ekran kilitliyken de çalışır.",
+        "text": "Sesli yönlendirmeler müziği kısa bir süre kısar, telefon cebinizde kalır."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Antrenmanı süreye veya mesafeye göre kurun.",
+        "p": "Her bölüme km ya da mil cinsinden hedef tempo veya hız verin. Yürü-koş başlangıçtan 400 m ve 800 m tekrarlara kadar yedi şablon hazır.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch ya da ikisi birden.",
+        "p": "Yalnızca telefonla, yalnızca saatle veya ikisiyle birlikte koşun. Koşu bandı modu GPS gerektirmez, makinenin hızında süreye göre ilerler.",
+        "shot": "04"
+      },
+      {
+        "h2": "Her bölümün nasıl geçtiğini görün.",
+        "p": "Koşu bitince özet her bölümü hedefinin yanına koyar. İzin verirseniz antrenmanlar Sağlık uygulamasına kaydedilir.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Her tempoyu tutturmaya hazır mısınız?",
+      "p": "Bir şablon seçin ya da bölümlerinizi kendiniz belirleyin, telefonu cebinize koyun ve koşun."
+    },
+    "closeH2": "Doğru anda konuşan bir tempo koçu.",
+    "trust": [
+      "Hesap yok",
+      "Bize ait sunucu yok",
+      "Koşular cihazlarınızda kalır",
+      "12 dil"
+    ]
+  }
+}

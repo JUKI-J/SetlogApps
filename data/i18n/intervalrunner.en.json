@@ -7,7 +7,7 @@
   "summary": [
     "IntervalRunner is an interval running timer and pace coach for iPhone and Apple Watch. It checks your pace against the target for each step and tells you the moment you drift, by voice, by tone and with a tap on your wrist.",
     "It is for runners doing track repeats, tempo runs, run-walk intervals or Zone 2 sessions who want to hold their paces without staring at a watch.",
-    "What sets it apart: smoothed pace instead of jumpy GPS, a tolerance band you choose, and different tones and haptics for too fast and too slow."
+    "Three things set it apart. It judges smoothed pace instead of jumpy GPS, you choose the tolerance band, and running ahead of pace sounds and feels different from falling behind."
   ],
   "overview": [
     "A plain interval timer beeps when a step ends but cannot tell you whether you ran it at the right pace. IntervalRunner adds that check. Every step, set by time or by distance, carries a target pace or speed, and the app warns you as soon as you leave the band you chose. You know which way to correct before you look at a number.",
@@ -17,7 +17,7 @@
   "features": [
     {
       "h": "Pace alerts you can trust during interval training",
-      "p": "The app judges smoothed pace rather than the raw GPS reading, which jumps around, and you pick the tolerance band. Too fast and too slow sound and feel different, so you hear which way to correct before you read a number."
+      "p": "The app judges smoothed pace rather than the raw GPS reading, which jumps around, and you pick the tolerance band. Running ahead of pace and falling behind it sound and feel different, so you hear which way to correct before you read a number."
     },
     {
       "h": "Voice cues, tones and wrist haptics with the screen locked",
@@ -25,7 +25,7 @@
     },
     {
       "h": "A workout builder by time or distance",
-      "p": "Each step is set by time or distance with a target pace or speed. Seven presets are ready to run: walk-run starter, 1 min fast / 1 min easy, 400 m and 800 m repeats, tempo, slow running and Zone 2 (Zone 2 needs Pro). Three count modes let you start when you reach target pace, count only while on target, or count right away."
+      "p": "Each step is set by time or distance with a target pace or speed. Seven presets are ready to run: walk-run starter, 1 min fast / 1 min easy, 400 m and 800 m repeats, tempo, slow running and Zone 2 (Zone 2 is part of Pro). Three count modes let you start when you reach target pace, count only while on target, or count right away."
     },
     {
       "h": "With or without Apple Watch, or on a treadmill",
@@ -76,7 +76,7 @@
   "specs": [
     {
       "k": "Platforms",
-      "v": "iPhone and Apple Watch"
+      "v": "iPhone, Apple Watch and Android"
     },
     {
       "k": "Requirements",
@@ -92,7 +92,7 @@
     },
     {
       "k": "Alerts",
-      "v": "AI-generated voice, separate tones for too fast and too slow, wrist haptics"
+      "v": "AI-generated voice, separate tones for ahead of pace and behind pace, wrist haptics"
     },
     {
       "k": "Data",
@@ -104,14 +104,14 @@
     },
     {
       "k": "Account",
-      "v": "No account and no server of ours; 7-day trial on the yearly Pro plan for eligible new subscribers"
+      "v": "No account and no server of ours"
     }
   ],
   "limits": [
-    "It is not a training-plan app: IntervalRunner does not generate multi-week programs or predict race times. It helps you execute the workouts you define.",
+    "IntervalRunner does not generate multi-week training programs or predict race times. It helps you execute the workouts you define.",
     "Heart-rate features, such as zone targets and recovery that ends when your heart rate drops, need an Apple Watch or a Bluetooth heart-rate monitor and are part of Pro.",
     "Pace accuracy depends on GPS. Under tree cover or between tall buildings, smoothed pace can react late. Treadmill mode relies on the speed you set on the machine.",
-    "Step analysis, trends, unlimited saved workouts and the ladder, pyramid and Yasso 800 generators are Pro features; without Pro you can save 3 workouts of your own."
+    "Step analysis, trends, the saved workout library with folders and the ladder, pyramid and Yasso 800 generators are Pro features."
   ],
   "faq": [
     {
@@ -132,7 +132,7 @@
     },
     {
       "q": "What does Pro add?",
-      "a": "Pro adds step analysis, trends and personal bests, heart-rate zone targets, unlimited saved workouts and folders, nested repeats, ladder, pyramid and Yasso 800 generators and per-second CSV export. Running with alerts, presets and all count modes does not require Pro."
+      "a": "Pro adds step analysis, trends and personal bests, heart-rate zone targets, a saved workout library with folders, nested repeats, ladder, pyramid and Yasso 800 generators and per-second CSV export."
     },
     {
       "q": "Where is my run data stored?",
@@ -143,8 +143,61 @@
     "tagline": "Interval timer and pace coach: voice, tone and wrist alerts",
     "features": [
       "Time or distance steps with a target pace",
-      "Too fast / too slow alerts on iPhone and Apple Watch",
+      "Ahead and behind pace alerts on iPhone and Apple Watch",
       "Treadmill mode and per-step summary"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "interval running timer",
+      "h1": "The best interval running timer for iPhone, Apple Watch and Android.",
+      "sub": "Tells you by voice, tone and a tap on the wrist the moment your pace drifts from the target.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Pace you can trust.",
+        "text": "Alerts use smoothed pace instead of the jumpy GPS reading, and you choose the tolerance band."
+      },
+      {
+        "title": "Hear which way to correct.",
+        "text": "Running ahead or behind gets its own tone and haptic, so you know what to do before you read a number."
+      },
+      {
+        "title": "Works with the screen locked.",
+        "text": "Voice cues lower your music for a moment and keep going while your phone stays in your pocket."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Build a session by time or distance.",
+        "p": "Give each step a target pace or speed in km or miles. Seven presets are ready, from a walk-run starter to 400 m and 800 m repeats.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch, or both.",
+        "p": "Run with the phone alone, the watch alone, or the two together. Treadmill mode needs no GPS and runs on time at the machine's speed.",
+        "shot": "04"
+      },
+      {
+        "h2": "See how each step went.",
+        "p": "After the run, the summary sets every step against its target. Workouts go to Apple Health if you allow it.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Ready to hold every pace?",
+      "p": "Pick a preset or set your own steps, put the phone away and run."
+    },
+    "closeH2": "A pace coach that speaks up at the right moment.",
+    "trust": [
+      "No account",
+      "No server of ours",
+      "Runs stay on your devices",
+      "12 languages"
     ]
   }
 }

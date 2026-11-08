@@ -1,0 +1,189 @@
+{
+  "locale": "fr",
+  "title": "Lire un MKV sur Mac avec sous-titres - slplayer pour Mac",
+  "description": "Lisez vos fichiers MKV sur Mac sans pack de codecs. slplayer utilise le moteur multimédia de macOS, avec double sous-titrage et synchro au dixième.",
+  "h1": "Lire des fichiers MKV sur Mac",
+  "tagline": "Un lecteur vidéo léger pour MKV, MP4 et MOV, avec des sous-titres qui s'affichent correctement",
+  "summary": [
+    "slplayer est un lecteur vidéo pour Mac qui ouvre les fichiers MKV, MP4, M4V, MOV et MPEG-TS et les lit avec le moteur multimédia intégré à macOS.",
+    "Il s'adresse à tous ceux qui cherchent comment lire un MKV sur Mac, dont les sous-titres s'affichent en caractères illisibles, ou qui regardent des épisodes en deux langues et veulent choisir la piste audio.",
+    "Il n'ajoute aucun pack de codecs ni décodeur maison, ce qui ménage la batterie, et il ne demande aucun compte."
+  ],
+  "overview": [
+    "QuickTime Player refuse souvent d'ouvrir les fichiers MKV. C'est parce que le MKV est un conteneur, une sorte de boîte, et ce sont les codecs de la vidéo et de l'audio qu'il contient qui déterminent si un Mac peut les décoder. slplayer ouvre le conteneur MKV et transmet les flux à macOS, si bien que les fichiers en H.264 ou HEVC avec un audio courant comme AAC, AC-3, E-AC-3 ou FLAC se lisent sans logiciel supplémentaire.",
+    "Que vous cherchiez un lecteur MKV pour Mac ou simplement un lecteur vidéo pour Mac qui ne soit pas lourd, le principe reste le même. Faites glisser un fichier sur la fenêtre, ouvrez-le depuis le Finder ou déposez plusieurs fichiers à la fois pour créer une file d'attente. Les sous-titres SRT, VTT et SMI se chargent avec la vidéo, deux pistes peuvent s'afficher en même temps et vous choisissez la piste audio que vous écoutez. Tout se passe sur votre Mac, et l'app n'effectue elle-même aucune requête réseau."
+  ],
+  "features": [
+    {
+      "h": "MKV et autres conteneurs, sans pack de codecs",
+      "p": "MKV, MP4, M4V, MOV et MPEG-TS s'ouvrent directement. H.264 et HEVC, y compris en 10 bits et HDR10, ainsi qu'AAC, AC-3, E-AC-3 et FLAC sont pris en charge. Le HDR, l'image dans l'image et l'efficacité énergétique viennent de macOS lui-même."
+    },
+    {
+      "h": "Sous-titres SRT, VTT et SMI",
+      "p": "Les fichiers de sous-titres se chargent avec la vidéo. Les fichiers SMI coréens enregistrés en EUC-KR sont détectés automatiquement et ne se transforment pas en charabia. Vous pouvez afficher deux pistes de sous-titres à la fois, décaler la synchro par pas de 0,1 seconde, et le réglage est mémorisé pour chaque fichier."
+    },
+    {
+      "h": "Pistes audio et vitesse de lecture",
+      "p": "Choisissez la piste audio voulue sur les épisodes proposés en deux langues. La vitesse de lecture va de 0,5x à 2,0x par pas de 0,1, et chaque action dispose d'un raccourci clavier."
+    },
+    {
+      "h": "Listes de lecture et reprise",
+      "p": "Déposez plusieurs fichiers pour créer une file d'attente, rangez vos listes de lecture dans des dossiers, rouvrez les éléments récents et reprenez là où vous vous étiez arrêté."
+    },
+    {
+      "h": "Pro, pour aller plus loin",
+      "p": "La lecture de tous les jours fonctionne sans Pro, du MKV aux sous-titres en passant par la vitesse et les listes de lecture. slplayer Pro ajoute l'écran partagé jusqu'à quatre vidéos, l'image dans l'image, un mini-lecteur dans la barre des menus, la boucle A-B et une minuterie de veille."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/slplayer/en/01.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Fenêtre de slplayer lisant un film MKV avec une ligne de sous-titres en anglais et une barre de commandes, sur fond sombre avec le titre « MKV and subtitles, just working »",
+      "caption": "MKV et sous-titres s'ouvrent sans réglage préalable."
+    },
+    {
+      "src": "/images/apps/slplayer/en/02.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Écran partagé de slplayer affichant quatre vidéos dans une grille de deux sur deux, avec une seule barre de commandes en dessous",
+      "caption": "L'écran partagé lit jusqu'à quatre vidéos côte à côte (Pro)."
+    },
+    {
+      "src": "/images/apps/slplayer/en/06.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Fenêtre de réglages du style des sous-titres de slplayer, avec des préréglages et un aperçu en direct du texte",
+      "caption": "Préréglages de style des sous-titres avec aperçu en direct."
+    },
+    {
+      "src": "/images/apps/slplayer/en/07.webp",
+      "w": 1000,
+      "h": 625,
+      "alt": "Liste des éléments récents de slplayer avec des dossiers de listes de lecture et des vidéos ouvertes récemment",
+      "caption": "Éléments récents et listes de lecture, avec reprise."
+    }
+  ],
+  "specs": [
+    {
+      "k": "Prérequis",
+      "v": "Mac avec macOS 14 ou version ultérieure"
+    },
+    {
+      "k": "Conteneurs",
+      "v": "MKV, MP4, M4V, MOV, MPEG-TS"
+    },
+    {
+      "k": "Vidéo et audio",
+      "v": "H.264, HEVC (10 bits, HDR10), AAC, AC-3, E-AC-3, FLAC"
+    },
+    {
+      "k": "Sous-titres",
+      "v": "SRT, VTT, SMI (EUC-KR détecté automatiquement)"
+    },
+    {
+      "k": "Vitesse de lecture",
+      "v": "De 0,5x à 2,0x par pas de 0,1"
+    },
+    {
+      "k": "Langues de l'app",
+      "v": "12, à changer dans l'app"
+    },
+    {
+      "k": "Confidentialité",
+      "v": "Ni compte, ni statistiques, ni publicité ; l'app n'effectue elle-même aucune requête réseau"
+    },
+    {
+      "k": "Pro (optionnel)",
+      "v": "Écran partagé, image dans l'image, boucle A-B"
+    }
+  ],
+  "limits": [
+    "slplayer lit uniquement ce que votre Mac prend en charge. Si macOS ne peut pas décoder l'audio d'un fichier, la vidéo est lue sans le son et un avis s'affiche au début de la lecture.",
+    "Les sous-titres sous forme d'images, comme ceux des disques, ne sont pas affichés. Les fichiers impossibles à ouvrir affichent une erreur.",
+    "Les formats de sous-titres documentés sont SRT, VTT et SMI ; les autres formats ne sont pas garantis.",
+    "C'est une app pour Mac uniquement. L'écran partagé, l'image dans l'image, la boucle A-B et les autres extras font partie de slplayer Pro, en option."
+  ],
+  "faq": [
+    {
+      "q": "Comment lire des fichiers MKV sur un Mac ?",
+      "a": "QuickTime Player ne sait souvent pas ouvrir un MKV, car ce n'est qu'un conteneur. Ouvrez le fichier dans slplayer en le faisant glisser sur la fenêtre ou en le choisissant dans le Finder. Si la vidéo et l'audio qu'il contient utilisent des codecs pris en charge par macOS, comme H.264, HEVC, AAC ou AC-3, il se lit."
+    },
+    {
+      "q": "Pourquoi un MKV se lit-il sans le son ?",
+      "a": "Le codec audio du fichier n'est pas un codec que votre Mac sait décoder. slplayer lit alors la vidéo et affiche un avis au début de la lecture, car il ne lit que les formats pris en charge par macOS."
+    },
+    {
+      "q": "slplayer prend-il en charge les sous-titres ASS ou en image ?",
+      "a": "Les formats de sous-titres documentés sont SRT, VTT et SMI. Les sous-titres sous forme d'images ne sont pas affichés et les autres formats ne sont pas garantis."
+    },
+    {
+      "q": "Faut-il créer un compte ?",
+      "a": "Aucun compte n'est demandé, et l'app n'effectue elle-même aucune requête réseau. L'ouverture des fichiers, le MKV, les sous-titres, la synchro, la vitesse et les listes de lecture fonctionnent tous sans Pro."
+    },
+    {
+      "q": "Qu'apporte slplayer Pro ?",
+      "a": "slplayer Pro est optionnel. Il ajoute l'écran partagé jusqu'à quatre vidéos, l'image dans l'image, un mini-lecteur dans la barre des menus, la boucle A-B et une minuterie de veille. La lecture de base fonctionne de la même façon sans lui."
+    }
+  ],
+  "card": {
+    "tagline": "Lit les MKV sur votre Mac avec sous-titres, grâce au moteur multimédia de macOS",
+    "features": [
+      "MKV, MP4, MOV, sans pack de codecs",
+      "SRT, VTT, SMI et double sous-titrage",
+      "Sans compte, sans publicité"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "lecteur vidéo",
+      "h1": "Le meilleur lecteur vidéo léger pour Mac.",
+      "sub": "Il ouvre vos MKV et affiche correctement vos sous-titres, avec le moteur multimédia intégré à macOS.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Ouvre les MKV.",
+        "text": "MKV, MP4, M4V, MOV et MPEG-TS s'ouvrent directement. Aucun pack de codecs à installer."
+      },
+      {
+        "title": "Des sous-titres lisibles.",
+        "text": "Les sous-titres SRT, VTT et SMI se chargent avec la vidéo. Les fichiers SMI coréens en EUC-KR sont détectés automatiquement et restent lisibles."
+      },
+      {
+        "title": "Léger pour la batterie.",
+        "text": "slplayer n'embarque aucun décodeur maison. macOS se charge de la lecture, ce qui ménage la batterie."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Double sous-titrage et synchro, au même endroit.",
+        "p": "Affichez deux lignes de sous-titres à la fois, ajustez la synchro par pas de 0,1 seconde et réglez le style avec un aperçu en direct. Chaque fichier garde son décalage.",
+        "shot": "06"
+      },
+      {
+        "h2": "Quatre vidéos. Une seule commande.",
+        "p": "L'écran partagé lit jusqu'à quatre vidéos côte à côte. L'image dans l'image et un mini-lecteur dans la barre des menus sont aussi de la partie.",
+        "shot": "02"
+      },
+      {
+        "h2": "Reprenez là où vous vous êtes arrêté.",
+        "p": "Déposez plusieurs fichiers pour créer une file d'attente et rangez vos listes de lecture dans des dossiers. Chaque vidéo reprend là où vous l'avez laissée.",
+        "shot": "07"
+      }
+    ],
+    "midCta": {
+      "h2": "Prêt à ouvrir ce MKV ?",
+      "p": "Faites glisser le fichier sur slplayer et lancez la lecture. Rien à configurer avant."
+    },
+    "closeH2": "Un lecteur vidéo qui se fait oublier.",
+    "trust": [
+      "Sans compte",
+      "Sans publicité",
+      "Sans statistiques"
+    ]
+  }
+}

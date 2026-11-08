@@ -1,0 +1,135 @@
+{
+  "locale": "de",
+  "title": "Dateien übertragen iPhone Android - OneSync App & Web",
+  "description": "Dateien und Texte zwischen iPhone, Android und dem Browser jedes Computers übertragen. Sitzung starten, QR-Code scannen oder Code eingeben. Ohne Konto.",
+  "h1": "Dateien zwischen iPhone und Android übertragen, ohne Kabel und ohne Konto",
+  "tagline": "Dateien und Texte zwischen Smartphone, Tablet und Computer senden, ohne Kabel und ohne Konto.",
+  "summary": [
+    "OneSync überträgt Dateien und Texte zwischen iPhone, Android-Smartphones und -Tablets sowie jedem Computer über einen Webbrowser. Sie brauchen kein Konto, kein Kabel und keine Kopplung.",
+    "Die App ist für alle gedacht, die ein Foto, ein Dokument oder einen kopierten Link zwischen Geräten weitergeben wollen, die AirDrop nicht gemeinsam nutzen können, etwa ein iPhone und ein Android-Tablet oder einen Arbeits-PC und ein Smartphone.",
+    "Sie starten auf einem Gerät eine Sitzung, und weitere Geräte treten per QR-Code oder Code bei. Jedes Gerät in der Sitzung erhält, was Sie senden."
+  ],
+  "overview": [
+    "Dateien vom iPhone auf Android zu übertragen ist umständlich, weil AirDrop nicht plattformübergreifend funktioniert und ein Kabel den passenden Adapter braucht. OneSync arbeitet stattdessen mit einer temporären Sitzung. Öffnen Sie die App auf einem Gerät und starten Sie eine Sitzung, dann erscheinen ein QR-Code und ein kurzer Sitzungscode. Auf dem anderen Gerät scannen Sie den QR-Code oder tippen den Code ein. Auf dem Computer installieren Sie nichts. Öffnen Sie den OneSync-Webclient im Browser, zum Beispiel onesync.setlog.net, und treten Sie auf die gleiche Weise bei.",
+    "Sobald die Geräte in der Sitzung sind, können Sie Dateien und Texte an alle senden. Sie teilen direkt aus anderen Apps über das Teilen-Menü, kopieren einen Link oder einen Satz auf einem Gerät und empfangen ihn auf einem anderen, und Sie treten per QR-Code, Code oder Link bei. Übertragungen großer Dateien können nach einer Netzwerkunterbrechung fortgesetzt werden.",
+    "OneSync ist ein temporärer Übertragungskanal für die Übergabe von Dateien. Übertragungen laufen über unseren Server mit verschlüsselten Verbindungen (HTTPS/TLS), und Dateien und Texte werden nach dem Ende der Sitzung vom Server gelöscht. Das eignet sich für eine Übergabe am gemeinsam genutzten PC oder zwischen den Smartphones der Familie, für hochsensible Dateien dagegen nicht."
+  ],
+  "features": [
+    {
+      "h": "Dateien zwischen iPhone und Android übertragen",
+      "p": "Starten Sie eine Sitzung auf einem iPhone oder einem Android-Smartphone und lassen Sie das andere Gerät per QR-Code oder Sitzungscode beitreten. Gesendete Dateien kommen auf jedem Gerät der Sitzung an. Jede Sitzung zeigt außerdem eine kurze Prüfnummer, damit Sie sicher sind, der richtigen beigetreten zu sein."
+    },
+    {
+      "h": "Ein Webclient für jeden Computer",
+      "p": "Computer treten über den Browser bei, Sie müssen also auf einem Windows-PC, Mac oder Linux-Rechner nichts installieren. Der Sitzungsbildschirm zeigt die Webadresse für den PC, die Sie kopieren können. Der QR-Scan-Bildschirm erklärt, wie Sie den QR-Code auf Ihrem PC anzeigen."
+    },
+    {
+      "h": "Texte und Links ebenso wie Dateien",
+      "p": "Teilen Sie einen kopierten Satz oder Link mit allen Geräten der Sitzung. Alles Gesendete steht im Sitzungsverlauf, sodass Sie es auf jedem Gerät herunterladen oder kopieren können."
+    },
+    {
+      "h": "Aus anderen Apps teilen und per Link beitreten",
+      "p": "Über das Teilen-Menü senden Sie ein Foto oder Dokument aus einer anderen App direkt in Ihre Sitzung. Beitreten geht per QR-Code, per Codeeingabe oder über einen Link."
+    },
+    {
+      "h": "Ohne Konto, und Sitzungen räumen hinter sich auf",
+      "p": "Es gibt keine Registrierung und keine Anmeldung. Der Sitzungsbildschirm zeigt die verbleibende Zeit, und wenn eine Sitzung endet, werden ihre Dateien und Texte vom Server gelöscht."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/onesync/en/01.webp",
+      "w": 420,
+      "h": 880,
+      "alt": "OneSync-Startbildschirm auf dunkelblauem Hintergrund mit der Überschrift „All your devices, as one“, einer Schaltfläche Start sharing sowie Enter code und Scan QR",
+      "caption": "Teilen starten oder beitreten"
+    },
+    {
+      "src": "/images/apps/onesync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "OneSync-Sitzungsbildschirm mit QR-Code, Sitzungscode, Prüfnummer, verbleibender Zeit, verbundenen Geräten und einer Liste gesendeter Dateien und Texte",
+      "caption": "Sitzung mit QR-Code und Verlauf"
+    },
+    {
+      "src": "/images/apps/onesync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "OneSync-Geräteliste mit einem iPhone, einem MacBook Pro, einem iPad, einem iMac und einem Webclient in derselben Sitzung",
+      "caption": "Smartphones, Computer und Browser gemeinsam"
+    }
+  ],
+  "specs": [
+    { "k": "Plattformen", "v": "iPhone und iPad (ab iOS 15), Android und jeder Computer über einen Webbrowser" },
+    { "k": "Beitreten", "v": "QR-Code, Sitzungscode oder Link, mit kurzer Prüfnummer; keine Registrierung oder Anmeldung" },
+    { "k": "Was Sie senden können", "v": "Dateien und Texte; Teilen aus anderen Apps über das Teilen-Menü" },
+    { "k": "Pro (optional)", "v": "Größere Dateien, längere Sitzungen, mehr Geräte in einer Sitzung und keine Werbung" },
+    { "k": "Sicherheit", "v": "Verschlüsselte Verbindungen (HTTPS/TLS) über unseren Server; Dateien und Texte werden nach Sitzungsende vom Server gelöscht" },
+    { "k": "Große Dateien", "v": "Übertragungen können nach einer Netzwerkunterbrechung fortgesetzt werden" }
+  ],
+  "limits": [
+    "OneSync nutzt keine Ende-zu-Ende-Verschlüsselung, verwenden Sie es daher nicht für hochsensible Dateien. Übertragungen nutzen HTTPS/TLS und laufen über unseren Server.",
+    "Es ist ein temporärer Kanal. Sitzungen enden, und Dateien und Texte werden danach vom Server gelöscht. Für die Aufbewahrung über Monate ist OneSync nicht gedacht.",
+    "Jede Sitzung läuft für eine festgelegte Zeit, die der Sitzungsbildschirm anzeigt. Wenn sie endet, starten Sie für die nächste Übertragung auf einem beliebigen Gerät eine neue Sitzung.",
+    "Computer nutzen den Webclient im Browser; der Store-Eintrag beschreibt keine eigene Anwendung für Windows, Mac oder Linux.",
+    "Beide Seiten brauchen eine Internetverbindung, weil Dateien auf dem Weg zwischen den Geräten über unseren Server laufen."
+  ],
+  "faq": [
+    {
+      "q": "Wie übertrage ich Dateien vom iPhone auf Android?",
+      "a": "Öffnen Sie OneSync auf einem Gerät und starten Sie eine Sitzung, um einen QR-Code und einen Code zu erhalten. Scannen Sie den QR-Code oder geben Sie den Code auf dem anderen Gerät ein und senden Sie dann Dateien und Texte. Jedes Gerät in der Sitzung empfängt sie."
+    },
+    {
+      "q": "Kann ich Dateien an einen PC senden, ohne etwas zu installieren?",
+      "a": "Ja. Öffnen Sie den OneSync-Webclient in einem beliebigen Browser, zum Beispiel onesync.setlog.net, und treten Sie der Sitzung per QR-Code oder Code bei. Der Sitzungsbildschirm in der App zeigt die Webadresse für den PC."
+    },
+    {
+      "q": "Brauche ich ein Konto oder ein Kabel?",
+      "a": "Nein. Es gibt keine Registrierung, keine Anmeldung, kein Kabel und keine Kopplung. Eine Sitzung wird auf einem Gerät erstellt, und andere treten per QR-Code, Code oder Link bei."
+    },
+    {
+      "q": "Kann ich große Dateien senden?",
+      "a": "Ja. Übertragungen großer Dateien können nach einer Netzwerkunterbrechung fortgesetzt werden, sodass ein Verbindungsabbruch Sie nicht an den Anfang zurückwirft. Der Sitzungsbildschirm zeigt die verbleibende Zeit, und Pro (optional) ergänzt größere Dateien und längere Sitzungen."
+    },
+    {
+      "q": "Ist OneSync sicher, und was passiert mit meinen Dateien?",
+      "a": "Übertragungen nutzen verschlüsselte Verbindungen (HTTPS/TLS), und Dateien und Texte werden nach dem Ende der Sitzung vom Server gelöscht. OneSync nutzt keine Ende-zu-Ende-Verschlüsselung, teilen Sie daher keine hochsensiblen Dateien."
+    },
+    {
+      "q": "Welche Geräte können einer Sitzung beitreten?",
+      "a": "iPhone, iPad und Android-Geräte treten über die App bei, jeder Computer über den Webclient im Browser. Alles, was Sie senden, erreicht jedes Gerät in der Sitzung. Mit Pro (optional) können mehr Geräte derselben Sitzung beitreten."
+    }
+  ],
+  "card": {
+    "tagline": "Dateien und Texte zwischen iPhone, Android und jedem Browser senden",
+    "features": [
+      "QR-Code oder kurzer Code, kein Konto",
+      "Webclient für jeden Computer",
+      "Aus anderen Apps teilen"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "App zur Dateiübertragung",
+      "h1": "Die beste App zur Dateiübertragung für iPhone, iPad, Android und das Web.",
+      "sub": "Überträgt Dateien und Texte zwischen Smartphones, Tablets und jedem Computer mit Browser, ohne Kabel und ohne Konto.",
+      "shots": ["01", "02"]
+    },
+    "pillars": [
+      { "title": "Vom iPhone auf Android und zurück.", "text": "Starten Sie auf einem der beiden Smartphones eine Sitzung, das andere tritt per QR-Code oder kurzem Code bei." },
+      { "title": "Jeder Computer, ohne Installation.", "text": "Computer treten über einen Webbrowser bei, unter Windows, Mac oder Linux." },
+      { "title": "Ohne Registrierung.", "text": "Es gibt kein Konto und keine Anmeldung. Jede Sitzung zeigt eine kurze Prüfnummer, damit Sie wissen, dass Sie der richtigen beigetreten sind." }
+    ],
+    "features": [
+      { "h2": "Jedes Gerät der Sitzung erhält es.", "p": "Gesendete Dateien kommen auf jedem Gerät an, das beigetreten ist. Große Übertragungen laufen nach einem Netzwerkabbruch weiter.", "shot": "03" },
+      { "h2": "Auch Texte und Links.", "p": "Senden Sie einen kopierten Satz oder Link an alle in der Sitzung. Er bleibt im Verlauf, sodass jedes Gerät ihn kopieren oder herunterladen kann.", "shot": "02" },
+      { "h2": "Direkt aus anderen Apps senden.", "p": "Senden Sie über das Teilen-Menü ein Foto oder Dokument in Ihre Sitzung. Andere treten per QR-Code, Code oder Link bei.", "shot": "01" }
+    ],
+    "midCta": {
+      "h2": "Bereit, die Datei zu übertragen?",
+      "p": "Starten Sie eine Sitzung auf Ihrem Smartphone und scannen Sie den Code mit dem anderen Gerät."
+    },
+    "closeH2": "Eine Dateiübertragung, die hinter sich aufräumt.",
+    "trust": ["Kein Konto", "Kein Kabel", "TLS-verschlüsselte Verbindungen", "Nach jeder Sitzung gelöscht"]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "locale": "es",
+  "title": "Temporizador sincronizado para grupos - TimerLync",
+  "description": "Temporizador sincronizado en varios dispositivos. La misma cuenta atrás en cada iPhone, iPad y Apple Watch, y una alarma en el mismo instante. Sin cuenta.",
+  "h1": "Un temporizador sincronizado que suena en todos los dispositivos a la vez",
+  "tagline": "Una cuenta atrás. Todos los dispositivos. Una alarma.",
+  "summary": [
+    "TimerLync es un temporizador de cuenta atrás que se mantiene sincronizado en todos los iPhone, iPad y Apple Watch de una misma sala. Ajustas el tiempo una vez y cada dispositivo muestra los mismos segundos restantes y suena en el mismo instante.",
+    "Está pensado para profesores y entrenadores, ponentes y moderadores, grupos de estudio y equipos, y para cualquiera que necesite que un grupo empiece y termine a la vez.",
+    "Para compartir un temporizador entre varios dispositivos basta con un código de sala o un código QR, sin cuenta. Los dispositivos cercanos se conectan por Bluetooth y Wi-Fi, y los que están lejos se conectan a través de la red."
+  ],
+  "overview": [
+    "Cuando varias personas inician cada una su cuenta atrás en su propio móvil, los temporizadores se desfasan. Alguien pulsa antes, una pantalla se bloquea, una alarma suena distinta. Un temporizador para varios dispositivos lo resuelve con una única hora de fin compartida. Los dispositivos TimerLync acuerdan esa hora de fin usando la hora de la red y luego cuentan hacia atrás cada uno por su cuenta. Aunque se corte el Wi-Fi o un dispositivo entre en reposo, la alarma suena a su hora, porque ya está programada de antemano en cada dispositivo.",
+    "Una salida justa importa en el trabajo en grupo y en los entrenamientos. La cuenta 3-2-1 cae en el mismo instante en todas las pantallas, así que quien pulsa Iniciar no sale con ventaja. El anfitrión puede activar una comprobación que espera a que todos confirmen, nombrar coanfitriones y pasar el papel de anfitrión a otra persona. Para charlas y eventos hay una Vista de escenario a pantalla completa con números grandes, mensajes del anfitrión como «Por favor, ve terminando» y la opción de elegir qué se muestra al llegar a 00:00.",
+    "Un temporizador sincronizado para grupos va más allá de una sola cuenta atrás. Las secuencias encadenan pasos, por ejemplo 10 minutos de ponencia y luego 5 minutos de Q&A, y cada dispositivo cambia en el mismo momento. El Pomodoro en grupo comparte los ciclos de concentración y descanso con todo el equipo. Si solo quieres una alarma fiable para ti, el Temporizador rápido funciona sin sala."
+  ],
+  "features": [
+    {
+      "h": "Una hora de fin, una alarma en cada dispositivo",
+      "p": "Los dispositivos comparten una única hora de fin y cuentan hacia atrás de forma local, así que un breve corte de conexión no hace saltar los números. La alarma se programa de antemano, y la Alarma potente puede sonar incluso en modo Silencio o Concentración con iOS 26 o posterior."
+    },
+    {
+      "h": "Salidas justas con un 3-2-1 compartido",
+      "p": "La cuenta previa está ligada a un mismo instante, así que todas las pantallas cuentan juntas. El anfitrión inicia el temporizador. Pausa, +0:30, +1:00 y reiniciar se pueden abrir a todos. La comprobación retiene el inicio hasta que todos los participantes confirman."
+    },
+    {
+      "h": "Salas para grupos, sin cuenta",
+      "p": "Crea una sala y comparte un código o un QR. Los dispositivos cercanos se conectan por Bluetooth y Wi-Fi, y los que están lejos se conectan a través de distintas redes. Cualquiera que tenga la app puede unirse a una sala, y con Pro el anfitrión abre salas de hasta ocho dispositivos."
+    },
+    {
+      "h": "Secuencias, Pomodoro en grupo y Vista de escenario",
+      "p": "Encadena pasos que cambian en cada dispositivo, comparte ciclos de concentración y descanso, muestra una pantalla completa para el atril y envía un mensaje a todas las pantallas. Al terminar, el temporizador puede quedarse en 00:00, contar el tiempo extra, parpadear o mostrar la hora, configurado una sola vez para toda la sala."
+    },
+    {
+      "h": "Apple Watch, Actividad en directo, widget y Siri",
+      "p": "La app de Apple Watch tiene su propia alarma, incluso lejos del iPhone. Una Actividad en directo y la Dynamic Island muestran la cuenta atrás sin desbloquear. También hay un widget para la pantalla bloqueada y Siri para iniciar una cuenta atrás."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/timerlync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Pantalla del anfitrión de TimerLync sobre fondo morado con 04:13 restantes, el estado En marcha y los botones Reiniciar, Pausa y +1:00",
+      "caption": "Pantalla del anfitrión"
+    },
+    {
+      "src": "/images/apps/timerlync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Pantalla de participante de TimerLync con los mismos 04:13 y un aviso de que el anfitrión controla el temporizador",
+      "caption": "El mismo tiempo en un dispositivo unido"
+    },
+    {
+      "src": "/images/apps/timerlync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Dos pantallas de TimerLync una junto a otra, ambas con el número 3 de la cuenta 3-2-1 compartida y un aviso de que Alex inició el temporizador",
+      "caption": "3-2-1 en el mismo instante"
+    },
+    {
+      "src": "/images/apps/timerlync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Hoja de participantes de TimerLync con un código de sala y un icono QR, un interruptor de comprobación y dos participantes conectados",
+      "caption": "Código de sala y comprobación"
+    },
+    {
+      "src": "/images/apps/timerlync/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Editor de secuencias de TimerLync con las plantillas Pomodoro en grupo y Ponencia + Q&A, pasos de 10 y 5 minutos y un total de 15:00",
+      "caption": "Secuencias y Pomodoro en grupo"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Requisitos",
+      "v": "iPhone y iPad con iOS 17 o posterior, app complementaria para Apple Watch"
+    },
+    {
+      "k": "Cómo unirse",
+      "v": "Código de sala o código QR, sin cuenta ni inicio de sesión"
+    },
+    {
+      "k": "Conexiones",
+      "v": "Bluetooth y Wi-Fi de cerca, a través de la red cuando los dispositivos están lejos"
+    },
+    {
+      "k": "Sincronización",
+      "v": "La hora de la red fija una hora de fin común, cada dispositivo cuenta hacia atrás de forma local"
+    },
+    {
+      "k": "Dispositivos por sala",
+      "v": "Hasta 8 con Pro, sala abierta por el anfitrión"
+    },
+    {
+      "k": "Herramientas de grupo",
+      "v": "Comprobación, coanfitriones, cambio de anfitrión, secuencias, Pomodoro en grupo, Vista de escenario, mensajes del anfitrión"
+    },
+    {
+      "k": "Alarma",
+      "v": "Programada de antemano, la Alarma potente suena en modo Silencio o Concentración con iOS 26 o posterior"
+    },
+    {
+      "k": "Historial",
+      "v": "Historial de sesiones en el dispositivo, exportación CSV con Pro"
+    }
+  ],
+  "limits": [
+    "TimerLync funciona solo en iPhone, iPad y Apple Watch. No hay versión para Android ni Windows, así que esos dispositivos no pueden unirse a una sala.",
+    "Con Pro, el anfitrión abre salas de hasta ocho dispositivos. Eso no sirve para una clase de 30 alumnos que se unan cada uno con su móvil. Conecta un dispositivo por grupo o proyecta la pantalla del anfitrión.",
+    "La corrección de hora usa la hora de la red. Un dispositivo que nunca se ha conectado a internet puede ser menos preciso. Unas decenas de milisegundos son el objetivo y no se pueden garantizar.",
+    "El modo Silencio, Concentración y los ajustes de notificaciones pueden silenciar un aviso, salvo la Alarma potente con iOS 26 o posterior. Algunas redes, como ciertas wifis de colegio, bloquean la detección de dispositivos cercanos. En ese caso, escribe el código de sala para conectarte por la red.",
+    "Revisa el aviso del Apple Watch en tus propios dispositivos antes de un evento importante."
+  ],
+  "faq": [
+    {
+      "q": "¿Cómo uso un temporizador sincronizado en varios dispositivos?",
+      "a": "Crea una sala, elige el tiempo de la cuenta atrás e inícialo. Los demás se unen con el código de sala o un QR, y cada dispositivo muestra el mismo tiempo restante y suena en el mismo instante."
+    },
+    {
+      "q": "¿Qué pasa si un dispositivo pierde el Wi-Fi o entra en reposo?",
+      "a": "Cada dispositivo cuenta hacia atrás de forma local hasta la hora de fin compartida, y la alarma está programada de antemano. Por eso suena a su hora, aunque un móvil sin batería o silenciado no sonará."
+    },
+    {
+      "q": "¿Cuántos dispositivos caben en una sala?",
+      "a": "Con Pro, el anfitrión abre salas de hasta ocho dispositivos. Cualquiera con la app puede unirse, y solo el anfitrión necesita Pro."
+    },
+    {
+      "q": "¿Necesito una cuenta?",
+      "a": "No. Creas una sala o te unes a ella con un código o un QR, sin iniciar sesión. El historial de sesiones se queda en tu dispositivo, y Pro añade la exportación CSV de ese historial."
+    },
+    {
+      "q": "¿Puedo usarlo solo o con el Apple Watch?",
+      "a": "Sí. El Temporizador rápido es una cuenta atrás sencilla con la misma alarma fiable y no necesita sala. La app de Apple Watch tiene su propia alarma, incluso lejos del iPhone."
+    },
+    {
+      "q": "¿Puedo encadenar pasos como una ponencia y preguntas?",
+      "a": "Sí. Una secuencia encadena pasos como 10 minutos de ponencia y 5 minutos de Q&A, y cada dispositivo cambia en el mismo momento. El Pomodoro en grupo aplica la misma idea a los ciclos de concentración y descanso."
+    }
+  ],
+  "card": {
+    "tagline": "Una cuenta atrás en cada iPhone, iPad y Apple Watch, con una sola alarma",
+    "features": [
+      "Mismo tiempo y misma alarma en cada dispositivo",
+      "Únete con código o QR, sin cuenta",
+      "Secuencias y Pomodoro en grupo"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "temporizador sincronizado",
+      "h1": "El mejor temporizador sincronizado para iPhone, iPad y Apple Watch.",
+      "sub": "Ajusta el tiempo una vez y cada dispositivo de la sala muestra los mismos segundos y suena en el mismo instante.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Una hora de fin.",
+        "text": "Los dispositivos comparten una sola hora de fin y cuentan hacia atrás por su cuenta, así que una conexión inestable no hace saltar los números."
+      },
+      {
+        "title": "Únete con un código.",
+        "text": "Comparte un código de sala o un QR. Nadie necesita una cuenta."
+      },
+      {
+        "title": "Una alarma en la muñeca.",
+        "text": "La app de Apple Watch tiene su propia alarma, incluso lejos del iPhone."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Todos salen al mismo tiempo.",
+        "p": "Una cuenta 3-2-1 compartida avanza a la vez en cada pantalla. Con la comprobación activada, el inicio espera a que todos confirmen.",
+        "shot": "03"
+      },
+      {
+        "h2": "Salas que conectan de cerca y de lejos.",
+        "p": "Los dispositivos cercanos se conectan por Bluetooth y Wi-Fi. Los que están lejos se conectan a través de distintas redes.",
+        "shot": "04"
+      },
+      {
+        "h2": "Pasos y ciclos de concentración, compartidos.",
+        "p": "Encadena pasos que cambian en todos los dispositivos a la vez, o comparte ciclos de concentración y descanso con el Pomodoro en grupo.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "¿Listos para empezar juntos?",
+      "p": "Crea una sala, comparte el código e inicia la cuenta atrás."
+    },
+    "closeH2": "Empezar juntos. Terminar juntos.",
+    "trust": [
+      "Sin cuenta",
+      "Bluetooth y Wi-Fi de cerca",
+      "Historial en el dispositivo"
+    ]
+  }
+}

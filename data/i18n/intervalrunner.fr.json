@@ -76,7 +76,7 @@
   "specs": [
     {
       "k": "Plateformes",
-      "v": "iPhone et Apple Watch"
+      "v": "iPhone, Apple Watch et Android"
     },
     {
       "k": "Configuration requise",
@@ -104,12 +104,12 @@
     },
     {
       "k": "Compte",
-      "v": "Aucun compte et aucun serveur de notre côté ; essai de 7 jours sur l'abonnement annuel Pro pour les nouveaux abonnés éligibles"
+      "v": "Aucun compte et aucun serveur de notre côté"
     }
   ],
   "limits": [
     "IntervalRunner ne mesure pas votre VMA et ne propose ni test VMA ni protocole de test : vous saisissez vous-même les allures cibles, par exemple calculées à partir d'une VMA déjà connue.",
-    "Ce n'est pas un plan d'entraînement : l'app ne génère pas de programme sur plusieurs semaines et ne prédit pas de temps de course. Elle vous aide à exécuter les séances que vous avez définies.",
+    "L'app ne génère pas de programme d'entraînement sur plusieurs semaines et ne prédit pas de temps de course. Elle vous aide à exécuter les séances que vous avez définies.",
     "Les fonctions cardio (zones, récupération qui s'arrête quand le cœur redescend) demandent une Apple Watch ou une ceinture cardio Bluetooth et font partie de Pro.",
     "La précision de l'allure dépend du GPS : sous couvert d'arbres ou entre des immeubles, l'allure lissée peut réagir avec retard. Le mode tapis de course dépend de la vitesse que vous réglez sur la machine."
   ],
@@ -132,7 +132,7 @@
     },
     {
       "q": "Que comprend la version Pro ?",
-      "a": "Pro ajoute notamment l'analyse par étape, les tendances et records, les zones de fréquence cardiaque comme cible, les séances enregistrées en nombre illimité, les séries imbriquées et les générateurs d'échelle, de pyramide et de Yasso 800, ainsi que l'export CSV à la seconde. Courir avec les alertes, les modèles et les modes de décompte ne demande pas Pro."
+      "a": "Pro ajoute notamment l'analyse par étape, les tendances et records, les zones de fréquence cardiaque comme cible, une bibliothèque de séances avec dossiers, les séries imbriquées et les générateurs d'échelle, de pyramide et de Yasso 800, ainsi que l'export CSV à la seconde."
     },
     {
       "q": "Où sont enregistrées mes données ?",
@@ -145,6 +145,59 @@
       "Étapes en temps ou en distance avec allure cible",
       "Alertes trop vite / trop lent sur iPhone et Apple Watch",
       "Mode tapis de course et bilan étape par étape"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "minuteur de fractionné",
+      "h1": "Le meilleur minuteur de fractionné pour iPhone, Apple Watch et Android.",
+      "sub": "IntervalRunner vous prévient par la voix, un son et une touche au poignet dès que votre allure s'écarte de la cible.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Une allure fiable.",
+        "text": "Les alertes s'appuient sur une allure lissée plutôt que sur les à-coups du GPS, avec une marge de tolérance que vous réglez."
+      },
+      {
+        "title": "La correction à l'oreille.",
+        "text": "Trop vite et trop lent n'ont ni le même son ni la même vibration. Vous savez quoi faire avant de lire un chiffre."
+      },
+      {
+        "title": "Écran verrouillé, téléphone en poche.",
+        "text": "Les annonces vocales baissent la musique un instant et continuent écran verrouillé."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Des séances en temps ou en distance.",
+        "p": "Chaque étape reçoit une allure ou une vitesse cible, en km ou en miles. Sept modèles sont prêts, de la marche-course initiation au 8 × 400 m.",
+        "shot": "03"
+      },
+      {
+        "h2": "iPhone, Apple Watch, ou les deux.",
+        "p": "Courez avec l'iPhone seul, la montre seule ou les deux. Le mode tapis de course se passe de GPS et suit la vitesse réglée sur la machine.",
+        "shot": "04"
+      },
+      {
+        "h2": "Voyez comment s'est passée chaque étape.",
+        "p": "À la fin, le bilan compare chaque étape à sa cible. La séance est enregistrée dans Santé si vous l'autorisez.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Prêt à tenir chaque allure ?",
+      "p": "Choisissez un modèle ou créez vos étapes, rangez le téléphone et courez."
+    },
+    "closeH2": "Un coach d'allure qui parle au bon moment.",
+    "trust": [
+      "Aucun compte",
+      "Aucun serveur de notre côté",
+      "Vos données restent sur vos appareils",
+      "12 langues"
     ]
   }
 }

@@ -1,0 +1,203 @@
+{
+  "locale": "de",
+  "title": "Synchroner Timer für Gruppen - TimerLync für iPhone",
+  "description": "Synchroner Timer für Gruppen. Ein Countdown auf jedem iPhone, iPad und jeder Apple Watch, ein Alarm im selben Moment. Beitritt per Code, ohne Account.",
+  "h1": "Ein synchroner Timer, der auf allen Geräten gleichzeitig klingelt",
+  "tagline": "Ein Countdown. Jedes Gerät. Ein Alarm.",
+  "summary": [
+    "TimerLync ist ein Countdown-Timer, der auf allen iPhones, iPads und Apple Watches in einem Raum synchron bleibt. Du stellst die Zeit einmal ein, und jedes Gerät zeigt dieselben verbleibenden Sekunden und klingelt im selben Moment.",
+    "Die App ist für Lehrkräfte und Trainer, Vortragende und Moderatoren, Lerngruppen und Teams gedacht und für alle, die eine Gruppe gemeinsam starten und stoppen lassen wollen.",
+    "So lässt sich ein Timer auf mehreren Geräten synchronisieren, ganz ohne Account. Die Geräte treten mit einem Raumcode oder QR-Code bei. Geräte in der Nähe verbinden sich über Bluetooth und WLAN, entfernte Geräte über das Netzwerk."
+  ],
+  "overview": [
+    "Wenn mehrere Leute jeweils auf dem eigenen Handy einen Countdown starten, laufen die Timer auseinander. Einer tippt zuerst, ein Bildschirm geht in den Ruhezustand, ein Alarmton klingt anders. Ein Timer für mehrere Geräte löst das mit einer einzigen gemeinsamen Endzeit. TimerLync-Geräte einigen sich über die Netzwerkzeit auf diese Endzeit und zählen dann lokal herunter. Selbst wenn das WLAN abbricht oder ein Gerät in den Ruhezustand geht, klingelt der Alarm pünktlich, weil er schon vorher auf jedem Gerät eingeplant ist.",
+    "Faire Starts zählen bei Gruppenarbeit und im Training. Ein 3-2-1-Vorlauf läuft auf jedem Bildschirm im selben Moment ab, also bekommt niemand einen Vorsprung, nur weil er auf Start tippt. Der Host kann eine Bereitschaftsprüfung starten, die wartet, bis alle bestätigen, Co-Hosts benennen und die Host-Rolle an jemand anderen übergeben. Für Vorträge und Events gibt es die Bühnenansicht im Vollbild mit großen Ziffern, Host-Nachrichten wie „Bitte zum Ende kommen“ und eine Auswahl, was bei 00:00 angezeigt wird.",
+    "Ein synchroner Timer für Gruppen kann mehr als einen einzelnen Countdown. Sequenzen verketten Schritte, zum Beispiel 10 Minuten Vortrag und danach 5 Minuten Q&A, und jedes Gerät wechselt im selben Moment. Gruppen-Pomodoro teilt Fokus- und Pausenphasen mit dem ganzen Team. Wer nur für sich einen verlässlichen Alarm braucht, nimmt den Schnelltimer, der ohne Raum funktioniert."
+  ],
+  "features": [
+    {
+      "h": "Eine Endzeit, ein Alarm auf jedem Gerät",
+      "p": "Die Geräte teilen eine gemeinsame Endzeit und zählen lokal herunter, deshalb springen die Zahlen bei einem kurzen Verbindungswackler nicht. Der Alarm ist im Voraus geplant, und der Starke Alarm klingelt unter iOS 26 oder neuer sogar im Stumm- oder Fokus-Modus."
+    },
+    {
+      "h": "Faire Starts mit gemeinsamem 3-2-1-Vorlauf",
+      "p": "Der Vorlauf hängt an einem gemeinsamen Zeitpunkt, also zählen alle Bildschirme zusammen herunter. Der Host startet den Timer. Pause, +0:30, +1:00 und Zurücksetzen lassen sich für alle freigeben. Die Bereitschaftsprüfung hält den Start zurück, bis alle Teilnehmer bestätigt haben."
+    },
+    {
+      "h": "Räume für Gruppen, ohne Account",
+      "p": "Erstelle einen Raum und teile einen Code oder QR-Code. Geräte in der Nähe verbinden sich über Bluetooth und WLAN, entfernte Geräte über verschiedene Netzwerke hinweg. Jeder mit der App kann einem Raum beitreten, und mit Pro öffnet der Host Räume mit bis zu acht Geräten."
+    },
+    {
+      "h": "Sequenzen, Gruppen-Pomodoro und Bühnenansicht",
+      "p": "Verkette Schritte, die auf jedem Gerät wechseln, teile Fokus- und Pausenphasen, zeige eine Vollbildanzeige fürs Podium und schicke eine Nachricht an alle Bildschirme. Am Ende kann der Timer bei 00:00 anhalten, die Überzeit zählen, blinken oder die Uhrzeit zeigen, einmal eingestellt für den ganzen Raum."
+    },
+    {
+      "h": "Apple Watch, Live-Aktivität, Widget und Siri",
+      "p": "Die Apple Watch-App hat einen eigenen Alarm, auch fern vom iPhone. Eine Live-Aktivität und die Dynamic Island zeigen den Countdown ohne Entsperren. Dazu gibt es ein Widget für den Sperrbildschirm und Siri zum Starten eines Countdowns."
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/apps/timerlync/en/01.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync-Host-Bildschirm auf violettem Hintergrund mit 04:13 Restzeit, dem Status Läuft und den Tasten Zurücksetzen, Pause und +1:00",
+      "caption": "Host-Bildschirm"
+    },
+    {
+      "src": "/images/apps/timerlync/en/02.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync-Teilnehmerbildschirm mit denselben 04:13 und dem Hinweis, dass der Host den Timer steuert",
+      "caption": "Gleiche Zeit auf einem beigetretenen Gerät"
+    },
+    {
+      "src": "/images/apps/timerlync/en/03.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "Zwei TimerLync-Bildschirme nebeneinander, beide mit der Zahl 3 aus dem gemeinsamen 3-2-1-Vorlauf und einem Banner, dass Alex den Timer gestartet hat",
+      "caption": "3-2-1 im selben Moment"
+    },
+    {
+      "src": "/images/apps/timerlync/en/04.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync-Teilnehmerliste mit Raumcode und QR-Symbol, einem Schalter für die Bereitschaftsprüfung und zwei verbundenen Teilnehmern",
+      "caption": "Raumcode und Bereitschaftsprüfung"
+    },
+    {
+      "src": "/images/apps/timerlync/en/05.webp",
+      "w": 420,
+      "h": 909,
+      "alt": "TimerLync-Sequenzeditor mit den Vorlagen Gruppen-Pomodoro und Vortrag + Q&A, Schritten von 10 und 5 Minuten und 15:00 gesamt",
+      "caption": "Sequenzen und Gruppen-Pomodoro"
+    }
+  ],
+  "specs": [
+    {
+      "k": "Voraussetzungen",
+      "v": "iPhone und iPad mit iOS 17 oder neuer, Apple Watch-App"
+    },
+    {
+      "k": "Beitreten",
+      "v": "Raumcode oder QR-Code, ohne Account oder Anmeldung"
+    },
+    {
+      "k": "Verbindungen",
+      "v": "Bluetooth und WLAN in der Nähe, über Netzwerke hinweg bei Entfernung"
+    },
+    {
+      "k": "Zeitabgleich",
+      "v": "Die Netzwerkzeit legt eine Endzeit fest, jedes Gerät zählt lokal herunter"
+    },
+    {
+      "k": "Geräte pro Raum",
+      "v": "Bis zu 8 mit Pro, vom Host geöffnet"
+    },
+    {
+      "k": "Gruppenwerkzeuge",
+      "v": "Bereitschaftsprüfung, Co-Hosts, Host-Übergabe, Sequenzen, Gruppen-Pomodoro, Bühnenansicht, Host-Nachrichten"
+    },
+    {
+      "k": "Alarm",
+      "v": "Im Voraus geplant, der Starke Alarm klingelt unter iOS 26 oder neuer auch im Stumm- oder Fokus-Modus"
+    },
+    {
+      "k": "Verlauf",
+      "v": "Sitzungsverlauf auf dem Gerät, CSV-Export mit Pro"
+    }
+  ],
+  "limits": [
+    "TimerLync läuft nur auf iPhone, iPad und Apple Watch. Es gibt keine Version für Android oder Windows, solche Geräte können einem Raum also nicht beitreten.",
+    "Mit Pro öffnet der Host Räume mit bis zu acht Geräten. Für eine Klasse mit 30 Leuten, die alle mit dem eigenen Handy beitreten, passt das nicht. Verbinde ein Gerät pro Gruppe oder zeige den Host-Bildschirm über einen Beamer.",
+    "Der Zeitabgleich nutzt die Netzwerkzeit. Ein Gerät, das noch nie online war, kann ungenauer sein. Einige zehn Millisekunden sind das Ziel und lassen sich nicht garantieren.",
+    "Stumm-Modus, Fokus und Mitteilungseinstellungen können einen Hinweis trotzdem stummschalten, ausgenommen den Starken Alarm unter iOS 26 oder neuer. Manche Netzwerke, etwa bestimmte Schul-WLANs, blockieren die Suche nach Geräten in der Nähe. Gib dann den Raumcode ein, um über das Netzwerk zu verbinden.",
+    "Prüfe den Alarm der Apple Watch vor einem wichtigen Termin auf deinen eigenen Geräten."
+  ],
+  "faq": [
+    {
+      "q": "Wie synchronisiere ich einen Timer auf mehreren Geräten?",
+      "a": "Erstelle einen Raum, wähle die Countdown-Zeit und starte. Die anderen treten per Raumcode oder QR-Code bei, und jedes Gerät zeigt dieselbe Restzeit und klingelt im selben Moment."
+    },
+    {
+      "q": "Was passiert, wenn ein Gerät das WLAN verliert oder in den Ruhezustand geht?",
+      "a": "Jedes Gerät zählt lokal bis zur gemeinsamen Endzeit herunter, und der Alarm ist im Voraus geplant. Er klingelt also pünktlich. Ein leerer Akku oder ein stummgeschaltetes Handy klingelt allerdings nicht."
+    },
+    {
+      "q": "Wie viele Geräte passen in einen Raum?",
+      "a": "Mit Pro öffnet der Host Räume mit bis zu acht Geräten. Beitreten kann jeder mit der App, Pro braucht nur der Host."
+    },
+    {
+      "q": "Brauche ich einen Account?",
+      "a": "Nein. Du erstellst einen Raum oder trittst mit Code oder QR-Code bei, ohne Anmeldung. Der Sitzungsverlauf bleibt auf deinem Gerät, und Pro ergänzt den CSV-Export dieses Verlaufs."
+    },
+    {
+      "q": "Kann ich die App allein oder mit der Apple Watch nutzen?",
+      "a": "Ja. Der Schnelltimer ist ein einfacher Countdown mit demselben verlässlichen Alarm und braucht keinen Raum. Die Apple Watch-App hat einen eigenen Alarm, auch fern vom iPhone."
+    },
+    {
+      "q": "Kann ich Schritte wie Vortrag und Fragerunde verketten?",
+      "a": "Ja. Eine Sequenz verkettet Schritte wie 10 Minuten Vortrag und 5 Minuten Q&A, und jedes Gerät wechselt im selben Moment. Gruppen-Pomodoro nutzt dieselbe Idee für Fokus- und Pausenphasen."
+    }
+  ],
+  "card": {
+    "tagline": "Ein Countdown auf jedem iPhone, iPad und jeder Apple Watch, mit einem Alarm",
+    "features": [
+      "Gleiche Zeit und gleicher Alarm auf jedem Gerät",
+      "Beitritt per Code oder QR, ohne Account",
+      "Sequenzen und Gruppen-Pomodoro"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "synchroner Timer",
+      "h1": "Der beste synchrone Timer für iPhone, iPad und Apple Watch.",
+      "sub": "Stell die Zeit einmal ein, und jedes Gerät im Raum zeigt dieselben Sekunden und klingelt im selben Moment.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Eine Endzeit.",
+        "text": "Die Geräte teilen eine Endzeit und zählen selbst herunter, deshalb springen die Zahlen auch bei wackliger Verbindung nicht."
+      },
+      {
+        "title": "Beitritt per Code.",
+        "text": "Teile einen Raumcode oder QR-Code. Niemand braucht einen Account."
+      },
+      {
+        "title": "Ein Alarm am Handgelenk.",
+        "text": "Die Apple Watch-App hat einen eigenen Alarm, auch fern vom iPhone."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Alle starten im selben Takt.",
+        "p": "Ein gemeinsamer 3-2-1-Vorlauf zählt auf jedem Bildschirm zusammen herunter. Mit Bereitschaftsprüfung wartet der Start, bis alle bestätigen.",
+        "shot": "03"
+      },
+      {
+        "h2": "Räume, die nah und fern verbinden.",
+        "p": "Geräte in der Nähe verbinden sich über Bluetooth und WLAN. Entfernte Geräte verbinden sich über Netzwerke hinweg.",
+        "shot": "04"
+      },
+      {
+        "h2": "Schritte und Fokusphasen, gemeinsam.",
+        "p": "Verkette Schritte, die auf jedem Gerät gleichzeitig wechseln, oder teile Fokus- und Pausenphasen mit Gruppen-Pomodoro.",
+        "shot": "05"
+      }
+    ],
+    "midCta": {
+      "h2": "Bereit, gemeinsam zu starten?",
+      "p": "Erstelle einen Raum, teile den Code und starte den Countdown."
+    },
+    "closeH2": "Gemeinsam starten. Gemeinsam fertig werden.",
+    "trust": [
+      "Kein Account",
+      "Bluetooth und WLAN in der Nähe",
+      "Verlauf bleibt auf dem Gerät"
+    ]
+  }
+}

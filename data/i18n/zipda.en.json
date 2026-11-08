@@ -12,7 +12,7 @@
   "overview": [
     "If you have ever searched for how to unzip a file on Mac, the built-in Archive Utility handles plain ZIP files well. The trouble starts with everything else. A RAR file from a download site, a 7z from a colleague, a ZIP made on Korean or Japanese Windows whose names turn into symbols, or a download that stopped halfway: these are the cases Zipda was built for. You can open any of those archives, look inside and preview what is there before extracting anything.",
     "Everything runs on your own device. There is no account, no analytics and no advertising SDK, and the app makes no network requests of its own, so the files you unpack never leave your Mac or iPhone. Extraction streams large archives to storage instead of loading them into memory, which is how multi-gigabyte ZIP64 files and sets with tens of thousands of entries stay manageable.",
-    "Opening, browsing and previewing any archive, and everyday ZIP and TAR extraction, work without Pro. Extracting RAR, 7z, ALZ and LZH, split sets, password-protected archives and original CJK names is part of the optional Zipda Pro unlock, which is available on iPhone, iPad and Mac with the same features."
+    "Opening, browsing and previewing any archive, and everyday ZIP and TAR extraction, work without Pro. Extracting RAR, 7z, ALZ and LZH, split sets, password-protected archives and original CJK names is included in the optional Zipda Pro, which works the same way on iPhone, iPad and Mac."
   ],
   "features": [
     {
@@ -57,10 +57,10 @@
     "EGG files are not supported.",
     "A split set needs every part. If one part is missing the set cannot be extracted.",
     "Encoding detection is an estimate. Very short Japanese file names can be mistaken for Korean, so switch the encoding by hand if a result looks wrong.",
-    "Extracting RAR, 7z, ALZ and LZH, split sets and password-protected archives requires the optional Pro unlock."
+    "Extracting RAR, 7z, ALZ and LZH, split sets and password-protected archives are included in the optional Zipda Pro."
   ],
   "faq": [
-    {"q": "How do I open a RAR file on a Mac?", "a": "Install Zipda, then drag the RAR onto the app window (on iPhone, share it to Zipda from Mail or the Files app). You can browse and preview the contents first. Extracting a RAR archive is part of the optional Zipda Pro unlock."},
+    {"q": "How do I open a RAR file on a Mac?", "a": "Install Zipda, then drag the RAR onto the app window (on iPhone, share it to Zipda from Mail or the Files app). You can browse and preview the contents first. Extracting a RAR archive is included in the optional Zipda Pro."},
     {"q": "How do I unzip a file on a Mac?", "a": "Double-clicking a ZIP uses the built-in Archive Utility. With Zipda you can also browse the archive, preview a single file, choose where the files go and unzip in one step, which helps when names are garbled or the archive is very large."},
     {"q": "Can Zipda open 7z files on Mac?", "a": "Yes. Zipda opens, browses and previews 7z archives, and extracting 7z is included in Zipda Pro."},
     {"q": "Why are my file names garbled after unzipping?", "a": "The archive stored names in a regional code page instead of Unicode. Zipda detects the likely encoding on your device, and you can change it with one tap. For folders you already extracted, use the Repair File Names tool."},
@@ -70,5 +70,56 @@
   "card": {
     "tagline": "Open RAR, 7z and ZIP on Mac and iPhone, and fix garbled names.",
     "features": ["Extracts ZIP, RAR, 7z and TAR", "Repairs garbled file names", "No ads, no account"]
+  },
+  "landing": {
+    "hero": {
+      "category": "unarchiver",
+      "h1": "The best unarchiver for iPhone, iPad and Mac.",
+      "sub": "Opens RAR, 7z and ZIP on your Mac, iPhone and iPad, and takes out just the file you need.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Opens RAR and 7z.",
+        "text": "Zipda extracts RAR, 7z, LZH and ALZ as well as ZIP and the TAR family. Take out one file or extract everything to a folder you choose."
+      },
+      {
+        "title": "Big and split archives.",
+        "text": "Zip64 archives past 4 GB and archives with tens of thousands of entries are streamed. Pick the first part of a split set and Zipda finds the rest."
+      },
+      {
+        "title": "Mac, iPhone and iPad.",
+        "text": "Zipda is one App Store listing for all three. It runs on macOS 14 and iOS 16.1 or later."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Look inside first. Take only what you need.",
+        "p": "Browse and preview what an archive holds. Then extract one file, or all of it, to the folder you pick.",
+        "shot": "01"
+      },
+      {
+        "h2": "Locked ZIPs open on your device.",
+        "p": "ZIPs protected with ZipCrypto or AES open once you enter the password. The check happens on your device.",
+        "shot": "02"
+      },
+      {
+        "h2": "Make ZIPs from files, photos and videos.",
+        "p": "Select files, photos or videos and compress them into a ZIP, also from the share sheet on iPhone.",
+        "shot": "03"
+      }
+    ],
+    "midCta": {
+      "h2": "Got a RAR or 7z to open?",
+      "p": "Open it in Zipda, look inside and extract what you need."
+    },
+    "closeH2": "One unarchiver for your Mac, iPhone and iPad.",
+    "trust": [
+      "No account",
+      "No ads",
+      "No analytics"
+    ]
   }
 }

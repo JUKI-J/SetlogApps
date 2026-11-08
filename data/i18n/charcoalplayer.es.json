@@ -1,0 +1,127 @@
+{
+  "locale": "es",
+  "title": "Reproductor de audio Mac con bucle A-B - Charcoal Player",
+  "description": "Reproductor de audio Mac para FLAC, MP3 y M4A con bucle A-B, velocidad de 0,5x a 3x y separación en pistas. Sin anuncios, cuenta ni recogida de datos.",
+  "h1": "Un reproductor de audio para Mac para repetir en bucle A-B, ralentizar y separar pistas",
+  "tagline": "Reproduce tus propios archivos de música, repite una frase, ralentízala y separa la canción en pistas.",
+  "summary": [
+    "Charcoal Player es un reproductor de audio para Mac que reproduce los archivos y carpetas de música que ya tienes, como FLAC, MP3, M4A, WAV y AIFF, y añade las herramientas que necesita una sesión de práctica.",
+    "Está pensado para quienes aprenden música de oído, sacan canciones o las transcriben, practican un instrumento sobre una grabación, o siguen una clase de idiomas, una conferencia o la grabación de una reunión frase a frase.",
+    "Lo que lo distingue es que puede desmontar una canción. Con un clic separa la voz, la batería, el bajo, la guitarra y el piano en tu Mac, así te quedas solo con la parte que quieres aprender o quitas la voz para tener una pista de acompañamiento."
+  ],
+  "overview": [
+    "Si buscas un reproductor de audio para Mac que abra FLAC y otros archivos locales, Charcoal Player se abre en una pantalla de reproducción con la carátula grande, la información de la pista y una letra que avanza con la música. Añades tu carpeta de práctica una sola vez y la biblioteca sigue donde la dejaste tras reiniciar o actualizar. Si una carpeta queda desconectada, por ejemplo al quitar un disco externo, las pistas se marcan y no se borran, y volver a conectarlas lleva un clic.",
+    "Para cambiar la velocidad de un audio en Mac o repetir un fragmento en bucle A-B, Charcoal Player marca el punto A con una tecla, el punto B con otra y activa el bucle con una tercera. El bucle es exacto a nivel de muestra, así que se repite sin desfase en el límite. Junto con la velocidad de 0,5x a 3,0x manteniendo el tono, un pasaje difícil se convierte en algo que puedes trabajar despacio, sin voces de ardilla.",
+    "Todo se queda en tu Mac. No hay anuncios, ni cuenta, ni recogida de datos, y tu música nunca sale del ordenador. La reproducción, la velocidad, el bucle A-B y la separación de fuentes ocurren por completo en el equipo que tienes delante."
+  ],
+  "features": [
+    {
+      "h": "Bucle A-B y reproducción lenta manteniendo el tono",
+      "p": "Marca una frase con una tecla para A, otra para B y otra para activar el bucle. La repetición es exacta a nivel de muestra, sin desfase en el límite. La velocidad va de 0,5x a 3,0x y el tono se mantiene, algo ideal para transcribir, hacer dictados, entrenar el oído y practicar despacio todo lo que aprendes de oído. Los saltos personalizados de 0,5 a 30 segundos te ayudan a moverte por una grabación."
+    },
+    {
+      "h": "Separa una canción en pistas",
+      "p": "Separa cualquier pista en voz, batería, bajo, guitarra y piano, hasta seis pistas, con todo el proceso en tu Mac. Quédate solo con la voz para aprender una melodía o quítala para tener un acompañamiento. La separación empieza cuando la pides para una canción, las pistas ya separadas se abren al instante y puedes activar el inicio automático en Ajustes, dentro de la separación de fuentes."
+    },
+    {
+      "h": "Una pista por persona en reuniones y clases",
+      "p": "Las grabaciones de reuniones, entrevistas y clases reciben una pista por cada persona que habla. Así puedes seguir, silenciar o aislar cada voz de la sala."
+    },
+    {
+      "h": "Letras de tus propios archivos",
+      "p": "La letra sale de un archivo .lrc junto a la pista, de la letra incrustada en el archivo o de un .txt con el mismo nombre. No se busca nada en internet, y si la sincronía está desajustada puedes corregir el desfase en cada pista sin que el archivo de audio se modifique."
+    },
+    {
+      "h": "Exporta lo que has aislado",
+      "p": "Exporta cualquier combinación de pistas o voces en la calidad original o en MP3, AAC, ALAC, WAV, AIFF o FLAC. Las listas de reproducción, la opción Abrir con del Finder y un minicontrolador en la barra de menús con tres líneas de letra completan la escucha diaria."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/charcoalplayer/en/01.webp", "w": 1000, "h": 625, "alt": "Charcoal Player en un Mac con la pantalla de reproducción, una carátula grande de veleros al atardecer, una barra lateral con listas y carpetas, y la letra sincronizada avanzando junto a la portada", "caption": "Pantalla de reproducción con carátula y letra sincronizada."},
+    {"src": "/images/apps/charcoalplayer/en/02.webp", "w": 1000, "h": 625, "alt": "Charcoal Player con el panel de separación de fuentes abierto, que muestra pistas con forma de onda para voz, batería, bajo, guitarra y piano que se pueden activar y desactivar", "caption": "Separa una canción en pistas y quédate con lo que necesitas."},
+    {"src": "/images/apps/charcoalplayer/en/03.webp", "w": 1000, "h": 625, "alt": "Charcoal Player reproduciendo una lección de comprensión auditiva en inglés con forma de onda, una zona de bucle A-B resaltada y botones de velocidad desde 0,5x", "caption": "Repite una frase y ralentízala."},
+    {"src": "/images/apps/charcoalplayer/en/04.webp", "w": 1000, "h": 625, "alt": "Charcoal Player mostrando la grabación de una reunión dividida en tres pistas de voz, cada una con su propio interruptor", "caption": "Una pista por persona en reuniones y clases."}
+  ],
+  "specs": [
+    {"k": "Plataforma", "v": "Mac"},
+    {"k": "Requisitos", "v": "macOS 15 o posterior"},
+    {"k": "Reproducción", "v": "Archivos y carpetas de audio locales, como MP3, M4A, WAV, AIFF y FLAC"},
+    {"k": "Velocidad", "v": "De 0,5x a 3,0x manteniendo el tono"},
+    {"k": "Bucle A-B", "v": "Exacto a nivel de muestra, una tecla para A, B y el bucle"},
+    {"k": "Separación de fuentes", "v": "Hasta 6 pistas (voz, batería, bajo, guitarra, piano y más) o pistas por persona, procesadas en tu Mac"},
+    {"k": "Formatos de exportación", "v": "Calidad original, MP3, AAC, ALAC, WAV, AIFF, FLAC"},
+    {"k": "Privacidad", "v": "Sin anuncios, sin cuenta, sin recogida de datos"},
+    {"k": "Idiomas", "v": "12"}
+  ],
+  "limits": [
+    "Charcoal Player solo reproduce archivos locales. No reproduce música desde servicios en línea ni sincroniza tu biblioteca entre dispositivos.",
+    "Cambia la velocidad de reproducción manteniendo el tono, pero no modifica el tono en sí.",
+    "La separación de fuentes empieza solo cuando la pides para una canción, salvo que actives el inicio automático en Ajustes.",
+    "La letra se lee solo de archivos que ya tienes, como un .lrc, etiquetas incrustadas o un .txt con el mismo nombre. No se busca nada en internet, así que una pista sin letra dentro o al lado del archivo no muestra ninguna.",
+    "Es una app solo para Mac. No hay versión para iPhone ni para iPad."
+  ],
+  "faq": [
+    {"q": "¿Qué reproductor de audio para Mac abre archivos FLAC?", "a": "Charcoal Player reproduce FLAC local junto con MP3, M4A, WAV, AIFF y otros formatos habituales. Añade una carpeta una vez y la biblioteca se mantiene tras reiniciar o actualizar."},
+    {"q": "¿Cómo repito en bucle un fragmento de una canción en Mac?", "a": "Pulsa la tecla de A al principio de la frase y la de B al final, y activa el bucle. El bucle A-B es exacto a nivel de muestra, así que no se desfasa en el límite."},
+    {"q": "¿Puedo ralentizar una canción en Mac sin que cambie el tono?", "a": "Sí. Charcoal Player reproduce de 0,5x a 3,0x manteniendo el tono, así que practicar despacio no convierte la voz en un sonido grave y distorsionado."},
+    {"q": "¿Puede quitar la voz de una canción para hacer un karaoke?", "a": "Sí. Separa la pista en partes y silencia la voz para obtener un acompañamiento, o quédate solo con la voz para aprender la melodía. Se procesan hasta seis pistas en tu Mac."},
+    {"q": "¿Necesita una cuenta o envía mi música a algún sitio?", "a": "No. No hay cuenta, ni anuncios, ni recogida de datos, y tu música se queda en tu Mac."},
+    {"q": "¿Puedo guardar las partes separadas?", "a": "Sí. Exporta cualquier combinación de pistas o voces en la calidad original o en MP3, AAC, ALAC, WAV, AIFF o FLAC. Las pistas ya separadas se abren al instante, así que puedes volver más tarde y exportar otra mezcla."}
+  ],
+  "card": {
+    "tagline": "Reproductor de audio para Mac con bucle A-B, reproducción lenta y separación en pistas.",
+    "features": ["Reproduce FLAC, MP3, M4A y más", "Bucle A-B, velocidad de 0,5x a 3x", "Separa canciones en pistas"]
+  },
+  "landing": {
+    "hero": {
+      "category": "reproductor de audio",
+      "h1": "El mejor reproductor de audio ligero para Mac.",
+      "sub": "Ralentiza tu música manteniendo el tono y quita la voz para dejarte la pista de acompañamiento.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Más despacio. El mismo tono.",
+        "text": "Reproduce cualquier cosa de 0,5x a 3x manteniendo el tono. Repite una frase con una tecla para A, otra para B y otra para el bucle."
+      },
+      {
+        "title": "Quita la voz.",
+        "text": "Un clic separa una canción en voz, batería, bajo, guitarra y piano en tu Mac. Silencia la voz y tienes una pista de acompañamiento."
+      },
+      {
+        "title": "Tus archivos, tal cual.",
+        "text": "FLAC, MP3, M4A, WAV y AIFF suenan directamente desde tus carpetas. La letra sale de tus propios archivos .lrc o de las etiquetas incrustadas."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Bucles A-B sin desfase.",
+        "p": "Marca A, B y el bucle con una tecla cada uno. La repetición es exacta a nivel de muestra y el límite nunca se mueve.",
+        "shot": "03"
+      },
+      {
+        "h2": "Quédate con la parte que quieres aprender.",
+        "p": "Separa una pista en hasta seis partes, con todo el proceso en tu Mac. Deja solo la voz para aprender la melodía o exporta la mezcla que has hecho.",
+        "shot": "02"
+      },
+      {
+        "h2": "Reuniones y clases, una voz cada vez.",
+        "p": "Las grabaciones de reuniones, entrevistas y clases reciben una pista por persona. Sigue, silencia o aísla cada voz.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "¿Listo para ralentizar una canción o quitarle la voz?",
+      "p": "Ábrela en Charcoal Player e inicia la separación. Todo ocurre en tu Mac."
+    },
+    "closeH2": "Un reproductor de audio hecho para practicar.",
+    "trust": [
+      "Sin cuenta",
+      "Sin anuncios",
+      "Sin recogida de datos",
+      "Procesado en tu Mac"
+    ]
+  }
+}

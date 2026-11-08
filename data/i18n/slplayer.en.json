@@ -32,7 +32,7 @@
     },
     {
       "h": "Optional Pro for power use",
-      "p": "Basic playback needs no purchase. slplayer Pro adds split view for up to four videos, picture in picture, a menu bar mini player, A-B loop and a sleep timer, and a 7-day in-app trial of all Pro features starts at first launch, with no payment details. After the trial, Pro features lock and basic playback stays available."
+      "p": "Everyday playback works without Pro, from MKV and subtitles to speed and playlists. slplayer Pro adds split view for up to four videos, picture in picture, a menu bar mini player, A-B loop and a sleep timer."
     }
   ],
   "screenshots": [
@@ -93,13 +93,17 @@
     {
       "k": "Privacy",
       "v": "No account, no analytics, no ads; the app makes no network requests of its own"
+    },
+    {
+      "k": "Pro (optional)",
+      "v": "Split view, picture in picture, A-B loop"
     }
   ],
   "limits": [
     "slplayer plays only what your Mac supports. If a file's audio cannot be decoded by macOS, the video plays without sound and a notice appears when playback starts.",
     "Image-based subtitles, such as picture subtitles on discs, are not shown. Files that cannot be opened show an error.",
     "The documented subtitle formats are SRT, VTT and SMI; other formats are not guaranteed.",
-    "It is a Mac app only. Split view, picture in picture, A-B loop and other extras need the optional Pro upgrade."
+    "It is a Mac app only. Split view, picture in picture, A-B loop and other extras are part of the optional slplayer Pro."
   ],
   "faq": [
     {
@@ -115,12 +119,12 @@
       "a": "The documented subtitle formats are SRT, VTT and SMI. Image-based subtitles are not shown, and other formats are not guaranteed."
     },
     {
-      "q": "Do I need an account or a purchase?",
-      "a": "No account is needed. Opening files, MKV, subtitles, sync, speed and playlists work without Pro. slplayer Pro is optional and adds split view, picture in picture and A-B loop."
+      "q": "Do I need an account?",
+      "a": "No account is needed, and the app makes no network requests of its own. Opening files, MKV, subtitles, sync, speed and playlists all work without Pro."
     },
     {
-      "q": "Can I try Pro before buying?",
-      "a": "Yes. A 7-day in-app trial of all Pro features starts at first launch, with no payment details needed. Afterwards the Pro features lock and basic playback keeps working."
+      "q": "What does slplayer Pro add?",
+      "a": "slplayer Pro is optional. It adds split view for up to four videos, picture in picture, a menu bar mini player, A-B loop and a sleep timer. Basic playback works the same without it."
     }
   ],
   "card": {
@@ -129,6 +133,57 @@
       "MKV, MP4, MOV, no codec pack",
       "SRT, VTT, SMI and dual subtitles",
       "No account, no ads"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "video player",
+      "h1": "The best light video player for Mac.",
+      "sub": "Opens MKV and shows your subtitles right, using the media engine built into macOS.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Opens MKV.",
+        "text": "MKV, MP4, M4V, MOV and MPEG-TS open directly. There is no codec pack to install."
+      },
+      {
+        "title": "Subtitles that read.",
+        "text": "SRT, VTT and SMI load with the video. Korean SMI files saved in EUC-KR are detected automatically, so they never turn into gibberish."
+      },
+      {
+        "title": "Light on battery.",
+        "text": "slplayer bundles no decoder of its own. macOS handles playback, so it stays light on battery."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Dual subtitles and sync, in one place.",
+        "p": "Show two subtitle lines at once, nudge the sync in 0.1-second steps and set the style with a live preview. Each file keeps its offset.",
+        "shot": "06"
+      },
+      {
+        "h2": "Four videos. One set of controls.",
+        "p": "Split view plays up to four videos side by side. Picture in picture and a menu bar mini player are there too.",
+        "shot": "02"
+      },
+      {
+        "h2": "Pick up where you left off.",
+        "p": "Drop several files to build a queue and keep playlists in folders. Each video continues from where you stopped.",
+        "shot": "07"
+      }
+    ],
+    "midCta": {
+      "h2": "Ready to open that MKV?",
+      "p": "Drag the file onto slplayer and press play. Nothing to set up first."
+    },
+    "closeH2": "A video player that stays out of the way.",
+    "trust": [
+      "No account",
+      "No ads",
+      "No analytics"
     ]
   }
 }

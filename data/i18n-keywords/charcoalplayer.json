@@ -1,0 +1,14 @@
+{
+  "en": ["mac music player flac", "mac audio player loop", "ab repeat mac", "mac vocal remover"],
+  "ko": ["맥 음악 플레이어", "맥 구간반복 플레이어", "맥 배속 플레이어", "MR 만들기 보컬 제거"],
+  "ja": ["Mac 音楽プレーヤー", "区間リピート Mac", "再生速度 変更 Mac", "ボーカル除去 カラオケ音源"],
+  "zh-hans": ["mac 音乐播放器 变速", "mac AB 循环 播放器", "人声分离 伴奏", "mac 音乐播放器 FLAC"],
+  "zh-hant": ["mac 音樂播放器", "AB 重複播放 mac", "變速播放 mac", "去人聲 伴奏"],
+  "de": ["Audioplayer Mac Tempo ändern", "Mac Musik verlangsamen", "Gesang entfernen Mac", "A-B-Wiederholung Mac"],
+  "fr": ["lecteur audio Mac", "ralentir une musique Mac", "supprimer la voix d'une chanson", "boucle A-B Mac"],
+  "es": ["reproductor de audio Mac", "cambiar velocidad audio Mac", "quitar la voz de una canción", "bucle A-B Mac"],
+  "it": ["lettore audio Mac", "rallentare una canzone Mac", "togliere la voce da una canzone", "base musicale Mac"],
+  "pt-br": ["player de áudio para Mac", "diminuir velocidade da música Mac", "tirar a voz da música", "playback Mac"],
+  "ru": ["аудиоплеер для Mac", "замедлить песню Mac", "удалить голос из песни", "минусовка Mac"],
+  "tr": ["Mac müzik çalar", "şarkı yavaşlatma Mac", "şarkıdan vokal silme", "A-B tekrar Mac"]
+}

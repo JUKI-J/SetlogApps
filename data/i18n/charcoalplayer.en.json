@@ -12,7 +12,7 @@
   "overview": [
     "If you are looking for a Mac music player for FLAC and other local files, Charcoal Player opens on a Now Playing screen with large artwork, track information and lyrics that scroll with the music. You add your practice folder once and the library stays where you left it through restarts and updates. If a folder goes offline, for example when an external drive is unplugged, tracks are marked rather than deleted, and reconnecting takes one click.",
     "For a Mac audio player with loop or A-B repeat, Charcoal Player lets you mark a phrase with one key for A and one for B and toggle the loop with a third. The loop is sample-accurate, so it repeats without drift at the boundary. Combine it with speed control from 0.5x to 3.0x with the pitch preserved, and a hard passage becomes something you can work through slowly instead of fighting a chipmunk effect.",
-    "Everything stays on your Mac. There are no ads, no account and no data collection, and your music never leaves the computer. Playback, speed, A-B looping and source separation have no usage limits."
+    "Everything stays on your Mac. There are no ads, no account and no data collection, and your music never leaves the computer. Playback, speed control, A-B looping and source separation all happen on the computer in front of you."
   ],
   "features": [
     {
@@ -57,7 +57,7 @@
     "Charcoal Player plays local files only. It does not stream from music services and does not sync your library between devices.",
     "It changes playback speed while preserving the pitch, but it does not change the pitch itself.",
     "Source separation starts only when you ask for it with Separate This Track, unless you turn on the automatic start in Settings.",
-    "Exporting to a file is limited to 3 exports per rolling 24 hours unless you add the optional unlimited-exports purchase. Playback, speed, A-B looping and separation are not limited.",
+    "Lyrics are read only from files you already have, such as a .lrc file, embedded tags or a matching .txt. Nothing is looked up online, so a track without lyrics in or beside it shows none.",
     "It is a Mac app only; there is no iPhone or iPad version."
   ],
   "faq": [
@@ -66,10 +66,62 @@
     {"q": "Can I slow down music on a Mac without changing the pitch?", "a": "Yes. Charcoal Player plays from 0.5x to 3.0x with the pitch preserved, so slow practice does not turn into a low, distorted voice."},
     {"q": "Can it remove the vocals from a song?", "a": "Yes. Separate the track into stems and mute the vocals to get a backing track, or keep only the vocals to learn the melody. Up to six stems are processed on your Mac."},
     {"q": "Does it need an account or send my music anywhere?", "a": "No. There is no account, no ads and no data collection, and your music stays on your Mac."},
-    {"q": "Can I save the separated parts?", "a": "Yes. Export any combination of stems or speakers in original quality or as MP3, AAC, ALAC, WAV, AIFF or FLAC. Exports are limited to 3 per rolling 24 hours unless you add the optional unlimited-exports purchase."}
+    {"q": "Can I save the separated parts?", "a": "Yes. Export any combination of stems or speakers in original quality or as MP3, AAC, ALAC, WAV, AIFF or FLAC. Tracks you already separated open instantly, so you can come back later and export a different mix."}
   ],
   "card": {
     "tagline": "Mac music player with A-B loop, slow-down and stem separation.",
     "features": ["Plays FLAC, MP3, M4A and more", "A-B repeat, 0.5x to 3x speed", "Splits songs into stems"]
+  },
+  "landing": {
+    "hero": {
+      "category": "audio player",
+      "h1": "The best light audio player for Mac.",
+      "sub": "Slows down your music with the pitch intact and removes the vocals for a backing track.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Slow down. Keep the pitch.",
+        "text": "Play anything from 0.5x to 3x with the pitch preserved. Loop a phrase with one key each for A, B and the loop."
+      },
+      {
+        "title": "Remove the vocals.",
+        "text": "One button splits a song into vocals, drums, bass, guitar and piano on your Mac. Mute the vocals and you have a backing track."
+      },
+      {
+        "title": "Your files, as they are.",
+        "text": "FLAC, MP3, M4A, WAV and AIFF play straight from your folders. Lyrics come from your own .lrc files or embedded tags."
+      }
+    ],
+    "features": [
+      {
+        "h2": "A-B loops with no drift.",
+        "p": "Mark A, B and the loop with one key each. The repeat is sample-accurate, so the boundary never slips.",
+        "shot": "03"
+      },
+      {
+        "h2": "Keep the part you want to learn.",
+        "p": "Separate a track into up to six stems, processed entirely on your Mac. Keep only the vocals to learn the melody, or export the mix you made.",
+        "shot": "02"
+      },
+      {
+        "h2": "Meetings and lectures, one voice at a time.",
+        "p": "Recordings of meetings, interviews and lectures get one lane per speaker. Follow, mute or isolate each voice.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Ready to slow down a song or remove its vocals?",
+      "p": "Open it in Charcoal Player and start the separation. Everything runs on your Mac."
+    },
+    "closeH2": "An audio player built for practice.",
+    "trust": [
+      "No account",
+      "No ads",
+      "No data collection",
+      "Processed on your Mac"
+    ]
   }
 }

@@ -1,0 +1,127 @@
+{
+  "locale": "pt-br",
+  "title": "Player de áudio para Mac com loop A-B - Charcoal Player",
+  "description": "Player de áudio para Mac para FLAC, MP3 e M4A, com repetição A-B, velocidade de 0,5x a 3x e separação em faixas. Sem anúncios, conta ou coleta de dados.",
+  "h1": "Um player de áudio para Mac com loop A-B, velocidade reduzida e faixas separadas",
+  "tagline": "Toque seus próprios arquivos de música, repita um trecho, deixe mais lento e separe a música em faixas.",
+  "summary": [
+    "O Charcoal Player é um player de áudio para Mac que toca os arquivos e pastas de música que você já tem, como FLAC, MP3, M4A, WAV e AIFF, e acrescenta as ferramentas de que uma sessão de estudo precisa.",
+    "Ele é feito para quem aprende música de ouvido, tira músicas ou faz transcrições, toca um instrumento junto com uma gravação, ou acompanha uma aula de idiomas, uma palestra ou a gravação de uma reunião frase por frase.",
+    "O diferencial é que ele consegue desmontar uma música. Com um clique, ele separa voz, bateria, baixo, guitarra e piano no seu Mac, e você fica só com a parte que quer aprender ou tira a voz para ter um playback."
+  ],
+  "overview": [
+    "Se você procura um player de áudio para Mac que toque FLAC e outros arquivos locais, o Charcoal Player abre em uma tela de reprodução com a capa grande, as informações da faixa e a letra rolando junto com a música. Você adiciona sua pasta de estudo uma vez e a biblioteca continua no lugar depois de reiniciar ou atualizar. Se uma pasta fica offline, por exemplo quando um HD externo é desconectado, as faixas são marcadas e não apagadas, e reconectar leva um clique.",
+    "Para diminuir a velocidade de uma música no Mac ou repetir um trecho com loop A-B, o Charcoal Player marca o ponto A com uma tecla, o ponto B com outra e liga o loop com uma terceira. O loop é preciso no nível da amostra, então repete sem deslizar na emenda. Junto com a velocidade de 0,5x a 3,0x com a afinação preservada, uma passagem difícil vira algo que você estuda com calma, sem aquela voz de esquilo.",
+    "Tudo fica no seu Mac. Não há anúncios, conta nem coleta de dados, e sua música nunca sai do computador. Reprodução, velocidade, loop A-B e separação de fontes acontecem inteiramente na máquina à sua frente."
+  ],
+  "features": [
+    {
+      "h": "Repetição A-B e velocidade reduzida com a afinação preservada",
+      "p": "Marque um trecho com uma tecla para A, uma para B e uma para ligar o loop. A repetição é precisa no nível da amostra, sem deslize na emenda. A velocidade de reprodução vai de 0,5x a 3,0x com a afinação preservada, o que serve para transcrição, ditado, treino de ouvido e estudo lento de tudo o que você aprende de ouvido. Saltos personalizados de 0,5 a 30 segundos ajudam a navegar por uma gravação."
+    },
+    {
+      "h": "Separe uma música em faixas",
+      "p": "Separe qualquer faixa em voz, bateria, baixo, guitarra e piano, até seis partes, com todo o processamento no seu Mac. Fique só com a voz para aprender a melodia ou tire a voz para ter um playback. A separação começa quando você pede para uma faixa, faixas já separadas abrem na hora e o início automático pode ser ligado nos Ajustes, em separação de fontes."
+    },
+    {
+      "h": "Uma faixa por pessoa em reuniões e aulas",
+      "p": "Gravações de reuniões, entrevistas e aulas ganham uma faixa para cada pessoa que fala. Você pode acompanhar, silenciar ou isolar cada voz da sala."
+    },
+    {
+      "h": "Letras dos seus próprios arquivos",
+      "p": "A letra vem de um arquivo .lrc ao lado da faixa, da letra embutida no arquivo ou de um .txt com o mesmo nome. Nada é buscado na internet, e se o tempo estiver fora você ajusta o deslocamento por faixa sem que o arquivo de áudio seja alterado."
+    },
+    {
+      "h": "Exporte o que você isolou",
+      "p": "Exporte qualquer combinação de faixas ou vozes na qualidade original ou em MP3, AAC, ALAC, WAV, AIFF ou FLAC. Playlists, a opção Abrir com do Finder e um minicontrole na barra de menus com três linhas de letra completam a audição do dia a dia."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/charcoalplayer/en/01.webp", "w": 1000, "h": 625, "alt": "Charcoal Player em um Mac com a tela de reprodução, uma capa grande de veleiros ao pôr do sol, uma barra lateral com playlists e pastas e a letra sincronizada rolando ao lado da capa", "caption": "Tela de reprodução com capa e letra sincronizada."},
+    {"src": "/images/apps/charcoalplayer/en/02.webp", "w": 1000, "h": 625, "alt": "Charcoal Player com o painel de separação de fontes aberto, mostrando faixas com forma de onda para voz, bateria, baixo, guitarra e piano que podem ser ligadas e desligadas", "caption": "Separe uma música em faixas e fique só com o que precisa."},
+    {"src": "/images/apps/charcoalplayer/en/03.webp", "w": 1000, "h": 625, "alt": "Charcoal Player tocando uma aula de compreensão auditiva em inglês com forma de onda, uma região de loop A-B destacada e botões de velocidade a partir de 0,5x", "caption": "Repita um trecho e deixe mais lento."},
+    {"src": "/images/apps/charcoalplayer/en/04.webp", "w": 1000, "h": 625, "alt": "Charcoal Player mostrando a gravação de uma reunião dividida em três faixas de voz, cada uma com seu próprio botão", "caption": "Uma faixa por pessoa em reuniões e aulas."}
+  ],
+  "specs": [
+    {"k": "Plataforma", "v": "Mac"},
+    {"k": "Requisitos", "v": "macOS 15 ou posterior"},
+    {"k": "Reprodução", "v": "Arquivos e pastas de áudio locais, incluindo MP3, M4A, WAV, AIFF e FLAC"},
+    {"k": "Velocidade", "v": "De 0,5x a 3,0x com a afinação preservada"},
+    {"k": "Loop A-B", "v": "Preciso no nível da amostra, uma tecla para A, B e loop"},
+    {"k": "Separação de fontes", "v": "Até 6 partes (voz, bateria, baixo, guitarra, piano e mais) ou faixas por pessoa, processadas no seu Mac"},
+    {"k": "Formatos de exportação", "v": "Qualidade original, MP3, AAC, ALAC, WAV, AIFF, FLAC"},
+    {"k": "Privacidade", "v": "Sem anúncios, sem conta, sem coleta de dados"},
+    {"k": "Idiomas", "v": "12"}
+  ],
+  "limits": [
+    "O Charcoal Player toca apenas arquivos locais. Ele não reproduz música de serviços online e não sincroniza sua biblioteca entre dispositivos.",
+    "Ele muda a velocidade de reprodução preservando a afinação, mas não altera a afinação em si.",
+    "A separação de fontes só começa quando você pede para uma faixa, a menos que você ligue o início automático nos Ajustes.",
+    "A letra é lida apenas de arquivos que você já tem, como um .lrc, tags embutidas ou um .txt com o mesmo nome. Nada é buscado na internet, então uma faixa sem letra no arquivo ou ao lado dele não mostra nenhuma.",
+    "É um app só para Mac. Não existe versão para iPhone ou iPad."
+  ],
+  "faq": [
+    {"q": "Qual player de áudio para Mac toca arquivos FLAC?", "a": "O Charcoal Player toca FLAC local junto com MP3, M4A, WAV, AIFF e outros formatos comuns. Adicione uma pasta uma vez e a biblioteca continua no lugar depois de reiniciar ou atualizar."},
+    {"q": "Como repetir um trecho de uma música em loop no Mac?", "a": "Aperte a tecla de A no começo do trecho e a de B no fim, depois ligue o loop. A repetição A-B é precisa no nível da amostra e não desliza na emenda."},
+    {"q": "Dá para diminuir a velocidade de uma música no Mac sem mudar a afinação?", "a": "Dá. O Charcoal Player toca de 0,5x a 3,0x com a afinação preservada, então estudar devagar não deixa a voz grave e distorcida."},
+    {"q": "Ele consegue tirar a voz de uma música para fazer um playback?", "a": "Consegue. Separe a faixa em partes e silencie a voz para ter um playback, ou fique só com a voz para aprender a melodia. Até seis partes são processadas no seu Mac."},
+    {"q": "Precisa de conta ou ele envia minha música para algum lugar?", "a": "Não. Não há conta, anúncios nem coleta de dados, e sua música fica no seu Mac."},
+    {"q": "Posso salvar as partes separadas?", "a": "Pode. Exporte qualquer combinação de faixas ou vozes na qualidade original ou em MP3, AAC, ALAC, WAV, AIFF ou FLAC. Faixas já separadas abrem na hora, então você pode voltar depois e exportar outra mixagem."}
+  ],
+  "card": {
+    "tagline": "Player de áudio para Mac com loop A-B, velocidade reduzida e separação em faixas.",
+    "features": ["Toca FLAC, MP3, M4A e mais", "Repetição A-B, velocidade de 0,5x a 3x", "Separa músicas em faixas"]
+  },
+  "landing": {
+    "hero": {
+      "category": "player de áudio",
+      "h1": "O melhor player de áudio leve para Mac.",
+      "sub": "Deixa sua música mais lenta com a afinação preservada e tira a voz para você ficar com o playback.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Mais devagar. Mesma afinação.",
+        "text": "Toque qualquer coisa de 0,5x a 3x com a afinação preservada. Repita um trecho com uma tecla para A, uma para B e uma para o loop."
+      },
+      {
+        "title": "Tire a voz.",
+        "text": "Um clique separa uma música em voz, bateria, baixo, guitarra e piano no seu Mac. Silencie a voz e você tem um playback."
+      },
+      {
+        "title": "Seus arquivos, do jeito que estão.",
+        "text": "FLAC, MP3, M4A, WAV e AIFF tocam direto das suas pastas. A letra vem dos seus próprios arquivos .lrc ou das tags embutidas."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Loops A-B sem deslize.",
+        "p": "Marque A, B e o loop com uma tecla cada. A repetição é precisa no nível da amostra e a emenda nunca escorrega.",
+        "shot": "03"
+      },
+      {
+        "h2": "Fique com a parte que quer aprender.",
+        "p": "Separe uma faixa em até seis partes, com todo o processamento no seu Mac. Deixe só a voz para aprender a melodia ou exporte a mixagem que você montou.",
+        "shot": "02"
+      },
+      {
+        "h2": "Reuniões e aulas, uma voz por vez.",
+        "p": "Gravações de reuniões, entrevistas e aulas ganham uma faixa por pessoa. Acompanhe, silencie ou isole cada voz.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Pronto para deixar uma música mais lenta ou tirar a voz dela?",
+      "p": "Abra a música no Charcoal Player e comece a separação. Tudo acontece no seu Mac."
+    },
+    "closeH2": "Um player de áudio feito para estudar música.",
+    "trust": [
+      "Sem conta",
+      "Sem anúncios",
+      "Sem coleta de dados",
+      "Processado no seu Mac"
+    ]
+  }
+}

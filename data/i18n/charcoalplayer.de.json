@@ -1,0 +1,127 @@
+{
+  "locale": "de",
+  "title": "Mac Audioplayer mit A-B-Loop und Tempo - Charcoal Player",
+  "description": "Audioplayer für den Mac für FLAC, MP3 und M4A mit A-B-Wiederholung, Tempo von 0,5x bis 3x und Trennung in Stems. Ohne Werbung, Konto oder Datenerfassung.",
+  "h1": "Ein Audioplayer für den Mac mit A-B-Schleife, Tempo und Stems",
+  "tagline": "Spiel deine eigenen Musikdateien ab, wiederhole eine Stelle, verlangsame sie und zerlege den Song in Stems.",
+  "summary": [
+    "Charcoal Player ist ein Audioplayer für den Mac, der die Musikdateien und Ordner abspielt, die du schon hast, darunter FLAC, MP3, M4A, WAV und AIFF, und dazu die Werkzeuge mitbringt, die man beim Üben braucht.",
+    "Er ist für alle, die Musik nach Gehör lernen, Stücke heraushören oder transkribieren, zu einer Aufnahme ihr Instrument üben oder einem Sprachkurs, einer Vorlesung oder einer Besprechungsaufnahme Satz für Satz folgen wollen.",
+    "Das Besondere ist, dass er einen Song zerlegen kann. Ein Klick trennt Gesang, Schlagzeug, Bass, Gitarre und Klavier direkt auf deinem Mac. So behältst du nur die Stimme, die du lernen willst, oder schaltest den Gesang stumm und bekommst ein Playback."
+  ],
+  "overview": [
+    "Wer einen Audioplayer für den Mac sucht, der FLAC und andere lokale Dateien abspielt, landet bei Charcoal Player auf einem Wiedergabebildschirm mit großem Cover, Titelinfos und Songtexten, die mit der Musik mitlaufen. Du fügst deinen Übungsordner einmal hinzu, und die Mediathek bleibt auch nach Neustarts und Updates genau so, wie du sie verlassen hast. Ist ein Ordner offline, etwa weil eine externe Festplatte abgezogen wurde, werden die Titel nur markiert und nicht gelöscht. Wieder verbinden geht mit einem Klick.",
+    "Wenn du am Mac das Tempo ändern oder eine Stelle per A-B-Wiederholung in Schleife hören willst, setzt Charcoal Player den Punkt A mit einer Taste, den Punkt B mit einer zweiten und schaltet die Schleife mit einer dritten. Die Schleife ist samplegenau und verrutscht an der Grenze nicht. Zusammen mit dem Tempo von 0,5x bis 3,0x bei gleicher Tonhöhe wird eine schwierige Passage zu etwas, das du in Ruhe langsam durcharbeiten kannst, ganz ohne Mickymaus-Effekt.",
+    "Alles bleibt auf deinem Mac. Es gibt keine Werbung, kein Konto und keine Datenerfassung, und deine Musik verlässt den Computer nie. Wiedergabe, Tempo, A-B-Wiederholung und Quellentrennung laufen vollständig auf dem Rechner, an dem du sitzt."
+  ],
+  "features": [
+    {
+      "h": "A-B-Wiederholung und langsameres Tempo bei gleicher Tonhöhe",
+      "p": "Setze A, B und die Schleife mit jeweils einer Taste. Die Wiederholung ist samplegenau, ohne Versatz an der Grenze. Das Wiedergabetempo reicht von 0,5x bis 3,0x, und die Tonhöhe bleibt dabei erhalten. Das passt zum Transkribieren, zum Diktat, zur Gehörbildung und zum langsamen Üben von allem, was du nach Gehör lernst. Eigene Sprungweiten von 0,5 bis 30 Sekunden helfen dir, dich durch eine Aufnahme zu bewegen."
+    },
+    {
+      "h": "Einen Song in Stems zerlegen",
+      "p": "Trenne jeden Titel in Gesang, Schlagzeug, Bass, Gitarre und Klavier, bis zu sechs Stems, komplett auf deinem Mac berechnet. Behalte nur den Gesang, um eine Melodie zu lernen, oder schalte ihn stumm, um ein Playback zu bekommen. Die Trennung beginnt, wenn du sie für einen Titel anforderst. Bereits getrennte Titel öffnen sofort, und einen automatischen Start schaltest du in den Einstellungen unter Quellentrennung ein."
+    },
+    {
+      "h": "Sprecherspuren für Besprechungen und Vorlesungen",
+      "p": "Aufnahmen von Besprechungen, Interviews und Vorlesungen bekommen eine Spur pro Sprecher. So kannst du jeder Stimme im Raum folgen, sie stummschalten oder einzeln anhören."
+    },
+    {
+      "h": "Songtexte aus deinen eigenen Dateien",
+      "p": "Songtexte kommen aus einer .lrc-Datei neben dem Titel, aus im Titel eingebetteten Texten oder aus einer passenden .txt-Datei. Online wird nichts nachgeschlagen. Stimmt das Timing nicht, passt du den Versatz pro Titel an, und die Audiodatei selbst bleibt dabei unverändert."
+    },
+    {
+      "h": "Exportieren, was du isoliert hast",
+      "p": "Exportiere jede Kombination aus Stems oder Sprechern in Originalqualität oder als MP3, AAC, ALAC, WAV, AIFF oder FLAC. Wiedergabelisten, Öffnen mit im Finder und ein Mini-Player in der Menüleiste mit drei Zeilen Songtext runden das alltägliche Hören ab."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/charcoalplayer/en/01.webp", "w": 1000, "h": 625, "alt": "Charcoal Player auf einem Mac mit dem Wiedergabebildschirm, großem Cover mit Segelbooten im Sonnenuntergang, einer Seitenleiste mit Wiedergabelisten und Ordnern und synchronisierten Songtexten neben dem Cover", "caption": "Wiedergabe mit Cover und synchronisierten Songtexten."},
+    {"src": "/images/apps/charcoalplayer/en/02.webp", "w": 1000, "h": 625, "alt": "Charcoal Player mit geöffnetem Bereich für die Quellentrennung und Wellenform-Spuren für Gesang, Schlagzeug, Bass, Gitarre und Klavier, die sich ein- und ausschalten lassen", "caption": "Einen Song in Stems trennen und nur behalten, was du brauchst."},
+    {"src": "/images/apps/charcoalplayer/en/03.webp", "w": 1000, "h": 625, "alt": "Charcoal Player spielt eine englische Hörübung mit Wellenform, markiertem A-B-Bereich und Tempotasten ab 0,5x", "caption": "Eine Stelle wiederholen und verlangsamen."},
+    {"src": "/images/apps/charcoalplayer/en/04.webp", "w": 1000, "h": 625, "alt": "Charcoal Player zeigt eine Besprechungsaufnahme, aufgeteilt in drei Sprecherspuren mit je einem eigenen Schalter", "caption": "Sprecherspuren für Besprechungen und Vorlesungen."}
+  ],
+  "specs": [
+    {"k": "Plattform", "v": "Mac"},
+    {"k": "Systemvoraussetzungen", "v": "macOS 15 oder neuer"},
+    {"k": "Wiedergabe", "v": "Lokale Audiodateien und Ordner, darunter MP3, M4A, WAV, AIFF und FLAC"},
+    {"k": "Tempo", "v": "0,5x bis 3,0x bei gleicher Tonhöhe"},
+    {"k": "A-B-Schleife", "v": "Samplegenau, je eine Taste für A, B und Schleife"},
+    {"k": "Quellentrennung", "v": "Bis zu 6 Stems (Gesang, Schlagzeug, Bass, Gitarre, Klavier und mehr) oder Sprecherspuren, berechnet auf deinem Mac"},
+    {"k": "Exportformate", "v": "Originalqualität, MP3, AAC, ALAC, WAV, AIFF, FLAC"},
+    {"k": "Datenschutz", "v": "Keine Werbung, kein Konto, keine Datenerfassung"},
+    {"k": "Sprachen", "v": "12"}
+  ],
+  "limits": [
+    "Charcoal Player spielt nur lokale Dateien ab. Er streamt nicht von Musikdiensten und synchronisiert deine Mediathek nicht zwischen Geräten.",
+    "Er ändert das Wiedergabetempo bei gleicher Tonhöhe, verändert die Tonhöhe selbst aber nicht.",
+    "Die Quellentrennung beginnt erst, wenn du sie für einen Titel anforderst, es sei denn, du schaltest den automatischen Start in den Einstellungen ein.",
+    "Songtexte werden nur aus Dateien gelesen, die du schon hast, etwa einer .lrc-Datei, eingebetteten Tags oder einer passenden .txt-Datei. Online wird nichts gesucht, ein Titel ohne Songtext in oder neben der Datei zeigt also keinen an.",
+    "Es gibt ihn nur für den Mac. Eine Version für iPhone oder iPad gibt es nicht."
+  ],
+  "faq": [
+    {"q": "Welcher Audioplayer für den Mac spielt FLAC ab?", "a": "Charcoal Player spielt lokale FLAC-Dateien ebenso wie MP3, M4A, WAV, AIFF und andere gängige Formate ab. Füge einen Ordner einmal hinzu, und die Mediathek bleibt nach Neustarts und Updates erhalten."},
+    {"q": "Wie wiederhole ich am Mac einen Abschnitt eines Songs in Schleife?", "a": "Drücke am Anfang der Stelle die Taste für A und am Ende die Taste für B, dann schalte die Schleife ein. Die A-B-Wiederholung ist samplegenau und verrutscht an der Grenze nicht."},
+    {"q": "Kann ich am Mac das Tempo ändern, ohne dass sich die Tonhöhe verschiebt?", "a": "Ja. Charcoal Player spielt von 0,5x bis 3,0x bei gleicher Tonhöhe. Langsames Üben klingt also nicht nach einer tiefen, verzerrten Stimme."},
+    {"q": "Kann ich am Mac den Gesang aus einem Song entfernen und ein Playback erstellen?", "a": "Ja. Trenne den Titel in Stems und schalte den Gesang stumm, dann hast du ein Playback. Oder behalte nur den Gesang, um die Melodie zu lernen. Bis zu sechs Stems werden auf deinem Mac berechnet."},
+    {"q": "Brauche ich ein Konto, und wird meine Musik irgendwohin gesendet?", "a": "Nein. Es gibt kein Konto, keine Werbung und keine Datenerfassung, und deine Musik bleibt auf deinem Mac."},
+    {"q": "Kann ich die getrennten Spuren speichern?", "a": "Ja. Exportiere jede Kombination aus Stems oder Sprechern in Originalqualität oder als MP3, AAC, ALAC, WAV, AIFF oder FLAC. Bereits getrennte Titel öffnen sofort, du kannst also später zurückkommen und eine andere Mischung exportieren."}
+  ],
+  "card": {
+    "tagline": "Audioplayer für den Mac mit A-B-Schleife, Tempo und Stem-Trennung.",
+    "features": ["Spielt FLAC, MP3, M4A und mehr", "A-B-Wiederholung, Tempo 0,5x bis 3x", "Zerlegt Songs in Stems"]
+  },
+  "landing": {
+    "hero": {
+      "category": "Audioplayer",
+      "h1": "Der beste schlanke Audioplayer für den Mac.",
+      "sub": "Spielt deine Musik langsamer bei gleicher Tonhöhe und entfernt den Gesang für ein Playback.",
+      "shots": [
+        "01"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Langsamer. Gleiche Tonhöhe.",
+        "text": "Spiel alles von 0,5x bis 3x bei gleicher Tonhöhe ab. Wiederhole eine Stelle mit je einer Taste für A, B und die Schleife."
+      },
+      {
+        "title": "Gesang entfernen.",
+        "text": "Ein Klick trennt einen Song auf deinem Mac in Gesang, Schlagzeug, Bass, Gitarre und Klavier. Schalte den Gesang stumm, und du hast ein Playback."
+      },
+      {
+        "title": "Deine Dateien, wie sie sind.",
+        "text": "FLAC, MP3, M4A, WAV und AIFF laufen direkt aus deinen Ordnern. Songtexte kommen aus deinen eigenen .lrc-Dateien oder eingebetteten Tags."
+      }
+    ],
+    "features": [
+      {
+        "h2": "A-B-Schleifen ohne Versatz.",
+        "p": "Setze A, B und die Schleife mit je einer Taste. Die Wiederholung ist samplegenau, die Grenze verrutscht nie.",
+        "shot": "03"
+      },
+      {
+        "h2": "Behalte die Stimme, die du lernen willst.",
+        "p": "Trenne einen Titel in bis zu sechs Stems, komplett auf deinem Mac berechnet. Behalte nur den Gesang für die Melodie oder exportiere deine eigene Mischung.",
+        "shot": "02"
+      },
+      {
+        "h2": "Besprechungen und Vorlesungen, Stimme für Stimme.",
+        "p": "Aufnahmen von Besprechungen, Interviews und Vorlesungen bekommen eine Spur pro Sprecher. Folge jeder Stimme, schalte sie stumm oder hör sie einzeln.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Bereit, einen Song zu verlangsamen oder den Gesang zu entfernen?",
+      "p": "Öffne ihn in Charcoal Player und starte die Trennung. Alles läuft auf deinem Mac."
+    },
+    "closeH2": "Ein Audioplayer, gebaut zum Üben.",
+    "trust": [
+      "Kein Konto",
+      "Keine Werbung",
+      "Keine Datenerfassung",
+      "Auf deinem Mac berechnet"
+    ]
+  }
+}

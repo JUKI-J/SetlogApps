@@ -33,7 +33,7 @@
     },
     {
       "h": "No account, and Pro only for the room creator",
-      "p": "Create a room and share the code by voice, chat or QR. Joining any room is always included. Rooms hold two devices without Pro; Pro, a one-time in-app purchase and not a subscription, raises that to eight and adds CSV export and unlimited session history. Only the person who creates the room needs it."
+      "p": "Create a room and share the code by voice, chat or QR. Joining any room is always included. Pro extends a room you create to up to eight devices and adds CSV export and the full session history. Only the person who creates the room needs it."
     }
   ],
   "screenshots": [
@@ -84,16 +84,16 @@
       "v": "Apple time servers (NTP), typically within a few tens of milliseconds (about 50 ms)"
     },
     {
-      "k": "Devices per room",
-      "v": "2 without Pro, up to 8 with Pro (only the room creator needs Pro)"
-    },
-    {
       "k": "Lap triggers",
       "v": "Screen, volume buttons, Bluetooth shutter remote, keyboard or page-turner remote"
     },
     {
-      "k": "History and export",
-      "v": "3 most recent sessions saved locally without Pro; unlimited history and CSV export with Pro"
+      "k": "History",
+      "v": "Recent sessions saved on the device, ready to review after practice"
+    },
+    {
+      "k": "Pro",
+      "v": "Rooms of up to 8 devices, CSV export and the full session history; only the room creator needs Pro"
     },
     {
       "k": "Privacy",
@@ -102,8 +102,8 @@
   ],
   "limits": [
     "LapLync runs on iPhone and iPad only. Android and Windows devices cannot join a room.",
-    "The roughly 50 ms agreement between devices is a typical figure, not a guarantee, and it does not replace dedicated timing equipment such as photo-finish systems. The person pressing the lap button still adds reaction delay.",
-    "Without Pro a room you create holds two devices, and only the last three sessions are kept on the device. Rooms of up to eight devices, CSV export and unlimited history need Pro.",
+    "The roughly 50 ms agreement between devices is a typical figure that varies with the network, and LapLync does not replace dedicated timing equipment such as photo-finish systems. The person pressing the lap button still adds reaction delay.",
+    "Pro lets the room creator open rooms of up to eight devices and adds CSV export and the full session history. Only the person who creates the room needs it.",
     "Only the host can start, stop and reset. Participants can record laps and delete their own laps.",
     "Lap triggers that skip the screen and the Live Activity are optional and must be switched on or off in Settings. Run a short rehearsal with your real devices before an important event."
   ],
@@ -118,15 +118,15 @@
     },
     {
       "q": "How many devices can join one room?",
-      "a": "A room you create holds two devices without Pro and up to eight with Pro. Joining a room someone else created is always included, so participants never need to buy anything."
+      "a": "With Pro, the room creator can open rooms of up to eight devices. Joining a room someone else created is always included, so participants never need Pro."
     },
     {
       "q": "How accurate is it for races and training?",
       "a": "Devices are aligned to Apple's time servers and typically agree to within a few tens of milliseconds, about 50 ms depending on the network. That suits practice, training logs and informal races; for official results use dedicated timing equipment."
     },
     {
-      "q": "Do I need an account, and is there a subscription?",
-      "a": "No account, password or email is needed, and there are no ads. Pro is a one-time in-app purchase, not a subscription."
+      "q": "Do I need an account or an email address?",
+      "a": "No account, password or email is needed, and there are no ads. A device joins a room with the 6-character code or by scanning the QR, and that is all it takes."
     },
     {
       "q": "Can I record laps without looking at the phone?",
@@ -139,6 +139,59 @@
       "3-2-1 start on every screen",
       "Join by code or QR, no account",
       "Bluetooth, Wi-Fi and internet"
+    ]
+  },
+  "landing": {
+    "hero": {
+      "category": "synchronized stopwatch",
+      "h1": "The best synchronized stopwatch for iPhone and iPad.",
+      "sub": "Start once and every device in the room starts with you, with laps and splits showing up on all of them.",
+      "shots": [
+        "01",
+        "02"
+      ]
+    },
+    "pillars": [
+      {
+        "title": "No head start.",
+        "text": "The 3-2-1 countdown lands on every screen at the same moment, so whoever taps Start gets no advantage."
+      },
+      {
+        "title": "Near, far or offline.",
+        "text": "Bluetooth and Wi-Fi nearby, the internet across networks, and each device keeps timing if every connection drops."
+      },
+      {
+        "title": "Laps without the screen.",
+        "text": "Record laps with the volume buttons, a Bluetooth shutter remote or a keyboard. It stays off until you turn it on."
+      }
+    ],
+    "features": [
+      {
+        "h2": "Anyone in the room can take a lap.",
+        "p": "Laps and split times appear on every device, and a wrong lap can be undone right after you record it.",
+        "shot": "02"
+      },
+      {
+        "h2": "Join with a six-character code.",
+        "p": "Share the room code by voice, chat or QR. No account, password or email is needed.",
+        "shot": "03"
+      },
+      {
+        "h2": "Look back at recent sessions.",
+        "p": "Recent sessions are kept on the device, ready to look back on after practice.",
+        "shot": "04"
+      }
+    ],
+    "midCta": {
+      "h2": "Ready for the next start line?",
+      "p": "Create a room, share the code and tap Start."
+    },
+    "closeH2": "Time everyone from the same instant.",
+    "trust": [
+      "No account",
+      "No ads",
+      "No location or contacts",
+      "Keeps timing offline"
     ]
   }
 }

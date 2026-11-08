@@ -1,0 +1,95 @@
+{
+  "locale": "tr",
+  "title": "Mac'te RAR açma - Zipda arşiv uygulaması Mac ve iPhone",
+  "description": "Mac, iPhone ve iPad'de RAR, 7z, ZIP ve TAR arşivlerini açın. Çıkarmadan önce içeriğe bakın, şifreli ZIP ve parçalı arşivler de açılır. Reklam ve hesap yok.",
+  "h1": "Mac ve iPhone'da RAR, 7z ve ZIP dosyalarını açın",
+  "tagline": "Arşivleri cihazınızda açın, inceleyin ve çıkarın. Hiçbir şey internete yüklenmez.",
+  "summary": [
+    "Zipda; Mac, iPhone ve iPad için hafif bir arşiv uygulamasıdır. ZIP, RAR, 7z ve TAR arşivlerini açar, içeriğini listeler ve önizler, ZIP ile TAR dosyalarını tek adımda çıkarır.",
+    "Windows kullanıcılarından ya da eski araçlardan arşiv alan herkes için uygundur. E-postayla gelen bir RAR eki, indirilen bir 7z, şifreli bir ZIP ya da birkaç parçaya bölünmüş dev bir arşiv bunlara örnektir.",
+    "Mac'te RAR açma ya da iPhone'da ZIP açma gerektiğinde önce arşivin içine bakar, sonra tek bir dosyayı veya hepsini seçtiğiniz klasöre çıkarırsınız. Büyük, parçalı ve hasarlı arşivler de doğrudan cihazda işlenir."
+  ],
+  "overview": [
+    "Mac'te yerleşik Arşiv İzlencesi sıradan bir ZIP dosyasını sorunsuz açar. Sorun geri kalan her şeyle başlar. Bir indirme sitesinden gelen RAR, bir iş arkadaşının gönderdiği 7z, birkaç parçaya bölünmüş 4 GB'tan büyük bir ZIP ya da yarıda kesilmiş bir indirme bunlara örnektir. Zipda tam olarak bu durumlar için yapıldı. Arşivi açar, içinde ne olduğuna bakar ve bir şey çıkarmadan önce dosyaları önizlersiniz.",
+    "Her şey kendi cihazınızda çalışır. Hesap, analiz aracı ya da reklam SDK'sı yoktur ve uygulama kendiliğinden hiçbir ağ isteği göndermez. Bu yüzden çıkardığınız dosyalar Mac'inizden veya iPhone'unuzdan hiç çıkmaz. Zipda çıkarma sırasında büyük arşivleri depolamaya akış halinde yazar. Birkaç gigabaytlık ZIP64 dosyaları ve on binlerce öğe içeren arşivler bu sayede rahatça işlenir.",
+    "Herhangi bir arşivi açmak, içeriğini listelemek ve önizlemek, ayrıca günlük ZIP ve TAR çıkarma işlemleri Pro olmadan çalışır. RAR, 7z, ALZ ve LZH çıkarma, parçalı arşivler ve şifreli arşivler isteğe bağlı Zipda Pro'ya dahildir. Pro, iPhone, iPad ve Mac'te aynı şekilde çalışır."
+  ],
+  "features": [
+    {
+      "h": "Mac'te RAR ve 7z açma",
+      "p": "Zipda, ZIP ve TAR ailesinin (.tar, .tar.gz, .tar.bz2, .tar.xz) yanında RAR, 7z, LZH ve ALZ arşivlerini de çıkarır. Önce bir RAR veya 7z dosyasının içeriğini inceleyip önizleyebilir, sonra yalnızca ihtiyacınız olan dosyayı alabilir ya da her şeyi seçtiğiniz klasöre çıkarabilirsiniz. RAR, 7z, ALZ ve LZH çıkarma Pro'ya dahildir."
+    },
+    {
+      "h": "iPhone ve iPad'de arşiv açma",
+      "p": "Mail'de veya Dosyalar uygulamasında gelen bir arşiv, paylaşma menüsünden Zipda'ya gönderilince açılır. İçeriği inceler, önizler, sonra bir dosyayı ya da hepsini seçtiğiniz klasöre çıkarırsınız. iPhone, iPad ve Mac'te App Store'daki tek bir sayfadan gelen aynı uygulamadır ve iOS 16.1 veya sonrasında çalışır."
+    },
+    {
+      "h": "Şifreli ZIP dosyaları",
+      "p": "Şifreli bir ZIP, eski ZipCrypto yöntemiyle de AES ile de korunmuş olsa açılır. Zipda şifreyi sorar ve kontrol cihazınızda yapılır. Şifreli arşivleri açmak Pro'ya dahildir."
+    },
+    {
+      "h": "Büyük, parçalı ve hasarlı arşivler",
+      "p": "4 GB'ı aşan Zip64 arşivleri, birkaç parçaya bölünmüş setler ve on binlerce öğe içeren arşivler akış halinde işlenir, belleğe bütün olarak yüklenmez. Parçalı bir arşivde ilk parçayı seçmeniz yeterlidir, Zipda diğerlerini bulur. Bir indirme yarıda kesildiyse ya da bozuk bir sektör varsa Zipda hâlâ okunabilen her öğeyi çıkarır, ardından hangilerini neden atladığını tek tek listeler. İptal düğmesi işlemi hemen durdurur ve yarım yazılmış dosyaları temizler."
+    },
+    {
+      "h": "Mac ve iPhone'da ZIP oluşturma",
+      "p": "Dosyaları, fotoğrafları veya videoları seçip ZIP olarak sıkıştırın. iPhone'da bunu paylaşma menüsünden de yapabilirsiniz. Şifresiz ZIP ve TAR, Pro olmadan oluşturulur. AES-256 ile şifrelenmiş ZIP, 7z, şifreli ve parçalı arşiv oluşturma Pro'ya dahildir."
+    }
+  ],
+  "screenshots": [
+    {"src": "/images/apps/zipda/en/01.webp", "w": 1000, "h": 625, "alt": "Mac'te Zipda, Shared_Photos_2026.zip arşivinin içeriğini ve tümünü çıkarma düğmesini gösteriyor", "caption": "Arşivi çıkarmadan önce içine bakın."},
+    {"src": "/images/apps/zipda/en/02.webp", "w": 1000, "h": 625, "alt": "Zipda'nın Finance_Q2_Report.zip için açtığı şifre penceresi, gizli şifre alanı ile İptal ve Aç düğmeleri", "caption": "Şifreli ZIP'in şifresi cihazınızda girilir."},
+    {"src": "/images/apps/zipda/en/03.webp", "w": 1000, "h": 625, "alt": "Zipda arşiv oluşturma ekranı, seçilen yedi dosyanın listesi ve ZIP biçim menüsü", "caption": "Seçtiğiniz dosyalardan ZIP oluşturun."},
+    {"src": "/images/apps/zipda/en/04.webp", "w": 1000, "h": 625, "alt": "Mac'te Zipda penceresi, çıkarılmış bir klasördeki dosyaların listesi ve altta bir işlem düğmesi", "caption": "Çıkarılan dosyalar cihazınızda kalır."}
+  ],
+  "specs": [
+    {"k": "Platformlar", "v": "Mac, iPhone ve iPad (App Store'da tek sayfa)"},
+    {"k": "Gereksinimler", "v": "macOS 14 veya sonrası; iOS 16.1 veya sonrası"},
+    {"k": "Çıkarma", "v": ".zip, .tar, .tar.gz, .tar.bz2, .tar.xz; Pro ile ayrıca .rar, .7z, .lzh, .alz"},
+    {"k": "Oluşturma", "v": "Şifresiz .zip ve .tar; AES-256 şifreli ZIP, 7z, şifreli ve parçalı arşivler Pro ile"},
+    {"k": "Şifreler", "v": "ZipCrypto veya AES ile korunan ZIP (Pro)"},
+    {"k": "Büyük arşivler", "v": "4 GB'ı aşan Zip64, parçalı arşivler ve on binlerce öğe, akış halinde işlenir"},
+    {"k": "Gizlilik", "v": "Hesap yok, analiz yok, reklam SDK'sı yok; App Store etiketi Veri Toplanmıyor"},
+    {"k": "Diller", "v": "12, uygulama içinden değiştirilebilir"}
+  ],
+  "limits": [
+    "Zipda RAR dosyası oluşturamaz. Üçüncü taraf uygulamalar RAR oluşturamadığı için Zipda RAR dosyalarını yalnızca çıkarır. LZH de yalnızca çıkarılabilir.",
+    "EGG dosyaları desteklenmez.",
+    "Parçalı bir arşiv için tüm parçalar gerekir. Bir parça eksikse set çıkarılamaz.",
+    "Hasarlı bir arşivden Zipda yalnızca hâlâ okunabilen öğeleri çıkarır ve atladıklarını listeler.",
+    "RAR, 7z, ALZ ve LZH çıkarma, parçalı arşivler ve şifreli arşivler isteğe bağlı Zipda Pro'ya dahildir."
+  ],
+  "faq": [
+    {"q": "Mac'te RAR dosyası nasıl açılır?", "a": "Zipda'yı yükleyin ve RAR dosyasını uygulama penceresine sürükleyin (iPhone'da Mail'den veya Dosyalar uygulamasından Zipda ile paylaşın). Önce içeriği inceleyip önizleyebilirsiniz. RAR arşivini çıkarmak isteğe bağlı Zipda Pro'ya dahildir."},
+    {"q": "Mac'te ZIP dosyası nasıl açılır?", "a": "Bir ZIP dosyasına çift tıklamak yerleşik Arşiv İzlencesi'ni kullanır. Zipda ile arşivin içine bakabilir, tek bir dosyayı önizleyebilir, dosyaların nereye gideceğini seçip tek adımda çıkarabilirsiniz. Arşiv çok büyükse veya parçalara bölünmüşse bu işinizi kolaylaştırır."},
+    {"q": "Zipda Mac'te 7z dosyalarını açabilir mi?", "a": "Evet. Zipda 7z arşivlerini açar, içeriğini listeler ve önizler. 7z çıkarma Zipda Pro'ya dahildir."},
+    {"q": "Şifreli bir ZIP açabilir miyim?", "a": "Evet. ZipCrypto veya AES ile korunan ZIP dosyaları açılır. Zipda şifreyi sorar ve kontrol cihazınızda yapılır. Şifreli arşivleri açmak Zipda Pro'ya dahildir."},
+    {"q": "Zipda ile RAR dosyası oluşturabilir miyim?", "a": "Hayır. Zipda normal ZIP arşivleri, Pro ile de AES-256 şifreli ZIP ve 7z arşivleri oluşturur. Başkalarına dosya göndermek için en güvenli seçim ZIP'tir."},
+    {"q": "Dosyalarım bir yere yükleniyor mu?", "a": "Hayır. Her şey cihazınızda işlenir. Uygulamada hesap, analiz aracı veya reklam SDK'sı yoktur."}
+  ],
+  "card": {
+    "tagline": "Mac ve iPhone'da RAR, 7z ve ZIP açın, çıkarmadan önce içine bakın.",
+    "features": ["ZIP, RAR, 7z ve TAR çıkarır", "Şifreli ve parçalı arşivler", "Reklam yok, hesap yok"]
+  },
+  "landing": {
+    "hero": {
+      "category": "arşiv açma uygulaması",
+      "h1": "iPhone, iPad ve Mac için en iyi arşiv açma uygulaması.",
+      "sub": "Mac, iPhone ve iPad'de RAR, 7z ve ZIP açar, yalnızca ihtiyacınız olan dosyayı çıkarır.",
+      "shots": ["01"]
+    },
+    "pillars": [
+      {"title": "RAR ve 7z açar.", "text": "Zipda, ZIP ve TAR ailesinin yanında RAR, 7z, LZH ve ALZ arşivlerini de çıkarır. Tek bir dosya alın ya da her şeyi seçtiğiniz klasöre çıkarın."},
+      {"title": "Büyük ve parçalı arşivler.", "text": "4 GB'ı aşan Zip64 arşivleri ve on binlerce öğe içeren arşivler akış halinde işlenir. Parçalı bir setin ilk parçasını seçin, Zipda gerisini bulur."},
+      {"title": "Mac, iPhone ve iPad.", "text": "Zipda'nın üç cihaz için App Store'da tek bir sayfası var. macOS 14 ve iOS 16.1 veya sonrasında çalışır."}
+    ],
+    "features": [
+      {"h2": "Önce içine bakın. Yalnızca gerekeni alın.", "p": "Bir arşivin içeriğini inceleyin ve önizleyin. Sonra tek bir dosyayı ya da hepsini seçtiğiniz klasöre çıkarın.", "shot": "01"},
+      {"h2": "Şifreli ZIP'ler cihazınızda açılır.", "p": "ZipCrypto veya AES ile korunan ZIP dosyaları şifreyi girdiğinizde açılır. Kontrol cihazınızda yapılır.", "shot": "02"},
+      {"h2": "Dosya, fotoğraf ve videolardan ZIP.", "p": "Dosyaları, fotoğrafları veya videoları seçip ZIP olarak sıkıştırın. iPhone'da paylaşma menüsünden de olur.", "shot": "03"}
+    ],
+    "midCta": {"h2": "Açmanız gereken bir RAR veya 7z mi var?", "p": "Zipda'da açın, içine bakın ve ihtiyacınız olanı çıkarın."},
+    "closeH2": "Mac, iPhone ve iPad için tek bir arşiv açma uygulaması.",
+    "trust": ["Hesap yok", "Reklam yok", "Analiz yok"]
+  }
+}
